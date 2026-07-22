@@ -868,12 +868,12 @@ function PlayerDetailDrawer({ person, matchedTeam, allTeams, onClose }: { person
     return entries.sort((a, b) => (b.date || "").localeCompare(a.date || "")).slice(0, 20);
   }, [transfers, squadHistory]);
 
-  const getMedalIcon = (placement: string) => {
+  const getMedalIcon = (placement: string): React.ReactNode => {
     const p = (placement || "").toLowerCase();
-    if (p.includes("1st") || p === "1") return "🥇";
-    if (p.includes("2nd") || p === "2") return "🥈";
-    if (p.includes("3rd") || p === "3") return "🥉";
-    return "🏆";
+    if (p.includes("1st") || p === "1") return <Medal className="w-5 h-5 text-yellow-400" />;
+    if (p.includes("2nd") || p === "2") return <Medal className="w-5 h-5 text-slate-300" />;
+    if (p.includes("3rd") || p === "3") return <Medal className="w-5 h-5 text-amber-600" />;
+    return <Trophy className="w-5 h-5 text-amber-400" />;
   };
 
   const allAchievements = scrapedAchievements.length > 0 ? scrapedAchievements : placements;
@@ -1215,16 +1215,16 @@ function PlayerDetailDrawer({ person, matchedTeam, allTeams, onClose }: { person
                   {/* Trophy Summary — card-metric-accent for championships */}
                   <motion.div variants={dossierContainer} initial="hidden" animate="visible" className="grid grid-cols-2 sm:grid-cols-5 gap-2">
                     {[
-                      { label: "1st Place", value: derived.firsts, icon: "🥇", highlight: true },
-                      { label: "2nd Place", value: derived.seconds, icon: "🥈", highlight: false },
-                      { label: "S-Tier", value: derived.sTier, icon: "⚡", highlight: false },
-                      { label: "A-Tier", value: derived.aTier, icon: "🏆", highlight: false },
-                      { label: "Total", value: allAchievements.length, icon: "📊", highlight: false },
+                      { label: "1st Place", value: derived.firsts, icon: <div className="bg-yellow-500/10 p-2 rounded-full"><Medal className="w-6 h-6 text-yellow-400" /></div>, highlight: true },
+                      { label: "2nd Place", value: derived.seconds, icon: <div className="bg-slate-400/10 p-2 rounded-full"><Medal className="w-6 h-6 text-slate-300" /></div>, highlight: false },
+                      { label: "S-Tier", value: derived.sTier, icon: <div className="bg-cyan-500/10 p-2 rounded-full"><Zap className="w-6 h-6 text-cyan-400" /></div>, highlight: false },
+                      { label: "A-Tier", value: derived.aTier, icon: <div className="bg-amber-500/10 p-2 rounded-full"><Trophy className="w-6 h-6 text-amber-400" /></div>, highlight: false },
+                      { label: "Total", value: allAchievements.length, icon: <div className="bg-blue-500/10 p-2 rounded-full"><BarChart3 className="w-6 h-6 text-blue-400" /></div>, highlight: false },
                     ].map((card) => (
                       <motion.div key={card.label} variants={dossierItem}
                         className={`rounded-xl p-3 text-center ${card.highlight ? "card-metric-accent" : "card-metric"}`}
                         style={card.highlight ? { "--accent-color": "#22c55e" } as React.CSSProperties : {}}>
-                        <div className="text-lg mb-1">{card.icon}</div>
+                        <div className="flex justify-center mb-1">{card.icon}</div>
                         <div className="metric-value text-xl text-white">{card.value}</div>
                         <div className="metric-label">{card.label}</div>
                       </motion.div>
@@ -1332,7 +1332,9 @@ function PlayerDetailDrawer({ person, matchedTeam, allTeams, onClose }: { person
                                   transition={{ delay: i * 0.04, type: "spring" as const, stiffness: 300, damping: 20 }}
                                   whileHover={{ scale: 1.02 }}
                                   className="card-metric flex items-center gap-3 p-3 cursor-default">
-                                  <span className="text-xl shrink-0">{a.award?.includes("MVP") ? "🏆" : a.award?.includes("First Team") ? "⭐" : "🌟"}</span>
+                                  <div className="shrink-0 bg-amber-500/10 p-2 rounded-full">
+                                    {a.award?.includes("MVP") ? <Trophy className="w-5 h-5 text-amber-400" /> : a.award?.includes("First Team") ? <Star className="w-5 h-5 text-yellow-400" /> : <Award className="w-5 h-5 text-amber-300" />}
+                                  </div>
                                   <div className="flex-1 min-w-0">
                                     <div className="text-[11px] font-bold text-white truncate">{a.award}</div>
                                     <div className="text-[9px] text-gray-500">{a.tournament} · {a.date}</div>

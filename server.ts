@@ -3371,6 +3371,241 @@ app.get("/api/analytics/visitors", (_req, res) => {
   }
 });
 
+// ─── MLBB ACCOUNT CHECKER (APIGames) ───
+
+function createApigamesSignature(merchantId: string, secretKey: string): string {
+  return crypto.createHash("md5").update(`${merchantId}${secretKey}`).digest("hex");
+}
+
+function buildApigamesUserId(uid: string, zoneId: string, format: string): string {
+  switch (format) {
+    case "uid": return uid;
+    case "uid_zone_concat": return `${uid}${zoneId}`;
+    case "uid_zone_parentheses": return `${uid}(${zoneId})`;
+    default: throw new Error(`Unknown identifier format: ${format}`);
+  }
+}
+
+const mlbbCheckCache = new Map<string, { data: any; expiresAt: number }>();
+const mlbbCheckInFlight = new Map<string, Promise<any>>();
+
+function getMlbbCacheKey(uid: string, zoneId: string): string {
+  const format = process.env.APIGAMES_MLBB_ID_FORMAT || "uid";
+  return `mlbb-account:v2:${uid}:${zoneId}:${format}`;
+}
+
+function getMlbbCacheEntry(key: string): any | null {
+  const entry = mlbbCheckCache.get(key);
+  if (!entry) return null;
+  if (Date.now() > entry.expiresAt) { mlbbCheckCache.delete(key); return null; }
+  return entry.data;
+}
+
+function setMlbbCacheEntry(key: string, data: any, ttlMs: number): void {
+  mlbbCheckCache.set(key, { data, expiresAt: Date.now() + ttlMs });
+}
+
+// API ROUTE: MLBB CHECK ACCOUNT
+app.post("/api/mlbb/check-account", async (req, res): Promise<any> => {
+  const { uid, zoneId } = req.body;
+
+  if (!uid || !zoneId) {
+    return res.status(400).json({ success: false, error: "uid and zoneId are required." });
+  }
+
+  const cleanUid = String(uid).trim();
+  const cleanZoneId = String(zoneId).trim();
+
+  if (!/^\d{5,20}$/.test(cleanUid)) {
+    return res.status(400).json({ success: false, error: "UID harus berupa angka 5-20 digit." });
+  }
+  if (!/^\d{1,10}$/.test(cleanZoneId)) {
+    return res.status(400).json({ success: false, error: "Server ID harus berupa angka 1-10 digit." });
+  }
+
+  const merchantId = process.env.APIGAMES_MERCHANT_ID;
+  const secretKey = process.env.APIGAMES_SECRET_KEY;
+  const baseUrl = process.env.APIGAMES_BASE_URL || "https://v1.apigames.id";
+  const gameCode = process.env.APIGAMES_GAME_CODE || "mobilelegend";
+  const idFormat = process.env.APIGAMES_MLBB_ID_FORMAT || "uid";
+  const timeoutMs = parseInt(process.env.APIGAMES_TIMEOUT_MS || "15000", 10);
+  const cacheTtlDays = parseInt(process.env.MLBB_ACCOUNT_CACHE_TTL_DAYS || "30", 10);
+
+  if (!merchantId || merchantId.startsWith("ISI_") || !secretKey || secretKey.startsWith("ISI_")) {
+    return res.status(503).json({ success: false, code: "APIGAMES_NOT_CONFIGURED", message: "Layanan pengecekan akun belum dikonfigurasi." });
+  }
+
+  const cacheKey = getMlbbCacheKey(cleanUid, cleanZoneId);
+  const cached = getMlbbCacheEntry(cacheKey);
+  if (cached) {
+    console.log(`[mlbb-check] cache hit uid=${cleanUid}`);
+    return res.json({ ...cached, cached: true });
+  }
+
+  const existing = mlbbCheckInFlight.get(cacheKey);
+  if (existing) {
+    console.log(`[mlbb-check] dedup uid=${cleanUid}`);
+    return res.json(await existing);
+  }
+
+  const providerUserId = buildApigamesUserId(cleanUid, cleanZoneId, idFormat);
+  const signature = createApigamesSignature(merchantId, secretKey);
+
+  const endpoint = new URL(`/merchant/${encodeURIComponent(merchantId)}/cek-username/${encodeURIComponent(gameCode)}`, `${baseUrl.replace(/\/+$/, "")}/`);
+  endpoint.searchParams.set("user_id", providerUserId);
+  endpoint.searchParams.set("signature", signature);
+
+  console.log(`[mlbb-check] uid=${cleanUid}, zoneId=${cleanZoneId}, format=${idFormat}`);
+
+  const checkPromise = (async () => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      const response = await fetch(endpoint.toString(), {
+        method: "GET",
+        headers: { "Accept": "application/json" },
+        signal: controller.signal,
+      });
+      clearTimeout(timeout);
+
+      const rawText = await response.text();
+      let data: any;
+      try { data = JSON.parse(rawText); } catch { data = null; }
+
+      const ct = response.headers.get("content-type") || "";
+      console.log(`[mlbb-check] upstream status=${response.status} content-type=${ct}`);
+
+      if (!data || typeof data !== "object") {
+        console.log(`[mlbb-check] non-json response, length=${rawText.length}`);
+        return { success: false, code: "APIGAMES_INVALID_RESPONSE", message: "Respons layanan pengecekan akun tidak dikenali." };
+      }
+
+      // Sanitized debug log
+      const topKeys = Object.keys(data).join(",");
+      console.log(`[mlbb-check] response keys=${topKeys}`);
+      if (data.status !== undefined || data.rc !== undefined) {
+        console.log(`[mlbb-check] provider status=${data.status} rc=${data.rc}`);
+      }
+      if (data.message) console.log(`[mlbb-check] provider message=${data.message}`);
+      if (data.error_msg) console.log(`[mlbb-check] provider error_msg=${data.error_msg}`);
+      if (data.data && typeof data.data === "object") {
+        console.log(`[mlbb-check] data keys=${Object.keys(data.data).join(",")}`);
+        console.log(`[mlbb-check] valid=${data.data.is_valid ?? data.data.valid} usernamePresent=${!!(data.data.username || data.data.nickname)}`);
+      }
+
+      // Auth errors
+      const errMsg = String(data.error_msg || data.message || "").toLowerCase();
+      if (data.rc === 401 || errMsg.includes("invalid signature") || errMsg.includes("signature") && errMsg.includes("invalid")) {
+        return { success: false, code: "APIGAMES_AUTH_FAILED", message: "Konfigurasi layanan pengecekan akun tidak valid." };
+      }
+
+      // Limit/saldo errors
+      if (errMsg.includes("limit") || errMsg.includes("saldo") || errMsg.includes("balance") || errMsg.includes("quota")) {
+        return { success: false, code: "APIGAMES_LIMIT_REACHED", message: "Kuota pengecekan akun sedang habis. Coba lagi nanti." };
+      }
+
+      // Flexible nickname extraction
+      const d = data.data && typeof data.data === "object" ? data.data : {};
+      const isValid = d.is_valid ?? d.valid ?? data.is_valid ?? data.valid;
+      const nickname = d.username || d.nickname || data.username || data.nickname || null;
+      const nicknameStr = typeof nickname === "string" ? nickname.trim() : "";
+
+      // Data not found (explicit false)
+      if (isValid === false) {
+        const result = {
+          success: true, valid: false, nickname: null,
+          uid: cleanUid, zoneId: cleanZoneId, provider: "apigames",
+          message: "Akun MLBB tidak ditemukan. Periksa kembali User ID dan Server ID.",
+        };
+        setMlbbCacheEntry(cacheKey, result, 5 * 60 * 1000);
+        return result;
+      }
+
+      // Account valid
+      if (isValid === true && nicknameStr.length > 0) {
+        console.log(`[mlbb-check] valid=true usernamePresent=true`);
+        const isZoneVerified = idFormat !== "uid";
+        const result = {
+          success: true, valid: true, nickname: nicknameStr,
+          uid: cleanUid, zoneId: cleanZoneId, provider: "apigames",
+          providerIdentifierFormat: idFormat,
+          uidVerified: true, zoneVerified: isZoneVerified,
+          message: "Akun ditemukan.",
+        };
+        setMlbbCacheEntry(cacheKey, result, cacheTtlDays * 24 * 60 * 60 * 1000);
+        return result;
+      }
+
+      // Provider-level error
+      if (data.status === 0 || data.success === false || (data.rc !== undefined && data.rc !== 0)) {
+        return { success: false, code: "APIGAMES_PROVIDER_ERROR", message: data.message || data.error_msg || "Layanan pengecekan akun mengembalikan error." };
+      }
+
+      // Unknown format
+      console.log(`[mlbb-check] unrecognized response shape`);
+      return { success: false, code: "APIGAMES_INVALID_RESPONSE", message: "Respons layanan pengecekan akun tidak dikenali." };
+    } catch (err: any) {
+      clearTimeout(timeout);
+      console.log(`[mlbb-check] error: ${err.name === "AbortError" ? "timeout" : err.message}`);
+      return { success: false, code: "APIGAMES_UNAVAILABLE", message: "Layanan pengecekan akun sedang tidak tersedia. Coba lagi nanti." };
+    } finally {
+      mlbbCheckInFlight.delete(cacheKey);
+    }
+  })();
+
+  mlbbCheckInFlight.set(cacheKey, checkPromise);
+  return res.json(await checkPromise);
+});
+
+// API ROUTE: MLBB LINK ACCOUNT (requires login)
+app.post("/api/profile/mlbb/link", async (req, res): Promise<any> => {
+  if (!req.isAuthenticated || !req.isAuthenticated()) {
+    return res.status(401).json({ success: false, error: "Login diperlukan." });
+  }
+
+  const { uid, zoneId } = req.body;
+  if (!uid || !zoneId) {
+    return res.status(400).json({ success: false, error: "uid and zoneId are required." });
+  }
+
+  const cleanUid = String(uid).trim();
+  const cleanZoneId = String(zoneId).trim();
+  const cacheKey = getMlbbCacheKey(cleanUid, cleanZoneId);
+  const cached = getMlbbCacheEntry(cacheKey);
+
+  if (!cached || !cached.valid || !cached.nickname) {
+    return res.status(400).json({ success: false, error: "Akun belum diverifikasi. Silakan cek akun terlebih dahulu." });
+  }
+
+  const user = req.user as any;
+  try {
+    const pool = getNeonPool();
+    const client = await pool.connect();
+    try {
+      await client.query(
+        `UPDATE users SET mlbb_uid = $1, mlbb_sid = $2, mlbb_nickname = $3, updated_at = NOW() WHERE id = $4`,
+        [cleanUid, cleanZoneId, cached.nickname, user.id]
+      );
+      console.log(`[mlbb-link] user=${user.id} linked to uid=${cleanUid}`);
+      return res.json({ success: true, message: "Akun MLBB berhasil dihubungkan.", nickname: cached.nickname, uid: cleanUid, zoneId: cleanZoneId });
+    } finally {
+      client.release();
+    }
+  } catch (err: any) {
+    console.error(`[mlbb-link] error: ${err.message}`);
+    return res.status(500).json({ success: false, error: "Gagal menghubungkan akun." });
+  }
+});
+
+// API ROUTE: MLBB PROVIDER HEALTH CHECK
+app.get("/api/mlbb/provider-health", (_req, res) => {
+  const merchantId = process.env.APIGAMES_MERCHANT_ID;
+  const secretKey = process.env.APIGAMES_SECRET_KEY;
+  const configured = !!(merchantId && secretKey && !merchantId.startsWith("ISI_") && !secretKey.startsWith("ISI_"));
+  res.json({ success: true, provider: "apigames", configured, baseHost: "v1.apigames.id", gameCode: process.env.APIGAMES_GAME_CODE || "mobilelegend" });
+});
+
 // API ROUTE: LIVE INTERNET SCAN & SCRAPING (OPTIMIZED LOGIC) — ADMIN ONLY
 app.post("/api/scrape/liquipedia", async (req, res): Promise<any> => {
   // Admin gate: require ADMIN_TOOLS_ENABLED=true and valid access token
