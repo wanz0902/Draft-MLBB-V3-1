@@ -1,0 +1,673 @@
+{
+  "id": "sun",
+  "name": "Sun",
+  "heroName": "Sun",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Push",
+    "Damage"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2598,
+    "hpRegen": 7.4,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 120,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Swift Exchange",
+      "description": "Sun hurls his (Golden Staff) in the target direction, dealing 200( +40% Total Physical Attack) (Physical Damage) to enemies in its path. He conjures a Doppelganger at his location that lasts 5s and inherits 40% of his attributes (and a portion of Attack Effects), conceals himself, and moves with the (Golden Staff). Sun reappears and retrieves the (Golden Staff) when it hits an enemy hero or reaches the maximum range.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Swift_Exchange",
+      "iconUrl": "/raw-assets/skill_icons/sun/swift_exchange.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Endless Variety",
+      "description": "Sun hurls his (Golden Staff) in the target direction, dealing 200( +40% Total Physical Attack) (Physical Damage) to enemies in its path. Upon hitting an enemy hero or Creep, or reaching the maximum range, the (Golden Staff) morphs into a Doppelganger that lasts 5s and inherits 40% of Sun's attributes (and a portion of his Attack Effects). (Endless Variety) and (Swift Exchange) are learned and upgraded together and share the same cooldown.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Endless_Variety",
+      "iconUrl": "/raw-assets/skill_icons/sun/endless_variety.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Instantaneous Move",
+      "description": "Sun commands his Doppelgangers to strike at the target enemy with him, dealing 170( +40% Total Physical Attack) (Physical Damage) to the target and enemies behind them. This counts as Basic Attack damage and can trigger Attack Effects but cannot Crit.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Instantaneous_Move",
+      "iconUrl": "/raw-assets/skill_icons/sun/instantaneous_move.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Simian God",
+      "description": "Enemies hit by Sun and his Doppelgangers will have their Physical Defense reduced by 4% (stacks up to 10 times). Sun recovers HP equal to 50% of the Doppelganger's Physical Attack each time a Doppelganger deals damage.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Simian_God",
+      "iconUrl": "/raw-assets/skill_icons/sun/simian_god.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Masha",
+        "Jawhead",
+        "Cici",
+        "Hanzo",
+        "Popol and Kupa"
+      ],
+      "weakAgainst": [
+        "Natan",
+        "Ruby",
+        "Aldous",
+        "Joy",
+        "Faramis"
+      ],
+      "synergyWith": [
+        "Cici",
+        "X.Borg",
+        "Gloo",
+        "Dyrroth",
+        "Balmond"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 4.5
+      },
+      {
+        "name": "Jawhead",
+        "advantage": 4.1
+      },
+      {
+        "name": "Cici",
+        "advantage": 4
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.8
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 3.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natan",
+        "advantage": 4.8
+      },
+      {
+        "name": "Ruby",
+        "advantage": 4.4
+      },
+      {
+        "name": "Aldous",
+        "advantage": 4.4
+      },
+      {
+        "name": "Joy",
+        "advantage": 4.2
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Cici",
+        "synergy": 2.2
+      },
+      {
+        "name": "X.Borg",
+        "synergy": 2.2
+      },
+      {
+        "name": "Gloo",
+        "synergy": 1.9
+      },
+      {
+        "name": "Dyrroth",
+        "synergy": 1.7
+      },
+      {
+        "name": "Balmond",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Sun can deal great sustained damage and has armor-busting capabilities, making him a good counter to tanks with low damage output, such as Franco and Gatotkaca.",
+    "weakAgainstReason": "Fighter heroes with Lifesteal can counter Sun, however. For example, heroes like Ruby can steal a lot of HP by hitting Sun and his Dopplegangers.",
+    "synergyReason": "Pair Sun with tanks who have strong CC abilities such as Belerick or Tigreal to create opportunities for Sun to deal damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Sun adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 53.9,
+  "pickRate": 1.6,
+  "banRate": 39.6,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 50,
+    "abilityEffects": 10,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 68,
+    "late": 82,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Corrosion Scythe",
+      "Demon Hunter Sword",
+      "Golden Staff"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Early lane is manageable but he lacks immediate burst and his clone pressure is easier to clear/punish before items. After core on-hit/attack-speed items, his Doppelgangers multiply sustained DPS, shred defenses via passive stacks, and his split-push and Lord-fight damage become dominant late game."
+  },
+  "proBuilds": [
+    {
+      "player": "Issac matthews.",
+      "games": 930,
+      "items": [
+        "Encourage Warrior Boots",
+        "Windtalker",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Tonny.",
+      "games": 615,
+      "items": [
+        "Encourage Rapid Boots",
+        "Windtalker",
+        "Corrosion Scythe",
+        "Great Dragon Spear",
+        "Endless Battle",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "~NERF SUNREX~",
+      "games": 1576,
+      "items": [
+        "Rapid Boots",
+        "Corrosion Scythe",
+        "Windtalker",
+        "Great Dragon Spear",
+        "Berserker's Fury"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/sun/video-0-0.mp4",
+    "skill1": "/videos/heroes/sun/video-1-0.mp4",
+    "skill2": "/videos/heroes/sun/video-2-0.mp4",
+    "ultimate": "/videos/heroes/sun/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 4",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Use Sun's 1st Skill to chip away at enemies, and close the distance once they're low on HP with his 2nd Skill. Then use his 3rd Skill to deal a burst of damage with his Dopplegangers. Sun can start with his Ultimate to summon a Doppleganger, then Blink on the enemy with his 2nd Skill, and finally use his 3rd Skill and Basic Attacks finish them off."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 4",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, Sun can start with his Ultimate to summon a Doppelganger, and approach the enemy with his 2nd Skill. Finally, he can use his 2nd Skill and Basic Attacks to deal damage."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Endless Variety",
+      "Swift Exchange",
+      "Instantaneous Move"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Cadia Riverlands",
+  "race": "Mountain Spirit",
+  "bestTeammates": [
+    {
+      "name": "Cici",
+      "winrateDelta": 2.72
+    },
+    {
+      "name": "X.Borg",
+      "winrateDelta": 2.43
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": 2.16
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": 1.92
+    },
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": 1.8
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Mathilda",
+      "winrateDelta": -3.15
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": -2.64
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -2.45
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": -2.3
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": -2.26
+    }
+  ],
+  "metaScore": 37.18,
+  "metaRank": 3,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Cici",
+        "advantage": 3.82
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.82
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 3.46
+      },
+      {
+        "name": "Karrie",
+        "advantage": 3.43
+      },
+      {
+        "name": "Jawhead",
+        "advantage": 3.35
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Ruby",
+        "advantage": 4.4
+      },
+      {
+        "name": "Joy",
+        "advantage": 3.83
+      },
+      {
+        "name": "Aldous",
+        "advantage": 3.74
+      },
+      {
+        "name": "Alucard",
+        "advantage": 3.56
+      },
+      {
+        "name": "Natan",
+        "advantage": 3.09
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "ini build sund tapi ada cara main nya supaya lebih ampuh",
+      "author": "community",
+      "votes": 17,
+      "items": [
+        "Rapid Boots",
+        "Corrosion Scythe",
+        "Windtalker",
+        "Berserker Fury",
+        "Demon Hunter Sword",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "kalian sering kan main sun? kalau iya biar ku tebak, pasti corrison item pertama kalian bukan? kalau iya ini adalah build yang cocok buat kalian",
+      "tags": [],
+      "lastUpdated": "2025-10-24T02:08:57.408396+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MASTER OF SHADOW",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Windtalker",
+        "Haas Claws",
+        "Corrosion Scythe",
+        "Blade of Despair",
+        "Berserker Fury",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "CRITICAL + PENETRATION",
+      "tags": [],
+      "lastUpdated": "2026-03-16T02:13:53.962316+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "penghancur tank dan turet langsung jebol",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Corrosion Scythe",
+        "Rapid Boots",
+        "Windtalker",
+        "Demon Hunter Sword",
+        "Sea Halberd",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "sangat sakit",
+      "tags": [],
+      "lastUpdated": "2025-11-01T14:40:56.698085+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sun Gold Lane by  GEEK.KennzyySkie",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Windtalker",
+        "Rapid Boots",
+        "Corrosion Scythe",
+        "Malefic Roar",
+        "Sea Halberd",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "(GEEK VS RRQ) Game 2\nMPL ID S16 D3 W1",
+      "tags": [],
+      "lastUpdated": "2025-08-24T17:56:26.408632+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sun jungler 1 hit",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Magic Boots",
+        "Corrosion Scythe",
+        "Windtalker",
+        "Sky Piercer",
+        "Blade of Despair",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Tarik ulur lock mage/mm",
+      "tags": [],
+      "lastUpdated": "2025-10-24T04:36:01.97343+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10870,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10810,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11110,
+      "notes": null
+    }
+  ]
+}

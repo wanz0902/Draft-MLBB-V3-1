@@ -1,0 +1,717 @@
+{
+  "id": "harley",
+  "name": "Harley",
+  "heroName": "Harley",
+  "role": [
+    "Mage",
+    "Assassin"
+  ],
+  "specialty": [
+    "Burst",
+    "Poke"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2408,
+    "hpRegen": 6.8,
+    "mana": 490,
+    "manaRegen": 3.8,
+    "physicalAttack": 100,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.06",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Magic Master",
+      "description": "Harley's mastery of magic allows his Basic Attacks and skills to reduce the enemy's Magic Defense by 2 and increase his Attack Speed by 5%-10% (scales with hero level) for 3s on hit. This effect stacks up to 10 times.\nHarley's Basic Attacks deal 60 (+50% Total Physical Attack) (+60% Total Magic Power) Magic Damage.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+60% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Debuff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Magic_Master",
+      "tips": "Use basic attack on the enemy during the Ultimate, increasing the damage.",
+      "iconUrl": "/raw-assets/skill_icons/harley/magic_master.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Poker Trick",
+      "description": "Harley throws 3 waves of cards, 3 cards per wave. Each card deals 130 (+25% Total Magic Power) Magic Damage to enemies.\nAfter the same target is hit 3 time(s), the damage will decay to 50% on subsequent hits.",
+      "cooldown": "6.0",
+      "manaCost": "55",
+      "damageType": "Magic",
+      "scaling": [
+        "(+25% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "55",
+            "60",
+            "65",
+            "70",
+            "75",
+            "80"
+          ]
+        },
+        {
+          "label": "Cards",
+          "values": [
+            "3",
+            "3",
+            "4",
+            "4",
+            "5",
+            "5"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "130",
+            "150",
+            "160",
+            "180",
+            "190",
+            "210"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Poker_Trick",
+      "tips": "Use this skill to spam enemies. Use this skill to jungle in early game. You could use this skill while walking, making it possible to hit enemies while walking.",
+      "iconUrl": "/raw-assets/skill_icons/harley/poker_trick.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Space Escape",
+      "description": "Harley blinks in the designated direction, leaving a magic hat at his starting location. His Movement Speed increases by 60% for 2s, then rapidly decays to normal over 4s.\nUse Again: Return to the hat's location.",
+      "cooldown": "8.0",
+      "manaCost": "75",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "75",
+            "60",
+            "45",
+            "30",
+            "15",
+            "0"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Space_Escape",
+      "tips": "Using this skill may get a little tricky, if an enemy chase you and faster than you, ran as fast as possible and teleport back to the hat. Ran to nearby forest and escape.",
+      "iconUrl": "/raw-assets/skill_icons/harley/space_escape.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Deadly Magic",
+      "description": "Harley casts a magic ring of fire at an enemy hero, dealing 200 (+60% Total Magic Power) Magic Damage and a 40% slow effect that decays to 15% after 1.5s. The ring will stay around the target, during which Harley can hit the ring to damage the target. The ring will explode after 4s, dealing Magic Damage equal to 200 (+50% Total Magic Power) plus 30% of the damage taken by the target while the ring was active.",
+      "cooldown": "36.0",
+      "manaCost": "120",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)",
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "33.0",
+            "30.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "160",
+            "200"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "30%",
+            "40%",
+            "50%"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Burst",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Deadly_Magic",
+      "tips": "Get rid of minions, you need skill 1 to hit your target directly. Next, use skill 3. When the ring is on the enemy, deal as much damage as possible to the enemy. More the damage, more deadly is the skill.",
+      "iconUrl": "/raw-assets/skill_icons/harley/deadly_magic.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Zone Control",
+      "Burst Damage",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Hanzo",
+        "Joy",
+        "Yve",
+        "Angela",
+        "Gord"
+      ],
+      "weakAgainst": [
+        "Lolita",
+        "Chip",
+        "Saber",
+        "Eudora",
+        "Brody"
+      ],
+      "synergyWith": [
+        "Valentina",
+        "Lylia",
+        "Zhask",
+        "Zhuxin",
+        "Novaria"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 2.7
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.3
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.2
+      },
+      {
+        "name": "Angela",
+        "advantage": 2
+      },
+      {
+        "name": "Gord",
+        "advantage": 2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.1
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.7
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.4
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.4
+      },
+      {
+        "name": "Brody",
+        "advantage": 2.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Valentina",
+        "synergy": 2.8
+      },
+      {
+        "name": "Lylia",
+        "synergy": 2.3
+      },
+      {
+        "name": "Zhask",
+        "synergy": 2.2
+      },
+      {
+        "name": "Zhuxin",
+        "synergy": 2.1
+      },
+      {
+        "name": "Novaria",
+        "synergy": 2.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Harley counters squishy heroes with poor mobility, such as Cecilion and Ixia, since he can deal burst damage while being on the move.",
+    "weakAgainstReason": "Harley is countered by tanky heroes like Lolita and Uranus, because Harley can't deal enough meaningful damage to them and they can block and tank his Ultimate for their teammates.",
+    "synergyReason": "Harley is best with heroes who can disrupt the enemy formation like Akai and Khufra. He can follow them into the fight and burst down the squishy targets."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Harley adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Zone Control",
+    "Burst Damage",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.2,
+  "pickRate": 1.2,
+  "banRate": 70.3,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 90,
+    "abilityEffects": 10,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 75,
+    "mid": 80,
+    "late": 55,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Genius Wand",
+      "Holy Crystal",
+      "Divine Glaive"
+    ],
+    "dominantPhase": null,
+    "description": "Harley spikes early-mid with fast rotations and Deadly Magic pickoffs, especially once he has enough power/pen to delete squishies. His late-game impact drops because targets get defensive items and grouping/vision reduces his ability to safely isolate kills."
+  },
+  "proBuilds": [
+    {
+      "player": "Tiktok : Yuwan 1990",
+      "games": 984,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Genius Wand",
+        "Feather of Heaven",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "TT: Flyyy X T4RN0.",
+      "games": 692,
+      "items": [
+        "Ice Arcane Boots",
+        "Genius Wand",
+        "Feather of Heaven",
+        "Divine Glaive",
+        "Lightning Truncheon",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "㊝ ᴢᴇʀᴏ",
+      "games": 1105,
+      "items": [
+        "Beast Arcane Boots",
+        "Genius Wand",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Feather of Heaven"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/harley/video-0-0.mp4",
+    "skill1": "/videos/heroes/harley/video-1-0.mp4",
+    "skill2": "/videos/heroes/harley/video-2-0.mp4",
+    "ultimate": "/videos/heroes/harley/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, first use Harley's 2nd Skill to get a good angle to cast his 1st Skill, and follow up with Basic Attacks. Then use his 2nd Skill again to get back to safety."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 3",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Harley's 2nd Skill to find a good position to land his Ultimate. Then cast his Ultimate at the target, and follow up with his 1st Skill before moving back to safety with his 2nd Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Akai",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Khufra",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Valentina",
+      "winrateDelta": 3.18
+    },
+    {
+      "name": "Lylia",
+      "winrateDelta": 2.89
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 2.81
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 2.79
+    },
+    {
+      "name": "Zhask",
+      "winrateDelta": 2.52
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Nolan",
+      "winrateDelta": -6.55
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -6.11
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -5.79
+    },
+    {
+      "name": "Fanny",
+      "winrateDelta": -5.66
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -5.56
+    }
+  ],
+  "metaScore": 36.89,
+  "metaRank": 4,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 3.01
+      },
+      {
+        "name": "Gord",
+        "advantage": 2.15
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.1
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.1
+      },
+      {
+        "name": "Valir",
+        "advantage": 1.79
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.58
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.48
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.33
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.28
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.1
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Harley By qeva",
+      "author": "community",
+      "votes": 13,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Feather of Heaven",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T09:10:40.421365+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S17 WEEK 6 DAY 3 ONIC.Kairi",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "( RRQ VS ONIC GAME 1 ) MVP OF THE GAME MPL INDONESIA SEASON 17 WEEK 6 DAY 3 3 MEI 2026",
+      "tags": [],
+      "lastUpdated": "2026-05-03T12:27:59.155872+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Auto trauma",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Genius Wand",
+        "Sky Piercer",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Lightning Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Iseng aja, siapa tau terkenal",
+      "tags": [],
+      "lastUpdated": "2026-04-14T13:13:41.142839+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Starlium",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11790,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Feather",
+        "Heaven",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11790,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 12010,
+      "notes": null
+    }
+  ]
+}

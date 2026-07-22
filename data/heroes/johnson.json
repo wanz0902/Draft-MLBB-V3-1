@@ -1,0 +1,652 @@
+{
+  "id": "johnson",
+  "name": "Johnson",
+  "heroName": "Johnson",
+  "role": [
+    "Tank",
+    "Support"
+  ],
+  "specialty": [
+    "Support",
+    "Crowd Control"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2848,
+    "hpRegen": 8.6,
+    "mana": 470,
+    "manaRegen": 3.4,
+    "physicalAttack": 110,
+    "physicalDefense": 29,
+    "magicPower": 0,
+    "magicDefense": 16,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Electro Airbag",
+      "description": "When Johnson's HP drops below 30%, he gains a 300( +700% Total Physical Defense) shield for 10s. Cooldown: 100s.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Electro_Airbag",
+      "iconUrl": "/raw-assets/skill_icons/johnson/electro_airbag.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Impact Wrench",
+      "description": "Johnson throws his wrench toward the target location, dealing 120( +220% Total Physical Defense) (Magic Damage) to enemies in its path. Enemies around the landing point are stunned for 0.8s.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Impact_Wrench",
+      "iconUrl": "/raw-assets/skill_icons/johnson/impact_wrench.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Electromagnetic Waves",
+      "description": "Johnson raises his shield, continuously dealing 80( +60% Total Magic Power) (Magic Damage) to enemies in a fan-shaped area in the target direction and slowing them by 20%. Each instance of damage also increases the enemy's subsequent damage taken from the skill by 15% (up to 45%). This damage is increased by 60% against creeps. Johnson can cast Basic Attacks and skills for the duration.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Electromagnetic_Waves",
+      "tips": "As you can continue using basic attacks while this skill is active, you can use basic attacks to adjust this skill's direction, and thus greatly increase its hit rate.",
+      "iconUrl": "/raw-assets/skill_icons/johnson/electromagnetic_waves.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Full Throttle",
+      "description": "Johnson transforms into a car and begins accelerating over time. An allied hero can use (Hop In) when near Johnson to board the car (only 1 allied hero can ride with Johnson). The car will explode upon hitting an enemy hero or obstacle, dealing 300( +160% Total Magic Power)-450( +280% Total Magic Power) (Magic Damage) to nearby enemies, stunning them for 0.5-1s (scales with the car's speed before impact), and creating an electrified zone at the location. The zone continuously deals 60( +20% Total Magic Power) (Magic Damage) and slows enemies within. While in car state, tap (Brake) to stop immediately or hold (Nitrous) to continuously gain speed for up to 5s. Johnson's location will be revealed to the enemy team for 3s when casting this skill. (Passive): Johnson's Physical Defense is increased by 10%.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Full_Throttle",
+      "tips": "Take full advantage of Johnson's car form to gank often. You can also carry a teammate with you to steal the enemy's base.",
+      "iconUrl": "/raw-assets/skill_icons/johnson/full_throttle.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Layla",
+        "Eudora",
+        "Zilong",
+        "Saber",
+        "Yin"
+      ],
+      "weakAgainst": [
+        "Gloo",
+        "Alice",
+        "Atlas",
+        "Lylia",
+        "Zhuxin"
+      ],
+      "synergyWith": [
+        "Argus",
+        "Lunox",
+        "Alpha",
+        "Natalia",
+        "Edith"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Layla",
+        "advantage": 3.4
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.5
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.4
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.3
+      },
+      {
+        "name": "Yin",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 3.7
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.4
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.9
+      },
+      {
+        "name": "Lylia",
+        "advantage": 2.6
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Argus",
+        "synergy": 1.8
+      },
+      {
+        "name": "Lunox",
+        "synergy": 1.7
+      },
+      {
+        "name": "Alpha",
+        "synergy": 1.7
+      },
+      {
+        "name": "Natalia",
+        "synergy": 1.6
+      },
+      {
+        "name": "Edith",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Johnson counters melee heroes with high burst like Alucard and Zilong\nbecause of Johnson's high Physical Defense and CC ability.",
+    "weakAgainstReason": "Johnson is countered by agile heroes who deal Magic Damage such as Harith and Kagura because they can easily dodge Johnson's skills while their damage is not affected by his Physical Defense.",
+    "synergyReason": "Johnson works well with heroes that need help initiating like Odette and Kadita since they can just jump into Johnson's Ultimate for a ride."
+  },
+  "mechanicCategory": [
+    "Vehicle",
+    "Carry Ally"
+  ],
+  "mechanicNote": "Johnson berubah menjadi mobil yang bisa membawa satu ally, menabrak musuh dengan damage dan stun area.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.6,
+  "pickRate": 0.8,
+  "banRate": 2.9,
+  "heroAttributes": {
+    "durability": 80,
+    "offense": 30,
+    "abilityEffects": 90,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 40,
+    "mid": 74,
+    "late": 62,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Dominance Ice",
+      "Antique Cuirass",
+      "Athena's Shield"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Johnson’s threat spikes hard at level 4 with map-wide pick potential and chain CC, making mid-game rotations and objective fights his best window. Late game he remains useful as an initiator/peeler, but his impact depends on landing ult crashes and surviving long enough to re-CC."
+  },
+  "proBuilds": [
+    {
+      "player": "ㅤㅤ ㅤ",
+      "games": 1295,
+      "items": [
+        "Encourage Magic Shoes",
+        "Fleeting Time",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Chastise Pauldron",
+        "Blade Armor"
+      ]
+    },
+    {
+      "player": "SP1CY LA VEDA",
+      "games": 1343,
+      "items": [
+        "Encourage Magic Shoes",
+        "Dominance Ice",
+        "Blade Armor",
+        "Chastise Pauldron",
+        "Antique Cuirass",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "RonSkie",
+      "games": 1631,
+      "items": [
+        "Encourage Magic Shoes",
+        "Fleeting Time",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Blade Armor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/johnson/video-0-0.mp4",
+    "skill1": "/videos/heroes/johnson/video-1-0.mp4",
+    "skill2": "/videos/heroes/johnson/video-2-0.mp4",
+    "ultimate": "/videos/heroes/johnson/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Johnson's 1st Skill to stun enemies, then move in and hit them with his 2nd Skill and Basic Attacks."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1"
+      ],
+      "description": "In teamfights, cast Johnson's Ultimate and pick up a teammate before engaging the enemy. Then follow up with his 2nd Skill and 1st Skill to CC the enemy again."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Layla",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Bruno",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Odette",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Kadita",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Cyborg",
+  "bestTeammates": [
+    {
+      "name": "Edith",
+      "winrateDelta": 2.08
+    },
+    {
+      "name": "Arlott",
+      "winrateDelta": 1.71
+    },
+    {
+      "name": "Silvanna",
+      "winrateDelta": 1.27
+    },
+    {
+      "name": "Chou",
+      "winrateDelta": 1.17
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": 1.1
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Khufra",
+      "winrateDelta": -16.28
+    },
+    {
+      "name": "Minotaur",
+      "winrateDelta": -16.15
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": -16.01
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -13.2
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -13.1
+    }
+  ],
+  "metaScore": 17.96,
+  "metaRank": 54,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Layla",
+        "advantage": 2.96
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.33
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.13
+      },
+      {
+        "name": "Eudora",
+        "advantage": 1.96
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 1.95
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 2.58
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.58
+      },
+      {
+        "name": "Alice",
+        "advantage": 2.51
+      },
+      {
+        "name": "Lylia",
+        "advantage": 2.43
+      },
+      {
+        "name": "Carmilla",
+        "advantage": 2.4
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Johnson demage + attack speed",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Swift Boots",
+        "Concentrated Energy",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Feather of Heaven",
+        "Corrosion Scythe"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-26T12:05:15.040781+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "tebel lumayan sakit",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Dominance Ice",
+        "Oracle",
+        "Athena's Shield",
+        "Antique Cuirass",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-12-04T10:18:34.760874+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Johnson Beton Tebel",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Warrior Boots",
+        "Blade Armor",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Radiant Armor",
+        "Antique Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "Build untuk Hero Johnson yang sangat saya rekomendasikan untuk bermain Tahan Badan (TB), Defense, atau membantu rekan tim yang sedang War ataupun sedang mengambil objektif Turtle, Lord, dan Push Turret.",
+      "tags": [],
+      "lastUpdated": "2026-03-22T13:14:05.943011+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage,tank",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Blade Armor",
+        "Fleeting Time",
+        "Blade Armor",
+        "Antique Cuirass",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Dll",
+      "tags": [],
+      "lastUpdated": "2026-01-30T12:58:47.263429+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Antique",
+        "Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11060,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Blade",
+        "Armor"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 10760,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Cursed",
+        "Helmet"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10440,
+      "notes": null
+    }
+  ]
+}

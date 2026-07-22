@@ -1,0 +1,730 @@
+{
+  "id": "novaria",
+  "name": "Novaria",
+  "heroName": "Novaria",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Burst",
+    "Poke"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2410,
+    "hpRegen": 6.6,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 97,
+    "physicalDefense": 15,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.01",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Star Trail",
+      "description": "(Astral Spheres) summoned by Novaria will continuously slow nearby enemies by 20% and grant vision of them.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Star_Trail",
+      "tips": "Helps Novaria grasp the movement of enemy heroes so that she can hit them with [Star Shatter] more easily.",
+      "iconUrl": "/raw-assets/skill_icons/novaria/star_trail.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Astral Meteor",
+      "description": "Novaria summons an Astral Sphere at the target location, dealing 75 (+25% Total Magic Power) Magic Damage every 0.33s and applying a continuously increasing slow effect (up to 2.5 times the original). After 2s, the Astral Sphere explodes, dealing 260 (+50% Total Magic Power) (+4% target's Max HP) Magic Damage and applying 2.5 times the slow effect.",
+      "cooldown": "8.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+25% Total Magic Power)",
+        "(+50% Total Magic Power)",
+        "(+4% target's Max HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "68",
+            "76",
+            "84",
+            "92",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "75",
+            "90",
+            "105",
+            "120",
+            "135",
+            "150"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "260",
+            "285",
+            "310",
+            "335",
+            "360",
+            "385"
+          ]
+        },
+        {
+          "label": "Extra Percentage Damage",
+          "values": [
+            "4%",
+            "4%",
+            "4%",
+            "4%",
+            "4%",
+            "4%"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Slow",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Astral_Meteor",
+      "tips": "Use this skill to clear the lane and slow down the enemies, so that you can hit them with your Second Skill more easily.",
+      "iconUrl": "/raw-assets/skill_icons/novaria/astral_meteor.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Astral Recall",
+      "description": "Novaria summons an Astral Sphere at a distance and draws it towards herself. She gains 20% Movement Speed and can pass through terrain. Moving through terrain increases the Movement Speed boost to 60%.\nUpon catching the Astral Sphere, Novaria can launch the Star Shatter in the target direction within 5s. The sphere will explode when hitting an enemy hero, dealing 230 (+90% Total Magic Power) Magic Damage plus 4% of the target's Max HP. The damage will increase based on the Astral Sphere's travel distance (during both draw and launch), up to 2.5 times the original damage.",
+      "cooldown": "7.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+90% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "70",
+            "80",
+            "90",
+            "100",
+            "110"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "230",
+            "260",
+            "290",
+            "320",
+            "350",
+            "380"
+          ]
+        },
+        {
+          "label": "Extra Percentage Damage",
+          "values": [
+            "4%",
+            "4%",
+            "4%",
+            "4%",
+            "4%",
+            "4%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Astral_Recall",
+      "tips": "Use the terrain-ignoring advantage to maximize the damage of Second Skill. It can also be used as an escape ability.",
+      "iconUrl": "/raw-assets/skill_icons/novaria/astral_recall.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Astral Echo",
+      "description": "Novaria scatters Astral Echo in the target direction, briefly slowing enemy heroes hit by 50% while applying Astral Ring on them. It increases targets' hitbox by 2.5 times and reveals their position for 5s.",
+      "cooldown": "48.0",
+      "manaCost": "100",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "48.0",
+            "44.0",
+            "40.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "100",
+            "50",
+            "0"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Astral_Echo",
+      "tips": "An ultra-long-range skill that can provide the vision needed for her Second Skill to hit the enemy.",
+      "iconUrl": "/raw-assets/skill_icons/novaria/astral_echo.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Diggie",
+        "Luo Yi",
+        "Valir",
+        "Yve",
+        "Faramis"
+      ],
+      "weakAgainst": [
+        "Natalia",
+        "Ling",
+        "Moskov",
+        "Masha",
+        "Harith"
+      ],
+      "synergyWith": [
+        "Zhask",
+        "Valentina",
+        "Barats",
+        "Eudora",
+        "Masha"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 2.6
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 2.3
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.2
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.2
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Ling",
+        "advantage": 3
+      },
+      {
+        "name": "Moskov",
+        "advantage": 2.9
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.8
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Zhask",
+        "synergy": 2.3
+      },
+      {
+        "name": "Valentina",
+        "synergy": 2.3
+      },
+      {
+        "name": "Barats",
+        "synergy": 1.5
+      },
+      {
+        "name": "Eudora",
+        "synergy": 1.4
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Novaria counters Mages with shorter range and low mobility, such as Eudora and Odette, because these heroes can't reach Novaria while Novaria can hit them with her 2nd Skill.",
+    "weakAgainstReason": "Novaria is countered by Assassins with strong targeted burst damage, such as Saber and Hayabusa, because they can easily close in on Novaria and burst her down.",
+    "synergyReason": "Novaria works well with other long-range heroes like Beatrix and Layla because her Ultimate makes any target a sitting duck for her team to pick off."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Novaria adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.2,
+  "pickRate": 0.8,
+  "banRate": 1.5,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 90,
+    "abilityEffects": 30,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 75,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Lightning Truncheon",
+      "Genius Wand",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Her poke becomes reliably threatening once she has ult (vision + enlarged hitbox) and enough magic power/CDR to repeatedly set up long-distance S2 detonations. Late game stays strong due to %Max HP and long-range pick potential, but she’s less consistent than full-scaling DPS mages if enemies get on top of her."
+  },
+  "proBuilds": [
+    {
+      "player": "LALLAPALLOOZA",
+      "games": 476,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Blood Wings",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "İcardi44",
+      "games": 1522,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "g0d88",
+      "games": 489,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/novaria/video-0-0.mp4",
+    "skill1": "/videos/heroes/novaria/video-1-0.mp4",
+    "skill2": "/videos/heroes/novaria/video-2-0.mp4",
+    "ultimate": "/videos/heroes/novaria/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Novaria's Ultimate to gain vision of the battlefield, then summon an Astral Sphere with her 2nd Skill. After catching the Astral Sphere, launch it to damage the enemy and use her 1st Skill to thwart enemy heroes that try to get close."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, initiate by using Novaria's 2nd Skill to gain extra Movement Speed and summon an Astral Sphere. Then, slow the enemy with her 1st Skill and use her 2nd Skill again to launch the Astral Sphere to deal damage."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Astral Echo",
+      "Astral Recall",
+      "Astral Meteor"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Beatrix",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Layla",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Half-Human, Half-Star",
+  "bestTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": 5.52
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 4.71
+    },
+    {
+      "name": "Eudora",
+      "winrateDelta": 2.26
+    },
+    {
+      "name": "Aurora",
+      "winrateDelta": 2.18
+    },
+    {
+      "name": "Alice",
+      "winrateDelta": 2.01
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -3.51
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -2.18
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -1.91
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -1.71
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": -1.53
+    }
+  ],
+  "metaScore": 11.06,
+  "metaRank": 111,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 2.12
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 1.97
+      },
+      {
+        "name": "Diggie",
+        "advantage": 1.97
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.88
+      },
+      {
+        "name": "Bane",
+        "advantage": 1.86
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.27
+      },
+      {
+        "name": "Aldous",
+        "advantage": 2.43
+      },
+      {
+        "name": "Lunox",
+        "advantage": 2.37
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.29
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.16
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "1 HIT (Burst Damage)",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Glowing Wand",
+        "Sky Piercer",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-10T00:24:05.234736+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "SATU HIT",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Genius Wand",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "damage sakit saat leat game",
+      "tags": [],
+      "lastUpdated": "2025-11-21T20:35:26.83417+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Para beban",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Wishing Lantern"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-25T00:39:23.720801+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 11040,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 10990,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10690,
+      "notes": null
+    }
+  ]
+}

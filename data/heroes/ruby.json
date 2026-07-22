@@ -1,0 +1,698 @@
+{
+  "id": "ruby",
+  "name": "Ruby",
+  "heroName": "Ruby",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Crowd Control",
+    "Regen"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2681,
+    "hpRegen": 8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 115,
+    "physicalDefense": 23,
+    "magicPower": 0,
+    "magicDefense": 12,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Let's Dance!",
+      "description": "Ruby starts with 10% Spell Vamp and her skills have a 125% Spell Vamp Ratio (but her Basic Attacks cannot trigger Lifesteal). After each skill cast, Ruby can dash to another location and gain 9 (+1.8*Hero Level) Physical & Magic Defense (scales with level) for 4s (stacks up to 3 times).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Let's_Dance!",
+      "tips": "It can pass through base walls for real..as long as the walls is not too thickother than that is useless so use it wisely if you're in Pursuit or Escaping saw a wall.Just cast your skill nearby walls and just move foward because when you use a flicker you might be dead twice before you can use it again.",
+      "iconUrl": "/raw-assets/skill_icons/ruby/let_s_dance.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Be Good!",
+      "description": "Ruby swings her scythe, dealing 90( +70% Total Physical Attack) (Physical Damage) to enemies hit. She then unleashes a shockwave in the same direction, dealing 90( +70% Total Physical Attack) (Physical Damage) to enemies hit and slowing them by 40% for 2s.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Be_Good!",
+      "tips": "S1 Slashed in frontal direction and dealing a 75 PHYSICAL DAMAGE to enemies and slowing their movement.It does not really give a high damage to enemies and it does not hurt all all for tanks in early game maybe but it quite useful a bit to clear up lanes helping your minions and harrasing your enemies a little.But if you happen to be countering a ranged attack heroes in early games its good enough for you to stay out of their hotspot or area of attack..it won't cost much of mana if you use it wisely..But when you Lifesteal Gear is finished,it might be as well as healing stuff if you have the lifesteal.",
+      "iconUrl": "/raw-assets/skill_icons/ruby/be_good.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Don't Run, Wolf King!",
+      "description": "Ruby swings her scythe around herself twice, each swing dealing 60( +55% Total Physical Attack) (Physical Damage) to nearby enemies, stunning them for 0.5s, and slowly pulling them toward her.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Don't_Run,_Wolf_King!",
+      "tips": "Second skill is come in handy in Many..Many ways.When the skill is triggered,she will attack twice and stunning the enemies for at least 0.5 second at first level and slowly pulling them towards her and it deals additionals 30% damage when the enemy at outer ring.For the new players,This skill can stop any swift assassin as long as you caught the great timing.You might be able to pursuit enemy and slowing them down for your allies to catch up.",
+      "iconUrl": "/raw-assets/skill_icons/ruby/don_t_run_wolf_king.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "I'm Offended!",
+      "description": "Ruby sweeps her scythe in the target direction, dealing 200( +200% Total Physical Attack) (Physical Damage) to enemies hit, pulling them toward her, and stunning them for 0.5s.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "I'm_Offended!",
+      "tips": "Her third skill can pull all of enemies in front.I'M OFFENDED.When triggered she able to attack horizontally in a Wide Range.Dealing 205 pts of Physical Damage at first level and able to pulling them towards hero positions plus stunning them for 0.5 secs at first level.Its quite similar to Franco's hook but this one is a little short but able to be pulling all enemy in the area of attack.",
+      "iconUrl": "/raw-assets/skill_icons/ruby/i_m_offended.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Sun",
+        "Argus",
+        "Masha",
+        "Karina"
+      ],
+      "weakAgainst": [
+        "X.Borg",
+        "Phoveus",
+        "Gord",
+        "Sora",
+        "Arlott"
+      ],
+      "synergyWith": [
+        "Faramis",
+        "Marcel",
+        "Masha",
+        "Luo Yi",
+        "Ixia"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 4.6
+      },
+      {
+        "name": "Sun",
+        "advantage": 4.4
+      },
+      {
+        "name": "Argus",
+        "advantage": 3.4
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.7
+      },
+      {
+        "name": "Karina",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 3.8
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.4
+      },
+      {
+        "name": "Gord",
+        "advantage": 3
+      },
+      {
+        "name": "Sora",
+        "advantage": 2.3
+      },
+      {
+        "name": "Arlott",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Faramis",
+        "synergy": 2.9
+      },
+      {
+        "name": "Marcel",
+        "synergy": 1.4
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.1
+      },
+      {
+        "name": "Luo Yi",
+        "synergy": 1.1
+      },
+      {
+        "name": "Ixia",
+        "synergy": 1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Ruby is strong against Fighter heroes with high burst damage. She can easily survive their burst with her excellent Regen and Lifesteal abilities. Such as Aldous and Guinevere.",
+    "weakAgainstReason": "Ruby is countered by Marksman heroes with good Mobility. Because they can easily dodge her 2nd and Ultimate skills. Like Wanwan and Irithel.",
+    "synergyReason": "Ruby works best with heroes who can deal high AOE burst damage. Their skills can deal more damage to enemies who are stunned and pulled by her 2nd and Ultimate skills. Such as Pharsa and Kadita."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Ruby adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.8,
+  "pickRate": 0.4,
+  "banRate": 0.5,
+  "heroAttributes": {
+    "durability": 90,
+    "offense": 20,
+    "abilityEffects": 90,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Queen's Wings",
+      "Dominance Ice"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Ruby is playable early with sustain, but her real value ramps when teamfights start and she can chain pulls/stuns and front-line with stacked defenses from her passive. Late game she remains impactful as an engage/peel tank-fighter, though her damage falls off relative to carries and she relies on landing CC."
+  },
+  "proBuilds": [
+    {
+      "player": "ILoveLeagueOfLegends",
+      "games": 678,
+      "items": [
+        "War Axe",
+        "Tough Boots",
+        "Endless Battle",
+        "Queen's Wings",
+        "Hunter Strike",
+        "Oracle"
+      ]
+    },
+    {
+      "player": "Nozuyaaa",
+      "games": 1293,
+      "items": [
+        "War Axe",
+        "Tough Boots",
+        "Endless Battle",
+        "Queen's Wings",
+        "Sea Halberd",
+        "Oracle"
+      ]
+    },
+    {
+      "player": "Tensionacho.",
+      "games": 984,
+      "items": [
+        "War Axe",
+        "Tough Boots",
+        "Queen's Wings",
+        "Endless Battle",
+        "Sea Halberd",
+        "Oracle"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/ruby/video-0-0.mp4",
+    "skill1": "/videos/heroes/ruby/video-1-0.mp4",
+    "skill2": "/videos/heroes/ruby/video-2-0.mp4",
+    "ultimate": "/videos/heroes/ruby/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "In teamfights, use Ruby's 1st Skill to slow the enemy at a distance, and close in with her Passive dash. Then use her 2nd Skill to stun the enemies in range and use her Ultimate to pull back those who try to escape."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, Use Ruby's 1st Skill to slow down the enemy, and the dash from her Passive to get closer. Then cast Ruby's Ultimate to pull the enemy into melee range and her 2nd Skill to keep them stunned. Finally, spam her Basic Attacks to finish them off."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Pharsa",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Kadita",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Faramis",
+      "winrateDelta": 5.3
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": 3.16
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 2.5
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 2.19
+    },
+    {
+      "name": "Beatrix",
+      "winrateDelta": 2.05
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Aldous",
+      "winrateDelta": -6.04
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -5.32
+    },
+    {
+      "name": "Argus",
+      "winrateDelta": -5.01
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -4.21
+    },
+    {
+      "name": "Edith",
+      "winrateDelta": -4.17
+    }
+  ],
+  "metaScore": 16.57,
+  "metaRank": 70,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 4.8
+      },
+      {
+        "name": "Sun",
+        "advantage": 4.4
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.83
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.49
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.49
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 3.95
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.58
+      },
+      {
+        "name": "Gord",
+        "advantage": 3.06
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.67
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.46
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Spell vamp deres enak war ramai 1 vs 5 sanggup ",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Queen's Wings",
+        "Sea Halberd",
+        "Oracle",
+        "Brute Force Breastplate"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-23T17:26:26.763245+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "gacorrr jir kebal",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Magic Boots",
+        "War Axe",
+        "Oracle",
+        "Brute Force Breastplate",
+        "Dominance Ice",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "kalo mau coba aja",
+      "tags": [],
+      "lastUpdated": "2025-09-13T18:18:28.728485+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Exp TB",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Oracle",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Buat jafi exp pasang badan dan colldown cepet",
+      "tags": [],
+      "lastUpdated": "2025-10-16T11:07:34.757809+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Ruby GoldLane \"SRG INNOCENT\"",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Queen's Wings",
+        "Hunter Strike",
+        "Sea Halberd",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "NO CAPTION",
+      "tags": [],
+      "lastUpdated": "2025-10-31T12:50:17.707098+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 FINAL LOWER BRACKET DAY 5 AE.Nino",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Radiant Armor",
+        "Oracle",
+        "Queen's Wings",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( AE VS SRG GAME 4 ) M7 WORLD CHAMPIONSHIP FINAL LOWER BRACKET 24 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-25T13:10:18.012545+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Queen's",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11040,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Queen's",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11230,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10680,
+      "notes": null
+    }
+  ]
+}

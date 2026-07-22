@@ -1,0 +1,728 @@
+{
+  "id": "ling",
+  "name": "Ling",
+  "heroName": "Ling",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2450,
+    "hpRegen": 7.2,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 132,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.01",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Cloud Walker",
+      "description": "Ling's superb Lightness Skill allows him to leap among walls. He gains 4 extra Lightness Points per second when he's on a wall and 5 extra Lightness Points each time he deals damage.\nLing gains 1.6 times Crit Chance from all sources but only has 140% Crit Damage.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Cloud_Walker",
+      "tips": "Ling's superb lightness skill helps him leap from wall to wall to chase enemies. When resting on the wall, Ling restores extra Lightness Points per second. Every time Ling deals damage to enemies, he restores extra Lightness Points. Ling’s lightness skill grants him Crit Chance, but decreases his Crit Damage. The Crit Chance of Ling’s Passive Skill grants him the possibility of dealing Burst DMG in Early Game. With proper equipment and emblems, the Crit Chance could greatly increase the burst DMG he deals.",
+      "iconUrl": "/raw-assets/skill_icons/ling/cloud_walker.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Finch Poise",
+      "description": "Passive: Ling's Crit Chance is permanently increased by 2.5%.\nActive: Ling casts his Lightness Skill, leaping onto the designated wall, entering half-stealth state, restoring Lightness Points more quickly and gaining 30% Movement Speed. If Ling receives damage, he will leave the half-stealth state. If he is controlled, he will fall onto the ground and be slowed by 30% for 2s. When using this skill to jump from a wall to another, it will reset the Cooldown and refresh the half-stealth state.",
+      "cooldown": "20.0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Crit Chance",
+          "values": [
+            "2.5%",
+            "4.5%",
+            "6.5%",
+            "8.5%",
+            "10.5%",
+            "12.5%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Finch_Poise",
+      "tips": "Passive: Ling permanently increases the Crit Chance. His Crit Chance will be improved after 1st Skill levels up. Active: Ling casts his Qinggong (lightness skill), leaping to the designated wall, entering camouflage state and restoring Lightness Points more quickly. When Ling receives damage, he will end the camouflaged state. If he is controlled, he will fall onto the ground. When using this skill to jump from a wall to another, it will reset the CD and refresh the Camouflage State. Ling could quickly leap from wall to wall and could move to anywhere at the battlefield. He could escape from the danger quickly.",
+      "iconUrl": "/raw-assets/skill_icons/ling/finch_poise.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Defiant Sword",
+      "description": "Ling charges in the target direction and stabs nearby enemies, dealing them 300 (+50% Total Physical Attack) Physical Damage.\nIf Ling casts this skill when he's on the wall (no energy cost), he'll dash to the target location on the ground, dealing 300 (+50% Total Physical Attack) Physical Damage to enemies in the area and slowing them by 30% for 1.5s.\nDefiant Sword is regarded as Basic Attack.",
+      "cooldown": "2.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+50% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "320",
+            "340",
+            "360",
+            "380",
+            "400"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Defiant_Sword",
+      "tips": "Ling charges in a designated direction and stabs the nearby enemies at his destination. If Ling casts this skill when he is on the wall, he will dash to a designated spot on the ground, dealing Damage to enemies within a small area and slowing them down. If this attack deals Crit damage, enemies within the area will extra be slowed. \"Defiant Sword\" can trigger ATK Effects as Basic Attack and can restore HP for Ling each time he hits an enemy. This is Ling's main DMG skill, which could deal Critical Damage and trigger ATK Effect. Use it wisely and Ling could deal massive burst damage.",
+      "iconUrl": "/raw-assets/skill_icons/ling/defiant_sword.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Tempest of Blades",
+      "description": "Ling leaps into the air, becoming invincible and gaining 10% extra Movement Speed for 1.5s. He ignores obstacles when in the air. He then lands on the ground, dealing 250 (+100% Total Physical Attack) Physical Damage to enemies in the area and slowing them by 40% for 1.5s, knocking those in the center airborne for 1s, and creating a Sword Field for 8s.\nFour Tempest of Blades will also appear on the edge of the Sword Field. Ling can touch them to reduce the cooldown of Finch Poise by 4s, reset the cooldown of Defiant Sword, and gain 25 Lightness points.",
+      "cooldown": "52.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+100% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "52.0",
+            "49.0",
+            "46.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "350",
+            "450"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Tempest_of_Blades",
+      "tips": "Ling leaps up and casts his superb sword skill for 1.5s, during which he becomes invincible and can move freely, dealing Damage to enemies within the area of effect, knocking the central enemy into the air, and generating a Sword Field. At the edge of the Sword Field, there will be 4 field eyes “Tempest of Blades\". By touching the field eye, Ling can reset the CD of \"Defiant Sword\" and restore Lightness Points. Choosing the right timing to activate this skill can dramatically help Ling to dodge massive DMG. Ling can get CC if he hits enemies with the core of the skill. By touching the field eye, Ling can reset \"Defiant Sword\" and restore Lightness Points and deal burst damage.",
+      "iconUrl": "/raw-assets/skill_icons/ling/tempest_of_blades.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Hanzo",
+        "X.Borg",
+        "Gloo",
+        "Balmond",
+        "Atlas"
+      ],
+      "weakAgainst": [
+        "Natalia",
+        "Saber",
+        "Lukas",
+        "Floryn",
+        "Masha"
+      ],
+      "synergyWith": [
+        "Nolan",
+        "Barats",
+        "Dyrroth",
+        "Pharsa",
+        "Joy"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 4
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.6
+      },
+      {
+        "name": "Gloo",
+        "advantage": 3.5
+      },
+      {
+        "name": "Balmond",
+        "advantage": 3.3
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 4.7
+      },
+      {
+        "name": "Saber",
+        "advantage": 3.2
+      },
+      {
+        "name": "Lukas",
+        "advantage": 3
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.9
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Nolan",
+        "synergy": 3.2
+      },
+      {
+        "name": "Barats",
+        "synergy": 2.8
+      },
+      {
+        "name": "Dyrroth",
+        "synergy": 1.5
+      },
+      {
+        "name": "Pharsa",
+        "synergy": 1.5
+      },
+      {
+        "name": "Joy",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Ling's excellent pursuit abilities and high burst damage make him strong against squishy heroes, like Layla and Hanabi.",
+    "weakAgainstReason": "Ling is countered by heroes with strong single-target CC and high burst damage, as they can easily control Ling and burst him down. Such as Eudora and Jawhead.",
+    "synergyReason": "Ling works best with support heroes with CC abilities, that make Ling more flexible in different situations. Such as Angela and Khufra."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Ling adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 45.3,
+  "pickRate": 0.2,
+  "banRate": 0.2,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 60,
+    "abilityEffects": 30,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 68,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Berserker's Fury",
+      "Endless Battle",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Ling’s early is already dangerous due to wall mobility and fast access to backliners, but he’s still item-reliant to consistently one-combo targets. His biggest spike is mid game with ultimate unlock for invulnerability/CC setup plus first damage items, enabling repeated picks and objective pressure; late game he can be less reliable into grouped teams with peel/lockdown and defensive itemization."
+  },
+  "proBuilds": [
+    {
+      "player": "Yuan`",
+      "games": 1109,
+      "items": [
+        "Ice Tough Boots",
+        "Berserker's Fury",
+        "Haas' Claws",
+        "Sea Halberd",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "影零神零影",
+      "games": 560,
+      "items": [
+        "Ice Tough Boots",
+        "Berserker's Fury",
+        "Haas' Claws",
+        "Endless Battle",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Saichi x NEXXA",
+      "games": 648,
+      "items": [
+        "Haas' Claws",
+        "Berserker's Fury",
+        "Ice Tough Boots",
+        "Blade of Despair",
+        "Endless Battle"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/ling/video-0-0.mp4",
+    "skill1": "/videos/heroes/ling/video-1-0.mp4",
+    "skill2": "/videos/heroes/ling/video-2-0.mp4",
+    "ultimate": "/videos/heroes/ling/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 3",
+        "Skill 2"
+      ],
+      "description": "In teamfights, Ling should move onto the wall with his 1st Skill, then use his 2nd Skill to land on enemy back-row heroes. Once landed, Ling should attack the target heroes with his Basic Attacks, and then cast his Ultimate to avoid incoming damage. He should then follow his targets when in the air to deal damage and knock them airborne. He can then dash with his 2nd Skill between the Tempest Blades to reset its cooldown and restore Lightness Points."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, Ling should use his 1st Skill to leap onto the wall, and strike down with his 2nd Skill to deal damage to the target enemy and slow them. Follow up with Ling's Basic Attacks and his 2nd Skill to chase down the enemy hero."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Baxia",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Wanwan",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Zilong",
+      "relationship": "FELLOW DISCIPLE"
+    },
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Khufra",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Joy",
+      "winrateDelta": 5.72
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": 5.66
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": 3.44
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 3.35
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 3.3
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -17.12
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -15.81
+    },
+    {
+      "name": "Fanny",
+      "winrateDelta": -13.69
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -12.64
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -12.31
+    }
+  ],
+  "metaScore": 5.48,
+  "metaRank": 126,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 5.93
+      },
+      {
+        "name": "Gloo",
+        "advantage": 3.83
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.62
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.33
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.28
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 5.6
+      },
+      {
+        "name": "Natalia",
+        "advantage": 5.06
+      },
+      {
+        "name": "Lunox",
+        "advantage": 3.82
+      },
+      {
+        "name": "Valentina",
+        "advantage": 3.55
+      },
+      {
+        "name": "Saber",
+        "advantage": 3.34
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Ling By qeva",
+      "author": "community",
+      "votes": 11,
+      "items": [
+        "Tought Boots",
+        "Haas Claws",
+        "Berserker Fury",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T09:04:11.387818+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "ling Lifeteel, critical",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Berserker Fury",
+        "Haas Claws",
+        "War Axe",
+        "Endless Battle",
+        "Windtalker"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-05-08T13:20:21.651568+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Ling patch terbaru",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Haas Claws",
+        "Berserker Fury",
+        "Blade of Despair",
+        "War Axe",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Dari natanz",
+      "tags": [],
+      "lastUpdated": "2026-04-23T13:55:33.891613+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Musuh auto rata ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Berserker Fury",
+        "Haas Claws",
+        "Endless Battle",
+        "Malefic Roar",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-04T23:08:15.97166+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "ling full damage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Berserker Fury",
+        "Tought Boots",
+        "Haas Claws",
+        "Blade of Despair",
+        "Great Dragon Spear",
+        "Endless Battle"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "optimal damage",
+      "tags": [],
+      "lastUpdated": "2025-10-23T01:49:03.644652+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Berserker's",
+        "Fury",
+        "Haas's",
+        "Claws"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12510,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Sky",
+        "Piercer",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11960,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Berserker's",
+        "Fury",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11650,
+      "notes": null
+    }
+  ]
+}

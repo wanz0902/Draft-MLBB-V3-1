@@ -1,0 +1,742 @@
+{
+  "id": "alice",
+  "name": "Alice",
+  "heroName": "Alice",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Charge",
+    "Regen"
+  ],
+  "lane": "Mid",
+  "lanes": [
+    "Mid",
+    "EXP",
+    "Roam",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "EXP",
+    "Roam",
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2521,
+    "hpRegen": 7.8,
+    "mana": 490,
+    "manaRegen": 3.8,
+    "physicalAttack": 101,
+    "physicalDefense": 21,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Crimson Blood Banquet",
+      "description": "When Alice's skills hit, she gains 1 stack(s) of Crimson lasting 4s. Once Crimson reaches 2 stacks, Blood Banquet activates, dealing 25 (+30% Total Magic Power) plus 0.5%-2,5% of the target's Max HP (scales with level) as Magic Damage to nearby units (hitting heroes with skills refreshes the duration) and recovering 10 (+3% Extra Max HP) HP for Alice every 0.5s.\nWhile Blood Banquet is active, Alice gains 8% Movement Speed. Blood Banquet can deal up to 70(+10*Hero Level) Magic Damage to creeps.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+30% Total Magic Power)",
+        "(+3% Extra Max HP)",
+        "(+10*Hero Level)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Heal"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blood_Ancestry",
+      "tips": "When a nearby minion dies, a blood orb is generated. Each blood orb absorbed permanently increases Alice's max HP . After absorbing blood orbs, she will receive an additional upgrade of Cooldown Reduction/ Spell Vamp/ movement speed.",
+      "iconUrl": "/raw-assets/skill_icons/alice/blood_ancestry.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Crimson Gleam",
+      "description": "Alice fires blood energy forward, dealing 100 (+50% Total Magic Power Magic Damage. Before the blood energy dissipates, this skill can be cast again to activate Scarlet Shadow, allowing Alice to blink to the blood energy's location.",
+      "cooldown": "12.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.2",
+            "10.4",
+            "9.6",
+            "8.8",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "100",
+            "120",
+            "140",
+            "160",
+            "180",
+            "200"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Flowing_Blood",
+      "tips": "Alice fires a blood orb in the specified direction, dealing points of Magic Damage to enemies. Using this skill again to immediately teleport to the orb's location.",
+      "iconUrl": "/raw-assets/skill_icons/alice/flowing_blood.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Doom Waltz",
+      "description": "Alice performs a deadly dance, dealing 350 (+130% Total Magic Power) Magic Damage to nearby enemies and slowing them by 70% for 1s. If Blood Banquet is active at this time, it also scorches enemies, dealing 300% of Blood Banquet's damage and healing Alice for the same amount.",
+      "cooldown": "4.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+130% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "350",
+            "390",
+            "430",
+            "470",
+            "510",
+            "550"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Slow",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blood_Awe",
+      "tips": "Alice deals points of Magic Damage to nearby enemies, immobilizing them for 1.2 seconds, then the enemies will be slowed for 2 seconds.",
+      "iconUrl": "/raw-assets/skill_icons/alice/blood_awe.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Throne of Ruin",
+      "description": "Alice surrounds herself with blood, gaining Control Immunity and 50% Damage Reduction while slowing herself by 50%. After 1.5s, she descends with force dealing 500 (+150% Total Magic Power) (+20% Extra Max HP) Magic Damage to all enemies in range and immobilizing them for 1s.\nWhile charging her Ultimate, Alice can only use Scarlet Shadow.",
+      "cooldown": "60.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)",
+        "(+20% Extra Max HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "60.0",
+            "55.0",
+            "50.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "500",
+            "600",
+            "700"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blood_Ode",
+      "tips": "Queen of the Apocalypse enters the blood-sucking state for the next 5 seconds, dealing points of Magic Damage to surrounding enemies every 0.5 seconds while restoring HP for herself.",
+      "iconUrl": "/raw-assets/skill_icons/alice/blood_ode.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Tigreal",
+        "Atlas",
+        "Barats",
+        "Popol and Kupa"
+      ],
+      "weakAgainst": [
+        "Angela",
+        "Karrie",
+        "Floryn",
+        "Estes",
+        "Diggie"
+      ],
+      "synergyWith": [
+        "Valentina",
+        "Angela",
+        "Faramis",
+        "Masha",
+        "Diggie"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 4.6
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 3.8
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.6
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.5
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 3.5
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Angela",
+        "advantage": 4.6
+      },
+      {
+        "name": "Karrie",
+        "advantage": 4.3
+      },
+      {
+        "name": "Floryn",
+        "advantage": 3.9
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.5
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Valentina",
+        "synergy": 2
+      },
+      {
+        "name": "Angela",
+        "synergy": 1.9
+      },
+      {
+        "name": "Faramis",
+        "synergy": 1.9
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.6
+      },
+      {
+        "name": "Diggie",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "With her great sustainability in combat plus her mobility and CC, Alice counters heroes that lack burst and can't escape from melee enemies, such as Cecilion and Chang'e.",
+    "weakAgainstReason": "Alice is countered by heroes with Execute or Healing Reduction who can impede her from healing herself during the Ultimate. Heroes like Baxia or Martis can reduce her healing or kill her before she can heal.",
+    "synergyReason": "To compensate for Alice's weaknesses in the early game and form a balanced team, pair her with strong early game heroes, like Balmond or Dyrroth."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Alice adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.9,
+  "pickRate": 0.8,
+  "banRate": 9,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 50,
+    "abilityEffects": 70,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 48,
+    "mid": 72,
+    "late": 82,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Blood Wings"
+    ],
+    "dominantPhase": null,
+    "description": "Alice starts average: she can trade with blink + slow but is limited by cooldown windows and item dependence for durability/damage. Mid game she comes online with core mana/HP scaling items enabling longer fights, and late game she becomes very hard to kill while sustaining through clumped teamfights with %HP-based damage and regen."
+  },
+  "proBuilds": [
+    {
+      "player": "DAPA",
+      "games": 1352,
+      "items": [
+        "Ice Tough Boots",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Guardian Helmet",
+        "Chastise Pauldron",
+        "Blade Armor"
+      ]
+    },
+    {
+      "player": "PritongMenudo",
+      "games": 1023,
+      "items": [
+        "Magic Shoes",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Oracle",
+        "Dominance Ice",
+        "Blade Armor"
+      ]
+    },
+    {
+      "player": "apip x Zétsu",
+      "games": 1555,
+      "items": [
+        "Brute Force Breastplate",
+        "Beast Magic Shoes",
+        "Oracle",
+        "Queen's Wings",
+        "Glowing Wand"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/alice/video-0-0.mp4",
+    "skill1": "/videos/heroes/alice/video-1-0.mp4",
+    "skill2": "/videos/heroes/alice/video-2-0.mp4",
+    "ultimate": "/videos/heroes/alice/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Use Alice's 1st Skill to poke the opponent and recast it to blink on top of them, then follow up with her 2nd Skill to CC the enemies and finish with her Ultimate to continue the attack."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Use Alice's 1st Skill to poke the opponent and recast it to blink on top of them, then follow up with her 2nd Skill to CC the enemies and finish with her Ultimate to continue the attack."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Balmond",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Dyrroth",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Abyss",
+  "race": "Blood Demon, formerly Human",
+  "bestTeammates": [
+    {
+      "name": "Mathilda",
+      "winrateDelta": 3.32
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 3.03
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 2.71
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": 2.44
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 2.33
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Uranus",
+      "winrateDelta": -2.79
+    },
+    {
+      "name": "Akai",
+      "winrateDelta": -2.4
+    },
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -2.31
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": -2.27
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": -2.13
+    }
+  ],
+  "metaScore": 17.95,
+  "metaRank": 55,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 4.52
+      },
+      {
+        "name": "Akai",
+        "advantage": 3.47
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 3.24
+      },
+      {
+        "name": "Chip",
+        "advantage": 3.2
+      },
+      {
+        "name": "Zhask",
+        "advantage": 3.08
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 5.06
+      },
+      {
+        "name": "Karrie",
+        "advantage": 4.65
+      },
+      {
+        "name": "Angela",
+        "advantage": 3.73
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.49
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.36
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID WEEK 9 DAY 1: DEWA QINN",
+      "author": "community",
+      "votes": 21,
+      "items": [
+        "Tought Boots",
+        "Oracle",
+        "Concentrated Energy",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-18T22:14:01.199152+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Alice jungle tebel+damage",
+      "author": "community",
+      "votes": 11,
+      "items": [
+        "Tought Boots",
+        "Cursed Helmet",
+        "Oracle",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "Semi damage+tank",
+      "tags": [],
+      "lastUpdated": "2025-10-24T01:55:21.077007+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Exp Tebal+Darah Deres ",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Tought Boots",
+        "Oracle",
+        "Radiant Armor",
+        "Blade Armor",
+        "Antique Cuirass",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "ini build hampir bisa di pake ke semua hero, bisa juga di ganti bbrpa item sesuai hero musuh. kalo kalian ketemu musuh dengan efek slow, kalian bisa ganti sepatunya menjadi rapit boots, dan jika kalian menang level+gold bisa ganti salah satu item def menjadi item glowing wand atau ice queen",
+      "tags": [],
+      "lastUpdated": "2025-10-24T08:40:35.043237+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "CD + Deff",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "Cursed Helmet",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Kuat dalam teamfight, maks cdr, bisa zoning backline dan damage dealer musuh. Di late mage cursed helmet bisa diganti sesuai kondisi",
+      "tags": [],
+      "lastUpdated": "2025-10-22T23:07:47.415078+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "War win",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Cursed Helmet",
+        "Oracle",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Kekebalan ",
+      "tags": [],
+      "lastUpdated": "2025-10-15T08:16:58.685302+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Oracle",
+        "Glowing"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10630,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Clock",
+        "Destiny"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10670,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Oracle",
+        "Queen's"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10760,
+      "notes": null
+    }
+  ]
+}

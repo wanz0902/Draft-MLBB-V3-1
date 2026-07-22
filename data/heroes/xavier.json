@@ -1,0 +1,778 @@
+{
+  "id": "xavier",
+  "name": "Xavier",
+  "heroName": "Xavier",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Damage",
+    "Burst"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2430,
+    "hpRegen": 6.6,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 96,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Transcendence",
+      "description": "Xavier enhances his subsequent skills each time his skill hits an enemy hero. (Stage I:) Increases Movement Speed by 50% when subsequent skills hit, decaying over 1.2s. (Stage II:) Width of subsequent skills will be greatly increased. (Stage III:) Skill Cooldown reduced by 4s (12s for the Ultimate). At (Stage III), Xavier enters the (Transcendence) state. (Transcendence:) All of Xavier's skills are enhanced to (Stage III) state for 5s (this duration is extended by 1s each time Xavier's skill hits an enemy).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Transcendence",
+      "iconUrl": "/raw-assets/skill_icons/xavier/transcendence.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Infinite Extension",
+      "description": "Xavier fires a Mystic Bullet that deals 480 (+100% Total Magic Power) Magic Damage to enemies it passes through.\nThe Bullet's flying distance increases each time it hits an enemy or the Mystic Barrier (up to 5 times).",
+      "cooldown": "6.5",
+      "manaCost": "45",
+      "damageType": "Magic",
+      "scaling": [
+        "(+100% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "45",
+            "50",
+            "55",
+            "60",
+            "65",
+            "70"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "480",
+            "514",
+            "548",
+            "582",
+            "616",
+            "650"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Infinite_Extension",
+      "iconUrl": "/raw-assets/skill_icons/xavier/infinite_extension.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Mystic Field",
+      "description": "Xavier conjures a Mystic Barrier that lasts 5s. Enemies that come into contact with the Barrier will take 220 (+65% Total Magic Power) Magic Damage and be slowed by 50%, while allies will gain 50% extra Movement Speed that decays over 1.2s.\nWhen hit by Xavier's other skills, the Barrier expands into a Mystic Field for 3s, dealing 220 (+65% Total Magic Power) Magic Damage to enemies within and immobilizing them for 0.8s.",
+      "cooldown": "13.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+65% Total Magic Power)",
+        "(+65% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "13.0",
+            "12.6",
+            "12.2",
+            "11.8",
+            "11.4",
+            "11.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "88",
+            "96",
+            "104",
+            "112",
+            "120"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "220",
+            "244",
+            "268",
+            "292",
+            "316",
+            "340"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "220",
+            "244",
+            "268",
+            "292",
+            "316",
+            "340"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mystic_Field",
+      "iconUrl": "/raw-assets/skill_icons/xavier/mystic_field.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Dawning Light",
+      "description": "Xavier unleashes a beam of Mystic magic in the target direction, dealing 600 (+180% Total Magic Power) Magic Damage to all enemies along its path.\nOnce cast, he also directly enters the Transcendence state and resets the state's duration.",
+      "cooldown": "56.0",
+      "manaCost": "120",
+      "damageType": "Magic",
+      "scaling": [
+        "(+180% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "160",
+            "180"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "600",
+            "850",
+            "1100"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dawning_Light",
+      "iconUrl": "/raw-assets/skill_icons/xavier/dawning_light.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Belerick",
+        "Carmilla",
+        "Atlas",
+        "Balmond",
+        "Terizla"
+      ],
+      "weakAgainst": [
+        "Natalia",
+        "Marcel",
+        "Helcurt",
+        "Alucard",
+        "Aldous"
+      ],
+      "synergyWith": [
+        "Valentina",
+        "Marcel",
+        "Masha",
+        "Khaleed",
+        "Uranus"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Belerick",
+        "advantage": 2.2
+      },
+      {
+        "name": "Carmilla",
+        "advantage": 1.8
+      },
+      {
+        "name": "Atlas",
+        "advantage": 1.8
+      },
+      {
+        "name": "Balmond",
+        "advantage": 1.8
+      },
+      {
+        "name": "Terizla",
+        "advantage": 1.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.2
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.4
+      },
+      {
+        "name": "Alucard",
+        "advantage": 2.1
+      },
+      {
+        "name": "Aldous",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Valentina",
+        "synergy": 3.1
+      },
+      {
+        "name": "Marcel",
+        "synergy": 2.6
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.4
+      },
+      {
+        "name": "Khaleed",
+        "synergy": 1.2
+      },
+      {
+        "name": "Uranus",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Xavier possesses short cooldowns, a soft CC, good sustainability and performs well against heroes without Blink or burst damage, such as Hanabi and Faramis.",
+    "weakAgainstReason": "Xavier is countered by heroes with high mobility that can quickly close a gap such as Benedetta, Hayabusa, and Natalia.",
+    "synergyReason": "He works well alongside heroes that can buff or provide CC to give him more opportunities to deal damage, such as Carmilla and Atlas."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Xavier adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.9,
+  "pickRate": 0.5,
+  "banRate": 0.2,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 100,
+    "abilityEffects": 80,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 75,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Below-average early because he’s mana/item dependent and needs repeated hits to reach Transcendence consistently. Mid game he becomes a strong control/poke mage with ult-assisted Transcendence uptime, and late game his high-range burst and frequent enhanced skill cycles can decide Lord fights."
+  },
+  "proBuilds": [
+    {
+      "player": "Cipά Psycho.",
+      "games": 1003,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Digih",
+      "games": 703,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Satoru",
+      "games": 783,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/xavier/video-0-0.mp4",
+    "skill1": "/videos/heroes/xavier/video-1-0.mp4",
+    "skill2": "/videos/heroes/xavier/video-2-0.mp4",
+    "ultimate": "/videos/heroes/xavier/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Passive"
+      ],
+      "description": "Cast Xavier's Ultimate to enter or refresh Transcendence, then try to hit as many enemies as possible with his 2nd Skill, and follow up with his 1st Skill to create a forbidden field to immobilize enemies. Continue casting his 1st Skill to extend Transcendence's duration while going for kills."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, Xavier possesses great poke with his 1st Skill and can utilize the slow from his 2nd Skill to make targets easier to hit. This combination allows him to quickly reach Transcendence. When the opportunity arises, use his Ultimate to finish off an enemy and while in Transcendence state."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Julian",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Melissa",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Yin",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Carmilla",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Valentina",
+      "winrateDelta": 7.63
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 4.11
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": 3.78
+    },
+    {
+      "name": "Uranus",
+      "winrateDelta": 2.14
+    },
+    {
+      "name": "Natalia",
+      "winrateDelta": 1.73
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": -15.89
+    },
+    {
+      "name": "Kagura",
+      "winrateDelta": -8.98
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": -6.89
+    },
+    {
+      "name": "Vale",
+      "winrateDelta": -6.64
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -6.58
+    }
+  ],
+  "metaScore": 11.8,
+  "metaRank": 105,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 4.34
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.79
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.71
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.62
+      },
+      {
+        "name": "Uranus",
+        "advantage": 2.61
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 2.36
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.31
+      },
+      {
+        "name": "Angela",
+        "advantage": 2.26
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.04
+      },
+      {
+        "name": "Alucard",
+        "advantage": 1.88
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Penetration Cooldown Reduction",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Arcane Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Build ini berfokus pada Magic Damage dan Cooldown Reduction, menjadikannya build yang menghasilkan Burst Damage yang sangat tinggi, sekaligus memastikan mana dan cooldown skillnya selalu terjaga",
+      "tags": [],
+      "lastUpdated": "2025-10-24T05:44:26.250627+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "1 hit +Deff base",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Demon Shoes",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Wishing Lantern",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Maen aman sampe late",
+      "tags": [],
+      "lastUpdated": "2025-10-28T08:55:06.521852+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Satu hit ",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Sky Piercer",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Genius Wand"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Hahah",
+      "tags": [],
+      "lastUpdated": "2025-12-21T07:10:03.126258+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MODAL SP(Sky Piercer)",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Divine Glaive",
+        "Sky Piercer",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Wishing Lantern"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Enak kalo lu snowball",
+      "tags": [],
+      "lastUpdated": "2025-10-21T02:59:30.344576+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "XAVIER PALING JOS",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-28T08:42:38.832608+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11950,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 11940,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10700,
+      "notes": null
+    }
+  ]
+}

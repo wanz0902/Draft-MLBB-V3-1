@@ -1,0 +1,716 @@
+{
+  "id": "fredrinn",
+  "name": "Fredrinn",
+  "heroName": "Fredrinn",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Damage",
+    "Chase"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle",
+    "EXP",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "EXP",
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2760,
+    "hpRegen": 8.2,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 116,
+    "physicalDefense": 25,
+    "magicPower": 0,
+    "magicDefense": 14,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Crystalline Armor",
+      "description": "Fredrinn gains 1 (Combo Point) that lasts 5s each time his skill hits a non-minion enemy, up to 4 (Combo Points). His Ultimates cost different numbers of (Combo Points). Fredrinn stores 100% of the damage he receives as (Crystal Energy), which decays after 5s at a rate of 10% Max HP per second. Fredrinn can convert the stored (Crystal Energy) into HP by 20% of his damage dealt (10% for damage dealt to minions). Gaining a (Combo Point) resets the decaying timer.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Crystalline_Armor",
+      "tips": "He can also restore HP by his damage dealt.",
+      "iconUrl": "/raw-assets/skill_icons/fredrinn/crystalline_armor.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Piercing Strike",
+      "description": "Fredrinn thrusts his sword in the target direction, dealing 125( +7% Total HP) (+120% Extra Physical Attack) (Physical Damage) to enemies hit and slowing them by 30% for 2s. His next Basic Attack gains extra attack range and deals 85( +100% Total Physical Attack) (Physical Damage). This skill deals 150% damage to non-hero enemies.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Piercing_Strike",
+      "tips": "Use this skill to deal damage and clear lanes, while gaining combo points!",
+      "iconUrl": "/raw-assets/skill_icons/fredrinn/piercing_strike.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Brave Assault",
+      "description": "Fredrinn dashes in the target direction, dealing 140( +80% Extra Physical Attack) (Physical Damage) to the first non-minion enemy hit. His next Basic Attack knocks the target airborne for 0.3s.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Brave_Assault",
+      "tips": "Use this skill to approach enemies or start combos. Cast it followed by enhanced Basic Attacks to control enemies.",
+      "iconUrl": "/raw-assets/skill_icons/fredrinn/brave_assault.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Energy Eruption",
+      "description": "Fredrinn deals 210( +100% Extra Physical Attack) (Physical Damage) to nearby enemies and taunts them for 1s. Hitting a non-minion enemy grants Fredrinn 15 Physical & Magic Defense for 3s and reduces the cooldowns of (Piercing Strike) and (Brave Assault) by 75%. This skill costs 1 (Combo Point).",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Energy_Eruption",
+      "tips": "As the primary damage source, this skill can deal massive damage to enemies in teamfights.",
+      "iconUrl": "/raw-assets/skill_icons/fredrinn/energy_eruption.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "Jungle Tempo",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Argus",
+        "Alucard",
+        "Esmeralda",
+        "Irithel"
+      ],
+      "weakAgainst": [
+        "Valir",
+        "Diggie",
+        "Gord",
+        "Balmond",
+        "Thamuz"
+      ],
+      "synergyWith": [
+        "Angela",
+        "Diggie",
+        "Beatrix",
+        "Arlott",
+        "Granger"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 3.6
+      },
+      {
+        "name": "Argus",
+        "advantage": 3
+      },
+      {
+        "name": "Alucard",
+        "advantage": 2.8
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 2.5
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Valir",
+        "advantage": 3.5
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.6
+      },
+      {
+        "name": "Gord",
+        "advantage": 2.6
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.1
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Angela",
+        "synergy": 3.9
+      },
+      {
+        "name": "Diggie",
+        "synergy": 2.9
+      },
+      {
+        "name": "Beatrix",
+        "synergy": 1.9
+      },
+      {
+        "name": "Arlott",
+        "synergy": 1.8
+      },
+      {
+        "name": "Granger",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Fredrinn is strong against Mage heroes who rely on skill bursts, as it is difficult for them to one-shot him with their bursts. Instead, once Fredrinn has enough Combo Points, he can use his 2nd Ultimate to easily finish them off. Such as Vale and Eudora.",
+    "weakAgainstReason": "Fredrinn is countered by Marksman heroes who can deal True Damage, as they can take him down very easily. Heroes like Kerrie and Lesley are good examples here.",
+    "synergyReason": "Fredrinn works best with support heroes, who can further improve his survivability, like Angela and Floryn."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Fredrinn adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "Jungle Tempo",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.4,
+  "pickRate": 0.7,
+  "banRate": 6.5,
+  "heroAttributes": {
+    "durability": 80,
+    "offense": 50,
+    "abilityEffects": 60,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 80,
+    "late": 75,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Cursed Helmet",
+      "Guardian Helmet",
+      "Antique Cuirass"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Fredrinn ramps once he has full combo access and ultimate, letting him front-line, chain CC (taunt/knock-up), and convert stored damage into sustain while threatening Appraiser’s Wrath executes. He peaks mid game around Turtle fights with 1–2 tank items, and remains strong late but can be kited or controlled before he cashes in Crystal Energy."
+  },
+  "proBuilds": [
+    {
+      "player": "炎 無 心",
+      "games": 785,
+      "items": [
+        "Magic Shoes",
+        "Oracle",
+        "Brute Force Breastplate",
+        "War Axe",
+        "Queen's Wings",
+        "Thunder Belt"
+      ]
+    },
+    {
+      "player": "MURID SORMAN",
+      "games": 912,
+      "items": [
+        "Ice Tough Boots",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Blade Armor",
+        "Radiant Armor",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "&lt;Rèÿ&gt;can't hyp&gt;",
+      "games": 852,
+      "items": [
+        "War Axe",
+        "Queen's Wings",
+        "Oracle",
+        "Guardian Helmet",
+        "Radiant Armor",
+        "Chastise Pauldron"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/fredrinn/video-0-0.mp4",
+    "skill1": "/videos/heroes/fredrinn/video-1-0.mp4",
+    "skill2": "/videos/heroes/fredrinn/video-2-0.mp4",
+    "ultimate": "/videos/heroes/fredrinn/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Skill 3",
+        "Skill 1",
+        "Skill 2",
+        "Skill 4"
+      ],
+      "description": "In teamfights, Fredrinn should use his 2nd Skill to close in on the enemy hero and knock them airborne, then use his 1st Skill and 1st Ultimate for CC and cooldown reset. Use his enhanced Basic Attacks, 1st and 2nd skills sequentially to deal heavy damage, and finish with his 2nd Ultimate after knocking the enemy airborne for the kill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, Fredrinn can dash to the enemy hero with his 2nd Skill, and knock that hero airborne with the enhanced Basic Attack. Then follow up with his 1st Skill to deal damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Floryn",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Ling",
+      "winrateDelta": 5.66
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 4.09
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": 2.65
+    },
+    {
+      "name": "Benedetta",
+      "winrateDelta": 2.07
+    },
+    {
+      "name": "Natalia",
+      "winrateDelta": 1.85
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Roger",
+      "winrateDelta": -6.02
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -5.44
+    },
+    {
+      "name": "Leomord",
+      "winrateDelta": -5.44
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -4.97
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": -4.92
+    }
+  ],
+  "metaScore": 20.52,
+  "metaRank": 35,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Bruno",
+        "advantage": 3.64
+      },
+      {
+        "name": "Eudora",
+        "advantage": 3.37
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.89
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.68
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.65
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Valir",
+        "advantage": 4.31
+      },
+      {
+        "name": "Karrie",
+        "advantage": 3.99
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.62
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.89
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.78
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Build Sustain Spellvamp Mobility",
+      "author": "community",
+      "votes": 17,
+      "items": [
+        "Tought Boots",
+        "Brute Force Breastplate",
+        "Thunder Belt",
+        "Queen's Wings",
+        "Oracle",
+        "Blade Armor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "Build Bagus untuk Solo,Maupun Party tanpa Support ",
+      "tags": [],
+      "lastUpdated": "2025-10-13T12:58:31.579723+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : TLPH.KarlTzy",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Tought Boots",
+        "Antique Cuirass",
+        "Athena's Shield",
+        "Guardian Helmet",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 2",
+      "tags": [],
+      "lastUpdated": "2025-10-28T04:19:12.562151+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Fredrinn Exp, Badan damage",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "Oracle",
+        "Athena's Shield",
+        "Antique Cuirass",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Paling depan, dan sipaling kerasssss",
+      "tags": [],
+      "lastUpdated": "2025-10-26T06:07:22.906406+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Tebel mampus ",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Warrior Boots",
+        "Thunder Belt",
+        "Brute Force Breastplate",
+        "Guardian Helmet",
+        "Chastise Pauldron",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Tebelll",
+      "tags": [],
+      "lastUpdated": "2025-11-15T01:04:51.757046+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "War Terus!",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "Oracle",
+        "Brute Force Breastplate",
+        "Antique Cuirass",
+        "Radiant Armor"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "War Terus! Dari early sampe akhir, optimalkan build ini dengan support.\nTips: Jika skill 1 kena musuh, walau hanya kena ujungnya, basic attack selanjutnya pasti akan mengenai musuh tsb. (Jika tidak dash)\nTips 2: Tarik ulur, usahakan war jika sudah memiliki setidaknya 1 stack.\nTips 3 dan paling penting: Agresif dari awal.",
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:46:03.51129+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10610,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10860,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10630,
+      "notes": null
+    }
+  ]
+}

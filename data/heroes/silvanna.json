@@ -1,0 +1,590 @@
+{
+  "id": "silvanna",
+  "name": "Silvanna",
+  "heroName": "Silvanna",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Initiator",
+    "Magic Damage"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2601,
+    "hpRegen": 7.6,
+    "mana": 460,
+    "manaRegen": 3.4,
+    "physicalAttack": 121,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Knightess' Resolve",
+      "description": "Silvanna's Basic Attacks deal 25( +45% Total Physical Attack) (+75% Total Magic Power) (Magic Damage). Silvanna's attacks apply a mark on enemy heroes for 5s on hit, each mark reducing their Physical & Magic Defense by 3-6 (up to 5 stacks). Silvanna deals 30% extra damage to enemy heroes with the max number of marks.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Knightess'_Resolve",
+      "tips": "When utilizing the 2nd Skill, try to stack the marks of the target to the limit in order to deal massive damage.",
+      "iconUrl": "/raw-assets/skill_icons/silvanna/knightess_resolve.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Cometic Lance",
+      "description": "Silvanna dashes forward. Upon reaching the max range or hitting a non-Minion enemy, she swings her lance, dealing 250( +100% Total Magic Power) (Magic Damage) to nearby enemies and stunning them for 1s.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Cometic_Lance",
+      "tips": "Use this Skill properly to gain an extra attack speed to adjust the position and launch attack. Activate “Cometic Spear” again to attack or escape from the battlefield, depending on the actual situation.",
+      "iconUrl": "/raw-assets/skill_icons/silvanna/cometic_lance.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Spiral Strangling",
+      "description": "Silvanna thrusts her lance in the target direction and spins it 6 times while gaining a 350( +150% Total Magic Power) shield. Each spin deals 165( +45% Total Magic Power) (Magic Damage) and slightly pulls targets toward the center. Silvanna spins 1 additional time for every 50% of extra Attack Speed she possesses. The skill deals only 50% damage against Minions. (Spiral Strangling) counts as a Basic Attack but cannot Crit.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spiral_Strangling",
+      "tips": "This is Silvanna’s core damage dealing skill. It could stack the marks of the target to the limit within a short time. With her second skill, when Silvanna obtains extra attack speed, she could spin her lance once more. Therefore, she could deal more damage when she combines Spiral Strangling with Imperial Ultimate",
+      "iconUrl": "/raw-assets/skill_icons/silvanna/spiral_strangling.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Imperial Justice",
+      "description": "Silvanna leaps to the target location and creates a Circle of Light upon landing, dealing 350( +110% Total Magic Power) (Magic Damage) to enemies in the area, slowing them by 40% for 1.5s, and restraining the closest enemy hero to the area for 3.5s. (This skill cannot be interrupted.) Silvanna gains 100% Attack Speed and 40% Lifesteal when in the Circle.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Imperial_Justice",
+      "tips": "After acquiring the Ultimate, Silvanna possesses great ability to gank enemies all by herself. Combined with her other skills, she could slay enemies at ease. Please use this skill discreetly in team fights. Although she could obtain extra attack speed and Magic Lifesteal within the Circle of Light, she could be slain easily when she is attacked by a bunch of enemies.",
+      "iconUrl": "/raw-assets/skill_icons/silvanna/imperial_justice.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Valentina",
+        "Aamon",
+        "Floryn",
+        "Angela",
+        "Suyou"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Barats",
+        "Benedetta",
+        "Edith",
+        "Masha"
+      ],
+      "synergyWith": [
+        "Lolita",
+        "Estes",
+        "Hilda",
+        "Rafaela",
+        "Belerick"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Valentina",
+        "advantage": 2.7
+      },
+      {
+        "name": "Aamon",
+        "advantage": 2.7
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.5
+      },
+      {
+        "name": "Angela",
+        "advantage": 2.4
+      },
+      {
+        "name": "Suyou",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 3.9
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.7
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 3.1
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.9
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Lolita",
+        "synergy": 2
+      },
+      {
+        "name": "Estes",
+        "synergy": 1.8
+      },
+      {
+        "name": "Hilda",
+        "synergy": 1.8
+      },
+      {
+        "name": "Rafaela",
+        "synergy": 1.7
+      },
+      {
+        "name": "Belerick",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Silvanna has a long attack range and powerful crowd control abilities,which makes her stronger against back-row Mages and Marksmen,such as Layla and Valir.",
+    "weakAgainstReason": "But she can be weak against Fighters with multiple CCs\nlike Martis because they can easily interrupt her 2nd Skill.",
+    "synergyReason": "Pairing Silvanna with Tanks gives her sufficient space to dish out damage.\nFor example, Atlas and Tigreal."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Silvanna adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.9,
+  "pickRate": 1.3,
+  "banRate": 3.1,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 40,
+    "abilityEffects": 70,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 62,
+    "mid": 78,
+    "late": 60,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Genius Wand",
+      "Concentrated Energy",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "She’s serviceable early but becomes a major pick-off and skirmish threat once Imperial Justice is online and she can reliably lock a target inside her circle for S2 ticks. In late game, her all-in pattern is easier to punish and she needs penetration/sustain items to stay relevant versus higher DPS and peel."
+  },
+  "proBuilds": [
+    {
+      "player": "爱•|Shitaシ︎",
+      "games": 816,
+      "items": [
+        "Flame Arcane Boots",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Genius Wand",
+        "Holy Crystal",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "suphello",
+      "games": 901,
+      "items": [
+        "Encourage Arcane Boots",
+        "Genius Wand",
+        "Feather of Heaven",
+        "Winter Crown",
+        "Holy Crystal",
+        "Glowing Wand"
+      ]
+    },
+    {
+      "player": "༒☬A. C .E☬༒",
+      "games": 863,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Feather of Heaven",
+        "Winter Crown",
+        "Holy Crystal"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/silvanna/video-0-0.mp4",
+    "skill1": "/videos/heroes/silvanna/video-1-0.mp4",
+    "skill2": "/videos/heroes/silvanna/video-2-0.mp4",
+    "ultimate": "/videos/heroes/silvanna/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights,\nSilvanna can control back-row enemies with her [ULTIMATE]\nand then stun them with her [1st Skill].\nFinally, she can deal damage with her [2nd Skill] and Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Skill 1",
+        "Skill 3",
+        "Passive"
+      ],
+      "description": "Silvanna can poke enemies with her [2nd Skill]\nand use her 1st Skill to close the distance once they're low on HP.\nThen, she can control them and finish them off with her [ULTIMATE]."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Marcel",
+      "winrateDelta": 2.58
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 2.5
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 2.42
+    },
+    {
+      "name": "Hylos",
+      "winrateDelta": 2.38
+    },
+    {
+      "name": "Khaleed",
+      "winrateDelta": 2.13
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Joy",
+      "winrateDelta": -2.51
+    },
+    {
+      "name": "Guinevere",
+      "winrateDelta": -1.65
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -1.58
+    },
+    {
+      "name": "Arlott",
+      "winrateDelta": -1.43
+    },
+    {
+      "name": "Julian",
+      "winrateDelta": -1.41
+    }
+  ],
+  "metaScore": 23.72,
+  "metaRank": 22,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Angela",
+        "advantage": 2.5
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.19
+      },
+      {
+        "name": "Aamon",
+        "advantage": 2.07
+      },
+      {
+        "name": "Floryn",
+        "advantage": 1.96
+      },
+      {
+        "name": "Suyou",
+        "advantage": 1.88
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.29
+      },
+      {
+        "name": "Chip",
+        "advantage": 3.07
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 3.05
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.69
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.54
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Damage",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Concentrated Energy",
+        "Feather of Heaven",
+        "Starlium Scythe",
+        "Genius Wand",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Exp",
+      "tags": [],
+      "lastUpdated": "2025-10-23T03:59:13.360556+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Attack and defense",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Genius Wand",
+        "Starlium Scythe",
+        "Glowing Wand"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:37:40.361784+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Feather",
+        "Heaven",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10970,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11980,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "id": "yisunshin",
+  "name": "Yi Sun-shin",
+  "heroName": "Yi Sun-shin",
+  "role": [
+    "Assassin",
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Chase"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2508,
+    "hpRegen": 7,
+    "mana": 450,
+    "manaRegen": 3.4,
+    "physicalAttack": 120,
+    "physicalDefense": 19,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Heavenly Vow",
+      "description": "Yi Sun-shin attacks with his (longbow) or (glaive) according to his distance from the target. (Weapon Mastery): After each weapon swap, the next two attacks will be enhanced. The first attack deals 70%-100% Crit Damage and the second attack deals 55%-70% Crit Damage. Each enhanced attack grants 20% Movement Speed for 1s and reduces the cooldown of (Traceless) by 1s. After every 180s or when Yi Sun-shin respawns, a (Turtle Ship) will spawn at the allied Base. Yi Sun-shin can board the (Turtle Ship), gaining 60% Movement Speed (decays to after s) and enhancing (Traceless).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Heavenly_Vow",
+      "tips": "If possible always use your Glaive (Sword) to attack, the damage output from it is higher Every 3 minutes a Turtleship will appear at the base, head over to collect it Turtleship gives a movement speed buff and turns your “1” into a straight line skillshot that stuns the enemy when hit. Has an innate slow passive, best used for chasing enemies or slowing them down when running, try to hit them as much as possible.",
+      "iconUrl": "/raw-assets/skill_icons/yisunshin/heavenly_vow.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Traceless",
+      "description": "Yi Sun-shin dashes forward and slashes with his glaive, dealing 150( +40% Total Physical Attack) (Physical Damage) and becoming immune to control effects for 1s.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Traceless",
+      "tips": "Your ESCAPE tool, use it wisely Decent slow, for escaping or chasing Turtleship would replace this skill so take note, You’ll be flying back like a normal “1” however there will be a straight line skillshot to stun the enemy.",
+      "iconUrl": "/raw-assets/skill_icons/yisunshin/traceless.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Blood Floods",
+      "description": "(Tap): Yi Sun-shin slashes swiftly with his glaive, dealing 240( +80% Total Physical Attack) (Physical Damage). (Hold): Yi Sun-shin shoots a powerful arrow, dealing 240( +80% Total Physical Attack) (Physical Damage) to the target. The arrow's damage scales with the hold time, up to 200%. This damage decays with the number of enemies hit but can't go below 40%. His Movement Speed is reduced by 20% while holding the skill. Yi Sun-shin gains (Weapon Mastery) immediately when this skill is used.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blood_Floods",
+      "tips": "Your main harassing skill. One of the hardest hitting skill Range and damage increases when you charge your attack, make sure you have it charged fully for maximum damage Movement while charging is possible, however it’s a little slow",
+      "iconUrl": "/raw-assets/skill_icons/yisunshin/blood_floods.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Mountain Shocker",
+      "description": "(Passive): Increases the damage of (Heavenly Vow's) first enhanced Basic Attack by 10% and second enhanced Basic Attack by 5%. (Active): Yi Sun-shin commands the naval fleet to launch 3 waves of cannon shots on the locations of all enemy heroes, revealing their positions and dealing 150( +50% Total Physical Attack) (Physical Damage) to enemies in the area with each wave. (When a target is hit multiple times by the same wave, a maximum of 150% damage will be dealt.)",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mountain_Shocker",
+      "tips": "That being said, it’s not impossible to avoid this ult, try to save this when your team is engaging in a team fight or you need to know the location of your enemies. Please don’t use this immediately once it’s off CD, it has one of the longest CD in the game and the mana consumption is crazy When playing with friends, you can let your friend tell you when a teamfight is about to start or is happening for you to deal more residual damage. If SoloQ-ing, please keep an eye on the minimap to know when a fight is starting.",
+      "iconUrl": "/raw-assets/skill_icons/yisunshin/mountain_shocker.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Objective DPS",
+      "Late Game Carry",
+      "Jungle Tempo",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Balmond",
+        "Wanwan",
+        "Thamuz",
+        "Aulus",
+        "Yin"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Uranus"
+      ],
+      "synergyWith": [
+        "Floryn",
+        "Lesley",
+        "Odette",
+        "Irithel",
+        "Clint"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Balmond",
+        "advantage": 2
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 1.9
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 1.9
+      },
+      {
+        "name": "Aulus",
+        "advantage": 1.8
+      },
+      {
+        "name": "Yin",
+        "advantage": 1.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 3.6
+      },
+      {
+        "name": "Uranus",
+        "advantage": 2.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Floryn",
+        "synergy": 2.3
+      },
+      {
+        "name": "Lesley",
+        "synergy": 1.5
+      },
+      {
+        "name": "Odette",
+        "synergy": 1.5
+      },
+      {
+        "name": "Irithel",
+        "synergy": 1.5
+      },
+      {
+        "name": "Clint",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Yi Sun-shin counters heroes that lack CC like Uranus and Terizla who are at the mercy of his ability to jump in and out of melee range using his 2 weapons.",
+    "weakAgainstReason": "Yi Sun-shin is countered by heroes with CC skills, such as Franco and Kaja who can lock him down and stop him from freely swapping weapons.",
+    "synergyReason": "Yi Sun-shin works best with Fighters who can initiate, such as Alpha and Khaleed, so he can follow up and unleash his full damage after they have CC'd the enemy."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Yi Sun-shin adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Objective DPS",
+    "Late Game Carry",
+    "Jungle Tempo",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.2,
+  "pickRate": 1.5,
+  "banRate": 12.3,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 90,
+    "abilityEffects": 40,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 80,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "Blade of Despair",
+      "Malefic Roar"
+    ],
+    "dominantPhase": null,
+    "description": "He comes online early as a jungler with fast tempo and strong weapon-switch burst for picks, then peaks in mid game with Mountain Shocker for vision + engage/cleanup around objectives. He stays strong late due to hybrid assassin/marksman DPS and long-range poke, but isn’t uniquely dominant versus full-build frontlines."
+  },
+  "proBuilds": [
+    {
+      "player": "PHI_VINCI",
+      "games": 696,
+      "items": [
+        "Flame Magic Shoes",
+        "Hunter Strike",
+        "Sky Piercer",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "SAVERAAA",
+      "games": 1234,
+      "items": [
+        "Hunter Strike",
+        "Flame Magic Shoes",
+        "War Axe",
+        "Endless Battle",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "pemes!&lt;3",
+      "games": 1019,
+      "items": [
+        "Flame Magic Shoes",
+        "War Axe",
+        "Endless Battle",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/yisunshin/video-0-0.mp4",
+    "skill1": "/videos/heroes/yisunshin/video-1-0.mp4",
+    "skill2": "/videos/heroes/yisunshin/video-2-0.mp4",
+    "ultimate": "/videos/heroes/yisunshin/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, start with Yi Sun-shin's Ultimate, then use his enhanced 1st Skill to send his Turtle Ship into the enemy to stun them. Follow up with ranged Basic Attacks, then use his 1st Skill to get close and perform 2 enhanced Basic Attacks. Tap his 2nd Skill to perform another slash, and secure the kill with 2 more enhanced Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, Yi Sun-shin should use his enhanced Basic Attacks from a distance, then close in with his 1st Skill and slash the enemy with two enhanced Basic Attacks. Follow up with a slash from his 2nd Skill and finish with 2 more enhanced Basic Attacks."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Mountain Shocker",
+      "Traceless",
+      "Blood Floods"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Alpha",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Khaleed",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Floryn",
+      "winrateDelta": 2.42
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 1.58
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 1.57
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 1.25
+    },
+    {
+      "name": "Lesley",
+      "winrateDelta": 1.25
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hanzo",
+      "winrateDelta": -9.92
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -8.53
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -7.51
+    },
+    {
+      "name": "Karina",
+      "winrateDelta": -6.77
+    },
+    {
+      "name": "Fanny",
+      "winrateDelta": -6.14
+    }
+  ],
+  "metaScore": 22.13,
+  "metaRank": 28,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Khufra",
+        "advantage": 3.97
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 2.17
+      },
+      {
+        "name": "Kaja",
+        "advantage": 1.99
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 1.98
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 1.92
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 2.8
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.04
+      },
+      {
+        "name": "Lolita",
+        "advantage": 1.91
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.75
+      },
+      {
+        "name": "Uranus",
+        "advantage": 1.73
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 D2 W7 : EVOS.Alberttt",
+      "author": "community",
+      "votes": 59,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Endless Battle",
+        "Legion Sword"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "EVOS VS RRQ Game 3",
+      "tags": [],
+      "lastUpdated": "2025-10-04T18:48:53.756209+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S17 WEEK 2 DAY 3 RRQ.Kuroky",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "Endless Battle",
+        "Rose Gold Meteor",
+        "Wind of Nature",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( RRQ VS TLID GAME 2 ) MPL INDONESIA SEASON 17 WEEK 2 DAY 3 5 APRIL 2026",
+      "tags": [],
+      "lastUpdated": "2026-04-05T13:28:36.898729+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "snowbold",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Hunter Strike",
+        "Sky Piercer",
+        "Endless Battle",
+        "Blade of Despair",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "kalo snowbold pake skypiercer kalo gk snowbold pake war x",
+      "tags": [],
+      "lastUpdated": "2025-10-14T16:30:40.999226+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Yss Mode sad ",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Hunter Strike",
+        "Sky Piercer",
+        "War Axe",
+        "Malefic Roar",
+        "Endless Battle"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Gunakan jika saat hati sedang sakit \n",
+      "tags": [],
+      "lastUpdated": "2025-10-29T15:47:53.21004+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Finishing, burst damage",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Endless Battle",
+        "Malefic Roar",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Fokus farming sampai item hunter strike jadi , lalu jadikan andless atau war axe, dengan 3 item ini sudah cukup untuk bantai2",
+      "tags": [],
+      "lastUpdated": "2025-10-22T12:27:47.556079+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12320,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "War",
+        "Axe",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12160,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11130,
+      "notes": null
+    }
+  ]
+}

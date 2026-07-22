@@ -1,0 +1,593 @@
+{
+  "id": "atlas",
+  "name": "Atlas",
+  "heroName": "Atlas",
+  "role": [
+    "Tank"
+  ],
+  "specialty": [
+    "Crowd Control",
+    "Initiator"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam",
+    "EXP"
+  ],
+  "flex_lanes": [
+    "EXP"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2851,
+    "hpRegen": 8.8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 110,
+    "physicalDefense": 28,
+    "magicPower": 0,
+    "magicDefense": 16,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Frigid Breath",
+      "description": "Atlas generates (Frigid Breath) around him for 5s each time he casts a skill. Enemies affected by (Frigid Breath) will have their Movement Speed gradually reduced over 3s, after which they'll be frozen for 0.5s. Atlas gains 11-25 extra Physical & Magic Defense when (Frigid Breath) is present.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Frigid_Breath",
+      "tips": "The CC and durability provided by this skill can significantly reduce the threats that Altas faces in close-quarter combats.",
+      "iconUrl": "/raw-assets/skill_icons/atlas/frigid_breath.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Annihilate",
+      "description": "Atlas smashes the ground and causes 3 explosions. Each explosion deals 215( +60% Total Magic Power) (Magic Damage) to enemies. (Ejected State): If Atlas has ejected from his Mecha Sentry, both himself and his Mecha will cast Annihilate.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Annihilate",
+      "tips": "This is Atlas' most important source of damage, which inflicts double the damage when used in Ejected State.",
+      "iconUrl": "/raw-assets/skill_icons/atlas/annihilate.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Perfect Match",
+      "description": "Atlas enters (Ejected State), gaining 40% Movement SPD and immunity to Slowing Effects. In this state, the Mecha Sentry will follow the pilot at an increasing speed (can only be controlled by Suppression). Once they meet, Atlas will return to the Mecha, dealing 320( +80% Total Magic Power) (Magic Damage) to enemies nearby and stunning them for 1s. (Ejected State): Atlas and his Mecha share the same HP bar and reduce 50% of the damage taken in this state.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Perfect_Match",
+      "tips": "This skill serves as Atlas' diving tool. The bonus movement speed allows him to dive into the enemy formation rapidly, while tanking a lot of damage with the Damage Reduction of this skill. When he enters the Mecha, he can control the surrounding targets again.",
+      "iconUrl": "/raw-assets/skill_icons/atlas/perfect_match.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Fatal Links",
+      "description": "Atlas hurls chains around and starts to channel (can only be interrupted by suppressing), dealing 225( +75% Total Magic Power) (Magic Damage) to enemy heroes hit and slowing them by 40% for 3s. Use this skill again while channeling: Atlas will drag the targets toward him and plunk them down on the designated location, dealing 360( +180% Total Magic Power) (Magic Damage). Use this skill in (Ejected State): The Mecha Sentry will return to Atlas immediately, but the stun effect will be replaced by 40% Slowing Effect.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Fatal_Links",
+      "tips": "This Ultimate is extremely powerful in teamfights, especially when combined with the fast movement speed in Ejected State. By controlling all the enemy targets in the affected area and throwing them towards your teammates, this skill can create instant wipe-out opportunities for your team.",
+      "iconUrl": "/raw-assets/skill_icons/atlas/fatal_links.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Popol and Kupa",
+        "Layla",
+        "Estes",
+        "Eudora",
+        "Lolita"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Wanwan",
+        "Alice",
+        "Valentina",
+        "Benedetta"
+      ],
+      "synergyWith": [
+        "Mathilda",
+        "Aulus",
+        "Bane",
+        "Marcel",
+        "Aldous"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Popol and Kupa",
+        "advantage": 4.2
+      },
+      {
+        "name": "Layla",
+        "advantage": 3.9
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.7
+      },
+      {
+        "name": "Eudora",
+        "advantage": 3.3
+      },
+      {
+        "name": "Lolita",
+        "advantage": 3.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 6.4
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 3.8
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.6
+      },
+      {
+        "name": "Valentina",
+        "advantage": 3.4
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 3.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Mathilda",
+        "synergy": 3.6
+      },
+      {
+        "name": "Aulus",
+        "synergy": 2
+      },
+      {
+        "name": "Bane",
+        "synergy": 1.8
+      },
+      {
+        "name": "Marcel",
+        "synergy": 1.6
+      },
+      {
+        "name": "Aldous",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Atlas counters squishy heroes without mobility skills like Vexana and Eudora because they cannot reliably escape his CC.",
+    "weakAgainstReason": "Atlas is countered by heroes who can knock him away, such as Valir and Moskov, since they can easily stop his 2nd Skill which Atlas relies on to land his other skills.",
+    "synergyReason": "Atlas works well with heroes with high AOE damage like Vale and Ixia because Atlas can pull enemies together and keep them CC'd."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Atlas adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.4,
+  "pickRate": 0.6,
+  "banRate": 5.6,
+  "heroAttributes": {
+    "durability": 80,
+    "offense": 10,
+    "abilityEffects": 90,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Dominance Ice",
+      "Athena's Shield",
+      "Antique Cuirass"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Atlas is serviceable early with S2 engage + passive slows, but he truly comes online at level 4 where Fatal Links enables decisive picks around Turtle and first towers. He remains strong late because his ult stays game-changing, though his effectiveness depends on finding angles and surviving burst after engaging."
+  },
+  "proBuilds": [
+    {
+      "player": "always win",
+      "games": 683,
+      "items": [
+        "Conceal Rapid Boots",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Antique Cuirass",
+        "Athena's Shield",
+        "Guardian Helmet"
+      ]
+    },
+    {
+      "player": "moskov. Tik Tok",
+      "games": 1255,
+      "items": [
+        "Conceal Rapid Boots",
+        "Fleeting Time",
+        "Athena's Shield",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "EL_BARUBAL",
+      "games": 577,
+      "items": [
+        "Conceal Warrior Boots",
+        "Fleeting Time",
+        "Antique Cuirass",
+        "Athena's Shield",
+        "Dominance Ice"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/atlas/video-0-0.mp4",
+    "skill1": "/videos/heroes/atlas/video-1-0.mp4",
+    "skill2": "/videos/heroes/atlas/video-2-0.mp4",
+    "ultimate": "/videos/heroes/atlas/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Atlas's 2nd Skill to eject and then get close to the enemy. Right before the Mecha Sentry reaches Atlas, use his 1st Skill to double the effect."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, use Atlas's 2nd Skill to approach the enemy and unleash his Ultimate when multiple enemies are in range. Aim while channeling and release to slam them down near your team, then continue to deal damage with his 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Vale",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Ixia",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Abysmal Sea creature",
+  "bestTeammates": [
+    {
+      "name": "Khufra",
+      "winrateDelta": 4.46
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": 2.48
+    },
+    {
+      "name": "Bane",
+      "winrateDelta": 2.25
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": 1.98
+    },
+    {
+      "name": "Julian",
+      "winrateDelta": 1.63
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Marcel",
+      "winrateDelta": -25.56
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -16.93
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": -16.16
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": -16.08
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": -14.66
+    }
+  ],
+  "metaScore": 19.73,
+  "metaRank": 38,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 4.32
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 4.06
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 3.87
+      },
+      {
+        "name": "Lolita",
+        "advantage": 3.83
+      },
+      {
+        "name": "Khufra",
+        "advantage": 3.62
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 6.31
+      },
+      {
+        "name": "Diggie",
+        "advantage": 5.89
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 4.06
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.86
+      },
+      {
+        "name": "Lancelot",
+        "advantage": 3.52
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Bertahan dan montage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Fleeting Time",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Blade Armor",
+        "Radiant Armor"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:28:07.596552+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11250,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Antique",
+        "Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Blade",
+        "Armor"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11080,
+      "notes": null
+    }
+  ]
+}

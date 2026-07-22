@@ -1,0 +1,804 @@
+{
+  "id": "bane",
+  "name": "Bane",
+  "heroName": "Bane",
+  "role": [
+    "Fighter",
+    "Mage"
+  ],
+  "specialty": [
+    "Push",
+    "Burst"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Mid",
+    "Gold",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Mid",
+    "Gold",
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2620,
+    "hpRegen": 7.8,
+    "mana": 475,
+    "manaRegen": 3.6,
+    "physicalAttack": 121,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.06",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Shark Bite",
+      "description": "Bane infuses his weapon with a stack of (Tidal Energy) each time he uses a skill (up to 2 stacks). Each of his subsequent Basic Attacks consumes a stack to deal (Physical Damage) equal to ( +100% Total Physical Attack) plus 3.5(+0.3*Hero Level)% of the target's Max HP to nearby enemies.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(95% Total Physical Attack)",
+        "(+0.4*Hero Level)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shark_Bite",
+      "tips": "Setiap 6 detik sekali Basic Attack Bane akan meningkat dan menimbulkan Splash, musuh yang berada di belakang target yang dipukul akan terkena Damage yang sangat besar dan mendapatkan efek Slow. (termasuk Turret).",
+      "iconUrl": "/raw-assets/skill_icons/bane/shark_bite.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Crab Claw Cannon",
+      "description": "Bane fires his Crab Claw Cannon in the target direction, dealing 150 (+160% Total Physical Attack) Physical Damage to the first enemy hit and then 150% damage to a random enemy behind them (prioritizes enemy heroes). Enemies hit are slowed by 10 (+10% Total Magic Power)% for 1s.\nEvery 100 Physical Attack Bane possesses reduces this skill's cooldown by an additional 8%.",
+      "cooldown": "8.0",
+      "manaCost": "30",
+      "damageType": "Physical",
+      "scaling": [
+        "(+160% Total Physical Attack)",
+        "(+10% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Target Damage",
+          "values": [
+            "150",
+            "190",
+            "230",
+            "270",
+            "310",
+            "350"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "150%",
+            "160%",
+            "170%",
+            "180%",
+            "190%",
+            "200%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Crab_Claw_Cannon",
+      "tips": "Menghasilkan Physical Damage serta efek Slow kepada target. Tidak hanya itu, Armor musuh yang terkena skill 1 Bane juga akan terkurang selama 2 detik.",
+      "iconUrl": "/raw-assets/skill_icons/bane/crab_claw_cannon.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Sea Ink",
+      "description": "Bane swallows a cup of sea ink, recovering 200 (+150% Total Magic Power) (+5 (+1.5% Total Magic Power)% of his lost HP), gaining 50% Movement Speed that decays over 2.5s.\nUse Again: Bane spits corrosive ink in a fan-shaped area, dealing 140 (+130% Total Magic Power) Magic Damage (up to 200% with charging time).\nEvery 100 Magic Power Bane possesses additionally reduces this skill's cooldown by 7%.",
+      "cooldown": "7.5",
+      "manaCost": "50",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)",
+        "(+5 (+1.5% Total Magic Power)",
+        "(+130% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "7.5",
+            "6.9",
+            "6.3",
+            "5.7",
+            "5.1",
+            "4.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "50",
+            "55",
+            "60",
+            "65",
+            "70",
+            "75"
+          ]
+        },
+        {
+          "label": "Venom Damage",
+          "values": [
+            "140",
+            "180",
+            "220",
+            "260",
+            "300",
+            "340"
+          ]
+        },
+        {
+          "label": "HP Regen",
+          "values": [
+            "5%",
+            "6%",
+            "7%",
+            "8%",
+            "9%",
+            "10%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Heal",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ale",
+      "tips": "Bane akan mengeluarkan gentong yang dapat memulihkan HP yang ada di dekat gentong tersebut. (HP teman satu tim juga akan bertambah)",
+      "iconUrl": "/raw-assets/skill_icons/bane/ale.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Deadly Catch",
+      "description": "Bane summons a school of sharks to charge in the target direction, dealing 700 (+80% Total Physical Attack) (+150% Total Magic Power) Magic Damage to enemies hit, knocking them airborne for 0.6s, and slowing them by 75% (decays over 3s).\nThis skill deals 40% damage to turrets.",
+      "cooldown": "40.0",
+      "manaCost": "120",
+      "damageType": "Magic",
+      "scaling": [
+        "(+80% Total Physical Attack)",
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "40.0",
+            "35.0",
+            "30.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "140",
+            "160"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "700",
+            "900",
+            "1100"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Deadly_Catch",
+      "tips": "Bane akan mengeluarkan kapal yang terbang dan menjatuhkan meriam kepada siapa saja yang berada di bawahnya, termasuk Turret.",
+      "iconUrl": "/raw-assets/skill_icons/bane/deadly_catch.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Zone Control",
+      "Burst Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Phoveus",
+        "Chip",
+        "Faramis",
+        "Baxia",
+        "Khufra"
+      ],
+      "weakAgainst": [
+        "Lolita",
+        "Yve",
+        "Nolan",
+        "Novaria",
+        "Vale"
+      ],
+      "synergyWith": [
+        "Sora",
+        "Arlott",
+        "Atlas",
+        "Hilda",
+        "Khaleed"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Phoveus",
+        "advantage": 3
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.4
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.3
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2
+      },
+      {
+        "name": "Khufra",
+        "advantage": 1.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.5
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.2
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.2
+      },
+      {
+        "name": "Novaria",
+        "advantage": 2
+      },
+      {
+        "name": "Vale",
+        "advantage": 1.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Sora",
+        "synergy": 2.3
+      },
+      {
+        "name": "Arlott",
+        "synergy": 1.9
+      },
+      {
+        "name": "Atlas",
+        "synergy": 1.8
+      },
+      {
+        "name": "Hilda",
+        "synergy": 1.7
+      },
+      {
+        "name": "Khaleed",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Bane counters Tanks with high HP but low damage, such as Hylos and Belerick, because he can out-sustain them and deals HP percentage-based damage.",
+    "weakAgainstReason": "Bane is countered by Mages that deal heavy damage from afar, such as Vale and Xavier who can deal significant damage to him before he can get in range.",
+    "synergyReason": "Bane works best with heroes like as Tigreal and Luo Yi who can pull enemies together so he can do even more damage with his AOE."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Bane adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Zone Control",
+    "Burst Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.5,
+  "pickRate": 0.3,
+  "banRate": 0.2,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 60,
+    "abilityEffects": 40,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 52,
+    "mid": 74,
+    "late": 77,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Bane’s early trades are okay but he usually needs items to make his poke/heal and Shark Bite-enhanced hits feel oppressive. With Ultimate unlocked he becomes a strong mid-game objective/push hero, and late game his high-scaling magic burst + zone control can swing Lord fights and shred towers with pressure."
+  },
+  "proBuilds": [
+    {
+      "player": "пронзаечка",
+      "games": 1439,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Jeann.",
+      "games": 1019,
+      "items": [
+        "Magic Shoes",
+        "Hunter Strike",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar",
+        "War Axe"
+      ]
+    },
+    {
+      "player": "Worgam.",
+      "games": 1131,
+      "items": [
+        "Sky Piercer",
+        "Ice Rapid Boots",
+        "War Axe",
+        "Hunter Strike",
+        "Endless Battle",
+        "Malefic Roar"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/bane/video-0-0.mp4",
+    "skill1": "/videos/heroes/bane/video-1-0.mp4",
+    "skill2": "/videos/heroes/bane/video-2-0.mp4",
+    "ultimate": "/videos/heroes/bane/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 3",
+        "Passive",
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Bane's 2nd Skill to close in and catch multiple enemies with his Ultimate. Use an enhanced Basic Attack when the enemies are knocked airborne, then use his 2nd Skill and another enhanced Basic Attack. Finally, use his 1st Skill and enhanced Basic Attack to chase and finish off the enemy."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": ""
+    }
+  ],
+  "connections": [
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Luo Yi",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Northern Vale",
+  "race": "Half-Man, Half-Octopus",
+  "bestTeammates": [
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": 2.88
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": 2.8
+    },
+    {
+      "name": "Benedetta",
+      "winrateDelta": 2.66
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": 2.25
+    },
+    {
+      "name": "Kalea",
+      "winrateDelta": 2.09
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Joy",
+      "winrateDelta": -4.8
+    },
+    {
+      "name": "Yi Sun-shin",
+      "winrateDelta": -3.68
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -3.04
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -2.95
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": -2.9
+    }
+  ],
+  "metaScore": 17.58,
+  "metaRank": 59,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 5.16
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.21
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.23
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.07
+      },
+      {
+        "name": "Hylos",
+        "advantage": 1.85
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 3.83
+      },
+      {
+        "name": "Yin",
+        "advantage": 2.27
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.19
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.18
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.1
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Bane Asam Lambung",
+      "author": "community",
+      "votes": 21,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Skill 2 ",
+      "tags": [],
+      "lastUpdated": "2025-10-01T08:42:35.804263+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Magic burst",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Magic Boots",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Blood Wings",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Burst damage, trap, scaling",
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:28:31.346808+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Bane Dahak Paparan COVID-19 ",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Aaaa tolong...",
+      "tags": [],
+      "lastUpdated": "2025-10-16T17:46:14.300193+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Huek Cuih",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Asam lambung ",
+      "tags": [],
+      "lastUpdated": "2025-10-16T10:19:37.06329+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Di ludahin udh wafat",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Sky Piercer",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:46:39.172968+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Endless",
+        "Battle",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11170,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Endless",
+        "Battle",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11320,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Concentrated",
+        "Energy",
+        "Holy",
+        "Crystal"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11690,
+      "notes": null
+    }
+  ]
+}

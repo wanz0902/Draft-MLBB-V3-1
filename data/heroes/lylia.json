@@ -1,0 +1,711 @@
+{
+  "id": "lylia",
+  "name": "Lylia",
+  "heroName": "Lylia",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Push",
+    "Damage"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2440,
+    "hpRegen": 6.8,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 98,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.01",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 245
+  },
+  "skills": {
+    "passive": {
+      "name": "Angry Gloom",
+      "description": "Lylia gets power from Gloom, increasing her Movement Speed by 15%. Each Gloom upgrade further increases this bonus by 5%.\nGloom gains an upgrade every time he devours Shadow Energy, up to 5 times. Gloom upgrade increases the detonation damage of Shadow Energy.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Angry_Gloom",
+      "tips": "Lylia gets power from Gloom, increasing her Movement Speed. Each time Gloom levels up, she will increase extra Movement Speed. Gloom will increase his levels by devouring Shadow Energy. Up to 5. The higher his level is, the more damage he can deal.",
+      "iconUrl": "/raw-assets/skill_icons/lylia/angry_gloom.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Magic Shockwave",
+      "description": "Lylia sends out Gloom with a shockwave, dealing 250 (+100% Total Magic Power) Magic Damage to enemies in a line and slowing them by 30% for 1.5s.\nIf Gloom touches Shadow Energy, he will devour and detonate it.",
+      "cooldown": "4.0",
+      "manaCost": "40",
+      "damageType": "Magic",
+      "scaling": [
+        "(+100% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "40",
+            "46",
+            "52",
+            "58",
+            "64",
+            "70"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "300",
+            "350",
+            "400",
+            "450",
+            "500"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Magic_Shockwave",
+      "tips": "Lylia releases an attack wave ahead, dealing Magic Damage to enemies on the path and slowing them down. Gloom will hitch a ride on Magic Shockwave. If Gloom touches Shadow Energy, he will devour it and immediately detonate the energy.",
+      "iconUrl": "/raw-assets/skill_icons/lylia/magic_shockwave.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Shadow Energy",
+      "description": "Lylia condenses Shadow Energy at the target location, dealing 90 (+50% Total Magic Power) Magic Damage to enemies hit and slowing them by 80%.\nShadow Energy can be detonated by Gloom's devour, dealing 220 (+115% Total Magic Power) Magic Damage to the enemies nearby. Each Gloom upgrade increases the detonation damage by 20%, up to 80%.\nGloom will restore 20% of Shadow Energy's Recharge Time when it hits an enemy hero.\nLylia starts with the Shadow Energy skill, storing one charge every 6s.",
+      "cooldown": "1.0",
+      "manaCost": "32",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)",
+        "(+115% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "32",
+            "37",
+            "42",
+            "47",
+            "52",
+            "57",
+            "62"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "90",
+            "100",
+            "110",
+            "120",
+            "130",
+            "140",
+            "150"
+          ]
+        },
+        {
+          "label": "Explosion Damage",
+          "values": [
+            "220",
+            "255",
+            "290",
+            "325",
+            "360",
+            "395",
+            "430"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shadow_Energy",
+      "tips": "Lylia condenses Shadow Energy to the designated area, dealing Magic Damage to enemies nearby and slowing them down. After Gloom devours Shadow Energy, he will detonate the energy and deal Magic Damage to enemies nearby. Each time Gloom upgrades himself, the damage dealt by Shadow Energy will be increased. Lylia was born to have the ability to use Shadow Energy.",
+      "iconUrl": "/raw-assets/skill_icons/lylia/shadow_energy.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Black Shoes",
+      "description": "Lylia returns to the Black Shoes' location 4s ago and restores her HP and Mana to the previous state, and an extra 10% Max HP. She also gains 20% extra Movement Speed for 2s.",
+      "cooldown": "45.0",
+      "manaCost": "120",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "45.0",
+            "40.0",
+            "35.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "60",
+            "0"
+          ]
+        },
+        {
+          "label": "HP Regen",
+          "values": [
+            "10%",
+            "15%",
+            "20%"
+          ]
+        },
+        {
+          "label": "Duration",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Heal",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Black_Shoes",
+      "tips": "Lylia immediately returns to the position where the Black Shoe was 4s ago and stacks max times to use Shadow Energy, regenerating a certain amount of HP and increasing her Movement Speed.",
+      "iconUrl": "/raw-assets/skill_icons/lylia/black_shoes.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Johnson",
+        "Alpha",
+        "Barats",
+        "Hanabi",
+        "Aulus"
+      ],
+      "weakAgainst": [
+        "Joy",
+        "Kaja",
+        "Mathilda",
+        "Novaria",
+        "Khaleed"
+      ],
+      "synergyWith": [
+        "Harley",
+        "Valentina",
+        "Zhask",
+        "Johnson",
+        "Yin"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Johnson",
+        "advantage": 2.6
+      },
+      {
+        "name": "Alpha",
+        "advantage": 2.6
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.5
+      },
+      {
+        "name": "Hanabi",
+        "advantage": 2.1
+      },
+      {
+        "name": "Aulus",
+        "advantage": 2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Joy",
+        "advantage": 2.4
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.3
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.2
+      },
+      {
+        "name": "Novaria",
+        "advantage": 1.8
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 1.7
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harley",
+        "synergy": 2.3
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.9
+      },
+      {
+        "name": "Zhask",
+        "synergy": 1.5
+      },
+      {
+        "name": "Johnson",
+        "synergy": 1.2
+      },
+      {
+        "name": "Yin",
+        "synergy": 1.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Lylia counters Tank heroes without Blink skills, such as Carmilla and Hylos, who cannot easily escape Gloom's AOE range and are more susceptible to Lylia's high sustained damage.",
+    "weakAgainstReason": "Since most of Lylia's damage comes from detonating her 2nd Skill, but setting up Gloom can be quite slow, nimble Assassins like Nolan and Ling counter Lylia as she'll have a tough time hitting them.",
+    "synergyReason": "Lylia excels in prolonged battles, and works well with heroes with strong CC, like Franco and Minotaur."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Lylia adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.7,
+  "pickRate": 0.7,
+  "banRate": 1,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 100,
+    "abilityEffects": 20,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 82,
+    "mid": 78,
+    "late": 58,
+    "spikeLevels": [
+      "Lv 1",
+      "Lv 4",
+      "Lv 7"
+    ],
+    "coreItems": [
+      "Ice Queen Wand",
+      "Genius Wand",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "She’s oppressive early because she starts with Shadow Energy charges and can quickly stack Gloom upgrades for high lane control, constant poke, and strong early skirmish DPS. Mid stays strong with Black Shoes enabling reckless trades, but late her damage is more zone/attrition-based and can fall off versus sustained DPS carries and long-range burst if she can’t keep enemies in her detonation area."
+  },
+  "proBuilds": [
+    {
+      "player": "valentina",
+      "games": 579,
+      "items": [
+        "Necklace of Durance",
+        "Magic Shoes",
+        "Holy Crystal",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Paeonia.",
+      "games": 711,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Starlium Scythe",
+        "Ice Queen Wand"
+      ]
+    },
+    {
+      "player": "MISERY",
+      "games": 929,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Starlium Scythe",
+        "Ice Queen Wand"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/lylia/video-0-0.mp4",
+    "skill1": "/videos/heroes/lylia/video-1-0.mp4",
+    "skill2": "/videos/heroes/lylia/video-2-0.mp4",
+    "ultimate": "/videos/heroes/lylia/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "Use Lylia's 2nd Skill to hit the opponent, then use her 1st Skill to detonate the Shadow Energy for a significant burst of damage. Continue to throw her 2nd Skill at the enemy and detonate it with Gloom."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Use Lylia's 2nd Skill multiple times to cover a large area with Shadow Energy, then detonate a chain reaction with her 1st Skill. Continue to spam Lylia's 2nd Skill and detonate with Gloom to quickly set off multiple explosions at once. When in danger, use Lylia's Ultimate to return to safety and recover."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Harley",
+      "winrateDelta": 2.89
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 1.45
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": 1.38
+    },
+    {
+      "name": "Moskov",
+      "winrateDelta": 1.29
+    },
+    {
+      "name": "Fanny",
+      "winrateDelta": 1.25
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -10.52
+    },
+    {
+      "name": "Pharsa",
+      "winrateDelta": -6.21
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": -4.97
+    },
+    {
+      "name": "Zetian",
+      "winrateDelta": -4.65
+    },
+    {
+      "name": "Aurora",
+      "winrateDelta": -4.62
+    }
+  ],
+  "metaScore": 13.41,
+  "metaRank": 96,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Johnson",
+        "advantage": 2.43
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.36
+      },
+      {
+        "name": "Alice",
+        "advantage": 2.13
+      },
+      {
+        "name": "Diggie",
+        "advantage": 1.88
+      },
+      {
+        "name": "Alpha",
+        "advantage": 1.83
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 3.34
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.21
+      },
+      {
+        "name": "Bruno",
+        "advantage": 1.95
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.92
+      },
+      {
+        "name": "Irithel",
+        "advantage": 1.8
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Tank lawan lngsung lumpuh",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Magic Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Wishing Lantern",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-05T00:32:42.929028+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 KNOCKOUT STAGE DAY 1 AE.Hijumee",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Concentrated Energy",
+        "Wishing Lantern",
+        "Blood Wings",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Purify",
+      "skillOrder": null,
+      "notes": "( ONIC VS AE GAME 2 ) M7 WORLD CHAMPIONSHIP KNOCKOUT STAGE 18 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-18T15:11:07.607736+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Jamin Win by Awikwok",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Magic Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Ice Queen Wand",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Ini hero apapun jamin mati",
+      "tags": [],
+      "lastUpdated": "2025-10-25T03:11:25.146365+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 10840,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 10990,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10700,
+      "notes": null
+    }
+  ]
+}

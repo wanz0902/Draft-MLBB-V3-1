@@ -1,0 +1,561 @@
+{
+  "id": "diggie",
+  "name": "Diggie",
+  "heroName": "Diggie",
+  "role": [
+    "Support"
+  ],
+  "specialty": [
+    "Guard",
+    "Poke"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam",
+    "Mid"
+  ],
+  "flex_lanes": [
+    "Mid"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2450,
+    "hpRegen": 7.4,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 95,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Young Again",
+      "description": "Upon death, Diggie reverses time and turns back to egg form, in which he can continue to move around and gains a new set of skills. He cannot be targeted in egg form and will revive after a period of time.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Young_Again",
+      "tips": "Chick mode not only can distract enemies, it can also be used to scout out the mode. The insignificant damage can be used to interrupt enemy Recall and Regen.",
+      "iconUrl": "/raw-assets/skill_icons/diggie/young_again.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Auto Alarm Bomb",
+      "description": "Diggie flings an owl alarm to the target location that remains stationary for 25s or until it reacts to the first enemy in range, chasing them and exploding upon collision. The explosion deals 350( +100% Total Magic Power) (Magic Damage) to enemies hit and slows them by 30%. Diggie gains 2 stacks of (Dangerous Sparks) each time an enemy hero is hit by the explosion (up to 60 stacks), each stack increasing the skill's damage by 1%. He loses half the stacks upon death, but can gain 1 stack of (Dangerous Sparks) each time his skill hits an enemy hero when in egg form. Up to 5 owl alarms can exist at the same time.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Auto_Alarm_Bomb",
+      "tips": "When ticking down, tap again to detonate immediately. Early detonations will only slow instead of stunning. Best to let it tick for as long as possible, but don't be greedy for damage and let the enemy leave the explosion range.",
+      "iconUrl": "/raw-assets/skill_icons/diggie/auto_alarm_bomb.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Reverse Time",
+      "description": "Diggie marks the target enemy hero for 4s and pulls them back to their previous location after the duration ends, dealing 150( +100% Total Magic Power) (Magic Damage) and briefly slowing them by 80%. If the enemy moves out of the circle, the pull will be triggered early.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Reverse_Time",
+      "tips": "Powerful CC ability, use it on enemies with powerful mobility skills for highest effectiveness.",
+      "iconUrl": "/raw-assets/skill_icons/diggie/reverse_time.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Time Journey",
+      "description": "Diggie removes all debuffs on nearby allied heroes (including himself) and grants them a 650( +300% Total Magic Power) shield and Control Immunity for 3s. He also gains 50% Movement Speed for 0.5s.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Time_Journey",
+      "tips": "Use it after allies have been CCed, giving them a shield, This is a tremendously powerful team fight ability.",
+      "iconUrl": "/raw-assets/skill_icons/diggie/time_journey.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Alice",
+        "Zhuxin",
+        "Khufra",
+        "Balmond",
+        "Atlas"
+      ],
+      "weakAgainst": [
+        "Zhask",
+        "Sun",
+        "Hanzo",
+        "Estes",
+        "Franco"
+      ],
+      "synergyWith": [
+        "Baxia",
+        "Ixia",
+        "Carmilla",
+        "Beatrix",
+        "Yve"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Alice",
+        "advantage": 3.4
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 3.4
+      },
+      {
+        "name": "Khufra",
+        "advantage": 3
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.7
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Zhask",
+        "advantage": 4
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.6
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.5
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.5
+      },
+      {
+        "name": "Franco",
+        "advantage": 3.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Baxia",
+        "synergy": 11.1
+      },
+      {
+        "name": "Ixia",
+        "synergy": 7.4
+      },
+      {
+        "name": "Carmilla",
+        "synergy": 5.3
+      },
+      {
+        "name": "Beatrix",
+        "synergy": 4.6
+      },
+      {
+        "name": "Yve",
+        "synergy": 3.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Diggie counters close range, CC focused heroes like Atlas and Lolita since he can pull them away and remove their CCs with his Ultimate.",
+    "weakAgainstReason": "Diggie is countered by agile and bursty Assassins like Ling and Aamon because his own lack of defense makes him an easy target.",
+    "synergyReason": "Diggie works best with Marksmen that lack mobility or survivability like Layla and Miya because his skills can protect them very well."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Diggie adalah support yang membantu tim melalui heal, shield, atau utility lainnya.",
+  "playstyleTags": [
+    "Protect"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Enabler",
+    "Defensive Draft"
+  ],
+  "counterTags": [
+    "Dive",
+    "Isolation",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Dive",
+    "Sustain Enabler"
+  ],
+  "macroTags": [
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 54.1,
+  "pickRate": 0.2,
+  "banRate": 16.4,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 40,
+    "abilityEffects": 20,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 85,
+    "late": 75,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 11"
+    ],
+    "coreItems": [
+      "Fleeting Time",
+      "Enchanted Talisman",
+      "Dominance Ice"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Diggie is useful early with bombs for zone control and Reverse Time to disrupt engages, but his biggest impact starts once teamfights happen because Time Journey can nullify initiation/CC and swing Turtle fights. Late game value stays high as an anti-CC enabler, though his damage is inconsistent and more comp-dependent."
+  },
+  "proBuilds": [
+    {
+      "player": "соне4к@150kg",
+      "games": 510,
+      "items": [
+        "Encourage Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Guardian Helmet",
+        "Antique Cuirass",
+        "Radiant Armor"
+      ]
+    },
+    {
+      "player": "Kim Seong.",
+      "games": 677,
+      "items": [
+        "Encourage Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Guardian Helmet",
+        "Antique Cuirass",
+        "Radiant Armor"
+      ]
+    },
+    {
+      "player": "『STAR』`Sun™~¤",
+      "games": 697,
+      "items": [
+        "Encourage Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Guardian Helmet",
+        "Glowing Wand"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/diggie/video-0-0.mp4",
+    "skill1": "/videos/heroes/diggie/video-1-0.mp4",
+    "skill2": "/videos/heroes/diggie/video-2-0.mp4",
+    "ultimate": "/videos/heroes/diggie/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Diggie's 1st Skill to poke the enemy. If an enemy tries to initiate, pull them back with his 2nd Skill. If a teammate gets CC'd or takes too much damage, use Diggie's Ultimate to save them."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Diggie's 2nd Skill to confine the enemy to their location, then toss an owl alarm at them with his 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Layla",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Miya",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Anthropomorphic owl Nature Spirit",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 12.38
+    },
+    {
+      "name": "Carmilla",
+      "winrateDelta": 9.55
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": 8.94
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 5.75
+    },
+    {
+      "name": "Ixia",
+      "winrateDelta": 5.3
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": -25.1
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": -24.42
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": -19.42
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": -16.93
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": -15.89
+    }
+  ],
+  "metaScore": 25.29,
+  "metaRank": 18,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Atlas",
+        "advantage": 5.89
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 5.32
+      },
+      {
+        "name": "Alice",
+        "advantage": 5.06
+      },
+      {
+        "name": "Baxia",
+        "advantage": 4.43
+      },
+      {
+        "name": "Joy",
+        "advantage": 4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 8.37
+      },
+      {
+        "name": "Estes",
+        "advantage": 6.56
+      },
+      {
+        "name": "Zhask",
+        "advantage": 3.72
+      },
+      {
+        "name": "Hylos",
+        "advantage": 3.59
+      },
+      {
+        "name": "Floryn",
+        "advantage": 3.53
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Udh ngeselin tambahan",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Guardian Helmet",
+        "Athena's Shield",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T07:30:32.725791+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Revitalize",
+      "cost": 10910,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10830,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10670,
+      "notes": null
+    }
+  ]
+}

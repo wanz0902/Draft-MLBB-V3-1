@@ -1,0 +1,951 @@
+{
+  "id": "kagura",
+  "name": "Kagura",
+  "heroName": "Kagura",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Poke",
+    "Finisher"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2401,
+    "hpRegen": 6.6,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 97,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.02",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Yin Yang Gathering",
+      "description": "Upon retrieving the (Seimei Umbrella), Kagura gains a 280( +50% Total Magic Power) shield, stuns nearby enemies for 0.5s, and slows them by 60% for 1s. Cooldown: 4.5s.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "(+80% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Shield",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Yin_Yang_Gathering_",
+      "tips": "One of your most important skills, this is what makes her an insane poking machine.. Reuniting with her umbrella would trigger the passive, which gives her a mini stun and a tiny shield. There are 3 ways in reuniting with the umbrella that could trigger her passive. Walking out of range from the umbrella Using “2” to teleport to the umbrella Walking over to the umbrella.",
+      "iconUrl": "/raw-assets/skill_icons/kagura/yin_yang_gathering.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Seimei Umbrella Open",
+      "description": "Kagura sends the Seimei Umbrella to the target location, dealing 365 (+105% Total Magic Power) Magic Damage to enemies in its path and slowing them by 60% for 0.5s. The Umbrella will automatically return to Kagura when she's too far away.\nThis skill deals 130% damage to non-hero enemies.",
+      "cooldown": "5.0",
+      "manaCost": "45",
+      "damageType": "Magic",
+      "scaling": [
+        "(+105% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "5.0",
+            "4.7",
+            "4.4",
+            "4.1",
+            "3.8",
+            "3.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "45",
+            "50",
+            "55",
+            "60",
+            "65",
+            "70"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "365",
+            "410",
+            "455",
+            "500",
+            "545",
+            "590"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Damage",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Seimei_Umbrella_Open_",
+      "variant": "With Umbrella",
+      "displayName": "Seimei Umbrella Open (With Umbrella)",
+      "tips": "It can act as an ward, throw the umbrella into a bush to reveal the location. This could reduce the chances of getting ganked. There’s a built in slow whenever you hit, this CC annoys the hell out of your enemy. When escaping, keep throwing your umbrella towards your enemy to slow them down. This allows easier escape To poke your enemy, it’s easier if your umbrella is out in the open, since it’s nearly unpredictable plus there’s a shorter distance to cover when compared to the umbrella flying out from you. This ability allows you to poke people under their tower due to her insane range, remember point “2” under the passive section? Proc-ing the passive while under the the tower range allows you to take a hit from the tower, paired with the annoying range, it’s a pretty deadly combo.",
+      "iconUrl": "/raw-assets/skill_icons/kagura/seimei_umbrella_open_with_umbrella.png",
+      "displayLabel": "Skill 1 (With Umbrella)",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Seimei Umbrella Open",
+      "description": "Kagura sends the Seimei Umbrella to the target location, dealing 365 (+105% Total Magic Power) Magic Damage to enemies in its path and slowing them by 60% for 0.5s. The Umbrella will automatically return to Kagura when she's too far away.\nThis skill deals 130% damage to non-hero enemies.",
+      "cooldown": "5.0",
+      "manaCost": "45",
+      "damageType": "Magic",
+      "scaling": [
+        "(+105% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "5.0",
+            "4.7",
+            "4.4",
+            "4.1",
+            "3.8",
+            "3.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "45",
+            "50",
+            "55",
+            "60",
+            "65",
+            "70"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "365",
+            "410",
+            "455",
+            "500",
+            "545",
+            "590"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Damage",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Seimei_Umbrella_Open",
+      "variant": "Without Umbrella",
+      "displayName": "Seimei Umbrella Open (Without Umbrella)",
+      "tips": "Your bread and butter skill. The skill that makes her so annoying to deal with, with the built in purify. It makes her pretty much immune to all CCs. The one skill that allows her to slip away from chasing enemies when mastered.",
+      "iconUrl": "/raw-assets/skill_icons/kagura/seimei_umbrella_open_without_umbrella.png",
+      "displayLabel": "Skill 1 (Without Umbrella)",
+      "skillSlot": "skill1"
+    },
+    "ultimate": {
+      "name": "Rasho Umbrella Flee",
+      "description": "Kagura removes all debuffs on her and leaps in the target direction, while leaving the Seimei Umbrella behind.",
+      "cooldown": "12.0",
+      "manaCost": "55",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.5",
+            "11.0",
+            "10.5",
+            "10.0",
+            "9.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "55",
+            "60",
+            "65",
+            "70",
+            "75",
+            "80"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Remove CC",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Yin_Yang_Overturn",
+      "variant": "With Umbrella",
+      "displayName": "Rasho Umbrella Flee (With Umbrella)",
+      "tips": "Use this skill with your “2” after teleporting to your umbrella proc “3” to deal some damage to the enemy and knocking them back. This skill can be use to intercept enemies that are chasing your allies, the knockback and slow gives your allies some time to escape You can even proc “3” before you dash away to escape Teleporting behind your enemies and proc-ing “3” when they are near your tower can knock them towards your tower.",
+      "iconUrl": "/raw-assets/skill_icons/kagura/rasho_umbrella_flee_with_umbrella.png",
+      "displayLabel": "Skill 2 (With Umbrella)",
+      "skillSlot": "skill2"
+    },
+    "extra1": {
+      "name": "Rasho Umbrella Flee",
+      "description": "Kagura teleports to the Seimei Umbrella's location and retrieves it, dealing 300 (+90% Total Magic Power) Magic Damage to the nearby enemies.",
+      "cooldown": "12.0",
+      "manaCost": "55",
+      "damageType": "Magic",
+      "scaling": [
+        "(+90% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.5",
+            "11.0",
+            "10.5",
+            "10.0",
+            "9.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "55",
+            "60",
+            "65",
+            "70",
+            "75",
+            "80"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "320",
+            "340",
+            "360",
+            "380",
+            "400"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Rasho_Umbrella_Flee",
+      "variant": "Without Umbrella",
+      "displayName": "Rasho Umbrella Flee (Without Umbrella)",
+      "displayLabel": "Skill 2 (Without Umbrella)",
+      "skillSlot": "skill2",
+      "iconUrl": "/raw-assets/skill_icons/kagura/rasho_umbrella_flee_without_umbrella.png"
+    },
+    "extra2": {
+      "name": "Yin Yang Overturn",
+      "description": "Kagura invokes the power of the Seimei Umbrella, dealing 250 (+95% Total Magic Power) Magic Damage to nearby enemies, knocking them back, and slowing them by 60% for 0.5s.",
+      "cooldown": "36.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+95% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "33.0",
+            "30.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "75",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "335",
+            "420"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Yin_Yang_Overturn",
+      "variant": "With Umbrella",
+      "displayName": "Yin Yang Overturn (With Umbrella)",
+      "displayLabel": "Ultimate (With Umbrella)",
+      "skillSlot": "ultimate",
+      "iconUrl": "/raw-assets/skill_icons/kagura/yin_yang_overturn_with_umbrella.png"
+    },
+    "extra3": {
+      "name": "Yin Yang Overturn",
+      "description": "Kagura invokes the power of the Seimei Umbrella, resetting the cooldown of Seimei Umbrella Open, dealing 235 (+60% Total Magic Power) Magic Damage to enemies around the Umbrella, and slowing them by 60%. After 1.5s, enemy heroes around the Umbrella will be pulled toward it and take 480 (+155% Total Magic Power) Magic Damage.",
+      "cooldown": "36.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)",
+        "(+155% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "33.0",
+            "30.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "75",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "235",
+            "295",
+            "355"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "480",
+            "600",
+            "720"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Yin_Yang_Overturn",
+      "variant": "Without Umbrella",
+      "displayName": "Yin yang Overturn (Without Umbrella)",
+      "displayLabel": "Ultimate (Without Umbrella)",
+      "skillSlot": "ultimate",
+      "iconUrl": "/raw-assets/skill_icons/kagura/yin_yang_overturn_without_umbrella.png"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Hanzo",
+        "Belerick",
+        "Yin",
+        "Sun"
+      ],
+      "weakAgainst": [
+        "Chip",
+        "Harith",
+        "Lukas",
+        "Freya",
+        "Kaja"
+      ],
+      "synergyWith": [
+        "Zhuxin",
+        "Valentina",
+        "Cyclops",
+        "Rafaela",
+        "Harley"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.8
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2
+      },
+      {
+        "name": "Belerick",
+        "advantage": 1.9
+      },
+      {
+        "name": "Yin",
+        "advantage": 1.7
+      },
+      {
+        "name": "Sun",
+        "advantage": 1.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 2.9
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.7
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2.2
+      },
+      {
+        "name": "Freya",
+        "advantage": 2.2
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Zhuxin",
+        "synergy": 3.9
+      },
+      {
+        "name": "Valentina",
+        "synergy": 2.6
+      },
+      {
+        "name": "Cyclops",
+        "synergy": 1.6
+      },
+      {
+        "name": "Rafaela",
+        "synergy": 1.6
+      },
+      {
+        "name": "Harley",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Kagura's Ultimate can deal high burst damage, making her strong against back-row heroes with no dash or blink, such as Layla and Eudora.",
+    "weakAgainstReason": "Kagura is countered by heroes with more than one control immunity abilities that allow them to escape her various CC skills, heroes like Joy and Martis are good examples.",
+    "synergyReason": "Kagura works well with tank heroes with strong CC skills that allow her to deal more damage with her Ultimate, such as Atlas and Tigreal."
+  },
+  "mechanicCategory": [
+    "Umbrella State",
+    "Dual Skill Set"
+  ],
+  "mechanicNote": "Kagura mengendalikan payung yang bisa dilempar dan ditarik kembali, memberikan dua set skill berbeda tergantung posisi payung.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Form Management",
+    "Combo Timing"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.2,
+  "pickRate": 0.6,
+  "banRate": 1.2,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 90,
+    "abilityEffects": 40,
+    "difficulty": 80
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 75,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Kagura’s early is more poke/tempo than guaranteed kills, but she spikes in mid game when she has ultimate access for full umbrella setups plus safer engages/disengages. Late game she remains strong due to high magic ratios and utility, though execution and enemy positioning reduce her one-combo reliability."
+  },
+  "proBuilds": [
+    {
+      "player": "Odessà.",
+      "games": 1856,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "Izanagi.",
+      "games": 2161,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Genius Wand",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "Kyroxx.",
+      "games": 992,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Blood Wings",
+        "Glowing Wand"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/kagura/video-0-0.mp4",
+    "skill1": "/videos/heroes/kagura/video-1-0.mp4",
+    "skill2": "/videos/heroes/kagura/video-2-0.mp4",
+    "ultimate": "/videos/heroes/kagura/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 5",
+        "Skill 1",
+        "Skill 3",
+        "Skill 4",
+        "Skill 2"
+      ],
+      "description": "Kagura should place her Umbrella between the enemies with her 1st Skill, then use her Ultimate to reset the cooldown for her 1st Skill to be able to adjust the Umbrella location before teleporting to the Umbrella location to stun nearby enemies. She should then use her Ultimate + 2nd Skill combo to escape from the fighting zone."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 3",
+        "Skill 2"
+      ],
+      "description": "Kagura can use her 1st Skill to poke the enemy with her Umbrella, then her 2nd Skill to teleport to the Umbrella's location, dealing more damage to the enemies and dash back by casting her 2nd Skill again."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Hayabusa",
+      "relationship": "CHILDHOOD SWEETHEARTS"
+    },
+    {
+      "name": "Hanabi",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Cadia Riverlands",
+  "race": "Spirit",
+  "bestTeammates": [
+    {
+      "name": "Lunox",
+      "winrateDelta": 8.92
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 3.29
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 2.94
+    },
+    {
+      "name": "Aulus",
+      "winrateDelta": 2.8
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": 2.45
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Vale",
+      "winrateDelta": -9.12
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -8.98
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -5.62
+    },
+    {
+      "name": "Pharsa",
+      "winrateDelta": -4.73
+    },
+    {
+      "name": "Vexana",
+      "winrateDelta": -4.06
+    }
+  ],
+  "metaScore": 16.2,
+  "metaRank": 75,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 3.54
+      },
+      {
+        "name": "Minotaur",
+        "advantage": 1.76
+      },
+      {
+        "name": "Nolan",
+        "advantage": 1.73
+      },
+      {
+        "name": "Badang",
+        "advantage": 1.67
+      },
+      {
+        "name": "Lolita",
+        "advantage": 1.59
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Minsitthar",
+        "advantage": 2.53
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.18
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 2.17
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.07
+      },
+      {
+        "name": "Marcel",
+        "advantage": 2.03
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "ONIC.SANZ MPL ID S16",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Blood Wings",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "1st Time Sanz play Kagura in MPL ID S16",
+      "tags": [],
+      "lastUpdated": "2025-09-12T18:22:59.230828+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build kagura sanz",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Glowing Wand",
+        "Arcane Boots",
+        "Divine Glaive",
+        "Wishing Lantern",
+        "Blood Wings",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "item inti Kagura ada 3 ,glowing wand, divine glave, blood wings\nkalo sepatu pake sepatu magic",
+      "tags": [],
+      "lastUpdated": "2025-10-23T13:03:19.071541+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "one combo, one kill",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Glowing Wand",
+        "Arcane Boots",
+        "Sky Piercer",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "If you use Kagura's basic combo, you can kill the enemy with just 1 combo.",
+      "tags": [],
+      "lastUpdated": "2025-10-22T15:07:10.279593+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "mm mage tumbang",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-04-02T09:56:04.687067+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "1 combo cepat rotasi",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "rotasi cepat+1 combo buat hero tipis",
+      "tags": [],
+      "lastUpdated": "2025-12-27T12:58:09.093968+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11940,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 11950,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10960,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "id": "rafaela",
+  "name": "Rafaela",
+  "heroName": "Rafaela",
+  "role": [
+    "Support"
+  ],
+  "specialty": [
+    "Regen",
+    "Guard"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2501,
+    "hpRegen": 8,
+    "mana": 490,
+    "manaRegen": 3.8,
+    "physicalAttack": 97,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Deity Penalization",
+      "description": "When Rafaela is killed, she turns into a beam of (Holy Light) and launches herself at her killer after a 2s delay. This attack deals (True Damage) equal to 20% of the target's Max HP upon hit and can be blocked by other enemy heroes, dealing damage to them instead. This effect won't be triggered if the killer is a non-hero enemy or if they're too far away.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Deity_Penalization",
+      "tips": "This passive may be seems like a joke, but if you know how to take advantage of this, be sure that no enemy can run away from you, same as be sure that you can save your low-hp teammates!",
+      "iconUrl": "/raw-assets/skill_icons/rafaela/deity_penalization.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Light of Retribution",
+      "description": "Rafaela strikes the three nearest enemies with (Light of Retribution), dealing them 225( +120% Total Magic Power) (Magic Damage), briefly revealing their positions, and slowing them by 40% for 1.5s. Enemies hit by (Light of Retribution) again within 5s will take 20% extra damage (this effect stacks up to 3 times).",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Light_of_Retribution",
+      "tips": "This is the main damage skill of Rafaela, and at the same time, is the biggest debuffs skill from her too. With the correct equipments, this skill is not only about revealing enemy's stealth and slow them down, it can also burn, reduce enemy's regen effects and even reduce enemy's defense too!",
+      "iconUrl": "/raw-assets/skill_icons/rafaela/light_of_retribution.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Holy Healing",
+      "description": "Rafaela calls upon (Holy Light), restoring 100( +35% Total Magic Power) HP to nearby allied heroes, plus an additional 150( +45% Total Magic Power) HP to herself and the most injured allied hero in range. Also increases the Movement Speed of nearby allied heroes by 30% and grants Slow Immunity for 1s. Every 20 point(s) of Magic Power will add 1% to the Movement Speed bonus.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Holy_Healing",
+      "tips": "This the healing skill, in contrast of her damage-skill, there no equipment to give her better buffs, and yet, this is the skill what most people expect from her.",
+      "iconUrl": "/raw-assets/skill_icons/rafaela/holy_healing.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Holy Baptism",
+      "description": "Rafaela unleashes the true power of (Holy Light) in the target direction, dealing 460( +120% Total Magic Power) (Magic Damage) to enemies in a line and stunning them for 1.2s.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Holy_Baptism",
+      "tips": "In early game, you can trick you enemy to dive into your turret and stun him, then let the turret do its job, be aware of the enemy's minion, if there is any, wait for them to hit you once first.",
+      "iconUrl": "/raw-assets/skill_icons/rafaela/holy_baptism.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Marcel",
+        "Natalia",
+        "Valir",
+        "Alice",
+        "Faramis"
+      ],
+      "weakAgainst": [
+        "Ixia",
+        "Eudora",
+        "Odette",
+        "Vale",
+        "Nolan"
+      ],
+      "synergyWith": [
+        "Akai",
+        "Barats",
+        "Jawhead",
+        "Natalia",
+        "Edith"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 3.4
+      },
+      {
+        "name": "Natalia",
+        "advantage": 3.3
+      },
+      {
+        "name": "Valir",
+        "advantage": 3.2
+      },
+      {
+        "name": "Alice",
+        "advantage": 2.7
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 3
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.6
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.5
+      },
+      {
+        "name": "Vale",
+        "advantage": 2.3
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Akai",
+        "synergy": 3.6
+      },
+      {
+        "name": "Barats",
+        "synergy": 2.7
+      },
+      {
+        "name": "Jawhead",
+        "synergy": 2.4
+      },
+      {
+        "name": "Natalia",
+        "synergy": 2.2
+      },
+      {
+        "name": "Edith",
+        "synergy": 2.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Rafaela has great healing and decent mobility, and performs well against heroes that lack burst damage or mobility, such as Masha and Barats.",
+    "weakAgainstReason": "Rafaela struggles against bursty and agile Assassins, like Ling and Hayabusa.",
+    "synergyReason": "When teamed up with Fighters like Freya and Lapu-Lapu, Rafaela can boost their offensive power and survivability."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Rafaela adalah support yang membantu tim melalui heal, shield, atau utility lainnya.",
+  "playstyleTags": [
+    "Protect"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Enabler",
+    "Defensive Draft"
+  ],
+  "counterTags": [
+    "Dive",
+    "Isolation",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Dive",
+    "Sustain Enabler"
+  ],
+  "macroTags": [
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.6,
+  "pickRate": 0.3,
+  "banRate": 2.6,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 20,
+    "abilityEffects": 70,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 66,
+    "mid": 74,
+    "late": 62,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 10"
+    ],
+    "coreItems": [
+      "Flask of the Oasis",
+      "Fleeting Time",
+      "Oracle"
+    ],
+    "dominantPhase": null,
+    "description": "Early is strong for roams because consistent poke/slow plus healing and movespeed can win lanes and early rotations. Mid game is her best window as grouped fights make her AoE healing and Holy Baptism picks very impactful; late game she remains useful but can struggle versus high burst/anti-heal and long-range engage that kills allies before healing matters."
+  },
+  "proBuilds": [
+    {
+      "player": "Eleanor Уυтαα.",
+      "games": 869,
+      "items": [
+        "Rapid Boots",
+        "Necklace of Durance",
+        "Flask of the Oasis",
+        "Glowing Wand",
+        "Oracle",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Can you be mine ???",
+      "games": 585,
+      "items": [
+        "Favor Rapid Boots",
+        "Flask of the Oasis",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Athena's Shield"
+      ]
+    },
+    {
+      "player": "peel",
+      "games": 444,
+      "items": [
+        "Favor Rapid Boots",
+        "Flask of the Oasis",
+        "Necklace of Durance",
+        "Holy Crystal",
+        "Oracle"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/rafaela/video-0-0.mp4",
+    "skill1": "/videos/heroes/rafaela/video-1-0.mp4",
+    "skill2": "/videos/heroes/rafaela/video-2-0.mp4",
+    "ultimate": "/videos/heroes/rafaela/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 2",
+        "Skill 1"
+      ],
+      "description": "Use 1st Skill to slow enemies,then her Ultimate for Control Effect,then use the 2nd Skill to restore allies' HP."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "Use 1st Skill to poke enemiesand 2nd to heal and create distance."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Freya",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Lapu-Lapu",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Light Angel",
+  "bestTeammates": [
+    {
+      "name": "Akai",
+      "winrateDelta": 3.97
+    },
+    {
+      "name": "Minsitthar",
+      "winrateDelta": 3.09
+    },
+    {
+      "name": "Jawhead",
+      "winrateDelta": 2.79
+    },
+    {
+      "name": "Hylos",
+      "winrateDelta": 2.76
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": 2.58
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Floryn",
+      "winrateDelta": -26.35
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -21.45
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": -21.19
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": -18.78
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -14.25
+    }
+  ],
+  "metaScore": 18.25,
+  "metaRank": 49,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.57
+      },
+      {
+        "name": "Karrie",
+        "advantage": 3.17
+      },
+      {
+        "name": "Marcel",
+        "advantage": 2.96
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.83
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.67
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 3.74
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.84
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.3
+      },
+      {
+        "name": "Sora",
+        "advantage": 2.08
+      },
+      {
+        "name": "Vale",
+        "advantage": 2.01
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "strong and durable in long wars ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Flask of the Oasis",
+        "Enchanted Talisman",
+        "Dominance Ice",
+        "Oracle",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Heal, poke, and stun ",
+      "tags": [],
+      "lastUpdated": "2025-10-03T18:38:50.575645+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Flask",
+        "the"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10450,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Flask",
+        "the"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10430,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Flask",
+        "the"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Sprint",
+      "cost": 10680,
+      "notes": null
+    }
+  ]
+}

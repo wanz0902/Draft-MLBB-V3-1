@@ -1,0 +1,733 @@
+{
+  "id": "nolan",
+  "name": "Nolan",
+  "heroName": "Nolan",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2480,
+    "hpRegen": 7.2,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 132,
+    "physicalDefense": 19,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.08",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Dimensional Rift",
+      "description": "Nolan's skills will leave a Rift. When a rift comes into contact with another rift, they will activate and pull enemies to their center and deal 240 (+140% Extra Physical Attack) Physical Damage after a short delay. Each time a rift activation hits an enemy, Nolan will gain 20 Energy. If an enemy is hit by multiple rift activations, the damage after the first hit will be reduced by 40%.\nCosmic Leap: If Nolan does not deal or take damage for 5s, he enhances his next Basic Attack to dash to the target, dealing (120% Total Physical Attack) Physical Damage and leaving a Rift. (Damage to and from Minions or Creeps will not prevent Nolan from getting this effect).\n|quote=The father who swore to protect his shining star.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+140% Extra Physical Attack)",
+        "(120% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dimensional_Rift",
+      "iconUrl": "/raw-assets/skill_icons/nolan/dimensional_rift.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Expansion",
+      "description": "Nolan cuts a rectangular area in front of him with his cosmic gauge, dealing 230 (+40% Total Physical Attack) Physical Damage and leaving a Rift at the first enemy hit.",
+      "cooldown": "2.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+40% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "2.5",
+            "2.2",
+            "1.9",
+            "1.6",
+            "1.3",
+            "1.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "230",
+            "280",
+            "330",
+            "380",
+            "430",
+            "480"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Expansion",
+      "iconUrl": "/raw-assets/skill_icons/nolan/expansion.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Gauge",
+      "description": "Nolan charges in the target direction and slashes with his cosmic gauge, dealing 70 (+13% Total Physical Attack) Physical Damage to enemies in his path and leaving a Rift.",
+      "cooldown": "2.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+13% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "2.5",
+            "2.2",
+            "1.9",
+            "1.6",
+            "1.3",
+            "1.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "70",
+            "100",
+            "130",
+            "160",
+            "190",
+            "220"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Gauge",
+      "iconUrl": "/raw-assets/skill_icons/nolan/gauge.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Fracture",
+      "description": "Nolan slashes at the target location 3 times, dealing 120 (+50% Extra Physical Attack) Physical Damage with each slash while leaving 3 rifts and slowing the target hit by 30% for 0.5s. The rifts will be activated automatically while Nolan dashes backward.",
+      "cooldown": "21.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "21.0",
+            "18.0",
+            "15.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "120",
+            "150",
+            "180"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Fracture",
+      "iconUrl": "/raw-assets/skill_icons/nolan/fracture.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Estes",
+        "Yve",
+        "Aulus",
+        "Floryn",
+        "Lolita"
+      ],
+      "weakAgainst": [
+        "Saber",
+        "Natalia",
+        "Hilda",
+        "Marcel",
+        "Chip"
+      ],
+      "synergyWith": [
+        "Ling",
+        "Freya",
+        "Harith",
+        "Floryn",
+        "Barats"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 4.5
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.8
+      },
+      {
+        "name": "Aulus",
+        "advantage": 2.8
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.8
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Saber",
+        "advantage": 3.5
+      },
+      {
+        "name": "Natalia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Hilda",
+        "advantage": 3.3
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.2
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Ling",
+        "synergy": 3.2
+      },
+      {
+        "name": "Freya",
+        "synergy": 1.9
+      },
+      {
+        "name": "Harith",
+        "synergy": 1.9
+      },
+      {
+        "name": "Floryn",
+        "synergy": 1.8
+      },
+      {
+        "name": "Barats",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Nolan counters squishy heroes that lack mobility skills like Hanabi and Eudora because they have a hard time avoiding his rifts while Nolan's own mobility makes them easy targets.",
+    "weakAgainstReason": "Nolan is countered by tanky heroes with high sustained damage, such as Thamuz and Fredrinn, who can survive Nolan's burst and kill him afterwards.",
+    "synergyReason": "Nolan works well with Tanks that can initiate and CC the enemy so Nolan to focus on dealing as much damage as possible, such as Tigreal and Gatotkaca."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Nolan adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.4,
+  "pickRate": 0.3,
+  "banRate": 0.4,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 60,
+    "abilityEffects": 20,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 85,
+    "mid": 75,
+    "late": 55,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "Blade of the Heptaseas",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "His low-cooldown mobility and rift explosions give him extremely fast clears and lethal early skirmish burst, letting him snowball around first Turtle fights. As the game goes late, team clumping and defensive scaling make it harder to reliably chain rifts onto priority targets without trading his life."
+  },
+  "proBuilds": [
+    {
+      "player": "kinyocoffe.",
+      "games": 1217,
+      "items": [
+        "Blade of the Heptaseas",
+        "Ice Tough Boots",
+        "Malefic Gun",
+        "Hunter Strike",
+        "Sea Halberd",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "@taishiasianboy",
+      "games": 1080,
+      "items": [
+        "Blade of the Heptaseas",
+        "Ice Magic Shoes",
+        "Malefic Gun",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "Beabadobeee",
+      "games": 1129,
+      "items": [
+        "Blade of the Heptaseas",
+        "Ice Tough Boots",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/nolan/video-0-0.mp4",
+    "skill1": "/videos/heroes/nolan/video-1-0.mp4",
+    "skill2": "/videos/heroes/nolan/video-2-0.mp4",
+    "ultimate": "/videos/heroes/nolan/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "In teamfights, approach the enemy using Nolan's 2nd Skill and enhanced Basic Attack, then activate the rift with his 1st Skill. Use Nolan's 2nd Skill to dash through the enemy, and unleash his Ultimate to activate all the rifts while dashing back to safety."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Skill 2",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, use Nolan's 2nd Skill and enhanced Basic Attack to catch the enemy, then use his 1st Skill to activate the rift. Follow up with his 2nd Skill into his 1st Skill to activate another rift explosion."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Layla",
+      "relationship": "FATHER AND DAUGHTER"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Karina",
+      "winrateDelta": 2.74
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 2.21
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 2.21
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 2.21
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": 1.94
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Fanny",
+      "winrateDelta": -15.09
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -11.66
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -8.96
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -7.32
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -7.16
+    }
+  ],
+  "metaScore": 9.73,
+  "metaRank": 119,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 6.23
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.94
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.02
+      },
+      {
+        "name": "Lunox",
+        "advantage": 2.87
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 2.84
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 5.5
+      },
+      {
+        "name": "Valentina",
+        "advantage": 3.45
+      },
+      {
+        "name": "Saber",
+        "advantage": 3.45
+      },
+      {
+        "name": "Natalia",
+        "advantage": 3.15
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.89
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Sakit aja sih",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Rose Gold Meteor",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Incer Hero backline musuh kyk mage atau mm",
+      "tags": [],
+      "lastUpdated": "2025-10-22T14:41:04.190171+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage sakit + bisa kabur",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Sky Piercer",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-03-26T08:27:50.875357+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 3 AE.Yazukee",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Azure Blade"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "( AE VS YG GAME 2 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 12 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-12T13:11:04.536547+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Hero tipis menangis 😭",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Blade of the Heptaseas",
+        "Tought Boots",
+        "Sky Piercer",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Damage burst",
+      "tags": [],
+      "lastUpdated": "2025-11-15T05:13:42.998176+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "kasih know know",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sky Piercer",
+        "Hunter Strike",
+        "Blade of Despair",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "misal nya menang di elry, saran gua fokus farm sampe kebeli furry hammer terus, incer mm atau mage nya yayaya",
+      "tags": [],
+      "lastUpdated": "2025-09-13T14:25:04.551186+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11850,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Sky"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11240,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10590,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "id": "popolandkupa",
+  "name": "Popol and Kupa",
+  "heroName": "Popol and Kupa",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Push",
+    "Burst"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2501,
+    "hpRegen": 6.8,
+    "mana": 450,
+    "manaRegen": 3.4,
+    "physicalAttack": 115,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "We Are Friends",
+      "description": "Kupa recovers 10% Max HP per second after not taking damage for 5s. When Kupa is killed, Popol can (Pray) for 3s to bring Kupa back to the battlefield. Cooldown: 30s. Every 3 consecutive attacks from Kupa will enhance Popol's next Basic Attack to deal ( +220% Total Physical Attack) (Physical Damage). Kupa has 2500 ( +1200% Total Physical Attack) Max HP and inherits 100% of Popol's other attributes and passive equipment effects (excluding Jungling and Roaming equipment effects). Kupa deals an additional damage against Creeps.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "We_Are_Friends",
+      "tips": "Nothing can separate Popol and Kupa, not even desperate battles. When Kupa escapes from combat, he will constantly regenerate HP under the good care of Popol. And even when Kupa has fallen on the battlefield, Popol's prayers can always bring him back. Kupa inherits the traits of Popol’s equipment items. And every 4 attacks performed by Kupa boosts the damage of Popol’s next basic attack.",
+      "iconUrl": "/raw-assets/skill_icons/popolandkupa/we_are_friends.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Bite 'em, Kupa!",
+      "description": "Popol throws a spear at the target enemy, dealing 80( +100% Total Physical Attack) (Physical Damage) while simultaneously commanding Kupa to lunge at the target, dealing an additional 100( +75% Total Physical Attack) (Physical Damage). Kupa will continue to attack the target for 3s. (Alpha Wolf Form): Kupa stuns the enemy for 1s and bites them 3 times in quick succession.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Bite_'em,_Kupa!",
+      "tips": "Popol throws a spear at the target for Physical Damage and orders Kupa to bite them, dealing Physical Damage.",
+      "iconUrl": "/raw-assets/skill_icons/popolandkupa/bite_em_kupa.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Kupa, Help!",
+      "description": "Popol summons Kupa back to his side, gaining a 240( +200% Extra Physical Attack) shield while dealing 240( +50% Total Physical Attack) (Physical Damage) to nearby enemies and slowing them by 35% for 0.5s. Kupa will then assist Popol to attack nearby enemies for 3s. (Alpha Wolf Form): Kupa darts back to Popol, knocking nearby enemies airborne for 0.2s. The shield and damage are increased to 125%.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Kupa,_Help!",
+      "tips": "Popol summons Kupa to protect him, gaining a Shield, dealing Physical Damage to the nearby enemies and slowing them.",
+      "iconUrl": "/raw-assets/skill_icons/popolandkupa/kupa_help.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Popol's Surprise",
+      "description": "Popol sets a trap at the target location that will detonate after a short delay once triggered, dealing 70( +20% Total Magic Power) (Magic Damage) to the enemy that steps on it, immobilizing them for 1s, and creating a frost zone for 4s. Enemies in the frost zone will have their Movement Speed reduced by 20%. Popol gains a trap charge every 22s (up to 3). Up to 3 traps can exist at the same time on the battlefield, each lasting up to 60s.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Popol's_Surprise",
+      "tips": "Popol and Kupa become enraged, gaining extra attack speed and movement speed. At the same time, Kupa will enter “Alpha Wolf Form”, restoring all HP and boosting the power of their 1st and 2nd skill.",
+      "iconUrl": "/raw-assets/skill_icons/popolandkupa/popol_s_surprise.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Masha",
+        "Selena",
+        "Aamon",
+        "Jawhead",
+        "Zilong"
+      ],
+      "weakAgainst": [
+        "Atlas",
+        "Carmilla",
+        "Sun",
+        "Alice",
+        "Marcel"
+      ],
+      "synergyWith": [
+        "Lesley",
+        "Granger",
+        "Clint",
+        "Brody",
+        "Ixia"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 3.2
+      },
+      {
+        "name": "Selena",
+        "advantage": 2.7
+      },
+      {
+        "name": "Aamon",
+        "advantage": 2.5
+      },
+      {
+        "name": "Jawhead",
+        "advantage": 2.4
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Atlas",
+        "advantage": 4.2
+      },
+      {
+        "name": "Carmilla",
+        "advantage": 4
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.7
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.5
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Lesley",
+        "synergy": 3.7
+      },
+      {
+        "name": "Granger",
+        "synergy": 2.9
+      },
+      {
+        "name": "Clint",
+        "synergy": 2.7
+      },
+      {
+        "name": "Brody",
+        "synergy": 2.7
+      },
+      {
+        "name": "Ixia",
+        "synergy": 2.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Kupa is powerful in combat, especially against Marksmen with lower sustainability such as Lesley and Brody.",
+    "weakAgainstReason": "But since Popol and Kupa don't have any Blink skills\nand Popol is quite squishy, they are at the mercy of more agile Assassins like Gusion and Karina.",
+    "synergyReason": "Popol and Kupa are best with Fighters that can charge into enemies' midst and ensure the survival of Popol and Kupa after controlling and killing enemies. For example, Alpha and Khaleed."
+  },
+  "mechanicCategory": [
+    "Pet Companion"
+  ],
+  "mechanicNote": "Popol bermain bersama Kupa (pet companion) yang bisa diperintahkan untuk menyerang atau menjaga area.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.9,
+  "pickRate": 0.3,
+  "banRate": 0.4,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 70,
+    "abilityEffects": 70,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 70,
+    "mid": 75,
+    "late": 68,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Corrosion Scythe"
+    ],
+    "dominantPhase": null,
+    "description": "He has unusually high early pressure for a marksman due to Kupa’s extra damage vs creeps, strong trading, and traps for lane control. He spikes again with ultimate for tempo fights and with 2-item attack-speed synergy mid game; late game is still good DPS but more punishable than hypercarries due to range/safety limits and reliance on Kupa uptime."
+  },
+  "proBuilds": [
+    {
+      "player": "cʟaɪʀe",
+      "games": 1337,
+      "items": [
+        "Ice Tough Boots",
+        "Sea Halberd",
+        "Windtalker",
+        "Blade of Despair",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "TT : RainnDS",
+      "games": 810,
+      "items": [
+        "Flame Warrior Boots",
+        "Sea Halberd",
+        "Rose Gold Meteor",
+        "Windtalker",
+        "Great Dragon Spear",
+        "Wind of Nature"
+      ]
+    },
+    {
+      "player": "KUPA YT",
+      "games": 1356,
+      "items": [
+        "Tough Boots",
+        "Sea Halberd",
+        "Windtalker",
+        "Blade of Despair",
+        "Wind of Nature"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/popolandkupa/video-0-0.mp4",
+    "skill1": "/videos/heroes/popolandkupa/video-1-0.mp4",
+    "skill2": "/videos/heroes/popolandkupa/video-2-0.mp4",
+    "ultimate": "/videos/heroes/popolandkupa/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 4",
+        "Skill 2",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": "In teamfights, boost Attack Speed with their Ultimate\nand control enemies with the enhanced 1st Skill for heavy damage. When enemies are close, use the enhanced 2nd Skill for protection."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 4",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, poke enemies with the 1st Skill\nand get more Attack Speed with their Ultimate when enemies are low on HP. Then control and kill the enemies with the enhanced 1st Skill."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Bite 'em, Kupa!",
+      "Kupa, Help!",
+      "Popol's Surprise"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Alpha",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Khaleed",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Lesley",
+      "winrateDelta": 4.38
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 3.45
+    },
+    {
+      "name": "Brody",
+      "winrateDelta": 3.29
+    },
+    {
+      "name": "Granger",
+      "winrateDelta": 3.08
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 2.9
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hanzo",
+      "winrateDelta": -4.03
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": -3.54
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -3.53
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -3.44
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -3.12
+    }
+  ],
+  "metaScore": 19.44,
+  "metaRank": 39,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 4.92
+      },
+      {
+        "name": "Masha",
+        "advantage": 4.37
+      },
+      {
+        "name": "Valentina",
+        "advantage": 4.11
+      },
+      {
+        "name": "Harith",
+        "advantage": 3.36
+      },
+      {
+        "name": "Claude",
+        "advantage": 2.72
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Atlas",
+        "advantage": 3.87
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.46
+      },
+      {
+        "name": "Alice",
+        "advantage": 2.94
+      },
+      {
+        "name": "Carmilla",
+        "advantage": 2.87
+      },
+      {
+        "name": "Grock",
+        "advantage": 2.86
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Popol End 5 Menit",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Rapid Boots",
+        "Rose Gold Meteor",
+        "Malefic Gun",
+        "Blade of Despair",
+        "Haas Claws",
+        "Corrosion Scythe"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "Push only",
+      "tags": [],
+      "lastUpdated": "2025-09-06T16:08:44.584925+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Attack speed(suruhan subscriber) ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Windtalker",
+        "Haas Claws",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-26T08:09:11.781736+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "top 1 PH",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Sea Halberd",
+        "Warrior Boots",
+        "Malefic Gun",
+        "Blade of Despair",
+        "Great Dragon Spear",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-16T05:15:48.851843+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Blade",
+        "Despair",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12070,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11050,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11980,
+      "notes": null
+    }
+  ]
+}

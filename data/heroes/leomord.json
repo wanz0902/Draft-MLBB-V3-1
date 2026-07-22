@@ -1,0 +1,694 @@
+{
+  "id": "leomord",
+  "name": "Leomord",
+  "heroName": "Leomord",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2638,
+    "hpRegen": 7.8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 124,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "The Oath Keeper",
+      "description": "Leomord's Basic Attacks are guaranteed to Crit against enemies below 50% Max HP, dealing 200% damage. Leomord converts every 1% Crit Chance gained into 1 Physical Attack.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "The_Oath_Keeper",
+      "tips": "Passive effects make it easy for Leomord to finish off low-HP units. Making good use of 2 other skills in the mounted state, and Leomord could cut into fights and reduce enemies’ HP to below 30% and slay them with basic attacks in combination with skill “Inspire”.",
+      "iconUrl": "/raw-assets/skill_icons/leomord/the_oath_keeper.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Momentum",
+      "description": "Leomord gains a 150( +50% Total Physical Attack) shield and begins channeling, slowing enemies in the target direction by 25%. When the channeling is complete or interrupted, he thrusts his sword in the same direction, dealing up to 500( +180% Total Physical Attack) (Physical Damage) to enemies hit (scales with channel time) and slowing them by 40% for 1s. Leomord can cast this skill again to actively interrupt the channeling.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Momentum",
+      "tips": "The main DPS skill for human state Leomord takes a long time to charge but could be released early to ensure high hit rate. The shield gained by releasing the skill is surprising useful during a tight match or when Leomord is low in health.",
+      "iconUrl": "/raw-assets/skill_icons/leomord/momentum.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Decimation Assault",
+      "description": "Leomord charges in a designated direction, dealing 300( +50% Total Physical Attack) (Physical Damage) to enemies along the way and slowing them by 30% for 1s.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Decimation_Assault",
+      "tips": "Human state skill 2 and mounted state skill 2 are both teleport skills but they don’t share CD. Take advantage of this and Leomord could teleport twice when summoning Barbiel with the ultimate, making it possible to cut into fights quicker.",
+      "iconUrl": "/raw-assets/skill_icons/leomord/decimation_assault.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Phantom Steed",
+      "description": "Leomord summons (Barbiel) to rush to him, knocking back and dealing 350( +100% Total Physical Attack) (Physical Damage) to all enemies in its path. If (Barbiel) comes in contact with Leomord, they will enter the Mounted State, gaining 30% Movement Speed that decays over 2s. (Mounted State): Leomord gains a brand-new set of skills, and his Basic Attack can be used while moving and hits a circular area to deal AOE damage. Leomord also gains 60 Movement Speed and 30 Physical & Magic Defense.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Phantom_Steed",
+      "tips": "This is the strongest skill of Leomord. Mounting on Barbiel makes him incredibly strong. Barbiel could even knocks back enemies when running. But make sure Leomord comes in contact with Barbiel, otherwise the bonus will not be triggered.",
+      "iconUrl": "/raw-assets/skill_icons/leomord/phantom_steed.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Eudora",
+        "Popol and Kupa",
+        "Saber",
+        "Belerick"
+      ],
+      "weakAgainst": [
+        "Melissa",
+        "Karrie",
+        "Valir",
+        "Zhuxin"
+      ],
+      "synergyWith": [
+        "Diggie",
+        "Masha",
+        "Floryn",
+        "Zilong",
+        "Paquito"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.8
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.7
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.7
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Melissa",
+        "advantage": 3.2
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.7
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.7
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Diggie",
+        "synergy": 1.5
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.4
+      },
+      {
+        "name": "Floryn",
+        "synergy": 1.3
+      },
+      {
+        "name": "Zilong",
+        "synergy": 1.3
+      },
+      {
+        "name": "Paquito",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Mages without mobility such as Odette, Pharsa, Yve and Cecilion will fall to Leomord's high movement speed and burst damage.",
+    "weakAgainstReason": "Heroes with CC like Phoveus, Franco, Akai and Nana.",
+    "synergyReason": "Heroes with AOE or CC like Pharsa and Vexana that can follow up after Leomord breaks the enemy formation."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Leomord adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 53.2,
+  "pickRate": 1.2,
+  "banRate": 13.2,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 50,
+    "abilityEffects": 30,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 78,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Pre-ultimate Leomord is mostly a setup/clear fighter and can be kited, but once Phantom Steed is unlocked he gains a huge jump in mobility, durability, and AOE DPS for skirmishes and Turtle fights. He stays strong into late with physical scaling and BOD finishing, but can fall off slightly vs full-item backlines and heavy anti-dive/CC."
+  },
+  "proBuilds": [
+    {
+      "player": "Hatıran Yeter.",
+      "games": 683,
+      "items": [
+        "Ice Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Sea Halberd",
+        "Queen's Wings",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Ryotaa",
+      "games": 843,
+      "items": [
+        "Ice Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Sea Halberd",
+        "Queen's Wings",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "I am Atomic shadow.",
+      "games": 1123,
+      "items": [
+        "Ice Tough Boots",
+        "Sky Piercer",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/leomord/video-0-0.mp4",
+    "skill1": "/videos/heroes/leomord/video-1-0.mp4",
+    "skill2": "/videos/heroes/leomord/video-2-0.mp4",
+    "ultimate": "/videos/heroes/leomord/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Skill 2",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, Leomord can cast his Ultimate, then his 1st and 2nd Skills while Barbiel is moving towards him. After mounting, Leomord can use his mounted 1st Skill, 2nd Skill, and Basic Attacks to continue dishing out damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Poke and zone out enemies with his 1st Skill while clearing minions.\nWhen the enemy's HP is close to his Passive's threshold,\ncharge in with his 2nd Skill and finish them off with Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Pharsa",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Vexana",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "The Barren Lands",
+  "race": "Undead",
+  "bestTeammates": [
+    {
+      "name": "Angela",
+      "winrateDelta": 2.64
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 2.62
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 2.32
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 1.84
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 1.62
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lancelot",
+      "winrateDelta": -10.34
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -6.8
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -5.98
+    },
+    {
+      "name": "Yi Sun-shin",
+      "winrateDelta": -5.8
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": -5.44
+    }
+  ],
+  "metaScore": 26.7,
+  "metaRank": 15,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.08
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.42
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.39
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2.1
+      },
+      {
+        "name": "Eudora",
+        "advantage": 1.98
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Karrie",
+        "advantage": 3.3
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.6
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.59
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.46
+      },
+      {
+        "name": "Angela",
+        "advantage": 2.32
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Build Jungler + Emblem Tank = Tahan BANTING",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Tought Boots",
+        "Cursed Helmet",
+        "War Axe",
+        "Sea Halberd",
+        "Endless Battle",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-06T13:24:49.088958+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Leomord gragas",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Sea Halberd",
+        "Queen's Wings",
+        "Endless Battle"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-04-25T17:25:18.181879+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Leomord  terbaik",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Berserker Fury",
+        "Great Dragon Spear",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-07T11:19:00.358088+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Trinity sustain",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Endless Battle",
+        "Queen's Wings",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Trinity\n",
+      "tags": [],
+      "lastUpdated": "2026-04-11T08:55:50.926875+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "dmg dan sustain",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "War Axe",
+        "Tought Boots",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Rose Gold Meteor",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "sakit tapi tebel",
+      "tags": [],
+      "lastUpdated": "2026-02-22T23:46:38.81349+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10860,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Sea",
+        "Halberd"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11570,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Sprint",
+      "cost": 12270,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# Environment files (NEVER commit secrets)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+!.env.example
+
+# Firebase config with real credentials
+firebase-applet-config.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+coverage/
+
+# SQLite runtime files (auto-generated, never commit)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.db-journal
+
+# Admin tool backups (generated at runtime, never commit)
+data/backups/
+
+# Kiro workspace
+.kiro/
+.kilo/
+.verdent_*
+
+# Local debug artifacts (screenshots, test outputs)
+debug/
+
+# Deploy/build artifacts
+deploy-pages/
+deploy-pages-root.zip
+
+# Accidental stray files
+tatus --short
+butss.png
+homepage-check-latest.png
+homepage-final-check.png
+dev-server.log
+asset map.webp
+
+# Zip archives
+*.zip

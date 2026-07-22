@@ -1,0 +1,724 @@
+{
+  "id": "karina",
+  "name": "Karina",
+  "heroName": "Karina",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Finisher",
+    "Magic Damage"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2487,
+    "hpRegen": 7,
+    "mana": 468,
+    "manaRegen": 3.6,
+    "physicalAttack": 120,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.12",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Shadow Combo",
+      "description": "Karina's third consecutive attack on the same enemy deals extra (True Damage) equal to 50 plus 5( +3% Total Magic Power)% of their lost HP (up to 2000 (True Damage) against creeps). If the target is an enemy hero, the cooldowns of Karina's non-Ultimate skills are reduced by 1.5s.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "True",
+      "scaling": [
+        "(+2.5% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shadow_Combo",
+      "tips": "This is Karina's key skill for securing kills, due to it doing more damage to low health targets. The true damage effect ignores the enemy's physical and magical resists.",
+      "iconUrl": "/raw-assets/skill_icons/karina/shadow_combo.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Dance of Blades",
+      "description": "Karina enters the Dance of Blades state for 3.5s, during which she gains 45% extra Movement Speed, blocks all incoming Basic Attacks, and reflects 100 (+30% Total Magic Power) Magic Damage back to the attacker (the damage reflection effect has a cooldown of 0.4s).\nKarina's next Basic Attack within the duration deals 150 (+55% Total Magic Power) Magic Damage, slows the target by 45% for 1s, and is guaranteed to Crit. Casting the enhanced Basic Attack or Shadow Assault ends the Dance of Blades state early.",
+      "cooldown": "7.0",
+      "manaCost": "50",
+      "damageType": "Magic",
+      "scaling": [
+        "(+30% Total Magic Power)",
+        "(+55% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "50",
+            "55",
+            "60",
+            "65",
+            "70",
+            "75"
+          ]
+        },
+        {
+          "label": "Reflect Damage",
+          "values": [
+            "100",
+            "120",
+            "140",
+            "160",
+            "180",
+            "200"
+          ]
+        },
+        {
+          "label": "Enhanced Damage",
+          "values": [
+            "150",
+            "165",
+            "180",
+            "195",
+            "210",
+            "225"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dance_of_Blades",
+      "tips": "This first skill have OP effects, speed increases, enhanced basic attack with guaranteed crits and slows. No matter if you're escaping or pursuing, this skill is useful. The penetrating basic attack's extra effects can be used to deal devastating damage. Kills and assists will also substantially reduce this skill's cooldown, making this another one of Karina's core clean up abilities.",
+      "iconUrl": "/raw-assets/skill_icons/karina/dance_of_blades.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Dance of Death",
+      "description": "Karina launches a spinning slash, dealing 375 (+125% Total Magic Power) Magic Damage to nearby enemies.",
+      "cooldown": "6.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+125% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.7",
+            "5.4",
+            "5.1",
+            "4.8",
+            "4.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "375",
+            "420",
+            "465",
+            "510",
+            "555",
+            "600"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dance_of_Death",
+      "tips": "AoE damage, mainly used in the early game to quickly proc your passive effect, max this last.",
+      "iconUrl": "/raw-assets/skill_icons/karina/dance_of_death.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Shadow Assault",
+      "description": "Karina dashes to the target enemy hero, dealing them 350 (+160% Total Magic Power) Magic Damage, applying a Shadow Mark to them, and leaving a Shadowform behind them. The Shadow Mark and Shadowform both last 5s. If the enemy dies within the duration, the cooldown of this skill is reset.\nUse Again: Karina dashes back to the Shadowform's location, dealing 150 (+50% Total Magic Power) Magic Damage to enemies along the way.",
+      "cooldown": "34.0",
+      "manaCost": "100",
+      "damageType": "Magic",
+      "scaling": [
+        "(+160% Total Magic Power)",
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "34.0",
+            "30.0",
+            "26.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "100",
+            "120",
+            "140"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "350",
+            "550",
+            "750"
+          ]
+        },
+        {
+          "label": "Path Damage",
+          "values": [
+            "150",
+            "200",
+            "250"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shadow_Assault",
+      "tips": "Mobility skill, during team fights use this carefully, for using it incorrectly will make you lose your escape. Use it when you know you can get the skill, don't hesitate when using. Kills will refresh the cooldown, while assists will substantially reduce the cooldown allowing Karina to finish off enemies continually with burst damage.",
+      "iconUrl": "/raw-assets/skill_icons/karina/shadow_assault.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Natalia",
+        "Kimmy",
+        "Helcurt",
+        "Aldous",
+        "Wanwan"
+      ],
+      "weakAgainst": [
+        "Granger",
+        "Brody",
+        "Lunox",
+        "Clint",
+        "Gloo"
+      ],
+      "synergyWith": [
+        "Barats",
+        "Benedetta",
+        "Chip",
+        "Zetian",
+        "Lolita"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Kimmy",
+        "advantage": 3.3
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.9
+      },
+      {
+        "name": "Aldous",
+        "advantage": 2.6
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Granger",
+        "advantage": 4.1
+      },
+      {
+        "name": "Brody",
+        "advantage": 3.8
+      },
+      {
+        "name": "Lunox",
+        "advantage": 3.1
+      },
+      {
+        "name": "Clint",
+        "advantage": 2.9
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.7
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Barats",
+        "synergy": 1.8
+      },
+      {
+        "name": "Benedetta",
+        "synergy": 1.2
+      },
+      {
+        "name": "Chip",
+        "synergy": 1.2
+      },
+      {
+        "name": "Zetian",
+        "synergy": 1.2
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Karina counters Marksmen that lack mobility, such as Layla and Hanabi, since her 1st Skill can neutralize their Basic Attacks and they can't escape her high mobility and burst damage.",
+    "weakAgainstReason": "Karina is countered by Tanky heroes with CC abilities, like Akai and Khufra because they can tank her damage, and protect their allies from her.",
+    "synergyReason": "Karina works well with heroes who can pull enemies together, such as Tigreal and Faramis, since her Ultimate and 2nd Skill also hits anyone near her main target, setting them up to be chain killed by her Ultimate."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Karina adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 46.3,
+  "pickRate": 0.5,
+  "banRate": 2.1,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 70,
+    "abilityEffects": 10,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Genius Wand",
+      "Holy Crystal",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "She’s serviceable early once she has S1+S2 for trading and faster clears, but her real kill tempo starts after Ultimate unlock and grows sharply with first magic-pen item for resets. Late game stays strong yet more volatile because hard CC and defensive items can stop her from finishing targets to refresh Shadow Assault."
+  },
+  "proBuilds": [
+    {
+      "player": "Grace x WRATH",
+      "games": 779,
+      "items": [
+        "Sky Piercer",
+        "Ice Tough Boots",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Queen's Wings",
+        "Concentrated Energy"
+      ]
+    },
+    {
+      "player": "KATINTO",
+      "games": 756,
+      "items": [
+        "Flame Arcane Boots",
+        "Starlium Scythe",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "Jess.",
+      "games": 757,
+      "items": [
+        "Flame Arcane Boots",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/karina/video-0-0.mp4",
+    "skill1": "/videos/heroes/karina/video-1-0.mp4",
+    "skill2": "/videos/heroes/karina/video-2-0.mp4",
+    "ultimate": "/videos/heroes/karina/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 2",
+        "Skill 3",
+        "Passive"
+      ],
+      "description": "In teamfights, close in on the enemy using Karina's 1st Skill and cut into their formation with her Ultimate. Use her 2nd Skill for a quick AOE followed by her Ultimate to dash back to her Shadowform. Finally, use her 1st Skill again and enhanced Basic Attacks to chase down enemies."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Karina's 1st Skill first to enter the Dance of Blades state and pounce on the enemy using the dash from her enhanced Basic Attack. Follow up with her 2nd Skill and Basic Attacks to trigger her Passive."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Faramis",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Gloo",
+      "relationship": "MET ONCE"
+    }
+  ],
+  "region": "Azrya Woodlands",
+  "race": "Dark Elf",
+  "bestTeammates": [
+    {
+      "name": "Nolan",
+      "winrateDelta": 2.74
+    },
+    {
+      "name": "Benedetta",
+      "winrateDelta": 2.56
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 2.26
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.84
+    },
+    {
+      "name": "Ixia",
+      "winrateDelta": 1.61
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Fanny",
+      "winrateDelta": -9.5
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -9.16
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -8.99
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -8.12
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -8.06
+    }
+  ],
+  "metaScore": 9.41,
+  "metaRank": 122,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.37
+      },
+      {
+        "name": "Kimmy",
+        "advantage": 2.95
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.63
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.4
+      },
+      {
+        "name": "Ling",
+        "advantage": 2.32
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 4.77
+      },
+      {
+        "name": "Granger",
+        "advantage": 3.78
+      },
+      {
+        "name": "Brody",
+        "advantage": 3.62
+      },
+      {
+        "name": "Lunox",
+        "advantage": 3
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.64
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "YT : Gameplay Proplayer",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Sky Piercer",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-12-05T05:09:36.851777+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Top Global Karina",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Magic Boots",
+        "Sky Piercer",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Blood Wings",
+        "Glowing Wand"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "burst damage + instant kill ",
+      "tags": [],
+      "lastUpdated": "2025-09-18T15:59:26.356874+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "KARINA SUSTAINED",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Swift Boots",
+        "Clock of Destiny",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Radiant Armor",
+        "Feather of Heaven"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "SEMI TANK BUILD",
+      "tags": [],
+      "lastUpdated": "2025-10-17T13:18:28.389054+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Starlium",
+        "Scythe",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11980,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Starlium",
+        "Scythe",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Starlium",
+        "Scythe",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11720,
+      "notes": null
+    }
+  ]
+}

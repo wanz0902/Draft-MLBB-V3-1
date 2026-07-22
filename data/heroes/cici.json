@@ -1,0 +1,703 @@
+{
+  "id": "cici",
+  "name": "Cici",
+  "heroName": "Cici",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Damage",
+    "Regen"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2600,
+    "hpRegen": 7.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 121,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Performer's Delight",
+      "description": "Cici generates a stack of Delight after dealing damage, increasing her Movement Speed by 0.75% and Spell Vamp by 0.75% per stack up to 10 times, doubling the effects at full stacks.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Performer's_Delight",
+      "iconUrl": "/raw-assets/skill_icons/cici/performer_s_delight.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Yo-Yo Blitz",
+      "description": "Cici uses Yoyo to continuously attack the nearest enemy within range (prioritizing heroes) for 3.5s, hitting them up to 10 times, and dealing (Physical Damage) equal to 60 plus 3( )% of the target's Max HP per hit. Cici can move and use other skills during this attack. If there is no enemy within range, Yoyo will attack Turrets or the Base instead. This skill deals 20% extra damage to Minions.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Yo-Yo_Blitz",
+      "iconUrl": "/raw-assets/skill_icons/cici/yo_yo_blitz.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Buoyant Bounce",
+      "description": "Cici leaps to a target location. If she lands on any unit (not including Turrets and Base), she can leap again in the Joystick's direction. If she lands on an enemy with the first leap, she deals 200( +40% Total Physical Attack) (Physical Damage) to them.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Buoyant_Bounce",
+      "iconUrl": "/raw-assets/skill_icons/cici/buoyant_bounce.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Curtain Call",
+      "description": "Cici throws Yoyo at the target enemy hero and links them with another nearby enemy hero, dealing 100( +10% Total Physical Attack) (Physical Damage), slowing them by 30%, and pulling them together for 4s. During this time, Cici can use (Yo-Yo Blitz) to attack both linked targets at the same time. If only one target is within the range of (Yo-Yo Blitz), Cici will attack the target twice, but the damage of the second attack will be reduced to 20%.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Curtain_Call",
+      "iconUrl": "/raw-assets/skill_icons/cici/curtain_call.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Thamuz",
+        "Balmond",
+        "Alice",
+        "Gloo",
+        "Akai"
+      ],
+      "weakAgainst": [
+        "Sun",
+        "Estes",
+        "Aamon",
+        "Masha",
+        "Diggie"
+      ],
+      "synergyWith": [
+        "Sun",
+        "X.Borg",
+        "Hanzo",
+        "Balmond",
+        "Aulus"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Thamuz",
+        "advantage": 4.1
+      },
+      {
+        "name": "Balmond",
+        "advantage": 3.4
+      },
+      {
+        "name": "Alice",
+        "advantage": 3
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.3
+      },
+      {
+        "name": "Akai",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 4
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.5
+      },
+      {
+        "name": "Aamon",
+        "advantage": 3.3
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.8
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Sun",
+        "synergy": 2.2
+      },
+      {
+        "name": "X.Borg",
+        "synergy": 1.7
+      },
+      {
+        "name": "Hanzo",
+        "synergy": 1.4
+      },
+      {
+        "name": "Balmond",
+        "synergy": 1.2
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Because of Cici's great kiting ability and her 1st Skill dealing Max HP damage, Cici counters certain Tanks like Fredrinn and Minotaur.",
+    "weakAgainstReason": "Cici is countered by heroes with targeted CC skills who can stop her dead in her tracks, such as Saber and Kaja.",
+    "synergyReason": "Cici works well with heroes that have buffs and can boost survivability. Supports like Angela and Floryn can help Cici gain an early advantage by greatly amplifying her combat capabilities to end the game before it drags on too long."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Cici adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.9,
+  "pickRate": 0.3,
+  "banRate": 1.5,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 60,
+    "abilityEffects": 30,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 68,
+    "mid": 78,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Blade of Despair"
+    ],
+    "dominantPhase": null,
+    "description": "She’s already threatening in lane with Yo-Yo Blitz max-HP hits and strong stickiness from Buoyant Bounce, then spikes with Curtain Call to double-hit linked targets in mid-game fights. Late game remains solid with sustained damage and mobility, but she’s less explosive than true late-game DPS carries and can be controlled by heavy CC."
+  },
+  "proBuilds": [
+    {
+      "player": "Friddd.",
+      "games": 596,
+      "items": [
+        "Rapid Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Hunter Strike",
+        "Oracle",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "－Zҽᴠ",
+      "games": 553,
+      "items": [
+        "Tough Boots",
+        "War Axe",
+        "Dominance Ice",
+        "Hunter Strike",
+        "Oracle",
+        "Brute Force Breastplate"
+      ]
+    },
+    {
+      "player": "antoniouiui",
+      "games": 545,
+      "items": [
+        "Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Hunter Strike",
+        "Queen's Wings",
+        "Sea Halberd"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/cici/video-0-0.mp4",
+    "skill1": "/videos/heroes/cici/video-1-0.mp4",
+    "skill2": "/videos/heroes/cici/video-2-0.mp4",
+    "ultimate": "/videos/heroes/cici/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1"
+      ],
+      "description": "In teamfights, find two enemy heroes that are close together and toss Cici's Ultimate on one of them, then use her 2nd Skill to jump in and pop her 1st Skill mid-leap to start dealing continuous damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, use Cici's Basic Attacks to stack some Delight before using her 1st Skill on the opponent, and use her 2nd Skill if they attempt an escape."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Aamon",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Floryn",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Faramis",
+      "winrateDelta": 3.11
+    },
+    {
+      "name": "Sun",
+      "winrateDelta": 2.72
+    },
+    {
+      "name": "Guinevere",
+      "winrateDelta": 1.89
+    },
+    {
+      "name": "Badang",
+      "winrateDelta": 1.88
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": 1.66
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -8.74
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": -7
+    },
+    {
+      "name": "Argus",
+      "winrateDelta": -6.67
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": -6.5
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": -5.32
+    }
+  ],
+  "metaScore": 11.05,
+  "metaRank": 112,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Thamuz",
+        "advantage": 4.14
+      },
+      {
+        "name": "Balmond",
+        "advantage": 3.49
+      },
+      {
+        "name": "Lapu-Lapu",
+        "advantage": 3.37
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 3.28
+      },
+      {
+        "name": "Akai",
+        "advantage": 3.09
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.82
+      },
+      {
+        "name": "Aamon",
+        "advantage": 3.24
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.9
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.86
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.77
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "cici semi tank",
+      "author": "community",
+      "votes": 28,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Dominance Ice",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "karna agar cici sustain saat war panjang dibuatlah cici semi tank ",
+      "tags": [],
+      "lastUpdated": "2025-10-14T22:41:53.684514+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "cici belut",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Rapid Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Oracle",
+        "Brute Force Breastplate",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-13T20:33:33.346531+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build cici tb & kaiting",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Chastise Pauldron",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Build yang dikhususkan untuk cici ketika bertemu hero burst seperti lesley ",
+      "tags": [],
+      "lastUpdated": "2025-09-13T14:43:41.440413+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : AURORA.Edward",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "War Axe",
+        "Warrior Boots",
+        "Brute Force Breastplate",
+        "Dreadnaught Armor",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 2",
+      "tags": [],
+      "lastUpdated": "2025-10-28T04:14:28.215041+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Cici CD 1 second",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Hunter Strike",
+        "Dominance Ice",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "spam skill 1 cici, build akhir meyesuaikan",
+      "tags": [],
+      "lastUpdated": "2025-10-15T05:20:10.465139+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Brute",
+        "Force"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10920,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Brute",
+        "Force"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11030,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Brute",
+        "Force"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Sprint",
+      "cost": 11070,
+      "notes": null
+    }
+  ]
+}

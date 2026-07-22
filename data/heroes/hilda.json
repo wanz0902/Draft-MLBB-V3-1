@@ -1,0 +1,682 @@
+{
+  "id": "hilda",
+  "name": "Hilda",
+  "heroName": "Hilda",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Damage",
+    "Regen"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2780,
+    "hpRegen": 9,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 119,
+    "physicalDefense": 24,
+    "magicPower": 0,
+    "magicDefense": 12,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Blessing of Wilderness",
+      "description": "Hilda regenerates 2% of her max HP per second while in the bush. When entering the bush, she gains a shield equal to 15% of her max HP. After leaving the bush, the shield lasts for 5s. This effect has a 10s cooldown. Hilda's Basic Attack and Skills apply a (Wilderness Mark) on hit, which lasts up to 4s and stacks up to 6. Each stack reduces the target's Physical Defense and Magic Defense by 4%.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blessing_of_Wilderness",
+      "tips": "Her passive is a very strong tool for fights, she can always do trade damage in her lane then go to the bush to heal herself. Always maximize the use for this passive because it will help you a lot when laning.",
+      "iconUrl": "/raw-assets/skill_icons/hilda/blessing_of_wilderness.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Combat Ritual",
+      "description": "Hilda activates the runic power of her great axe, increasing her Movement Speed by 60% for 3s and enhancing her next Basic Attack to deal 200( +100% Total Physical Attack) (Physical Damage) and slow the target by 40% for 3s. The attack will also deal 120( +60% Total Physical Attack) (Physical Damage) to enemies behind the target.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Combat_Ritual",
+      "tips": "This is a good skill to chase or zone out enemies, especially damage dealers with low mobility (mage, assassin, marksman) especially during team fights. Hilda can target the enemy backline with this skill or chase away assassin who are killing their team’s carry.",
+      "iconUrl": "/raw-assets/skill_icons/hilda/combat_ritual.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Art of Hunting",
+      "description": "Hilda locks onto an enemy target, each time dealing 220( +100% Total Physical Attack) (Physical Damage). Skill can be released 3 times at most. The 2nd attack will deal damage to target's surroundings, and the 3rd attack will knock back the target and surrounding enemies temporarily.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Art_of_Hunting",
+      "tips": "This is your primary source of crowd control. Movement speed is useless if you can’t pin down your target. This makes sure that your target will be chased away or will be zoned out from the team fight making the target useless. Aside from the crowd control, this deals enough amount of damage to make the enemy fall back. Make sure that you are going punish your target with this ability.",
+      "iconUrl": "/raw-assets/skill_icons/hilda/art_of_hunting.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Power of Wildness",
+      "description": "Hilda launches a powerful slash on the target enemy, dealing 600( +250% Extra Physical Attack) (Physical Damage) and stunning them for 0.2s. Nearby enemies also take 60% damage. Each stack of (Wilderness Mark) makes (Power of Wildness) deal 2.5% of the target's Max HP as extra damage. At max stacks, (Power of Wildness) deals 20% of the target's Max HP as extra damage.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Power_of_Wildness",
+      "tips": "Make sure that you get assists as much as possible to have stacks for Hilda’s ultimate. It is very convenient since every stack gives you a lot of additional damage, with this said, Hilda’s not only tanky but can also deal a decent amount of damage to the enemy she’s targeting. This also completes the kit of Hilda in dominating every lane she gank.",
+      "iconUrl": "/raw-assets/skill_icons/hilda/power_of_wildness.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Nolan",
+        "Granger",
+        "Irithel",
+        "Helcurt",
+        "Novaria"
+      ],
+      "weakAgainst": [
+        "Aamon",
+        "Karrie",
+        "Kimmy",
+        "Carmilla",
+        "Kalea"
+      ],
+      "synergyWith": [
+        "Hanzo",
+        "Saber",
+        "Silvanna",
+        "Bane",
+        "Argus"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Nolan",
+        "advantage": 3.3
+      },
+      {
+        "name": "Granger",
+        "advantage": 2.8
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.4
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.4
+      },
+      {
+        "name": "Novaria",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Aamon",
+        "advantage": 2.7
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.3
+      },
+      {
+        "name": "Kimmy",
+        "advantage": 2.1
+      },
+      {
+        "name": "Carmilla",
+        "advantage": 1.9
+      },
+      {
+        "name": "Kalea",
+        "advantage": 1.2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Hanzo",
+        "synergy": 2.2
+      },
+      {
+        "name": "Saber",
+        "synergy": 2
+      },
+      {
+        "name": "Silvanna",
+        "synergy": 1.8
+      },
+      {
+        "name": "Bane",
+        "synergy": 1.7
+      },
+      {
+        "name": "Argus",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Hilda excels in prolonged battles. She works well against heroes with lower burst damage. Such as Zilong and Layla.",
+    "weakAgainstReason": "Hilda is countered by heroes with high sustain. Such as Thamuz and Uranus. This is because they can utilize their healing abilities to prevent being executed.",
+    "synergyReason": "Hilda works well with tanky heroes, which can create room for her to dish out more damage. Such as Atlas and Tigreal."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Hilda adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.6,
+  "pickRate": 1,
+  "banRate": 19.9,
+  "heroAttributes": {
+    "durability": 90,
+    "offense": 40,
+    "abilityEffects": 40,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 85,
+    "mid": 72,
+    "late": 52,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Blade of Despair",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Hilda is dominant early because bush shield/regen lets her win trades and invade, while S2’s multi-cast gives strong skirmish pressure. She peaks further at Lv4 with her execute-style ultimate (especially at max Mark stacks), but her impact falls late as enemies get tankier and backliners have better peel/anti-dive."
+  },
+  "proBuilds": [
+    {
+      "player": "[ X E C U T İ O N ]",
+      "games": 767,
+      "items": [
+        "Encourage Tough Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Oracle",
+        "Antique Cuirass",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "MEGADOPE",
+      "games": 913,
+      "items": [
+        "Encourage Rapid Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Oracle",
+        "Radiant Armor",
+        "Chastise Pauldron"
+      ]
+    },
+    {
+      "player": "꧁ᵏᵉⁿ|Kaneki",
+      "games": 1021,
+      "items": [
+        "Encourage Tough Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Oracle"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/hilda/video-0-0.mp4",
+    "skill1": "/videos/heroes/hilda/video-1-0.mp4",
+    "skill2": "/videos/heroes/hilda/video-2-0.mp4",
+    "ultimate": "/videos/heroes/hilda/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, Hilda should use her Ultimate to dive the back-row heroes, then use her 2nd Skill to deal damage and chase the enemy down with her 1st Skill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "In the laning phase, Hilda can use her 1st Skill to close in on a target enemy, and slow them with her Enhanced Basic Attack. She can then follow up with her 2nd Skill to chip away at her target and finish with her Ultimate."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Rafaela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Silvanna",
+      "winrateDelta": 1.64
+    },
+    {
+      "name": "Bane",
+      "winrateDelta": 1.63
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": 1.62
+    },
+    {
+      "name": "Minsitthar",
+      "winrateDelta": 1.31
+    },
+    {
+      "name": "Bruno",
+      "winrateDelta": 1.29
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": -8.2
+    },
+    {
+      "name": "Minotaur",
+      "winrateDelta": -5.65
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": -4.23
+    },
+    {
+      "name": "Johnson",
+      "winrateDelta": -4.19
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": -4.19
+    }
+  ],
+  "metaScore": 26.67,
+  "metaRank": 16,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 3.16
+      },
+      {
+        "name": "Granger",
+        "advantage": 2.87
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.78
+      },
+      {
+        "name": "Ling",
+        "advantage": 2.41
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.22
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Karrie",
+        "advantage": 2.77
+      },
+      {
+        "name": "Aamon",
+        "advantage": 2.33
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.29
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.11
+      },
+      {
+        "name": "Kimmy",
+        "advantage": 2.04
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : TLPH.Jaypee",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Athena's Shield",
+        "Dominance Ice",
+        "Immortality",
+        "Silence Robe"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 2",
+      "tags": [],
+      "lastUpdated": "2025-10-28T04:31:46.968293+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage and tb",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Warrior Boots",
+        "Thunder Belt",
+        "Cursed Helmet",
+        "Antique Cuirass",
+        "Queen's Wings",
+        "Brute Force Breastplate"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Damage in early\nDamage and tb in mid and late game",
+      "tags": [],
+      "lastUpdated": "2025-11-19T01:43:57.463644+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Tank Gangguin jungler musuh",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Fury Hammer",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Oracle",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Enak buat rotasi, mirroring roam/tank musuh, gangguin jungler musuh (Roam merah jangan dire hit nanti susah dapat gold dan exp)\n*Note: kalo udah mid - late game jual fury hammernya ganti thunder belt.",
+      "tags": [],
+      "lastUpdated": "2026-02-10T17:11:15.324853+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Hilda tank semi Demage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "War Axe",
+        "Blade Armor",
+        "Oracle",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-11T07:12:17.074628+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Sprint",
+      "cost": 10970,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10700,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "War",
+        "Axe"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 10870,
+      "notes": null
+    }
+  ]
+}

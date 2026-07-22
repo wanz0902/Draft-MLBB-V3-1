@@ -1,0 +1,647 @@
+{
+  "id": "natalia",
+  "name": "Natalia",
+  "heroName": "Natalia",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Finisher"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2456,
+    "hpRegen": 7,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 132,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Assassin Instinct",
+      "description": "If Natalia stays in a bush without taking damage for 1s, she will enter (Camouflage) state and gain 15% Movement Speed. In this state, Natalia's next Basic Attack will teleport her behind her target and deal 200( +110% Total Physical Attack) (Physical Damage) while silencing the target for 0.25s. Dealing damage, taking damage or using skills will immediately end the (Camouflage) state, but her next Basic Attack will remain enhanced for another 1s. Natalia's base Crit Damage is reduced to 150%, but her damage to Creeps is increased to 150%.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+110% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Assassin_Instinct",
+      "tips": "Natalia's passive skill is the most powerful of all Hero Passive Skills in the Game, especially her ability to disappear and giving the Silence effect. Use the passive skill as often as possible to provide additional damage by attacking your opponent from behind and giving the Silence effect for 2 seconds. Finally, remember to always move places. Use additional speed and disappearance to put pressure on opponents in each Lane.",
+      "iconUrl": "/raw-assets/skill_icons/natalia/assassin_instinct.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Claw Dash",
+      "description": "Natalia dashes in the target direction, dealing 250 (+50% Total Physical Attack) Physical Damage to enemies in her path.\nAfter hitting an enemy, she can cast this skill again within 5s.",
+      "cooldown": "10.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "10.0",
+            "9.2",
+            "8.4",
+            "7.6",
+            "6.8",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "270",
+            "290",
+            "310",
+            "330",
+            "350"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Claw_Dash",
+      "tips": "Claw Dash is a very easy skill to use. Natalia attacks ahead and causes damage, Natalia can also attack twice if the first attack hitting on a Hero. Thus, this skill is very useful for Natalia as additional mobility that can be used to chase opponents who run away and also to escape if the situation gets worse.",
+      "iconUrl": "/raw-assets/skill_icons/natalia/claw_dash.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Smoke Bomb",
+      "description": "Natalia releases a Smoke Bomb at her location, slowing enemies within by 25% while Natalia becomes immune to enemy Basic Attacks for 4s.",
+      "cooldown": "12.0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Slow Effect",
+          "values": [
+            "25%",
+            "35%",
+            "45%",
+            "55%",
+            "65%",
+            "75%"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Buff",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Smoke_Bomb",
+      "tips": "Smoke Bomb is a special skill that will give her the Immune effect on all Basic Attack, which is certainly very effective especially against Marksman. Aside from being immune to Basic Attack, Natalia will also receive damage that is lower from Tower's attack, giving Natalia an additional strategy to crash into the Tower if needed.",
+      "iconUrl": "/raw-assets/skill_icons/natalia/smoke_bomb.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "The Hunt",
+      "description": "Passive: Natalia gains 15% extra Crit Chance.\nActive: Natalia immediately enters Assassin Instinct state. Natalia can store up to 2 charges of her Ultimate and each charge has a recharge time of 30s. Creep kills will reduce the current remaining recharge time by 50% of the full recharge time.",
+      "cooldown": "3.0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Crit Chance",
+          "values": [
+            "15%",
+            "30%",
+            "45%"
+          ]
+        },
+        {
+          "label": "Skill Recharge Time",
+          "values": [
+            "30",
+            "24",
+            "18"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Camouflage",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "The_Hunt",
+      "tips": "Natalia's Ultimate Skill is an Attack with a distance that is slightly larger than the Melee Range that attacks the opponent several times and slows down their Movement Speed. Among all Assassins, Natalia's Ultimate Skill is the weakest and is not a skill that can reverse the situation of the match, unlike Saber, Hayabusa, etc. However, this skill is still useful to slow down opponents who try to escape so that teammates can catch up with them.",
+      "iconUrl": "/raw-assets/skill_icons/natalia/the_hunt.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Hanzo",
+        "Ling",
+        "Gord",
+        "Xavier",
+        "Lolita"
+      ],
+      "weakAgainst": [
+        "Cyclops",
+        "Saber",
+        "Karina",
+        "Paquito",
+        "Rafaela"
+      ],
+      "synergyWith": [
+        "Khufra",
+        "Akai",
+        "Barats",
+        "Hylos",
+        "Chip"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 6.9
+      },
+      {
+        "name": "Ling",
+        "advantage": 4.7
+      },
+      {
+        "name": "Gord",
+        "advantage": 3.8
+      },
+      {
+        "name": "Xavier",
+        "advantage": 3.4
+      },
+      {
+        "name": "Lolita",
+        "advantage": 3.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Cyclops",
+        "advantage": 5
+      },
+      {
+        "name": "Saber",
+        "advantage": 4
+      },
+      {
+        "name": "Karina",
+        "advantage": 3.4
+      },
+      {
+        "name": "Paquito",
+        "advantage": 3.3
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 3.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Khufra",
+        "synergy": 3.5
+      },
+      {
+        "name": "Akai",
+        "synergy": 3.1
+      },
+      {
+        "name": "Barats",
+        "synergy": 2.8
+      },
+      {
+        "name": "Hylos",
+        "synergy": 2.8
+      },
+      {
+        "name": "Chip",
+        "synergy": 2.8
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Natalia counters squishy heroes who lack CC and burst like as Novaria and Irithel since they can't stop Natalia's burst damage.",
+    "weakAgainstReason": "Natalia is countered by heroes who can restrict her mobility like Minsitthar and Kaja since they can easily shutdown her main advantage.",
+    "synergyReason": "Natalia works best with heroes with high AOE damage such as Yi Sun-shin and Vexana. She can stay hidden while they poke the enemy, then pounce on targets that get low on HP."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Natalia adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.2,
+  "pickRate": 0.3,
+  "banRate": 2.1,
+  "heroAttributes": {
+    "durability": 10,
+    "offense": 60,
+    "abilityEffects": 60,
+    "difficulty": 90
+  },
+  "powerCurve": {
+    "early": 80,
+    "mid": 70,
+    "late": 50,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Blade of the Heptaseas",
+      "Hunter Strike",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "She spikes early from stealth-enhanced basic attack burst and strong gank pressure, especially once she has full access to her dash/smoke pattern and ultimate charges for repeated picks. In late game, grouped fights, defensive items, and vision/peel reduce her ability to one-shot and safely exit."
+  },
+  "proBuilds": [
+    {
+      "player": "єℓ мυѕтσ .",
+      "games": 892,
+      "items": [
+        "Ice Rapid Boots",
+        "Blade of the Heptaseas",
+        "Berserker's Fury",
+        "Sea Halberd",
+        "Malefic Roar",
+        "Great Dragon Spear"
+      ]
+    },
+    {
+      "player": "Japple insomnia lagi",
+      "games": 847,
+      "items": [
+        "Blade of the Heptaseas",
+        "Flame Rapid Boots",
+        "Berserker's Fury",
+        "Malefic Roar",
+        "Sea Halberd",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "Jiuu ˃̵ᴗ˂̵",
+      "games": 973,
+      "items": [
+        "Blade of the Heptaseas",
+        "Ice Rapid Boots",
+        "Berserker's Fury",
+        "Malefic Roar",
+        "Sea Halberd"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/natalia/video-0-0.mp4",
+    "skill1": "/videos/heroes/natalia/video-1-0.mp4",
+    "skill2": "/videos/heroes/natalia/video-2-0.mp4",
+    "ultimate": "/videos/heroes/natalia/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 2",
+        "Skill 1",
+        "Skill 3",
+        "Passive",
+        "Skill 1",
+        "Skill 3"
+      ],
+      "description": "In teamfights, use Natalia's Passive and enhanced Basic Attacks to approach enemies, then use her 2nd Skill to improve her survivability. Follow up with her 1st Skill then Ultimate and end with a Basic Attack to finish off the enemy."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 2",
+        "Skill 1",
+        "Skill 1"
+      ],
+      "description": "When ganking, hide in a bush to activate Natalia's Passive, then approach the enemy from behind and blink to them with the enhanced Basic Attack. Follow up with her 2nd Skill to slow the enemy and chase after them using her 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Yi Sun-shin",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Vexana",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 5.59
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 5.2
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 4.45
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": 4.18
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": 3.54
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Estes",
+      "winrateDelta": -2.6
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": -2.58
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": -2.29
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -2.26
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -2.26
+    }
+  ],
+  "metaScore": 15.22,
+  "metaRank": 83,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 7.28
+      },
+      {
+        "name": "Ling",
+        "advantage": 5.06
+      },
+      {
+        "name": "Gord",
+        "advantage": 3.79
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.48
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 3.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Cyclops",
+        "advantage": 4.47
+      },
+      {
+        "name": "Saber",
+        "advantage": 4.14
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 3.83
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 3.57
+      },
+      {
+        "name": "Eudora",
+        "advantage": 3.09
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Nata Roam Gesit + Agresif by Hannn.",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Windtalker",
+        "Berserker Fury",
+        "Great Dragon Spear",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Execute",
+      "skillOrder": null,
+      "notes": "Intinya fokusnya ke movement speed sama critical",
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:17:01.364817+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Nata Meresahkan",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Berserker Fury",
+        "Rose Gold Meteor",
+        "Windtalker",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Sustain + Sakit + Lincah",
+      "tags": [],
+      "lastUpdated": "2025-09-13T15:45:38.109847+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Endless"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11180,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Sky"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 11280,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Demon"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11070,
+      "notes": null
+    }
+  ]
+}

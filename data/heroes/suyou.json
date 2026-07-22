@@ -1,0 +1,818 @@
+{
+  "id": "suyou",
+  "name": "Suyou",
+  "heroName": "Suyou",
+  "role": [
+    "Fighter",
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2470,
+    "hpRegen": 7.2,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 130,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Transient Immortal",
+      "description": "Tap-casting any skill will put Suyou in his Mortal form, granting him 40 Movement Speed and decreasing the interval between Basic Attacks.\nHold-casting any skill will put Suyou in his Immortal form, increasing the damage of Basic Attacks to 125% and granting him 20% Physical Damage Reduction. In this form, for every 20 extra Physical Attack Suyou has, he gains 1% Physical Damage Reduction (up to 40%).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "iconName": "Transient_Immortal",
+      "iconUrl": "/raw-assets/skill_icons/suyou/transient_immortal.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "skill1": {
+      "name": "Blade Surge",
+      "description": "Tap: Suyou throws his weapon in the target direction, dealing 250 (+100% Extra Physical Attack) Physical Damage to enemies in its path. Suyou then blinks to the weapon's location, catches it, and performs a slash in the opposite direction, dealing 375 (+150% Extra Physical Attack) Physical Damage.\nHold: Suyou channels the Immortal's power and charges in the target direction, dealing 250 (+100% Extra Physical Attack) Physical Damage to enemies along the path. When hitting an enemy hero, he stops and stuns enemies in a rectangular area in front for 0.6s. The charge distance increases with the hold time.\nSuyou can be controlled while charging, but the skill cannot be interrupted.",
+      "cooldown": "8.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+100% Extra Physical Attack)",
+        "(+150% Extra Physical Attack)",
+        "(+100% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.5",
+            "8.1",
+            "7.8",
+            "7.4",
+            "7.0"
+          ]
+        },
+        {
+          "label": "Damage by Tap",
+          "values": [
+            "250",
+            "270",
+            "290",
+            "310",
+            "330"
+          ]
+        },
+        {
+          "label": "Slash Damage",
+          "values": [
+            "375",
+            "420",
+            "465",
+            "510",
+            "555"
+          ]
+        },
+        {
+          "label": "Damage by Hold",
+          "values": [
+            "250",
+            "270",
+            "290",
+            "310",
+            "330"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Mobility",
+        "CC"
+      ],
+      "iconName": "Blade_Surge",
+      "iconUrl": "/raw-assets/skill_icons/suyou/blade_surge.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "skill2": {
+      "name": "Soul Sever",
+      "description": "Tap: Suyou performs a sweeping attack with his weapon, dealing Physical Damage equal to 300 (+200% Extra Physical Attack) plus 15% of target's Lost HP to enemies in a fan-shaped area.\nHold: Suyou channels the power of the Immortal to perform 3 cleaves in a fan-shaped area. The first two strikes deal 250 (+80% Extra Physical Attack) Physical Damage each, while the final strike deals 400 (+128% Extra Physical Attack) Physical Damage and recovers 150 (+50% Extra Physical Attack) HP for himself.",
+      "cooldown": "8.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+200% Extra Physical Attack)",
+        "(+80% Extra Physical Attack)",
+        "(+128% Extra Physical Attack)",
+        "(+50% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.5",
+            "8.1",
+            "7.8",
+            "7.4",
+            "7.0"
+          ]
+        },
+        {
+          "label": "Damage by Tap",
+          "values": [
+            "300",
+            "348",
+            "396",
+            "444",
+            "492"
+          ]
+        },
+        {
+          "label": "Damage by Hold",
+          "values": [
+            "250",
+            "290",
+            "330",
+            "370",
+            "410"
+          ]
+        },
+        {
+          "label": "Enhanced Damage",
+          "values": [
+            "400",
+            "464",
+            "528",
+            "592",
+            "656"
+          ]
+        },
+        {
+          "label": "HP Regen",
+          "values": [
+            "150",
+            "170",
+            "190",
+            "210",
+            "230"
+          ]
+        },
+        {
+          "label": "Minion Damage Ratio",
+          "values": [
+            "60%",
+            "70%",
+            "80%",
+            "90%",
+            "100%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Burst"
+      ],
+      "iconName": "Soul_Sever",
+      "iconUrl": "/raw-assets/skill_icons/suyou/soul_sever.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "ultimate": {
+      "name": "Evil Queller",
+      "description": "Tap: Suyou glides backward and swings his weapon in the target direction, dealing 420 (+120% Extra Physical Attack) Physical Damage to enemies in a rectangular area and on his path backward, and reducing their Movement Speed by 30% for 1.5s.\nHold: Suyou uses the Immortal's power to shoot a deadly arrow in the target direction, dealing 580 (+165% Extra Physical Attack) Physical Damage to the target hit. The range increases with the hold time.\nSuyou can be controlled while charging, but the skill cannot be interrupted.",
+      "cooldown": "8.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+120% Extra Physical Attack)",
+        "(+165% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.5",
+            "8.1",
+            "7.8",
+            "7.4",
+            "7.0"
+          ]
+        },
+        {
+          "label": "Damage by Tap",
+          "values": [
+            "420",
+            "460",
+            "500",
+            "540",
+            "580"
+          ]
+        },
+        {
+          "label": "Damage by Hold",
+          "values": [
+            "580",
+            "635",
+            "690",
+            "745",
+            "800"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage",
+        "Debuff"
+      ],
+      "iconName": "Evil_Queller",
+      "iconUrl": "/raw-assets/skill_icons/suyou/evil_queller.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Sun",
+        "Hanzo",
+        "Balmond",
+        "Gloo",
+        "Lancelot"
+      ],
+      "weakAgainst": [
+        "Harith",
+        "Silvanna",
+        "Gusion",
+        "Harley"
+      ],
+      "synergyWith": [
+        "Yu Zhong",
+        "Sora",
+        "Harith",
+        "Uranus",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 2.4
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 1.9
+      },
+      {
+        "name": "Balmond",
+        "advantage": 1.8
+      },
+      {
+        "name": "Gloo",
+        "advantage": 1.8
+      },
+      {
+        "name": "Lancelot",
+        "advantage": 1.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Harith",
+        "advantage": 2.6
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 2.2
+      },
+      {
+        "name": "Gusion",
+        "advantage": 2.2
+      },
+      {
+        "name": "Harley",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Yu Zhong",
+        "synergy": 1.5
+      },
+      {
+        "name": "Sora",
+        "synergy": 1.5
+      },
+      {
+        "name": "Harith",
+        "synergy": 1.4
+      },
+      {
+        "name": "Uranus",
+        "synergy": 1.3
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Suyou's powerful long-range burst and pursuit abilities make it impossible for heroes without Blinks or Charges, such as Xavier and Ixia, to escape.",
+    "weakAgainstReason": "Because Suyou requires hold-casting skills, heroes with control can easily interrupt his attacks, such as Badang and Melissa.",
+    "synergyReason": "Heroes that provide control (like Tigreal) make it easier for Suyou to deal massive damage; heroes that provide recovery and extra movement speed (like Rafaela) help Suyou kite better."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Suyou adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.3,
+  "pickRate": 1.9,
+  "banRate": 35.3,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 60,
+    "abilityEffects": 50,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 80,
+    "mid": 76,
+    "late": 58,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 9"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "Blade of Despair",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "He spikes very hard early from high base skill damage and flexible tap/hold casting that enables quick picks and snowball ganks. In late game, his melee commitment becomes riskier into coordinated peel and higher teamfight DPS, so he relies more on catching targets first and on pen/Burst items to keep one-shot threat."
+  },
+  "proBuilds": [
+    {
+      "player": ".SOYU",
+      "games": 1403,
+      "items": [
+        "Flame Magic Shoes",
+        "Hunter Strike",
+        "Queen's Wings",
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "PENJOKI SANNSTORE.",
+      "games": 1127,
+      "items": [
+        "Magic Shoes",
+        "Hunter Strike",
+        "War Axe",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "MARRRFM x F4N'T",
+      "games": 933,
+      "items": [
+        "Ice Magic Shoes",
+        "Hunter Strike",
+        "War Axe",
+        "Blade of Despair",
+        "Queen's Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/suyou/video-0-0.mp4",
+    "skill1": "/videos/heroes/suyou/video-1-0.mp4",
+    "skill2": "/videos/heroes/suyou/video-2-0.mp4",
+    "ultimate": "/videos/heroes/suyou/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Skill 2",
+        "Skill 3",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Hold-cast Skill 3 to poke before the team fight, then hold-cast Skill 1 to engage and control the enemy at their back, then hold-cast Skill 2 to deal massive damage. Then tap-cast Skill 3 to keep your distance from the enemy, and when the skill cooldown is up, tap-cast Skill 1 and Skill 2 to quickly kill the target."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "Hold-casting Skill 1 in the Bush allows Suyou to attack unexpectedly and control the enemy; then hold-cast Skill 2 to deal massive damage and follow up the Basic Attack by tap-casting Skill 3 to leave the battlefield."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Evil Queller",
+      "Soul Sever",
+      "Blade Surge"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Rafaela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Luo Yi",
+      "winrateDelta": 1.58
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 1.51
+    },
+    {
+      "name": "Khaleed",
+      "winrateDelta": 1.43
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 1.35
+    },
+    {
+      "name": "Wanwan",
+      "winrateDelta": 1.22
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hanzo",
+      "winrateDelta": -7.95
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -6.13
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -5.7
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -5.67
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": -5.29
+    }
+  ],
+  "metaScore": 32.34,
+  "metaRank": 8,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 1.98
+      },
+      {
+        "name": "Lapu-Lapu",
+        "advantage": 1.95
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 1.6
+      },
+      {
+        "name": "Marcel",
+        "advantage": 1.36
+      },
+      {
+        "name": "Lylia",
+        "advantage": 1.29
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natan",
+        "advantage": 2.24
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 1.88
+      },
+      {
+        "name": "Bruno",
+        "advantage": 1.75
+      },
+      {
+        "name": "Gusion",
+        "advantage": 1.74
+      },
+      {
+        "name": "Joy",
+        "advantage": 1.68
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S17 WEEK 3 DAY 3 ONIC.K1NGKONG",
+      "author": "community",
+      "votes": 10,
+      "items": [
+        "Magic Boots",
+        "Sky Piercer",
+        "War Axe",
+        "Hunter Strike",
+        "Queen's Wings",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "( ONIC VS RORA GAME 1 ) MPL PHILIPPINES SEASON 17 WEEK 3 DAY 3 12 April 2026",
+      "tags": [],
+      "lastUpdated": "2026-04-12T16:27:32.58827+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "YT : Gameplay Proplayer",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Blade of Despair",
+        "Queen's Wings",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-12-05T05:01:45.005845+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 GRAND FINAL AE.Yazukee",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "War Axe",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "( AE VS RORA GAME 2 ) M7 WORLD CHAMPIONSHIP GRAND FINAL 25 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-25T13:47:03.31305+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Suyou Snowball",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "Sky Piercer",
+        "War Axe",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-01-14T10:27:23.477147+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "suyou [KATA MENGANDUNG KATA-KATA KASAR]",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "Sky Piercer",
+        "War Axe",
+        "Sea Halberd",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "sekali [KATA MENGANDUNG KATA-KATA KASAR]  langsung akh..",
+      "tags": [],
+      "lastUpdated": "2025-08-19T13:51:38.346001+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Hunter",
+        "Strike",
+        "War",
+        "Axe"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12130,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Hunter",
+        "Strike",
+        "Sky",
+        "Piercer"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10620,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11050,
+      "notes": null
+    }
+  ]
+}

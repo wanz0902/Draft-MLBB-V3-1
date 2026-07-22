@@ -1,0 +1,678 @@
+{
+  "id": "argus",
+  "name": "Argus",
+  "heroName": "Argus",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Charge",
+    "Burst"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2551,
+    "hpRegen": 7.2,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 128,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Warmonger",
+      "description": "When Argus' Meteoric Sword reaches 100 (Malice Energy), he will launch a (Demonic Slash) with his next Basic Attack, dealing 200( +100% Total Physical Attack) (Physical Damage) and recovering 200( +10% Total Physical Attack) HP. This attack ignores 40% of the target's Physical Defense. Argus' Meteoric Sword gains 5 (Malice Energy) per second, and each of his Basic Attacks grants 10 (Malice Energy) (critical strikes grant an additional 5 energy).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Warmonger",
+      "tips": "-This skill is what helps Argusto be overpowered, especially when low in health. -Gives extra burst of damage. -The more HP that are missing,the faster the rage bar gets filled.",
+      "iconUrl": "/raw-assets/skill_icons/argus/warmonger.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Demonic Grip",
+      "description": "Argus stretches out a demonic hand in the target direction, dealing 125( +60% Extra Physical Attack) (Physical Damage) to the first enemy hero or Creep hit, stunning them for 0.7s, and pulling him and the target towards each other. If no enemy is hit, Argus pulls himself toward the hand's destination instead. (Use Again): Argus dashes and strikes in the target direction, dealing 175( +100% Extra Physical Attack) (Physical Damage) to enemies along the path.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Demonic_Grip",
+      "tips": "-This skill is needs to be usedwell since it greatly helps Argus’ mobility in the battlefield. -Can be used to catch enemyheroes since it inflicts stun and propels Argus towards the enemy hero. -The second activation of thisskill can help you position yourself on your enemy and deal additional damage. -The grapple goes throughterrains, which gives you better a chance of a successful pursuit or retreat.But, if your final travel point is a terrain, you won’t get through the terrainand just bump into it.",
+      "iconUrl": "/raw-assets/skill_icons/argus/demonic_grip.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Meteoric Sword",
+      "description": "After a short delay, Argus thrusts his Meteoric Sword in the target direction, dealing 300( +100% Total Physical Attack) (Physical Damage) to enemies hit (200% damage against minions) and reducing their Movement Speed by 80% for 0.8s. The delay time will decrease as Argus' Attack Speed increases. Enemy heroes or Creeps hit will be (Cursed) for 4s, during which they will leave a Cursed Trail behind. Argus gains 40% Movement Speed while on a Cursed Trail. Argus' Basic Attacks on (Cursed) targets will grant double (Malice Energy). (Meteoric Sword) damage counts as Basic Attack damage and can trigger Attack Effects.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Meteoric_Sword",
+      "tips": "-This skill greatly helps Argus’early game damage and can enhance the whole team’s mobility. -Can be used to quickly killminions and creeps. For best effect in lanes, hit the minions in a straightline. -The skill’s actual AOE and rangeis bigger than you think it is. -It also slows heroes down.",
+      "iconUrl": "/raw-assets/skill_icons/argus/meteoric_sword.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Eternal Evil",
+      "description": "Argus removes all debuffs on himself (except for Suppression) and enters (Eternal Evil) state, gaining (Death Immunity) for 4s. While in this state, 100% of his damage dealt to enemy heroes will be converted into HP for him once the state ends. Leaving the (Eternal Evil) state also resets enemy Turrets' damage increase against Argus.] (Passive:) Permanently increases the recharge of (Malice Energy) by 4 (per second).",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Eternal_Evil",
+      "tips": "-This skill is what makes Argusspecial since it gives 5 seconds of death immunity, full rage bar (Instantdouble attack) and will convert 100% of damage done while the skill is active, intoHP after 5 secs. -Can be used even when stunned,transformed, silenced, airborne or while being pushed/pulled. But, it can’t beused while the other skills are in use. -Can turn the tide of a clashwhen used properly.",
+      "iconUrl": "/raw-assets/skill_icons/argus/eternal_evil.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Masha",
+        "Saber",
+        "Karrie",
+        "Minsitthar",
+        "Diggie"
+      ],
+      "weakAgainst": [
+        "Esmeralda",
+        "Ruby",
+        "Uranus",
+        "Barats",
+        "Fredrinn"
+      ],
+      "synergyWith": [
+        "Gloo",
+        "Balmond",
+        "Johnson",
+        "Hilda",
+        "Vale"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 5.7
+      },
+      {
+        "name": "Saber",
+        "advantage": 3.2
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.8
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 2.5
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Esmeralda",
+        "advantage": 3.7
+      },
+      {
+        "name": "Ruby",
+        "advantage": 3.4
+      },
+      {
+        "name": "Uranus",
+        "advantage": 3.1
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.1
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Gloo",
+        "synergy": 3.2
+      },
+      {
+        "name": "Balmond",
+        "synergy": 1.8
+      },
+      {
+        "name": "Johnson",
+        "synergy": 1.8
+      },
+      {
+        "name": "Hilda",
+        "synergy": 1.7
+      },
+      {
+        "name": "Vale",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Argus counters heroes with poor mobility who cannot escape his attacks once he closes in, such as Gord and Aurora.",
+    "weakAgainstReason": "Argus is countered by Tanks with high Physical Defense, like Gatotkaca and Tigreal, because a lot of his damage comes from Basic Attacks.",
+    "synergyReason": "Argus works well with utility Supports like Angela and Rafaela who can provide extra Movement Speed and CC to allow Argus to stick to his targets and dish out maximum damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Argus adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.5,
+  "pickRate": 0.4,
+  "banRate": 1.4,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 50,
+    "abilityEffects": 50,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 48,
+    "mid": 66,
+    "late": 82,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Argus is manageable early but often lacks the sustained DPS/attack speed to fully exploit Warmonger, so his lane pressure is inconsistent before items. He scales very hard with attack-speed/on-hit cores and becomes a late-game menace because Eternal Evil lets him commit onto backliners and convert damage into survivability."
+  },
+  "proBuilds": [
+    {
+      "player": "malaikat jatuh",
+      "games": 838,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Berserker's Fury",
+        "Haas' Claws",
+        "Blade of Despair",
+        "Great Dragon Spear"
+      ]
+    },
+    {
+      "player": "Wrath",
+      "games": 865,
+      "items": [
+        "Corrosion Scythe",
+        "Swift Boots",
+        "Windtalker",
+        "Haas' Claws",
+        "Sea Halberd",
+        "Great Dragon Spear"
+      ]
+    },
+    {
+      "player": "~愛AshleyBlaireswip",
+      "games": 844,
+      "items": [
+        "Windtalker",
+        "Sea Halberd",
+        "Berserker's Fury",
+        "Malefic Roar",
+        "Blood Wings",
+        "Winter Crown"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/argus/video-0-0.mp4",
+    "skill1": "/videos/heroes/argus/video-1-0.mp4",
+    "skill2": "/videos/heroes/argus/video-2-0.mp4",
+    "ultimate": "/videos/heroes/argus/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 3",
+        "Passive"
+      ],
+      "description": "In teamfights, use Argus's 1st Skill to pull himself towards the enemy formation, then use the skill again to dash into their backline. Next, slow the enemy with his 2nd Skill and use Basic Attacks until his HP is low, then pop his Ultimate and continue the assault with Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, use Argus's 1st Skill to close in on the opponent and slow them with his 2nd Skill while hitting with Basic Attacks. If the enemy tries to run, use the second cast of his 1st Skill to chase."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Rafaela",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Abyss",
+  "race": "Fallen Demi-Angel",
+  "bestTeammates": [
+    {
+      "name": "Kalea",
+      "winrateDelta": 2.57
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 2.4
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": 2.21
+    },
+    {
+      "name": "Gloo",
+      "winrateDelta": 1.98
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 1.97
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Cici",
+      "winrateDelta": -6.67
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": -5.74
+    },
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -5.52
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -5.15
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": -5.01
+    }
+  ],
+  "metaScore": 19.32,
+  "metaRank": 40,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 3.55
+      },
+      {
+        "name": "Karrie",
+        "advantage": 3.27
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.63
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.6
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 3.74
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.52
+      },
+      {
+        "name": "Brody",
+        "advantage": 3.33
+      },
+      {
+        "name": "Uranus",
+        "advantage": 3.29
+      },
+      {
+        "name": "Terizla",
+        "advantage": 3.11
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "argus penghancur tank",
+      "author": "community",
+      "votes": 26,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Demon Hunter Sword",
+        "Berserker Fury",
+        "Great Dragon Spear",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-25T03:18:04.040557+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "𝘼𝙧𝙜𝙪𝙨 𝘼𝙜𝙚 𝘼𝙜𝙚",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Berserker Fury",
+        "Haas Claws",
+        "Blade of Despair",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "𝙇𝙚𝙢𝙖𝙝 𝙙𝙞 𝙚𝙖𝙧𝙡𝙮 𝙜𝙖𝙢𝙚 𝙩𝙖𝙥𝙞 𝙠𝙪𝙖𝙩 𝙙𝙞 𝙡𝙖𝙩𝙚 𝙜𝙖𝙢𝙚",
+      "tags": [],
+      "lastUpdated": "2026-01-04T07:41:06.144803+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Critical ",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Corrosion Scythe",
+        "Sea Halberd",
+        "Windtalker",
+        "Berserker Fury",
+        "Haas Claws",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Damage sakit semua darah tebal maupun darah tipis\n\nTips untuk Argus exp lane :\n1.beli Swift crossbow(paling penting)\n2.beli sea halberd(paling penting untuk lawan fighter musuh)\n3.beli corrosion \n4.beli windtalker\n5.beli berserker fury\n6.haas clash\n7.melefic Roar\nKalau GK ada tank tebal,melefic Roar ganti dengan fleeting time",
+      "tags": [],
+      "lastUpdated": "2025-12-12T07:35:37.688145+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Passive Spam+Full Damage",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Windtalker",
+        "Haas Claws",
+        "Berserker Fury",
+        "Great Dragon Spear",
+        "Blade of Despair",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "90% CRIT chance let you spam your passive most of the time unless you are very unlucky.\nConsider buying malefic roar instead of sea halberd when you think the enemy is too tanky for Argus passive to handle.",
+      "tags": [],
+      "lastUpdated": "2025-10-23T03:54:38.703315+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Corrosion Scythe",
+        "Berserker Fury",
+        "Demon Hunter Sword",
+        "Windtalker",
+        "Haas Claws",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Untuk hero tipis",
+      "tags": [],
+      "lastUpdated": "2026-03-21T12:45:05.833259+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11020,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Haas's",
+        "Claws"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 12320,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10870,
+      "notes": null
+    }
+  ]
+}

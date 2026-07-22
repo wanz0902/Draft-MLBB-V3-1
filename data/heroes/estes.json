@@ -1,0 +1,596 @@
+{
+  "id": "estes",
+  "name": "Estes",
+  "heroName": "Estes",
+  "role": [
+    "Support"
+  ],
+  "specialty": [
+    "Regen",
+    "Guard"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam",
+    "Mid"
+  ],
+  "flex_lanes": [
+    "Mid"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2490,
+    "hpRegen": 7.4,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 95,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Scripture of the Moon Elf",
+      "description": "Scripture of the Moon Elf slowly charges Estes with energy. When the energy reaches 100 stacks, Estes' next Basic Attack will become enhanced, dealing 250( +100% Total Physical Attack) (+150% Total Magic Power) (Magic Damage) to the target and 125( +50% Total Physical Attack) (+75% Total Magic Power) (Magic Damage) to nearby enemies, and slowing them by 60% for 1.5s.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Scripture_of_the_Moon_Elf",
+      "tips": "Code of Moon Elves, can charge energy and improves its basic attack dealing 450 magic damage. This basic attack will surely slow down its target. Also, it can make a splash damage dealing 225 magic damage towards nearby enemies.",
+      "iconUrl": "/raw-assets/skill_icons/estes/scripture_of_the_moon_elf.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Moonlight Immersion",
+      "description": "Estes restores 250( +110% Total Magic Power) HP to the target allied hero immediately and links himself with them for 3s, slowly restoring 325( +60% Total Magic Power) HP to the target. Linking with an allied hero will also increase Estes' Hybrid Defense by 20 and Movement Speed by 15%, as well as the energy charging speed of the Scripture of the Moon Elf. Being too far from the target will break the link.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Moonlight_Immersion",
+      "tips": "Moonlight Immersion can immediately restore one of his ally's HP. When Estes is successfully links himself to his target ally, it will heal his ally with 200 HP for 3 seconds. But, being far from the target, the link chain will be broken and the healing will stop. This skill can also heal Estes himself if needed. Estes cannot restore one ally if his HP is very low also when he lacks of mana.",
+      "iconUrl": "/raw-assets/skill_icons/estes/moonlight_immersion.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Domain of Moon Goddess",
+      "description": "Estes drops a flood of moonlight on the target area, dealing 350( +70% Total Magic Power) (Magic Damage) to enemy units within it. Afterwards, it turns to a domain of the Moon Goddess and reveals enemies inside it. Enemies will be slowed by 90% for 1.5s if they touch the edge of the domain area. (The slow effect will decay over time.)",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Domain_of_Moon_Goddess",
+      "tips": "This skill is effectively use as a trap. Ring of trap that will slow down enemies and even monsters or creeps movements that also deals 350 magic damage to enemies within it. You can cast this right in front of you to slow enemies that attacks you. This can also be use to help your allies escape by making the enemies slow their movements. Whoever got into the ring cannot easily escape due to if they tried to run they will be slow if they touches the ring.",
+      "iconUrl": "/raw-assets/skill_icons/estes/domain_of_moon_goddess.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Blessing of Moon Goddess",
+      "description": "Estes casts an enhanced (\"Moonlight Immersion\") on all nearby allied heroes. Within the next 8s, (\"Moonlight Immersion\") will be enhanced and Estes will continuously recover 1230( +210% Total Magic Power) HP.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blessing_of_Moon_Goddess",
+      "tips": "This ultimate skill is best use as support to allies. The skill incarnates into saint king of moonlight for 8 seconds. Intensifying the effect of Moonlight Immersion. After Estes cast the Blessing of Moon Goddess, he can immediately cast The Moonlight Immersion one time for surrounding ally. When Moonlight Immersion's cooldown is done, Estes can cast again Moonlight Immersion to grant another massive restoration of one ally. For as long as the Blessing of Moon Goddess casting is still ongoing. This skill can make your allies heroes immortal in game. Also Estes will automatically heal himself a total of 1,080 HP. This is a very good regeneration buffs to allies, especially in clashing.",
+      "iconUrl": "/raw-assets/skill_icons/estes/blessing_of_moon_goddess.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Faramis",
+        "Cyclops",
+        "Masha",
+        "Uranus",
+        "Cici"
+      ],
+      "weakAgainst": [
+        "Ixia",
+        "Beatrix",
+        "Nolan",
+        "Yin",
+        "Atlas"
+      ],
+      "synergyWith": [
+        "Kimmy",
+        "Baxia",
+        "Barats",
+        "Saber",
+        "Edith"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 4.2
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 4
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.8
+      },
+      {
+        "name": "Uranus",
+        "advantage": 3.5
+      },
+      {
+        "name": "Cici",
+        "advantage": 3.5
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 5.8
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 4.6
+      },
+      {
+        "name": "Nolan",
+        "advantage": 4.5
+      },
+      {
+        "name": "Yin",
+        "advantage": 4.3
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.7
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Kimmy",
+        "synergy": 3.4
+      },
+      {
+        "name": "Baxia",
+        "synergy": 3.3
+      },
+      {
+        "name": "Barats",
+        "synergy": 3
+      },
+      {
+        "name": "Saber",
+        "synergy": 2.5
+      },
+      {
+        "name": "Edith",
+        "synergy": 2.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Estes counters heroes with no burst damage, he can easily heal through minor damages from heroes like Faramis and Alice.",
+    "weakAgainstReason": "Estes is countered by heroes with high burst damage. Heroes like Saber and Eudora can easily burst down Estes or the hero he protects in a few seconds.",
+    "synergyReason": "Estes works best with typical Marksman heroes, his healing will allow them to deal more damage. Heroes like Lesley and Hanabi are good examples here."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Estes adalah support yang membantu tim melalui heal, shield, atau utility lainnya.",
+  "playstyleTags": [
+    "Protect"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Enabler",
+    "Defensive Draft"
+  ],
+  "counterTags": [
+    "Dive",
+    "Isolation",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Dive",
+    "Sustain Enabler"
+  ],
+  "macroTags": [
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.3,
+  "pickRate": 0.6,
+  "banRate": 48.7,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 10,
+    "abilityEffects": 20,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 70,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Flask of the Oasis",
+      "Enchanted Talisman",
+      "Oracle"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Early game impact is modest because he’s mana/CD-gated and offers mostly single-target sustain with limited disengage. Once ultimate is online and he has core mana/CD items, his teamfight value ramps sharply, and late game his AoE healing (plus Flask) can swing Lord fights if he’s not hard-engaged or chain-CCed."
+  },
+  "proBuilds": [
+    {
+      "player": "Villarosse",
+      "games": 1898,
+      "items": [
+        "Rapid Boots",
+        "Flask of the Oasis",
+        "Necklace of Durance",
+        "Fleeting Time",
+        "Holy Crystal",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "A B U N",
+      "games": 1554,
+      "items": [
+        "Favor Rapid Boots",
+        "Flask of the Oasis",
+        "Necklace of Durance",
+        "Fleeting Time",
+        "Athena's Shield",
+        "Antique Cuirass"
+      ]
+    },
+    {
+      "player": "Violetta Az-Zahra.",
+      "games": 1227,
+      "items": [
+        "Flask of the Oasis",
+        "Favor Tough Boots",
+        "Necklace of Durance",
+        "Holy Crystal",
+        "Oracle"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/estes/video-0-0.mp4",
+    "skill1": "/videos/heroes/estes/video-1-0.mp4",
+    "skill2": "/videos/heroes/estes/video-2-0.mp4",
+    "ultimate": "/videos/heroes/estes/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "Estes can use his 2nd Skill to slow down and poke enemies, and heal allies with his 1st Skill."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Estes should use his 2nd Skill to slow down the enemy team, then heal his teammates with his Ultimate and 1st Skill."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Blessing of Moon Goddess",
+      "Moonlight Immersion",
+      "Domain of Moon Goddess"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Lesley",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Hanabi",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Azrya Woodlands",
+  "race": "Moon Elf",
+  "bestTeammates": [
+    {
+      "name": "Barats",
+      "winrateDelta": 4.7
+    },
+    {
+      "name": "Edith",
+      "winrateDelta": 4.32
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": 3.68
+    },
+    {
+      "name": "Minsitthar",
+      "winrateDelta": 2.52
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 2.37
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Floryn",
+      "winrateDelta": -28.04
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": -22.55
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": -21.19
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -16.7
+    },
+    {
+      "name": "Minotaur",
+      "winrateDelta": -16.57
+    }
+  ],
+  "metaScore": 32.8,
+  "metaRank": 7,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 6.56
+      },
+      {
+        "name": "Faramis",
+        "advantage": 4.65
+      },
+      {
+        "name": "Masha",
+        "advantage": 4.42
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.49
+      },
+      {
+        "name": "Kaja",
+        "advantage": 3.31
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 5.19
+      },
+      {
+        "name": "Atlas",
+        "advantage": 4.32
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 4.2
+      },
+      {
+        "name": "Nolan",
+        "advantage": 3.94
+      },
+      {
+        "name": "Yin",
+        "advantage": 3.77
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Ulti 10 detik berkedok deres",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Demon Shoes",
+        "Oracle",
+        "Enchanted Talisman",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Saran main di roam dan mid",
+      "tags": [],
+      "lastUpdated": "2025-12-30T03:49:09.111457+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Auto deres healing",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Tought Boots",
+        "Flask of the Oasis",
+        "Oracle",
+        "Antique Cuirass",
+        "Athena's Shield",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T07:42:06.358672+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Demon",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10750,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Dominance"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10410,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Demon",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Revitalize",
+      "cost": 10550,
+      "notes": null
+    }
+  ]
+}

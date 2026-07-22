@@ -1,0 +1,740 @@
+{
+  "id": "fanny",
+  "name": "Fanny",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Finisher"
+  ],
+  "lane": "Jungle",
+  "releaseYear": 2016,
+  "difficulty": 10,
+  "metaTier": "S",
+  "pickBanPresence": 85,
+  "baseStats": {
+    "hp": 2540,
+    "hpRegen": 7,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 130,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.11",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 265
+  },
+  "skills": {
+    "passive": {
+      "name": "Air Superiority",
+      "description": "During flight, Fanny deals 10%-20% extra damage to enemies hit (scales with flying speed) and applies a stack of (Prey Mark) to them (up to 2 stacks) on each attack. Her subsequent skill hits on marked enemy heroes restore 7 energy per stack for her. The energy restoration is reduced if she hits multiple enemy heroes within a short period of time.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Air_Superiority",
+      "iconUrl": "/raw-assets/skill_icons/fanny/air_superiority.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Tornado Strike",
+      "description": "Fanny whirls her blades, dealing 275 (+85% Total Physical Attack) Physical Damage to nearby enemies.",
+      "cooldown": "3.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+85% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "3.5",
+            "3.3",
+            "3.1",
+            "2.9",
+            "2.7",
+            "2.5"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "275",
+            "325",
+            "375",
+            "425",
+            "475",
+            "525"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Tornado_Strike",
+      "tips": "Use this skill to clear jungle or lane. You have to keep in mind to save your Energy. Don't only spam this skill to kill Jungle Monster faster, because you will miss the opportunity to kill the enemy or to cover the turret.",
+      "iconUrl": "/raw-assets/skill_icons/fanny/tornado_strike.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Steel Cable",
+      "description": "Fanny shoots a cable in the target direction that pulls her to the first obstacle hit. She can cast this skill again within 2s until her energy runs out. Each successive cast reduces the skill's energy cost by 2.\nFanny automatically casts Tornado Strike upon hitting an enemy mid-flight, ss long as her energy is sufficient.\n|quote=No way I'm going on foot!",
+      "cooldown": "0.0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "19",
+            "18",
+            "17",
+            "16",
+            "15",
+            "14"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Steel_Cable",
+      "tips": "This skill will be synergied with Tornado Strike to the enemies nearby in your flying area and deals damage to them. The skill is a must in a battlefield and to master using Fanny, you have to master the skill.",
+      "iconUrl": "/raw-assets/skill_icons/fanny/steel_cable.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Cut Throat",
+      "description": "Fanny leaps at the target enemy hero or Creep with her blades, dealing 400 (+200% Extra Physical Attack) Physical Damage. Each stack of Prey Mark on the target increases this damage by 30%.",
+      "cooldown": "35.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+200% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "35.0",
+            "30.0",
+            "25.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "400",
+            "525",
+            "650"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Cut_Throat",
+      "tips": "This skill is used to kill enemy. After you give a Prey Mark to your enemy, using the skill will deals lethal damage. But, without Prey Mark, the skill is useless, unless to get a kill to enemy with low HP.",
+      "iconUrl": "/raw-assets/skill_icons/fanny/cut_throat.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Aggressive early invade",
+      "Blue Buff Dependency",
+      "Split push potential"
+    ],
+    "hiddenGameplans": [
+      "Punish immobile mages",
+      "Force early surrenders"
+    ],
+    "macroIdentity": [
+      "Backline Diver",
+      "Map Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 2 (Blue Buff)",
+      "Level 4"
+    ],
+    "objectiveControlValue": 4,
+    "snowballPotential": 10,
+    "flexibilityRating": 2,
+    "deceptionValue": 3,
+    "comfortPickImportance": "Critical (Requires Mechanical God)",
+    "draftPhilosophyTags": [
+      "Early Tempo",
+      "High Risk",
+      "Dive",
+      "Skill Cap"
+    ],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Yve",
+        "Granger",
+        "Atlas",
+        "Baxia"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Bruno",
+        "Moskov",
+        "Franco",
+        "Masha"
+      ],
+      "synergyWith": [
+        "Faramis",
+        "Natan",
+        "Masha",
+        "Kaja",
+        "Miya"
+      ],
+      "draftPairings": [
+        "Angela + Fanny"
+      ]
+    }
+  },
+  "lanes": [
+    "Jungle",
+    "EXP"
+  ],
+  "flex_lanes": [
+    "EXP"
+  ],
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Fanny adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Early Aggression",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Diver",
+    "Map Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Blue Buff)",
+    "Level 4"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 42.8,
+  "pickRate": 0.6,
+  "banRate": 3.3,
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 4.3
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.9
+      },
+      {
+        "name": "Granger",
+        "advantage": 3.9
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.2
+      },
+      {
+        "name": "Baxia",
+        "advantage": 3.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 4
+      },
+      {
+        "name": "Bruno",
+        "advantage": 3.4
+      },
+      {
+        "name": "Moskov",
+        "advantage": 3.2
+      },
+      {
+        "name": "Franco",
+        "advantage": 2.9
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Faramis",
+        "synergy": 2.6
+      },
+      {
+        "name": "Natan",
+        "synergy": 1.9
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.7
+      },
+      {
+        "name": "Kaja",
+        "synergy": 1.4
+      },
+      {
+        "name": "Miya",
+        "synergy": 1.4
+      }
+    ],
+    "strongAgainstReason": "Fanny counters squishy heroes that lack targeted CC like Karrie and Irithel who cannot stop Fanny's extreme mobility while she bursts them down.",
+    "weakAgainstReason": "Fanny is countered by heroes that can restrict mobility, such as Kaja and Khufra, since they can easily shutdown her main advantage.",
+    "synergyReason": "Fanny works best with heroes that can chain AOE CC to keep the enemy pinned, such as Minotaur and Gatotkaca, so she can deal damage without interruption."
+  },
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 70,
+    "abilityEffects": 10,
+    "difficulty": 100
+  },
+  "powerCurve": {
+    "early": 85,
+    "mid": 75,
+    "late": 55,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Bloodlust Axe",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Fanny is dominant early once Steel Cable mobility enables fast clears and constant ganks, and she snowballs hard off early kills. As the game goes late, grouped enemies, CC, and armor items reduce her consistency and make dives much riskier."
+  },
+  "proBuilds": [
+    {
+      "player": "Wingsecure",
+      "games": 1032,
+      "items": [
+        "Flame Tough Boots",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "sphynx",
+      "games": 1138,
+      "items": [
+        "Beast Tough Boots",
+        "Malefic Roar",
+        "War Axe",
+        "Queen's Wings",
+        "Oracle",
+        "Chastise Pauldron"
+      ]
+    },
+    {
+      "player": "@hotshotplayer",
+      "games": 974,
+      "items": [
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Sea Halberd",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/fanny/video-0-0.mp4",
+    "skill1": "/videos/heroes/fanny/video-1-0.mp4",
+    "skill2": "/videos/heroes/fanny/video-2-0.mp4",
+    "ultimate": "/videos/heroes/fanny/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Fanny's 2nd Skill repeatedly to move around and use her 1st Skill when in the middle of the enemy. Look for low HP enemies to finish off with her Ultimate."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, use Fanny's 2nd Skill at walls to quickly maneuver around and use her 1st Skill when near the enemy. Keep using her 2nd Skill to pass through the enemy to automatically trigger her 1st Skill, and use her Ultimate to secure kills."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Cut Throat",
+      "Steel Cable",
+      "Tornado Strike"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Masha",
+      "winrateDelta": 2.9
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 2.08
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 2.05
+    },
+    {
+      "name": "Edith",
+      "winrateDelta": 1.79
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": 1.7
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Nolan",
+      "winrateDelta": -15.09
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -14.03
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -13.69
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -12.19
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -10.65
+    }
+  ],
+  "metaScore": 2.8,
+  "metaRank": 129,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 3.38
+      },
+      {
+        "name": "Granger",
+        "advantage": 3.18
+      },
+      {
+        "name": "Carmilla",
+        "advantage": 2.9
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.89
+      },
+      {
+        "name": "Minotaur",
+        "advantage": 2.41
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Moskov",
+        "advantage": 3.69
+      },
+      {
+        "name": "Zilong",
+        "advantage": 3.5
+      },
+      {
+        "name": "Bruno",
+        "advantage": 3.29
+      },
+      {
+        "name": "Chou",
+        "advantage": 2.85
+      },
+      {
+        "name": "Franco",
+        "advantage": 2.41
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Fanny main kabel",
+      "author": "community",
+      "votes": 31,
+      "items": [
+        "Tought Boots",
+        "Sky Piercer",
+        "War Axe",
+        "Malefic Roar",
+        "Blade of Despair",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Cobain deh",
+      "tags": [],
+      "lastUpdated": "2025-10-19T03:30:53.697113+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Fanny Low Cost Energy",
+      "author": "community",
+      "votes": 12,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Sea Halberd",
+        "Queen's Wings",
+        "Antique Cuirass",
+        "Radiant Armor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "harus jago menggunakan kabel",
+      "tags": [],
+      "lastUpdated": "2026-01-26T12:33:53.379726+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Burst Damage & Armor Penetration ",
+      "author": "community",
+      "votes": 10,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sky Piercer",
+        "Malefic Roar",
+        "Hunter Strike",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Build ini di peruntukkan untuk burst hero musuh dengan 1 combo attack (Marksman, Mage, Exp) yang cenderung punya HP yang tipis dan Defense yang tipis\n\nItem Kondisional: Kalian bisa ganti item “Hunter Strike” dengan “Sea Halberd” apabila kalian melawan hero yang cukup tebal dan mempunyai HP yang lebih tinggi dari kalian ataupun regen HP/Shield yang cukup deras.",
+      "tags": [],
+      "lastUpdated": "2025-09-13T17:19:28.323168+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Fanny By qeva",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Thunder Belt",
+        "Queen's Wings",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming) Jangan dibuang sampai 3-4 item penting lain jadi",
+      "tags": [],
+      "lastUpdated": "2025-09-15T11:13:34.8689+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Fanny Anomali",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Lightning Truncheon",
+        "Brute Force Breastplate",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "coba baca passive lightning truncheon biar tau.",
+      "tags": [],
+      "lastUpdated": "2026-01-26T13:12:13.79188+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Malefic"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11850,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Queen's",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11120,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Sky",
+        "Piercer",
+        "Blade",
+        "the"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11230,
+      "notes": null
+    }
+  ]
+}

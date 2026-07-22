@@ -1,0 +1,774 @@
+{
+  "id": "brody",
+  "name": "Brody",
+  "heroName": "Brody",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Burst",
+    "Finisher"
+  ],
+  "lane": "Gold",
+  "lanes": [
+    "Gold",
+    "Mid"
+  ],
+  "flex_lanes": [
+    "Mid"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2520,
+    "hpRegen": 7,
+    "mana": 440,
+    "manaRegen": 3.4,
+    "physicalAttack": 122,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.2",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Abyss Corrosion",
+      "description": "With his Basic Attacks resonated with the Abyss Power within his body, Brody is able to move while winding up his Basic Attacks (which will be interrupted when casting skills), at the cost of having longer Basic Attack Animation and lower Attack Speed Bonus. Each Basic Attack deals ( +140% Total Physical Attack) ((+45*Hero Level)) (Physical Damage) (of which the damage scaling with level cannot be critical), increases Movement Speed by 30% (which will decay rapidly in 1.2s), and applies 1 stack of (Abyss Mark) on the enemy, capped at 4 stacks. Each stack of (Abyss Mark) increases Brody's damage against the target by 5% and his Movement Speed by 5%.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(140% Total Physical Attack)",
+        "(+45*Hero Level)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Abyss_Corrosion",
+      "tips": "Brody has a relatively slow Attack Speed. However, each of his Basic Attack inflicts a remarkable amount of damage on the enemy as well as applying the \"Abyss Mark\" and slow effect to them.",
+      "iconUrl": "/raw-assets/skill_icons/brody/abyss_corrosion.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Abyss Impact",
+      "description": "Brody launches a shockwave in the target direction, dealing 200 (+170% Total Physical Attack) Physical Damage and slowing enemies by 30% for 1.2s while applying one stack of Abyss Mark.\nFor each enemy hit by the shockwave, they take an extra 5% slow and one extra Abyss Mark stack (capped at 45% slow and 4 stacks).",
+      "cooldown": "4.0",
+      "manaCost": "50",
+      "damageType": "Physical",
+      "scaling": [
+        "(+170% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "50",
+            "55",
+            "60",
+            "65",
+            "70",
+            "75"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "260",
+            "320",
+            "380",
+            "440",
+            "500"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Abyss_Impact",
+      "tips": "Brody launches a shock wave in the designated direction, dealing damage to and slowing down the enemies hit while leaving an \"Abyss Mark\" on them. For every extra enemy hit, \"Abyss Impact\" inflicts extra damage and slow effect on enemies as well as applying additional stacks of \"Abyss Mark\" to them.",
+      "iconUrl": "/raw-assets/skill_icons/brody/abyss_impact.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Corrosive Strike",
+      "description": "Brody dashes to an enemy, dealing 200 (+70% Total Physical Attack) Physical Damage to the target, stunning the target for 0.8s, and applying 1 stack of Abyss Mark on the target.\nUpon hitting the target, he is able to move one more time in the movement direction, gaining 45% Movement Speed that will decay rapidly in 1.2s",
+      "cooldown": "8.0",
+      "manaCost": "90",
+      "damageType": "Physical",
+      "scaling": [
+        "(+70% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "230",
+            "260",
+            "290",
+            "320",
+            "350"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Mobility",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Corrosive_Strike",
+      "tips": "Brody dashes to and stuns the target enemy. After which he dashes one more time in the chosen direction and gains extra Movement Speed.",
+      "iconUrl": "/raw-assets/skill_icons/brody/corrosive_strike.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Torn-Apart Memory",
+      "description": "Brody locks on all the targets within 8 unit(s), dealing 216 (+165% Extra Physical Attack) Physical Damage to them. If the target has an Abyss Mark, all Abyss Marks will be reset, dealing Physical Damage equal to 94 (+72% Extra Physical Attack) plus 4% of the target's lost HP for each stack the target has.",
+      "cooldown": "32.0",
+      "manaCost": "120",
+      "damageType": "Physical",
+      "scaling": [
+        "(+165% Extra Physical Attack)",
+        "(+72% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "32.0",
+            "28.0",
+            "24.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "160",
+            "200"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "216",
+            "378",
+            "540"
+          ]
+        },
+        {
+          "label": "Damage per Stack",
+          "values": [
+            "94",
+            "163",
+            "232"
+          ]
+        },
+        {
+          "label": "Lost HP Multiplier",
+          "values": [
+            "4%",
+            "7%",
+            "10%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Torn-Apart_Memory",
+      "tips": "Brody locks onto the enemy targets in range, dealing damage to them according to their lost HP and the stacks of \"Abyss Mark\" on them.",
+      "iconUrl": "/raw-assets/skill_icons/brody/torn_apart_memory.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Karina",
+        "Natalia",
+        "Belerick",
+        "Irithel",
+        "Helcurt"
+      ],
+      "weakAgainst": [
+        "Barats",
+        "Masha",
+        "Diggie",
+        "Khufra",
+        "Zhask"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Popol and Kupa",
+        "Floryn",
+        "Wanwan",
+        "Bruno"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Karina",
+        "advantage": 3.8
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.9
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2.7
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.7
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.3
+      },
+      {
+        "name": "Masha",
+        "advantage": 3
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.6
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.4
+      },
+      {
+        "name": "Zhask",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 3.2
+      },
+      {
+        "name": "Popol and Kupa",
+        "synergy": 2.7
+      },
+      {
+        "name": "Floryn",
+        "synergy": 2.2
+      },
+      {
+        "name": "Wanwan",
+        "synergy": 2
+      },
+      {
+        "name": "Bruno",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Brody is strong against heroes with poor survivability in the early game and heroes without dash, because he can easily lock on them and attack beyond their reach. Like Aamon and Yin.",
+    "weakAgainstReason": "Brody is countered by heroes with CC immunity and multiple movement abilities, because they can quickly close in on Brody, giving him no chance to stack the Abyss Mark. Such as Martis and Wanwan.",
+    "synergyReason": "Brody works best with heroes who can perform lock-on attacks or heroes with area CC abilities, as they can give Brody more room to deal damage and farm better. Such as Hylos and Minsitthar."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Brody adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.7,
+  "pickRate": 0.5,
+  "banRate": 0.6,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 70,
+    "abilityEffects": 50,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 72,
+    "mid": 78,
+    "late": 68,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Blade of Despair",
+      "Malefic Roar"
+    ],
+    "dominantPhase": null,
+    "description": "Brody is unusually threatening early for a marksman due to high base damage, strong poke, and a reliable stun-dash to win short trades. He peaks around mid game when his burst combo with ultimate can delete squishies, but in late game he’s slightly outscaled by true DPS marksmen since he’s more burst/poke than sustained."
+  },
+  "proBuilds": [
+    {
+      "player": "Ragee Hoam",
+      "games": 1315,
+      "items": [
+        "Blade of the Heptaseas",
+        "Tough Boots",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Rose Gold Meteor",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "Incognito",
+      "games": 1237,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Malefic Gun",
+        "Rose Gold Meteor",
+        "Sea Halberd",
+        "Wind of Nature"
+      ]
+    },
+    {
+      "player": "panzi insomnia lagi.",
+      "games": 933,
+      "items": [
+        "Blade of the Heptaseas",
+        "Tough Boots",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Rose Gold Meteor",
+        "Sea Halberd"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/brody/video-0-0.mp4",
+    "skill1": "/videos/heroes/brody/video-1-0.mp4",
+    "skill2": "/videos/heroes/brody/video-2-0.mp4",
+    "ultimate": "/videos/heroes/brody/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 3",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Brody should prioritize using his 1st Skill and Basic Attack, to apply Abyss Marks on enemy heroes outside of the battle area. He can then use his Ultimate and Basic Attack to deal heavy damage and his 2nd Skill and Basic Attack to chase down enemies on the run."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "Brody can regularly use his 1st Skill and Basic Attacks to clear lanes and poke the enemy heroes. Once enemy heroes are low on HP, Brody can use his 2nd Skill to close in and stun them, then cast his Ultimate to try to finish them off."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Aulus",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Benedetta",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Hylos",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Minsitthar",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "The Barren Lands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Faramis",
+      "winrateDelta": 3.69
+    },
+    {
+      "name": "Irithel",
+      "winrateDelta": 3.65
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 3.37
+    },
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": 3.29
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 2.73
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": -19.2
+    },
+    {
+      "name": "Beatrix",
+      "winrateDelta": -7.98
+    },
+    {
+      "name": "Obsidia",
+      "winrateDelta": -5.03
+    },
+    {
+      "name": "Claude",
+      "winrateDelta": -4.76
+    },
+    {
+      "name": "Clint",
+      "winrateDelta": -4.76
+    }
+  ],
+  "metaScore": 16.79,
+  "metaRank": 67,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Kaja",
+        "advantage": 4.95
+      },
+      {
+        "name": "Joy",
+        "advantage": 4.3
+      },
+      {
+        "name": "Karina",
+        "advantage": 3.62
+      },
+      {
+        "name": "Valentina",
+        "advantage": 3.53
+      },
+      {
+        "name": "Irithel",
+        "advantage": 3.36
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Bruno",
+        "advantage": 3.65
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.04
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.03
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.72
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.55
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "BRODY MUAH MUAH GOT KILL",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Malefic Gun",
+        "Sky Piercer",
+        "Blade of the Heptaseas",
+        "Rose Gold Meteor",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "First item malefic, item kedua kalau snowball langsung skypiercer, kalo engga skip skypiercer langsung build heptaseas.\nSelamat mencoba.",
+      "tags": [],
+      "lastUpdated": "2025-09-13T09:33:29.998264+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Dari early udah full itemm",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Blade of the Heptaseas",
+        "Sky Piercer",
+        "Blade of Despair",
+        "Sea Halberd",
+        "Rose Gold Meteor",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Awwwwwww",
+      "tags": [],
+      "lastUpdated": "2026-01-17T09:14:04.79525+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "anti kalh lane/mm mandiri",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Malefic Gun",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "flicker skil 2>1>3",
+      "tags": [],
+      "lastUpdated": "2026-01-11T18:43:41.629391+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Brody Tank",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "Endless Battle",
+        "Rose Gold Meteor",
+        "Brute Force Breastplate",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Brody tank",
+      "tags": [],
+      "lastUpdated": "2025-11-01T14:33:17.32749+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Full Damage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Sky Piercer",
+        "Malefic Gun",
+        "Hunter Strike",
+        "Sea Halberd",
+        "Blade of Despair",
+        "Blade of the Heptaseas"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Why build tank item on brody when you can one shot the enemy first.",
+      "tags": [],
+      "lastUpdated": "2025-10-24T06:44:44.046445+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Endless",
+        "Battle",
+        "Blade",
+        "Despair"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12100,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Endless",
+        "Battle",
+        "Blade",
+        "the"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12180,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Endless",
+        "Battle",
+        "Blade",
+        "Despair"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11830,
+      "notes": null
+    }
+  ]
+}

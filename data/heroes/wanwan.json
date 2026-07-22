@@ -1,0 +1,597 @@
+{
+  "id": "wanwan",
+  "name": "Wanwan",
+  "heroName": "Wanwan",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Burst"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2440,
+    "hpRegen": 6.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 112,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Tiger Pace",
+      "description": "Enemy heroes hit by Wanwan's attacks will have their weakness exposed and position revealed for 5s. When hitting an enemy's weakness, Wanwan deals 67(+3*Hero Level) extra (True Damage) and increases their damage taken from her subsequent attacks by 10% for 5s. Wanwan can dash a short distance after each arrow fired from her Basic Attack. The dash speed scales with her Attack Speed. Wanwan's Basic Attack deals ( +100% Total Physical Attack) Physical Damage.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Tiger_Pace",
+      "tips": "Since she could move a short distance after attacking, she could easily dodge damage from the enemies and poke them while dealing damage.",
+      "iconUrl": "/raw-assets/skill_icons/wanwan/tiger_pace.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Swallow’s Path",
+      "description": "Wanwan throws a Fire Swallow in the target direction, triggering (Tiger Pace) while dealing 120( +40% Total Physical Attack) (Physical Damage) to enemies in its path. The Fire Swallow then turns into 3 rotating Swallow Daggers. After a short delay, these Swallow Daggers will fly back to Wanwan one after another, dealing 60( +65% Total Physical Attack) (Physical Damage) to enemies on their way back and slowing them by 30% for 1.5s. Enemies hit twice by the Swallow Daggers will be immobilized for 0.5s.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Swallow’s_Path",
+      "tips": "With this skill, Wanwan could deal damage to enemies and control them. As the Fire Swallow could return to Wanwan, she could quickly hit the Weaknesses of the enemies from their back.",
+      "iconUrl": "/raw-assets/skill_icons/wanwan/swallow_s_path.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Needles in Flowers",
+      "description": "Wanwan removes all control effects on herself and triggers (Tiger Pace). Meanwhile, she shoots Deadly Needles in all directions, dealing 150( +60% Total Physical Attack) (Physical Damage) to enemies hit.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Needles_in_Flowers",
+      "tips": "The ability of removing all CC greatly increases Wanwan’s chances of survival in battles.",
+      "iconUrl": "/raw-assets/skill_icons/wanwan/needles_in_flowers.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Crossbow of Tang",
+      "description": "Wanwan leaps into the air and fires arrows at the target enemy hero for 2.5s in rapid succession, dealing 60( +35% Total Physical Attack) (Physical Damage) per arrow. If the target is killed during this attack, Wanwan will switch to another enemy hero in her attack range, gain 30% Attack Speed, and extend the skill duration by 1s (this effect can trigger up to 3 times). Wanwan is untargetable and invincible for the duration and can trigger (Tiger Pace) upon killing an enemy and at the end of the duration. (Crossbow of Tang) can only be cast on enemy heroes with all their weaknesses hit and Wanwan gains 100% Movement Speed during the duration. This damage is regarded as Basic Attack damage, and the firing rate scales with Wanwan's Attack Speed.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Crossbow_of_Tang",
+      "tips": "The Burst Damage and the invincibility brought by the Skill make Wanwan unbeatable when she fights alone and also in team fight.",
+      "iconUrl": "/raw-assets/skill_icons/wanwan/crossbow_of_tang.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Ixia",
+        "Atlas",
+        "Yin",
+        "Gloo",
+        "Guinevere"
+      ],
+      "weakAgainst": [
+        "Phoveus",
+        "Bruno",
+        "Cyclops",
+        "Irithel",
+        "Faramis"
+      ],
+      "synergyWith": [
+        "Angela",
+        "Popol and Kupa",
+        "Harith",
+        "Floryn",
+        "Mathilda"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 3.9
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.8
+      },
+      {
+        "name": "Yin",
+        "advantage": 3.2
+      },
+      {
+        "name": "Gloo",
+        "advantage": 3.1
+      },
+      {
+        "name": "Guinevere",
+        "advantage": 3.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Phoveus",
+        "advantage": 6
+      },
+      {
+        "name": "Bruno",
+        "advantage": 3.8
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 3.5
+      },
+      {
+        "name": "Irithel",
+        "advantage": 3.5
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Angela",
+        "synergy": 2.7
+      },
+      {
+        "name": "Popol and Kupa",
+        "synergy": 2.3
+      },
+      {
+        "name": "Harith",
+        "synergy": 2.2
+      },
+      {
+        "name": "Floryn",
+        "synergy": 2.2
+      },
+      {
+        "name": "Mathilda",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Wanwan is exceptional in dashing and powerful against heroes with short ranges or heavy weight, such as Fredrinn and Luo Yi.",
+    "weakAgainstReason": "However, due to her lack of durability and short attack range, Mages with longer ranges like Gord can poke her easily. She also lacks survival abilities when taking Burst damage and can be weak against Burst Assassins like Lancelot.",
+    "synergyReason": "She's best with Supporting Tanks with powerful crowd control, like Franco and Belerick. They can help Wanwan hit more Weaknesses and unlock her Ultimate."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Wanwan adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.4,
+  "pickRate": 0.2,
+  "banRate": 0.3,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 60,
+    "abilityEffects": 30,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 40,
+    "mid": 70,
+    "late": 90,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Corrosion Scythe",
+      "Demon Hunter Sword",
+      "Wind of Nature"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Weak early due to needing attack speed/items to reliably break Weaknesses and access her Ultimate. Once she gets core DPS items and levels, Crossbow of Tang becomes a fight-winning reset tool and she turns dominant in late-game teamfights."
+  },
+  "proBuilds": [
+    {
+      "player": "KERO",
+      "games": 1404,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Berserker's Fury",
+        "Wind of Nature"
+      ]
+    },
+    {
+      "player": "Iboyy",
+      "games": 622,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Haas' Claws",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Berserker's Fury"
+      ]
+    },
+    {
+      "player": "legend of chang'e",
+      "games": 916,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Haas' Claws",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Berserker's Fury"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/wanwan/video-0-0.mp4",
+    "skill1": "/videos/heroes/wanwan/video-1-0.mp4",
+    "skill2": "/videos/heroes/wanwan/video-2-0.mp4",
+    "ultimate": "/videos/heroes/wanwan/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Basic Attacks to dash with her Passive and adjust position for damage, and then land as many hits as possible with her 1st Skill. After hitting all Weaknesses, reap kills with her Ultimate."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, Wanwan can poke enemies with her 1st Skill\nand then use Basic Attacks to dash with her Passive and adjust Swallow Daggers' paths to control enemies. After hitting an enemy's three Weaknesses, she can finish them off with her Ultimate."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Yin",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Yu Zhong",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Ling",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Hylos",
+      "winrateDelta": 4.48
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": 3.84
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": 3.42
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 3.37
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 3.2
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Brody",
+      "winrateDelta": -19.2
+    },
+    {
+      "name": "Claude",
+      "winrateDelta": -18.2
+    },
+    {
+      "name": "Irithel",
+      "winrateDelta": -17.97
+    },
+    {
+      "name": "Bruno",
+      "winrateDelta": -12.64
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -11.33
+    }
+  ],
+  "metaScore": 10.91,
+  "metaRank": 114,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 4.72
+      },
+      {
+        "name": "Joy",
+        "advantage": 4.26
+      },
+      {
+        "name": "Atlas",
+        "advantage": 4.06
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.65
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 3.48
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Phoveus",
+        "advantage": 7.34
+      },
+      {
+        "name": "Bruno",
+        "advantage": 5.49
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 4.92
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 4.27
+      },
+      {
+        "name": "Faramis",
+        "advantage": 4.18
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "My fav BUILD",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Haas Claws",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-11T10:50:49.635706+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "AUTO SEVEGE JIR",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Corrosion Scythe",
+        "Haas Claws",
+        "Windtalker",
+        "Sky Piercer",
+        "Rose Gold Meteor",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "lawan all mm bisa menang asal ga di gb roam musuh sama early wajib main berani jangan ngandang",
+      "tags": [],
+      "lastUpdated": "2025-10-16T16:26:25.684025+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 10970,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11050,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Aegis",
+      "cost": 10870,
+      "notes": null
+    }
+  ]
+}

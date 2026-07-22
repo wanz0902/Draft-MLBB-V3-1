@@ -1,0 +1,709 @@
+{
+  "id": "odette",
+  "name": "Odette",
+  "heroName": "Odette",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Burst",
+    "Poke"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2431,
+    "hpRegen": 6.6,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 98,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Lakeshore Ambience",
+      "description": "Each skill cast grants extra range on Odette's next Basic Attack within 8s and causes it to bounce between enemies (or an enemy and herself if only one enemy is in range), dealing 144-200( +50% Total Magic Power) (Magic Damage) per hit. Odette's skills will also trigger this effect when hitting an enemy. This effect stacks up to 3 times.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Lakeshore_Ambience",
+      "tips": "Because passive skills can be processed through ordinary skills, it is good to use when enemies are in close position to each other to be more effective.",
+      "iconUrl": "/raw-assets/skill_icons/odette/lakeshore_ambience.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Avian Authority",
+      "description": "Odette releases a magic swan in the target direction, dealing 300 (+150% Total Magic Power) Magic Damage to enemies hit and slowing them by 30% for 2s.",
+      "cooldown": "6.0",
+      "manaCost": "65",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.8",
+            "5.6",
+            "5.4",
+            "5.2",
+            "5.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "65",
+            "70",
+            "75",
+            "80",
+            "85",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "350",
+            "400",
+            "450",
+            "500",
+            "550"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Avian_Authority",
+      "tips": "Focusing energy to summon a swan that attack enemies, deals magic damage and reduce their movement speed.",
+      "iconUrl": "/raw-assets/skill_icons/odette/avian_authority.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Blue Nova",
+      "description": "Odette releases a set of magic energy balls in the target direction, dealing 250 (+50% Total Magic Power) Magic Damage to the first enemy hit and immobilizing them for 1.5s. After hitting an enemy, another energy ball will split off and attack a nearby enemy (prioritizes enemy heroes), dealing them 250 (+50% Total Magic Power) Magic Damage and immobilizing them for 1.5s.",
+      "cooldown": "12.0",
+      "manaCost": "75",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)",
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.6",
+            "11.2",
+            "10.8",
+            "10.4",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "75",
+            "80",
+            "85",
+            "90",
+            "95",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "280",
+            "310",
+            "340",
+            "370",
+            "400"
+          ]
+        },
+        {
+          "label": "Diffusion Damage",
+          "values": [
+            "250",
+            "280",
+            "310",
+            "340",
+            "370",
+            "400"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blue_Nova",
+      "tips": "Shoots a Magic Energy Ball forward, deals magic damage to the enemy and Immobilize them. After the ball reaches between the maximum distance or the target, two additional Energy Balls will attack sideways, deals magic damage and bind the affected enemy. Calculating the distance of a Skill attack will make you attack enemies better. Attack enemies with separate Energy Balls.",
+      "iconUrl": "/raw-assets/skill_icons/odette/blue_nova.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Swan Song",
+      "description": "Odette begins to dance, gaining a 1200 (+150% Total Magic Power) shield while dealing up to 2000 (+750% Total Magic Power) Magic Damage to enemies in a large area around her for 5s. The bounce speed and frequency of Lakeshore Ambience's sound wave in the area are also enhanced when the skill is active.\nUse again while the skill is active to dash in the target direction.\nThe skill is a chanelling cast and will be interrupted if Odette is hit by high level control effects (knocked airborne, transformed, etc.) or if she performs another action.",
+      "cooldown": "50.0",
+      "manaCost": "160",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)",
+        "(+750% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "50.0",
+            "45.0",
+            "40.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "160",
+            "200",
+            "240"
+          ]
+        },
+        {
+          "label": "Base Shield",
+          "values": [
+            "1200",
+            "1500",
+            "1800"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "2000",
+            "2500",
+            "3000"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Swan_Song",
+      "tips": "Utilize the damage reduction effect received to place yourself in the right area to be able to produce maximum damage during the Ultimate. Use Flicker to surprise the enemy.",
+      "iconUrl": "/raw-assets/skill_icons/odette/swan_song.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Marcel",
+        "Mathilda",
+        "Valentina",
+        "Natalia",
+        "Harith"
+      ],
+      "weakAgainst": [
+        "Barats",
+        "Gloo",
+        "Nana",
+        "Alpha",
+        "Gatotkaca"
+      ],
+      "synergyWith": [
+        "Chip",
+        "Zhuxin",
+        "Mathilda",
+        "Kaja",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 4.1
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 3.2
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.7
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.7
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.3
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.9
+      },
+      {
+        "name": "Nana",
+        "advantage": 2.8
+      },
+      {
+        "name": "Alpha",
+        "advantage": 2.8
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 2.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Chip",
+        "synergy": 3.8
+      },
+      {
+        "name": "Zhuxin",
+        "synergy": 3.4
+      },
+      {
+        "name": "Mathilda",
+        "synergy": 3.3
+      },
+      {
+        "name": "Kaja",
+        "synergy": 2.4
+      },
+      {
+        "name": "Valentina",
+        "synergy": 2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Odette's Ultimate is capable of unleashing massive damage and is effective against heroes lacking interruption skills, such as Layla and Irithel.",
+    "weakAgainstReason": "Odette is countered by heroes with Crowd Control skills, such as Minotaur and Edith, because they can easily interrupt her Ultimate.",
+    "synergyReason": "Pair Odette with heroes who can relocate their teammates like Johnson and Jawhead to make it easier for her to find the perfect position for her Ultimate."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Odette adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.9,
+  "pickRate": 0.7,
+  "banRate": 0.6,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 100,
+    "abilityEffects": 70,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Lightning Truncheon",
+      "Holy Crystal",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Her main spike is ultimate unlock plus one big burst item, enabling lethal S2 immobilize into Swan Song teamfight wipes around Turtle and mid-game tower pushes. Late game damage remains high, but reliability drops versus more interrupts, purify effects, and long-range DPS."
+  },
+  "proBuilds": [
+    {
+      "player": "MADE KACZYNSKI",
+      "games": 1300,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Glowing Wand",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "ㅤ ㅤㅤClairo",
+      "games": 1157,
+      "items": [
+        "Demon Shoes",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Winter Crown",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "ànymolinn but diff.",
+      "games": 766,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Glowing Wand",
+        "Winter Crown",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/odette/video-0-0.mp4",
+    "skill1": "/videos/heroes/odette/video-1-0.mp4",
+    "skill2": "/videos/heroes/odette/video-2-0.mp4",
+    "ultimate": "/videos/heroes/odette/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, initiate with Odette's 2nd Skill to immobilize the enemy\nand activate her Ultimate to continuously damage the controlled targets.\nActivate the dash from her Ultimate to reposition when enemies are about to escape, and finish them off with her 1st Skill after her Ultimate ends."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, use Odette's 1st Skill to harass the opponent, and immobilize them with her 2nd Skill at the right moment before securing the kill with her Ultimate."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Lancelot",
+      "relationship": "LOVER"
+    },
+    {
+      "name": "Johnson",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Jawhead",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Lunox",
+      "winrateDelta": 2.81
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 2.24
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": 1.85
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 1.8
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.61
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": -13.43
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -4.8
+    },
+    {
+      "name": "Chang'e",
+      "winrateDelta": -4.64
+    },
+    {
+      "name": "Vale",
+      "winrateDelta": -4.61
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -4.55
+    }
+  ],
+  "metaScore": 17.95,
+  "metaRank": 56,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 3.65
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.92
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.76
+      },
+      {
+        "name": "Aamon",
+        "advantage": 2.63
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.35
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.53
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 2.45
+      },
+      {
+        "name": "Bane",
+        "advantage": 2.23
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 2.14
+      },
+      {
+        "name": "Nana",
+        "advantage": 2.05
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Mainin pasif hemat mana & instan kill",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Sky Piercer",
+        "Genius Wand",
+        "Winter Crown",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Sky piercer optional ya (kalau snowball) & kalau di tim udah ada sky, cth: granger: sky piercer, lgsg skip beli genius wand & slot tambahan pakai divine glaive\nCatatan: genius boleh diganti wishing lantern kalau lawan mendominasi HP tebal, cth: jungler tank; baxia/fredrin",
+      "tags": [],
+      "lastUpdated": "2025-10-26T04:11:52.485578+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage burst one hit untuk Hero musuh tipis",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Lightning Truncheon",
+        "Glowing Wand"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Membuat odette memiliki damage burst yang bisa membunuh musuh tipis dalam one hit tetapi memiliki kelemahan yaitu susah menyelamatkan diri sendiri ketika udah join war di karenakan tidak memiliki item def ataupun item yang bisa meningkatkan kemungkinan selamat setelah join war",
+      "tags": [],
+      "lastUpdated": "2026-02-22T14:16:49.497345+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11940,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11190,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10960,
+      "notes": null
+    }
+  ]
+}

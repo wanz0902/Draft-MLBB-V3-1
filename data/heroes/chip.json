@@ -1,0 +1,656 @@
+{
+  "id": "chip",
+  "name": "Chip",
+  "heroName": "Chip",
+  "role": [
+    "Tank",
+    "Support"
+  ],
+  "specialty": [
+    "Support",
+    "Crowd Control"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam",
+    "EXP"
+  ],
+  "flex_lanes": [
+    "EXP"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2810,
+    "hpRegen": 8.4,
+    "mana": 460,
+    "manaRegen": 3.2,
+    "physicalAttack": 106,
+    "physicalDefense": 26,
+    "magicPower": 0,
+    "magicDefense": 16,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Snack Time!",
+      "description": "Chip starts eating potato chips once every 2s when out of combat, regenerating HP equal to 300 plus 15% of lost HP after finishing a whole bag (requires 4 bites). After eating a bag of chips, Chip will be full and cannot eat again for 5s. (The bite count will be saved if he enters combat before finishing a whole bag.)",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Snack_Time!",
+      "iconUrl": "/raw-assets/skill_icons/chip/snack_time.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Crash Course",
+      "description": "Chip rams his hovercraft into the ground, dealing (Magic Damage) equal to 150 plus 5% of target's Max HP and applying (Chip's Mark) on enemy heroes hit. Chip gains a 300( +60% Total Magic Power) Shield upon hitting an enemy hero, which increases by 25% for each additional enemy hero hit. Chip's next Basic Attack will become ranged and also hit all nearby enemies with (Chip's Mark), detonating the mark to deal 200( +40% Total Magic Power) (Magic Damage) and stun each target for 0.6s.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Crash_Course",
+      "iconUrl": "/raw-assets/skill_icons/chip/crash_course.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Overtime",
+      "description": "Chip rushes for 2s, gaining up to 65% extra Movement Speed, after which he maintains the max speed for 2s. Chip's next Basic Attack will cause him to charge at the enemy, dealing 200( +30% Total Magic Power) (Magic Damage) and knocking them back slightly.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Overtime",
+      "iconUrl": "/raw-assets/skill_icons/chip/overtime.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Shortcut",
+      "description": "Chip drops the (Main Portal) on an enemy hero, dealing 200( +60% Total Magic Power) (Magic Damage) and slowing them by 25%. The Main Portal deals 2 times the damage and slow effect after a delay. Meanwhile, he creates (Connecting Portals) near allied heroes (10 units away) and behind the allied Base. The (Main Portal) and (Connecting Portals) last up to 15s. (Connecting Portal): Heroes (on both teams) can teleport from (Connecting Portals) to the (Main Portal), and allied heroes gain Burst Movement Speed for 1.5s. (Main Portal): The Main Portal inherits 70% of Chip's attributes. Heroes can stand on the (Main Portal) for 2s to return to the (Connecting Portal) they came from. Casting skills or launching Basic Attacks will reset the stand time.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shortcut",
+      "iconUrl": "/raw-assets/skill_icons/chip/shortcut.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Vision Control",
+      "Team Enabler",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Joy",
+        "Lolita",
+        "Kagura",
+        "Khufra",
+        "Selena"
+      ],
+      "weakAgainst": [
+        "Faramis",
+        "Barats",
+        "Alice",
+        "Marcel",
+        "Edith"
+      ],
+      "synergyWith": [
+        "Masha",
+        "Lukas",
+        "Arlott",
+        "Mathilda",
+        "Faramis"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Joy",
+        "advantage": 3.2
+      },
+      {
+        "name": "Lolita",
+        "advantage": 3
+      },
+      {
+        "name": "Kagura",
+        "advantage": 2.9
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.8
+      },
+      {
+        "name": "Selena",
+        "advantage": 2.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 4.3
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.4
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.3
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.1
+      },
+      {
+        "name": "Edith",
+        "advantage": 3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Masha",
+        "synergy": 11.3
+      },
+      {
+        "name": "Lukas",
+        "synergy": 9.2
+      },
+      {
+        "name": "Arlott",
+        "synergy": 5
+      },
+      {
+        "name": "Mathilda",
+        "synergy": 4.9
+      },
+      {
+        "name": "Faramis",
+        "synergy": 4.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Chip possesses strong initiation and CC abilities, making him a great counter against heroes with low mobility or those who are relatively squishy, such as Vexana, Layla, and Ixia.",
+    "weakAgainstReason": "Since enemies can also use Chip's Connecting Portals, certain heroes with strong teamfighting abilities, like Barats and Tigreal, can use them to their advantage.",
+    "synergyReason": "Chip's Ultimate allows his team to group up from anywhere, so he works well with heroes who can't cross the map quickly but excel in teamfights, such as Alpha, Hanabi, and Kadita."
+  },
+  "mechanicCategory": [
+    "Portal",
+    "Teleport"
+  ],
+  "mechanicNote": "Chip membuat portal teleport yang bisa digunakan seluruh tim untuk rotasi instan antar lane.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Vision Control",
+    "Team Enabler",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.8,
+  "pickRate": 0.1,
+  "banRate": 3,
+  "heroAttributes": {
+    "durability": 80,
+    "offense": 20,
+    "abilityEffects": 60,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 62,
+    "mid": 82,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Tough Boots",
+      "Dominance Ice",
+      "Antique Cuirass"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "His early ganks are enabled by mobility + short CC windows, but his true value spikes once Shortcut is unlocked to force numbers advantages around Turtle and towers. In late game he’s still impactful with portals/peel, but fights become more burst-heavy and punish mispositioned engages."
+  },
+  "proBuilds": [
+    {
+      "player": "ᴠᴏɪᴅ",
+      "games": 718,
+      "items": [
+        "Encourage Tough Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Athena's Shield",
+        "Blade Armor",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "Ethel x F4N'T",
+      "games": 1263,
+      "items": [
+        "Fleeting Time",
+        "Encourage Magic Shoes",
+        "Athena's Shield",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "Sxyzee",
+      "games": 676,
+      "items": [
+        "Encourage Rapid Boots",
+        "Fleeting Time",
+        "Chastise Pauldron",
+        "Antique Cuirass",
+        "Radiant Armor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": null,
+    "skill1": null,
+    "skill2": null,
+    "ultimate": null
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 3",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Chip's 2nd Skill preemptively to build up speed, then hit a target with his Basic Attack and deploy the Main Portal with his Ultimate. Follow up with his 1st Skill on the enemy and another Basic Attack to stun them while the Main Portal's delayed effect slows them, and continue the fight as allies portal in."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "When ganking, use Chip's 2nd Skill to quickly get behind the target and knock them into your team with the enhanced Basic Attack, then follow up with his 1st Skill and another Basic Attack to stun them."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Alpha",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Hanabi",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Kadita",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Genetically enhanced fox",
+  "bestTeammates": [
+    {
+      "name": "Masha",
+      "winrateDelta": 17.25
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 12.39
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": 12.38
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 9.68
+    },
+    {
+      "name": "Edith",
+      "winrateDelta": 9.03
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Mathilda",
+      "winrateDelta": -42.46
+    },
+    {
+      "name": "Franco",
+      "winrateDelta": -27.73
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": -26.62
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": -21.45
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": -17.98
+    }
+  ],
+  "metaScore": 12.33,
+  "metaRank": 101,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Khufra",
+        "advantage": 7.6
+      },
+      {
+        "name": "Ling",
+        "advantage": 5.6
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 4.4
+      },
+      {
+        "name": "Franco",
+        "advantage": 3.96
+      },
+      {
+        "name": "Irithel",
+        "advantage": 3.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 7.55
+      },
+      {
+        "name": "Faramis",
+        "advantage": 6.28
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 5.78
+      },
+      {
+        "name": "Kaja",
+        "advantage": 5.24
+      },
+      {
+        "name": "Floryn",
+        "advantage": 5
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 D1 W5 : GEEK.Baloyskie",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Dreadnaught Armor",
+        "Athena's Shield",
+        "Fleeting Time",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "(GEEK VS NAVI) Game 1",
+      "tags": [],
+      "lastUpdated": "2025-09-23T07:33:16.567522+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Mau nyulik bawa masalah",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Warrior Boots",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Antique Cuirass",
+        "Guardian Helmet",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T06:17:21.408148+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Brutal team fight",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Fleeting Time",
+        "Dominance Ice",
+        "Blade Armor",
+        "Radiant Armor",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "can be used for roam/exp role (squad 5 recommended)",
+      "tags": [],
+      "lastUpdated": "2025-10-03T18:15:22.611682+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11200,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Antique",
+        "Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Athena's",
+        "Shield"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11010,
+      "notes": null
+    }
+  ]
+}

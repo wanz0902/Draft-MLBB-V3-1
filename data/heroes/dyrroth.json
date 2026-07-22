@@ -1,0 +1,764 @@
+{
+  "id": "dyrroth",
+  "name": "Dyrroth",
+  "heroName": "Dyrroth",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Charge",
+    "Burst"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2601,
+    "hpRegen": 7.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 126,
+    "physicalDefense": 21,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.13",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 265
+  },
+  "skills": {
+    "passive": {
+      "name": "Wrath of the Abyss",
+      "description": "When Dyrroth's Rage reaches 50%, he enhances Burst Strike and Spectre Step.\nAfter every 2 Basic Attacks, Dyrroth releases a Circle Strike, dealing (150% Total Physical Attack) - (180% Total Physical Attack) (scales with level) Physical Damage to enemies in the circle and recovering 7% - 10% Max HP (scales with level, halved against minions). This strike does not trigger Attack Effect.\nEach time he damages an enemy, the cooldown of Burst Strike and Spectre Step is reduced by 1s.\nDyrroth recovers 2% - 5% Rage per second (scales with level).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(150% Total Physical Attack)",
+        "(180% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Heal"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Wrath_of_the_Abyss",
+      "tips": "\"When Dyrroth's Rage reaches 50%, he will enhance Burst Strike and Spectre Step. After each 2 Basic Attacks, Dyrroth will release a circle strike of his Basic Attack, dealing Physical Damage to enemies in the circle. Each time he hits an enemy hero, the CD of Burst Strike and Spectre Step will be decreased. Atk Speed equipment is great for Dyrroth, allowing him to release circle strike frequently and enjoy the ability to recover while still dealing a lot of damage.\"",
+      "iconUrl": "/raw-assets/skill_icons/dyrroth/wrath_of_the_abyss.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Burst Strike",
+      "description": "Dyrroth releases a burst strike in a designated direction. Each burst deals 240 (+60% Total Physical Attack)\nPhysical Damage to enemies and slows them by 25% for 1.5s. (The damage decays against the same target and decreases to only 75% on minions).\nAbyss Enhanced: Burst Strike has a longer range, deals 140% of the original damage, and its Slowing Effect is doubled.",
+      "cooldown": "6.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+60% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.6",
+            "5.2",
+            "4.8",
+            "4.4",
+            "4.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "240",
+            "296",
+            "352",
+            "408",
+            "464",
+            "520"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Burst_Strike",
+      "tips": "\"Dyrroth releases Burst Strike in a designated direction, dealing Physical Damage to enemies along the way and slowing them down. [Abyss Enhanced]: Burst Strike has a longer range, dealing 150% of the original damage and doubling the slowing effect. This is Dyrroth's main poke skill, which has a decent damage range and can be used to get rage quickly.\"",
+      "iconUrl": "/raw-assets/skill_icons/dyrroth/burst_strike.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Spectre Step",
+      "description": "Dyrroth dashes in the designated direction. He will stop when he has traveled the max distance or hits one enemy hero or a Creep, dealing 230 (+60% Extra Physical Attack) Physical Damage to the target and slightly knocking them back. When he uses this skill again, he will lock onto a target and release a Fatal Strike, dealing 345 (+120% Extra Physical Attack) Physical Damage and reducing the target's Physical Defense by 40% for 4s.\nAbyss Enhanced: Fatal Strike will reach further and deal 150% of the original damage, slow the target by an extra 90% and reduce the target's Physical Defense by 60% for 4s.",
+      "cooldown": "6.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+60% Extra Physical Attack)",
+        "(+120% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "230",
+            "255",
+            "280",
+            "305",
+            "330",
+            "355"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "345",
+            "390",
+            "435",
+            "480",
+            "525",
+            "570"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spectre_Step",
+      "tips": "\"Dyrroth dashes in the designated direction. He will stop when he hits an target, dealing Physical Damage to enemies andand slightly knocking them back. When he uses this skill again, he will lock onto a target and release Fatal Strike, dealing Physical Damage and reducing the target's Physical Defense. Abyss Enhanced: Fatal Strike will deal 150% of the original damage, and slow the target down by extra 90%. These are his starting skills. When he blinks, he will knock back targets after hitting them. This skill can be used to interrupt targets' skills, and the armorless and slowing effect caused by Fatal Strike should be put to use to deal more damage.\"",
+      "iconUrl": "/raw-assets/skill_icons/dyrroth/spectre_step.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Abysm Strike",
+      "description": "After a short delay, Dyrroth launches a destructive strike in the target direction (this skill can only be interrupted by Suppression), dealing 650 (+250% Extra Physical Attack) plus 20% of the target's lost HP as Physical Damage to enemies in its path, and slowing them by 55% for 0.8s. This skill deals up to 1500 damage to non-hero enemies.",
+      "cooldown": "36.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+250% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "32.0",
+            "28.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "650",
+            "950",
+            "1250"
+          ]
+        },
+        {
+          "label": "Non-Hero Unit Damage Cap",
+          "values": [
+            "1500",
+            "2000",
+            "2500"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Burst",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Abysm_Strike",
+      "tips": "\"Dyrroth quickly charges and releases Fatal Strike, dealing Physical Damage to enemies along the way and slowing them down. This is the core skill for Dyrroth to deal damage. The skill takes a certain amount of time to cast, but the damage is nothing to take lightly. So you need to find the right time to release the full potential of this skill. \"\"Spectre Step\"\" with its own enhancement has a better use effect.\"",
+      "iconUrl": "/raw-assets/skill_icons/dyrroth/abysm_strike.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Uranus",
+        "Esmeralda",
+        "Lukas",
+        "Aulus",
+        "Valentina"
+      ],
+      "weakAgainst": [
+        "Lylia",
+        "Bane",
+        "Luo Yi",
+        "Chang'e",
+        "Nana"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Sun",
+        "Bruno",
+        "Aulus",
+        "Ling"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Uranus",
+        "advantage": 2.9
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 2.5
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2.4
+      },
+      {
+        "name": "Aulus",
+        "advantage": 2.4
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lylia",
+        "advantage": 1.9
+      },
+      {
+        "name": "Bane",
+        "advantage": 1.7
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 1.7
+      },
+      {
+        "name": "Chang'e",
+        "advantage": 1.6
+      },
+      {
+        "name": "Nana",
+        "advantage": 1.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 2
+      },
+      {
+        "name": "Sun",
+        "synergy": 1.7
+      },
+      {
+        "name": "Bruno",
+        "synergy": 1.7
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.6
+      },
+      {
+        "name": "Ling",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Dyrroth has good chasing abilities and good melee burst damage, he is strong against heroes with poor Mobility, such as Gord and Hanabi.",
+    "weakAgainstReason": "Being a melee hero makes Dyrroth weak against heroes with Slow and kiting abilities, such as Vexana and Belerick.",
+    "synergyReason": "Dyrroth's high melee burst damage works best with heroes with single-target CC, such as Franco and Kaja."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Dyrroth adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48,
+  "pickRate": 1.3,
+  "banRate": 1.1,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 50,
+    "abilityEffects": 20,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 80,
+    "mid": 70,
+    "late": 50,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Very strong early skirmisher/lanebully thanks to low CDs, defense shred on Spectre Step, and high base damage trading. He spikes again on ultimate unlock for executes, but tends to fall off late when enemies stack armor/peel and teamfights punish his short range."
+  },
+  "proBuilds": [
+    {
+      "player": "YanzメDyrroth.",
+      "games": 381,
+      "items": [
+        "Ice Tough Boots",
+        "Hunter Strike",
+        "Sea Halberd",
+        "Malefic Roar",
+        "Brute Force Breastplate",
+        "Queen's Wings"
+      ]
+    },
+    {
+      "player": "Kingdom Clover",
+      "games": 673,
+      "items": [
+        "Tough Boots",
+        "War Axe",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Oracle",
+        "Queen's Wings"
+      ]
+    },
+    {
+      "player": "NarakaTzy 火",
+      "games": 878,
+      "items": [
+        "Ice Tough Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Dominance Ice",
+        "Antique Cuirass"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/dyrroth/video-0-0.mp4",
+    "skill1": "/videos/heroes/dyrroth/video-1-0.mp4",
+    "skill2": "/videos/heroes/dyrroth/video-2-0.mp4",
+    "ultimate": "/videos/heroes/dyrroth/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Skill 3"
+      ],
+      "description": "In teamfights, Dyrroth should use his 2nd Skill to close the gap with the enemy, then use his Basic Attacks and 1st Skill to deal damage, and finish off the low HP heroes with his Ultimate."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 2",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, Dyrroth can use his 2nd Skill to close in on the enemy and cast it again to lower their Physical Defense. He can then follow up with his Basic Attacks and 1st Skill to poke them."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Abysm Strike",
+      "Spectre Step",
+      "Burst Strike"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Kaja",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Abyss",
+  "race": "Blood Demon, formerly Human",
+  "bestTeammates": [
+    {
+      "name": "Sun",
+      "winrateDelta": 1.45
+    },
+    {
+      "name": "Akai",
+      "winrateDelta": 1.2
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 1.15
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": 0.9
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 0.78
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Masha",
+      "winrateDelta": -2.96
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -2.59
+    },
+    {
+      "name": "Zilong",
+      "winrateDelta": -2.57
+    },
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -2.34
+    },
+    {
+      "name": "Arlott",
+      "winrateDelta": -2.11
+    }
+  ],
+  "metaScore": 14.71,
+  "metaRank": 85,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Esmeralda",
+        "advantage": 4
+      },
+      {
+        "name": "Uranus",
+        "advantage": 3.31
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.46
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.09
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.05
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Benedetta",
+        "advantage": 1.51
+      },
+      {
+        "name": "Argus",
+        "advantage": 1.42
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 1.1
+      },
+      {
+        "name": "Khufra",
+        "advantage": 1.1
+      },
+      {
+        "name": "Bane",
+        "advantage": 1.05
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Nambah deres darah",
+      "author": "community",
+      "votes": 15,
+      "items": [
+        "War Axe",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Hunter Strike",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Deres bertambah darah nya",
+      "tags": [],
+      "lastUpdated": "2025-10-15T04:34:06.490621+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Full Damage",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Sea Halberd",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Ini item dyyroth damage,dan ini digunakan tergantung kondisi,tapi kalo kalian ingin tetap memakainya silahkan saja, item dan emblem ini biasanya saya gunakan buat nyulik damage dealer musuh atau ga adu damage di early game sama exp musuh,kalian harus bermain aman jika menggunakan karena ini tidak terlalu kuat untuk menahan damage musuh (petrify bisa diganti ke flicker)",
+      "tags": [],
+      "lastUpdated": "2025-10-21T11:22:05.508383+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Dyroth attack speed",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "War Axe",
+        "Haas Claws",
+        "Sea Halberd",
+        "Blade Armor",
+        "Antique Cuirass",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-11T06:55:42.693174+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Coba aja nanti ketagihan pakek ni build (Dyrroth EXP) ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Sky Piercer",
+        "Malefic Roar",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-23T08:44:43.694112+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build open war ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Queen's Wings",
+        "Oracle",
+        "Dominance Ice",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "sesuai untuk early game and mid game sahaja, tidak disarankan sampai late game.",
+      "tags": [],
+      "lastUpdated": "2025-10-30T06:43:06.294857+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10330,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 11070,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10340,
+      "notes": null
+    }
+  ]
+}

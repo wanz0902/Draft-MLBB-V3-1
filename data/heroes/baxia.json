@@ -1,0 +1,713 @@
+{
+  "id": "baxia",
+  "name": "Baxia",
+  "heroName": "Baxia",
+  "role": [
+    "Tank"
+  ],
+  "specialty": [
+    "Support",
+    "Damage"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2830,
+    "hpRegen": 8.4,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 110,
+    "physicalDefense": 27,
+    "magicPower": 0,
+    "magicDefense": 16,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Baxia Mark",
+      "description": "Baxia activates the \"Baxia Mark\" permanently, reducing the final damage received by 25. At the same time, Baxia will reduce the Shield and HP Regen of enemies hit by his skills by 50% for 4s.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Baxia_Mark",
+      "tips": "Baxia activates the Baxia Mark permanently, reducing the final damage received (the amount of DMG reduced increases with hero’s level). At the same time, Baxia will reduce the regen effect of the hit target.",
+      "iconUrl": "/raw-assets/skill_icons/baxia/baxia_mark.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Baxia-Shield Unity",
+      "description": "Baxia retracts himself into his shield and accelerates forward. When hitting an enemy unit, he will deal 300( +60% Total Magic Power) (Magic Damage) to it and nearby enemies, stunning the target for 0.8s and slightly knocking other nearby enemies back. During the process of accelerating forward, use this skill again to launch Baxia upward so that he can cross obstacles and enemy minions. When leaping up, if there is an enemy hero under Baxia, he will strike this hero, dealing 375( +75% Total Magic Power) (Magic Damage) to this hero and nearby enemies, stunning the target hit for 1.5s, and slightly knocking other nearby enemy targets back.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Baxia-Shield_Unity",
+      "tips": "Baxia retracts himself into his shield and accelerates forward. When hitting an enemy unit, he will deal Magic Damage to it and enemies nearby, stunning the target and slightly knocking other enemies nearby back.During the process of accelerating forward, use this skill again to launch Baxia upward so that he can cross obstacles and enemy minions. When leaping up, if there is an enemy hero under Baxia, he will strike at this hero, dealing Magic Damage to this hero and other enemies around, stunning the hit target, and slightly knocking other targets not far away back.",
+      "iconUrl": "/raw-assets/skill_icons/baxia/baxia_shield_unity.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Shield of Spirit",
+      "description": "Baxia throws out his shield, dealing (Magic Damage) equal to 180( +120% Total Magic Power) plus 6% of the target's Max HP to the enemies along the way, marking them for 5s, and slowing them by 50% for 1s. The shield disappears upon hitting the first enemy hero or creep. Baxia can cast the skill again in a short while. If an enemy hero or creep is hit by the skill, the skill's cooldown will be reduced to 15%.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shield_of_Spirit",
+      "tips": "Baxia throws his shield forward (the shield will disappear upon hitting enemy Heroes or creeps), dealing Magic Damage to the target and enemy minions according to their Max HP, marking them and slowing them down.This skill can be used again in a short time. If the shield hits a marked enemy, the CD will be reduced.",
+      "iconUrl": "/raw-assets/skill_icons/baxia/shield_of_spirit.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Tortoise’s Puissance",
+      "description": "Baxia holds his shield to the front and begins sprinting frantically, gaining 30% extra Movement Speed for 10s while leaving a lava path behind. Enemies on the path will take 40( +30% Total Magic Power) (Magic Damage) and be slowed by 15% for 0.5s every 0.5s. For the duration, the Damage Reduction effect from (Baxia Mark) is increased to 240%.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Tortoise’s_Puissance",
+      "tips": "Baxia deploys a frontal shield and dashes forward crazily, increasing his Movement Speed incessantly. Meanwhile, he creates a lava path along the way, dealing Magic Damage to enemies on the path. During dashing forward, the final damage he receives will be greatly reduced as Baxia Mark is activated.",
+      "iconUrl": "/raw-assets/skill_icons/baxia/tortoise_s_puissance.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Jungle Tempo",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lukas",
+        "Obsidia",
+        "Claude",
+        "Minsitthar",
+        "Barats"
+      ],
+      "weakAgainst": [
+        "X.Borg",
+        "Beatrix",
+        "Marcel",
+        "Fanny",
+        "Masha"
+      ],
+      "synergyWith": [
+        "Diggie",
+        "Granger",
+        "Ixia",
+        "Estes",
+        "Beatrix"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lukas",
+        "advantage": 3.8
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Claude",
+        "advantage": 3
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 2.8
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 5.6
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 3.6
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.4
+      },
+      {
+        "name": "Fanny",
+        "advantage": 3.1
+      },
+      {
+        "name": "Masha",
+        "advantage": 3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Diggie",
+        "synergy": 11.1
+      },
+      {
+        "name": "Granger",
+        "synergy": 4.7
+      },
+      {
+        "name": "Ixia",
+        "synergy": 4.6
+      },
+      {
+        "name": "Estes",
+        "synergy": 3.3
+      },
+      {
+        "name": "Beatrix",
+        "synergy": 3.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Baxia counters heroes with multi-hit skills or those who rely on shields or HP Regen, such as Chang'e and Silvanna, thanks to his Passive.",
+    "weakAgainstReason": "Baxia is countered by agile Marksmen who deal True Damage like Karrie and Lesley because they can easily stay out of Baxia's range while dealing massive damage to him.",
+    "synergyReason": "Baxia can utilize his AOE damage and slow effect to help sustained damage heroes like Thamuz and Alpha stay on their targets."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Baxia adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Jungle Tempo",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.2,
+  "pickRate": 0.2,
+  "banRate": 0.6,
+  "heroAttributes": {
+    "durability": 100,
+    "offense": 30,
+    "abilityEffects": 60,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Cursed Helmet",
+      "Dominance Ice",
+      "Athena's Shield"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Baxia is strong once rotations and skirmishes start because he can reliably engage with S1 and becomes extremely hard to burst during Ultimate, while his anti-heal passive punishes sustain comps. Late game he remains useful as an initiator/anti-heal tank, but his damage doesn’t scale as hard as true late-game carries."
+  },
+  "proBuilds": [
+    {
+      "player": "Unknown",
+      "games": 1951,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Blood Wings",
+        "Concentrated Energy",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Tathamet Vexmore",
+      "games": 810,
+      "items": [
+        "Feather of Heaven",
+        "Rapid Boots",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Malefic Gun"
+      ]
+    },
+    {
+      "player": "Alfan dimsum mentai",
+      "games": 1130,
+      "items": [
+        "Feather of Heaven",
+        "Arcane Boots",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Malefic Gun"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/baxia/video-0-0.mp4",
+    "skill1": "/videos/heroes/baxia/video-1-0.mp4",
+    "skill2": "/videos/heroes/baxia/video-2-0.mp4",
+    "ultimate": "/videos/heroes/baxia/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, first activate Baxia's 1st Skill, then use his Ultimate to speed up. After running into an enemy, use his 2nd Skill followed by Basic Attacks to deal damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, roll into the enemy with Baxia's 1st Skill and follow up with his 2nd Skill and Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Yu Zhong",
+      "relationship": "FELLOW DISCIPLE"
+    },
+    {
+      "name": "Ling",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Thamuz",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Alpha",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Diggie",
+      "winrateDelta": 8.94
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 5.15
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 3.99
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": 3.68
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 3.49
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Khufra",
+      "winrateDelta": -6.44
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": -4.92
+    },
+    {
+      "name": "Wanwan",
+      "winrateDelta": -4.81
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": -4.68
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": -4.22
+    }
+  ],
+  "metaScore": 16.86,
+  "metaRank": 66,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 7.3
+      },
+      {
+        "name": "Valentina",
+        "advantage": 4.73
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.97
+      },
+      {
+        "name": "Freya",
+        "advantage": 2.68
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.61
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 8.68
+      },
+      {
+        "name": "Joy",
+        "advantage": 6.75
+      },
+      {
+        "name": "Ling",
+        "advantage": 5.93
+      },
+      {
+        "name": "Kaja",
+        "advantage": 5.84
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 5.59
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : TLPH.KarlTzy",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Antique Cuirass",
+        "Athena's Shield",
+        "Guardian Helmet",
+        "Immortality",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 1",
+      "tags": [],
+      "lastUpdated": "2025-10-28T03:59:35.167658+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Trengilling cirebon berani ke rumput mid",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Antique Cuirass",
+        "Blade Armor",
+        "Chastise Pauldron",
+        "Radiant Armor",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T04:03:43.617891+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 KNOCKOUT STAGE DAY 1 ONIC.Kairi",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Cursed Helmet",
+        "Guardian Helmet",
+        "Radiant Armor",
+        "Antique Cuirass",
+        "Dominance Ice"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "( ONIC VS AE GAME 2 ) M7 WORLD CHAMPIONSHIP KNOCKOUT STAGE 18 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-18T14:58:56.724564+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build kumar",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Antique Cuirass",
+        "Blade Armor",
+        "Radiant Armor",
+        "Dominance Ice",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "bagus KLO party kompe",
+      "tags": [],
+      "lastUpdated": "2025-10-25T14:25:22.922452+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "BAXIA ROAM BY Naver",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Antique Cuirass",
+        "Guardian Helmet",
+        "Athena's Shield",
+        "Chastise Pauldron",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "PEGANGIN HERO MUSUH😈",
+      "tags": [],
+      "lastUpdated": "2025-10-21T12:37:58.982197+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Athena's",
+        "Shield"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11350,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10820,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Blade",
+        "Armor"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Revitalize",
+      "cost": 10810,
+      "notes": null
+    }
+  ]
+}

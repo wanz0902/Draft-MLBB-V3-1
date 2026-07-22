@@ -1,0 +1,879 @@
+{
+  "id": "hanzo",
+  "name": "Hanzo",
+  "heroName": "Hanzo",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Poke",
+    "Burst"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2520,
+    "hpRegen": 7.4,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 128,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.08",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Ame no Habakiri",
+      "description": "When units die near Hanzo, the demon Hanekage absorbs their souls and converts them into (Demon Blood). Hanzo gains 2 (Demon Blood) for each non-hero unit and 20 (Demon Blood) for each hero that dies in his vicinity.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ame_no_Habakiri",
+      "tips": "Even when Hanzo is in a defensive status, he can also recover Demon Blood depending on his Passive. The sufficiency of Demon Blood is a must for Hanzo to perform attack or escape.",
+      "iconUrl": "/raw-assets/skill_icons/hanzo/ame_no_habakiri.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Ninjutsu: Demon Feast",
+      "description": "The skill can only be used on targets with max stacks of Dark Ninjutsu.\nWhen targeting a creep, Hanzo will immediately devour it and digest it over a period of time to recover 20% HP.\nWhen targeting the Turtle, Lord, or enemy heroes, he deals 600 (+120% Extra Physical Attack) Physical Damage, recovers 10% HP, and reduces this skill's cooldown by 60%.",
+      "cooldown": "30.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+120% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "30.0",
+            "28.0",
+            "26.0",
+            "24.0",
+            "22.0",
+            "20.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "600",
+            "640",
+            "680",
+            "720",
+            "760",
+            "800"
+          ]
+        },
+        {
+          "label": "HP Regen",
+          "values": [
+            "10%",
+            "12%",
+            "14%",
+            "16%",
+            "18%",
+            "20%"
+          ]
+        },
+        {
+          "label": "Physical Bonus",
+          "values": [
+            "120%",
+            "128%",
+            "136%",
+            "144%",
+            "152%",
+            "160%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ninjutsu:_Demon_Feast",
+      "tips": "This skill provides powerful jungling ability for Hanzo. If the Attack Speed is fast enough, each attack of Hanzo can unlock two stacks.",
+      "iconUrl": "/raw-assets/skill_icons/hanzo/ninjutsu_demon_feast.png",
+      "displayLabel": "Skill 1 (Human Form)",
+      "skillSlot": "skill1",
+      "variant": "Human Form"
+    },
+    "skill2": {
+      "name": "Forbidden Ninjutsu: Soul Snatch",
+      "description": "Hanekage dashes to an enemy hero, dealing 300 (+60% Extra Physical Attack) Physical Damage to the target and its surrounding units after a brief delay. Each stack of Dark Ninjutsu on the target increases the damage by 20% (surrounding units are not affected by this bonus). When the target has max stacks of Dark Ninjutsu, it deals additional damage equal to 15 (+2% Extra Physical Attack)% of the target's Max HP (this damage ignores 30% of the target's Physical Defense) and recovers 20% HP for Hanzo.",
+      "cooldown": "10.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+60% Extra Physical Attack)",
+        "(+2% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "10.0",
+            "9.6",
+            "9.2",
+            "8.8",
+            "8.4",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "320",
+            "340",
+            "360",
+            "380",
+            "400"
+          ]
+        },
+        {
+          "label": "Physical Bonus",
+          "values": [
+            "60%",
+            "64%",
+            "68%",
+            "72%",
+            "76%",
+            "80%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ninjutsu:_Soul_Reap",
+      "tips": "This skill ensures the laning ability of Hanzo, try to make full use of it when Hanzo takes back the area in order to obtain Demon Blood faster",
+      "iconUrl": "/raw-assets/skill_icons/hanzo/ninjutsu_soul_reap.png",
+      "displayLabel": "Skill 2 (Human Form)",
+      "skillSlot": "skill2",
+      "variant": "Human Form"
+    },
+    "ultimate": {
+      "name": "Ninjutsu: Dark Mist",
+      "description": "Hanzo dashes in the target direction, leaving Dark Mist in front that deals 90 (+45% Extra Physical Attack) Physical Damage to enemies in the area every 0.5s, up to 5 times (this damage counts as Basic Attack damage but cannot Crit).\nThe Dark Mist slows enemies in the area by 40% and grants Hanzo 20% Movement Speed.",
+      "cooldown": "10.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+45% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "10.0",
+            "9.6",
+            "9.2",
+            "8.8",
+            "8.4",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "90",
+            "100",
+            "110",
+            "120",
+            "130",
+            "140"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Kinjutsu:_Pinnacle_Ninja",
+      "tips": "Try to hide Hanzo's body in the safe area. When facing Hanzo, to find his body and kill him is also a good way to counter him.",
+      "iconUrl": "/raw-assets/skill_icons/hanzo/kinjutsu_pinnacle_ninja.png",
+      "displayLabel": "Skill 3 (Human Form)",
+      "skillSlot": "skill3",
+      "variant": "Human Form"
+    },
+    "extra1": {
+      "name": "Forbidden Ninjutsu: Black Mist",
+      "description": "Hanekage dashes in the target direction, briefly knocking enemies in his path airborne for 0.4s and leaving Dark Mist in the area he passes through (recovers 200 Energy when hitting an enemy hero). The mist deals 135 (+45% Extra Physical Attack) Physical Damage to enemies in the area every 0.5s, up to 5 times (this damage counts as Basic Attack damage but cannot Crit).\nThe Dark Mist slows enemies in the area by 40%.",
+      "cooldown": "10.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+45% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "10.0",
+            "9.6",
+            "9.2",
+            "8.8",
+            "8.4",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "135",
+            "150",
+            "165",
+            "180",
+            "195",
+            "210"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "AOE",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Forbidden_Ninjutsu:_Black_Mist",
+      "displayLabel": "Skill 1 (Demon Form)",
+      "skillSlot": "skill1",
+      "variant": "Demon Form"
+    },
+    "extra2": {
+      "name": "Kinjutsu: Pinnacle Ninja",
+      "description": "Hanzo charges into battle as Hanekage, consuming 170 Energy per second. He gains 20 Energy when a nearby non-hero unit dies and 200 Energy if it's a hero. He gains 15 Energy when attacking a hero, and 45 Energy when attacking the Turtle or the Lord. When Energy runs out, Hanzo's body will be slowly drawn to Hanekage's position.\nWhile in Hanekage form, Hanzo's body is invincible, while Hanekage ignores obstacles and gains 50% Movement Speed and 30% Attack Speed.",
+      "cooldown": "24.0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "24.0",
+            "20.0",
+            "16.0"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Morph",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Kinjutsu:_Pinnacle_Ninja",
+      "displayLabel": "Ultimate (Transform)",
+      "skillSlot": "ultimate",
+      "variant": "Transform",
+      "iconUrl": "/raw-assets/skill_icons/hanzo/kinjutsu_pinnacle_ninja.png"
+    },
+    "extra3": {
+      "name": "Ninjutsu Flee: Return",
+      "description": "Hanekage returns to Hanzo's body and exits the Hanekage form.",
+      "cooldown": "1.0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ninjutsu_Flee:_Return",
+      "displayLabel": "Skill 2 (Demon Form)",
+      "skillSlot": "skill2",
+      "variant": "Demon Form"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Diggie",
+        "Ixia",
+        "Balmond",
+        "Barats",
+        "Lolita"
+      ],
+      "weakAgainst": [
+        "Natalia",
+        "Ling",
+        "Sun",
+        "Marcel",
+        "Helcurt"
+      ],
+      "synergyWith": [
+        "Hilda",
+        "Gloo",
+        "Martis",
+        "Aldous",
+        "Lunox"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 3.5
+      },
+      {
+        "name": "Ixia",
+        "advantage": 3.3
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.9
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.8
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 6.9
+      },
+      {
+        "name": "Ling",
+        "advantage": 4
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.8
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.6
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 3.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Hilda",
+        "synergy": 2.2
+      },
+      {
+        "name": "Gloo",
+        "synergy": 1.7
+      },
+      {
+        "name": "Martis",
+        "synergy": 1.6
+      },
+      {
+        "name": "Aldous",
+        "synergy": 1.5
+      },
+      {
+        "name": "Lunox",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Hanzo's Ultimate enables him to poke or dive with relative safety, making him a serious threat to squishy heroes without mobility, like Layla, Ixia, and Zhuxin, while also disrupting the enemy in teamfights.",
+    "weakAgainstReason": "Hanzo fares less favorably against heroes with lots of mobility, such as Fanny, Lancelot, and Arlott, since it's difficult to build stacks on them, thus limiting Hanzo's damage.",
+    "synergyReason": "Hanzo has high burst potential but needs time to stack his Passive, so he works best with heroes who can keep the enemy CC'd, like Aurora, Belerick, and Tigreal."
+  },
+  "mechanicCategory": [
+    "Transform",
+    "Possession",
+    "Clone"
+  ],
+  "mechanicNote": "Hanzo bisa mengeluarkan roh dari tubuhnya untuk menyerang musuh dari jarak jauh, tubuh asli tetap rentan.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Form Management",
+    "Combo Timing"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.7,
+  "pickRate": 0.3,
+  "banRate": 2.8,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 80,
+    "abilityEffects": 20,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 64,
+    "mid": 76,
+    "late": 52,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Level 4 (Kinjutsu: Pinnacle Ninja) is a major spike because he can safely pressure lanes and objectives while his body stays hidden, snowballing picks and map control. He tends to drop off late as enemies coordinate to find/force his body position and teamfights become tighter, reducing his ability to freely shred backliners."
+  },
+  "proBuilds": [
+    {
+      "player": "\"Sebuah nama: Amsar\"",
+      "games": 990,
+      "items": [
+        "Ice Rapid Boots",
+        "Golden Staff",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Malefic Roar",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "DAISIES",
+      "games": 1618,
+      "items": [
+        "Flame Rapid Boots",
+        "Golden Staff",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Malefic Roar",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "java uzb",
+      "games": 1151,
+      "items": [
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Ice Magic Shoes",
+        "Demon Hunter Sword",
+        "Sea Halberd"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/hanzo/video-0-0.mp4",
+    "skill1": "/videos/heroes/hanzo/video-1-0.mp4",
+    "skill2": "/videos/heroes/hanzo/video-2-0.mp4",
+    "ultimate": "/videos/heroes/hanzo/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "Hanzo should activate his Ultimate from a safe position and engage as Hanekage. Use his 2nd Skill to dash in and knock enemies Airborne, then use his Black Mist and Basic Attacks to quickly stack his Passive and use his 1st Skill for maximum damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 3",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "When ganking, Hanzo can use his 2nd Skill to close the distance, then stack his Passive with Basic Attacks and unleash his 1st Skill at max stacks for hefty damage. In teamfights, Hanzo should activate his Ultimate from a safe position and engage as Hanekage. Use his 2nd Skill to dash in and knock enemies Airborne, then use his Black Mist and Basic Attacks to quickly stack his Passive and use his 1st Skill for maximum damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Aurora",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": 3.42
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 2.06
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 1.92
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": 1.82
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": 1.66
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Fanny",
+      "winrateDelta": -14.03
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -13.29
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -12.31
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -10.62
+    },
+    {
+      "name": "Yi Sun-shin",
+      "winrateDelta": -9.92
+    }
+  ],
+  "metaScore": 16.65,
+  "metaRank": 69,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Luo Yi",
+        "advantage": 4.09
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.86
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.52
+      },
+      {
+        "name": "Ixia",
+        "advantage": 3.13
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.95
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 7.28
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 6.03
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 3.65
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 3.62
+      },
+      {
+        "name": "Ling",
+        "advantage": 3.33
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Semi tank",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Golden Staff",
+        "Magic Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Oracle"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-02-21T12:11:22.342346+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "hanzo muani kesukaan mubtong",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Golden Staff",
+        "Fleeting Time",
+        "Corrosion Scythe",
+        "Queen's Wings",
+        "Oracle"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "main roam ambil buff jungle musuh",
+      "tags": [],
+      "lastUpdated": "2025-10-30T13:39:22.583481+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "racikan anomali gw",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Thunder Belt",
+        "Magic Boots",
+        "Great Dragon Spear",
+        "Oracle",
+        "Sea Halberd",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-12-05T23:38:31.649088+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build yg sering ku pake",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Swift Boots",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Corrosion Scythe",
+        "Sea Halberd",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-17T02:12:08.154588+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "nih top aj make",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Sea Halberd",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "brust",
+      "tags": [],
+      "lastUpdated": "2025-12-27T18:11:53.887557+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11010,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12070,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10500,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,687 @@
+{
+  "id": "luoyi",
+  "name": "Luo Yi",
+  "heroName": "Luo Yi",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Support",
+    "Crowd Control"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2440,
+    "hpRegen": 6.8,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 97,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "0.99",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Duality",
+      "description": "Luo Yi's skills can create (Sigils of Yin/Yang) on the battlefield. Each Sigil lasts up to 6s. Sigils of opposite attributes will trigger (Yin-Yang Reaction) when they are within a certain distance, dealing 365 (+20*Hero Level) (+190% Total Magic Power) (Magic Damage) to the marked enemies, stunning them for 0.3s, and pulling them toward each other. Each time Luo Yi applies a new Sigil to a marked enemy, she gains a 300 (+10*Hero Level) (+150% Total Magic Power) shield (up to 3 stacks) and 50% extra Movement Speed that decays over 2s.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+25*Hero Level)",
+        "(+190% Total Magic Power)",
+        "(+10*Hero Level)",
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Duality",
+      "tips": "As we've said many times already, Luo Yi's skills take advantage of a \"Yin\" and \"Yang\" mechanic. Whenever two enemy heroes inflicted with opposite marks come close to each other, a \"Yin Yang Reaction\"will be triggered, causing them to collide with each other which deals damage, while stunning them. Also, whenever a \"Yin Yang Reaction\" occurs, Luo Yi will gain a slight shield and movement speed boost .",
+      "iconUrl": "/raw-assets/skill_icons/luoyi/duality.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Dispersion",
+      "description": "Luo Yi casts the energy of Yin/Yang in the target direction, dealing 285 (+135% Total Magic Power) Magic Damage to the first enemy hit and those behind them in a fan-shaped area. Enemy heroes hit are marked with a Sigil of Yin/Yang.\nLuo Yi stores up to 4 Dispersion charges and gains 1 charge every 8s. She also immediately gains 1 charge each time Yin-Yang Reaction is triggered.\nThe state of this skill changes on each cast.",
+      "cooldown": "1.2",
+      "manaCost": "50",
+      "damageType": "Magic",
+      "scaling": [
+        "(+135% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "50",
+            "56",
+            "62",
+            "68",
+            "74",
+            "80"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "285",
+            "330",
+            "375",
+            "420",
+            "465",
+            "510"
+          ]
+        },
+        {
+          "label": "Skill Recharge Time",
+          "values": [
+            "8",
+            "7.7",
+            "7.4",
+            "7.1",
+            "6.8",
+            "6.5"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dispersion",
+      "tips": "Luo Yi casts Yin or Yang energy wave in a designated direction, alternating between the two opposing energy types between each cast. The energy will disperse upon hitting the first target, dealing damage to the first target and any enemies behind them in a fan shaped area. The energy wave also inflicts an Yin or Yang Mark on any enemy heroes upon contact. Luo Yi's first skill is her primary damage dealing skill. Additionally, this skill is the primary way to trigger Yin Yang Reactions.",
+      "iconUrl": "/raw-assets/skill_icons/luoyi/dispersion.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Rotation",
+      "description": "Luo Yi summons Fire of Yang/Aqua of Yin at the target location, dealing 250 (+50% Total Magic Power) Magic Damage to enemies hit and slowing them by 60% for 0.5s.\nFire of Yang/Aqua of Yin then remains at the location for 6s, dealing 50 (+10% Total Magic Power) Magic Damage every 0.7s to nearby enemies. It can also trigger Yin-Yang Reaction with Sigils of opposite attributes.\nThe state of this skill changes on each cast.",
+      "cooldown": "12.0",
+      "manaCost": "75",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)",
+        "(+10% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.6",
+            "11.2",
+            "10.8",
+            "10.4",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "75",
+            "80",
+            "85",
+            "90",
+            "95",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "270",
+            "290",
+            "310",
+            "330",
+            "350"
+          ]
+        },
+        {
+          "label": "Sustained Damage",
+          "values": [
+            "50",
+            "54",
+            "58",
+            "62",
+            "66",
+            "70"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Rotation",
+      "tips": "Luo Yi summons \"Fire of Yang\" or \"Aqua of Yin\" in a designated area which both slow down enemies, while dealing continuous damage. While active, \"Yin Yang Reactions\" will be triggered if an enemy with the opposite mark is nearby the area of effect. Take note! The nature of this skill alternates between every two casts.",
+      "iconUrl": "/raw-assets/skill_icons/luoyi/rotation.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Diversion",
+      "description": "Luo Yi creates a Teleport Circle around herself and marks the target location (within 28 units) as its destination. After a 3s delay, allied heroes (including herself) within the Circle will be teleported to the location.\nPassive: Luo Yi's Cooldown Reduction is increased by 6%.",
+      "cooldown": "60.0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "CD Reduction",
+          "values": [
+            "6%",
+            "8%",
+            "10%"
+          ]
+        },
+        {
+          "label": "Max Range",
+          "values": [
+            "28",
+            "32",
+            "36"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Teleport"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Diversion",
+      "tips": "Luo Yi creates a teleportation circle around herself. She then chants for 3 seconds, which then sends any allied hero in the circle to elsewhere on the battlefield. While chanting, Luo Yi is free to move or attack.",
+      "iconUrl": "/raw-assets/skill_icons/luoyi/diversion.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Estes",
+        "Popol and Kupa",
+        "Edith",
+        "Balmond",
+        "Baxia"
+      ],
+      "weakAgainst": [
+        "Lolita",
+        "Joy",
+        "Novaria",
+        "Nolan",
+        "Beatrix"
+      ],
+      "synergyWith": [
+        "Rafaela",
+        "Lolita",
+        "Harley",
+        "Marcel",
+        "Harith"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 2.9
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.3
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.3
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.1
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.1
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.4
+      },
+      {
+        "name": "Novaria",
+        "advantage": 2.3
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.2
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 2.2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Rafaela",
+        "synergy": 1.8
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.6
+      },
+      {
+        "name": "Harley",
+        "synergy": 1.5
+      },
+      {
+        "name": "Marcel",
+        "synergy": 1.4
+      },
+      {
+        "name": "Harith",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Luo Yi counters heroes with low mobility such as Eudora and Gord because they are easy targets for her Sigils and Yin-Yang Reactions.",
+    "weakAgainstReason": "Luo Yi is countered by Fighters or Tanks with high HP recovery like Uranus and Fredrinn because she can't deal enough damage to finish them off quickly.",
+    "synergyReason": "Luo Yi works best with Junglers who are often looking for fights around the map, such as Aamon and Karina, because she can use her Ultimate to cut down their travel time."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Luo Yi adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 46.7,
+  "pickRate": 0.2,
+  "banRate": 0.2,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 100,
+    "abilityEffects": 40,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 62,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 9"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Her early is decent once she has both marking tools to reliably trigger Yin-Yang Reaction for burst + micro-CC, but she’s limited by setup and positioning. Mid game is her peak because rotations/teleport plays and grouped fights let her repeatedly proc Reaction and chain shields; late she’s still dangerous but more punishable by long-range engage and pick tools."
+  },
+  "proBuilds": [
+    {
+      "player": "peiskie :p",
+      "games": 828,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "MARLEN",
+      "games": 708,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Starlium Scythe",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "gяεүαяяσω",
+      "games": 755,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/luoyi/video-0-0.mp4",
+    "skill1": "/videos/heroes/luoyi/video-1-0.mp4",
+    "skill2": "/videos/heroes/luoyi/video-2-0.mp4",
+    "ultimate": "/videos/heroes/luoyi/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In teamfights, use Luo Yi's 1st Skill to mark the enemy with a Yin/Yang Sigil and use it again on another nearby enemy to apply the opposite Sigil and trigger a Yin-Yang Reaction. Then repeat the process. If there is only one enemy, use Luo Yi's 2nd Skill to trigger Yin-Yang Reactions."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, use Luo Yi's 1st Skill to mark the enemy with a Yin/Yang Sigil, then use her 2nd Skill to summon Fire of Yang or Aqua of Yin in range of the target to trigger a Yin-Yang Reaction."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Aamon",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Karina",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Valentina",
+      "winrateDelta": 9.77
+    },
+    {
+      "name": "Zhask",
+      "winrateDelta": 2.99
+    },
+    {
+      "name": "Hylos",
+      "winrateDelta": 2.83
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": 2.7
+    },
+    {
+      "name": "Lukas",
+      "winrateDelta": 2.64
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lylia",
+      "winrateDelta": -10.52
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": -10.49
+    },
+    {
+      "name": "Vexana",
+      "winrateDelta": -8.75
+    },
+    {
+      "name": "Eudora",
+      "winrateDelta": -7.75
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": -7.28
+    }
+  ],
+  "metaScore": 8.16,
+  "metaRank": 123,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Kaja",
+        "advantage": 6.58
+      },
+      {
+        "name": "Valentina",
+        "advantage": 3.97
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.37
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.7
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.64
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.39
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 4.09
+      },
+      {
+        "name": "Bruno",
+        "advantage": 2.56
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.45
+      },
+      {
+        "name": "Marcel",
+        "advantage": 2.45
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "sekali combo ilang tanpa sky fucek🙄",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-31T09:49:25.383534+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sekali tembak musuh sekarat",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-05T00:29:50.924254+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11040,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 11630,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10720,
+      "notes": null
+    }
+  ]
+}

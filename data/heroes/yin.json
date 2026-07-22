@@ -1,0 +1,687 @@
+{
+  "id": "yin",
+  "name": "Yin",
+  "heroName": "Yin",
+  "role": [
+    "Fighter",
+    "Assassin"
+  ],
+  "specialty": [
+    "Burst",
+    "Control"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2590,
+    "hpRegen": 7.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 124,
+    "physicalDefense": 21,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Leave It to Me",
+      "description": "If there are no allied heroes within 4 units of Yin, his damage is increased to 120% and he gains 8% Spell Vamp.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Leave_It_to_Me",
+      "iconUrl": "/raw-assets/skill_icons/yin/leave_it_to_me.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Charged Punch",
+      "description": "Yin gains 60% extra Movement Speed (decays over 3s). Yin can launch an enhanced Basic Attack that deals 25( +100% Total Physical Attack) (Physical Damage) within the duration. Upon hitting an enemy with the enhanced Basic Attack, Yin will throw another charged punch forward, dealing 360( +200% Extra Physical Attack) (Physical Damage) to enemies in the path. Successfully throwing the charged punch reduces the skill's cooldown by 35%.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Charged_Punch",
+      "iconUrl": "/raw-assets/skill_icons/yin/charged_punch.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Instant Blast",
+      "description": "Yin dashes forward, leaving a (Golden Ring) behind while dealing 75( +35% Extra Physical Attack) (Physical Damage) to enemies along the way. He gains 30% extra Damage Reduction for 4s if an enemy hero is hit. After 1s, the (Golden Ring) will catch up with Yin, dealing 150( +70% Extra Physical Attack) (Physical Damage) to enemies it passes through and stunning them for 1s.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Instant_Blast",
+      "iconUrl": "/raw-assets/skill_icons/yin/instant_blast.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "My Turn",
+      "description": "After a short delay, Yin locks onto an enemy hero ((cannot lock onto pets or clones)) and pulls them into his domain for up to 8s and turns into (Lieh). When in the domain, the two cannot be affected by other heroes' skills. (Lieh) has stronger skills and 50 extra (Physical & Magic Defense) that last 8s. The domain will end early if either of the two is killed. If (Lieh) successfully kills the enemy, he'll recover 20% Max HP, leave the domain with the cooldowns of (Frenzy Strike) and (Instant Blast) reset, and continue to fight as (Lieh) for 8s. If Yin fails to pull his target into his domain, the skill will enter a 3s cooldown.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "My_Turn",
+      "iconUrl": "/raw-assets/skill_icons/yin/my_turn.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Estes",
+        "Diggie",
+        "Floryn",
+        "Joy",
+        "Faramis"
+      ],
+      "weakAgainst": [
+        "Wanwan",
+        "Khufra",
+        "Johnson",
+        "Lesley",
+        "Zhask"
+      ],
+      "synergyWith": [
+        "Gloo",
+        "Natan",
+        "Sun",
+        "Aldous",
+        "Lylia"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 4.3
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.4
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.7
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.4
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 3.2
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.6
+      },
+      {
+        "name": "Johnson",
+        "advantage": 2.2
+      },
+      {
+        "name": "Lesley",
+        "advantage": 2.1
+      },
+      {
+        "name": "Zhask",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Gloo",
+        "synergy": 1.5
+      },
+      {
+        "name": "Natan",
+        "synergy": 1.5
+      },
+      {
+        "name": "Sun",
+        "synergy": 1.4
+      },
+      {
+        "name": "Aldous",
+        "synergy": 1.3
+      },
+      {
+        "name": "Lylia",
+        "synergy": 1.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Yin counters squishy heroes without Blink skills like Layla and Cecilion because they will have a hard time dodging his Golden Rings. Once they are stunned or trapped in his Ultimate, Yin can easily finish them off.",
+    "weakAgainstReason": "Yin is countered by Fighters that can interrupt skills, such as Fredrinn and Badang, because they can easily interrupt his Ultimate during the initial delay. These heroes can also hold their own in a duel, making them risky targets for Yin's Ultimate.",
+    "synergyReason": "Yin works best with Supports that can enhance his mobility, such as Mathilda and Rafaela to help him get to the enemy and eliminate key targets."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Yin adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.2,
+  "pickRate": 0.6,
+  "banRate": 3.1,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 60,
+    "abilityEffects": 80,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 62,
+    "mid": 78,
+    "late": 55,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Yin comes online once he has full access to dash+stun setup and especially his ultimate to isolate a key target, making mid-game pickoffs and skirmishes his best window. Late game he becomes more execution-reliant since tankier cores and defensive items reduce his 1v1 kill consistency inside the domain."
+  },
+  "proBuilds": [
+    {
+      "player": "Jay 969",
+      "games": 1778,
+      "items": [
+        "Flame Tough Boots",
+        "Sea Halberd",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Rose Gold Meteor",
+        "War Axe"
+      ]
+    },
+    {
+      "player": "999th",
+      "games": 1409,
+      "items": [
+        "Ice Magic Shoes",
+        "Sea Halberd",
+        "Hunter Strike",
+        "War Axe",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "bhaa",
+      "games": 537,
+      "items": [
+        "Sea Halberd",
+        "Rapid Boots",
+        "Malefic Roar",
+        "Hunter Strike",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/yin/video-0-0.mp4",
+    "skill1": "/videos/heroes/yin/video-1-0.mp4",
+    "skill2": "/videos/heroes/yin/video-2-0.mp4",
+    "ultimate": "/videos/heroes/yin/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 3",
+        "Skill 5",
+        "Skill 4"
+      ],
+      "description": "Yin should use his 1st Skill to gain Movement Speed and then his 2nd Skill to get close to a key enemy and hit them with his enhanced Basic Attack before trapping them in his Ultimate. In Lieh form, use his 2nd Skill to stun the enemy and finish them off with his 1st Skill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, Yin should use his 1st Skill to gain Movement Speed, then use his 2nd Skill to dash behind the enemy so the Golden Rings will stun them on their return, and end with his enhanced Basic Attack."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Wanwan",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Melissa",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Xavier",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Julian",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Mathilda",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Joy",
+      "winrateDelta": 1.85
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 1.76
+    },
+    {
+      "name": "Kalea",
+      "winrateDelta": 1.34
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": 1.25
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": 1.02
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Roger",
+      "winrateDelta": -4.16
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -3.43
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -2.79
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": -2.71
+    },
+    {
+      "name": "Yi Sun-shin",
+      "winrateDelta": -2.49
+    }
+  ],
+  "metaScore": 13.03,
+  "metaRank": 97,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 3.97
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.77
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.16
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.71
+      },
+      {
+        "name": "Arlott",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 3.23
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.19
+      },
+      {
+        "name": "Lesley",
+        "advantage": 2.18
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.16
+      },
+      {
+        "name": "Zhask",
+        "advantage": 1.84
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Yin By qeva",
+      "author": "community",
+      "votes": 16,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Thunder Belt",
+        "Malefic Roar",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi\n",
+      "tags": [],
+      "lastUpdated": "2025-09-14T09:07:03.343579+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Yin Roam By qeva",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Endless Battle",
+        "Blade of Despair",
+        "Cursed Helmet"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T09:08:05.242786+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build EXP skill 1 dan 2 one hit full damage",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Sea Halberd",
+        "Blade of the Heptaseas",
+        "Sky Piercer",
+        "Blade of Despair",
+        "Hunter Strike",
+        "Endless Battle"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Ini build EXP Full damage untuk musuh yg tipis tipis combo nya skill 1 dan 2 doang langsung sekali one hit coy\nBuildnya ini ga pakai sepatu kalo udh late game \nAwal awal beli aja sepatu terus kalo udh late game jual aja sepatunya beli sisa item untuk jadi build one hit\nUntuk sepatu nya bisa beli Rapid boots atau Thought boots aja",
+      "tags": [],
+      "lastUpdated": "2025-10-22T12:44:17.240595+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "One hit",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Hunter Strike",
+        "Sky Piercer",
+        "Endless Battle",
+        "Rose Gold Meteor",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-03-28T07:55:39.517801+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Burst-penetrasi",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Sea Halberd",
+        "Blade of Despair",
+        "Endless Battle",
+        "Malefic Roar",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-01-02T23:11:18.158827+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 12020,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11240,
+      "notes": null
+    }
+  ]
+}

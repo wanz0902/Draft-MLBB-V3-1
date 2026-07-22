@@ -1,0 +1,26 @@
+{
+  "defaultSource": "asian-games-2026-qualifiers",
+  "sources": [
+    {
+      "id": "asian-games-2026-qualifiers",
+      "label": "Asian Games 2026 Qualifiers",
+      "enabled": true,
+      "priority": 1,
+      "type": "liquipedia-api-series",
+      "wiki": "mobilelegends",
+      "eventKeywords": ["Asian Games", "2026 Asian Games", "West Asia", "Southeast Asia", "SEA", "Central Asia", "East Asia", "South Asia", "Qualifier", "Last Chance"],
+      "pageKeywords": ["Asian_Games/2026"],
+      "dateWindowDaysBack": 2,
+      "dateWindowDaysForward": 14
+    },
+    {
+      "id": "mpl-id-s17-local-seed",
+      "label": "MPL Indonesia Season 17 (Historical Seed)",
+      "enabled": false,
+      "priority": 99,
+      "type": "local-seed",
+      "file": "data/matches.json",
+      "note": "Historical fallback only. Not current live/upcoming data."
+    }
+  ]
+}

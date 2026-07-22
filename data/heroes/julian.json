@@ -1,0 +1,669 @@
+{
+  "id": "julian",
+  "name": "Julian",
+  "heroName": "Julian",
+  "role": [
+    "Fighter",
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Magic Damage"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane",
+    "EXP Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "EXP Lane",
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2580,
+    "hpRegen": 7.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 118,
+    "physicalDefense": 21,
+    "magicPower": 0,
+    "magicDefense": 12,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Smith's Legacy",
+      "description": "After casting two different skills, Julian enhances his third skill. Casting the enhanced skill makes all his skills go on a 9-6s Cooldown (decreases with his level), but his Basic Attacks within the next 5s will deal 75( +100% Total Physical Attack) (+120% Total Magic Power) (Magic Damage) and pull the target toward him. Julian gains 15% extra Hybrid Lifesteal for 5s each time he hits an enemy hero with his skills (up to 3 stacks).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Smith's_Legacy",
+      "iconUrl": "/raw-assets/skill_icons/julian/smith_s_legacy.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Scythe",
+      "description": "Julian hurls a flying scythe in the target direction, dealing 380( +140% Total Magic Power) (Magic Damage) to enemies along the way and slowing them by 30% for 1s. The scythe disappears upon hitting a non-minion enemy.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Scythe",
+      "iconUrl": "/raw-assets/skill_icons/julian/scythe.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Sword",
+      "description": "Julian summons a flying sword and dashes in the target direction, dealing 400( +80% Total Magic Power) (Magic Damage) to enemies along the way.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Sword",
+      "iconUrl": "/raw-assets/skill_icons/julian/sword.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Chain",
+      "description": "Julian casts chains at the target location, dealing 300( +100% Total Magic Power) (Magic Damage) to enemies hit after a short delay and immobilizing them for 1.2s.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Chain",
+      "iconUrl": "/raw-assets/skill_icons/julian/chain.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Faramis",
+        "Diggie",
+        "Sun",
+        "Esmeralda",
+        "Uranus"
+      ],
+      "weakAgainst": [
+        "Guinevere"
+      ],
+      "synergyWith": [
+        "Atlas",
+        "Johnson",
+        "Tigreal",
+        "Gloo",
+        "Franco"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 2.4
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.2
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.1
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 2.1
+      },
+      {
+        "name": "Uranus",
+        "advantage": 1.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Guinevere",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Atlas",
+        "synergy": 1.6
+      },
+      {
+        "name": "Johnson",
+        "synergy": 1.4
+      },
+      {
+        "name": "Tigreal",
+        "synergy": 1.4
+      },
+      {
+        "name": "Gloo",
+        "synergy": 1.4
+      },
+      {
+        "name": "Franco",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Julian is a hero who can constantly grow his own advantage, so he is strong against heroes who are weak in the early game, like Cecilion and Aldous.",
+    "weakAgainstReason": "Julian needs to hit enemy heroes with his skills to bring out his potential, so he is countered by heroes with good Mobility. Such as Joy and Harith.",
+    "synergyReason": "Julian works best with powerful support heroes who can buff him, like Angela and Diggie."
+  },
+  "mechanicCategory": [
+    "Enhanced Skill",
+    "No Ultimate"
+  ],
+  "mechanicNote": "Julian tidak memiliki ultimate tradisional, sebaliknya skill-nya bisa di-enhance setelah casting 3 skill berturut-turut.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Form Management",
+    "Combo Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50,
+  "pickRate": 1.2,
+  "banRate": 3.9,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 60,
+    "abilityEffects": 70,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 80,
+    "mid": 76,
+    "late": 60,
+    "spikeLevels": [
+      "Lv 3",
+      "Lv 7",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Feather of Heaven",
+      "Genius Wand",
+      "Concentrated Energy"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Julian spikes extremely early because his enhanced-skill rotation comes online quickly and his burst/CC combo can decide early skirmishes and jungle invades. He stays strong mid game with fast rotations and repeated combos, but late game he’s more punishable when diving into full builds and layered CC."
+  },
+  "proBuilds": [
+    {
+      "player": "Part of Julian",
+      "games": 1171,
+      "items": [
+        "Flame Arcane Boots",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Windtalker",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "Dikkwxyz",
+      "games": 1768,
+      "items": [
+        "Flame Arcane Boots",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Windtalker",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "Lana deI prhoo.",
+      "games": 850,
+      "items": [
+        "Flame Magic Shoes",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Windtalker",
+        "Holy Crystal"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/julian/video-0-0.mp4",
+    "skill1": "/videos/heroes/julian/video-1-0.mp4",
+    "skill2": "/videos/heroes/julian/video-2-0.mp4",
+    "ultimate": "/videos/heroes/julian/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 4"
+      ],
+      "description": "In teamfights, Julian can slow the enemy with his 1st Skill before dashing into the enemy battle formation with his 2nd Skill. Then use his enhanced 3rd Skill for area CC."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 3",
+        "Skill 5",
+        "Passive"
+      ],
+      "description": "In the laning phase, Julian can use his 2nd Skill to close in on the enemy, and his 3rd Skill to immobilize them. Then he can use his enhanced 1st Skill to deal damage. Follow up with his enhanced Basic Attacks to prevent the enemy from escaping."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Xavier",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Melissa",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Yin",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Diggie",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": 1.93
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 1.64
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": 1.63
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": 1.51
+    },
+    {
+      "name": "Khaleed",
+      "winrateDelta": 1.49
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Roger",
+      "winrateDelta": -2.29
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -2.11
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": -2.1
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -1.99
+    },
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": -1.66
+    }
+  ],
+  "metaScore": 18.07,
+  "metaRank": 52,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 3.24
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.12
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.1
+      },
+      {
+        "name": "Sun",
+        "advantage": 2
+      },
+      {
+        "name": "Alice",
+        "advantage": 1.77
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 2.45
+      },
+      {
+        "name": "Baxia",
+        "advantage": 1.78
+      },
+      {
+        "name": "Guinevere",
+        "advantage": 1.75
+      },
+      {
+        "name": "Khufra",
+        "advantage": 1.53
+      },
+      {
+        "name": "Granger",
+        "advantage": 1.52
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "kekebalan tubuh ",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Windtalker",
+        "Haas Claws",
+        "Berserker Fury",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "kalo mau main julian kekebalan tubuh pastikan musuh pick hero yang farming nya agak susah, julian kekebalan tubuh ini biasanya gw mainin di exp.. langkah\" main julian kekebalan tubuh \n-di early buka skil 1/3 buat farming/ poke poke lawan pake inspire \n-kalo udah level dua, jagan up dulu skil duanya.. tetep fokus farming biar item pertamanya jadi\n-misal mentahan item pertamanya belum jadi jangan maksa war (belum ada damage)\n-mentahan item pertama udah jadi, bisa cicil cicil musuh atau rotasi ke turtle.. gunakan insprire kalo mau lock mid/mm nya.. soalnya kalo lu lock exp sama roamnya, nanti malah mati sendiri \njulian ini lemah kalo sama hero yang durabilitas nya tinggi \n",
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:25:27.783633+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Brust Damage ",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Arcane Boots",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Windtalker",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Julian tipe jungle Brust Damage",
+      "tags": [],
+      "lastUpdated": "2025-09-14T08:59:15.814378+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "No cooldown + spellvamp deres (From Patch 2.1.42)",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Magic Boots",
+        "Feather of Heaven",
+        "Windtalker",
+        "Concentrated Energy",
+        "Clock of Destiny",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-03-12T07:07:08.521+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Julian damage",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Arcane Boots",
+        "Feather of Heaven",
+        "Sky Piercer",
+        "Concentrated Energy",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:23:56.864104+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Meta CiKi Only",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Build Julian for Meta Ciki",
+      "tags": [],
+      "lastUpdated": "2025-10-25T10:52:12.449133+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Feather",
+        "Heaven"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11600,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Feather",
+        "Heaven"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 11860,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11040,
+      "notes": null
+    }
+  ]
+}

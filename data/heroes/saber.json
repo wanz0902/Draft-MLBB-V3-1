@@ -1,0 +1,720 @@
+{
+  "id": "saber",
+  "name": "Saber",
+  "heroName": "Saber",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Charge",
+    "Finisher"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2459,
+    "hpRegen": 7.2,
+    "mana": 468,
+    "manaRegen": 3.6,
+    "physicalAttack": 125,
+    "physicalDefense": 19,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.08",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Enemy's Bane",
+      "description": "Saber's attacks reduce enemies' Physical Defense by 3-8 for 5s on hit. This effect stacks up to 5 times.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Debuff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Enemy's_Bane",
+      "tips": "Use Flying Sword to poke enemies as well as to apply passive stacks",
+      "iconUrl": "/raw-assets/skill_icons/saber/enemy_s_bane.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Orbiting Swords",
+      "description": "Saber releases 5 swords that orbit around him and deal 75 (+25% Extra Physical Attack) Physical Damage to nearby enemies on hit. The swords will retract back to him after the duration.\nWhen the swords are active, Saber launches a sword at his target on each attack, dealing 200 (+50% Extra Physical Attack) Physical Damage to the target and 50% damage to enemies along the path (damage reduced to 50% against minions). Each sword attack also reduces the cooldown of Charge by 0.5s.",
+      "cooldown": "10.0",
+      "manaCost": "60",
+      "damageType": "Physical",
+      "scaling": [
+        "(+25% Extra Physical Attack)",
+        "(+50% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "75",
+            "85",
+            "95",
+            "105",
+            "115",
+            "125"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "200",
+            "220",
+            "240",
+            "260",
+            "280",
+            "300"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Orbiting_Swords",
+      "tips": "When standing together with the enemy, using flying sword will deal damage 4 times. You may control the range for long distance poking.",
+      "iconUrl": "/raw-assets/skill_icons/saber/orbiting_swords.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Charge",
+      "description": "Saber dashes in the target direction, dealing 75 (+50% Extra Physical Attack) Physical Damage to enemies along the way while enhancing his next Basic Attack.\nSaber can dash to the target, and his enhanced Basic Attack deals 75 (+120% Total Physical Attack) Physical Damage and slows the target by 60% for 1s.",
+      "cooldown": "7.0",
+      "manaCost": "40",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Extra Physical Attack)",
+        "(+120% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "40",
+            "44",
+            "48",
+            "52",
+            "56",
+            "60"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "75",
+            "90",
+            "105",
+            "120",
+            "135",
+            "150"
+          ]
+        },
+        {
+          "label": "Enhanced Damage",
+          "values": [
+            "75",
+            "90",
+            "105",
+            "120",
+            "135",
+            "150"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Charge",
+      "tips": "Initiate with Triple Sweep, leave Charge as a escape, at critical moments use Charge to go through walls",
+      "iconUrl": "/raw-assets/skill_icons/saber/charge.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Triple Sweep",
+      "description": "Saber charges at the target enemy hero, knocking them airborne for 1.2s (unaffected by Resilience) and striking them 3 times over the duration. The first two strikes deal 120 (+80% Extra Physical Attack) Physical Damage each, while the third strike deals 240 (+160% Extra Physical Attack) Physical Damage.",
+      "cooldown": "44.0",
+      "manaCost": "100",
+      "damageType": "Physical",
+      "scaling": [
+        "(+80% Extra Physical Attack)",
+        "(+160% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "44.0",
+            "40.0",
+            "36.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "100",
+            "120",
+            "140"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "120",
+            "170",
+            "220"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "240",
+            "340",
+            "440"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Triple_Sweep",
+      "tips": "1. Target low health or squishy enemies, when Triple Sweep is about to end hold down the direction, this will cause you to move forward a step upon landing, then deal 4 times damage with Flying Sword. 2. When being tower dived by the enemy,use Triple Sweep on the enemy that is being attacked by the turret, knocking them up for extra tower hits.",
+      "iconUrl": "/raw-assets/skill_icons/saber/triple_sweep.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Natalia",
+        "Nolan",
+        "Hayabusa",
+        "Ling",
+        "Marcel"
+      ],
+      "weakAgainst": [
+        "Barats",
+        "Sun",
+        "Argus",
+        "Masha",
+        "Balmond"
+      ],
+      "synergyWith": [
+        "Lolita",
+        "Marcel",
+        "Belerick",
+        "Minotaur",
+        "Khufra"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 4
+      },
+      {
+        "name": "Nolan",
+        "advantage": 3.5
+      },
+      {
+        "name": "Hayabusa",
+        "advantage": 3.3
+      },
+      {
+        "name": "Ling",
+        "advantage": 3.2
+      },
+      {
+        "name": "Marcel",
+        "advantage": 2.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.8
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.2
+      },
+      {
+        "name": "Argus",
+        "advantage": 3.2
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.9
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Lolita",
+        "synergy": 3.4
+      },
+      {
+        "name": "Marcel",
+        "synergy": 2.8
+      },
+      {
+        "name": "Belerick",
+        "synergy": 2.7
+      },
+      {
+        "name": "Minotaur",
+        "synergy": 2.5
+      },
+      {
+        "name": "Khufra",
+        "synergy": 2.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Saber's deadly combo makes him strong against squishy heroes, such as Layla and Eudora.",
+    "weakAgainstReason": "Saber is countered by Support heroes with Survivability buffs, like Estes and Faramis.",
+    "synergyReason": "Saber works well with high-damage heroes who can help him burst down enemy heroes in teamfights, such as Kadita and Cyclops."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Saber adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.7,
+  "pickRate": 1,
+  "banRate": 23.1,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 60,
+    "abilityEffects": 60,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 75,
+    "mid": 70,
+    "late": 45,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 7",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "Blade of the Heptaseas",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Saber spikes hard as soon as Triple Sweep unlocks, enabling reliable pick-offs and snowballing with early physical-pen items. As the game goes late, targets get defensive items and grouping/peel increases, making his single-target burst less consistent and riskier."
+  },
+  "proBuilds": [
+    {
+      "player": "Raventix",
+      "games": 876,
+      "items": [
+        "Flame Magic Shoes",
+        "Hunter Strike",
+        "War Axe",
+        "Endless Battle",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "Sii_Masin",
+      "games": 914,
+      "items": [
+        "Flame Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Endless Battle",
+        "Queen's Wings",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "神┋Hyper Saber",
+      "games": 382,
+      "items": [
+        "Ice Tough Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Winter Crown"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/saber/video-0-0.mp4",
+    "skill1": "/videos/heroes/saber/video-1-0.mp4",
+    "skill2": "/videos/heroes/saber/video-2-0.mp4",
+    "ultimate": "/videos/heroes/saber/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Saber can use his 1st Skill to poke and weaken the enemy, follow with his 2nd Skill to close in, then use his Ultimate to finish them off."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Saber can use his 1st Skill to poke and weaken the enemy, follow with his 2nd Skill to close in, then use his Ultimate to finish them off."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Kadita",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Cyclops",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Cadia Riverlands",
+  "race": "Cyborg",
+  "bestTeammates": [
+    {
+      "name": "Marcel",
+      "winrateDelta": 3.05
+    },
+    {
+      "name": "Hylos",
+      "winrateDelta": 2.06
+    },
+    {
+      "name": "Minotaur",
+      "winrateDelta": 1.82
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 1.69
+    },
+    {
+      "name": "Akai",
+      "winrateDelta": 1.67
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Nolan",
+      "winrateDelta": -4.45
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": -4.05
+    },
+    {
+      "name": "Karina",
+      "winrateDelta": -3.94
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -3.8
+    },
+    {
+      "name": "Fanny",
+      "winrateDelta": -3.47
+    }
+  ],
+  "metaScore": 22.53,
+  "metaRank": 27,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 4.14
+      },
+      {
+        "name": "Hayabusa",
+        "advantage": 3.48
+      },
+      {
+        "name": "Nolan",
+        "advantage": 3.45
+      },
+      {
+        "name": "Ling",
+        "advantage": 3.34
+      },
+      {
+        "name": "Lunox",
+        "advantage": 3.19
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 6.1
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.95
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 2.89
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.72
+      },
+      {
+        "name": "Aulus",
+        "advantage": 2.64
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Saber damage buat ulti",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Sea Halberd",
+        "Sky Piercer",
+        "Malefic Roar",
+        "Blade of Despair",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Execute",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-26T06:54:52.378451+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build khusus gendong dari wmokk",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Sky Piercer",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Rose Gold Meteor",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Cd 40%, rotasi Jungle kenceng, fokus win, hindari late game, jangan ragu pick off dan gunakan retri merahnya ketika pick off, jangan cuman pick off, ini bisa ikut war dan hit and run fokus ke core musuh seperti main assasin lain. Cek gameplay di yt nya wmokk aja",
+      "tags": [],
+      "lastUpdated": "2026-04-02T13:07:59.454541+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Saber Demage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Sky Piercer",
+        "Endless Battle",
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Execute",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-26T11:57:13.879881+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Hunter",
+        "Strike",
+        "Blade",
+        "the"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11860,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Sky"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 11280,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11930,
+      "notes": null
+    }
+  ]
+}

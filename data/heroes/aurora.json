@@ -1,0 +1,776 @@
+{
+  "id": "aurora",
+  "name": "Aurora",
+  "heroName": "Aurora",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Crowd Control",
+    "Poke"
+  ],
+  "lane": "Mid",
+  "lanes": [
+    "Mid",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2431,
+    "hpRegen": 6.6,
+    "mana": 510,
+    "manaRegen": 3.8,
+    "physicalAttack": 98,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Pride of Ice",
+      "description": "Upon taking fatal damage, Aurora freezes herself for 1.5s, becoming invincible during this time and gradually recovering 30% Max HP. This effect has a 150s cooldown.\nAurora's freeze effects can also affect Turrets.\n|quote=Eternal Standing of The Glacier.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Death Immunity"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Pride_of_Ice",
+      "tips": "Spam frost shock & bitter frost (Be sure to hit minions in order not to waste your skills) until you get the passive skill (The Pink Ice). Once collected, any of your skills can freeze the target. Be sure to hit frozen enemies with your skills to deal extra magic damage. Best skill to be used after collecting the passive skill is the Coldness Destroy. It has wide AOE that can freeze almost 5 of your enemies.",
+      "iconUrl": "/raw-assets/skill_icons/aurora/pride_of_ice.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Hailstone Blast",
+      "description": "Aurora summons an icy meteorite to strike at the target location, dealing 400 (+90% Total Magic Power) Magic Damage and slowing targets hit by 40% for 1s. Afterward, 5 hailstones fall, each dealing 40 (+10% Total Magic Power) Magic Damage.",
+      "cooldown": "6.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+90% Total Magic Power)",
+        "(+10% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.6",
+            "5.2",
+            "4.8",
+            "4.4",
+            "4.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "400",
+            "460",
+            "520",
+            "580",
+            "640",
+            "700"
+          ]
+        },
+        {
+          "label": "Combo Damage",
+          "values": [
+            "40",
+            "40",
+            "40",
+            "40",
+            "40",
+            "40"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Hailstone_Blast",
+      "tips": "Best skill to slow down your enemies. It has a long range that you can use to stay defensive. Use this skill to slow down fleeing enemies and assist your team during team fights.",
+      "iconUrl": "/raw-assets/skill_icons/aurora/hailstone_blast.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Frosty Breeze",
+      "description": "Aurora blows Frosty Breeze in a fan-shaped area in the target direction, dealing 225 (+75% Total Magic Power) Magic Damage to enemies hit, and creating a frozen area at the far-end of the attack that deals a total of 225 (+75% Total Magic Power) Magic Damage to enemies in the area and freezes them for 1s. This skill gains 0.06 additional freezing duration for every 100 Magic Power.",
+      "cooldown": "12.0",
+      "manaCost": "75",
+      "damageType": "Magic",
+      "scaling": [
+        "(+75% Total Magic Power)",
+        "(+75% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.2",
+            "10.4",
+            "9.6",
+            "8.8",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "75",
+            "80",
+            "85",
+            "90",
+            "95",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "225",
+            "255",
+            "285",
+            "315",
+            "345",
+            "375"
+          ]
+        },
+        {
+          "label": "Sustained Damage",
+          "values": [
+            "225",
+            "255",
+            "285",
+            "315",
+            "345",
+            "375"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "AOE",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Frosty_Breeze",
+      "tips": "This skill has a mini stun due to its 80% slow down effect on movement speed of the target. You can also use this skill after freezing an enemy as finishing move due to its high magic damage. This skill can be used to aid teammates with no stun skills during team fights.",
+      "iconUrl": "/raw-assets/skill_icons/aurora/frosty_breeze.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Frigid Glacier",
+      "description": "Aurora creates a frost path in the target direction, dealing 100 (+40% Total Magic Power) Magic Damage to enemies in the path and reducing their Movement Speed by 80% for 1.2s. The frost path gradually becomes glaciers that spread until reaching their maximum size and shattering, dealing 600 (+150% Total Magic Power) Magic Damage to all enemies in the area and freezing targets for 1s. Every 100 Magic Power that Aurora has will increase the freeze duration by 0.2s.",
+      "cooldown": "50.0",
+      "manaCost": "140",
+      "damageType": "Magic",
+      "scaling": [
+        "(+40% Total Magic Power)",
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "50.0",
+            "45.0",
+            "40.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "140",
+            "160",
+            "180"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "label": "AOE Damage",
+          "values": [
+            "600",
+            "900",
+            "1200"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Frigid_Glacier",
+      "tips": "When in passive mode, it has wide AOE that can freeze up to 5 enemies. Aim this skill accurately to harass enemies. Use this skill as a finishing move. With its high magic damage you can land a Savage in a single blow.",
+      "iconUrl": "/raw-assets/skill_icons/aurora/frigid_glacier.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Odette",
+        "Eudora",
+        "Chip",
+        "Masha"
+      ],
+      "weakAgainst": [
+        "Lancelot",
+        "Gatotkaca",
+        "Selena",
+        "Pharsa"
+      ],
+      "synergyWith": [
+        "Harley",
+        "Aulus",
+        "Zhask",
+        "Yve",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.2
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.3
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.1
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.1
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lancelot",
+        "advantage": 1.9
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 1.6
+      },
+      {
+        "name": "Selena",
+        "advantage": 1.5
+      },
+      {
+        "name": "Pharsa",
+        "advantage": 1.2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harley",
+        "synergy": 1.8
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.6
+      },
+      {
+        "name": "Zhask",
+        "synergy": 1.5
+      },
+      {
+        "name": "Yve",
+        "synergy": 1.5
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Aurora counters heroes who like to charge in, such as Leomord, Thamuz, and Terizla, since her skills can stop them dead in their tracks.",
+    "weakAgainstReason": "Because most of Aurora's skills have delayed effects, she is countered by high mobility heroes who can dodge them with ease, such as Ling, Kadita, and Guinevere.",
+    "synergyReason": "With her very powerful CC abilities, Aurora works well with heroes who deal high sustained damage, like Ixia, Freya, and Karrie."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Aurora adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.8,
+  "pickRate": 0.4,
+  "banRate": 0.3,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 70,
+    "abilityEffects": 100,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 74,
+    "late": 78,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 11"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": null,
+    "description": "Aurora has respectable early lane control with S1 poke and S2 freeze setup, then spikes at level 4 when her ultimate gives reliable AoE burst + teamfight CC. She scales well into late because her damage and freeze value increase with Magic Power (longer freezes) and she can decide fights with one catch, though she remains position-dependent."
+  },
+  "proBuilds": [
+    {
+      "player": "Versåce",
+      "games": 896,
+      "items": [
+        "Rapid Boots",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Blood Wings",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Chira 乂 N'mare",
+      "games": 587,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Sky Piercer",
+        "Starlium Scythe",
+        "Divine Glaive",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "Pyke",
+      "games": 216,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Blood Wings",
+        "Starlium Scythe",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/aurora/video-0-0.mp4",
+    "skill1": "/videos/heroes/aurora/video-1-0.mp4",
+    "skill2": "/videos/heroes/aurora/video-2-0.mp4",
+    "ultimate": "/videos/heroes/aurora/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, first cast Aurora's Ultimate when the enemy is grouped, then use her 2nd Skill immediately to freeze them inside the Ultimate's AOE, and finish with her 1st Skill on the CC'ed targets for maximum damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Aurora's 2nd Skill to freeze the enemy, then follow up with her 1st Skill to ensure all the hits connect."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Ixia",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Freya",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Karrie",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Valentina",
+      "winrateDelta": 4
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": 2.29
+    },
+    {
+      "name": "Novaria",
+      "winrateDelta": 2.18
+    },
+    {
+      "name": "Eudora",
+      "winrateDelta": 1.61
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.58
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": -18.06
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -4.62
+    },
+    {
+      "name": "Lylia",
+      "winrateDelta": -4.62
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": -3.83
+    },
+    {
+      "name": "Vale",
+      "winrateDelta": -3.81
+    }
+  ],
+  "metaScore": 10.92,
+  "metaRank": 113,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 5.01
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.26
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.31
+      },
+      {
+        "name": "Eudora",
+        "advantage": 1.91
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 1.36
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 4.35
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.47
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.28
+      },
+      {
+        "name": "Joy",
+        "advantage": 1.82
+      },
+      {
+        "name": "Fanny",
+        "advantage": 1.78
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "sakit",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-31T15:34:01.227282+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "100 Years Freeze",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Wishing Lantern",
+        "Holy Crystal",
+        "Blood Wings",
+        "Ice Queen Wand"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Basically just stack your magic power to increase the freeze duration from ult.\nWith this build you can reach around 800-900 magic power in the late game and the ult Frozen duration will increase by 1,6-1,8 second from its base 1 second so enemy will be freeze for 2,6-2,8 second.\nFeel free to buy multiple holy crystal if you like it.",
+      "tags": [],
+      "lastUpdated": "2025-10-24T06:26:49.131433+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Kena ulti langsung wafat",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:35:46.599582+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Item core ",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Arcane Boots",
+        "Blood Wings",
+        "Wishing Lantern",
+        "Glowing Wand",
+        "Genius Wand",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-23T08:02:19.410901+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Blood",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12160,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Winter",
+        "Crown"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11830,
+      "notes": null
+    }
+  ]
+}

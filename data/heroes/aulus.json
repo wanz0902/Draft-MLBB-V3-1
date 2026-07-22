@@ -1,0 +1,648 @@
+{
+  "id": "aulus",
+  "name": "Aulus",
+  "heroName": "Aulus",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Damage",
+    "Charge"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle",
+    "EXP"
+  ],
+  "flex_lanes": [
+    "EXP"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2660,
+    "hpRegen": 7.8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 122,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Fighting Spirit",
+      "description": "Aulus adds a stack of (Fighting Spirit) to his axe per second for 3s after dealing damage to any enemy (up to 4 stacks). Each stack grants 3-12 extra (Physical Attack) and 1-4 (Physical Penetration) (scales with (Undying Fury) level). Aulus also gains 10% extra Movement Speed and 27-125 Basic Attack Damage at max (Fighting Spirit) stacks (scales with level).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Fighting_Spirit",
+      "tips": "Aulus' key skill. Focus on the duration of \"Fury Spirit\" and try to maintain the full stacks.",
+      "iconUrl": "/raw-assets/skill_icons/aulus/fighting_spirit.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Aulus, Charge!",
+      "description": "Aulus removes all slow effects and gains 30% extra Movement Speed and 20% Damage Reduction against attacks from the front for 5s. Aulus gains 1% Damage Reduction for every 10 extra Physical Attack, up to 60%.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Aulus,_Charge!",
+      "tips": "Allows him to move quite freely on the battlefield. Use this skill wisely, and Aulus will poke, burst, and flee with ease.",
+      "iconUrl": "/raw-assets/skill_icons/aulus/aulus_charge.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Undying Fury",
+      "description": "Aulus swings his axe, dealing Physical Damage to enemies in a fan-shaped area. Each enemy hero hit grants Aulus extra Attack Speed for a short duration. Aulus also regenerates HP upon hitting enemies.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Undying_Fury",
+      "tips": "Aulus' primary damage source. Use this skill to hit as many enemies as possible, and it will provide a huge attack speed bonus and regen. In this way, Aulus' output and survivability are both greatly increased.",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2",
+      "iconUrl": "/raw-assets/skill_icons/aulus/undying_fury.png"
+    },
+    "ultimate": {
+      "name": "The Power of Axe",
+      "description": "Aulus brandishes his axe, dealing 150( +120% Extra Physical Attack) (Physical Damage) to enemies in a fan-shaped area, and enhancing up to 6 of his next Basic Attacks for 3s according to the enemies hit (3 per Hero or Creep, 1 per Minion). Enhanced Basic Attacks gain 100% extra Attack Speed and restore 50 (HP) to Aulus.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "The_Power_of_Axe",
+      "tips": "Aulus' Ultimate is a knockout blow in teamfights. It can control and hit enemies in a wide range if it's cast at the right angle.",
+      "iconUrl": "/raw-assets/skill_icons/aulus/the_power_of_axe.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Phoveus",
+        "Faramis",
+        "Lolita",
+        "Saber"
+      ],
+      "weakAgainst": [
+        "Yve",
+        "Hanzo",
+        "Nolan",
+        "Kaja",
+        "Atlas"
+      ],
+      "synergyWith": [
+        "Gloo",
+        "Atlas",
+        "Arlott",
+        "Lolita",
+        "Belerick"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 3.3
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 2.9
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.6
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.4
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 2.8
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.8
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.8
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.6
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Gloo",
+        "synergy": 2.6
+      },
+      {
+        "name": "Atlas",
+        "synergy": 2
+      },
+      {
+        "name": "Arlott",
+        "synergy": 1.9
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.8
+      },
+      {
+        "name": "Belerick",
+        "synergy": 1.8
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Aulus's strong engage and sustained combat capabilities, along with his Control Immunity, makes him a good counter to squishy, low-mobility heroes like Hanabi, Miya, and Gord.",
+    "weakAgainstReason": "Since Aulus's damage relies on landing his enhanced Basic Attacks, heroes who can keep him at bay and avoid them are a tough matchup, such as Franco, Melissa, and Karina.",
+    "synergyReason": "Aulus is a dive Fighter and he thrives with reliable ranged Support, such as Angela and Floryn."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Aulus adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.9,
+  "pickRate": 0.2,
+  "banRate": 1.9,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 60,
+    "abilityEffects": 10,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 38,
+    "mid": 62,
+    "late": 86,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Aulus is relatively weak early because he needs levels and items to keep Fighting Spirit stacked and to stick to targets, so early skirmishes can be rough. He spikes hard as his ultimate upgrades grant permanent axe crafts (range/pen) and once he completes core DPS items, turning into a high sustained-damage late-game carry."
+  },
+  "proBuilds": [
+    {
+      "player": "Xauluss x F4N'T",
+      "games": 675,
+      "items": [
+        "Ice Tough Boots",
+        "Corrosion Scythe",
+        "Malefic Roar",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "—'Heaven knows",
+      "games": 948,
+      "items": [
+        "Ice Tough Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Aulus Player",
+      "games": 1254,
+      "items": [
+        "Favor Tough Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Rose Gold Meteor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/aulus/video-0-0.mp4",
+    "skill1": "/videos/heroes/aulus/video-1-0.mp4",
+    "skill2": "/videos/heroes/aulus/video-2-0.mp4",
+    "ultimate": "/videos/heroes/aulus/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 2",
+        "Skill 3",
+        "Passive",
+        "Passive"
+      ],
+      "description": ""
+    }
+  ],
+  "connections": [
+    {
+      "name": "Benedetta",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Brody",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Floryn",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "The Barren Lands",
+  "race": "Leonin",
+  "bestTeammates": [
+    {
+      "name": "Benedetta",
+      "winrateDelta": 3.11
+    },
+    {
+      "name": "Kagura",
+      "winrateDelta": 2.8
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": 2.72
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 2.64
+    },
+    {
+      "name": "Sora",
+      "winrateDelta": 1.91
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Roger",
+      "winrateDelta": -6.3
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": -5.75
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -3.76
+    },
+    {
+      "name": "Leomord",
+      "winrateDelta": -3.76
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -3.52
+    }
+  ],
+  "metaScore": 15.89,
+  "metaRank": 78,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 3.5
+      },
+      {
+        "name": "Lolita",
+        "advantage": 3.37
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.64
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.42
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.04
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 3.19
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.02
+      },
+      {
+        "name": "Estes",
+        "advantage": 2.58
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.44
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.31
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "SAD MOMENTS",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Sky Piercer",
+        "Haas Claws",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Farming di awal dan jangan war di early tunggu pertengahan dan jadikan 3 item dan awal coba cicil Hero tipis biar skypircernya ada stack ",
+      "tags": [],
+      "lastUpdated": "2025-09-14T17:07:07.823882+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "grasak grusuk",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "makan depan",
+      "tags": [],
+      "lastUpdated": "2026-05-01T13:44:37.390637+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Tunggu level 12 bos",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Tought Boots",
+        "Windtalker",
+        "Berserker Fury",
+        "Endless Battle",
+        "Great Dragon Spear",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:32:35.275617+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Assassin Aulus",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Sky Piercer",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Blade of Despair",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Meme build that stack flat pen and pen% because Aulus lvl 3 ult also add pen% that will make your damage almost like a true damage.",
+      "tags": [],
+      "lastUpdated": "2025-10-24T06:18:47.015478+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Brute",
+        "Force"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10800,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Brute",
+        "Force"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10860,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Brute",
+        "Force"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10900,
+      "notes": null
+    }
+  ]
+}

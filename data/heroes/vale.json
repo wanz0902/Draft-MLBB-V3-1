@@ -1,0 +1,627 @@
+{
+  "id": "vale",
+  "name": "Vale",
+  "heroName": "Vale",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Burst",
+    "Crowd Control"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2430,
+    "hpRegen": 6.8,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 97,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Windtalk",
+      "description": "Vale gains 1 stack of (Windtalk) each time he gets a kill or an assist that increases his Movement Speed by 8. This effect can stack up to 10 times.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Windtalk",
+      "iconUrl": "/raw-assets/skill_icons/vale/windtalk.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Wind Blade",
+      "description": "Vale unleashes two wind blades toward the left and right of a target area, each dealing 250 (+80% Total Magic Power) Magic Damage to enemies hit.",
+      "cooldown": "6.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+80% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.6",
+            "5.2",
+            "4.8",
+            "4.4",
+            "4.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "290",
+            "330",
+            "370",
+            "410",
+            "450"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Wind_Blade",
+      "tips": "It's the main damage-dealing skill of Vale and it takes time to deal the high-burst damage. So it would be better to ensure the hit rate by releasing it in advance or using it when the enemies are under control. If your team provides enough control, then it would be better to choose to increase damage. Otherwise, it would be better to choose to increase area so that the skill hit rate will get improved. When choosing to enhance skills for the first time, if for higher damage, choose to enhance 1st kill first then.",
+      "iconUrl": "/raw-assets/skill_icons/vale/wind_blade.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Windblow",
+      "description": "Vale sends a whirlwind in the target direction, dealing 350 (+100% Total Magic Power) Magic Damage to enemies hit and knocking them airborne for 0.8s (each enemy can only be knocked airborne 1 time). When the whirlwind reaches its destination, it will remain for 1.6s while continuously dealing a total of 150 (+30% Total Magic Power) Magic Damage to enemies in range.",
+      "cooldown": "12.0",
+      "manaCost": "70",
+      "damageType": "Magic",
+      "scaling": [
+        "(+100% Total Magic Power)",
+        "(+30% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.2",
+            "10.4",
+            "9.6",
+            "8.8",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "70",
+            "74",
+            "78",
+            "82",
+            "86",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "350",
+            "420",
+            "490",
+            "560",
+            "630",
+            "700"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Windblow",
+      "tips": "The slowing down effect of this skill can increase the hit rate of his 1st skill. Normally it would be better to choose knock up effect. If your team provides enough control, then better choose stop-on-hit effect. For the first time if you don't choose to build damage of 1st kill, then you should choose the knock-up effect of this skill, for it provides stable control for the team. Normally, this skill will be build when it's the third time to enhance skills.",
+      "iconUrl": "/raw-assets/skill_icons/vale/windblow.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Windstorm",
+      "description": "Vale summons a windstorm at the target location, dealing a total of 150 (+30% Total Magic Power) Magic Damage to enemies in the area and slowing them by 20% while continuously pulling them into its center. After 1s, the windstorem will explode, dealing 900 (+240% Total Magic Power) Magic Damage.\nThe remaining whirlwinds will also be pulled into the center.",
+      "cooldown": "36.0",
+      "manaCost": "120",
+      "damageType": "Magic",
+      "scaling": [
+        "(+30% Total Magic Power)",
+        "(+240% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "33.0",
+            "30.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "140",
+            "160"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "900",
+            "1150",
+            "1400"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Windstorm",
+      "tips": "Choosing to increase damage is always a good choice, but it needs choosing knock-up effect of 2nd skill, or it is hard to use ultimate to hit enemies. When choosing control effect, the damage of 1st skill should be ensured. Normally, choose to enhance Ultimate for the second time.",
+      "iconUrl": "/raw-assets/skill_icons/vale/windstorm.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Odette",
+        "Rafaela",
+        "Estes",
+        "Melissa",
+        "Marcel"
+      ],
+      "weakAgainst": [
+        "Gloo",
+        "Khaleed",
+        "Lapu-Lapu",
+        "Hylos",
+        "Terizla"
+      ],
+      "synergyWith": [
+        "Argus",
+        "Popol and Kupa",
+        "Harley",
+        "Marcel",
+        "Hilda"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Odette",
+        "advantage": 2.5
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 2.3
+      },
+      {
+        "name": "Estes",
+        "advantage": 2.2
+      },
+      {
+        "name": "Melissa",
+        "advantage": 2
+      },
+      {
+        "name": "Marcel",
+        "advantage": 1.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 2.9
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 2.4
+      },
+      {
+        "name": "Lapu-Lapu",
+        "advantage": 2.1
+      },
+      {
+        "name": "Hylos",
+        "advantage": 2
+      },
+      {
+        "name": "Terizla",
+        "advantage": 1.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Argus",
+        "synergy": 1.5
+      },
+      {
+        "name": "Popol and Kupa",
+        "synergy": 1.3
+      },
+      {
+        "name": "Harley",
+        "synergy": 1.3
+      },
+      {
+        "name": "Marcel",
+        "synergy": 1.3
+      },
+      {
+        "name": "Hilda",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Vale counters slow Fighters like Terizla and Hilda because he can chip away their HP with his skills from afar while using his high Movement Speed to dodge their skills.",
+    "weakAgainstReason": "Vale is countered by agile Assassins that can become untargetable like Hayabusa and Ling, as it will be difficult to catch them with his CC while they can eliminate Vale easily with their high damage.",
+    "synergyReason": "Vale works well with frontline Tanks like Lolita and Belerick who can protect him while he continuously pokes the enemy."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Vale adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.7,
+  "pickRate": 0.6,
+  "banRate": 0.4,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 100,
+    "abilityEffects": 70,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 78,
+    "late": 72,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Vale’s early is mostly poke/clear with limited kill threat unless enemies misposition, but he spikes hard once Ultimate and skill upgrades enable reliable CC-to-burst combos. Mid-game rotations and teamfights favor his AoE pull + explosion, while late game remains strong but more execution/positioning dependent versus tanky fronts and divers."
+  },
+  "proBuilds": [
+    {
+      "player": "LALLAPALLOOZA",
+      "games": 476,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Blood Wings",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "İcardi44",
+      "games": 1522,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "g0d88",
+      "games": 489,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/vale/video-0-0.mp4",
+    "skill1": "/videos/heroes/vale/video-1-0.mp4",
+    "skill2": "/videos/heroes/vale/video-2-0.mp4",
+    "ultimate": "/videos/heroes/vale/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Vale's 2nd Skill to knock the opponent airborne, then follow up with his 1st Skill for damage."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, use Vale's 2nd Skill to knock a line of enemies airborne, then follow up with his Ultimate and 1st Skill for a devastating combo."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Lolita",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 3.46
+    },
+    {
+      "name": "Aulus",
+      "winrateDelta": 1.71
+    },
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": 1.66
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 1.18
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": 1.12
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Kagura",
+      "winrateDelta": -9.12
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -6.64
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": -6.5
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -5.23
+    },
+    {
+      "name": "Chang'e",
+      "winrateDelta": -4.78
+    }
+  ],
+  "metaScore": 17.19,
+  "metaRank": 61,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Rafaela",
+        "advantage": 2.01
+      },
+      {
+        "name": "Bane",
+        "advantage": 1.85
+      },
+      {
+        "name": "Odette",
+        "advantage": 1.82
+      },
+      {
+        "name": "Masha",
+        "advantage": 1.67
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 1.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 2.03
+      },
+      {
+        "name": "Lapu-Lapu",
+        "advantage": 1.97
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 1.93
+      },
+      {
+        "name": "Leomord",
+        "advantage": 1.91
+      },
+      {
+        "name": "Valentina",
+        "advantage": 1.9
+      }
+    ]
+  },
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12010,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Winter",
+        "Crown"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11950,
+      "notes": null
+    }
+  ]
+}

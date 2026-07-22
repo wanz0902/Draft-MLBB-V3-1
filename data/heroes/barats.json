@@ -1,0 +1,683 @@
+{
+  "id": "barats",
+  "name": "Barats",
+  "heroName": "Barats",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Damage",
+    "Crowd Control"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle",
+    "EXP",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "EXP",
+    "Roam"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2780,
+    "hpRegen": 8.4,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 116,
+    "physicalDefense": 25,
+    "magicPower": 0,
+    "magicDefense": 14,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Detona's Welcome",
+      "description": "After a short delay, Detona charges in the target direction, dealing 120( +70% Total Physical Attack) (+1% Total HP) (Physical Damage) to the first enemy hit, devouring and suppressing them for 1.2s before spitting them out. If the target hits an enemy hero or a wall after being spit out, the target will cause an explosion, they and nearby enemies will take an additional 180( +105% Total Physical Attack) (+2% Total HP) (Physical Damage) and be stunned for 1s. For the duration, Barats becomes immune to control effects. If the channeling is canceled, 60% of the skill cooldown will be refunded. (Passive): Detona gains 4 stacks of (Big Guy) upon respawn.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Detona's_Welcome",
+      "tips": "Each time Barats and Detona deal damage to a target, Detona gains 1 stack of [Big Guy] for several seconds, capped at 25 stacks. For each stack of [Big Guy], Detona gains increased body size, Physical Defense and Magic Defense, and Resilience. When [Big Guy] reaches 16 stacks, Detona will [Trample] the target with his Basic Attack, dealing Physical Damage to enemies within a round area and slow them.",
+      "iconUrl": "/raw-assets/skill_icons/barats/detona_s_welcome.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "So-Called Teamwork",
+      "description": "Detona spits contaminated oil in the target direction, dealing 60( +7% Total HP) (Physical Damage) to enemies in a fan-shaped area. Barats then ignites the oil with a firecracker, dealing 120( +200% Total Physical Attack) (Physical Damage) to enemies in the area. The area of effect of (So-Called Teamwork) increases with the number of (Big Guy) stacks.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "So-Called_Teamwork",
+      "tips": "Detona spits contaminated oil in the fan-shaped area in front, dealing Physical Damage to enemies within the area and slowing them. Then Barats drops the firecracker onto the contaminated oil from his bag and ignites it, dealing Physical Damage to enemies within the area. The area of effect of [So-Called Teamwork] will increase when [Big Guy] reaches 6, 11, 16, 21 stacks.",
+      "iconUrl": "/raw-assets/skill_icons/barats/so_called_teamwork.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Missile \"Expert\"",
+      "description": "Barats fires two missiles at the target location, dealing 100( +75% Total Physical Attack) (Physical Damage) and slowing enemies by 40% for 1s. The missiles expel fumes from their exhausts upon landing, dealing 100( +75% Total Physical Attack) (Physical Damage) to enemies in a rectangular area and pushing them toward Barats.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Missile_\"Expert\"",
+      "tips": "Barats launches missiles to the designated area. Upon landing, a blast of flame spouts out from the rear of the missiles, dealing Physical Damage to the enemies in a straight line and pushing them toward Barats a certain distance.",
+      "iconUrl": "/raw-assets/skill_icons/barats/missile_expert.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Big Guy",
+      "description": "Detona gains a stack of (Big Guy) for 12s each time it or Barats damages an enemy with their skills (up to 10 stacks). Each stack of (Big Guy) increases Detona's size, and grants 4-10 extra Hybrid Defense (scales with the level of (Detona's Welcome)) and 5% extra Resilience. At max stacks, Detona's Basic Attacks will be replaced with (Trample), which deals ( +140% Total Physical Attack) (+4% Total HP) (Physical Damage) to enemies in a circular area, slows them by 40% for 0.2s, and refreshes the duration of (Big Guy) with each hit.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Big_Guy",
+      "tips": "Detona locks onto an enemy hero. If the target doesn't leave Detona's hunting range within the next several seconds, Detona will devour the target, suppressing the target for a while. During this period, Barats is immune to control effects and unable to move while still being able to turn direction. Then Detona spits the target out, dealing Physical Damage to the target. If the target is knocked into other enemy heroes or walls, the target and the enemy heroes that it was knocked into will take Physical Damage and be stunned. When [Big Guy] reaches 6, 11, 16, and 21 stacks respectively, the damage of [Detona's Welcome] will be increased.",
+      "iconUrl": "/raw-assets/skill_icons/barats/big_guy.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "Jungle Tempo",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Eudora",
+        "Saber",
+        "Silvanna",
+        "Chip",
+        "Alucard"
+      ],
+      "weakAgainst": [
+        "X.Borg",
+        "Gord",
+        "Marcel",
+        "Yve",
+        "Alice"
+      ],
+      "synergyWith": [
+        "Estes",
+        "Natalia",
+        "Ling",
+        "Rafaela",
+        "Helcurt"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Eudora",
+        "advantage": 5
+      },
+      {
+        "name": "Saber",
+        "advantage": 3.8
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 3.7
+      },
+      {
+        "name": "Chip",
+        "advantage": 3.4
+      },
+      {
+        "name": "Alucard",
+        "advantage": 3.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 7.1
+      },
+      {
+        "name": "Gord",
+        "advantage": 4.7
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.9
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.6
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Estes",
+        "synergy": 3
+      },
+      {
+        "name": "Natalia",
+        "synergy": 2.8
+      },
+      {
+        "name": "Ling",
+        "synergy": 2.8
+      },
+      {
+        "name": "Rafaela",
+        "synergy": 2.7
+      },
+      {
+        "name": "Helcurt",
+        "synergy": 2.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Barats counters Tank heroes that rely on CC skills, such as Belerick and Lolita, since the extra Resilience provided by his Passive will greatly reduce the duration of their CC.",
+    "weakAgainstReason": "Barats is countered by agile Marksmen who can deal high damage to Tanks, such as Karrie and Moskov, because Barats lacks mobility and his skills can be avoided, making these heroes very difficult to kill.",
+    "synergyReason": "Barats works best with Supports who can give him Movement Speed to make up for his lack of mobility, such as Mathilda and Angela."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Barats adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "Jungle Tempo",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.7,
+  "pickRate": 0.1,
+  "banRate": 0.1,
+  "heroAttributes": {
+    "durability": 100,
+    "offense": 30,
+    "abilityEffects": 90,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 80,
+    "late": 66,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Brute Force Breastplate",
+      "Dominance Ice"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Barats ramps with Big Guy stacks and becomes very hard to contest once he can reliably maintain stacks and access suppression picks with his Ultimate. He peaks in mid-game when his durability + displacement enables clean skirmish wins; late game he remains tanky but can be outscaled by DPS and kited if stacks drop."
+  },
+  "proBuilds": [
+    {
+      "player": "CALLME | JIEB",
+      "games": 1479,
+      "items": [
+        "Beast Tough Boots",
+        "War Axe",
+        "Radiant Armor",
+        "Guardian Helmet",
+        "Chastise Pauldron",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "•Blackout™•",
+      "games": 1339,
+      "items": [
+        "Tough Boots",
+        "Thunder Belt",
+        "Windtalker",
+        "Endless Battle",
+        "Brute Force Breastplate",
+        "Great Dragon Spear"
+      ]
+    },
+    {
+      "player": "TT: KING MAT",
+      "games": 737,
+      "items": [
+        "Ice Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Guardian Helmet"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/barats/video-0-0.mp4",
+    "skill1": "/videos/heroes/barats/video-1-0.mp4",
+    "skill2": "/videos/heroes/barats/video-2-0.mp4",
+    "ultimate": "/videos/heroes/barats/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3",
+        "Passive"
+      ],
+      "description": "In teamfights, use Barats' 1st Skill to maintain Big Guy stacks. Approach the enemy and use his 2nd Skill to push them close before using his Ultimate to minimize their chance of escape, then finish them off with Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, spam Barats' low Mana cost 1st Skill to build Big Guy stacks while slowing and poking the enemy. Use his 2nd Skill to push the enemy to him and hit them with Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Mathilda",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Politan",
+  "bestTeammates": [
+    {
+      "name": "Joy",
+      "winrateDelta": 4.82
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": 4.7
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 3.88
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 3.68
+    },
+    {
+      "name": "Natalia",
+      "winrateDelta": 3.54
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Aulus",
+      "winrateDelta": -5.75
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -4.95
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": -4.68
+    },
+    {
+      "name": "Martis",
+      "winrateDelta": -4.59
+    },
+    {
+      "name": "Lukas",
+      "winrateDelta": -4.5
+    }
+  ],
+  "metaScore": 13.79,
+  "metaRank": 94,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Alucard",
+        "advantage": 4.01
+      },
+      {
+        "name": "Eudora",
+        "advantage": 3.71
+      },
+      {
+        "name": "Odette",
+        "advantage": 3.53
+      },
+      {
+        "name": "Argus",
+        "advantage": 3.52
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 3.29
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 7.3
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 5.99
+      },
+      {
+        "name": "Yve",
+        "advantage": 4.99
+      },
+      {
+        "name": "Valir",
+        "advantage": 4.55
+      },
+      {
+        "name": "Gord",
+        "advantage": 3.93
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "kuat dan damage besar",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Rapid Boots",
+        "War Axe",
+        "Sky Piercer",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "cocok bermain dengan roamer support seperti Angela, Estes, Floryn dan Mathilda.",
+      "tags": [],
+      "lastUpdated": "2025-10-25T10:36:06.257685+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "barats jungle",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "War Axe",
+        "Endless Battle",
+        "Guardian Helmet",
+        "Brute Force Breastplate",
+        "Antique Cuirass"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-02-23T02:16:12.431246+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Jungler tebel",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "War Axe",
+        "Guardian Helmet",
+        "Queen's Wings",
+        "Dominance Ice",
+        "Antique Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Awal2 demeg akhirannya tebel opsional (tergantung musuh)",
+      "tags": [],
+      "lastUpdated": "2025-10-24T02:50:36.120641+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Barats exp ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "Antique Cuirass",
+        "War Axe",
+        "Radiant Armor",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Ambil skill 1 bantu jungle team buat ambil stuck barats 2 lanjut ke lane exp usahain jgn adu dlu kumpulkan stuck sampai 10 baru pedein 1vs1 udh pasti menang kalo menang,cut lane exp rusuh jungle musuh merah/biru karna barats udah kuat kalo menang level apalagi stuck nya 10 ditahan ",
+      "tags": [],
+      "lastUpdated": "2025-10-16T11:28:48.158879+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Dimakan udh hidup di base",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Dominance Ice",
+        "Guardian Helmet",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:55:58.953239+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10810,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11020,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10810,
+      "notes": null
+    }
+  ]
+}

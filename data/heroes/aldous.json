@@ -1,0 +1,678 @@
+{
+  "id": "aldous",
+  "name": "Aldous",
+  "heroName": "Aldous",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Burst",
+    "Support"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2681,
+    "hpRegen": 8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 118,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Contract: Transform",
+      "description": "After every 2 Basic Attacks, Aldous gains a 500 (+3 times the number of (Soul Steal) stacks) shield for 3s on his next Basic Attack. This effect can only be triggered once every 5s.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Contract:_Transform",
+      "tips": "After every 3 attacks, the damage dealt by Aldous' next attack will be transformed into a shield that lasts for seconds. Activates every 3 seconds.",
+      "iconUrl": "/raw-assets/skill_icons/aldous/contract_transform.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Contract: Soul Steal",
+      "description": "Aldous unleashes his inner energy to enhance his next Basic Attack to deal (Physical Damage) equal to 200( +100% Total Physical Attack) plus 5 times the number of (Soul Steal) stacks. If this attack kills an enemy hero/Siege Minion/other non-hero unit, Aldous will gain 10/10/4 stacks of (Soul Steal) (up to 650 stacks). The enhanced Basic Attack deals 300% extra Base Damage to Minions or Creeps. Aldous gets an extra 5/2 stack(s) of (Soul Steal) when a nearby enemy Siege Minion/other non-hero unit dies.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Contract:_Soul_Steal",
+      "tips": "Aldous unleashes his inner energy to strengthen the next basic attack. If this attack eliminates the enemy hero or unit, the additional damage of this skill is permanently increased. When attacking minions or monsters, the damage of strengthened basic attacks are raised.",
+      "iconUrl": "/raw-assets/skill_icons/aldous/contract_soul_steal.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Contract: Explosion",
+      "description": "Aldous assumes a defensive stance, gaining 30% Damage Reduction and 20% extra Movement Speed for 2s or until manual cancellation. He then deals 100( +20% Total Physical Attack)-200( +40% Total Physical Attack) (Physical Damage) to nearby enemies and stuns them for 0.5-1s (scales with defensive stance duration).",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Contract:_Explosion",
+      "tips": "Aldous assumes a defensive stance. During this time, Aldous is immune to basic attacks, while damage from other forms of attacks are reduced. After 1 second, he can reactivate to end it immediately, his scute will explode, dealing damage to surrounding enemy units.",
+      "iconUrl": "/raw-assets/skill_icons/aldous/contract_explosion.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Contract: Chase Fate",
+      "description": "Aldous gains vision of all enemy heroes for 5s. During this time, if Aldous uses this skill again, he can dash toward an enemy hero. When Aldous hits that enemy hero, he will deal (Physical Damage) equal to 250 plus 8% of the target's Max HP and knock back the target for 1s. (Aldous can interrupt target's Recall during the dash.)",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Contract:_Chase_Fate",
+      "tips": "Aldous gains the ability to see the positions of enemy heroes for seconds. During this time, if Aldous uses this skill a second time while it is still in effect, then he permanently sees the position of one enemy hero. When Aldous hits that enemy hero, he will deal damage and cause knock back. Ending this ability early results in a decrease in cool-down time.",
+      "iconUrl": "/raw-assets/skill_icons/aldous/contract_chase_fate.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Sun",
+        "Hanzo",
+        "Helcurt",
+        "Diggie",
+        "Xavier"
+      ],
+      "weakAgainst": [
+        "Esmeralda",
+        "Karina",
+        "Melissa",
+        "Chip",
+        "Cici"
+      ],
+      "synergyWith": [
+        "Gloo",
+        "Barats",
+        "Tigreal",
+        "Baxia",
+        "Atlas"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 4.4
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.4
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.4
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.1
+      },
+      {
+        "name": "Xavier",
+        "advantage": 2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Esmeralda",
+        "advantage": 3.1
+      },
+      {
+        "name": "Karina",
+        "advantage": 2.6
+      },
+      {
+        "name": "Melissa",
+        "advantage": 2.6
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.3
+      },
+      {
+        "name": "Cici",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Gloo",
+        "synergy": 2.8
+      },
+      {
+        "name": "Barats",
+        "synergy": 2
+      },
+      {
+        "name": "Tigreal",
+        "synergy": 1.9
+      },
+      {
+        "name": "Baxia",
+        "synergy": 1.8
+      },
+      {
+        "name": "Atlas",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Aldous is strong against heroes who cannot pressure him in the early game, so that he can easily build up the damage buff for his 1st Skill. Such as Zilong and Leomord.",
+    "weakAgainstReason": "Aldous is countered by heroes who are strong in the early game. They would make it very difficult for Aldous to build up the damage buff he needs. Heroes like Martis and Dyrroth are good examples here.",
+    "synergyReason": "Aldous works well with heroes that are strong in the early game so that he can farm efficiently, such as Balmond and Bruno."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Aldous adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.9,
+  "pickRate": 0.4,
+  "banRate": 0.5,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 30,
+    "abilityEffects": 50,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 32,
+    "mid": 58,
+    "late": 90,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Endless Battle",
+      "Blade of Despair",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Aldous is weak early because he needs time to farm Soul Steal stacks and is punishable before he has threat ranges. Mid game improves with ultimate pick potential and first damage item, but he becomes dominant late when stacks + crit/pen items let him one-shot key targets and swing Lord fights."
+  },
+  "proBuilds": [
+    {
+      "player": "Call me ᴀʟᴅᴏs",
+      "games": 979,
+      "items": [
+        "Rapid Boots",
+        "Hunter Strike",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Malefic Roar",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "FahmiメAldous",
+      "games": 440,
+      "items": [
+        "Rapid Boots",
+        "Thunder Belt",
+        "Endless Battle",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "FANTZY 969",
+      "games": 1295,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Malefic Roar",
+        "Hunter Strike",
+        "Rose Gold Meteor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/aldous/video-0-0.mp4",
+    "skill1": "/videos/heroes/aldous/video-1-0.mp4",
+    "skill2": "/videos/heroes/aldous/video-2-0.mp4",
+    "ultimate": "/videos/heroes/aldous/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 3",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, Use Aldous' Ultimate to gain vision on the enemy team, then use his Ultimate again to dash to the most vulnerable target. After the dash, use Aldous' 1st and 2nd skill combo to hit the enemy with his enhanced Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, Use Aldous' 1st Skill to enhance his next Basic Attack,\nthen his 2nd Skill to close in on the enemy to hit them with his enhanced attack. Follow with another 1st Skill to hit the enemy with another enhanced Basic Attack."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Balmond",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Bruno",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Demigod",
+  "bestTeammates": [
+    {
+      "name": "Baxia",
+      "winrateDelta": 3.2
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": 2.59
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": 1.82
+    },
+    {
+      "name": "Aulus",
+      "winrateDelta": 1.77
+    },
+    {
+      "name": "Lukas",
+      "winrateDelta": 1.44
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -7.5
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -7
+    },
+    {
+      "name": "Sora",
+      "winrateDelta": -6.99
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -6.8
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": -6.04
+    }
+  ],
+  "metaScore": 14.01,
+  "metaRank": 90,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.74
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.74
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 2.72
+      },
+      {
+        "name": "Novaria",
+        "advantage": 2.43
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Zhuxin",
+        "advantage": 3.17
+      },
+      {
+        "name": "Melissa",
+        "advantage": 2.88
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 2.51
+      },
+      {
+        "name": "Angela",
+        "advantage": 2.46
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 2.43
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Bawa late game wes kena tinju 1 hit",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Warrior Boots",
+        "Thunder Belt",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:00:22.66497+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build 1 Hit",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Malefic Roar",
+        "Hunter Strike",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-13T18:03:01.935785+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build Aldous 1 hit",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar",
+        "War Axe"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-28T10:46:16.274052+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build lifesteal ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Endless Battle",
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Haas Claws",
+        "Rose Gold Meteor",
+        "Oracle"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "hit and run",
+      "tags": [],
+      "lastUpdated": "2026-05-10T17:15:53.571865+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build 1 hit dijamin mati",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Malefic Roar",
+        "Sky Piercer",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Full stack atau diatas 500 stack ",
+      "tags": [],
+      "lastUpdated": "2026-03-07T14:30:21.234773+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11810,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Blade",
+        "Despair"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11130,
+      "notes": null
+    }
+  ]
+}

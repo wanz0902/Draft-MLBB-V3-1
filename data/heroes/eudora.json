@@ -1,0 +1,717 @@
+{
+  "id": "eudora",
+  "name": "Eudora",
+  "heroName": "Eudora",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Control",
+    "Burst"
+  ],
+  "lane": "Mid",
+  "lanes": [
+    "Mid",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2451,
+    "hpRegen": 6.8,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 101,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Superconductor",
+      "description": "Eudora's skills inflict Superconductor for 3s on non-minion units hit and can trigger additional effects against enemies affected by Superconductor.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Superconductor",
+      "tips": "Skill gives the target a Superconductor effect which will amplify the effects of other abilities.",
+      "iconUrl": "/raw-assets/skill_icons/eudora/superconductor.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Forked Lightning",
+      "description": "Eudora casts Forked Lightning in a fan-shaped area, dealing 275 (+100% Total Magic Power) Magic Damage (increased to 200% against minions) to enemies within.\nWhen hitting targets affected by Superconductor, Eudora forms a lightning chain with the target, gaining 40% Movement Speed during the chain for up to 1s.\nThe lightning chain deals 10 (+4% Total Magic Power) Magic Damage over time and an additional 275 (+100% Total Magic Power) Magic Damage when it ends. If this hit lands, it reduces this skill's cooldown by 1.5%.",
+      "cooldown": "5.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+100% Total Magic Power)",
+        "(+4% Total Magic Power)",
+        "(+100% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "66",
+            "72",
+            "78",
+            "84",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "275",
+            "320",
+            "365",
+            "410",
+            "455",
+            "500"
+          ]
+        },
+        {
+          "label": "Trigger Damage",
+          "values": [
+            "10",
+            "12",
+            "14",
+            "16",
+            "18",
+            "20"
+          ]
+        },
+        {
+          "label": "Delayed Damage",
+          "values": [
+            "275",
+            "320",
+            "365",
+            "410",
+            "455",
+            "500"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Forked_Lightning",
+      "tips": "Use Skill 2 first before using skill 1, this will reduce their magic resistance, allowing skill 1 to do more damage.",
+      "iconUrl": "/raw-assets/skill_icons/eudora/forked_lightning.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Ball Lightning",
+      "description": "Eudora hurls an orb of lightning at the target enemy, reducing their Magic Defense by 10 for 1.8s, dealing them 300 (+50% Total Magic Power) Magic Damage, and stunning them for 1s.\nIf the target is affected by Superconductor, the lightning orb reduces the Magic Defense of nearby enemies, deals AOE damage centered on the target, and stuns all nearby enemies.",
+      "cooldown": "11.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "11.0",
+            "10.5",
+            "10.0",
+            "9.5",
+            "9.0",
+            "8.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "85",
+            "90",
+            "95",
+            "100",
+            "105"
+          ]
+        },
+        {
+          "label": "Magic Defense Reduction",
+          "values": [
+            "10",
+            "13",
+            "16",
+            "19",
+            "22",
+            "25"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ball_Lightning",
+      "tips": "When being ganked or helping out teammates, you can try using Skill 1 first before skill 2 so the stun lasts longer.",
+      "iconUrl": "/raw-assets/skill_icons/eudora/ball_lightning.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Thunder's Wrath",
+      "description": "Eudora calls down a blast of lightning on the target area, dealing 600 (+160% Total Magic Power) Magic Damage to targets at the center. Then it strikes targets outside the center, dealing 300 (+100% Total Magic Power) Magic Damage.\nEvery time Thunder's Wrath hit a target affected by Superconductor, it triggers a Thunderburst centered on the Superconductor target after a short delay, dealing 330 (+110% Total Magic Power) Magic Damage.",
+      "cooldown": "32.0",
+      "manaCost": "130",
+      "damageType": "Magic",
+      "scaling": [
+        "(+160% Total Magic Power)",
+        "(+100% Total Magic Power)",
+        "(+110% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "32.0",
+            "29.0",
+            "26.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "130",
+            "160",
+            "190"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "600",
+            "800",
+            "1000"
+          ]
+        },
+        {
+          "label": "Delayed Damage",
+          "values": [
+            "300",
+            "400",
+            "500"
+          ]
+        },
+        {
+          "label": "Diffusion Damage",
+          "values": [
+            "330",
+            "440",
+            "550"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Thunder’s_Wrath",
+      "tips": "Best to use after casting other spells, for maximum damage potential.",
+      "iconUrl": "/raw-assets/skill_icons/eudora/thunder_s_wrath.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Joy",
+        "Natalia",
+        "Rafaela",
+        "Floryn",
+        "Irithel"
+      ],
+      "weakAgainst": [
+        "Barats",
+        "Atlas",
+        "Leomord",
+        "Johnson",
+        "Baxia"
+      ],
+      "synergyWith": [
+        "Mathilda",
+        "Rafaela",
+        "Harley",
+        "Novaria",
+        "Aulus"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Joy",
+        "advantage": 3.6
+      },
+      {
+        "name": "Natalia",
+        "advantage": 3.2
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 2.6
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.6
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 5
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.3
+      },
+      {
+        "name": "Leomord",
+        "advantage": 2.8
+      },
+      {
+        "name": "Johnson",
+        "advantage": 2.5
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Mathilda",
+        "synergy": 1.5
+      },
+      {
+        "name": "Rafaela",
+        "synergy": 1.4
+      },
+      {
+        "name": "Harley",
+        "synergy": 1.4
+      },
+      {
+        "name": "Novaria",
+        "synergy": 1.3
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Eudora possesses strong targeted CC and burst capabilities, allowing her to keep squishy heroes like Moskov and Obsidia in check.",
+    "weakAgainstReason": "Eudora lacks self-preservation and struggles against dive heroes or Assassins who can negate targeted CC, such as Hayabusa and Kadita.",
+    "synergyReason": "Eudora's skills can deal massive AOE damage, so pairing her with heroes who can group enemies, like Diggie and Tigreal, will make it easier to maximize her damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Eudora adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.9,
+  "pickRate": 0.8,
+  "banRate": 2.5,
+  "heroAttributes": {
+    "durability": 10,
+    "offense": 80,
+    "abilityEffects": 80,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 60,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Arcane Boots",
+      "Genius Wand",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Eudora becomes lethal once she has reliable stun + burst rotations, peaking around mid-game when picks decide Turtle fights. Late game her damage is still high but becomes less consistent versus defensive items and tighter positioning/vision."
+  },
+  "proBuilds": [
+    {
+      "player": "ϯ℮rpຣ༏chঌra",
+      "games": 524,
+      "items": [
+        "Magic Shoes",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Garu",
+      "games": 653,
+      "items": [
+        "Rapid Boots",
+        "Sky Piercer",
+        "Blood Wings",
+        "Starlium Scythe",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "ဘာလဲဟ",
+      "games": 814,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Immortality"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/eudora/video-0-0.mp4",
+    "skill1": "/videos/heroes/eudora/video-1-0.mp4",
+    "skill2": "/videos/heroes/eudora/video-2-0.mp4",
+    "ultimate": "/videos/heroes/eudora/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, use Eudora's 1st Skill to apply Superconductor to enemy heroes, then cast 2nd Skill on the right target for an AOE stun, and follow up with her Ultimate for a massive burst to the stunned heroes. Finally, use her 1st Skill again to finish off the enemy."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "During the laning phase, start with Eudora's 2nd Skill to stun the enemy hero and apply Superconductor, then follow with her Ultimate, and center it over the enemy for massive damage. Finish with her 1st Skill to link with the enemy and finish them off."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Diggie",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Northern Vale",
+  "race": "Light Elf",
+  "bestTeammates": [
+    {
+      "name": "Faramis",
+      "winrateDelta": 3.78
+    },
+    {
+      "name": "Novaria",
+      "winrateDelta": 2.26
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": 1.89
+    },
+    {
+      "name": "Aurora",
+      "winrateDelta": 1.61
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 1.54
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -7.75
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": -5.76
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -5.42
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": -3.93
+    },
+    {
+      "name": "Odette",
+      "winrateDelta": -2.53
+    }
+  ],
+  "metaScore": 14.95,
+  "metaRank": 84,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.09
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.77
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.46
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.43
+      },
+      {
+        "name": "Gusion",
+        "advantage": 2.21
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.71
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 3.37
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.36
+      },
+      {
+        "name": "Minotaur",
+        "advantage": 2.66
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.53
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Ke bush siap siap aja balik ke base",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T07:53:16.812386+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "one hit",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Genius Wand",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-02-19T04:31:25.511348+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Holy",
+        "Crystal"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12010,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Winter",
+        "Crown"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11700,
+      "notes": null
+    }
+  ]
+}

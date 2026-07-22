@@ -1,0 +1,755 @@
+{
+  "id": "cecilion",
+  "name": "Cecilion",
+  "heroName": "Cecilion",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Poke",
+    "Burst"
+  ],
+  "lane": "Mid",
+  "lanes": [
+    "Mid",
+    "Gold"
+  ],
+  "flex_lanes": [
+    "Gold"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2480,
+    "hpRegen": 7,
+    "mana": 520,
+    "manaRegen": 4.2,
+    "physicalAttack": 96,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Overflowing",
+      "description": "Cecilion gains 10 extra Max Mana and recovers 10 Mana each time his skill hits an enemy. Cooldown: 1s.\nCecilion has higher Max Mana and Mana Regen, and his skill damage scales with his Max Mana.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Overflowing",
+      "tips": "With this Skill, Cecilion’s power accumulates with each attack. With enough mana accumulated, he can consistently poke out with his first Skill.",
+      "iconUrl": "/raw-assets/skill_icons/cecilion/overflowing.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Bat Impact",
+      "description": "Cecilion commands a giant bat to dive at the target location, gaining 30% extra Movement Speed for 1s, dealing 85 (+70% Total Magic Power) (+7% Total Mana) Magic Damage to enemies in its path. The bat also deals 170 (+140% Total Magic Power) (+14% Total Mana) extra Magic Damage to those near the landing point, and applies Overflowing effect once.\nEach subsequent cast within 6s increases this skill's Mana cost by 1.5 times (up to 4 stacks).",
+      "cooldown": "1.5",
+      "manaCost": "75",
+      "damageType": "Magic",
+      "scaling": [
+        "(+70% Total Magic Power)",
+        "(+7% Total Mana)",
+        "(+140% Total Magic Power)",
+        "(+14% Total Mana)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "85",
+            "102",
+            "119",
+            "136",
+            "153",
+            "170"
+          ]
+        },
+        {
+          "label": "Destination Damage",
+          "values": [
+            "170",
+            "204",
+            "238",
+            "272",
+            "306",
+            "340"
+          ]
+        },
+        {
+          "label": "Mana Cost",
+          "values": [
+            "1.5",
+            "1.56",
+            "1.62",
+            "1.68",
+            "1.74",
+            "1.8"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Bat_Impact",
+      "tips": "This Skill’s CD is very short and the Skill DMG is very high. However, due to the doubled mana consumption, in Early to Mid Game, please pay attention to the stacks and your mana left. Meanwhile, use this Skill correctly to increase Cecillion's movement speed. Proper use will enable him to escape or chase after enemies more easily.",
+      "iconUrl": "/raw-assets/skill_icons/cecilion/bat_impact.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Sanguine Claws",
+      "description": "Cecilion summons a pair of opposing claws at the target location that will clasp together after a short delay, pulling enemies in their paths to the center while dealing them 200 (+45% Total Magic Power) (+1.2% Total Mana) Magic Damage and immobilizing them for 1s.",
+      "cooldown": "12.0",
+      "manaCost": "95",
+      "damageType": "Magic",
+      "scaling": [
+        "(+45% Total Magic Power)",
+        "(+1.2% Total Mana)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.2",
+            "10.4",
+            "9.6",
+            "8.8",
+            "8.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "95",
+            "100",
+            "105",
+            "110",
+            "115",
+            "120"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "220",
+            "240",
+            "260",
+            "280",
+            "300"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Sanguine_Claws",
+      "tips": "This Skill can generate powerful crowd control effects. Combined with his first skill, Cecilion can deal massive damage with a proper skill combo.",
+      "iconUrl": "/raw-assets/skill_icons/cecilion/sanguine_claws.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Bats Feast",
+      "description": "Cecilion unleashes his Blood Demon power, gaining 60% extra Movement Speed (decays over the duration) and Slow Immunity for 1.5s. Meanwhile, he fires 36 bolts of blood energy at nearby enemies, each dealing 35 (+8% Total Magic Power) (+0.3% Total Mana) Magic Damage to the enemy hit and slowing them by 3% (up to 30%) for 1s.\nEach bolt also restores 10 plus 1% of Cecilion's lost HP for him on hit.",
+      "cooldown": "44.0",
+      "manaCost": "150",
+      "damageType": "Magic",
+      "scaling": [
+        "(+8% Total Magic Power)",
+        "(+0.3% Total Mana)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "44.0",
+            "41.0",
+            "38.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "150",
+            "200",
+            "250"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "35",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "label": "HP Regen",
+          "values": [
+            "10",
+            "12.5",
+            "15"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Bats_Feast",
+      "tips": "This Skill is extremely powerful. When chasing after enemies, Cecilion can use it to effectively slow enemies down and also deal extra damage. Also, he can escape from tight spots with it, thanks to the Lifesteal effect and extra Movement Speed granted.",
+      "iconUrl": "/raw-assets/skill_icons/cecilion/bats_feast.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    },
+    "extra1": {
+      "name": "Moonlit Waltz",
+      "description": "When Carmilla is nearby, Cecilion can summon her to become a Vermil Shadow around him, granting him a 520-800 shield (scales with Carmilla's level).\nCarmilla can choose to leave Cecilion and charge at the target location, gaining an equal shield while dealing 520-800 Magic Damage (scales with level) to nearby enemies and slowing them by 30% for 1s.",
+      "cooldown": "45.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Shield",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Moonlit_Waltz",
+      "displayLabel": "Extra Skill",
+      "skillSlot": "extra1",
+      "iconUrl": "/raw-assets/skill_icons/cecilion/moonlit_waltz.png"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Barats",
+        "Faramis",
+        "Edith",
+        "Diggie"
+      ],
+      "weakAgainst": [
+        "Hayabusa"
+      ],
+      "synergyWith": [
+        "Harley",
+        "Carmilla",
+        "Valentina",
+        "Masha",
+        "Balmond"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.3
+      },
+      {
+        "name": "Barats",
+        "advantage": 1.7
+      },
+      {
+        "name": "Faramis",
+        "advantage": 1.4
+      },
+      {
+        "name": "Edith",
+        "advantage": 1.4
+      },
+      {
+        "name": "Diggie",
+        "advantage": 1.3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Hayabusa",
+        "advantage": 1.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harley",
+        "synergy": 1.4
+      },
+      {
+        "name": "Carmilla",
+        "synergy": 1.3
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.1
+      },
+      {
+        "name": "Masha",
+        "synergy": 0.9
+      },
+      {
+        "name": "Balmond",
+        "synergy": 0.9
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Cecilion counters less mobile Fighters like Balmond and Terizla because these heroes have a hard time getting close to Cecilion while Cecilion can more easily hit them with his skills.",
+    "weakAgainstReason": "Cecilion is countered by Assassins who can quickly close the gap like Ling and Fanny because Cecilion lacks defensive tools and his normal skills cannot hit enemies in melee range.",
+    "synergyReason": "Cecilion works well with Tanks with sustained CC abilities, such as Carmilla and Minotaur, since their CC can help Cecilion land his skills."
+  },
+  "mechanicCategory": [
+    "Stacking",
+    "Linked Hero"
+  ],
+  "mechanicNote": "Cecilion mendapat stack permanent dari skill 1 yang meningkatkan damage tanpa batas, dan bisa link dengan Carmilla.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.3,
+  "pickRate": 0.6,
+  "banRate": 0.2,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 100,
+    "abilityEffects": 50,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 35,
+    "mid": 65,
+    "late": 90,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Cecilion is weak early because he needs mana stacks and items before his poke becomes oppressive, and his repeated S1 casts are gated by rising mana costs. Once mid game stacking and first cores come online he becomes a strong siege/teamfight mage, and late game his max-mana scaling makes his burst/poke dominant from long range."
+  },
+  "proBuilds": [
+    {
+      "player": "Wanh Cranél",
+      "games": 971,
+      "items": [
+        "Lightning Truncheon",
+        "Demon Shoes",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "More x Brilliance",
+      "games": 1286,
+      "items": [
+        "Demon Shoes",
+        "Clock of Destiny",
+        "Starlium Scythe",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "only solo queue",
+      "games": 1142,
+      "items": [
+        "Holy Crystal",
+        "Clock of Destiny",
+        "Glowing Wand",
+        "Blood Wings",
+        "Rose Gold Meteor",
+        "Queen's Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/cecilion/video-0-0.mp4",
+    "skill1": "/videos/heroes/cecilion/video-1-0.mp4",
+    "skill2": "/videos/heroes/cecilion/video-2-0.mp4",
+    "ultimate": "/videos/heroes/cecilion/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, initiate with Cecilion's Ultimate to slow the enemy, then hit them with his 1st Skill. When the time is right, pull the enemies together using his 2nd Skill and spam his 1st Skill for damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Cecilion's 2nd Skill to pull enemies together, then repeatedly hit them with his 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Carmilla",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Blood Demon",
+  "bestTeammates": [
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 5.16
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 2.51
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 2.02
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.97
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 1.64
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": -8.89
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -7.28
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -6.89
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -5.53
+    },
+    {
+      "name": "Pharsa",
+      "winrateDelta": -4.64
+    }
+  ],
+  "metaScore": 14.4,
+  "metaRank": 87,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Kaja",
+        "advantage": 3.13
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.05
+      },
+      {
+        "name": "Kagura",
+        "advantage": 1.92
+      },
+      {
+        "name": "Brody",
+        "advantage": 1.86
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 1.85
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 2.24
+      },
+      {
+        "name": "Yin",
+        "advantage": 1.81
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.49
+      },
+      {
+        "name": "Irithel",
+        "advantage": 1.39
+      },
+      {
+        "name": "Yve",
+        "advantage": 1.36
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "cecill",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Demon Shoes",
+        "Glowing Wand",
+        "Elegant Gem",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "intinya enak lah",
+      "tags": [],
+      "lastUpdated": "2025-09-13T22:26:49.577294+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Bawa late game udh rasain aja",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Clock of Destiny",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T05:30:52.348212+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : AURORA.Yue",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Demon Shoes",
+        "Clock of Destiny",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 2",
+      "tags": [],
+      "lastUpdated": "2025-10-28T04:15:42.930437+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build glory perbatasan ",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Glowing Wand",
+        "Demon Shoes",
+        "Clock of Destiny",
+        "Wishing Lantern",
+        "Blood Wings",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Purify",
+      "skillOrder": null,
+      "notes": "Build untuk bermain aman",
+      "tags": [],
+      "lastUpdated": "2025-09-14T11:37:31.375977+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Demon",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12070,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Demon",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11120,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Demon",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12100,
+      "notes": null
+    }
+  ]
+}

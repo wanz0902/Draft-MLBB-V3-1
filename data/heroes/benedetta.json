@@ -1,0 +1,797 @@
+{
+  "id": "benedetta",
+  "name": "Benedetta",
+  "heroName": "Benedetta",
+  "role": [
+    "Assassin",
+    "Fighter"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2540,
+    "hpRegen": 7.4,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 130,
+    "physicalDefense": 19,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 255
+  },
+  "skills": {
+    "passive": {
+      "name": "Elapsed Daytime",
+      "description": "When holding down the (Basic Attack) button, Benedetta enters the Swordout state and charges up Sword Intent. If the (Basic Attack) button is released after the Sword Intent is fully charged, Benedetta will use Swordout Slash in (the direction she's facing) and dash forward, dealing ( +215% Total Physical Attack) (Physical Damage) to enemies on the path (counts as Skill Damage and is reduced to 50% on Minions and Creeps). Benedetta can only use Swordout Slash when her Sword Intent is fully charged and she is in Swordout state by holding down the (Basic Attack) button. Benedetta also gains Sword Intent by dealing damage with her Basic Attacks and skills.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(215% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Elapsed_Daytime",
+      "tips": "When holding down the [Basic Attack] button, Benedetta enters the Swordout state and keeps gathering the Sword Intent. If releasing the [Basic Attack] button after the Sword Intent is fully charged, Benedetta will use Swordout Slash in [the direction she's facing] and dash forward, dealing [Physical Damage] (identified as Skill Damage) to enemies on the path. Only when Benedetta is in Swordout state and her Sword Intent is fully charged by holding down the [Basic Attack] button, she can release the Swordout Slash. Benedetta can also gain Sword Intent when dealing damage via Basic Attack and Skills.",
+      "iconUrl": "/raw-assets/skill_icons/benedetta/elapsed_daytime.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Phantom Slash",
+      "description": "Benedetta withdraws swiftly and leaves a shadow in front. After a short delay, her shadow slashes forward in a fan-shaped area, dealing 200 (+75% Total Physical Attack) Physical Damage and slowing the enemies by 60% for 0.5s.\nMeanwhile, Benedetta dashes forward to slash, dealing 75 (+100% Total Physical Attack) Physical Damage. (If the target is hit by her shadow, damage caused by Benedetta herself will increase to 200%).",
+      "cooldown": "10.0",
+      "manaCost": "55",
+      "damageType": "Physical",
+      "scaling": [
+        "(+75% Total Physical Attack)",
+        "(+100% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "10.0",
+            "9.3",
+            "8.6",
+            "7.9",
+            "7.2",
+            "6.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "55",
+            "61",
+            "67",
+            "73",
+            "79",
+            "85"
+          ]
+        },
+        {
+          "label": "Shadow Damage",
+          "values": [
+            "200",
+            "240",
+            "280",
+            "320",
+            "360",
+            "400"
+          ]
+        },
+        {
+          "label": "Slash Damage",
+          "values": [
+            "75",
+            "100",
+            "125",
+            "150",
+            "175",
+            "200"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Phantom_Slash",
+      "tips": "Benedetta withdraws swiftly and leaves a shadow in front. After a short delay, her shadow slashes forward in a fan-shaped area, dealing [Physical Damage] and slowing the enemies. Meanwhile, Benedetta dashes forward to slash, dealing [Physical Damage]. (If the target is hit by her shadow, damage caused by Benedetta herself will increase.)",
+      "iconUrl": "/raw-assets/skill_icons/benedetta/phantom_slash.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "An Eye for An Eye",
+      "description": "Benedetta raises her weapon to defend, gaining Control Immunity and blocking damage from any source for 0.8s. After this, she stabs in the designated direction, dealing 300 (+80% Total Physical Attack) Physical Damage.\nIf Benedetta successfully fends off any damage while defending, she will gain full Sword Intent. If she fends off any control effects, her subsequent stab stuns the target for 1.5s.",
+      "cooldown": "15.0",
+      "manaCost": "100",
+      "damageType": "Physical",
+      "scaling": [
+        "(+80% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "15.0",
+            "14.4",
+            "13.8",
+            "13.2",
+            "12.6",
+            "12.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "100",
+            "105",
+            "110",
+            "115",
+            "120",
+            "125"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "330",
+            "360",
+            "390",
+            "420",
+            "450"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "An_Eye_for_An_Eye",
+      "tips": "Benedetta raises her weapon to defend, gains Control Immunity and blocks damage from any source in a few seconds. After defense, she stabs in a designated direction, dealing [Physical Damage]. If Benedetta defends a CC effect successfully during defense, she will gain full Sword Intent and stun the target.",
+      "iconUrl": "/raw-assets/skill_icons/benedetta/an_eye_for_an_eye.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Alecto: Final Blow",
+      "description": "Benedetta clenches Alecto, dashes forward (Benedetta is untargetable during the dash), and performs a slash after a short delay, detonating the Sword Intent along the path. For 2.5s, the Sword Intent deals up to a total of 1560 (+1105% Total Physical Attack) Physical Damage to enemies within and slows them by 50%.",
+      "cooldown": "45.0",
+      "manaCost": "110",
+      "damageType": "Physical",
+      "scaling": [
+        "(+1105% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "45.0",
+            "40.0",
+            "35.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "110",
+            "135",
+            "160"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "1560",
+            "1820",
+            "2080"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Alecto:_Final_Blow",
+      "tips": "Benedetta clenches Alecto and slashes forward after a short delay (invincible while dashing), slowing all targets on the path. After dashing, Benedetta detonates the Sword Intent on the path, strangling the enemy with the Sword Intent for 2.5s, dealing [Physical Damage] and slowing the enemy.",
+      "iconUrl": "/raw-assets/skill_icons/benedetta/alecto_final_blow.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Alpha",
+        "X.Borg",
+        "Atlas",
+        "Silvanna",
+        "Baxia"
+      ],
+      "weakAgainst": [
+        "Phoveus",
+        "Obsidia",
+        "Irithel",
+        "Bruno",
+        "Masha"
+      ],
+      "synergyWith": [
+        "Fredrinn",
+        "Aulus",
+        "Baxia",
+        "Alucard",
+        "Wanwan"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Alpha",
+        "advantage": 4.4
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.6
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.3
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 3.1
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Phoveus",
+        "advantage": 3.5
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.9
+      },
+      {
+        "name": "Bruno",
+        "advantage": 2.9
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Fredrinn",
+        "synergy": 1.5
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.4
+      },
+      {
+        "name": "Baxia",
+        "synergy": 1.4
+      },
+      {
+        "name": "Alucard",
+        "synergy": 1.3
+      },
+      {
+        "name": "Wanwan",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Benedetta's 2nd Skill can effectively block enemy CC, making her a great counter to heroes with predictable CC skills, such as Jawhead and Guinevere.",
+    "weakAgainstReason": "Benedetta is countered by heroes with skills that shutdown mobility skills, such as Minsitthar and Phoveus, since all of Benedetta's skills are considered mobility.",
+    "synergyReason": "Benedetta works well with strong CC initiators, like Johnson and Gatotkaca, because they allow her to maximize the effects of her Ultimate."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Benedetta adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.9,
+  "pickRate": 0.5,
+  "banRate": 0.9,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 50,
+    "abilityEffects": 20,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 75,
+    "mid": 80,
+    "late": 65,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "Blade of Despair",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Benedetta is oppressive early with repeated Sword Intent dashes for trades and wave control, and she spikes notably once Ultimate unlocks for lethal rotations and teamfight zoning. Late game she remains threatening, but becomes more execution-reliant versus coordinated peel and high-defense frontlines."
+  },
+  "proBuilds": [
+    {
+      "player": "❖ᴛʜᴇᴀ.",
+      "games": 1014,
+      "items": [
+        "Blade of the Heptaseas",
+        "Rose Gold Meteor",
+        "Hunter Strike",
+        "Queen's Wings",
+        "Malefic Roar",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "ma chérie, keith",
+      "games": 1222,
+      "items": [
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Sea Halberd",
+        "Blade of Despair",
+        "Malefic Roar",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "Fang Yuan x EXTRA",
+      "games": 835,
+      "items": [
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Rose Gold Meteor",
+        "Endless Battle",
+        "Malefic Roar",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/benedetta/video-0-0.mp4",
+    "skill1": "/videos/heroes/benedetta/video-1-0.mp4",
+    "skill2": "/videos/heroes/benedetta/video-2-0.mp4",
+    "ultimate": "/videos/heroes/benedetta/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, gather Sword Intent by holding Benedetta's Basic Attack button, then use Swordout Slash after Sword Intent is maxed to strike the enemy. Follow up with her 1st Skill and try to max out Sword Intent again by blocking the enemy's attack with her 2nd Skill, then end the combo with another Swordout Slash."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 3",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Swordout Slash to get close to the enemy, then use Benedetta's Ultimate where the enemy is clustered, and follow up with her 1st Skill for additional damage and 2nd Skill to block incoming CC."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Aulus",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Brody",
+      "relationship": "ALLY"
+    },
+    {
+      "name": "Johnson",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "The Barren Lands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": 4.45
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": 3.23
+    },
+    {
+      "name": "Aulus",
+      "winrateDelta": 3.11
+    },
+    {
+      "name": "Wanwan",
+      "winrateDelta": 2.87
+    },
+    {
+      "name": "Bane",
+      "winrateDelta": 2.66
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Uranus",
+      "winrateDelta": -3.67
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": -3.27
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -2.97
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": -2.86
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": -2.55
+    }
+  ],
+  "metaScore": 18.44,
+  "metaRank": 46,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 4.45
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.19
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 3.05
+      },
+      {
+        "name": "Alpha",
+        "advantage": 2.65
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 2.61
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Bruno",
+        "advantage": 4.77
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 4.07
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.97
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 3.61
+      },
+      {
+        "name": "Ling",
+        "advantage": 2.98
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Build Bened R7",
+      "author": "community",
+      "votes": 21,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Endless Battle",
+        "Rose Gold Meteor",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "untuk gameplaynya bisa liat di yt R7 ",
+      "tags": [],
+      "lastUpdated": "2025-10-21T10:48:08.387207+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Benedetta POIZY",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Endless Battle",
+        "Sea Halberd",
+        "Blade of Despair",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Best option for Exp Damage",
+      "tags": [],
+      "lastUpdated": "2025-09-13T09:21:34.449183+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build sustain war ",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "War Axe",
+        "Warrior Boots",
+        "Thunder Belt",
+        "Brute Force Breastplate",
+        "Hunter Strike",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Tank item",
+      "tags": [],
+      "lastUpdated": "2025-11-14T10:51:37.695994+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Full damage",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Blade of the Heptaseas",
+        "Warrior Boots",
+        "Sky Piercer",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Full damage",
+      "tags": [],
+      "lastUpdated": "2025-11-14T10:53:22.353606+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Arfy MPL S16 Playoff D-2",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Endless Battle",
+        "Malefic Roar",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-30T07:39:11.454083+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 11070,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 10710,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11070,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,780 @@
+{
+  "id": "zilong",
+  "name": "Zilong",
+  "heroName": "Zilong",
+  "role": [
+    "Fighter",
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Damage"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2581,
+    "hpRegen": 7.4,
+    "mana": 430,
+    "manaRegen": 3.2,
+    "physicalAttack": 124,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.05",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 265
+  },
+  "skills": {
+    "passive": {
+      "name": "Dragon Flurry",
+      "description": "After dealing damage 3 time(s) with Basic Attacks or skills, Zilong triggers Dragon Flurry on the next Basic Attack, hitting the target 3 time(s). Each hit deals 80 (+30% Total Physical Attack) Basic Attack Damage and heals himself for 50 (+20% Total Physical Attack) HP.\nZilong's Basic Attack deals 100 (+80% Total Physical Attack) Physical Damage.\nIf the target's HP is below 50%, all damage dealt by Zilong's skills and Basic Attacks is increased by 30.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+30% Total Physical Attack)",
+        "(+20% Total Physical Attack)",
+        "(+80% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Heal"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dragon_Flurry",
+      "tips": "During early laning phase, attack enemy minions to trigger his passive ability that allows him to attack the hero behind minions",
+      "iconUrl": "/raw-assets/skill_icons/zilong/dragon_flurry.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Spear Flip",
+      "description": "Zilong flings the target enemy over his head, dealing 250 (+80% Total Physical Attack) Physical Damage.",
+      "cooldown": "12.0",
+      "manaCost": "80",
+      "damageType": "Physical",
+      "scaling": [
+        "(+80% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.5",
+            "11.0",
+            "10.5",
+            "10.0",
+            "9.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "85",
+            "90",
+            "95",
+            "100",
+            "105"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "270",
+            "290",
+            "310",
+            "330",
+            "350"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spear_Flip",
+      "tips": "Early laning phase, wait for enemy soldiers to push to tower, and when soldiers are gone, try to hook enemy into tower",
+      "iconUrl": "/raw-assets/skill_icons/zilong/spear_flip.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Spear Strike",
+      "description": "Zilong lunges at the target enemy, dealing 250 (+60% Total Physical Attack) Physical Damage and reducing their Physical Defense by 15 for 2s.\nThe cooldown of Spear Strike is reset each time Zilong kills an enemy.",
+      "cooldown": "12.0",
+      "manaCost": "40",
+      "damageType": "Physical",
+      "scaling": [
+        "(+60% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.4",
+            "10.8",
+            "10.2",
+            "9.6",
+            "9.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "290",
+            "330",
+            "370",
+            "410",
+            "450"
+          ]
+        },
+        {
+          "label": "Physical Defense Reduction",
+          "values": [
+            "15",
+            "18",
+            "21",
+            "24",
+            "27",
+            "30"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Debuff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spear_Strike",
+      "tips": "Use with 1st skill, otherwise can be used to jump walls for escape, such as using enemy jungle minions.",
+      "iconUrl": "/raw-assets/skill_icons/zilong/spear_strike.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Supreme Warrior",
+      "description": "Zilong removes all slow effects on himself and gains 40% Movement Speed, 35% Attack Speed, and Slow Immunity for 7.5s.\nFor the duration, he can trigger Dragon Flurry after every 2 Basic Attacks (instead of the previous 3).",
+      "cooldown": "35.0",
+      "manaCost": "120",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "35.0",
+            "31.0",
+            "27.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "140",
+            "160"
+          ]
+        },
+        {
+          "label": "Attack Speed Bonus",
+          "values": [
+            "35%",
+            "45%",
+            "55%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Speed Up",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Supreme_Warrior",
+      "tips": "Can be used to chase enemies or to run away. Can be used on cast to remove crowd control.",
+      "iconUrl": "/raw-assets/skill_icons/zilong/supreme_warrior.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "X.Borg",
+        "Diggie",
+        "Joy",
+        "Moskov",
+        "Karrie"
+      ],
+      "weakAgainst": [
+        "Eudora",
+        "Popol and Kupa",
+        "Karina",
+        "Johnson",
+        "Tigreal"
+      ],
+      "synergyWith": [
+        "Gloo",
+        "Belerick",
+        "Baxia",
+        "Tigreal",
+        "Barats"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 2.8
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.8
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.4
+      },
+      {
+        "name": "Moskov",
+        "advantage": 2.4
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Eudora",
+        "advantage": 2.5
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.4
+      },
+      {
+        "name": "Karina",
+        "advantage": 2.4
+      },
+      {
+        "name": "Johnson",
+        "advantage": 2.4
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 2.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Gloo",
+        "synergy": 2.6
+      },
+      {
+        "name": "Belerick",
+        "synergy": 2.1
+      },
+      {
+        "name": "Baxia",
+        "synergy": 1.7
+      },
+      {
+        "name": "Tigreal",
+        "synergy": 1.7
+      },
+      {
+        "name": "Barats",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "The immunity to Slow effects that Zilong gets from his Ultimate makes him strong against squishy heroes without CC skills, such as Layla and Lylia.",
+    "weakAgainstReason": "Zilong is still vulnerable to non-slow CC skills, making him weak against heroes with powerful single-target CC skills, such as Franco and Nana.",
+    "synergyReason": "Zilong works best with heroes with strong defensive abilities that can hold off enemy attacks while he solos the lane, such as Pharsa and Hanabi."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Zilong adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.3,
+  "pickRate": 0.9,
+  "banRate": 0.7,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 50,
+    "abilityEffects": 60,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 60,
+    "late": 80,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Windtalker",
+      "Berserker's Fury",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Early lane is exploitable because he needs levels/items to stick and win extended trades, despite having pick tools (Spear Strike/Flip). He becomes much more threatening after Lv4 with Supreme Warrior for chase and faster passive procs, and late-game he spikes hard with crit/attack-speed items to delete squishies and split-push at high tempo."
+  },
+  "proBuilds": [
+    {
+      "player": "Veng Leng",
+      "games": 519,
+      "items": [
+        "Sky Piercer",
+        "Rapid Boots",
+        "Windtalker",
+        "Corrosion Scythe",
+        "Great Dragon Spear",
+        "Berserker's Fury"
+      ]
+    },
+    {
+      "player": "Ƈɦɑŕdtɑrɖy",
+      "games": 1173,
+      "items": [
+        "Warrior Boots",
+        "Windtalker",
+        "Haas' Claws",
+        "Berserker's Fury",
+        "Great Dragon Spear",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "NENAWI",
+      "games": 775,
+      "items": [
+        "Windtalker",
+        "Haas' Claws",
+        "Berserker's Fury",
+        "Great Dragon Spear",
+        "Rose Gold Meteor",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/zilong/video-0-0.mp4",
+    "skill1": "/videos/heroes/zilong/video-1-0.mp4",
+    "skill2": "/videos/heroes/zilong/video-2-0.mp4",
+    "ultimate": "/videos/heroes/zilong/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, activate Zilong's Ultimate to gain Movement and Attack Speed bonus before charging at the target enemy with his 2nd Skill. Cast his 1st Skill after closing in on the enemy and follow up with Basic Attacks to trigger the Passive effects."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, Zilong should use his 2nd Skill to close in on the target enemy and lower their Defenses, then lift the target over his back with his 1st Skill, and spam Basic Attacks to trigger more Passive effects."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Pharsa",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Hanabi",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Kaja",
+      "winrateDelta": 3.27
+    },
+    {
+      "name": "Gloo",
+      "winrateDelta": 1.57
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": 1.56
+    },
+    {
+      "name": "Akai",
+      "winrateDelta": 1.34
+    },
+    {
+      "name": "Belerick",
+      "winrateDelta": 1.31
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -3.79
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -3.75
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": -3.45
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -3.12
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": -3.11
+    }
+  ],
+  "metaScore": 12.03,
+  "metaRank": 103,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Fanny",
+        "advantage": 3.5
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.46
+      },
+      {
+        "name": "Cici",
+        "advantage": 2.77
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.57
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.52
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Eudora",
+        "advantage": 2.46
+      },
+      {
+        "name": "Karina",
+        "advantage": 2.4
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.11
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 1.9
+      },
+      {
+        "name": "Tigreal",
+        "advantage": 1.88
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "one hit/new",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Swift Boots",
+        "Blade of the Heptaseas",
+        "Windtalker",
+        "Berserker Fury",
+        "Demon Hunter Sword",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "racikan saya sendiri hehe",
+      "tags": [],
+      "lastUpdated": "2025-10-23T18:42:15.803038+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Zilong Racing",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Corrosion Scythe",
+        "Great Dragon Spear",
+        "Windtalker",
+        "Windtalker",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "Tidak disarankan di rank, cuma buat have fun aja. Jika ingin main di rank coba aja :v",
+      "tags": [],
+      "lastUpdated": "2026-04-27T05:36:31.703971+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Zilong 1 kali sodok ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Windtalker",
+        "Haas Claws",
+        "Berserker Fury",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Serah mau main gimana mainnya kek biasa early farming late game incer yng tipis kalo tank GK bakal mokad 1 kali tusuk ",
+      "tags": [],
+      "lastUpdated": "2025-12-31T13:41:13.059485+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Full CRIT + ULTI ngebut & irit mana",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Sky Piercer",
+        "Rapid Boots",
+        "Haas Claws",
+        "Berserker Fury",
+        "Windtalker",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Up skill 2 di early game dan arahkan skill 2 kalian ke lawan, jika skill nya cooldown maka usahakan last hit Minion dan serang lagi lawan dengan skill 2. Dan jika Minion terakhir dimenit pertama telah habis langsung gunakan inspirasi untuk menghabisi lawan.",
+      "tags": [],
+      "lastUpdated": "2026-02-26T07:37:46.05915+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "ZILONG MODE SAD",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Blade of the Heptaseas",
+        "Berserker Fury",
+        "Haas Claws",
+        "Hunter Strike",
+        "Windtalker",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "MINUS NYA KURANG KENCENG",
+      "tags": [],
+      "lastUpdated": "2026-02-24T00:19:40.492065+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Endless",
+        "Battle",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12440,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Windtalker",
+        "Haas's",
+        "Claws",
+        "Berserker's"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11200,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11050,
+      "notes": null
+    }
+  ]
+}

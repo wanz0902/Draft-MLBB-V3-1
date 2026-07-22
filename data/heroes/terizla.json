@@ -1,0 +1,706 @@
+{
+  "id": "terizla",
+  "name": "Terizla",
+  "heroName": "Terizla",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Burst",
+    "Crowd Control"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2700,
+    "hpRegen": 8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 121,
+    "physicalDefense": 23,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Body of Smith",
+      "description": "Terizla gains 1% extra Damage Reduction (up to 30%) for every 2.5% HP lost. He cannot gain extra Attack Speed and will convert every 1% extra Attack Speed he's supposed to receive into 1 extra Physical Attack.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Body_of_Smith",
+      "tips": "\"Terizla's lost HP will be converted to a limited amount of Damage Reduction. His Attack Speed can't be increased. Every 1% increase in Attack Speed will be converted to Physical Attack. The lower the HP of Terizla, the more damage resistant he becomes. This could enable him to draw fire more effectively in team offensives. \"",
+      "iconUrl": "/raw-assets/skill_icons/terizla/body_of_smith.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Revenge Strike",
+      "description": "Terizla cracks the ground with his hammer and the fissure will spread out, dealing 300( +80% Extra Physical Attack) (Physical Damage). After the fissure hits the first target, it will drill into the target and slow them by 15%. At the same time, Terizla's Movement Speed will be increased by 15% for 3.5s. The fissure on target will then explode, dealing 300( +80% Extra Physical Attack) plus 20% of the enemy's lost HP (Physical Damage).",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Revenge_Strike",
+      "tips": "Terizla smashes the ground with his hammer, causing a fissure with cracks that spreads out and deals Physical Damage to enemies in contact with it. The first enemy in contact with the fissure will suffer a loss in Movement Speed, while Terizla gains an increase in Movement Speed. The affected enemy will then suffer an explosion with Physical Damage equal to 10% of the enemy's lost HP. This is a poke skill as Terizla's Movement Speed increases while the enemy's Movement Speed decreases, enabling Terizla to easily escape or chase the enemy.",
+      "iconUrl": "/raw-assets/skill_icons/terizla/revenge_strike.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Execution Strike",
+      "description": "Terizla swings his hammer in a fan-shaped area ahead. This skill can be cast up to 3 times. The first two attacks deal 135( +160% Total Physical Attack) (Physical Damage) each, while the third deals 225( +220% Total Physical Attack) (Physical Damage). Enemies hit will also be slowed by 20% for 1.25s (the Slowing Effect can stack). Deals only 60% damage to Minions.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Execution_Strike",
+      "tips": "\"Terizla swings the hammer in a fan-shaped area, which could be dealt 3 times for Physical Damage. The first 2 times will deal Physical Damage to enemies while the 3rd time will deal increased Physical Damage with a Movement Speed slowing effect. This slowing effect could be stacked. Execution Strike is Terizla's main offensive skill as it deals tremendous damage to enemies. This skill can be manually controlled to better afflict damage, which could be enhanced when combined with Revenge Strike or Sprint.\"",
+      "iconUrl": "/raw-assets/skill_icons/terizla/execution_strike.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Penalty Zone",
+      "description": "Terizla jumps to the designated area, dealing 300( +100% Total Physical Attack) (Physical Damage) and knocking enemies airborne for 0.6s. He then summons Scaffold and slows enemies by 25%. Scaffold will send out a hook at enemy heroes in range and pull them several times while dealing 150( +30% Total Physical Attack) (Physical Damage) each time.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Penalty_Zone",
+      "tips": "\"Terizla leaps into a designated area, causing Physical Damage and slowing down enemies caught in the blast. Then, he summons the Guillotine several times to pull enemies in while causing Physical Damage. This skill could be useful in Team Fights or in solo combat. However, the timing must be carefully measured as it comes with a long cast time. As this skill has a strong control effect, it could be combined with Execution Strike to deal extreme damage. \"",
+      "iconUrl": "/raw-assets/skill_icons/terizla/penalty_zone.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Popol and Kupa",
+        "Argus",
+        "Phoveus",
+        "Khufra",
+        "Chip"
+      ],
+      "weakAgainst": [
+        "X.Borg",
+        "Gord",
+        "Yve",
+        "Mathilda",
+        "Alpha"
+      ],
+      "synergyWith": [
+        "Angela",
+        "Aulus",
+        "Diggie",
+        "Floryn",
+        "Bane"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.8
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.8
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 2.7
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.5
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 4.9
+      },
+      {
+        "name": "Gord",
+        "advantage": 2.7
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.6
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.5
+      },
+      {
+        "name": "Alpha",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Angela",
+        "synergy": 2.3
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.9
+      },
+      {
+        "name": "Diggie",
+        "synergy": 1.8
+      },
+      {
+        "name": "Floryn",
+        "synergy": 1.6
+      },
+      {
+        "name": "Bane",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Terizla is strong against light melee fighters cause they'll have a hard time surviving his heavy skill damage, such as Zilong and Sun.",
+    "weakAgainstReason": "Terizla is countered by heroes with good Mobility or long attack range, because it will be diffcult to hit them with his skills. Such as Arlott and Lesley.",
+    "synergyReason": "Terizla works best with heroes who have strong initiation skills that allow him to deal more damage with his skills, heroes like Gatotkaca and Atlas are good examples here."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Terizla adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.5,
+  "pickRate": 0.6,
+  "banRate": 0.7,
+  "heroAttributes": {
+    "durability": 90,
+    "offense": 30,
+    "abilityEffects": 40,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 75,
+    "mid": 78,
+    "late": 58,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Bloodlust Axe",
+      "War Axe",
+      "Blade of Despair"
+    ],
+    "dominantPhase": null,
+    "description": "Terizla is lane-dominant early with high base damage and built-in damage reduction, then peaks in mid-game skirmishes once Penalty Zone enables reliable AoE catch. In late game he’s slower and easier to kite, so his impact depends more on landing ult than raw DPS."
+  },
+  "proBuilds": [
+    {
+      "player": "THE KING TERIZLA",
+      "games": 1138,
+      "items": [
+        "Rapid Boots",
+        "War Axe",
+        "Oracle",
+        "Queen's Wings",
+        "Dominance Ice",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "juaco",
+      "games": 870,
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Dominance Ice",
+        "Queen's Wings",
+        "Radiant Armor",
+        "Oracle"
+      ]
+    },
+    {
+      "player": "Ꭺquᴀ | 激怒",
+      "games": 549,
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Dominance Ice",
+        "Queen's Wings",
+        "Radiant Armor",
+        "Oracle"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": null,
+    "skill1": null,
+    "skill2": null,
+    "ultimate": null
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In teamfights, Terizla can open with his Ultimate and his 1st Skill to control the enemy team, then use his 2nd Skill to repeatedly hit the targets pulled by the Scaffold."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, Terizla can use his 1st Skill to slow the enemy, then his 2nd Skill to repeatedly deal damage to them."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Abyss",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Angela",
+      "winrateDelta": 3.28
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 2.21
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 2.19
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 2.11
+    },
+    {
+      "name": "Natalia",
+      "winrateDelta": 2.03
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -6.08
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -5.87
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": -5.81
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": -5.3
+    },
+    {
+      "name": "Uranus",
+      "winrateDelta": -4.87
+    }
+  ],
+  "metaScore": 19.77,
+  "metaRank": 37,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Argus",
+        "advantage": 3.11
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.96
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.8
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.44
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.13
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "X.Borg",
+        "advantage": 5.18
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.84
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.47
+      },
+      {
+        "name": "Marcel",
+        "advantage": 2.38
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.37
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Mantap Nih😋",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Dominance Ice",
+        "Queen's Wings",
+        "Antique Cuirass",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": ":P",
+      "tags": [],
+      "lastUpdated": "2025-12-11T15:30:04.078368+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "1vs5",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Dominance Ice",
+        "Oracle",
+        "Blade Armor",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "terizla semakin sekarat semakin tebal",
+      "tags": [],
+      "lastUpdated": "2026-02-23T05:46:14.119941+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S17 WEEK 7 DAY 3 NAVI.Karss",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Athena's Shield",
+        "Radiant Armor",
+        "Chastise Pauldron",
+        "Dreadnaught Armor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( NAVI VS BTR GAME 1 ) MPL INDONESIA SEASON 17 WEEK 7 DAY 3 10 MEI 2026",
+      "tags": [],
+      "lastUpdated": "2026-05-11T08:54:31.110944+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 3 AE.Nino",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Warrior Boots",
+        "Fury Hammer",
+        "Radiant Armor",
+        "Dominance Ice",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( AE VS YG GAME 2 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 12 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-12T13:10:23.021582+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : AURORA.Edward",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "War Axe",
+        "Warrior Boots",
+        "Antique Cuirass",
+        "Athena's Shield",
+        "Dominance Ice"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 4",
+      "tags": [],
+      "lastUpdated": "2025-10-28T04:53:00.142732+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Queen's",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Queen's",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10920,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11370,
+      "notes": null
+    }
+  ]
+}

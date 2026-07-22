@@ -1,0 +1,656 @@
+{
+  "id": "tigreal",
+  "name": "Tigreal",
+  "heroName": "Tigreal",
+  "role": [
+    "Tank"
+  ],
+  "specialty": [
+    "Crowd Control"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2890,
+    "hpRegen": 8.8,
+    "mana": 450,
+    "manaRegen": 3.2,
+    "physicalAttack": 112,
+    "physicalDefense": 28,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": "1.03",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Fearless",
+      "description": "Tigreal gains a stack of (Fearless) each time he uses a skill or is hit by a Basic Attack. After getting 4 stacks, Tigreal will consume all (Fearless) stacks to block the next incoming Basic Attack (including attacks from Turrets). [C8Attacks from Minions do not grant] (Fearless) [C8stacks nor trigger its effect].",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Fearless",
+      "tips": "Remember to do basic attacks between spells to harden you even more. You don't need to hit enemies to activate your passive so do it before Teamfights, or when you considerate it is necessary.",
+      "iconUrl": "/raw-assets/skill_icons/tigreal/fearless.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Attack Wave",
+      "description": "Tigreal smashes the ground with his hammer and sends a shockwave that erupts 3 times in the target direction, each time dealing 270( +70% Total Physical Attack) (Physical Damage) to enemies along the fan-shaped area and slowing them by 20%/40%/60% for 1.5s.",
+      "cooldown": "7.0",
+      "manaCost": "45",
+      "damageType": "AOE, Slow",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Attack_Wave",
+      "tips": "A Straight wave that is useful for killing minions, slowing down running enemies from battles and useful to stop enemies' HP regen. Try not to spam it a lot because it consumes a lot of mana, just waste it while having enemies in front and you make sure that you will hit them.",
+      "iconUrl": "/raw-assets/skill_icons/tigreal/attack_wave.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Sacred Hammer",
+      "description": "Tigreal charges in the target direction, dealing ( +100% Total Physical Attack) (Physical Damage) to enemies along the way and pushing them to the end of the charge. (Use Again): Tigreal can use this skill again within 4s, dealing 280( +60% Total Physical Attack) (Physical Damage) to enemies in front of him and knocking them airborne for 1s.",
+      "cooldown": "16.0",
+      "manaCost": "70",
+      "damageType": "Charge, CC",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Sacred_Hammer",
+      "tips": "The most important Tigreal's ability, being hard to master at the begining but easier to manipulate after playing several games with Tigreal. This ability complements well with the battle spell Flicker by dragging the enemy team to your side where your team awaits for them. Anyway, it costs even more mana than the 1st ability so use it wisely.",
+      "iconUrl": "/raw-assets/skill_icons/tigreal/sacred_hammer.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Implosion",
+      "description": "Tigreal unleashes the power of his hammer, stunning and pulling nearby enemies to him for 2s while dealing 270( +130% Total Physical Attack) (Physical Damage). [C8The first half of the channeling can be interrupted by control effects. The second half of the channeling can only be interrupted by Suppression.]",
+      "cooldown": "55.0",
+      "manaCost": "120",
+      "damageType": "CC, AOE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Implosion",
+      "tips": "The perfect complement for the 2nd ability and flicker. It is one of the best crowd control abilities on the game, so you have a great power in your hands and a really useful weapon for teamfights.",
+      "iconUrl": "/raw-assets/skill_icons/tigreal/implosion.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Estes",
+        "Zilong",
+        "Eudora",
+        "Alucard",
+        "Layla"
+      ],
+      "weakAgainst": [
+        "Alice",
+        "Diggie",
+        "Valir",
+        "Faramis",
+        "Zetian"
+      ],
+      "synergyWith": [
+        "Aldous",
+        "Alucard",
+        "Natalia",
+        "Zilong",
+        "Chou"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 2.6
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.3
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.2
+      },
+      {
+        "name": "Alucard",
+        "advantage": 1.9
+      },
+      {
+        "name": "Layla",
+        "advantage": 1.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Alice",
+        "advantage": 3.8
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.6
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.6
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.3
+      },
+      {
+        "name": "Zetian",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Aldous",
+        "synergy": 1.9
+      },
+      {
+        "name": "Alucard",
+        "synergy": 1.8
+      },
+      {
+        "name": "Natalia",
+        "synergy": 1.8
+      },
+      {
+        "name": "Zilong",
+        "synergy": 1.7
+      },
+      {
+        "name": "Chou",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Tigreal's Passive can negate enemy Basic Attacks, making him strong against heroes that deal damage with their Basic Attacks, such as Zilong and Freya.",
+    "weakAgainstReason": "But as a melee hero, Tigreal is countered by Ranged Mage heroes like Chang'e and Zhask.",
+    "synergyReason": "Tigreal works well with heroes with strong initiation skills, that gives him a better chance to hit the enemies with his CC skills, such as Vexana and Odette."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Tigreal adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.6,
+  "pickRate": 2,
+  "banRate": 7.3,
+  "heroAttributes": {
+    "durability": 80,
+    "offense": 10,
+    "abilityEffects": 100,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 52,
+    "mid": 74,
+    "late": 62,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 10"
+    ],
+    "coreItems": [
+      "Dominance Ice",
+      "Athena's Shield",
+      "Immortality"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Tigreal’s early is mostly setup/peel and he’s limited by cooldowns and lacking the decisive pull before level 4. Mid game is his best phase because Implosion enables fight-winning picks around Turtle and towers; late game he remains valuable, but engages become riskier due to higher burst and CC punishing his channel."
+  },
+  "proBuilds": [
+    {
+      "player": "Hissi",
+      "games": 818,
+      "items": [
+        "Encourage Tough Boots",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Athena's Shield",
+        "Blade Armor",
+        "Radiant Armor"
+      ]
+    },
+    {
+      "player": "Ƥhil",
+      "games": 1130,
+      "items": [
+        "Encourage Rapid Boots",
+        "Fleeting Time",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Chastise Pauldron",
+        "Guardian Helmet"
+      ]
+    },
+    {
+      "player": "ROAMER X EXTRA",
+      "games": 1131,
+      "items": [
+        "Encourage Tough Boots",
+        "Chastise Pauldron",
+        "Fleeting Time",
+        "Athena's Shield",
+        "Antique Cuirass"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/tigreal/video-0-0.mp4",
+    "skill1": "/videos/heroes/tigreal/video-1-0.mp4",
+    "skill2": "/videos/heroes/tigreal/video-2-0.mp4",
+    "ultimate": "/videos/heroes/tigreal/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, Tigreal should cast his 2nd Skill to charge in and then pull the enemy team towards him with his Ultimate. At the end of his CC, cast his 2nd Skill again to extend it, then use his 1st Skill to deal damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, Tigreal can use his 2nd Skill to charge the enemy target and knock them airborne by casting it again. He then finishes with his 1st Skill to deal damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Vexana",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Odette",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Masha",
+      "winrateDelta": 2.27
+    },
+    {
+      "name": "Alucard",
+      "winrateDelta": 1.3
+    },
+    {
+      "name": "Silvanna",
+      "winrateDelta": 1.22
+    },
+    {
+      "name": "Zilong",
+      "winrateDelta": 1.21
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": 1.18
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Marcel",
+      "winrateDelta": -15.74
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -12.59
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -12.59
+    },
+    {
+      "name": "Johnson",
+      "winrateDelta": -10.37
+    },
+    {
+      "name": "Franco",
+      "winrateDelta": -9.89
+    }
+  ],
+  "metaScore": 18.27,
+  "metaRank": 48,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 2.59
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.03
+      },
+      {
+        "name": "Zilong",
+        "advantage": 1.88
+      },
+      {
+        "name": "Eudora",
+        "advantage": 1.81
+      },
+      {
+        "name": "Franco",
+        "advantage": 1.69
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 5.32
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.24
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.86
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.4
+      },
+      {
+        "name": "Novaria",
+        "advantage": 1.97
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Tigreal Burst damage",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Magic Boots",
+        "Hunter Strike",
+        "Endless Battle",
+        "Blade of the Heptaseas",
+        "Blade of Despair",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Selalu targetkan hero-hero tipis saat menggunakan build ini, build ini tidak efektif meng-instan kill hero tebal.\nMainkan Tigreal di exp lane, boleh tetap main Roam, namun akan sedikit sulit membeli item yang diperlukan, namun saya sangat menganjurkan kalian main di exp lane !!! , karna Tigreal damage sangat berpengaruh pada mid game sampai late game.kallan harus secepat mungkin membeli sepatu dan 3 item physical damage yang sudah tertera. lalu lanjutkan hingga full item.\n\nCombo skil: Ultimate (gunakan Flicker jika perlu) + skil 1 + skil 2 secara bersamaan 1 arah",
+      "tags": [],
+      "lastUpdated": "2025-10-24T15:38:07.663216+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Trigeal Inisiator",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Dominance Ice",
+        "Fleeting Time",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Build ini digunakan untuk mempermudah inisiasi",
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:04:32.710531+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "irids",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Guardian Helmet",
+        "Oracle",
+        "Cursed Helmet",
+        "Antique Cuirass",
+        "Blade Armor"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Ndjxnx",
+      "tags": [],
+      "lastUpdated": "2025-10-27T10:31:48.668514+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Daya tahan lebih kuat dan Couldown ultimate singkat ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Warrior Boots",
+        "Dominance Ice",
+        "Athena's Shield",
+        "Chastise Pauldron",
+        "Antique Cuirass",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Build dan emblem ini membuat Tigreal lebih sustain dan tahan lama dalam team fight serta Couldown ultimate yang singkat dengan item fliting time jika mendapatkan asist atau kill untuk item bisa di ubah tergantung situasi jika ingin heal yang deras boleh menggunakan guardian helmet, tapi jika berfokus pada team fight berkepanjangan boleh membeli item imortal atau Blade armor",
+      "tags": [],
+      "lastUpdated": "2025-10-22T18:09:12.916127+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 KNOCKOUT STAGE DAY 1 YG.Blink",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Fleeting Time",
+        "Athena's Shield",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( AUR VS YG GAME 2 ) M7 WORLD CHAMPIONSHIP KNOCKOUT STAGE 18 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-18T12:23:25.903718+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11250,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Antique",
+        "Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Blade",
+        "Armor"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11080,
+      "notes": null
+    }
+  ]
+}

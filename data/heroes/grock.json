@@ -1,0 +1,683 @@
+{
+  "id": "grock",
+  "name": "Grock",
+  "heroName": "Grock",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Crowd Control",
+    "Initiator"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2900,
+    "hpRegen": 9,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 118,
+    "physicalDefense": 30,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Earthen Force",
+      "description": "When near a wall or turret, Grock gains 10% Movement Speed, 15 (+8*Hero Level) Physical Defense, and 18 (+4.8*Hero Level) HP Regen. Each point of Grock's extra Physical Attack increases his Physical Defense by 0.5.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Earthen_Force",
+      "tips": "Try staying near a turret when roaming in lanes or escaping, using of his passive wisely will help you tank extra incoming damage from enemies.",
+      "iconUrl": "/raw-assets/skill_icons/grock/earthen_force.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Power of Nature",
+      "description": "Grock charges his weapon with the (Power of Nature) and then launches a powerful sweep, dealing 300( +160% Extra Physical Attack) (Physical Damage) to nearby enemies and slowing them by 40% for 2s. Damage dealt will increase the longer the skill is channeled, up to 250%. Using (Power of Nature) near a wall will grant Control Immunity.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Power_of_Nature",
+      "tips": "Charging his first skill will deal a lot of damage to enemies. The more time of charging, the more damage it will dealt. Use this on waves of minion for fasterclearing of lane.Charge his first skill when enemies are trying to disable you (stun,hold,morph,slow,knockback airborne) to be Immune from Crowd Control (CC) spells.",
+      "iconUrl": "/raw-assets/skill_icons/grock/power_of_nature.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Guardian's Barrier",
+      "description": "Grock conjures a stone wall at the target location, dealing 300( +50% Total Physical Attack) (Physical Damage) to nearby enemies. The stone wall lasts 5s and can block enemies who try to pass through.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Guardian's_Barrier",
+      "tips": "Using this ability to block enemies from destroying turrets and to prevent themfrom escaping when low health.",
+      "iconUrl": "/raw-assets/skill_icons/grock/guardian_s_barrier.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Wild Charge",
+      "description": "Grock charges in the target direction, dealing 360( +75% Total Physical Attack) (Physical Damage) to enemies in his path and knocking them airborne. If he hits a wall or turret during the charge, he deals an additional 360( +90% Total Physical Attack) (Physical Damage) to nearby enemies and stuns them for 1.8s.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Wild_Charge",
+      "tips": "Charging forward onto enemies will knock the enemies airborne on path. This will help you when chasing enemies. Also Try hitting the wall behind an enemy to utilize the extra damage.",
+      "iconUrl": "/raw-assets/skill_icons/grock/wild_charge.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Khufra",
+        "Lolita",
+        "Johnson",
+        "Layla",
+        "Popol and Kupa"
+      ],
+      "weakAgainst": [],
+      "synergyWith": [
+        "Saber",
+        "Harith",
+        "Bruno",
+        "Faramis",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Khufra",
+        "advantage": 2.1
+      },
+      {
+        "name": "Lolita",
+        "advantage": 1.9
+      },
+      {
+        "name": "Johnson",
+        "advantage": 1.8
+      },
+      {
+        "name": "Layla",
+        "advantage": 1.7
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 1.6
+      }
+    ],
+    "weakAgainst": [],
+    "synergyHeroes": [
+      {
+        "name": "Saber",
+        "synergy": 1.8
+      },
+      {
+        "name": "Harith",
+        "synergy": 1.8
+      },
+      {
+        "name": "Bruno",
+        "synergy": 1.4
+      },
+      {
+        "name": "Faramis",
+        "synergy": 1.3
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Grock works well against heroes who cannot Blink over his wallto escape his CC,such as Gord and Layla.",
+    "weakAgainstReason": "Grock is countered by Magic Damage heroes with Blink who can kite him with relative ease,such as Kimmy and Harley.",
+    "synergyReason": "Grock's Ultimate is a powerful CC that covers a wide area,so he pairs well with Mages like Odette and Pharsa to maximize their AOE damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Grock adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.8,
+  "pickRate": 0.6,
+  "banRate": 4.6,
+  "heroAttributes": {
+    "durability": 90,
+    "offense": 40,
+    "abilityEffects": 80,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 80,
+    "mid": 74,
+    "late": 58,
+    "spikeLevels": [
+      "Lv 1",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Warrior Boots",
+      "Dominance Ice",
+      "Antique Cuirass"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Grock is oppressive early thanks to terrain-based tankiness, strong base damage, and wall setups that create guaranteed CC angles for kills. Mid game he remains a strong initiator/pick tank, but late game his impact becomes more execution-dependent as enemies have higher mobility/defensive tools and his damage doesn’t scale like true late-game carries."
+  },
+  "proBuilds": [
+    {
+      "player": "ᴬᵏᶦ",
+      "games": 1154,
+      "items": [
+        "Encourage Rapid Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Blade Armor",
+        "Guardian Helmet",
+        "Antique Cuirass"
+      ]
+    },
+    {
+      "player": "MikoTzy",
+      "games": 687,
+      "items": [
+        "Encourage Rapid Boots",
+        "Athena's Shield",
+        "Antique Cuirass",
+        "Dominance Ice",
+        "Immortality",
+        "Blade Armor"
+      ]
+    },
+    {
+      "player": "SERENDIPITY°~°",
+      "games": 423,
+      "items": [
+        "Encourage Rapid Boots",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Immortality"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/grock/video-0-0.mp4",
+    "skill1": "/videos/heroes/grock/video-1-0.mp4",
+    "skill2": "/videos/heroes/grock/video-2-0.mp4",
+    "ultimate": "/videos/heroes/grock/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 3",
+        "Skill 1",
+        "Passive",
+        "Passive"
+      ],
+      "description": "In teamfights,initiate with Grock's 2nd Skill to trap the enemies,then charge into the wall with his Ultimate.While the enemies are airborne, find a good angle to slam them into the wall with his 1st Skill and send them airborne again,then finish up with Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Skill 3",
+        "Passive",
+        "Passive"
+      ],
+      "description": "In small skirmishes,use Grock's 2nd Skill to knock the enemy toward him,then use his 1st Skill to slam them into the wall.Use his Ultimate to charge into the wall and knock them airborne again,and finish the job with Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Odette",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Pharsa",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "The Barren Lands",
+  "race": "Stone Titan",
+  "bestTeammates": [
+    {
+      "name": "Khufra",
+      "winrateDelta": 4.27
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 2.6
+    },
+    {
+      "name": "Saber",
+      "winrateDelta": 1.58
+    },
+    {
+      "name": "Moskov",
+      "winrateDelta": 1.51
+    },
+    {
+      "name": "Natalia",
+      "winrateDelta": 1.5
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": -12.36
+    },
+    {
+      "name": "Johnson",
+      "winrateDelta": -11.84
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -11.1
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": -10.79
+    },
+    {
+      "name": "Hylos",
+      "winrateDelta": -10.57
+    }
+  ],
+  "metaScore": 12.76,
+  "metaRank": 98,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 2.93
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.91
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.86
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.31
+      },
+      {
+        "name": "Khufra",
+        "advantage": 1.76
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 2.9
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.73
+      },
+      {
+        "name": "Alice",
+        "advantage": 2.28
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 1.95
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 1.9
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Grock Batu Abadi",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Rapid Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Athena's Shield",
+        "Blade of the Heptaseas"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "- Membantu tim dalam team fight, dan Solo kill\n- Untuk Roam gunakan sepatu roam encourage",
+      "tags": [],
+      "lastUpdated": "2025-10-26T05:27:48.159179+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Grock Demage",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Rapid Boots",
+        "Sky Piercer",
+        "Endless Battle",
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-26T11:56:02.750392+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Batu berjalan (sustain)",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Warrior Boots",
+        "Antique Cuirass",
+        "Dominance Ice",
+        "Athena's Shield",
+        "Oracle",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "sepatu tergantung kondisi (bisa beli tough boots kalo banyak cc) , setelah beli sepatu beli mentahan dominance ice (black ice shield)/mentahan antique, jika midlane/hero mage lawan snowball/kaya di awal lebih baik beli mentahan atau jadikan athena/radiant dulu, guardian helmet hanya opsional jika mm menggunakan trinity lebih baik beli blade armor/chastice pauldron",
+      "tags": [],
+      "lastUpdated": "2026-02-02T06:35:22.206216+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Grock enak war ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Chastise Pauldron",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Dominance Ice",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "cocok untuk warr gede.",
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:37:04.81158+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 Grand Finals : ONIC.Kiboy",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Chastise Pauldron",
+        "Tought Boots",
+        "Antique Cuirass",
+        "Immortality",
+        "Radiant Armor"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "ONIC ID VS Alter Ego Game 1",
+      "tags": [],
+      "lastUpdated": "2025-11-03T11:51:32.249481+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Antique",
+        "Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11060,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 10750,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Sky",
+        "Piercer",
+        "Blade",
+        "the"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 11090,
+      "notes": null
+    }
+  ]
+}

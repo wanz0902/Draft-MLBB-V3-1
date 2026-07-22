@@ -1,0 +1,654 @@
+{
+  "id": "gord",
+  "name": "Gord",
+  "heroName": "Gord",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Poke",
+    "Burst"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2450,
+    "hpRegen": 6.8,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 96,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "0.96",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Mystic Favor",
+      "description": "After Gord hits an enemy 4 times with skills within a short period of time, the next skill damage will deal an additional 140 (+8*Hero Level) (40% Magic Power) True Damage and slow them by 20% for 1s (the slow effect stacks up 2 times).\n|quote=Concentrated energy is capable of reaping anything apart!",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "True",
+      "scaling": [
+        "(+8*Hero Level)",
+        "(40% Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Buff",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mystic_Favor",
+      "tips": "Selalu berlatih agar semua Skill dapat pas mengenai lawan, meskipun sulit namun Gord adalah Hero berbahaya yang dapat memberikan Damage terbesar pada musuh.",
+      "iconUrl": "/raw-assets/skill_icons/gord/mystic_favor.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Mystic Projectile",
+      "description": "Gord conjures a Mystic Orb that bounces in the target direction and explodes on the first enemy hit, dealing 225 (+65% Total Magic Power) Magic Damage to enemies in the area, while stunning them and revealing their location for 1s.",
+      "cooldown": "8.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+65% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "86",
+            "92",
+            "98",
+            "104",
+            "110"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "225",
+            "265",
+            "305",
+            "345",
+            "385",
+            "425"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mystic_Projectile",
+      "tips": "Skill 1 usahakan musuh terkena tepat dari lingkaran bola Gord karena ketika tepat musuh akan terkena Stun dan Damage lebih, selalu arahkan kemana musuh akan berada karena musuh juga akan selalu bergerak.",
+      "iconUrl": "/raw-assets/skill_icons/gord/mystic_projectile.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Mystic Injunction",
+      "description": "Gord creates an energy field in the target area, dealing 30 (+10% Total Magic Power) Magic Damage every 0.25s to enemies within (up to 16 times).",
+      "cooldown": "8.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+10% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Damage Per Hit",
+          "values": [
+            "30",
+            "36",
+            "42",
+            "48",
+            "54",
+            "60"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mystic_Injunction",
+      "tips": "Gunakan skill ini selain untuk mencicil HP lawan juga bisa dengan cepat membuat Lane-mu bersih dari Creep lawan.",
+      "iconUrl": "/raw-assets/skill_icons/gord/mystic_injunction.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Mystic Gush",
+      "description": "Gord unleashes an energy beam in the target direction, dealing 110 (+32% Total Magic Power) Magic Damage to enemies hit every 0.2s (up to 16 times).\nThe direction of the beam can be adjusted using the Joystick.",
+      "cooldown": "44.0",
+      "manaCost": "150",
+      "damageType": "Magic",
+      "scaling": [
+        "(+32% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "44.0",
+            "40.0",
+            "36.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "150",
+            "170",
+            "190"
+          ]
+        },
+        {
+          "label": "Damage Per Hit",
+          "values": [
+            "110",
+            "160",
+            "210"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mystic_Gush",
+      "tips": "Berlatihlah agar Skill ini mengenai semua lawan, karena ketika War kita bisa menggunakannya untuk mencicil HP lawan atau juga membersihkan Lane. Namun gunakan dengan bijak dan ketika memang Skill harus di Cancel, maka kamu dapat meng-cancel Ulti dengan meng-klik Skill 3 lagi.",
+      "iconUrl": "/raw-assets/skill_icons/gord/mystic_gush.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Barats",
+        "Lolita",
+        "Phoveus",
+        "Ruby",
+        "Terizla"
+      ],
+      "weakAgainst": [
+        "Natalia",
+        "Ling",
+        "Hanzo",
+        "Helcurt",
+        "Benedetta"
+      ],
+      "synergyWith": [
+        "Valentina",
+        "Karrie",
+        "Fredrinn",
+        "Kalea",
+        "Marcel"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 4.7
+      },
+      {
+        "name": "Lolita",
+        "advantage": 4.2
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.2
+      },
+      {
+        "name": "Ruby",
+        "advantage": 3
+      },
+      {
+        "name": "Terizla",
+        "advantage": 2.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.8
+      },
+      {
+        "name": "Ling",
+        "advantage": 3
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.8
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.6
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 2.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Valentina",
+        "synergy": 5.5
+      },
+      {
+        "name": "Karrie",
+        "synergy": 1.7
+      },
+      {
+        "name": "Fredrinn",
+        "synergy": 1.6
+      },
+      {
+        "name": "Kalea",
+        "synergy": 1.4
+      },
+      {
+        "name": "Marcel",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Gord is strong against melee heroes with poor Mobility, such as Barats and Fredrinn.",
+    "weakAgainstReason": "Gord is countered by heroes with gap closers, such as Fanny and Lancelot.",
+    "synergyReason": "Gord works well with tanky heroes with reliable CCs, like Hylos and Belerick."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Gord adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 55.5,
+  "pickRate": 1.5,
+  "banRate": 3.1,
+  "heroAttributes": {
+    "durability": 10,
+    "offense": 70,
+    "abilityEffects": 80,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 70,
+    "late": 75,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": null,
+    "description": "Gord’s early is average because he’s skillshot-reliant and vulnerable to ganks, but once ultimate is online he becomes a strong objective/zoning mage. With 2–3 damage items his beam/zone DPS and passive true-damage proc threaten backliners from safe range, keeping him relevant into late game despite low mobility."
+  },
+  "proBuilds": [
+    {
+      "player": "Ubbiicza",
+      "games": 851,
+      "items": [
+        "Sky Piercer",
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Ice Queen Wand",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Gord APOSENTADO",
+      "games": 721,
+      "items": [
+        "Sky Piercer",
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "Jᴇʀᴡɪɴ.",
+      "games": 1279,
+      "items": [
+        "Rapid Boots",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Starlium Scythe",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/gord/video-0-0.mp4",
+    "skill1": "/videos/heroes/gord/video-1-0.mp4",
+    "skill2": "/videos/heroes/gord/video-2-0.mp4",
+    "ultimate": "/videos/heroes/gord/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Gord should look to stun the enemy heroes with his 1st Skill, then follow up with his 2nd Skill and Ultimate to get a quick kill on them."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "Gord should look to stun the enemy heroes with his 1st Skill, then follow up with his 2nd Skill and Ultimate to get a quick kill on them."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Hylos",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 1.62
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": 1.55
+    },
+    {
+      "name": "Karrie",
+      "winrateDelta": 1.55
+    },
+    {
+      "name": "Kalea",
+      "winrateDelta": 1.24
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 1.24
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Xavier",
+      "winrateDelta": -6.58
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -6.52
+    },
+    {
+      "name": "Vexana",
+      "winrateDelta": -6.07
+    },
+    {
+      "name": "Kagura",
+      "winrateDelta": -5.62
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": -5.53
+    }
+  ],
+  "metaScore": 29.04,
+  "metaRank": 10,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.54
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.93
+      },
+      {
+        "name": "Ruby",
+        "advantage": 3.06
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 2.56
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 2.17
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.79
+      },
+      {
+        "name": "Ling",
+        "advantage": 3.15
+      },
+      {
+        "name": "Joy",
+        "advantage": 3.13
+      },
+      {
+        "name": "Helcurt",
+        "advantage": 2.4
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.21
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Gord demage (From Patch 2.1.18)",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Demon Shoes",
+        "Concentrated Energy",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-11T07:00:20.911+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11740,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11950,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10590,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "id": "miya",
+  "name": "Miya",
+  "heroName": "Miya",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Damage"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2501,
+    "hpRegen": 7,
+    "mana": 443,
+    "manaRegen": 3.4,
+    "physicalAttack": 115,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.06",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Moon Blessing",
+      "description": "Each time Miya hits a target with her Basic Attack, she gains 5% Attack Speed for 4s. Stacks up to 5 times. After reaching full stacks, Miya summons a (Moonlight Shadow) with each Basic Attack that deals 30( +30% Total Physical Attack) (Physical Damage) and inherits a portion of Attack Effects.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+25% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Moon_Blessing",
+      "iconUrl": "/raw-assets/skill_icons/miya/moon_blessing.png",
+      "tips": "Miya’s basic attacks increase her attack speed, so her damage will increase the longer she stays in combat. Before engaging a hero, try to build up and maintain your passive attack speed boost by continually attacking minions.",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Moon Arrow",
+      "description": "Miya shoots two extra arrows with each Basic Attack, dealing 10 (+100% Total Physical Attack) Physical Damage to the target enemy and 30% damage to nearby targets. This effect lasts 4s. Each extra arrows inherits a portion of Attack Effects.",
+      "cooldown": "11.0",
+      "manaCost": "60",
+      "damageType": "Physical",
+      "scaling": [
+        "(+100% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35"
+          ]
+        },
+        {
+          "label": "Duration",
+          "values": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Moon_Arrow",
+      "iconUrl": "/raw-assets/skill_icons/miya/moon_arrow.png",
+      "tips": "This is Miya’s core late-game damage skill. After using it, Miya’s basic attacks will deal damage to three targets. This skill can help Miya to deal heavy AoE damage in team fights. This skill benefits greatly from physical attack obtained through items, so you should only upgrade it to level 1 in the early game, until you get some gear.",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Arrow of Eclipse",
+      "description": "Miya launches an empowered arrow on the target area, dealing 270 (+45% Total Physical Attack) Physical Damage to enemies within and immobilizing them for 1.2s. The arrow then splits into 6 scattering minor arrows, each dealing 40 (+20% Total Physical Attack) Physical Damage to the first enemy hit and slowing them by 30% for 2s.",
+      "cooldown": "8.0",
+      "manaCost": "80",
+      "damageType": "Physical",
+      "scaling": [
+        "(+45% Total Physical Attack)",
+        "(+20% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "270",
+            "300",
+            "330",
+            "360",
+            "390",
+            "420"
+          ]
+        },
+        {
+          "label": "Arrow Damage",
+          "values": [
+            "40",
+            "53",
+            "66",
+            "79",
+            "92",
+            "105"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Arrow_of_Eclipse",
+      "iconUrl": "/raw-assets/skill_icons/miya/arrow_of_eclipse.png",
+      "tips": "This circular slowing skill has a large range, and after hitting an enemy four times, the target will be frozen. Combine this with other teammates’ control skills to leave your enemy feeling hopeless. This is Miya’s main damage and wave-clearing skill in the early game, and is therefore a priority when upgrading skills.",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Hidden Moonlight",
+      "description": "Miya removes all debuffs on her and conceals herself, gaining 65% extra Movement Speed. This state lasts 2s or until she launches an attack.\nMiya gains full stacks of Moon Blessing upon leaving the state.",
+      "cooldown": "30.0",
+      "manaCost": "120",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "30.0",
+            "25.0",
+            "20.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "145",
+            "170"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Conceal",
+        "Remove CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Hidden_Moonlight",
+      "iconUrl": "/raw-assets/skill_icons/miya/hidden_moonlight.png",
+      "tips": "This displacement skill removes all control effects from Miya and puts her into stealth, significantly enhancing her survivability in team fights. When the enemy team suddenly launches an attack in the late game, Miya can retreat and find a safer position to attack from.",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Masha",
+        "Saber",
+        "Obsidia",
+        "Faramis",
+        "Zhuxin"
+      ],
+      "weakAgainst": [
+        "Belerick",
+        "Gatotkaca",
+        "Balmond",
+        "Hylos",
+        "Aulus"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Gloo",
+        "Ling",
+        "Carmilla",
+        "Roger"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 3.1
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.6
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.6
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.4
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Belerick",
+        "advantage": 3.3
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 2.9
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2
+      },
+      {
+        "name": "Hylos",
+        "advantage": 1.9
+      },
+      {
+        "name": "Aulus",
+        "advantage": 1.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 2.2
+      },
+      {
+        "name": "Gloo",
+        "synergy": 2.1
+      },
+      {
+        "name": "Ling",
+        "synergy": 1.5
+      },
+      {
+        "name": "Carmilla",
+        "synergy": 1.4
+      },
+      {
+        "name": "Roger",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Miya counters heroes who rely on targeted CC effects, such as Saber and Eudora, because she can easily escape their CC and respond with a strong counterattack. The split arrows from her 1st Skill are also very effective against heroes that summon units, such as Sun.",
+    "weakAgainstReason": "Miya is countered by heroes with a lot of AOE damage, such as Pharsa and Yve, because they can still hit her while she is concealed.",
+    "synergyReason": "Miya works well with Tanks who have powerful CC abilities like Belerick and Tigreal since their CCs give her more opportunities to dish out damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Miya adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.5,
+  "pickRate": 2.8,
+  "banRate": 6.1,
+  "heroAttributes": {
+    "durability": 10,
+    "offense": 70,
+    "abilityEffects": 40,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 38,
+    "mid": 62,
+    "late": 88,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Windtalker"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Early she’s vulnerable and needs time to stack attack speed, so she mainly farms and avoids heavy trades. She comes online in mid with ultimate safety + first items, and becomes dominant late when multi-hit effects and high attack speed turn her into a sustained DPS/push threat in teamfights."
+  },
+  "proBuilds": [
+    {
+      "player": "Kio.",
+      "games": 934,
+      "items": [
+        "Windtalker",
+        "Sky Piercer",
+        "Haas' Claws",
+        "Swift Boots",
+        "Malefic Gun",
+        "Berserker's Fury"
+      ]
+    },
+    {
+      "player": "Miyα MY",
+      "games": 890,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Sea Halberd",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "Yαмαdα シ",
+      "games": 1228,
+      "items": [
+        "Corrosion Scythe",
+        "Swift Boots",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/miya/video-0-0.mp4",
+    "skill1": "/videos/heroes/miya/video-1-0.mp4",
+    "skill2": "/videos/heroes/miya/video-2-0.mp4",
+    "ultimate": "/videos/heroes/miya/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "When laning, immobilize the opponent with Miya's 2nd Skill and use her 1st Skill to poke them and clear Minions at the same time."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Miya's Ultimate first to conceal herself, then find an ideal position to attack the enemy and quickly stack her Passive. Utilize her 2nd Skill to immobilize the enemy and activate her 1st Skill to enhance her Basic Attacks to hit multiple targets at once."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Hidden Moonlight",
+      "Moon Arrow",
+      "Arrow of Eclipse"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Azrya Woodlands",
+  "race": "Moon Elf",
+  "bestTeammates": [
+    {
+      "name": "Harith",
+      "winrateDelta": 1.91
+    },
+    {
+      "name": "Gloo",
+      "winrateDelta": 1.42
+    },
+    {
+      "name": "Yin",
+      "winrateDelta": 0.9
+    },
+    {
+      "name": "Kadita",
+      "winrateDelta": 0.89
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": 0.84
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Irithel",
+      "winrateDelta": -6.94
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -5.6
+    },
+    {
+      "name": "Melissa",
+      "winrateDelta": -5.6
+    },
+    {
+      "name": "Karrie",
+      "winrateDelta": -5.53
+    },
+    {
+      "name": "Moskov",
+      "winrateDelta": -5.38
+    }
+  ],
+  "metaScore": 27.05,
+  "metaRank": 14,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Saber",
+        "advantage": 2.44
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.18
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.02
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 1.72
+      },
+      {
+        "name": "Hayabusa",
+        "advantage": 1.68
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Belerick",
+        "advantage": 3.1
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.95
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 1.78
+      },
+      {
+        "name": "Barats",
+        "advantage": 1.7
+      },
+      {
+        "name": "Lolita",
+        "advantage": 1.58
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "combo miya+franco auto snowboll, dari global 1 miya(miya KY)",
+      "author": "community",
+      "votes": 10,
+      "items": [
+        "Sky Piercer",
+        "Windtalker",
+        "Blade of the Heptaseas",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "cara combo:\nmiya up skill2, Franco auto gb miya(usahain jan show di map)\nskill miya harus kena musuh\nfranco tarik flick sampe turret (opsional)\nmiya tinggal eksekusi pake inspire 95% mati \n",
+      "tags": [],
+      "lastUpdated": "2025-10-16T04:49:45.55234+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "atack speed",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Windtalker",
+        "Berserker Fury",
+        "Demon Hunter Sword",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2026-01-21T01:32:43.073339+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Gacor parah damagenya",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Blade of Despair",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-05T06:50:21.842227+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Miya sakit ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Windtalker",
+        "Berserker Fury",
+        "Golden Staff",
+        "Malefic Gun",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "build miya tersakit \n\n",
+      "tags": [],
+      "lastUpdated": "2026-04-05T08:36:44.561809+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Top global ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Haas Claws",
+        "Swift Boots",
+        "Berserker Fury",
+        "Windtalker",
+        "Malefic Gun",
+        "Sky Piercer"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Miya",
+      "tags": [],
+      "lastUpdated": "2025-10-20T18:13:49.925193+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Windtalker",
+        "Berserker's",
+        "Fury",
+        "Haas's"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11030,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11050,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Windtalker",
+        "Berserker's",
+        "Fury",
+        "Haas's"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10930,
+      "notes": null
+    }
+  ]
+}

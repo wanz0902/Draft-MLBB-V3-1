@@ -1,0 +1,785 @@
+{
+  "id": "yve",
+  "name": "Yve",
+  "heroName": "Yve",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Poke",
+    "Burst"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2450,
+    "hpRegen": 6.8,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 96,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "0.98",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 245
+  },
+  "skills": {
+    "passive": {
+      "name": "Galactic Power",
+      "description": "Yve gains a stack of (Galactic Power) each time she hits an enemy hero with (Void Blast) or (Void Crystal) (up to 10 stacks). Each stack of (Galactic Power) allows Yve to launch an extra attack on the next (Real World Manipulation) cast and increases the amount of shield gained by 5%.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "(+10*Hero Level)",
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Shield"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Galactic_Power",
+      "tips": "With Passive, Yve can poke enemies during the laning phase to gain stacks, so as to gain more casts of her Ultimate.",
+      "iconUrl": "/raw-assets/skill_icons/yve/galactic_power.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Void Blast",
+      "description": "Yve detonates Galactic Energy at the target location, dealing 290 (+150% Total Magic Power) Magic Damage to enemies in the area.\nSuccessfully hitting an enemy grants Yve 55% extra Movement Speed (halved if a non-hero enemy is hit) that decreases over 1s.",
+      "cooldown": "3.0",
+      "manaCost": "40",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "3.0",
+            "2.7",
+            "2.4",
+            "2.1",
+            "1.8",
+            "1.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "40",
+            "45",
+            "50",
+            "55",
+            "60",
+            "65"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "290",
+            "340",
+            "390",
+            "440",
+            "490",
+            "540"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Void_Blast",
+      "tips": "This is Yve's main damage dealing skill, which requires a relatively high hit rate to deal more extra damage to targets within the central area. Try to cast the skill with the target at the center of the skill range.",
+      "iconUrl": "/raw-assets/skill_icons/yve/void_blast.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Void Crystal",
+      "description": "Yve summons a Void Crystal at the target location, dealing 220 (+40% Total Magic Power) Magic Damage to nearby enemies.\nUse Again: Yve commands the Crystal to fire materialized energy in the target direction for 2.7s, dealing 75 (+10% Total Magic Power) Magic Damage every 0.45s to enemies hit and slowing them by 20%. Enemies hit multiple times are slowed by an extra 4% for each hit after the first hit (up to 40%).",
+      "cooldown": "14.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+40% Total Magic Power)",
+        "(+10% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "14.0",
+            "13.2",
+            "12.4",
+            "11.6",
+            "10.8",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "90",
+            "100",
+            "110",
+            "120",
+            "130"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "220",
+            "260",
+            "300",
+            "340",
+            "380",
+            "420"
+          ]
+        },
+        {
+          "label": "Sustained Damage",
+          "values": [
+            "75",
+            "85",
+            "95",
+            "105",
+            "115",
+            "125"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Slow",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Void_Crystal",
+      "tips": "This skill enables Yve to block paths when chasing enemies or being chased. Besides, it can slow targets down so that Yve can aim Void Blast more accurately to improve damage output.",
+      "iconUrl": "/raw-assets/skill_icons/yve/void_crystal.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Real World Manipulation",
+      "description": "Yve creates a Starfield that lasts 15s. Within the duration, you can Tap or Swipe the screen to attack up to 20 times.\nTap: Deals 340 (+150% Total Magic Power) Magic Damage to enemies in the target area.\nSwipe: Deals 85 (+10% Total Magic Power) Magic Damage every 0.45s to enemies in the target area for 2.7s and slows them by 40%.\nEnemies leaving or entering the Starfield will be immobilized for 0.8s (only once against the same target).\nYve cannot be displaced while the Starfield is active, and the Starfield will remain even if Yve is controlled (except for Suppression).",
+      "cooldown": "60.0",
+      "manaCost": "180",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)",
+        "(+10% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "180",
+            "220",
+            "260"
+          ]
+        },
+        {
+          "label": "Tap Damage",
+          "values": [
+            "340",
+            "440",
+            "540"
+          ]
+        },
+        {
+          "label": "Swipe Damage",
+          "values": [
+            "85",
+            "105",
+            "125"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Real_World_Manipulation",
+      "tips": "This is Yve's core skill, which greatly enhances her teamfight ability. She can take control of the pace of a battle from a safe distance and deal high damage.",
+      "iconUrl": "/raw-assets/skill_icons/yve/real_world_manipulation.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Balmond",
+        "Alpha",
+        "Barats",
+        "Faramis"
+      ],
+      "weakAgainst": [
+        "Fanny",
+        "Freya",
+        "Harith",
+        "Nolan",
+        "Moskov"
+      ],
+      "synergyWith": [
+        "Valentina",
+        "Zhuxin",
+        "Granger",
+        "Chip",
+        "Harley"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 7
+      },
+      {
+        "name": "Balmond",
+        "advantage": 4
+      },
+      {
+        "name": "Alpha",
+        "advantage": 3.6
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.6
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Fanny",
+        "advantage": 3.9
+      },
+      {
+        "name": "Freya",
+        "advantage": 3.5
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.9
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.8
+      },
+      {
+        "name": "Moskov",
+        "advantage": 2.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Valentina",
+        "synergy": 7.9
+      },
+      {
+        "name": "Zhuxin",
+        "synergy": 3.1
+      },
+      {
+        "name": "Granger",
+        "synergy": 2.6
+      },
+      {
+        "name": "Chip",
+        "synergy": 2.6
+      },
+      {
+        "name": "Harley",
+        "synergy": 2.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Yve counters Tanks and Fighters with low mobility like Fredrinn, Barats, and Aulus due to her long range skills.",
+    "weakAgainstReason": "Yve's low survivability makes her a target for divers and burst damage heroes like Yin, Saber, and Karina.",
+    "synergyReason": "Yve's works best with Tanks and Supports with strong CC to lockdown enemies for her Ultimate, like Minotaur, Gatotkaca, and Atlas."
+  },
+  "mechanicCategory": [
+    "Zone Control Ultimate"
+  ],
+  "mechanicNote": "Yve memiliki ultimate zone control yang bisa di-aim manual secara real-time, memberikan slow dan damage berulang.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.3,
+  "pickRate": 0.1,
+  "banRate": 0.2,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 80,
+    "abilityEffects": 40,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 86,
+    "late": 74,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Ice Queen Wand",
+      "Glowing Wand",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Yve is relatively average early with safe poke, but her teamfight control spikes hard once Real World Manipulation is available for Turtle fights and sieges. She still scales well into late due to high magic ratios and zoning, though positioning becomes harder against full-build divers."
+  },
+  "proBuilds": [
+    {
+      "player": "Zulmineir x FAN'T",
+      "games": 785,
+      "items": [
+        "Rapid Boots",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Divine Glaive",
+        "Blood Wings",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "XDPROWIN",
+      "games": 499,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Takaaa",
+      "games": 1484,
+      "items": [
+        "Tough Boots",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/yve/video-0-0.mp4",
+    "skill1": "/videos/heroes/yve/video-1-0.mp4",
+    "skill2": "/videos/heroes/yve/video-2-0.mp4",
+    "ultimate": "/videos/heroes/yve/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Yve's Ultimate to cover as many enemies as possible and unleash multiple attacks on them. When the enemies run out of Yve's Ultimate, cancel it and use her 2nd Skill to slow them, then finish them off with her 1st Skill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Yve's 2nd Skill to first slow the enemy from afar, then hit them with the center of her 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Zhask",
+      "relationship": "FEUDS"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Northern Vale",
+  "race": "Extraterrestrial",
+  "bestTeammates": [
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 14.39
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 9.68
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 8.43
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 7.08
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": 5.75
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Aurora",
+      "winrateDelta": -18.06
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -15.89
+    },
+    {
+      "name": "Vexana",
+      "winrateDelta": -14.26
+    },
+    {
+      "name": "Odette",
+      "winrateDelta": -13.43
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": -8.89
+    }
+  ],
+  "metaScore": 15.55,
+  "metaRank": 81,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 7.44
+      },
+      {
+        "name": "Arlott",
+        "advantage": 6.28
+      },
+      {
+        "name": "Lapu-Lapu",
+        "advantage": 5.07
+      },
+      {
+        "name": "Barats",
+        "advantage": 4.99
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 4.78
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natan",
+        "advantage": 6.83
+      },
+      {
+        "name": "Nolan",
+        "advantage": 6.23
+      },
+      {
+        "name": "Aldous",
+        "advantage": 3.74
+      },
+      {
+        "name": "Kadita",
+        "advantage": 3.53
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 3.1
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S16 Grand Finals : TLPH.Sanji",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Immortality",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "AURORA VS Team Liquid PH Game 1",
+      "tags": [],
+      "lastUpdated": "2025-10-28T04:00:56.651903+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "ga gampang ke gank",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Glowing Wand",
+        "Clock of Destiny",
+        "Oracle",
+        "Blood Wings",
+        "Ice Queen Wand"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "CD cepat dan susah di gank cocok buat jugler ass",
+      "tags": [],
+      "lastUpdated": "2025-10-16T15:57:32.209901+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "bisa dapet savage, user yve 400+ match, 57% wr",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "buat aja dulu sepatu mana, jadiin skypiercer nya, lalu tergantung musuh nya kalau musuh nya banyak heal pakai glowing, kalau enggak beli genius wand\nlalu beli wishing lantern, lalu kalau roam musuh masih belum pake magic deff utamakan holly cristal \nbaru terakhir divine glaive, (ingat main yve itu main jaga jarak), main poking jangan asal maju harus selalu liat map dan sekitar apa lagi hero core musuh!!!\nkarna yve selalu di incer!!!\nJADI GUA KASIH SARAN, TIAP LU SKILL 1 LU LANGSUNG MUNDUR CEPET, SKILL 1 MUNDUR LAGI CEPET, KARNA SKILL 1,2 YVE ITU BISA NGEHASIL KAN SHIELD MESKIPUN GA GEDE DAN TAHAN LAMA tapi skill nya harus kena hero musuh selain itu ga bisa muncul shield nya, lalu main yve itu enak banget ngumpulin stack dari skypiercer nya \nGUA 400+ MATCH, 57% WR gak percaya mampir aja (  SKY-  ) itu nick name gua",
+      "tags": [],
+      "lastUpdated": "2026-01-17T20:49:23.692715+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sustain+poke skill 1",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Glowing Wand",
+        "Clock of Destiny",
+        "Ice Queen Wand",
+        "Oracle",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Ambil skill 1 dahulu cicil musuh di mid kalo bisa ambil buff biru musuh\nTips andalin speed dari skill 1 jadi harus banyak gerak apalagi embelem support\n\nBattle spell bole diganti mau Flicker atau Purify",
+      "tags": [],
+      "lastUpdated": "2025-10-16T10:38:58.877353+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Poking Musuh+Armor Breaker",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Brute Force Breastplate"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Movement Slow dan Anti Heal + Penetration ",
+      "tags": [],
+      "lastUpdated": "2025-10-26T03:13:16.062056+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10840,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 11220,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10640,
+      "notes": null
+    }
+  ]
+}

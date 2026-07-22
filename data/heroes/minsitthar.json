@@ -1,0 +1,617 @@
+{
+  "id": "minsitthar",
+  "name": "Minsitthar",
+  "heroName": "Minsitthar",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Initiator",
+    "Crowd Control"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2621,
+    "hpRegen": 7.6,
+    "mana": 448,
+    "manaRegen": 3.4,
+    "physicalAttack": 118,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Mark of the King",
+      "description": "Minsitthar's Basic Attacks and skills apply a stack of (Mark of the King), up to 5 stacks. Upon reaching max stacks, the next attack detonates all (Mark of the King) stacks, dealing (Physical Damage) equal to 300( +6% Total HP) of Minsitthar's Max HP and stunning the target for 0.8s while healing Minsitthar for 300( +6% Total HP) HP. Can only trigger once every 6s on the same target.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mark_of_the_King",
+      "tips": "With this passive, Minsithar can perform more ganks with his teammates without the worry of his farming falling behind.",
+      "iconUrl": "/raw-assets/skill_icons/minsitthar/mark_of_the_king.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Spear of Glory",
+      "description": "Minsitthar thrusts forward with the Spear of Glory, dealing 175( +200% Extra Physical Attack) (Physical Damage) and slowing enemies hit by 30%. Enemy heroes hit by the tip of the spear will be stunned for 0.6s. After a short delay, Minsitthar pulls back the spear, dealing 175( +200% Extra Physical Attack) (Physical Damage) to all enemies along the way and dragging enemy heroes hit to him.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spear_of_Glory",
+      "tips": "Try to better use this skill and pull back the back-line heroes who are easy to slay even when they're hiding behind the tanks.",
+      "iconUrl": "/raw-assets/skill_icons/minsitthar/spear_of_glory.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Shield Assault",
+      "description": "Minsitthar awakens the power in his shield and releases it, dealing 300( +180% Extra Physical Attack) (Physical Damage) to all enemies in a rectangular area and slowing them by 80% (decaying rapidly over 2s). Meanwhile, he enters (Phalanx) state for 3s, reducing damage taken from the front by 25% and enhancing his Basic Attack to swiftly strike an area in front of him.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shield_Assault",
+      "tips": "The range of this skill is not too wide so better use it together with his 1st Skill, and by doing so the hit rate will be increased.",
+      "iconUrl": "/raw-assets/skill_icons/minsitthar/shield_assault.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "King's Calling",
+      "description": "Minsitthar charges forward and calls 4 Royal Guards to form a field around him. The Royal Guards cannot move but will attack enemies in the field and deal ( +40% Total Physical Attack) (Physical Damage) to them. Enemies in the field are slowed by 20% and cannot use movement skills.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "King's_Calling",
+      "tips": "Use the Ult directly when a teamfight with fewer than 3 players occurs. When facing more enemies, use \"Spear of Glory\" first and fast slay an ememy hero to increase the chances of winning the teamfight.",
+      "iconUrl": "/raw-assets/skill_icons/minsitthar/king_s_calling.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Freya",
+        "Phoveus",
+        "Martis",
+        "Alucard",
+        "Valentina"
+      ],
+      "weakAgainst": [
+        "Natalia",
+        "Baxia",
+        "Argus",
+        "Irithel",
+        "Obsidia"
+      ],
+      "synergyWith": [
+        "Estes",
+        "Rafaela",
+        "Hilda",
+        "Lolita",
+        "Johnson"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Freya",
+        "advantage": 3.9
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.1
+      },
+      {
+        "name": "Martis",
+        "advantage": 2.9
+      },
+      {
+        "name": "Alucard",
+        "advantage": 2.5
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.3
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.8
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.5
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.1
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Estes",
+        "synergy": 1.8
+      },
+      {
+        "name": "Rafaela",
+        "synergy": 1.8
+      },
+      {
+        "name": "Hilda",
+        "synergy": 1.6
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.5
+      },
+      {
+        "name": "Johnson",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Minsitthar is strong against heroes that rely on mobility skills since his Ultimate disables them. Minsitthar can instantly negate the advantages of heroes like Lancelot, Benedetta and Arlott.",
+    "weakAgainstReason": "Minsitthar is countered by heroes with high Movement Speed, such as Zilong and Aulus, who can easily dodge his 1st Skill and run out of his Ultimate.",
+    "synergyReason": "Minsitthar works best with high damage Marksmen, such as Melissa and Hanabi, because he can create more opportunities for them to deal damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Minsitthar adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage",
+    "Counter Pick"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.1,
+  "pickRate": 0.9,
+  "banRate": 23.7,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 40,
+    "abilityEffects": 80,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 58,
+    "mid": 78,
+    "late": 62,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 10"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Dominance Ice",
+      "Blade Armor"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "He has decent early pick threat with hook/drag patterns but usually lacks damage to solo-carry lanes without items. Mid game is his best window because King's Calling hard-punishes mobility heroes in skirmishes and objective fights; late game his impact shifts more to control/utility as carries outscale his damage."
+  },
+  "proBuilds": [
+    {
+      "player": "Mattsing.",
+      "games": 557,
+      "items": [
+        "Encourage Swift Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Rose Gold Meteor",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "SixyNoir.",
+      "games": 487,
+      "items": [
+        "Tough Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Sea Halberd",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "عبد المجيد",
+      "games": 444,
+      "items": [
+        "Rapid Boots",
+        "Corrosion Scythe",
+        "Rose Gold Meteor",
+        "Demon Hunter Sword",
+        "Golden Staff"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/minsitthar/video-0-0.mp4",
+    "skill1": "/videos/heroes/minsitthar/video-1-0.mp4",
+    "skill2": "/videos/heroes/minsitthar/video-2-0.mp4",
+    "ultimate": "/videos/heroes/minsitthar/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, Minsitthar should use his 1st Skill to pull in multiple enemies before using his Ultimate to restrict their movement, and then use his 2nd Skill's enhanced Basic Attacks to deal AOE damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, Minsitthar should use his 1st Skill to pull the enemy to him and slow them with his 2nd Skill, before unleashing his enhanced Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Melissa",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Hanabi",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Vonetis Sea",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 4.19
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 3.09
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 3.06
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": 2.52
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": 2.06
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Phoveus",
+      "winrateDelta": -2.64
+    },
+    {
+      "name": "Paquito",
+      "winrateDelta": -2.25
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -2.09
+    },
+    {
+      "name": "Sora",
+      "winrateDelta": -1.78
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": -1.7
+    }
+  ],
+  "metaScore": 26.32,
+  "metaRank": 17,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Freya",
+        "advantage": 4.86
+      },
+      {
+        "name": "Harith",
+        "advantage": 3.57
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2.62
+      },
+      {
+        "name": "Kagura",
+        "advantage": 2.53
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.47
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.4
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.6
+      },
+      {
+        "name": "Aulus",
+        "advantage": 1.78
+      },
+      {
+        "name": "Belerick",
+        "advantage": 1.72
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 1.68
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Minsi Colok Colok Kyahh~",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Warrior Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Great Dragon Spear",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Kecepatan menusuk di akui Ambatukam🥵",
+      "tags": [],
+      "lastUpdated": "2025-10-16T17:50:37.192981+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Attack speed",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Sea Halberd",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Menciduk dan membuat musuh kaget dengan damage nya",
+      "tags": [],
+      "lastUpdated": "2025-10-23T01:20:27.247922+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 10870,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Corrosion",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10850,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Corrosion",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10580,
+      "notes": null
+    }
+  ]
+}

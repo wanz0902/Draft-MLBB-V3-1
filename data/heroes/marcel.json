@@ -1,0 +1,617 @@
+{
+  "id": "marcel",
+  "name": "Marcel",
+  "heroName": "Marcel",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Crowd Control",
+    "Support"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2740,
+    "hpRegen": 12.4,
+    "mana": 500,
+    "manaRegen": 4,
+    "physicalAttack": 115,
+    "physicalDefense": 25,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Platinum Snap",
+      "description": "Marcel's split soul, Clemar, enters the camera to freeze the moment. Marcel's Basic Attacks deal 50 (+40% Total Physical Attack) (+40% Total Magic Defense) (+40% Total Physical Defense) Physical Damage (cannot Crit). He cannot benefit from extra Attack Speed. Extra HP is converted into 1.5% Hybrid Defense.\nClemar automatically snaps photos of enemy heroes near Marcel, causing a brief Frozen Moment and dealing 20 (+5% their Max HP) True Damage (triggers Attack Effects). It also grants a shield of the same value to Marcel and a nearby allied hero. Cooldown: 12s per target (each Basic Attack from Marcel reduces this cooldown by 1s).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+40% Total Physical Attack)",
+        "(+40% Total Magic Defense)",
+        "(+40% Total Physical Defense)",
+        "(+5% their Max HP)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "CC2"
+      ],
+      "iconName": "Platinum_Snap",
+      "iconUrl": "/raw-assets/skill_icons/marcel/platinum_snap.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "skill1": {
+      "name": "Framed Moment",
+      "description": "Clemar focuses on an area around Marcel, slowing enemy heroes within by 20%. After 2.5s, he completes the shot, dealing 370 (+50% Total Physical Attack) (+100% Total Magic Defense) (+100% Total Physical Defense) Physical Damage to enemies within and immobilizing them for 1s.",
+      "cooldown": "12.5",
+      "manaCost": "40",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+100% Total Magic Defense)",
+        "(+100% Total Physical Defense)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.5",
+            "12.0",
+            "11.5",
+            "11.0",
+            "10.5",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "40",
+            "45",
+            "50",
+            "55",
+            "60",
+            "65"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "370",
+            "400",
+            "430",
+            "460",
+            "490",
+            "520"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE2"
+      ],
+      "iconName": "Framed_Moment",
+      "iconUrl": "/raw-assets/skill_icons/marcel/framed_moment.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "skill2": {
+      "name": "Tracking Shot",
+      "description": "Artist inspiration time! Marcel enters the Tracking Haste state for 3s, gaining 15% Movement Speed (increases to 75% when moving toward enemy heroes).\nUse Again: Marcel dashes in the target direction, leaving a framing phantom behind. If Framed Moment is active, Clemar remains at the original location to continue shooting.",
+      "cooldown": "12.5",
+      "manaCost": "70",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.5",
+            "12.0",
+            "11.5",
+            "11.0",
+            "10.5",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "70",
+            "75",
+            "80",
+            "85",
+            "90",
+            "95"
+          ]
+        },
+        {
+          "label": "Movement Speed Bonus",
+          "values": [
+            "15%",
+            "17.5%",
+            "20%",
+            "22.5%",
+            "25%",
+            "27.5%"
+          ]
+        },
+        {
+          "label": "Movement Speed Boost",
+          "values": [
+            "75%",
+            "82.5%",
+            "90%",
+            "97.5%",
+            "105%",
+            "112.5%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Speed Up2"
+      ],
+      "iconName": "Tracking_Shot",
+      "iconUrl": "/raw-assets/skill_icons/marcel/tracking_shot.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "ultimate": {
+      "name": "Golden Hour",
+      "description": "Marcel and Clemar perform a joint shoot. After a short delay, Clemar takes a wide-angle shot of the target area for 3s. During this time, Marcel enters the Tracking Haste state while inside the area. All other units in the area are put into a Frozen Moment and are immune to all effects except from Marcel. All ranged Basic Attacks and projectiles are also frozen and will continue after a delay.\nGolden Hour resets the cooldown of Platinum Snap for each enemy hero.\nAllied heroes with the Platinum Snap shield can move freely within the area.",
+      "cooldown": "74.0",
+      "manaCost": "150",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "74.0",
+            "68.0",
+            "62.0"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "CC2"
+      ],
+      "iconName": "Golden_Hour",
+      "iconUrl": "/raw-assets/skill_icons/marcel/golden_hour.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Melissa",
+        "Atlas",
+        "Fanny",
+        "Barats",
+        "Silvanna"
+      ],
+      "weakAgainst": [
+        "Angela",
+        "Cyclops",
+        "Aamon",
+        "Odette",
+        "Lesley"
+      ],
+      "synergyWith": [
+        "Ixia",
+        "Fredrinn",
+        "Valentina",
+        "Natan",
+        "Franco"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Melissa",
+        "advantage": 6.4
+      },
+      {
+        "name": "Atlas",
+        "advantage": 6.4
+      },
+      {
+        "name": "Fanny",
+        "advantage": 4
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.9
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 3.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Angela",
+        "advantage": 5
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 4.7
+      },
+      {
+        "name": "Aamon",
+        "advantage": 4.1
+      },
+      {
+        "name": "Odette",
+        "advantage": 4.1
+      },
+      {
+        "name": "Lesley",
+        "advantage": 3.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Ixia",
+        "synergy": 3.9
+      },
+      {
+        "name": "Fredrinn",
+        "synergy": 3.9
+      },
+      {
+        "name": "Valentina",
+        "synergy": 3.7
+      },
+      {
+        "name": "Natan",
+        "synergy": 3.4
+      },
+      {
+        "name": "Franco",
+        "synergy": 3.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Marcel is more effective against low-mobility heroes, such as Layla and Vexana, as they are easily caught by his Ultimate, allowing him and his allies to secure easy kills.",
+    "weakAgainstReason": "Heroes who possess Invincibility or Untargetable effects that can bypass Marcel's CC, like Ling and X.Borg, will reduce his impact on the battlefield.",
+    "synergyReason": "Because of Marcel's excellent AOE CC, he pairs well with allies with high AOE damage, like Hanabi and Ixia, to maximize their damage potential."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Marcel adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 55.2,
+  "pickRate": 0.3,
+  "banRate": 122.1,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 30,
+    "abilityEffects": 100,
+    "difficulty": 30
+  },
+  "skillVideos": {
+    "passive": null,
+    "skill1": null,
+    "skill2": null,
+    "ultimate": null
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Passive"
+      ],
+      "description": "During the laning phase, use Marcel's 2nd Skill to run up to the enemy and cast his 1st Skill. While the enemy is immobilized, lay into them with Basic Attacks."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Skill 2",
+        "Skill 3",
+        "Passive",
+        "Passive"
+      ],
+      "description": "In teamfights, Marcel should activate his 2nd Skill, followed by his 1st Skill. Run into the enemy's formation, then use the 2nd Skill again to dash away and drop his 1st Skill on top of them. Once the enemies are immobilized, use his Ultimate."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Hanabi",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Ixia",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Mathilda",
+      "winrateDelta": 37.58
+    },
+    {
+      "name": "Lesley",
+      "winrateDelta": 5.39
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": 3.78
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 3.05
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 3
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Carmilla",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 0
+    }
+  ],
+  "items": [
+    "Magic Boots",
+    "Thunder Belt",
+    "Dominance Ice",
+    "Guardian Helmet",
+    "Oracle",
+    "Immortality"
+  ],
+  "proBuilds": [
+    {
+      "player": "MPLpro_Marcel",
+      "games": 487,
+      "items": [
+        "Magic Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Guardian Helmet",
+        "Oracle",
+        "Immortality"
+      ]
+    }
+  ],
+  "metaScore": 59.33,
+  "metaRank": 1,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 6.31
+      },
+      {
+        "name": "Valentina",
+        "advantage": 4.71
+      },
+      {
+        "name": "Chip",
+        "advantage": 4.29
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.92
+      },
+      {
+        "name": "Yin",
+        "advantage": 3.51
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 0
+      },
+      {
+        "name": "Aamon",
+        "advantage": 0
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 0
+      },
+      {
+        "name": "Floryn",
+        "advantage": 0
+      },
+      {
+        "name": "Yin",
+        "advantage": 0
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MARCEL PELARI KALCERR",
+      "author": "community",
+      "votes": 16,
+      "items": [
+        "Magic Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Guardian Helmet",
+        "Oracle",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "Sesuai Judul Build by Kucjh Xheper Ganteng",
+      "tags": [],
+      "lastUpdated": "2026-04-10T05:29:35.403995+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 10660,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 10770,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10680,
+      "notes": null
+    }
+  ]
+}

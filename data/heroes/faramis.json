@@ -1,0 +1,716 @@
+{
+  "id": "faramis",
+  "name": "Faramis",
+  "heroName": "Faramis",
+  "role": [
+    "Mage",
+    "Support"
+  ],
+  "specialty": [
+    "Guard",
+    "Charge"
+  ],
+  "lane": "Mid",
+  "lanes": [
+    "Mid",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2510,
+    "hpRegen": 7.6,
+    "mana": 490,
+    "manaRegen": 3.8,
+    "physicalAttack": 100,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": "0.98",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Vicious Retrieval",
+      "description": "Every 4s, Faramis' next skill against enemy heroes and summoned objects generates a soul fragment on the spot. Faramis can absorb the soul fragment to restore 100 (+50% Total Magic Power) HP and gain 2 extra Magic Power (up to 40 stacks). Upon death, he consumes the absorbed soul fragments to reduce the respawn timer, each reducing the timer by 3% (up to 90%). Enemies that die around Faramis also have a chance to drop soul fragments.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Vicious_Retrieval",
+      "tips": "The main regeneration skill for Faramis. He can collect souls nearby to restore himself. Meanwhile, the souls he collects will shorten the time of his next respawn so that he can come back to the battlefield quickly.",
+      "iconUrl": "/raw-assets/skill_icons/faramis/vicious_retrieval.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Shadow Stampede",
+      "description": "Faramis enters the Shadow state for 3s, gaining 70% extra Movement Speed, 25 Physical & Magic Defense, and 20% Cooldown Reduction of this skill. He also gains the ability to move through terrain. Enemy heroes he touches take 250 (+60% Total Magic Power) Magic Damage and are marked with a Nether Mark. Upon leaving the Shadow state, Faramis pulls all the marked enemy heroes toward him, dealing them 250 (+60% Total Magic Power) Magic Damage\nUse Again: Ends the Shadow state early to pull marked enemy heroes toward him.\nSoul Fragment absorption range is increased while this skill is active.",
+      "cooldown": "15.0",
+      "manaCost": "85",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)",
+        "(+60% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "85",
+            "95",
+            "105",
+            "115",
+            "125",
+            "135"
+          ]
+        },
+        {
+          "label": "Hybrid Defense Boost",
+          "values": [
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "280",
+            "310",
+            "340",
+            "370",
+            "400"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "250",
+            "280",
+            "310",
+            "340",
+            "370",
+            "400"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Buff",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shadow_Stampede",
+      "tips": "A skill used to start a team fight. Cast this skill with Flicker or Sprint. Join the battle and stack advantages.",
+      "iconUrl": "/raw-assets/skill_icons/faramis/shadow_stampede.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Ghost Bursters",
+      "description": "Faramis gathers Nether energy in a fan-shaped area ahead, dealing 300 (+144% Total Magic Power) Magic Damage to enemies within. The energy will then split and bounce to nearby enemies, dealing 200 (+86% Total Magic Power) Magic Damage (splits up to 2 time(s) on enemy hero hits and 1 time(s) on non-enemy hero hits).",
+      "cooldown": "6.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+144% Total Magic Power)",
+        "(+86% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.8",
+            "5.6",
+            "5.4",
+            "5.2",
+            "5.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "66",
+            "72",
+            "78",
+            "84",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "330",
+            "360",
+            "390",
+            "420",
+            "450",
+            "480"
+          ]
+        },
+        {
+          "label": "Split Damage",
+          "values": [
+            "200",
+            "220",
+            "240",
+            "260",
+            "280",
+            "300"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ghost_Bursters",
+      "tips": "Core damage skill. The outburst can split so use this skill when there are multiple enemy units. With Shadow Stampede, Faramis can pull multiple targets together and deal high split damage.",
+      "iconUrl": "/raw-assets/skill_icons/faramis/ghost_bursters.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Nether Realm",
+      "description": "Faramis turns his surroundings into the Nether Realm for 6s, making affected allied heroes (including himself) enter the Specter state and granting them 400 plus 10 (+5% Total Magic Power)% extra HP and 50% extra Movement Speed for 1s. When the Specter state breaks, the hero will clear all debuffs and enter a brief Resurrection state for 1.3s. An allied hero's Specter state ends when they leave Nether Realm.",
+      "cooldown": "90.0",
+      "manaCost": "150",
+      "damageType": "None",
+      "scaling": [
+        "(+5% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "90.0",
+            "80.0",
+            "70.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "150",
+            "250",
+            "350"
+          ]
+        },
+        {
+          "label": "Extra HP",
+          "values": [
+            "400",
+            "600",
+            "800"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Death Immunity",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Nether_Realm",
+      "tips": "Good choice for team fights. Cast this skill no matter who is dying to protect teammates and himself. Faramis and his teammates can also deal great damage during this time.",
+      "iconUrl": "/raw-assets/skill_icons/faramis/nether_realm.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage",
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Chip",
+        "Sun",
+        "Wanwan",
+        "Karina"
+      ],
+      "weakAgainst": [
+        "Estes",
+        "Angela",
+        "Yve",
+        "Barats",
+        "Floryn"
+      ],
+      "synergyWith": [
+        "Chip",
+        "Ruby",
+        "Moskov",
+        "Masha",
+        "Fanny"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 6
+      },
+      {
+        "name": "Chip",
+        "advantage": 4.3
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.9
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.9
+      },
+      {
+        "name": "Karina",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 4.2
+      },
+      {
+        "name": "Angela",
+        "advantage": 3.4
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.3
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.1
+      },
+      {
+        "name": "Floryn",
+        "advantage": 3.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Chip",
+        "synergy": 3.5
+      },
+      {
+        "name": "Ruby",
+        "synergy": 2.9
+      },
+      {
+        "name": "Moskov",
+        "synergy": 2.8
+      },
+      {
+        "name": "Masha",
+        "synergy": 2.8
+      },
+      {
+        "name": "Fanny",
+        "synergy": 2.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Faramis' ability to temporarily prevent teammates from being killed makes him a good pick against heroes that go all-in to burst down a target, like Saber and Eudora.",
+    "weakAgainstReason": "Faramis is countered by high mobility heroes that are difficult for him to catch with his 1st Skill, such as Novaria and Pharsa.",
+    "synergyReason": "Faramis works well with heroes that are designed to dive into the enemy, such as Leomord and Martis, as he'll be able to maximize the life-saving effect of his Ultimate."
+  },
+  "mechanicCategory": [
+    "Revive Zone"
+  ],
+  "mechanicNote": "Faramis membuat zone yang me-revive ally yang mati di dalam area tersebut selama durasi tertentu.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control",
+    "Counter Pick"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage",
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.7,
+  "pickRate": 0.1,
+  "banRate": 0.7,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 60,
+    "abilityEffects": 10,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 80,
+    "late": 75,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Enchanted Talisman",
+      "Fleeting Time",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Faramis ramps up when teamfights start: Nether Realm swings mid-game skirmishes and objective fights heavily, especially with cooldown-focused items. He remains strong late due to game-changing resurrection utility and scaling from soul stacks, though he’s more team-dependent than a pure carry."
+  },
+  "proBuilds": [
+    {
+      "player": "Rem all alone",
+      "games": 505,
+      "items": [
+        "Encourage Arcane Boots",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Sky Piercer",
+        "Blood Wings",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "XELLL.",
+      "games": 871,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "Miko x Rinspedia",
+      "games": 859,
+      "items": [
+        "Encourage Arcane Boots",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Blood Wings",
+        "Lightning Truncheon"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/faramis/video-0-0.mp4",
+    "skill1": "/videos/heroes/faramis/video-1-0.mp4",
+    "skill2": "/videos/heroes/faramis/video-2-0.mp4",
+    "ultimate": "/videos/heroes/faramis/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In teamfights, use Faramis' Ultimate to protect his allies, then get close to the enemy and apply Nether Marks with his 1st Skill. Activate the 1st Skill again to pull them over and follow up with his 2nd Skill for additional damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Faramis' 1st Skill to get close to the enemy\nand hit them with his 2nd Skill while applying a Nether Mark with the 1st Skill. Then, use his 1st Skill again to pull the enemy back to him."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Leomord",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Martis",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "The Barren Lands",
+  "race": "Undead",
+  "bestTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": 11.14
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 11.08
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 5.54
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": 5.3
+    },
+    {
+      "name": "Chou",
+      "winrateDelta": 4.48
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hylos",
+      "winrateDelta": -8.59
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": -4.27
+    },
+    {
+      "name": "Zetian",
+      "winrateDelta": -4.2
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": -3.37
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": -3.34
+    }
+  ],
+  "metaScore": 13.89,
+  "metaRank": 92,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 8.37
+      },
+      {
+        "name": "Gloo",
+        "advantage": 8.01
+      },
+      {
+        "name": "Khufra",
+        "advantage": 6.76
+      },
+      {
+        "name": "Chip",
+        "advantage": 6.28
+      },
+      {
+        "name": "Joy",
+        "advantage": 5.71
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Bane",
+        "advantage": 5.16
+      },
+      {
+        "name": "Estes",
+        "advantage": 4.65
+      },
+      {
+        "name": "Floryn",
+        "advantage": 4.47
+      },
+      {
+        "name": "Lukas",
+        "advantage": 4.45
+      },
+      {
+        "name": "Yin",
+        "advantage": 3.97
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Strong Laning and fast rotation",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Glowing Wand",
+        "Fleeting Time",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "This Faramis build and emblem are excellent. The Support emblem provides an additional 10% cooldown, and when its passive is active, it gives a larger HP boost than other emblems. It's just perfect for Faramis.\n\nThe added movement speed and cooldown are absolutely perfect.\n\nHighly recommended.",
+      "tags": [],
+      "lastUpdated": "2025-11-22T17:34:18.055654+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Auto ngeselin ",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Tought Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Blood Wings",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T08:00:25.184787+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10850,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10610,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10980,
+      "notes": null
+    }
+  ]
+}

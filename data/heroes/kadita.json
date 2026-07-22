@@ -1,0 +1,760 @@
+{
+  "id": "kadita",
+  "name": "Kadita",
+  "heroName": "Kadita",
+  "role": [
+    "Assassin",
+    "Mage"
+  ],
+  "specialty": [
+    "Burst",
+    "Charge"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2461,
+    "hpRegen": 7,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 100,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Thalassophobia",
+      "description": "Kadita gains the (Blessing of the Ocean) every 30s. The Blessing is triggered when she takes damage from enemy heroes and lasts 4s, allowing her to recover 65% of the HP lost within the duration afterward.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Heal"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Thalassophobia",
+      "tips": "Use her 1st skill when the passive is stacked and poke enemies while taking no damage.",
+      "iconUrl": "/raw-assets/skill_icons/kadita/thalassophobia.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Ocean Ode",
+      "description": "Kadita summons an ocean wave to carry her in the target direction and back, dealing 250 (+90% Total Magic Power) Magic Damage to enemies hit and slow them by 30%. While inside the wave, she gains Control Immunity and 50% Damage Reduction when inside the wave. This skill can pass through obstacles and terrain.\nUse Again: Kadita exits the wave without interrupting the wave's movement.",
+      "cooldown": "9.0",
+      "manaCost": "55",
+      "damageType": "Magic",
+      "scaling": [
+        "(+90% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "9.0",
+            "8.5",
+            "8.0",
+            "7.5",
+            "7.0",
+            "6.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "55",
+            "60",
+            "65",
+            "70",
+            "75",
+            "80"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "290",
+            "330",
+            "370",
+            "410",
+            "450"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ocean_Ode",
+      "tips": "During this process, use the 2nd skill and Ultimate and surround enemies with her waves.",
+      "iconUrl": "/raw-assets/skill_icons/kadita/ocean_ode.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Breath of the Ocean",
+      "description": "After a short delay, Kadita summons an ocean wave to erupt at the target location, dealing 350 (+140% Total Magic Power) Magic Damage to enemies hit and knocking them airborne for 1s.\nKadita can cast this skill during Ocean Ode to summon an ocean wave beneath her with a shorter eruption delay.",
+      "cooldown": "8.0",
+      "manaCost": "75",
+      "damageType": "Magic",
+      "scaling": [
+        "(+140% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "75",
+            "80",
+            "85",
+            "90",
+            "95",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "350",
+            "380",
+            "410",
+            "440",
+            "470",
+            "500"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "AOE",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Breath_of_the_Ocean",
+      "tips": "It's a skill that takes time to reach a strong effect and needs proper prediction and teammate's cooperation. If you manage to knock an enemy hero up, use Kadita’s 1st skill or her ultimate to eliminate them.",
+      "iconUrl": "/raw-assets/skill_icons/kadita/breath_of_the_ocean.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Rough Waves",
+      "description": "Kadita dives into the ground and sends ocean waves in all directions (this skill can only be interrupted by Suppression), each dealing 270 (+60% Total Magic Power) Magic Damage to enemies hit and slowing them by 30%. Enemies hit by multiple waves take increased damage. After a short period, the waves return to Kadita, each dealing 180 (+40% Total Magic Power) Magic Damage to enemies hit.\nWhen underground, Kadita becomes untargetable and gains 60% Movement Speed.",
+      "cooldown": "40.0",
+      "manaCost": "120",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)",
+        "(+40% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "40.0",
+            "36.0",
+            "32.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "150",
+            "180"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "270",
+            "300",
+            "330"
+          ]
+        },
+        {
+          "label": "Return Damage",
+          "values": [
+            "180",
+            "200",
+            "220"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Invincible"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Rough_Waves",
+      "tips": "The high AOE burst damage and her invulnerable state make her one of the best in teamfights.",
+      "iconUrl": "/raw-assets/skill_icons/kadita/rough_waves.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Ixia",
+        "Johnson",
+        "Silvanna",
+        "Hanzo"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Valentina",
+        "Kaja",
+        "Kagura"
+      ],
+      "synergyWith": [
+        "Angela",
+        "Floryn",
+        "Mathilda",
+        "Chip",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.9
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.9
+      },
+      {
+        "name": "Johnson",
+        "advantage": 2.2
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 1.8
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 1.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 3.1
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.6
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.1
+      },
+      {
+        "name": "Kagura",
+        "advantage": 1.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Angela",
+        "synergy": 2.2
+      },
+      {
+        "name": "Floryn",
+        "synergy": 2.1
+      },
+      {
+        "name": "Mathilda",
+        "synergy": 1.8
+      },
+      {
+        "name": "Chip",
+        "synergy": 1.6
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Kadita excels at countering heroes that lack mobility, such as Aurora and Eudora, because it's difficult for them to escape Kadita's 2nd Skill, and knocking them airborne sets them up for her Ultimate.",
+    "weakAgainstReason": "Kadita is countered by heroes with long range and high mobility, such as Clint and Beatrix, since it's difficult for Kadita to close in on them or hit them with her 2nd Skill.",
+    "synergyReason": "Kadita works well with heroes who possess strong CC abilities, such as Atlas and Tigreal, as their CC will make it easier for Kadita to hit more enemies with her Ultimate."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Kadita adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.3,
+  "pickRate": 1,
+  "banRate": 8.2,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 80,
+    "abilityEffects": 80,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 65,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Kadita’s kill threat spikes hard once she unlocks her full S1+S2+Ultimate burst and can start forcing picks around Turtle fights. She stays impactful late via backline one-shots and untargetability, but becomes less consistent if enemies build Athena’s Shield/Radiant Armor and position tighter."
+  },
+  "proBuilds": [
+    {
+      "player": "~~ Mr X ~~™",
+      "games": 809,
+      "items": [
+        "Magic Shoes",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "Lloyd x HD",
+      "games": 889,
+      "items": [
+        "Arcane Boots",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    },
+    {
+      "player": "TT : royal canin",
+      "games": 894,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/kadita/video-0-0.mp4",
+    "skill1": "/videos/heroes/kadita/video-1-0.mp4",
+    "skill2": "/videos/heroes/kadita/video-2-0.mp4",
+    "ultimate": "/videos/heroes/kadita/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In teamfights, target the enemy's backline with Kadita's 1st Skill, and use her 2nd Skill when passing through enemies to knock them airborne. Follow up with her Ultimate for massive damage and avoid all incoming damage while being untargetable."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, use Kadita's 1st Skill to constantly harass enemies, and look for opportunities to use her 2nd Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Vonetis Sea",
+  "race": "Mermaid Goddess (currently), Human (formerly)",
+  "bestTeammates": [
+    {
+      "name": "Floryn",
+      "winrateDelta": 2.65
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 2.51
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 2.11
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.97
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 1.73
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Cecilion",
+      "winrateDelta": -3.6
+    },
+    {
+      "name": "Pharsa",
+      "winrateDelta": -3.5
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -2.63
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -2.61
+    },
+    {
+      "name": "Kagura",
+      "winrateDelta": -2.47
+    }
+  ],
+  "metaScore": 21.06,
+  "metaRank": 33,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 5.36
+      },
+      {
+        "name": "Ixia",
+        "advantage": 3.69
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.53
+      },
+      {
+        "name": "Atlas",
+        "advantage": 1.99
+      },
+      {
+        "name": "Natalia",
+        "advantage": 1.58
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 3.51
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.83
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.29
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.03
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 1.97
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "CD cpt, dan damage",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Genius Wand",
+        "Divine Glaive",
+        "Lightning Truncheon",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-23T15:01:31.189662+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "INstal kil musuh Darah tipis",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Glowing Wand",
+        "Sky Piercer",
+        "Lightning Truncheon",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Setrategi lincah dan membuat musuh kaget\n\nTrus setelah beli Genius dan glowing utamakan lihat musuh \nKalo musuh nya bnyak tebel atau susah jangan beli sky piercer langsung beli buid yang sudah di sediakan \n\nJangan lupa ini buid top global negara semoa islne",
+      "tags": [],
+      "lastUpdated": "2025-10-17T02:46:11.934711+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "1hit",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Genius Wand",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-15T14:02:06.206085+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 6 Z1.Kenni",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Wishing Lantern",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "( CFU VS Z1 GAME 2 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 16 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-16T12:15:52.872853+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "kadita damage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-12-05T07:49:33.009313+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 12010,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Sky",
+        "Piercer",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 11260,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Magic",
+        "Boots",
+        "Lightning",
+        "Truncheon",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11840,
+      "notes": null
+    }
+  ]
+}

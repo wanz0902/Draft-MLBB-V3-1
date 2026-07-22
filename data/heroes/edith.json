@@ -1,0 +1,661 @@
+{
+  "id": "edith",
+  "name": "Edith",
+  "heroName": "Edith",
+  "role": [
+    "Tank",
+    "Marksman"
+  ],
+  "specialty": [
+    "Control",
+    "Burst"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Gold",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Gold",
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2810,
+    "hpRegen": 8.4,
+    "mana": 460,
+    "manaRegen": 3.4,
+    "physicalAttack": 112,
+    "physicalDefense": 26,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Overload",
+      "description": "After each skill cast, Edith and Phylax become Overloaded for 3s, during which all Basic Attacks will trigger chain lightning, dealing extra (Magic Damage) equal to ( +30% Total Magic Power) plus 4(+0.25*Hero Level)% of the target's Max HP to up to 4 enemies. Chain lightning damage against Minions is increased to 150%.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Overload",
+      "tips": "Edith has the potential to overwhelm her enemy in the early to mid game. With her Passive Overload, she can clear the lanes and suppress her enemy with ease from afar while quickly leveling up to Lv.4.",
+      "iconUrl": "/raw-assets/skill_icons/edith/overload.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Earth Shatter",
+      "description": "After a 0.75s delay, Edith controls Phylax to launch an earth-shattering blow in a designated direction, dealing 225( +10% Total HP) (Physical Damage) to enemies hit (deals 120% damage to Minions) and knocking them airborne for 1s. This skill won't be interrupted by regular control effects (excluding Suppression).",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Earth_Shatter",
+      "tips": "Earth Shatter has a relatively long cast animation, thus it is recommended to couple it with Edith's teammate's control skill or cast it in a bush to increase the hit rate.",
+      "iconUrl": "/raw-assets/skill_icons/edith/earth_shatter.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Onward",
+      "description": "Edith controls Phylax to charge in the target direction, dealing 90( +3% Total HP) (Physical Damage) to enemies along the way. If Phylax hits an enemy hero during the charge, it will stop immediately and throw them over its shoulder, dealing 108( +5% Total HP) (Physical Damage).",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Onward",
+      "tips": "Onward is Edith's core skill. Use it to protect teammates or rip a tear in the enemy formation during the team fight.",
+      "iconUrl": "/raw-assets/skill_icons/edith/onward.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Primal Wrath",
+      "description": "(Passive:) When inside Phylax, Edith can accumulate Wrath according to the damage she receives (calculated before damage reduction). (Active:) Edith ejects herself forward from Phylax, knocking back nearby enemies. After that, she takes flight and can perform ranged Basic Attacks, each dealing 35( +75% Total Physical Attack) (+25% Total Magic Power) (Magic Damage). Edith also gains new skills in this state. When in flight, Edith gains 350( +5% Total HP)-350( +20% Total HP) extra Shield, 50%-150% extra Attack Speed and 5%-20% Hybrid Lifesteal based on the Wrath she accumulated, and converts each point of (Extra Physical Defense) and (Extra Magic Defense) into 3.2 (Magic Power). The flight state lasts up to 8s.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Primal_Wrath",
+      "iconUrl": "/raw-assets/skill_icons/edith/primal_wrath.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Objective DPS",
+      "Late Game Carry",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Harith",
+        "Chip",
+        "Silvanna",
+        "Faramis",
+        "Mathilda"
+      ],
+      "weakAgainst": [
+        "Lolita",
+        "Beatrix",
+        "Luo Yi",
+        "Layla",
+        "Hylos"
+      ],
+      "synergyWith": [
+        "Natalia",
+        "Estes",
+        "Rafaela",
+        "Saber",
+        "Diggie"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Harith",
+        "advantage": 3.2
+      },
+      {
+        "name": "Chip",
+        "advantage": 3
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 2.9
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.8
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 5
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 2.6
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 2.3
+      },
+      {
+        "name": "Layla",
+        "advantage": 2.2
+      },
+      {
+        "name": "Hylos",
+        "advantage": 1.8
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Natalia",
+        "synergy": 2.6
+      },
+      {
+        "name": "Estes",
+        "synergy": 2.4
+      },
+      {
+        "name": "Rafaela",
+        "synergy": 2.1
+      },
+      {
+        "name": "Saber",
+        "synergy": 2.1
+      },
+      {
+        "name": "Diggie",
+        "synergy": 2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Edith is strong against heroes that are not very agile and on the fragile side, such as Zilong and Aulus, because her skills deal enough burst damage to eliminate them after connecting with her 2nd Skill.",
+    "weakAgainstReason": "Edith is countered by Marksmen that can negate CC like Hanabi and Wanwan, since she will have a hard time locking them down.",
+    "synergyReason": "Edith works best with heroes like Minotaur and Atlas that can more reliably CC a target first, allowing her to follow up with her own CC."
+  },
+  "mechanicNote": "Edith transforms into Marksman Form after using Ultimate. Marksman Form skills (Divine Retribution, Lightning Bolt) not currently available in local source.",
+  "needsEnrichment": true,
+  "mechanicCategory": [
+    "Transform",
+    "Tank to Marksman"
+  ],
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Form Management",
+    "Combo Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Objective DPS",
+    "Late Game Carry",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.2,
+  "pickRate": 0.2,
+  "banRate": 0.1,
+  "heroAttributes": {
+    "durability": 70,
+    "offense": 30,
+    "abilityEffects": 100,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Dominance Ice",
+      "Thunder Belt",
+      "Feather of Heaven"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Solid early with reliable CC setup, but her biggest swing is level 4 where Primal Wrath turns tanked damage into a strong ranged damage window for objectives and fights. Mid game is dominant with pick potential + frontlining, while late remains strong but more dependent on good Wrath timing and being able to free-hit in flight form."
+  },
+  "proBuilds": [
+    {
+      "player": "Nature's • Wrath.",
+      "games": 579,
+      "items": [
+        "Dominance Ice",
+        "Radiant Armor",
+        "Thunder Belt",
+        "Feather of Heaven",
+        "Divine Glaive",
+        "Blade Armor"
+      ]
+    },
+    {
+      "player": "Boss Xebecc.",
+      "games": 678,
+      "items": [
+        "Tough Boots",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Feather of Heaven",
+        "Queen's Wings",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "P0TAT0",
+      "games": 960,
+      "items": [
+        "Encourage Rapid Boots",
+        "Thunder Belt",
+        "Windtalker",
+        "Dominance Ice",
+        "Oracle",
+        "Feather of Heaven"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/edith/video-0-0.mp4",
+    "skill1": "/videos/heroes/edith/video-1-0.mp4",
+    "skill2": "/videos/heroes/edith/video-2-0.mp4",
+    "ultimate": "/videos/heroes/edith/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Skill 5",
+        "Skill 4",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, use Edith's 2nd Skill to toss the enemy behind her, followed by her 1st Skill to knock them airborne then immediately use her Ultimate.\nNow use Edith's 2nd Skill in human form to immobilize the target, followed by her 1st Skill for more damage, and secure the kill with enhanced Basic Attacks."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Edith's 2nd Skill to toss the enemy behind her,\nthen use her 1st Skill to knock them airborne\nand finish them off with enhanced Basic Attacks from her Passive."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Vonetis Sea",
+  "race": "Demigod",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 9.03
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 6.51
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": 4.32
+    },
+    {
+      "name": "Kalea",
+      "winrateDelta": 3.77
+    },
+    {
+      "name": "Helcurt",
+      "winrateDelta": 2.23
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Ruby",
+      "winrateDelta": -4.17
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": -4.09
+    },
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": -2.6
+    },
+    {
+      "name": "Zilong",
+      "winrateDelta": -2.58
+    },
+    {
+      "name": "Bane",
+      "winrateDelta": -2.54
+    }
+  ],
+  "metaScore": 16.25,
+  "metaRank": 74,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 4.58
+      },
+      {
+        "name": "Chip",
+        "advantage": 3.94
+      },
+      {
+        "name": "Claude",
+        "advantage": 2.96
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.84
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.55
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 4.19
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 3.21
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 3.08
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 2.64
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.32
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Exp TB, main lama",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Guardian Helmet",
+        "Oracle",
+        "Blade Armor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Edith Exp TB, cocok untuk strategi kalau pengen roam support agar power edith maksimal. ",
+      "tags": [],
+      "lastUpdated": "2025-09-13T17:21:13.013898+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sekali ulti tambah sakit",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Tought Boots",
+        "Thunder Belt",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Dominance Ice",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T07:36:41.097348+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Pemaksimalan true damage",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Warrior Boots",
+        "Thunder Belt",
+        "Dominance Ice",
+        "Clock of Destiny",
+        "Sky Piercer",
+        "Starlium Scythe"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Manfaatkan hybrid def untuk konversi ke magic damage dan gunakan item Offensif sebagai bantuan\nNote*\nUbah sepatu untuk slot holy crystal (jika perlu)\nUbah sky piercer sesuai kondisi",
+      "tags": [],
+      "lastUpdated": "2025-10-24T02:43:05.376271+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Oracle",
+        "Dominance"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10540,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10680,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Oracle",
+        "Antique"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10740,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "sourceId": "asian-games-2026-qualifiers",
+  "sourceLabel": "asian-games-2026-qualifiers",
+  "sourceMode": "empty",
+  "source": "local-seed",
+  "wiki": "mobilelegends",
+  "lastSyncedAt": "2026-06-19T10:39:55.345Z",
+  "nextSyncAt": "2026-06-19T10:54:55.345Z",
+  "rawCount": 0,
+  "filteredCount": 0,
+  "normalizedCount": 0,
+  "statusCounts": {
+    "all": 0,
+    "upcoming": 0,
+    "ongoing": 0,
+    "completed": 0
+  },
+  "events": [],
+  "matches": [],
+  "apiStatus": {
+    "series": {
+      "statusCode": 404,
+      "ok": false,
+      "message": "API endpoint not found (404)."
+    },
+    "fallbackUsed": false,
+    "fallbackReason": null
+  },
+  "warnings": [
+    "API endpoint not found (404)."
+  ]
+}

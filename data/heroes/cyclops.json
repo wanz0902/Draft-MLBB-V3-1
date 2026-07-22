@@ -1,0 +1,743 @@
+{
+  "id": "cyclops",
+  "name": "Cyclops",
+  "heroName": "Cyclops",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Damage",
+    "Control"
+  ],
+  "lane": "Mid",
+  "lanes": [
+    "Mid",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2401,
+    "hpRegen": 6.8,
+    "mana": 488,
+    "manaRegen": 4,
+    "physicalAttack": 99,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Starlit Hourglass",
+      "description": "Each time Cyclops hits an enemy with his skills, all his skill cooldowns are reduced by 0.5s.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Starlit_Hourglass",
+      "tips": "His passive allows all his skills to reduce 0.5 seconds upon hitting an enemy. This passive is really strong and a cooldown+magic damage build will make Cyclops really Over Powered.",
+      "iconUrl": "/raw-assets/skill_icons/cyclops/starlit_hourglass.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Stardust Shock",
+      "description": "Cyclops casts two Stardust Disks in the target direction, each dealing 240 (+60% Total Magic Power) Magic Damage to enemies in its path.",
+      "cooldown": "7.5",
+      "manaCost": "50",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "50",
+            "60",
+            "70",
+            "80",
+            "90",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "240",
+            "272",
+            "304",
+            "336",
+            "368",
+            "400"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Stardust_Shock",
+      "tips": "Use his first skill on creeps. This skill is mostly used for killing creeps/minions and killing running enemies. Cyclops will shoot out planets to the specified target dealing the target 210 magic pts at the start. Using this skill while clashing with enemies will reduce all skill cooldown allowing you to use your second skill faster as well as trapping running enemies with your ultimate.",
+      "iconUrl": "/raw-assets/skill_icons/cyclops/stardust_shock.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Planets Attack",
+      "description": "Cyclops conjures Starlit Spheres around himself while gaining 50% Movement Speed that decays over 2s. The spheres will automatically seek and attack nearby enemies (prioritizes enemy heroes), exploding on collision and dealing 200 (+55% Total Magic Power) Magic Damage to the enemy. Enemies hit by multiple spheres will take reduced damage after the first hit.",
+      "cooldown": "14.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+55% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "14.0",
+            "13.2",
+            "12.4",
+            "11.6",
+            "10.8",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "66",
+            "72",
+            "78",
+            "84",
+            "90"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "225",
+            "250",
+            "275",
+            "300",
+            "325"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Planets_Attack",
+      "tips": "This is the most powerful skill Cyclops has. Planets will start to surround Cyclops making nearby enemies target and dealing 210 damage pts each planet. This is mostly used for finishing off enemies and damaging them. This is also used to and commonly used to stop/trap enemies from running away.",
+      "iconUrl": "/raw-assets/skill_icons/cyclops/planets_attack.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Star Power Lockdown",
+      "description": "Cyclops creates a Planetary Sphere and sends it after the target enemy hero or Creep, dealing 500 (+120% Total Magic Power) Magic Damage and immobilizing them for 0.75-1.5s (increases with travel distance).",
+      "cooldown": "26.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+120% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "26.0",
+            "22.0",
+            "18.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "80",
+            "100"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Star_Power_Lockdown",
+      "tips": "As said in the first skill this is used to trap running enemies or just enemies. Allowing you or your teammate to kill your enemy or simply finish them off if they have a low amount of health for this skill will follow wherever the enemy goes. This can be countered by many heroes now so don't be too shabby while in a match.",
+      "iconUrl": "/raw-assets/skill_icons/cyclops/star_power_lockdown.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Natalia",
+        "Marcel",
+        "Joy",
+        "Wanwan",
+        "Ling"
+      ],
+      "weakAgainst": [
+        "Lolita",
+        "Estes",
+        "Atlas",
+        "Yve",
+        "Ixia"
+      ],
+      "synergyWith": [
+        "Harley",
+        "Vale",
+        "Kagura",
+        "Marcel",
+        "Zhask"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 5
+      },
+      {
+        "name": "Marcel",
+        "advantage": 4.7
+      },
+      {
+        "name": "Joy",
+        "advantage": 3.9
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 3.5
+      },
+      {
+        "name": "Ling",
+        "advantage": 2.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 9.4
+      },
+      {
+        "name": "Estes",
+        "advantage": 4
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.8
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harley",
+        "synergy": 2.1
+      },
+      {
+        "name": "Vale",
+        "synergy": 1.6
+      },
+      {
+        "name": "Kagura",
+        "synergy": 1.6
+      },
+      {
+        "name": "Marcel",
+        "synergy": 1.5
+      },
+      {
+        "name": "Zhask",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Cyclops' short skill cooldown makes him strong against mid-ranged heroes with poor Mobility, such as Terizla and Alpha.",
+    "weakAgainstReason": "Cyclops lacks Dash or Blink skills, making him the preferred target for heroes with gap closers and CC skills. Such as Lancelot, Alucard and Kagura.",
+    "synergyReason": "Cyclops is best with tanky heroes with strong CC skills, like Belerick and Minsitthar."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Cyclops adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.4,
+  "pickRate": 0.8,
+  "banRate": 0.4,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 100,
+    "abilityEffects": 70,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 78,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Genius Wand"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Cyclops comes online hard at level 4 with reliable pick potential from Star Power Lockdown, then peaks mid game as cooldown reduction via passive lets him spam sustained magic damage in skirmishes. Late remains solid but he can be out-ranged/out-bursted in full 5v5s without perfect positioning."
+  },
+  "proBuilds": [
+    {
+      "player": "Ronny Diaz",
+      "games": 971,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Clock of Destiny",
+        "Concentrated Energy",
+        "Glowing Wand",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "ㅤ",
+      "games": 671,
+      "items": [
+        "Beast Magic Shoes",
+        "Queen's Wings",
+        "Necklace of Durance",
+        "Concentrated Energy",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "ねずみ Nezumi",
+      "games": 768,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Starlium Scythe",
+        "Concentrated Energy",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/cyclops/video-0-0.mp4",
+    "skill1": "/videos/heroes/cyclops/video-1-0.mp4",
+    "skill2": "/videos/heroes/cyclops/video-2-0.mp4",
+    "ultimate": "/videos/heroes/cyclops/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, Cyclops should control the target enemy with his Ultimate, close in with his 2nd Skill, then finish off the target with his 1st Skill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "Cyclops can use his 2nd Skill to close in on enemy heroes then hit them with both his 1st Skill and the spheres summoned by his 2nd Skill. This combo is very effective against enemy heroes."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Minsitthar",
+      "relationship": "ASSIST"
+    }
+  ],
+  "race": "Cyclops",
+  "bestTeammates": [
+    {
+      "name": "Harley",
+      "winrateDelta": 2.27
+    },
+    {
+      "name": "Arlott",
+      "winrateDelta": 1.83
+    },
+    {
+      "name": "Beatrix",
+      "winrateDelta": 1.72
+    },
+    {
+      "name": "Gusion",
+      "winrateDelta": 1.68
+    },
+    {
+      "name": "Selena",
+      "winrateDelta": 1.55
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": -1.83
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": -1.74
+    },
+    {
+      "name": "Sun",
+      "winrateDelta": -1.66
+    },
+    {
+      "name": "Bruno",
+      "winrateDelta": -1.47
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -1.39
+    }
+  ],
+  "metaScore": 18.84,
+  "metaRank": 45,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Joy",
+        "advantage": 4.53
+      },
+      {
+        "name": "Natalia",
+        "advantage": 4.47
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 4.27
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.41
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.11
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 6.86
+      },
+      {
+        "name": "Chip",
+        "advantage": 4.4
+      },
+      {
+        "name": "Estes",
+        "advantage": 2.98
+      },
+      {
+        "name": "Minotaur",
+        "advantage": 2.76
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.39
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Build Cyclop fleetiing time dari YouTube favorit gua",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Magic Boots",
+        "Enchanted Talisman",
+        "Fleeting Time",
+        "Concentrated Energy",
+        "Glowing Wand",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "CYCLOP EMBLEM YG WAJIB bagina hanter mengurangi hara aitem dan juga vestival oflot \nYg merah itu nah yg akan memberikan demek besar itu impuren nyawa nya Cyclop aitem 5 6 bebas kalian bisal Hero tebel wising kalau Hero ada hiler geres glowing busih tebel lagi dimengelef kalu bettel spell bisa fliker, purify, aku sprint, kalau di saranin flemeshot gak wajib Cyclop buatuh mobilitas tinggi \nYg kalian harus iya Jagan kegeng \nYg tadi ya Cyclop dari lemon sekarang editan build gua aitem ketiga tadi itu kan fleetiing time kan bisa juga gak usah bebass kalian kok tapi jangan yg aneh aneh tolong \nNah ini kata atau terakhir gua \nJagan Gampang kegeng \nDi mid Len atau pun gold Len ok",
+      "tags": [],
+      "lastUpdated": "2025-10-25T01:08:40.387753+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Cyclops Jungler (Hyper Carry) - Spam Skill & Burst Damage",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Magic Boots",
+        "Enchanted Talisman",
+        "Concentrated Energy",
+        "Sky Piercer",
+        "Genius Wand",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "​Fokus build ini adalah memaksimalkan Cooldown Reduction (CD) dan Magic Penetration agar Cyclops bisa terus menerus melancarkan skill dan menghancurkan lawan.",
+      "tags": [],
+      "lastUpdated": "2025-10-25T23:18:30.148108+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "semi tank",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Queen's Wings",
+        "Concentrated Energy",
+        "Brute Force Breastplate"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "combo Hero apa aja enak + no CD",
+      "tags": [],
+      "lastUpdated": "2025-10-22T11:39:15.801605+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Cyclops Sakit ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Enchanted Talisman",
+        "Sky Piercer",
+        "Blood Wings",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Buat Cyclops lebih berdemeg",
+      "tags": [],
+      "lastUpdated": "2026-01-02T11:18:30.674526+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "SUSAH MATI",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Magic Boots",
+        "Enchanted Talisman",
+        "Concentrated Energy",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "untuk ngespam skil dan membuat cyclops gesit dan payah ditang kap plus sakit",
+      "tags": [],
+      "lastUpdated": "2026-01-31T16:01:43.245599+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10720,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10920,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10620,
+      "notes": null
+    }
+  ]
+}

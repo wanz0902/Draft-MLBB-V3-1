@@ -1,0 +1,699 @@
+{
+  "id": "lapulapu",
+  "name": "Lapu-Lapu",
+  "heroName": "Lapu-Lapu",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2500,
+    "hpRegen": 30,
+    "mana": 500,
+    "manaRegen": 15,
+    "physicalAttack": 110,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Homeland Defender",
+      "description": "Lapu-Lapu accumulates 10 (Bravery Blessing) each time he deals damage (halved for damage dealt to non-hero units). When (Bravery Blessing) is full, Lapu-Lapu's next (Basic Attack) will make him dash toward the target, dealing ( +150% Total Physical Attack) (Physical Damage) (cannot Crit) and granting him a shield that absorbs 250 (+65*Hero Level) damage for 2.5s.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Homeland_Defender",
+      "tips": "The shield is basically what makes lapu tanky. This makes lapu lapu very dependent on his skills. Yet, Lapu lapu has no mana. This is the main theme of his build and will mainly focus on cooldown reduction and sometimes the shield itself. This passive will be charged easier when engaging multiple enemies, some says 1 vs 3 may not be that of a problem. But then just consider this passive as a shield.",
+      "iconUrl": "/raw-assets/skill_icons/lapulapu/homeland_defender.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Justice Blades",
+      "description": "Lapu-Lapu releases two boomerangs in the target direction, each boomerang dealing 140( +50% Total Physical Attack) (Physical Damage) to enemies hit on its way out and back. Enemies hit by both boomerangs take 50% damage from the second hit.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Justice_Blades",
+      "tips": "This is the main source of the passive. When you have a chance, use this skill to attack enemies from a distance. You can also use this to clear up waves of minions faster giving you time to farm and defend easier.",
+      "iconUrl": "/raw-assets/skill_icons/lapulapu/justice_blades.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Jungle Warrior",
+      "description": "Lapu-Lapu dashes in the target direction, dealing 100( +50% Total Physical Attack) (Physical Damage) to enemies along the way.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Jungle_Warrior",
+      "tips": "This helps him to chasedown enemies, or escape ganks and also deal damage. Useful in dealing that last hit to an enemy, lapu is an assasin afterall.",
+      "iconUrl": "/raw-assets/skill_icons/lapulapu/jungle_warrior.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Bravest Fighter",
+      "description": "Lapu-Lapu leaps to the target location while combining his twin blades into one, dealing 300( +80% Total Physical Attack) (Physical Damage) to nearby enemies upon landing and slowing them by 60% for 1s. (This skill cannot be interrupted.) Lapu-Lapu gains 3 times the (Bravery Blessing) from this skill and skills in transformed state. For the next 10s, Lapu-Lapu enters (Great Sword) stance and gains enhanced skills, 30 extra Physical & Magic Defense, and his Basic Attack damage is increased to 120%.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Bravest_Fighter",
+      "tips": "This is useful in initiating team fights yet best in assasinating enemies offguard. It may take time to cast but will will surely give problems on hit. Cover a wide area front of lapu. use when inside bush To catch the enemy off guard. I earn lots of first blood with this skill. When the enemy thinks you are missing in your lane but just hiding in the bush guarantees a hit.",
+      "iconUrl": "/raw-assets/skill_icons/lapulapu/bravest_fighter.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Popol and Kupa",
+        "Argus",
+        "Atlas",
+        "Silvanna",
+        "Vale"
+      ],
+      "weakAgainst": [
+        "Esmeralda",
+        "Harith",
+        "Kaja",
+        "Karrie",
+        "Claude"
+      ],
+      "synergyWith": [
+        "Marcel",
+        "Aulus",
+        "Bane",
+        "Diggie",
+        "Angela"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.7
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.7
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.3
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 2.2
+      },
+      {
+        "name": "Vale",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Esmeralda",
+        "advantage": 3
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.6
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.4
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.3
+      },
+      {
+        "name": "Claude",
+        "advantage": 1.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Marcel",
+        "synergy": 1.7
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.5
+      },
+      {
+        "name": "Bane",
+        "synergy": 1.3
+      },
+      {
+        "name": "Diggie",
+        "synergy": 1.3
+      },
+      {
+        "name": "Angela",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Lapu-Lapu is strong against squishy heroes who lack movement abilities, such as Layla and Eudora, because he has high burst damage and can use his mobility to get on top of them.",
+    "weakAgainstReason": "Lapu-Lapu is countered by agile Marksmen who can knock him away, such as Lesley and Moskov. They can speed up or blink to avoid Lapu-Lapu's Ultimate, and use knockback effects to interrupt his 1st Skill in Great Sword stance or to keep him away.",
+    "synergyReason": "Lapu-Lapu works well with heroes who can pull enemies together, like Tigreal and Atlas, to allow his AOE skills to hit more targets and get more Damage Reduction from his 2nd Skill in Great Sword stance by hitting more heroes."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Lapu-Lapu adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.3,
+  "pickRate": 0.5,
+  "banRate": 1,
+  "heroAttributes": {
+    "durability": 80,
+    "offense": 40,
+    "abilityEffects": 40,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 56,
+    "mid": 76,
+    "late": 66,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Lapu-Lapu’s early is serviceable poke/sustain through Bravery Blessing, but his real impact starts at ultimate unlock where Great Sword stance adds defenses, burst, and better engage. Mid-game he excels as a skirmish diver with War Axe stacks and rotation fights; late game he’s still strong but can be kited or controlled before finishing his combo."
+  },
+  "proBuilds": [
+    {
+      "player": "P A I N ?",
+      "games": 1357,
+      "items": [
+        "Tough Boots",
+        "War Axe",
+        "Queen's Wings",
+        "Oracle",
+        "Dominance Ice",
+        "Brute Force Breastplate"
+      ]
+    },
+    {
+      "player": "Maktanchik.",
+      "games": 1175,
+      "items": [
+        "War Axe",
+        "Tough Boots",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Queen's Wings",
+        "Hunter Strike"
+      ]
+    },
+    {
+      "player": "n54f18ba0a",
+      "games": 564,
+      "items": [
+        "Thunder Belt",
+        "Warrior Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Immortality"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/lapulapu/video-0-0.mp4",
+    "skill1": "/videos/heroes/lapulapu/video-1-0.mp4",
+    "skill2": "/videos/heroes/lapulapu/video-2-0.mp4",
+    "ultimate": "/videos/heroes/lapulapu/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Lapu-Lapu's 1st Skill to poke enemies. When Bravery Blessing is full, use his 2nd Skill and enhanced Basic Attacks."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 5",
+        "Skill 6",
+        "Skill 4",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Lapu-Lapu's 1st Skill to wear down the enemies' HP, then follow up with his 2nd Skill to get close and use his Ultimate to initiate. While in Great Sword stance, use his Ultimate again for high burst damage, then use his 2nd Skill to gain Damage Reduction,\nand finally CC the enemy with his 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Vonetis Sea",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": 4.17
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 3.04
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 2.65
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 2.64
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 2.58
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -9.13
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -8.74
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": -7.5
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": -6.08
+    },
+    {
+      "name": "Arlott",
+      "winrateDelta": -5.9
+    }
+  ],
+  "metaScore": 11.93,
+  "metaRank": 104,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 2.39
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.28
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 2.18
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.01
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 5.07
+      },
+      {
+        "name": "Cici",
+        "advantage": 3.37
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.07
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 2.95
+      },
+      {
+        "name": "Brody",
+        "advantage": 2.45
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 D2 W7 : RRQ.Rezzz",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Dreadnaught Armor",
+        "War Axe",
+        "Queen's Wings",
+        "Athena's Shield"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "EVOS VS RRQ Game 1",
+      "tags": [],
+      "lastUpdated": "2025-10-04T18:51:35.300812+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "damage",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Fury Hammer",
+        "Tought Boots",
+        "War Axe",
+        "Sea Halberd",
+        "Oracle",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "bisa dipakai pas di tim roam Ama jungnya tebel/Jung tebel roam healer, tujuannya buat nge lock high round musuh",
+      "tags": [],
+      "lastUpdated": "2025-10-22T11:46:12.786577+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Agresif exp lane",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Rose Gold Meteor",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "buat agresif guys, ini build yang gua pake kalau mau agresif dari early, item brute force bisa diganti domi atau hunter strike, rose gold situasional kalo mau diganti boleh terakhir malefic, kenapa malefic? biar damage nya sakit tembus item defense situasional sih boleh diganti imo. SEMOGA MEMBANTU",
+      "tags": [],
+      "lastUpdated": "2025-11-09T12:40:26.468468+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "lapu lapu sustain dan damage",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Hunter Strike",
+        "War Axe",
+        "Sea Halberd",
+        "Queen's Wings",
+        "Oracle"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "sustain parah buat war",
+      "tags": [],
+      "lastUpdated": "2025-10-22T12:49:39.826492+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 KNOCKOUT STAGE DAY 3 TL.Sanford",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Oracle",
+        "Queen's Wings",
+        "Athena's Shield",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( ONIC VS TL GAME 2 ) MVP OF THE GAME M7 WORLD CHAMPIONSHIP KNOCKOUT STAGE 22 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-22T12:44:51.473637+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11190,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Queen's",
+        "Wings"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10900,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11240,
+      "notes": null
+    }
+  ]
+}

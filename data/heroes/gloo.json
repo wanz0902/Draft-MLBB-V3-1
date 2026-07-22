@@ -1,0 +1,702 @@
+{
+  "id": "gloo",
+  "name": "Gloo",
+  "heroName": "Gloo",
+  "role": [
+    "Tank"
+  ],
+  "specialty": [
+    "Regen",
+    "Control"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2820,
+    "hpRegen": 8.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 108,
+    "physicalDefense": 26,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Stick, Stick",
+      "description": "Enemies gain a stack of (Sticky) each time they're hit by Gloo's skills, decreasing their Movement Speed by 6% for 6s. Stacks up to 5. Each stack of (Sticky) on an enemy reduces their damage dealt to Gloo by 6%.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Stick,_Stick",
+      "iconUrl": "/raw-assets/skill_icons/gloo/stick_stick.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Slam, Slam",
+      "description": "Gloo reaches out and slams the ground, dealing 80( +80% Total Magic Power) (Magic Damage) to the enemy. At the final location, a (Goo) is left behind that explodes after 3s to deal 200( +8% Total HP) (Magic Damage) to nearby enemies and immobilize them for 1s. If Gloo touches the (Goo), it will explode immediately, reset the skill's CD, and heal Gloo for 3% of Max HP.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Slam,_Slam",
+      "iconUrl": "/raw-assets/skill_icons/gloo/slam_slam.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Pass, Pass",
+      "description": "Gloo stretches forth to deal 100( +50% Total Magic Power) (Magic Damage) to enemies in its path, immobilizing them for 0.5s. If this skill hits a (Goo), Gloo will charge over to it, dragging enemies in its path in the same direction for a distance.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Pass,_Pass",
+      "iconUrl": "/raw-assets/skill_icons/gloo/pass_pass.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Split, Split",
+      "description": "Gloo splits into (Goos) for 10s, during which it gains 35% extra Movement Speed, recovers 1.5% Max HP per second, and deals 120( +25% Total Magic Power) (Magic Damage) every 0.25s to enemies it comes into contact with. (Grab, Grab): Gloo attaches itself to the target enemy hero with max (Sticky) stacks for up to 9s, recovering 25% Max HP. For the duration, Gloo transfers 80% of the damage he receives (calculated before damage reduction; excluding damage from turrets) to its host, and its Basic Attacks deal 120( +50% Total Magic Power) (Magic Damage). (Go, Go): Gloo leaves its host early. Cooldown is lowered to 5s if the host dies while Gloo is still attached to it.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Split,_Split",
+      "iconUrl": "/raw-assets/skill_icons/gloo/split_split.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Aamon",
+        "Johnson",
+        "Jawhead",
+        "Lesley",
+        "Chang'e"
+      ],
+      "weakAgainst": [
+        "Faramis",
+        "Moskov",
+        "Ruby",
+        "Alice",
+        "Fanny"
+      ],
+      "synergyWith": [
+        "Argus",
+        "Aldous",
+        "Aulus",
+        "Zilong",
+        "Saber"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Aamon",
+        "advantage": 4.4
+      },
+      {
+        "name": "Johnson",
+        "advantage": 3.7
+      },
+      {
+        "name": "Jawhead",
+        "advantage": 3.3
+      },
+      {
+        "name": "Lesley",
+        "advantage": 3
+      },
+      {
+        "name": "Chang'e",
+        "advantage": 2.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 6
+      },
+      {
+        "name": "Moskov",
+        "advantage": 5.5
+      },
+      {
+        "name": "Ruby",
+        "advantage": 4.6
+      },
+      {
+        "name": "Alice",
+        "advantage": 4.6
+      },
+      {
+        "name": "Fanny",
+        "advantage": 4.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Argus",
+        "synergy": 3.2
+      },
+      {
+        "name": "Aldous",
+        "synergy": 2.8
+      },
+      {
+        "name": "Aulus",
+        "synergy": 2.6
+      },
+      {
+        "name": "Zilong",
+        "synergy": 2.6
+      },
+      {
+        "name": "Saber",
+        "synergy": 2.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Gloo is strong against Mage heroes without good CC. Because he can easily attach himself to them, and take them where he wants them to go. Such as Cecilion and Chang'e.",
+    "weakAgainstReason": "Gloo is countered by Marksman heroes with good mobility. It's difficult for Gloo to attach himself to them, and he can easily be killed if he tries. Such as Karrie and Lesley.",
+    "synergyReason": "Gloo works best with high burst damage heroes, as they can quickly take down the enemy hero that he brings back with his Ultimate. Like Eudora and Saber."
+  },
+  "mechanicCategory": [
+    "Possess Enemy",
+    "Split"
+  ],
+  "mechanicNote": "Gloo bisa memecah diri menjadi bagian-bagian kecil dan menempel ke musuh untuk mengendalikan pergerakan mereka.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 55.4,
+  "pickRate": 0.6,
+  "banRate": 70.7,
+  "heroAttributes": {
+    "durability": 100,
+    "offense": 30,
+    "abilityEffects": 100,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 78,
+    "late": 68,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Dominance Ice",
+      "Antique Cuirass",
+      "Radiant Armor"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Gloo is manageable early but not oppressive until he can reliably stack Sticky and access his attach for long skirmishes/picks. He peaks in mid-game teamfights where his CC, sustain healing from Goo detonations, and damage transfer disrupt cores; late game he remains strong but is more countered by coordinated focus/anti-heal and higher burst."
+  },
+  "proBuilds": [
+    {
+      "player": "Onyx M4ling Besi",
+      "games": 419,
+      "items": [
+        "Rapid Boots",
+        "Cursed Helmet",
+        "Glowing Wand",
+        "Oracle",
+        "Guardian Helmet",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "BANGPELL",
+      "games": 642,
+      "items": [
+        "Encourage Rapid Boots",
+        "Cursed Helmet",
+        "Glowing Wand",
+        "Oracle",
+        "Guardian Helmet",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "Priaidaman939IH",
+      "games": 544,
+      "items": [
+        "Encourage Rapid Boots",
+        "Cursed Helmet",
+        "Glowing Wand",
+        "Oracle",
+        "Chastise Pauldron"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/gloo/video-0-0.mp4",
+    "skill1": "/videos/heroes/gloo/video-1-0.mp4",
+    "skill2": "/videos/heroes/gloo/video-2-0.mp4",
+    "ultimate": "/videos/heroes/gloo/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Skill 2",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In teamfights, Gloo can use his 1st + 2nd skill combo to close in on the enemy and immobilize them. Then his 1st Skill and Ultimate to add more Sticky stacks to enemy heroes, and attach himself with his Ultimate to the enemy hero with max Sticky stacks. Once ready, Gloo can use the combo to deal damage and move the host out of position. Finally, he can use the refreshed 1st Skill and his Basic Attacks to finish off the host."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, Gloo should use his 1st Skill to attack the target enemy and create a Goo, then he can use his 2nd Skill to target the Goo to bring the target to its location and trigger an explosion. Touching the Goo will also reset Gloo's 1st Skill, allowing him to use it again to deal damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Eudora",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Saber",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Karina",
+      "relationship": "MET ONCE"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Azrya Woodlands",
+  "race": "Swamp Spirit",
+  "bestTeammates": [
+    {
+      "name": "Helcurt",
+      "winrateDelta": 2.25
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 2.01
+    },
+    {
+      "name": "Argus",
+      "winrateDelta": 1.98
+    },
+    {
+      "name": "Chou",
+      "winrateDelta": 1.77
+    },
+    {
+      "name": "Karrie",
+      "winrateDelta": 1.74
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": -6.24
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": -4.9
+    },
+    {
+      "name": "Minotaur",
+      "winrateDelta": -4.09
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -3.56
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": -3.15
+    }
+  ],
+  "metaScore": 44.13,
+  "metaRank": 2,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Aamon",
+        "advantage": 3.18
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.77
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.73
+      },
+      {
+        "name": "Johnson",
+        "advantage": 2.58
+      },
+      {
+        "name": "Jawhead",
+        "advantage": 2.53
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 8.01
+      },
+      {
+        "name": "Ruby",
+        "advantage": 4.8
+      },
+      {
+        "name": "Alice",
+        "advantage": 4.52
+      },
+      {
+        "name": "Ling",
+        "advantage": 3.83
+      },
+      {
+        "name": "Moskov",
+        "advantage": 3.64
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Cocok banget buat kalian mau ke global gloo",
+      "author": "community",
+      "votes": 12,
+      "items": [
+        "Rapid Boots",
+        "Glowing Wand",
+        "Cursed Helmet",
+        "Brute Force Breastplate",
+        "Ice Queen Wand",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "Main aman dan nunggu item glowing sudah jadi kalau item glowing wand nya sudah jadi kalian adu mekanik sama Hero yang kalian lawan di exp di jamin kalian bakal menang kecuali lawan kalian dyroth dikarenakan dyroth kalau nyerang kalian pake skill 2 gloo kalian otomatis pasif nya dyroth bikin darah nya makin penuh/full jadi kalian jangan adu mekanik sama dyroth adu mekanik sama Hero lain",
+      "tags": [],
+      "lastUpdated": "2025-10-26T02:53:46.169077+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage For Solo Player. ",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Clock of Destiny",
+        "Glowing Wand",
+        "Antique Cuirass",
+        "Radiant Armor",
+        "Oracle"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "Dengan build ini, saya jamin Gloo anda akan mendominasi di laning phase melawan hero-hero meta maupun non meta, dan build ini juga cocok buat anda yang Solo Player. Karena Build ini bisa solo kill Core lawan. ",
+      "tags": [],
+      "lastUpdated": "2025-09-13T18:03:03.990868+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "roam sustain(roam merah)",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Molten Essence",
+        "Dominance Ice",
+        "Oracle",
+        "Radiant Armor",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Cara penggunaan ealy pastikan clear cepat dengan mid dan cicil hero lawan jika terlalu depan, setelah itu bantu jungle setelah itu bantu ambil pokemon air lalu kembali lagi ke mid lalu ambil crab xp atau bantu clear lane xp(pastikan level 4 saat turtle menit (2).jika sudah menit 15 ganti molten/cused helmet dangan imortal.",
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:39:53.260339+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "palembang",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "Cursed Helmet",
+        "Glowing Wand",
+        "War Axe",
+        "Antique Cuirass",
+        "Blade Armor"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "mainnya harus  agresif di awal (kalo bisa level 4 sebelum turtle) suruh exp nya buat backup kalo kita maju untuk nyerang",
+      "tags": [],
+      "lastUpdated": "2025-10-26T15:43:47.014983+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "gloo magig",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Cursed Helmet",
+        "Glowing Wand",
+        "Oracle",
+        "Genius Wand",
+        "Dominance Ice"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flameshot",
+      "skillOrder": null,
+      "notes": "gloo pemburu core",
+      "tags": [],
+      "lastUpdated": "2025-12-10T12:34:40.019084+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10910,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10990,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11170,
+      "notes": null
+    }
+  ]
+}

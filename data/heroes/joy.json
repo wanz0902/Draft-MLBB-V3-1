@@ -1,0 +1,724 @@
+{
+  "id": "joy",
+  "name": "Joy",
+  "heroName": "Joy",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Damage"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2470,
+    "hpRegen": 7.2,
+    "mana": 468,
+    "manaRegen": 3.6,
+    "physicalAttack": 118,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.12",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Humph, Joy's Angry!",
+      "description": "Joy becomes (Angry!) each time her skill hits a non-Minion enemy, dealing 100( +100% Total Magic Power) (Magic Damage) and increasing her Movement Speed by 60% that decays over 4s (hitting the (Leonin Crystal) will also grant the Movement Speed effect). This effect has a cooldown of 4s for each target. Joy's Basic Attack will deal 65( +25% Total Physical Attack) (+65% Total Magic Power) (Magic Damage).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+80% Total Magic Power)",
+        "(+65% Total Physical Attack)",
+        "(+65% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage2",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Humph,_Joy's_Angry!",
+      "tips": "This Passive skill grants you more agility and protection!",
+      "iconUrl": "/raw-assets/skill_icons/joy/humph_joy_s_angry.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Look, Leonin Crystal!",
+      "description": "Joy summons a Leonin Crystal at the target location, dealing 200 (+40% Total Magic Power) Magic Damage to nearby enemies and slowing them by 30% for 1s. The Leonin Crystal lasts up to 2s.",
+      "cooldown": "4.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+40% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "220",
+            "240",
+            "260",
+            "280",
+            "300"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Summon"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Look,_Leonin_Crystal!",
+      "tips": "Use this skill in tandem with the Second Skill, or to harass enemies and activate the Passive.",
+      "iconUrl": "/raw-assets/skill_icons/joy/look_leonin_crystal.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Meow, Rhythm of Joy!",
+      "description": "Joy dashes in the target direction, dealing 120 (+40% Total Magic Power) Magic Damage to enemies in her path. Hitting an enemy or the Leonin Crystal allows Joy to cast this skill again within 0.8s and gain 1 Beat Energy. Casting this skill on the beat increases the skill damage by 100% and grants a 80 (+60% Total Magic Power) shield that lasts 3s.\nThis skill can be cast up to 4 times in succession.",
+      "cooldown": "8.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+40% Total Magic Power)",
+        "(+60% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "120",
+            "138",
+            "156",
+            "174",
+            "192",
+            "210"
+          ]
+        },
+        {
+          "label": "Shield",
+          "values": [
+            "80",
+            "90",
+            "100",
+            "110",
+            "120",
+            "130"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Damage2"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Meow,_Rhythm_of_Joy!",
+      "tips": "This skill is Joy's main damage source. Casting this skill on the beat unlocks the Ultimate.",
+      "iconUrl": "/raw-assets/skill_icons/joy/meow_rhythm_of_joy.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Ha, Electrifying Beats!",
+      "description": "Joy increases her Physical & Magic Defense by 15 (+10% Total Magic Power) and gains 30% Movement Speed. Over the next 3s, she pulses 8 times, dealing 120 (+40% Total Magic Power) Magic Damage each time to nearby enemies.\nEach Meow, Rhythm of Joy! cast on the beat increases this skill's damage by 40%. If perfect rhythm is achieved by hitting every beat with Meow, Rhythm of Joy!, Joy also gains 40% Spell Vamp while this skill is active.\nThis skill unlocks when Joy acquires Beat Energy. Casting this skill with 3 Beat Energy will remove all debuffs on Joy and make her immune to slow effects while this skill is active.",
+      "cooldown": "28.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+10% Total Magic Power)",
+        "(+40% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Hybrid Defense Boost",
+          "values": [
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "120",
+            "160",
+            "200"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ha,_Electrifying_Beats!",
+      "tips": "Use this ultimate damage skill to deal massive damage and finish off enemies.",
+      "iconUrl": "/raw-assets/skill_icons/joy/ha_electrifying_beats.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Sun",
+        "X.Borg",
+        "Yve",
+        "Beatrix",
+        "Gloo"
+      ],
+      "weakAgainst": [
+        "Moskov",
+        "Cyclops",
+        "Eudora",
+        "Chip",
+        "Marcel"
+      ],
+      "synergyWith": [
+        "Masha",
+        "Barats",
+        "Chip",
+        "Kaja",
+        "Hayabusa"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 4.2
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.7
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 2.5
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.5
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Moskov",
+        "advantage": 4.3
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 3.9
+      },
+      {
+        "name": "Eudora",
+        "advantage": 3.6
+      },
+      {
+        "name": "Chip",
+        "advantage": 3.2
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Masha",
+        "synergy": 3
+      },
+      {
+        "name": "Barats",
+        "synergy": 2.3
+      },
+      {
+        "name": "Chip",
+        "synergy": 2.2
+      },
+      {
+        "name": "Kaja",
+        "synergy": 1.9
+      },
+      {
+        "name": "Hayabusa",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Joy is strong against heroes that lack mobility or rely on CC, like Xavier and Vexana, because she has an easier time hitting them with her 2nd Skill while being immune to their CC's.",
+    "weakAgainstReason": "Joy is countered by heroes that can restrict mobility skills, such as Minsitthar and Khufra, due to her kit's heavy reliance on her 2nd Skill.",
+    "synergyReason": "Joy works best with heroes with that can provide powerful support or have strong initiation, like Angela and Hylos."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Joy adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.2,
+  "pickRate": 0.2,
+  "banRate": 0.6,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 70,
+    "abilityEffects": 10,
+    "difficulty": 90
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 82,
+    "late": 66,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Genius Wand",
+      "Concentrated Energy",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Joy becomes highly lethal in mid game once she can reliably chain beat dashes into a boosted ultimate for burst + sustain, enabling dives and multi-target skirmishes. She’s less dominant late as enemies stack MR/lockdown and teamfights become more formation-based, limiting her safe entry angles."
+  },
+  "proBuilds": [
+    {
+      "player": "ＳＨＥＷＹ",
+      "games": 814,
+      "items": [
+        "Flame Arcane Boots",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Glowing Wand",
+        "Winter Crown",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Mei Ne' Okiharu.",
+      "games": 664,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Concentrated Energy",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Zencrix x Brilliance",
+      "games": 1052,
+      "items": [
+        "Flame Arcane Boots",
+        "Genius Wand",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/joy/video-0-0.mp4",
+    "skill1": "/videos/heroes/joy/video-1-0.mp4",
+    "skill2": "/videos/heroes/joy/video-2-0.mp4",
+    "ultimate": "/videos/heroes/joy/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2"
+      ],
+      "description": "In teamfights, Joy should summon a Leonin Crystal with her 1st Skill and use it as a springboard for her 2nd Skill to enter the battle. Continue to chain her 2nd Skill on the beat to unlock her Ultimate. Finally, use her Ultimate to finish off the enemy."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, Joy should place her 1st Skill on top of the enemy, then use her 2nd Skill to dash through both targets and continue to chain her 2nd Skill on the beat for damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Hylos",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Azrya Woodlands",
+  "race": "Leonin",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 7.29
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 6.04
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": 5.72
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": 5.51
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": 4.82
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Bane",
+      "winrateDelta": -4.8
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": -3.52
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": -3.28
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -3.17
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": -2.95
+    }
+  ],
+  "metaScore": 11.66,
+  "metaRank": 106,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 6.75
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 4.17
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.83
+      },
+      {
+        "name": "Gloo",
+        "advantage": 3.34
+      },
+      {
+        "name": "Gord",
+        "advantage": 3.13
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 5.71
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 4.53
+      },
+      {
+        "name": "Brody",
+        "advantage": 4.3
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 4.26
+      },
+      {
+        "name": "Diggie",
+        "advantage": 4
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Build from ex global 16 S37 match 1.8k wr 72+ + penjelasan lengkap",
+      "author": "community",
+      "votes": 22,
+      "items": [
+        "Magic Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Concentrated Energy",
+        "Wishing Lantern",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Note ada di bawah ya\nuntuk di early, beli mentahan sepatu terus langsung beli exotic veil biar dapet magic dmg tambahan + mov spd, baru jadiin magic shoes. setelah itu langsung jadiin genius wand dan holy crystal. (bang\", tapi kan holy crystal kan mahal bang harganya, masa jadiin holy crystal dulu? ngga pake starlium kah buat cd?) ga perlu, bukannya ga perlu sih tapi kalau di build ini aku emang ngga make starlium karena pasifnya udah jelek, kalau dibandingin kecepatan farmingnya, starlium cuma unggul dikit doang tapi kalau segi rotasi + dmg di early enakan genius karena udah dapet pen dan mov spd juga. terus jadiin aja holy crystal karena holy tuh udah jadi item corenya joy, jadi aja item holy crystal langsung naik power spike joy nya. bukan berarti ga bisa di ganti juga sih, di beberapa kondisi holy bisa di ganti tapi JARANG banget, jadi jangan bilang kalau gw ga paham item. trus setelah holy biasanya gw jadiin concentrated energy biar bisa dapet spell vamp + peningkatan magic dmg 12% kalau full stack. soalnya walaupun joy ini udah bisa dapetin spell vamp 20% dari ultinya kalau skill 2 nya full beat, biasanya gw nambahin concetrated lagi biar lebih sustain + nambah damagenya juga, ntar kalau masuk war terus banyak target yang kena, joy kita jadi susah matinya gitu. lalu setelah itu baru jadiin wishing lantern biar dpt cd lagi + utk ngebocorin musuh yang darahnya tebal. tapi kalau semisalkan emang tipis semuanya sih wishing lantern ga wajib dibeli sih cuma biasanya gw jadiin wishing dulu. setelah itu terakhir baru gw jadiin divine glaive di late game. (bang kenapa beli divine lagi bang kan udah ada genius wand?) ini tuh sebenarnya bisa dibilang joy juga perlu item itu kalau mau damagenya sakit. joy kalau itemnya digabungin aja antara holy crystal, wishing lantern dan divine glaive udah enak banget kalau mau ngebocorin tank apalagi kalau semisal lawan tank jungler seperti fredrinn, baxia, dll lah. tapi perbedaannya kan kalau divine glaive itu dia tuh berdasarkan magic def yang dimiliki lawan makanya kayak kurang guna aja kalau di beli di early gitu, tapi minus nya juga divine glaive juga ga dapet mov spd makanya ku pertimbangkan makanya kujadiin last item, tapi kalau semisalkan lawan musuh juga emang ngerespect kita atau tim kita dengan kebanyakan mereka di early itu beli radiant atau athena kayak 2 hero atau 3 hero, boleh kok setelah holy jadiin divine atau setelah holy langsung jadiin wishing dulu baru divine nanti concentrated nya di last, soalnya aku udah sering di kebanyakan game kalau biasanya udah banyak yang beli item gitu, kalau aku beli concentrated dulu walaupun kita susah matinya tapi tank lawan juga susah matinya, jadi langsung kita respect balik aja. nanti kalau udah late game dan gold nya cukup, jualin aja geniusnya ganti dengan bloodwings bisa atau winter bisa, brute force juga bisa kalau semisalkan mau agak sustain + mengurangi cc (saran ya magic shoes itu ga harus dibeli kalau semisalkan musuhnya banyak cc kayak badang phove fredrin akai dll(minimal 2 hero aja di pick di hero lawan kalian udah harus beli tough boots kalau ga mau kesusahan dan bisa kalian comboin dengan brute force kalau semisalkan kalian udah snowball)) nah untuk item alternatifnya yaa kalian taulah bisa kalian gunakan untuk ngebeli winter, imo, blood wings, rose gold, queen wings, guardian helmet, brute force, twilight armor dll. bang kenapa twilight armor bang? nahh kan terkadang kita malesnya sebagai hero joy itu kalau mau ngelawan hero yang damagenya sakit bet ngeburst kyk layla bruno lesley dll bisa banget kalian make itu dan itu biasanya kalau di jungle jarang gw pake, seringnya kalau di exp. mungkin cuma itu aja sih sekian, kalau misalkan ada pertanyaan lagi bisa di dm aja di ig:@rennn.4k\n\nNOTE:satu lagi kalian harus percaya dengan build kalian sendiri, menurut gw item core joy cuma holy dan itupun masih bisa diganti di situasi tertentu, jadi gw ga mempermasalahkan kalau kalian mau make starlium, atau mau make sky pierce atau mau make genius, intinya gw make build yang sesuai dengan gw pake dan paling nyamannya, gw pernah make semua buildnya mau itu starlium, genius, sky pierce bahkan dari awal rilis jg, bahkan build joy full tank udah gw cobain, intinya udah gw riset semuanya jadi kalian tinggal main aja dan bisa kalian cobain build gw, ini match + wr nya gw kadang sering main solo, kadang duo, trio atau pt kalau diajak temen, intinya kalau main solo dengan build ini dan kalian paham main joy bisa dipastikan rata rata wr joy kalian 60% keatas lah kalau kalian konsisten dan ga banyak ngeluh, gw juga sering lawan top global atau global rank tapi intinya kalian bisa nyobain aja tes mental kalian dengan make joy atau kalau ga pede langsung saja pick hero sesuai dengan draft kalian, pick aja counternya kalau mau aman gitu, kadang lawan musuh yang banyak cc juga agak nge nyusahin walaupun kalian bisa main juga susah gitu",
+      "tags": [],
+      "lastUpdated": "2025-10-22T10:52:51.371432+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage one hit",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Concentrated Energy",
+        "Wishing Lantern",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Tanpa starlium",
+      "tags": [],
+      "lastUpdated": "2025-10-25T07:24:16.117989+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "untuk damage,bukan farming",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Sky Piercer",
+        "Divine Glaive",
+        "Wishing Lantern",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-23T02:40:32.841603+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 FINAL LOWER BRACKET DAY 5 SRG.Sekysss",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Concentrated Energy",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "( AE VS SRG GAME 4 ) M7 WORLD CHAMPIONSHIP FINAL LOWER BRACKET 24 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-25T13:18:20.726732+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "core",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Concentrated Energy",
+        "Wishing Lantern",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "sakit",
+      "tags": [],
+      "lastUpdated": "2025-10-16T15:13:28.188906+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Starlium",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11980,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11730,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10700,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+[
+  {
+    "nickname": "Butss",
+    "realName": "Muhammad Satrya Sanubari",
+    "role": "exp",
+    "team": "ONIC",
+    "status": "Retired",
+    "hasPhoto": true,
+    "photoPath": "/player-photos/butss.png",
+    "priority": 0
+  },
+  {
+    "nickname": "Bryann",
+    "realName": "Anugrah Vebryantama",
+    "role": "exp",
+    "team": "GEEK",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Fluffy",
+    "realName": "Regi Marviola",
+    "role": "exp",
+    "team": "EVOS",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "KennzyySkie",
+    "realName": "Kenny Ramadhan",
+    "role": "gold",
+    "team": "GEEK",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Kyou",
+    "realName": "Riski",
+    "role": "gold",
+    "team": "TLID",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Lutpiii",
+    "realName": "Moch Lutfi Ardianto",
+    "role": "exp",
+    "team": "ONIC",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Marzyyy",
+    "realName": "Arif Ammar Hidayatullah",
+    "role": "exp",
+    "team": "BTR",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Maybeee",
+    "realName": "Delvin Chua",
+    "role": "gold",
+    "team": "DEWA",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Moai",
+    "realName": "Marsiko Adi",
+    "role": "gold",
+    "team": "RRQ",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Namira",
+    "realName": "Ira Kusnindi",
+    "role": "exp",
+    "team": "EVOS",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Nino",
+    "realName": "Syauki Fauzan Sumarno",
+    "role": "exp",
+    "team": "AE",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Savero",
+    "realName": "Clayton Adrielo Kuswanto",
+    "role": "gold",
+    "team": "ONIC",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Shogun",
+    "realName": "Dylont Ananda Setya Huraihira",
+    "role": "exp",
+    "team": "BTR",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Tompu",
+    "realName": "Putu Adi Mardika Wijaya",
+    "role": "mid",
+    "team": "EVOS",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Toyy",
+    "realName": "Muhammad Rizky",
+    "role": "gold",
+    "team": "RRQ",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Vanz",
+    "realName": "Muhammad Ikhsan Farabi",
+    "role": "jungler",
+    "team": "DEWA",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "XMagic",
+    "realName": "Muhammad Andika Ramadhan",
+    "role": "mid",
+    "team": "NAVI",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Y1PPY",
+    "realName": "Devina Olivia Chandra",
+    "role": "gold",
+    "team": "ONIC",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 1
+  },
+  {
+    "nickname": "Antimage",
+    "realName": "Maxhill Leonardo",
+    "role": "exp",
+    "team": "EVOS",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "Branz",
+    "realName": "Jabran Bagus Wiloko",
+    "role": "gold",
+    "team": "EVOS",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "Clayyy",
+    "realName": "Deden Muhammad Nurhasan",
+    "role": "mid",
+    "team": "RRQ",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "Kabuki",
+    "realName": "Leonardo Prasetyo Agung",
+    "role": "gold",
+    "team": "TLID",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "Lemon",
+    "realName": "Muhammad Ikhsan",
+    "role": "mid",
+    "team": "RRQ",
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "LJ",
+    "realName": "Joshua Darmansyah",
+    "role": "roamer",
+    "team": "EVOS",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "Skylar",
+    "realName": "Schevenko David Tendean",
+    "role": "gold",
+    "team": "ONIC",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 2
+  },
+  {
+    "nickname": "AeronnShikii",
+    "realName": "Sultan Muhammad",
+    "role": "gold",
+    "team": "AC Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Benji",
+    "realName": "Septaza Arga Firhansyah",
+    "role": "exp",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Bottle",
+    "realName": "I Gusti Pramana Cipta Dita",
+    "role": "gold",
+    "team": "Pabz Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Deee",
+    "realName": "Dhiwa Zulpiqar",
+    "role": "gold",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Faviannn",
+    "realName": "Favian Bayu Putra",
+    "role": "jungler",
+    "team": "AC Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Ferxiic",
+    "realName": "Ferdyansyah Kamaruddin",
+    "role": "jungler",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Matt",
+    "realName": "Matthew Geraldo",
+    "role": "gold",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Nathan",
+    "realName": "Yonathan Immanuel Poluan",
+    "role": "roamer",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Rinazmi",
+    "realName": "Azmi Naufal Ahmad",
+    "role": "exp",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Vanilla",
+    "realName": "Disty Alifia Wulandari",
+    "role": "jungler",
+    "team": "Vesakha Esports Fe",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Variety",
+    "realName": "Michael Giovanni Tjandra",
+    "role": "jungler",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Watt",
+    "realName": "Supriadi Dwi Putra",
+    "role": "gold",
+    "team": "Shadow Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Xorizo",
+    "realName": "I Gusti Made Indra Dwipayana",
+    "role": "exp",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 3
+  },
+  {
+    "nickname": "Alberto",
+    "realName": "Juan Alberto Hasudungan",
+    "role": "exp",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Elle",
+    "realName": "Gabrielle Nadya Kusuma",
+    "role": "exp",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Gentz",
+    "realName": "Genta Rahmadhan",
+    "role": "exp",
+    "team": "Team Liquid Academy ID",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Kaeya",
+    "realName": "M.Zaky Dwi Prayoga",
+    "role": "mid",
+    "team": "Pabz Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Kenma",
+    "realName": "Aditya Mahendra Juliazah",
+    "role": "gold",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Liv",
+    "realName": "Olivia Benita Wijaya",
+    "role": "gold",
+    "team": "Falcons Vega",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Lzd",
+    "realName": "Erfan Lazuardi",
+    "role": "mid",
+    "team": null,
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Ruii",
+    "realName": "Vebi Febrian",
+    "role": "jungler",
+    "team": "Gen.G Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Soyy",
+    "realName": "Anisa Putri",
+    "role": "jungler",
+    "team": "Virtus.pro Fe",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Zhiry",
+    "realName": "Muhammad Yusuf Thoziri",
+    "role": "exp",
+    "team": "Holy Esports",
+    "status": "Active",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 4
+  },
+  {
+    "nickname": "Clover",
+    "realName": "Hafizhan Hidayatullah Mirzaputra",
+    "role": "gold",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Ivann",
+    "realName": "Vincentsius Ivan Adrianto",
+    "role": "roamer",
+    "team": "Team Rey",
+    "status": "Inactive",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "JerL",
+    "realName": "Jericho Nathanael Lumangkun",
+    "role": "mid",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Liam",
+    "realName": "William Setiawan",
+    "role": "roamer",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Luminaire",
+    "realName": "Ihsan Besari Kusudana",
+    "role": "mid",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Pai",
+    "realName": "Rafly Alvareza Sudrajat",
+    "role": "exp",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Phoenix",
+    "realName": "Yehezkiel Patric Parmonangan",
+    "role": "roamer",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Psychoo",
+    "realName": "Teguh Imam Firdaus",
+    "role": "mid",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  },
+  {
+    "nickname": "Reiya",
+    "realName": "Rea Maranatha",
+    "role": "exp",
+    "team": null,
+    "status": "Retired",
+    "hasPhoto": false,
+    "photoPath": null,
+    "priority": 5
+  }
+]

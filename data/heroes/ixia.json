@@ -1,0 +1,639 @@
+{
+  "id": "ixia",
+  "name": "Ixia",
+  "heroName": "Ixia",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Damage"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2450,
+    "hpRegen": 6.6,
+    "mana": 440,
+    "manaRegen": 3.4,
+    "physicalAttack": 118,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Siphon Starlium",
+      "description": "Ixia's Basic Attacks and skills apply a stack of (Starlium Charge) to enemies on hit. When Ixia performs a Basic Attack on an enemy with two stacks of (Starlium Charge), the attack will consume the stacks and be replaced with (Siphon Starlium), dealing ( +150% Total Physical Attack) (+20000% Lifesteal) plus (+10*Hero Level) (Physical Damage) to the target. Ixia recovers HP equal to the damage dealt by (Siphon Starlium) (only 20(+10000% Lifesteal)% against non-hero units). (Siphon Starlium) can trigger on all enemies in front of Ixia that are within her Basic Attack range, but it cannot Crit. Ixia's Basic Attacks cannot trigger Lifesteal.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Siphon_Starlium",
+      "iconUrl": "/raw-assets/skill_icons/ixia/siphon_starlium.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Dual Beam",
+      "description": "Ixia fires 2 Starlium-charged energy beams along the ground in the target direction, dealing 75( +80% Total Physical Attack) (Physical Damage) to enemies in a rectangular area and slowing enemy heroes by 40%. Upon hitting an enemy hero, Ixia also gains 40% Movement Speed for 2s. Enemies hit by both beams will take double damage.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dual_Beam",
+      "iconUrl": "/raw-assets/skill_icons/ixia/dual_beam.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Star Helix",
+      "description": "Ixia unleashes a canister of Starlium energy in the target direction, knocking back nearby enemies, and pulling enemies in range to the center line after a short delay and dealing 200( +60% Total Physical Attack) (Physical Damage).",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Star_Helix",
+      "iconUrl": "/raw-assets/skill_icons/ixia/star_helix.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Full Barrage",
+      "description": "Ixia reassembles her weapon into 6 smaller weapons and enters the (Barrage) state for 4s. In this state, Ixia's Basic Attacks and skills can hit enemies in the large fan-shaped area in front of her but not outside it. Ixia's Basic Attacks can hit up to 6 enemy units (prioritizes heroes), and (Siphon Starlium) will fire simultaneously with her normal Basic Attacks.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Full_Barrage",
+      "iconUrl": "/raw-assets/skill_icons/ixia/full_barrage.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Estes",
+        "Floryn",
+        "Rafaela",
+        "Hanabi",
+        "Lolita"
+      ],
+      "weakAgainst": [
+        "Wanwan",
+        "Hanzo",
+        "Kadita",
+        "Ling",
+        "Claude"
+      ],
+      "synergyWith": [
+        "Diggie",
+        "Harith",
+        "Baxia",
+        "Roger",
+        "Lunox"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 5.8
+      },
+      {
+        "name": "Floryn",
+        "advantage": 3.3
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 3
+      },
+      {
+        "name": "Hanabi",
+        "advantage": 2.9
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 3.9
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.3
+      },
+      {
+        "name": "Kadita",
+        "advantage": 2.9
+      },
+      {
+        "name": "Ling",
+        "advantage": 2.9
+      },
+      {
+        "name": "Claude",
+        "advantage": 2.3
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Diggie",
+        "synergy": 7.4
+      },
+      {
+        "name": "Harith",
+        "synergy": 4.7
+      },
+      {
+        "name": "Baxia",
+        "synergy": 4.6
+      },
+      {
+        "name": "Roger",
+        "synergy": 2.2
+      },
+      {
+        "name": "Lunox",
+        "synergy": 2.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Ixia's skills make her a nice kiter. She works well against heroes with short ranges or poor Slow abilities, such as Fredrinn and Bane.",
+    "weakAgainstReason": "Ixia lacks survivability, that's why she can be countered by heroes with high burst damage or strong control abilities such as Saber and Aamon.",
+    "synergyReason": "With her Ultimate, Ixia is capable of dealing impressive sustained damage. So she works best with heroes with area CC abilities, like Atlas and Vexana."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Ixia adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.2,
+  "pickRate": 0.8,
+  "banRate": 1.8,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 70,
+    "abilityEffects": 50,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 70,
+    "late": 82,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 11"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Haas's Claws"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Ixia has a workable early lane because her passive procs provide consistent trade damage and self-heal, but she’s still item-gated versus burst and hard engage. She spikes at Lv4 with Full Barrage for objective/teamfight zoning, and scales strongly into late with on-hit builds that maximize multi-target Barrage and sustained front-to-back DPS."
+  },
+  "proBuilds": [
+    {
+      "player": "Chells X DokterAlice",
+      "games": 745,
+      "items": [
+        "Sea Halberd",
+        "Corrosion Scythe",
+        "Tough Boots",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Demon Hunter Sword"
+      ]
+    },
+    {
+      "player": "Ryx.",
+      "games": 1091,
+      "items": [
+        "Corrosion Scythe",
+        "Sea Halberd",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Rose Gold Meteor",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "JUNNE x F4N'T",
+      "games": 545,
+      "items": [
+        "Corrosion Scythe",
+        "Tough Boots",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/ixia/video-0-0.mp4",
+    "skill1": "/videos/heroes/ixia/video-1-0.mp4",
+    "skill2": "/videos/heroes/ixia/video-2-0.mp4",
+    "ultimate": "/videos/heroes/ixia/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "Ixia can pull enemies to the center line with her 2nd Skill and follow up with her 1st Skill to deal damage. Use the Movement Speed boost provided by her 1st Skill to chase down enemies."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Passive",
+        "Skill 2",
+        "Skill 1"
+      ],
+      "description": "Choose the perfect location that can secure herself and cast the Ultimate to rain down her attacks on as many enemies as possible. Keep tapping Basic Attack while using her 2nd Skill and 1st Skill to control enemies and deal extra damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Layla",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Fredrinn",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Bane",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Diggie",
+      "winrateDelta": 5.3
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 3.37
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 2.63
+    },
+    {
+      "name": "Kimmy",
+      "winrateDelta": 2.23
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 2.01
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": -9.26
+    },
+    {
+      "name": "Melissa",
+      "winrateDelta": -8.98
+    },
+    {
+      "name": "Clint",
+      "winrateDelta": -7.06
+    },
+    {
+      "name": "Bruno",
+      "winrateDelta": -6.37
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -6.02
+    }
+  ],
+  "metaScore": 17.3,
+  "metaRank": 60,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 5.19
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 3.74
+      },
+      {
+        "name": "Hanabi",
+        "advantage": 3.08
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.81
+      },
+      {
+        "name": "Ruby",
+        "advantage": 2.46
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 4.72
+      },
+      {
+        "name": "Kadita",
+        "advantage": 3.69
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 3.13
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.73
+      },
+      {
+        "name": "Claude",
+        "advantage": 2.71
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Ixia bantai bantai",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Corrosion Scythe",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Windtalker",
+        "Malefic Gun",
+        "Hunter Strike"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T05:23:47.151583+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "trio ixia+digidaw+jung tb auto ws",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Corrosion Scythe",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Malefic Gun",
+        "Rose Gold Meteor",
+        "Hunter Strike"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-27T12:49:35.743703+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sustain Pas di gank",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Sea Halberd",
+        "Corrosion Scythe",
+        "Tought Boots",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Cocok buat lu yang suka bet Adu gebuk Ama mm lain dan suka di adu Ama mm fighter",
+      "tags": [],
+      "lastUpdated": "2025-10-26T19:34:30.273309+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Lngsung kena ulti pasrah aja",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Corrosion Scythe",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Malefic Gun",
+        "Rose Gold Meteor",
+        "Demon Hunter Sword"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-28T00:29:13.111359+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11920,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10960,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11980,
+      "notes": null
+    }
+  ]
+}

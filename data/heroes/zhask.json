@@ -1,0 +1,771 @@
+{
+  "id": "zhask",
+  "name": "Zhask",
+  "heroName": "Zhask",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Chase",
+    "Damage"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2480,
+    "hpRegen": 7,
+    "mana": 490,
+    "manaRegen": 3.8,
+    "physicalAttack": 100,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Decimation",
+      "description": "Upon death, Zhask summons a frenzied (Nightmaric Spawn) on the spot, which gradually loses HP over time until death.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Summon"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Decimation",
+      "tips": "Using this ultimate in critical moments will allow your Spawn to deal legendary amounts of damage, as no hero can match the power of a full form Nightmaric Spawn. However, the crack in the planescape can only be sustained for 10 seconds, so use your time wisely.",
+      "iconUrl": "/raw-assets/skill_icons/zhask/decimation.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Nightmaric Spawn",
+      "description": "Zhask summons a Nightmaric Spawn that inherits 55% of his Attributes (HP, Hybrid Defense, and Magic Power). Nightmaric Spawn will automatically attack nearby enemies by firing a Death Ray at the target, dealing 55 (+20% extra Attack Speed) (+20% Magic Power) Magic Damage and slowing them by up to 30%. If Zhask is too far away from Nightmaric Spawn, it will disappear.\nDeath Ray is considered as a Basic Attack but cannot Crit.\nFusion Enhanced: The damage of Nightmaric Spawn is increased to 180%, and it can be repositioned.",
+      "cooldown": "13.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+20% extra Attack Speed)",
+        "(+20% Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "13.0",
+            "12.0",
+            "11.0",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "70",
+            "80",
+            "90"
+          ]
+        },
+        {
+          "label": "Attributes Inherited",
+          "values": [
+            "55%",
+            "70%",
+            "85%",
+            "100%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Summon"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Nightmaric_Spawn",
+      "tips": "Every 2 basic attacks of the Spawn will fire a death ray at the enemy. If the death ray strikes the target 7 times consecutively, then it will cause a stun effect. This is definitely Zhask's core skill, we recommend that you keep your Spawn close to you during combat, not only does this little fellow bring damage but he can also provide some extra crowd control. Also, enemies may gain quite a bit of gold slaying the Spawn, as a Planes Dominator you should always look out for the welfare of your minions.",
+      "iconUrl": "/raw-assets/skill_icons/zhask/nightmaric_spawn.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Mind Eater",
+      "description": "Zhask fires a penetrating mental missile in the designated direction, dealing 300 (+100% Total Magic Power) Magic Damage. Afterward, Nightmaric Spawn will attack enemies hit by Mind Eater for 120 (+80% Total Magic Power) Magic Damage and stun them for 0.5s.\nFusion Enhanced: Increases the damage dealt by Mind Eater by 540 (+180% Total Magic Power).",
+      "cooldown": "8.0",
+      "manaCost": "50",
+      "damageType": "Magic",
+      "scaling": [
+        "(+100% Total Magic Power)",
+        "(+80% Total Magic Power)",
+        "(+180% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "50",
+            "65",
+            "80",
+            "95"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "380",
+            "460",
+            "540"
+          ]
+        },
+        {
+          "label": "Complete Damage",
+          "values": [
+            "540",
+            "685",
+            "830",
+            "975"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mind_Eater",
+      "tips": "As the damage does not diminish upon impact, use this ability in conjunction with a well position Nightmaric Spawn to really leave a mark on your enemies!",
+      "iconUrl": "/raw-assets/skill_icons/zhask/mind_eater.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Dominator's Descent",
+      "description": "Zhask selects a designated position to summon Nightmaric Spawn and fuses with it. Nightmaric Spawn can inherit 100% of his attributes and get extra of them. His skills are enhanced during the fusion period.\nUse Again: Zhask immediately gets off Nightmaric Spawn and loses enhancement.",
+      "cooldown": "48.0",
+      "manaCost": "120",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "48.0",
+            "44.0",
+            "40.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "150",
+            "180"
+          ]
+        },
+        {
+          "label": "Extra HP",
+          "values": [
+            "750",
+            "1625",
+            "2500"
+          ]
+        },
+        {
+          "label": "Extra Hybrid Defense",
+          "values": [
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "label": "Lifesteal",
+          "values": [
+            "50%",
+            "50%",
+            "50%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Morph",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dominator's_Descent",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate",
+      "iconUrl": "/raw-assets/skill_icons/zhask/dominators_descent.png"
+    },
+    "skill3": {
+      "name": "Hive Clones",
+      "description": "Zhask releases a swarm of Hive Clones in the targeted direction. The clones will explode and deal 55 (+18% Total Magic Power) Magic Damage to enemies on contact, reducing their Movement Speed by 80% for 1s.\nIf Hive Clones find no target, they will burrow into the ground and ambush enemies passing by.\nFusion Enhanced: Zhask releases several swarms of Hive Clones.\nSubsequent damage dealt to the target decays to 20%.",
+      "cooldown": "10.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+18% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "75",
+            "90",
+            "105"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "55",
+            "70",
+            "85",
+            "100"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Slow",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Hive_Clones",
+      "tips": "This is a very tactical skill, use it during laning to whoever is attacking your Nightmaric Spawn, not only providing large amounts of damage but also at the same time protecting your Spawn. Placing traps in certain areas of the map will also cause some mental pressure for the enemy team.",
+      "iconUrl": "/raw-assets/skill_icons/zhask/hive_clones.png",
+      "displayLabel": "Skill 3",
+      "skillSlot": "skill3"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Diggie",
+        "Wanwan",
+        "Arlott",
+        "Harith"
+      ],
+      "weakAgainst": [
+        "Natan",
+        "Sora",
+        "Alice",
+        "Belerick",
+        "Baxia"
+      ],
+      "synergyWith": [
+        "Novaria",
+        "Harley",
+        "Selena",
+        "Natalia",
+        "Cyclops"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.1
+      },
+      {
+        "name": "Diggie",
+        "advantage": 4
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.6
+      },
+      {
+        "name": "Arlott",
+        "advantage": 2.4
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natan",
+        "advantage": 3.4
+      },
+      {
+        "name": "Sora",
+        "advantage": 3.3
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.3
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2.6
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Novaria",
+        "synergy": 2.3
+      },
+      {
+        "name": "Harley",
+        "synergy": 2.2
+      },
+      {
+        "name": "Selena",
+        "synergy": 1.7
+      },
+      {
+        "name": "Natalia",
+        "synergy": 1.7
+      },
+      {
+        "name": "Cyclops",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Zhask is strong against burst damage heroes like Aldous and Paquito because his high HP after fusing with his Nightmaric Spawn, makes him tough to burst down.",
+    "weakAgainstReason": "Zhask is countered by agile or long range heroes, such as Pharsa and Cecilion, because they can quickly step out of range of his immobile Nightmaric Spawn.",
+    "synergyReason": "Zhask works best with heroes that can lock down enemies so he can have more time to deal damage, like Belerick and Lolita."
+  },
+  "mechanicCategory": [
+    "Summon",
+    "Enhanced Summon"
+  ],
+  "mechanicNote": "Zhask memanggil spawn yang bisa diserang musuh, dan ultimate-nya memperkuat spawn menjadi bentuk raksasa.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.7,
+  "pickRate": 0.3,
+  "banRate": 0.5,
+  "heroAttributes": {
+    "durability": 10,
+    "offense": 100,
+    "abilityEffects": 40,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 75,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Glowing Wand",
+      "Genius Wand",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Early is decent once he has Spawn + Mind Eater for lane control, but he’s more punishable before Ultimate. Big spike at Lv4 where fusion-enhanced skills enable strong objective control and siege; late stays strong with high Magic Power and on-hit burn, but can be outplayed by coordinated focus/anti-summon positioning."
+  },
+  "proBuilds": [
+    {
+      "player": "Enllerly",
+      "games": 859,
+      "items": [
+        "Genius Wand",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Arcane Boots"
+      ]
+    },
+    {
+      "player": "BURJILA",
+      "games": 1121,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Genius Wand"
+      ]
+    },
+    {
+      "player": "Fe Fe",
+      "games": 711,
+      "items": [
+        "Glowing Wand",
+        "Starlium Scythe",
+        "Divine Glaive",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Holy Crystal"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/zhask/video-0-0.mp4",
+    "skill1": "/videos/heroes/zhask/video-1-0.mp4",
+    "skill2": "/videos/heroes/zhask/video-2-0.mp4",
+    "ultimate": "/videos/heroes/zhask/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 4",
+        "Skill 2",
+        "Skill 3",
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In teamfights, Zhask should start by summoning his Nightmaric Spawn in a suitable location and use his Ultimate to fuse with it, then unleash his enhanced 2nd and 3rd Skill to stun and damage enemies, and follow up with Basic Attacks. If the enemy tries to flee, use his enhanced 1st Skill to blink toward them."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "In the laning phase, Zhask should start with his 1st Skill to summon a Nightmaric Spawn next to the enemy and follow up with his 2nd Skill to stun the target, then use his 3rd Skill for more damage."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Nightmaric Spawn",
+      "Mind Eater",
+      "Hive Clones"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Lolita",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Yve",
+      "relationship": "FEUDS"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Extraterrestrial",
+  "bestTeammates": [
+    {
+      "name": "Faramis",
+      "winrateDelta": 3.48
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": 2.99
+    },
+    {
+      "name": "Selena",
+      "winrateDelta": 2.67
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": 2.52
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 1.6
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lunox",
+      "winrateDelta": -5.01
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": -4.79
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -2.96
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -2.73
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": -2.54
+    }
+  ],
+  "metaScore": 18.24,
+  "metaRank": 50,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.59
+      },
+      {
+        "name": "Diggie",
+        "advantage": 3.72
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 3.35
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.65
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.19
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 4.07
+      },
+      {
+        "name": "Natan",
+        "advantage": 3.27
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.08
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.46
+      },
+      {
+        "name": "Estes",
+        "advantage": 2.14
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Zoning Master",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Arcane Boots",
+        "Enchanted Talisman",
+        "Fleeting Time",
+        "Holy Crystal",
+        "Glowing Wand",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Generic CD build tbh, abuse your ult to zone enemy from objective like lord, turtle or tower.\nDamage scale pretty good at late game since you buy a holy crystal but the swarm became a really squishy creature at late game.",
+      "tags": [],
+      "lastUpdated": "2025-10-23T04:09:12.100125+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Zhask One Hit",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Cara mendapatkan instan kill menggunakan hero zhask",
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:12:44.485271+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Poke Slow Buff Team",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Wishing Lantern",
+        "Tought Boots",
+        "Thunder Belt",
+        "Glowing Wand",
+        "Demon Hunter Sword",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Susah di Pick Off dan mampu memberikan Slow sampai 75 %, True Damage, dan Buff Tim per 4 detik dari skill 1 yang mempermudah pergerakan Hyper Assassin tipe berjalan dan Hyper Fighter.",
+      "tags": [],
+      "lastUpdated": "2025-10-24T17:56:10.651363+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Genius",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12080,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Demon",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12140,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10960,
+      "notes": null
+    }
+  ]
+}

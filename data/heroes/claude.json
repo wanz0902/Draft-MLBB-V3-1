@@ -1,0 +1,707 @@
+{
+  "id": "claude",
+  "name": "Claude",
+  "heroName": "Claude",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Burst",
+    "Chase"
+  ],
+  "lane": "Gold",
+  "lanes": [
+    "Gold",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2470,
+    "hpRegen": 6.8,
+    "mana": 443,
+    "manaRegen": 3.4,
+    "physicalAttack": 114,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Battle Side-by-side",
+      "description": "(Dexter) assists Claude on each of his Basic Attacks, dealing 20( +30% Total Physical Attack) (Physical Damage) to the same target (inherits a portion of Attack Effects).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Battle_Side-by-side",
+      "tips": "Due to this skill, equipments that boost basic attacks should be Claude's major concentration",
+      "iconUrl": "/raw-assets/skill_icons/claude/battle_side_by_side.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Art of Thievery",
+      "description": "Claude emits a disruption wave in the target direction, dealing 160( +40% Total Physical Attack) (Physical Damage) to enemies in a fan-shaped area and reducing their Movement Speed by 20% and Attack Speed by 10%. For each enemy hit, Claude gains 4% Movement & Attack Speed (doubled for enemy heroes hit) for 6s (up to 5 stacks).",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Art_of_Thievery",
+      "tips": "Due to this skill Claude is able to utilize his mobility to poke enemies from a safe distance.",
+      "iconUrl": "/raw-assets/skill_icons/claude/art_of_thievery.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Battle Mirror Image",
+      "description": "Claude conjures a mirror image of (Dexter) at the target location that automatically attacks nearby enemies for 5.5s. The mirror image's Basic Attack deals 20( +30% Total Physical Attack) (Physical Damage) and can trigger Claude's attack effects. (Use Again): Claude switches places with the mirror image.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Battle_Mirror_Image",
+      "tips": "This skill can be used for multiple purposes. Claude can either dash into enemies to reap or flee from ambush. Use it unpredictably!",
+      "iconUrl": "/raw-assets/skill_icons/claude/battle_mirror_image.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Blazing Duet",
+      "description": "Claude and (Dexter) rapidly fire at nearby enemies for 3s, dealing 130( +10% Total Physical Attack) (Physical Damage) to up to two enemies with each shot (these attacks count as Basic Attacks). Claude also gains a 20( +3% Total Physical Attack) shield each time the Ultimate deals damage to an enemy.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blazing_Duet",
+      "tips": "The ultimate triggers the effect of basic attacks. So it works perfect with Demon Hunter Sword when facing single heroes. The skill hit 2 enemies at most at the same moment, so Claude should release this skill to an area with less than 2 enemies. The ultimate also provides a shield so Claude's durability is ensured in all conditions.",
+      "iconUrl": "/raw-assets/skill_icons/claude/blazing_duet.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Balmond",
+        "Lolita",
+        "Chang'e",
+        "Ixia",
+        "Ling"
+      ],
+      "weakAgainst": [
+        "Lesley",
+        "Aamon",
+        "Baxia",
+        "Bruno",
+        "Edith"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Popol and Kupa",
+        "Angela",
+        "Gord",
+        "Chip"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Balmond",
+        "advantage": 2.9
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.9
+      },
+      {
+        "name": "Chang'e",
+        "advantage": 2.4
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.3
+      },
+      {
+        "name": "Ling",
+        "advantage": 1.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lesley",
+        "advantage": 4.3
+      },
+      {
+        "name": "Aamon",
+        "advantage": 3
+      },
+      {
+        "name": "Baxia",
+        "advantage": 3
+      },
+      {
+        "name": "Bruno",
+        "advantage": 2.6
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 3
+      },
+      {
+        "name": "Popol and Kupa",
+        "synergy": 1.1
+      },
+      {
+        "name": "Angela",
+        "synergy": 1
+      },
+      {
+        "name": "Gord",
+        "synergy": 0.9
+      },
+      {
+        "name": "Chip",
+        "synergy": 0.9
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Claude is strong against heroes with weak CC abilities and poor Mobility, so he can easily dodge their attacks with his 2nd Skill, such as Vexana and Luo Yi.",
+    "weakAgainstReason": "Claude is countered by heroes with powerful CC abilities. Their CC abilities will cause Claude to lose his Mobility advantage. Like Eudora and Franco.",
+    "synergyReason": "Claude works best with heroes who can buff him, like Angela and Faramis."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Claude adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.4,
+  "pickRate": 1.1,
+  "banRate": 0.7,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 60,
+    "abilityEffects": 10,
+    "difficulty": 60
+  },
+  "powerCurve": {
+    "early": 45,
+    "mid": 75,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Wind of Nature"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Claude’s lane is mediocre early because he relies on attack-speed/on-hit items to convert his kit into real DPS, but becomes very strong once he has DHs + Golden Staff for Blazing Duet shred. Late game he’s a dominant teamfight marksman due to high sustained AoE DPS and safety via Battle Mirror Image and defensive item timings."
+  },
+  "proBuilds": [
+    {
+      "player": "ELN1KAツ",
+      "games": 2406,
+      "items": [
+        "Tough Boots",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Corrosion Scythe",
+        "Malefic Gun",
+        "Wind of Nature"
+      ]
+    },
+    {
+      "player": "S I W A ツ",
+      "games": 1760,
+      "items": [
+        "Warrior Boots",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Corrosion Scythe",
+        "Winter Crown",
+        "Malefic Gun"
+      ]
+    },
+    {
+      "player": "iBHz7ACooRd",
+      "games": 989,
+      "items": [
+        "Warrior Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Wind of Nature",
+        "Malefic Roar"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/claude/video-0-0.mp4",
+    "skill1": "/videos/heroes/claude/video-1-0.mp4",
+    "skill2": "/videos/heroes/claude/video-2-0.mp4",
+    "ultimate": "/videos/heroes/claude/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "In teamfights, Claude should use his 1st Skill to stack up his buff first, and look for the best opportunities to get close to enemies with his 2nd Skill, and then use his Ultimate to finish them off."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Skill 3"
+      ],
+      "description": "In the laning phase, Claude can use his 1st Skill to poke the enemy, and use his 2nd Skill to close in on them when their HP is low, then use his Ultimate to kill them."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Clint",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Mathilda",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Faramis",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": 2.86
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": 1.7
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 1.49
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": 1.49
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": 1.46
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": -18.2
+    },
+    {
+      "name": "Beatrix",
+      "winrateDelta": -9.52
+    },
+    {
+      "name": "Clint",
+      "winrateDelta": -9.44
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -7.03
+    },
+    {
+      "name": "Melissa",
+      "winrateDelta": -6.81
+    }
+  ],
+  "metaScore": 16.35,
+  "metaRank": 72,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.89
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.71
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.29
+      },
+      {
+        "name": "Khufra",
+        "advantage": 1.9
+      },
+      {
+        "name": "Chang'e",
+        "advantage": 1.79
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lesley",
+        "advantage": 5.05
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.96
+      },
+      {
+        "name": "Aamon",
+        "advantage": 2.8
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.72
+      },
+      {
+        "name": "Arlott",
+        "advantage": 2.42
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Versus Fighter GoldLane",
+      "author": "community",
+      "votes": 13,
+      "items": [
+        "Warrior Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Purify",
+      "skillOrder": null,
+      "notes": "Full Item Jual Sepatu Beli Imo/Winter/WON atau Windtalker (End).\nEmblem Ass (Penetration).\nPistol ada Pasif Penet persenan Physical Def Musuh (Lebih Bagus daripada Malefic Gun).\nKalo Gameplay Scaling (Emblem Tier 2 = Bargain Hunter).\nSepatu Sesuaikan Lawan.\nEmblem Fighter (Sustain/Versus MM).\nSpell Flicker (Musuh No CC).",
+      "tags": [],
+      "lastUpdated": "2025-11-19T19:17:20.685721+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 1 ONIC.Skylar",
+      "author": "community",
+      "votes": 12,
+      "items": [
+        "Demon Hunter Sword",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Windtalker",
+        "Wind of Nature",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( ONIC VS BGT GAME 1 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 10 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-10T08:01:54.09046+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 2 TL.Oheb",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Windtalker",
+        "Rose Gold Meteor",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( FLCN VS TL GAME 1 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 11 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-11T09:52:01.1835+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S17 WEEK 5 DAY 2 APBR.Shizou",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Warrior Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Malefic Gun",
+        "Wind of Nature"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Purify",
+      "skillOrder": null,
+      "notes": "( OMG VS APBR GAME 3 ) MPL PHILIPPINES SEASON 17 WEEK 5 DAY 2 25 April 2026",
+      "tags": [],
+      "lastUpdated": "2026-04-25T09:41:21.92307+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Ih sesakit ini",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Warrior Boots",
+        "Windtalker",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Wind of Nature"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "Cobain aja di rank udah sakit itemnya Ipul",
+      "tags": [],
+      "lastUpdated": "2025-11-24T13:10:29.329383+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Golden"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 10860,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Golden"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11050,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Golden"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10870,
+      "notes": null
+    }
+  ]
+}

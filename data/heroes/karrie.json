@@ -1,0 +1,702 @@
+{
+  "id": "karrie",
+  "name": "Karrie",
+  "heroName": "Karrie",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Damage"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2478,
+    "hpRegen": 6.8,
+    "mana": 445,
+    "manaRegen": 3.4,
+    "physicalAttack": 113,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Lightwheel Mark",
+      "description": "Karrie's Basic Attacks and skills apply a stack of (Lightwheel Mark) on hit. Once a target has 5 stacks of (Lightwheel Marks), the marks will turn into a lightwheel, dealing (True Damage) equal to 5( +1% Extra Physical Attack)% of the target's Max HP to them (only up to 300 damage against Creeps).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Lightwheel_Mark",
+      "tips": "Because this passive skill deal percentage damage instead of static damage , it is best used to enemy with high health . The bigger the maximum HP , the bigger the damage.",
+      "iconUrl": "/raw-assets/skill_icons/karrie/lightwheel_mark.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Spinning Lightwheel",
+      "description": "Karrie releases a sphere of surging energy in the target direction, dealing 250( +90% Total Physical Attack) (Physical Damage) to enemies in its path. The sphere will stop upon hitting an enemy hero or reaching its max travel distance, continuously dealing 150( +20% Total Physical Attack) (Physical Damage) to nearby enemies and slowing them by 80% for 1s.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spinning_Lightwheel",
+      "tips": "This skill is really useful to fight against a crowd of minion , because it will do damage to minion with / without your presence , especially when the enemy is surrounding the minion and you cannot use basic attack to hit them . It is also effective against Lord and Holy Lord that is going toward your turret because it will slow his movement speed , allowing you to kill him before he can do damage .",
+      "iconUrl": "/raw-assets/skill_icons/karrie/spinning_lightwheel.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Phantom Step",
+      "description": "Karrie dashes in the target direction while throwing a lightwheel at the nearest enemy, dealing 150( +70% Total Physical Attack) (Physical Damage) and applying a stack of (Lightwheel Mark) on them. When in (Dual Wield) state, Karrie throws two lightwheels instead.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Phantom_Step",
+      "tips": "When it comes to battle , this skill is really good at creating distance between you with your enemy or to dodge their attack while damaging them , but be careful , any mistake when using this skill will only make you become closer to your enemy and allowing them to kill you easier .",
+      "iconUrl": "/raw-assets/skill_icons/karrie/phantom_step.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Speedy Lightwheel",
+      "description": "Karrie enters (Dual Wield) state for 6s, during which she gains 20% Movement Speed and throws two lightwheels with each Basic Attack, each dealing 50% Basic Attack damage and inheriting a portion of Attack Effects.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Speedy_Lightwheel",
+      "tips": "Usually , using this skill at max level to the enemy is equal with normal basic attack , but if your enemy maximum HP is really big , this skill is very deadly , so remember to not use this skill to enemy with low maximum HP and only use it when you are fighting against enemy with big maximum HP .",
+      "iconUrl": "/raw-assets/skill_icons/karrie/speedy_lightwheel.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Alice",
+        "Esmeralda",
+        "Leomord",
+        "Balmond",
+        "Uranus"
+      ],
+      "weakAgainst": [
+        "Sun",
+        "Argus",
+        "Saber",
+        "Diggie",
+        "Masha"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Kaja",
+        "Gord",
+        "Kalea",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Alice",
+        "advantage": 4.3
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 2.9
+      },
+      {
+        "name": "Leomord",
+        "advantage": 2.7
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.6
+      },
+      {
+        "name": "Uranus",
+        "advantage": 2.5
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.6
+      },
+      {
+        "name": "Argus",
+        "advantage": 2.8
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.7
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.6
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 3.1
+      },
+      {
+        "name": "Kaja",
+        "synergy": 2.4
+      },
+      {
+        "name": "Gord",
+        "synergy": 1.7
+      },
+      {
+        "name": "Kalea",
+        "synergy": 1.6
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Tanks such as Tigreal and Fredrinn that take more damage from her HP percent attacks.",
+    "weakAgainstReason": "Long range heroes such as Xavier, Layla and Nana due to Karrie's medium range.",
+    "synergyReason": "Assassins like Saber and Aamon who can eliminate \nranged threats so Karrie can focus the frontline."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Karrie adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.2,
+  "pickRate": 0.9,
+  "banRate": 3.6,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 80,
+    "abilityEffects": 10,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 70,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Haas's Claws"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Early lane is average since she needs attack speed and sustained time-on-target to trigger Lightwheel true damage reliably. Mid game spikes with Ultimate uptime plus her first DPS item, and late game becomes dominant as attack-speed/on-hit builds melt high-HP frontliners through max-HP true damage."
+  },
+  "proBuilds": [
+    {
+      "player": "TITENG BALUKTOT",
+      "games": 1032,
+      "items": [
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Sky Piercer",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Rapid Boots"
+      ]
+    },
+    {
+      "player": "mm lover",
+      "games": 599,
+      "items": [
+        "Tough Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Warrenaru",
+      "games": 634,
+      "items": [
+        "Rapid Boots",
+        "Fleeting Time",
+        "Brute Force Breastplate",
+        "Genius Wand",
+        "Lightning Truncheon",
+        "Clock of Destiny"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/karrie/video-0-0.mp4",
+    "skill1": "/videos/heroes/karrie/video-1-0.mp4",
+    "skill2": "/videos/heroes/karrie/video-2-0.mp4",
+    "ultimate": "/videos/heroes/karrie/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Use her 1st Skill to poke enemies and slow them, \n\nthen follow up with Basic Attacks.\n\nShe can then use her 2nd Skill to chase or reposition herself."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Use her Ultimate to apply extra Lightwheel Marks \nwith Basic Attacks and 1st Skill to slow enemies, \nand then chase with her 2nd Skill to secure the kill."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Speedy Lightwheel",
+      "Phantom Step",
+      "Spinning Lightwheel"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Saber",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Aamon",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Vonetis Sea",
+  "race": "Yasson",
+  "bestTeammates": [
+    {
+      "name": "Baxia",
+      "winrateDelta": 2.36
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 1.95
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 1.86
+    },
+    {
+      "name": "Gloo",
+      "winrateDelta": 1.74
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": 1.69
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Melissa",
+      "winrateDelta": -10.54
+    },
+    {
+      "name": "Obsidia",
+      "winrateDelta": -7.95
+    },
+    {
+      "name": "Beatrix",
+      "winrateDelta": -7.73
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -6.85
+    },
+    {
+      "name": "Moskov",
+      "winrateDelta": -6.79
+    }
+  ],
+  "metaScore": 18.36,
+  "metaRank": 47,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Alice",
+        "advantage": 4.65
+      },
+      {
+        "name": "Uranus",
+        "advantage": 4.18
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 3.99
+      },
+      {
+        "name": "Leomord",
+        "advantage": 3.3
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 3.29
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.43
+      },
+      {
+        "name": "Masha",
+        "advantage": 3.37
+      },
+      {
+        "name": "Argus",
+        "advantage": 3.27
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 3.17
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.49
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Karrie By  qeva(mm/jung)",
+      "author": "community",
+      "votes": 14,
+      "items": [
+        "Tought Boots",
+        "Windtalker",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Haas Claws",
+        "Corrosion Scythe"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming) Jangan dibuang sampai 3-4 item penting lain jadi\nMm=sprint/fliker\nJung=hyper",
+      "tags": [],
+      "lastUpdated": "2025-09-14T10:38:17.407603+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Karrie Burst + Sustain + Licin",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Golden Staff",
+        "Hunter Strike",
+        "Corrosion Scythe",
+        "Great Dragon Spear",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "• Ketahanan di awal game, dengan kelemahan di movement speed untuk early-mid. Namun lifesteal dan spellvamp kuat diawal dari emblem fighter yang di revamp. \n\n• Kombinasi cooldown reduction dan penetrasi seimbang yang meningkatkan agresifitas nya di mid-late game. \nNote: \n- Spatu ganti windtalker kalo udah lategame, \n- GDS ganti pistol kalo tank musuhny armor def 200++, MG ganti WON\n- Susah clearlane? Langsung windtalker first item, baru golden staff\n**Bang kenapa ga pake DHS?** Jawab: Pasif nya karrie udah ada DHS bawaan jadi ga perlu ganda.. \nSemoga membantu, hasil research 3 bulan saya.. Selamat mencoba",
+      "tags": [],
+      "lastUpdated": "2025-12-02T22:19:38.962218+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 7 ONIC.Skylar",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Windtalker"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( FLCN VS ONIC GAME 2 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 17 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-17T14:18:11.746774+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build OP",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Corrosion Scythe",
+        "Malefic Roar",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Ini mungkin bisa jadi salah satu build yang oke tapi di tangan yang tepat ",
+      "tags": [],
+      "lastUpdated": "2026-02-22T19:59:49.7892+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Sekarang",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Golden Staff",
+        "Warrior Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Wind of Nature",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-16T23:29:45.653738+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10970,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11050,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10870,
+      "notes": null
+    }
+  ]
+}

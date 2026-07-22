@@ -1,0 +1,927 @@
+{
+  "id": "selena",
+  "name": "Selena",
+  "heroName": "Selena",
+  "role": [
+    "Assassin",
+    "Mage"
+  ],
+  "specialty": [
+    "Initiator",
+    "Finisher"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane",
+    "Jungle",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Jungle",
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2471,
+    "hpRegen": 7,
+    "mana": 480,
+    "manaRegen": 3.6,
+    "physicalAttack": 118,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Symbiosis",
+      "description": "Selena can switch freely between her two forms.\nElven Form: Selena applies Abyssal Mark when her skills deal damage. Marks lasts 8s and can stack up to 2 times.\nAbyssal Form: Selena's Basic Attacks become melee and deal (25% Total Magic Power) additional Magic Damage. Her skills deal 240-450 (+40% Total Magic Power) additional Magic Damage to enemies with Abyssal Mark and consume their mark stacks by 1. This damage is increased to 250% against Creeps and Minions.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(25% Total Magic Power)",
+        "(+40% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Symbiosis",
+      "tips": "Selena uses the power bestowed upon her by the Moon God and the Abyss to switch freely between her two forms. When using skills in her Elven form, Selena attaches one Abyssal Mark to her enemies (when Abyssal Trap hits an enemy, it immediately adds an Abyssal Mark). Up to 2 Abyssal Marks can be added to an enemy. Skills used in Abyssal form will consume 1 of these marks to deal bonus damage.",
+      "iconUrl": "/raw-assets/skill_icons/selena/symbiosis.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Abyssal Trap",
+      "description": "Selena summons an Abyssal Devil to lurk underground. The Abyssal Devil will attach itself to any enemy that approaches, inflicting a stack of\nAbyssal Mark and reducing their Movement Speed by 50% for 1s. The Abyssal Devil then explodes, dealing 350 (+150% Total Magic Power) Magic Damage to enemies in the area and reducing their Movement Speed by 50% for 1s.\nEach additional Abyssal Devil on an emeny increases the final damage by 50%\nEach Abyssal Devil can lurk up to 60s and up to 3 Abyssal Devils can exist at the same time.",
+      "cooldown": "8.0",
+      "manaCost": "70",
+      "damageType": "Magic",
+      "scaling": [
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.0",
+            "7.6",
+            "7.2",
+            "6.8",
+            "6.4",
+            "6.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "70",
+            "75",
+            "80",
+            "85",
+            "90",
+            "95"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "350",
+            "390",
+            "430",
+            "470",
+            "510",
+            "550"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Summon",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Abyssal_Trap",
+      "tips": "Selena summons an Abyssal Devil to lurk in a designated location. The Abyssal Devil smothers a nearby enemy with its body. Within several seconds, the enemy’s movement speed is reduced. After some time, this skill deals damage to the target and other nearby enemies, slows enemies for several seconds. Selena can summon up to 3 Abyssal Devils. Damage will decay when a target takes damage from multiple devils at the same time.",
+      "iconUrl": "/raw-assets/skill_icons/selena/abyssal_trap.png",
+      "displayLabel": "Skill 1 (Elven Form)",
+      "skillSlot": "skill1",
+      "variant": "Elven Form"
+    },
+    "skill2": {
+      "name": "Soul Eater",
+      "description": "Selena strengthens her claws with the power of the Abyss, causing the next basic attack to dash to a target and deal an additional 200 (+130% Total Magic Power) Magic Damage while granting her a 300 (+150% Total Magic Power) shield.\nIf this damage detonates an Abyssal Mark, Garotte's cooldown will reset.",
+      "cooldown": "6.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+130% Total Magic Power)",
+        "(+150% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.5",
+            "5.0",
+            "4.5",
+            "4.0",
+            "3.5"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "230",
+            "260",
+            "290",
+            "320",
+            "350"
+          ]
+        },
+        {
+          "label": "Base Shield",
+          "values": [
+            "300",
+            "320",
+            "340",
+            "360",
+            "380",
+            "400"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Shield"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Soul_Eater",
+      "tips": "Selina channels the power of the Abyss into magic arrows, firing them in a specified direction. Enemies hit are stunned for several seconds and take damage. Stun duration and damage increase the further the arrows fly. The arrow absorbs Abyssal Traps as it travels to the target enemy, effects of the traps will be inflicted to target enemy upon hit.",
+      "iconUrl": "/raw-assets/skill_icons/selena/soul_eater.png",
+      "displayLabel": "Skill 1 (Abyssal Form)",
+      "skillSlot": "skill1",
+      "variant": "Abyssal Form"
+    },
+    "ultimate": {
+      "name": "Abyssal Arrow",
+      "description": "Selena fires an abyssal wraith in the target direction that stops when it hits an enemy hero, Creep, or Summon, dealing 250 (+20% Total Magic Power) to 500 (+40% Total Magic Power) Magic Damage to the target hit and stunning them for 0.5s to 2.5s while revealing their locations (the damage and stun duration increase with the wraith's travel distance).\nThe wraith will pick up Abyssal Trap as it travels over it and will apply the trap to the enemy target upon stunning them.\nIf the wraith stuns an enemy for 0.9s or longer, Selena will gain 60% Movement Speed for 2s.",
+      "cooldown": "12.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+20% Total Magic Power)",
+        "(+40% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "90",
+            "100",
+            "110",
+            "120",
+            "130"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "250",
+            "280",
+            "310",
+            "340",
+            "370",
+            "400"
+          ]
+        },
+        {
+          "label": "Max Damage",
+          "values": [
+            "500",
+            "560",
+            "620",
+            "680",
+            "740",
+            "800"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Abyssal_Arrow",
+      "tips": "Selena melds with the Abyss, entering Abyssal Form and gaining movement speed for a short time. She also gains access to new skills while in Abyssal Form and her basic attacks deal additional damage",
+      "iconUrl": "/raw-assets/skill_icons/selena/abyssal_arrow.png",
+      "displayLabel": "Skill 2 (Elven Form)",
+      "skillSlot": "skill2",
+      "variant": "Elven Form"
+    },
+    "extra1": {
+      "name": "Garotte",
+      "description": "Selena charges in the target direction, dealing 150 (+50% Total Magic Power) Magic Damage to enemies in her path.\nIf this skill's damage detonates an Abyssal Mark, its cooldown will reset",
+      "cooldown": "12.0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.4",
+            "10.8",
+            "10.2",
+            "9.6",
+            "9.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "150",
+            "190",
+            "230",
+            "270",
+            "310",
+            "350"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Garotte",
+      "displayLabel": "Skill 2 (Abyssal Form)",
+      "skillSlot": "skill2",
+      "variant": "Abyssal Form",
+      "iconUrl": "/raw-assets/skill_icons/selena/garotte.png"
+    },
+    "extra2": {
+      "name": "Primal Darkness",
+      "description": "Passive: Selena gains 5 Magic Power.\nActive: Selena enters Abyssal Form and gains 20% Movement Speed for 0.8s. This also immediateky resets the Cooldown of Soul Eater and Garotte.",
+      "cooldown": "5.5",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Movement Speed Bonus",
+          "values": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "label": "Magic Power",
+          "values": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Morph",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Primal_Darkness",
+      "displayLabel": "Ultimate (Transform to Abyssal)",
+      "skillSlot": "ultimate",
+      "variant": "Transform to Abyssal",
+      "iconUrl": "/raw-assets/skill_icons/selena/primal_darkness.png"
+    },
+    "extra3": {
+      "name": "Blessing of the Moon Goddess",
+      "description": "Passive: Selena gains 5 Magic Power.\nActive: Selena enters Elven Form and gains 20% Movement Speed for 0.8s. This also immediateky resets the Cooldown of Abyssal Trap and Abyssal Arrow.",
+      "cooldown": "5.5",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Movement Speed Bonus",
+          "values": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "label": "Magic Power",
+          "values": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Morph",
+        "Speed Up"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blessing_of_the_Moon_Goddess",
+      "displayLabel": "Ultimate (Transform to Elven)",
+      "skillSlot": "ultimate",
+      "variant": "Transform to Elven",
+      "iconUrl": "/raw-assets/skill_icons/selena/blessing_of_the_moon_goddess.png"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Zone Control",
+      "Burst Damage",
+      "Jungle Tempo",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Ixia",
+        "Beatrix",
+        "X.Borg",
+        "Marcel",
+        "Benedetta"
+      ],
+      "weakAgainst": [
+        "Chip",
+        "Masha",
+        "Popol and Kupa",
+        "Khufra",
+        "Lukas"
+      ],
+      "synergyWith": [
+        "Zhask",
+        "Thamuz",
+        "Cyclops",
+        "Barats",
+        "Aurora"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 1.8
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 1.8
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 1.8
+      },
+      {
+        "name": "Marcel",
+        "advantage": 1.7
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 1.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 2.7
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.7
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.7
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.4
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Zhask",
+        "synergy": 1.7
+      },
+      {
+        "name": "Thamuz",
+        "synergy": 1.7
+      },
+      {
+        "name": "Cyclops",
+        "synergy": 1.5
+      },
+      {
+        "name": "Barats",
+        "synergy": 1.4
+      },
+      {
+        "name": "Aurora",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Selena is strong against squishy heroes with poor Mobility, simply because it's hard for them to dodge her 2nd Skill. Such as Gord and Layla.",
+    "weakAgainstReason": "But Selena is weak against heroes that can resist or remove her CC abilities, such as Hanabi and Wanwan.",
+    "synergyReason": "Selena works well with ranged heroes that can deal high burst damage, such as Xavier and Beatrix."
+  },
+  "mechanicCategory": [
+    "Transform",
+    "Dual Form"
+  ],
+  "mechanicNote": "Selena bisa bertransformasi antara mode Elven (jarak jauh) dan Abyssal (jarak dekat), memberikan playstyle ganda.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Form Management",
+    "Combo Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Zone Control",
+    "Burst Damage",
+    "Jungle Tempo",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.8,
+  "pickRate": 1.2,
+  "banRate": 3.9,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 70,
+    "abilityEffects": 100,
+    "difficulty": 70
+  },
+  "powerCurve": {
+    "early": 85,
+    "mid": 70,
+    "late": 40,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Selena is dominant early because long Arrow stuns plus trap-mark burst creates frequent picks and tempo advantage before enemies have defensive stats/cleanses. Her impact declines late when teams group, vision is denser, and missed arrows are heavily punished, shifting her into a pick/utility role rather than a main damage threat."
+  },
+  "proBuilds": [
+    {
+      "player": "ㅤㅤ",
+      "games": 930,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Zhao Miao Miao",
+      "games": 1419,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Genius Wand",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Dehan impala",
+      "games": 929,
+      "items": [
+        "Smite Magic Shoes",
+        "Necklace of Durance",
+        "Lightning Truncheon",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/selena/video-0-0.mp4",
+    "skill1": "/videos/heroes/selena/video-1-0.mp4",
+    "skill2": "/videos/heroes/selena/video-2-0.mp4",
+    "ultimate": "/videos/heroes/selena/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 2",
+        "Skill 4",
+        "Skill 3",
+        "Skill 1",
+        "Skill 3"
+      ],
+      "description": "Stay in Elven Form to cast her 1st and 2nd skill combo to catch the enemy hero in distance. Then cast her Ultimate to enter her Abyssal Form. Follow with her 2nd and 1st skill combo to close in and finish off the target, then cast her 2nd Skill to dash away."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Elven Form Selena can use her 2nd Skill to stun the enemy, then use her 1st Skill to poke enemies and deal damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Xavier",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Beatrix",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Abyss",
+  "race": "Dark Elf",
+  "bestTeammates": [
+    {
+      "name": "Zhask",
+      "winrateDelta": 2.67
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": 1.81
+    },
+    {
+      "name": "Esmeralda",
+      "winrateDelta": 1.73
+    },
+    {
+      "name": "Cyclops",
+      "winrateDelta": 1.55
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": 1.42
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Atlas",
+      "winrateDelta": -1.91
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": -1.55
+    },
+    {
+      "name": "Johnson",
+      "winrateDelta": -1.33
+    },
+    {
+      "name": "Tigreal",
+      "winrateDelta": -1.29
+    },
+    {
+      "name": "Natalia",
+      "winrateDelta": -1.19
+    }
+  ],
+  "metaScore": 14.21,
+  "metaRank": 88,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Ixia",
+        "advantage": 2.02
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.96
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 1.79
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 1.74
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 1.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 2.63
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.17
+      },
+      {
+        "name": "Zhask",
+        "advantage": 2.15
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.04
+      },
+      {
+        "name": "Lolita",
+        "advantage": 1.79
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Attack speed",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Starlium Scythe",
+        "Wind of Nature",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Windtalker"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Gk butuh lele",
+      "tags": [],
+      "lastUpdated": "2025-10-26T07:25:16.33278+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Selena Roam",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Wishing Lantern"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Fokus untuk serang dari jauh pakai lele",
+      "tags": [],
+      "lastUpdated": "2025-10-22T17:55:15.71475+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "cd",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Enchanted Talisman",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-13T17:15:13.081461+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Burst Damage ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Sky Piercer",
+        "Starlium Scythe",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-29T21:16:57.068505+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Selena Jungler by Tiktok: phreakergg75",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Starlium Scythe",
+        "Sky Piercer",
+        "Winter Crown",
+        "Blood Wings",
+        "Enchanted Talisman"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "main agresif bareng mathilda",
+      "tags": [],
+      "lastUpdated": "2025-10-26T04:53:00.097057+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 12160,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Starlium",
+        "Scythe",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11100,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11050,
+      "notes": null
+    }
+  ]
+}

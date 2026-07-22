@@ -1,0 +1,770 @@
+{
+  "id": "alucard",
+  "name": "Alucard",
+  "heroName": "Alucard",
+  "role": [
+    "Fighter",
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Damage"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle",
+    "EXP"
+  ],
+  "flex_lanes": [
+    "EXP"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2621,
+    "hpRegen": 7.8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 126,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.12",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Pursuit",
+      "description": "After each skill cast, Alucard's next Basic Attack allows him to dash to the target's location and deal (+125% Total Physical Attack) Physical Damage.\nDemon Hunter: Alucard deals 10% extra damage to Creeps.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+125% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Pursuit",
+      "tips": "This passive gives Aluchan the “chasing effect” using your AA after every skills will move you to the target you’re trying to attack. This works on all targets, including Towers so do take note. Always use your AA after every skill to make use of passives extra damage.",
+      "iconUrl": "/raw-assets/skill_icons/alucard/pursuit.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Groundsplitter",
+      "description": "Alucard rolls to the target location and slams his blade on the ground, dealing 270 (+85% Extra Physical Attack) Physical Damage to enemies hit and slowing them by 40% for 2s.",
+      "cooldown": "8.5",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+85% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "8.5",
+            "8.1",
+            "7.7",
+            "7.3",
+            "6.9",
+            "6.5"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "270",
+            "290",
+            "310",
+            "330",
+            "350",
+            "370"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Groundsplitter",
+      "tips": "Escape tool, you can use this to jump over the wall Engage tool, you can use this to get closer to the backline Pair this up with your passive to do a ‘Gap Closer’ or ‘Retreat’ Has a pretty neat slow built in, so that you can give chase.",
+      "iconUrl": "/raw-assets/skill_icons/alucard/groundsplitter.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Whirling Smash",
+      "description": "Alucard launches a whirling slash, dealing 345 (+120% Extra Physical Attack) Physical Damage to nearby enemies.",
+      "cooldown": "6.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+120% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.6",
+            "5.2",
+            "4.8",
+            "4.4",
+            "4.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "345",
+            "390",
+            "435",
+            "480",
+            "525",
+            "570"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Whirling_Smash",
+      "tips": "AOE damage skill made to target surroundings enemy Pretty standard skill with no other effects lolol. Super Low Cooldown at 5 seconds, make use of this skill to always proc your passive",
+      "iconUrl": "/raw-assets/skill_icons/alucard/whirling_smash.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Fission Wave",
+      "description": "Passive: Alucard permanently gains 10% Hybrid Lifesteal.\nActive: Alucard absorbs the energy of enemies in the target area, reducing their Movement Speed by 30% and Hybrid Defense by 10. Alucard gains 10 Hybrid Defense for each enemy hero hit, and reduces the cooldown of his other skills to 50% for 6s.\nUse Again: Alucard releases a shockwave in the target direction dealing 400 (+200% Extra Physical Attack) Physical Damage to enemies hit.",
+      "cooldown": "40.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+200% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "40.0",
+            "35.0",
+            "30.0"
+          ]
+        },
+        {
+          "label": "Hybrid Lifesteal",
+          "values": [
+            "10%",
+            "20%",
+            "30%"
+          ]
+        },
+        {
+          "label": "Hybrid Defense Reduction",
+          "values": [
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "label": "Hybrid Defense Boost",
+          "values": [
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "400",
+            "550",
+            "700"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Fission_Wave",
+      "tips": "Gives you insane lifesteal Pretty Dope damage on the last attack Your one skill that allows you to have higher sustain compared any other heroes. Both parts of the skill allows you to proc your passive Lifesteal on different targets differs.",
+      "iconUrl": "/raw-assets/skill_icons/alucard/fission_wave.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Sun",
+        "Natalia",
+        "Saber",
+        "Yve",
+        "Xavier"
+      ],
+      "weakAgainst": [
+        "Barats",
+        "Khufra",
+        "Fredrinn",
+        "Minsitthar",
+        "Melissa"
+      ],
+      "synergyWith": [
+        "Tigreal",
+        "Lolita",
+        "Barats",
+        "Chip",
+        "Atlas"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.9
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.3
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.3
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.1
+      },
+      {
+        "name": "Xavier",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 3.4
+      },
+      {
+        "name": "Khufra",
+        "advantage": 3.1
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 2.8
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 2.5
+      },
+      {
+        "name": "Melissa",
+        "advantage": 2.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Tigreal",
+        "synergy": 1.8
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.4
+      },
+      {
+        "name": "Barats",
+        "synergy": 1.3
+      },
+      {
+        "name": "Chip",
+        "synergy": 1.2
+      },
+      {
+        "name": "Atlas",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Alucard has great chase abilities and damage resistance, making him powerful against squishy Assassins like Harley and Aamon.",
+    "weakAgainstReason": "But he can be countered by heroes with powerful control abilities like Franco and Johnson. If controlled, Alucard won't be able to steal HP\nand can be easily eliminated.",
+    "synergyReason": "He's best with heroes with crowd control, such as Gatotkaca and Xavier, which makes up for his lack of powerful control abilities."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Alucard adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.9,
+  "pickRate": 0.6,
+  "banRate": 0.7,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 50,
+    "abilityEffects": 10,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 76,
+    "late": 62,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Haas's Claws",
+      "Hunter Strike",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Alucard’s kill pressure jumps at level 4 due to ult lifesteal + cooldown reduction enabling long chase combos, and he spikes hardest once he finishes 1–2 damage items to snowball skirmishes. In late game, anti-heal and coordinated CC make it harder for him to stick and lifesteal through fights."
+  },
+  "proBuilds": [
+    {
+      "player": "inam.AMAGAMI",
+      "games": 1480,
+      "items": [
+        "War Axe",
+        "Flame Tough Boots",
+        "Endless Battle",
+        "Blade of Despair",
+        "Queen's Wings",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "T A Q I E E N ✧",
+      "games": 1051,
+      "items": [
+        "War Axe",
+        "Flame Tough Boots",
+        "Queen's Wings",
+        "Endless Battle",
+        "Blade of Despair",
+        "Berserker's Fury"
+      ]
+    },
+    {
+      "player": "Aemeath",
+      "games": 748,
+      "items": [
+        "Hunter Strike",
+        "Flame Tough Boots",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/alucard/video-0-0.mp4",
+    "skill1": "/videos/heroes/alucard/video-1-0.mp4",
+    "skill2": "/videos/heroes/alucard/video-2-0.mp4",
+    "ultimate": "/videos/heroes/alucard/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, Alucard can use his 1st Skill to deal damage and slow enemies first, and follow it with Basic Attacks for strikes. Then, he can use his 2nd Skill and follow it with Basic Attacks for more strikes."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": "In teamfights, Alucard can cast his ULTIMATE to increase Lifesteal and mark enemies and then switch between 1st Skill and 2nd Skill\nto follow Basic Attacks. Finally, use his ULTIMATE again\nfor reaping kills."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Xavier",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Mathilda",
+      "winrateDelta": 2.74
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 1.78
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.7
+    },
+    {
+      "name": "Barats",
+      "winrateDelta": 1.34
+    },
+    {
+      "name": "Tigreal",
+      "winrateDelta": 1.3
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hanzo",
+      "winrateDelta": -6.11
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": -5.9
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": -4.71
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": -4.22
+    },
+    {
+      "name": "Nolan",
+      "winrateDelta": -4.18
+    }
+  ],
+  "metaScore": 15.45,
+  "metaRank": 82,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.56
+      },
+      {
+        "name": "Ling",
+        "advantage": 3.2
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.07
+      },
+      {
+        "name": "Xavier",
+        "advantage": 1.88
+      },
+      {
+        "name": "Natalia",
+        "advantage": 1.78
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 4.01
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.49
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 2.36
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.25
+      },
+      {
+        "name": "Melissa",
+        "advantage": 2.02
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Alucard Damage+lifesteal",
+      "author": "community",
+      "votes": 34,
+      "items": [
+        "War Axe",
+        "Tought Boots",
+        "Endless Battle",
+        "Rose Gold Meteor",
+        "Queen's Wings",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Alucard sustain Jika musuh tebal² atau yg lama dibunuh, sekali skill darah langsung penuh",
+      "tags": [],
+      "lastUpdated": "2025-10-16T05:39:14.564388+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Alucard By qeva",
+      "author": "community",
+      "votes": 11,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Endless Battle",
+        "Blade of Despair",
+        "Queen's Wings",
+        "Thunder Belt"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming) Jangan dibuang sampai 3-4 item penting lain jadi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T10:47:30.158847+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Kompe.",
+      "author": "community",
+      "votes": 11,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Hunter Strike",
+        "Rose Gold Meteor",
+        "Endless Battle",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "TERGANTUNG PILOT ",
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:50:21.02529+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Alu Exp/Gold",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Endless Battle",
+        "Queen's Wings",
+        "Malefic Roar",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Build untuk Alucard Exp/Gold",
+      "tags": [],
+      "lastUpdated": "2025-09-13T09:46:22.304514+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Alucard WhatsApp ",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Warrior Boots",
+        "Blade of Despair",
+        "Corrosion Scythe",
+        "Holy Crystal",
+        "Oracle",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Ayo hijaukan dunia",
+      "tags": [],
+      "lastUpdated": "2025-10-16T05:50:59.657882+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11560,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Hunter",
+        "Strike",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11940,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11370,
+      "notes": null
+    }
+  ]
+}

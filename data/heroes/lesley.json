@@ -1,0 +1,680 @@
+{
+  "id": "lesley",
+  "name": "Lesley",
+  "heroName": "Lesley",
+  "role": [
+    "Assassin",
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Burst"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2490,
+    "hpRegen": 6.8,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 125,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Lethal Shot",
+      "description": "If Lesley doesn't take damage for 5s, her next Basic Attack gains extra range and 50% Crit Chance and deals 100( +100% Total Physical Attack) (True Damage) (20% extra damage against minions). Each point of fixed Physical Penetration Lesley acquires is converted into 0.5% Crit Damage, but her base Crit Damage is reduced to 130%. Lesley's Basic Attack restores 5 points of energy and her (Lethal Shot) doubles the amount of energy restored. The (Lethal Shot) effect will activate immediately after Lesley uses a skill.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Lethal_Shot",
+      "tips": "Try your best to avoid taking damage and use her extreme long-range attacks to wear down enemies.",
+      "iconUrl": "/raw-assets/skill_icons/lesley/lethal_shot.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Master of Camouflage",
+      "description": "Lesley enters the Camouflage state, gaining double Energy Regen, 40% extra Movement Speed, and 85 extra Physical Attack. The state lasts 3s or until Lesley takes or deals damage. Enemies can detect Lesley's position through distortions of their surroundings.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Master_of_Camouflage",
+      "tips": "Combine stealth with her passive's increased crit damage to launch a devastating opening on your enemies.",
+      "iconUrl": "/raw-assets/skill_icons/lesley/master_of_camouflage.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Tactical Grenade",
+      "description": "Lesley throws a tactical grenade in the target direction while jumping back slightly, dealing 150( +50% Total Physical Attack) (Physical Damage) to enemies in a fan-shaped area and knocking them back. Lesley can cast this skill during (Ultimate Snipe) to cancel the state and immediately fire a Fatal Bullet at the target. The attack is only triggered when there are unfired Fatal Bullets left.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Tactical_Grenade",
+      "tips": "Survival skill -- try saving it for when you need to escape.",
+      "iconUrl": "/raw-assets/skill_icons/lesley/tactical_grenade.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Ultimate Snipe",
+      "description": "Lesley locks onto the target enemy hero and fires 4 Fatal Bullets in succession, each dealing (Physical Damage) equal to 250( +80% Extra Physical Attack) plus 5% of their lost HP and restoring 10 energy on hit. The Bullets can be blocked by other enemy heroes. If this skill is interrupted, each remaining Bullet reduces the skill cooldown by 10%. (Passive): Lesley's Crit Chance is increased by 5%.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ultimate_Snipe",
+      "tips": "Use this skill to finish off enemies with low HP, and be sure to keep a safe distance.",
+      "iconUrl": "/raw-assets/skill_icons/lesley/ultimate_snipe.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Objective DPS",
+      "Late Game Carry",
+      "Jungle Tempo",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Claude",
+        "Marcel",
+        "Bruno",
+        "Gatotkaca",
+        "Belerick"
+      ],
+      "weakAgainst": [
+        "Sun",
+        "Estes",
+        "Gloo",
+        "Popol and Kupa",
+        "Balmond"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Popol and Kupa",
+        "Roger",
+        "Yi Sun-shin",
+        "Aulus"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Claude",
+        "advantage": 4.3
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3.8
+      },
+      {
+        "name": "Bruno",
+        "advantage": 3
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 3
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 3.5
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.4
+      },
+      {
+        "name": "Gloo",
+        "advantage": 3
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.3
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 3.8
+      },
+      {
+        "name": "Popol and Kupa",
+        "synergy": 3.7
+      },
+      {
+        "name": "Roger",
+        "synergy": 1.8
+      },
+      {
+        "name": "Yi Sun-shin",
+        "synergy": 1.5
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Lesley is strong against tank heroes who rely heavily on equipment. Because her attacks can deal True Damage that will ignore the defense these heroes get from the equipment. Such as Gatotkaca and Fredrinn.",
+    "weakAgainstReason": "Lesley is countered by Assassin heroes with multiple movement abilities, which will cause her to lose her range advantage. Such as Ling and Lancelot.",
+    "synergyReason": "Lesley works best with tank heroes who can provide better attacking conditions for her, like Minotaur and Baxia."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Lesley adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Objective DPS",
+    "Late Game Carry",
+    "Jungle Tempo",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 46.6,
+  "pickRate": 1.8,
+  "banRate": 8.9,
+  "heroAttributes": {
+    "durability": 10,
+    "offense": 70,
+    "abilityEffects": 20,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 40,
+    "mid": 62,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Berserker's Fury",
+      "Endless Battle",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Lesley’s early is poke-oriented and matchup-dependent because she needs items and levels to convert penetration into high crit damage and meaningful true-damage shots. Mid game becomes threatening with ultimate pick potential and first crit item, while late game she becomes a dominant burst marksman who can delete squishies with repeated empowered shots."
+  },
+  "proBuilds": [
+    {
+      "player": "Brann sniper ngawi.",
+      "games": 1474,
+      "items": [
+        "Berserker's Fury",
+        "Sea Halberd",
+        "Malefic Gun",
+        "Endless Battle",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Brann sniper ngawi.",
+      "games": 1302,
+      "items": [
+        "Berserker's Fury",
+        "Sea Halberd",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Windtalker",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "uke aja",
+      "games": 1145,
+      "items": [
+        "Magic Shoes",
+        "Berserker's Fury",
+        "Windtalker",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Blade of Despair"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/lesley/video-0-0.mp4",
+    "skill1": "/videos/heroes/lesley/video-1-0.mp4",
+    "skill2": "/videos/heroes/lesley/video-2-0.mp4",
+    "ultimate": "/videos/heroes/lesley/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": "In teamfights, Lesley can repeatedly use her 1st Skill to deal more damage with her enhanced Basic Attack while moving. When the enemy hero is close, Lesley can use her 2nd Skill and the enhanced Basic Attack for the counterattack, and use his Ultimate to start reaping."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": "In the laning phase, once Lesley reaches full energy, and her enhanced Basic Attack is activated, wait for the opportunity to use the enhanced Basic Attack to hit the enemy hero. Then use her 1st Skill to reactivate the enhanced Basic Attack and hit the enemy again, and finally, use her Ultimate to finish off the enemy."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Baxia",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": 4.38
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 3.21
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 2.53
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": 2.38
+    },
+    {
+      "name": "Kimmy",
+      "winrateDelta": 2.09
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Melissa",
+      "winrateDelta": -5.13
+    },
+    {
+      "name": "Clint",
+      "winrateDelta": -4.77
+    },
+    {
+      "name": "Obsidia",
+      "winrateDelta": -4.68
+    },
+    {
+      "name": "Wanwan",
+      "winrateDelta": -4.5
+    },
+    {
+      "name": "Ixia",
+      "winrateDelta": -4.19
+    }
+  ],
+  "metaScore": 15.64,
+  "metaRank": 79,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Claude",
+        "advantage": 5.05
+      },
+      {
+        "name": "Belerick",
+        "advantage": 3.14
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 2.88
+      },
+      {
+        "name": "Marcel",
+        "advantage": 2.36
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Estes",
+        "advantage": 2.82
+      },
+      {
+        "name": "Sun",
+        "advantage": 2.81
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.25
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.22
+      },
+      {
+        "name": "Angela",
+        "advantage": 1.98
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "2 hit",
+      "author": "community",
+      "votes": 16,
+      "items": [
+        "Berserker Fury",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Blade of Despair",
+        "Blade of Despair",
+        "Blade of the Heptaseas"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-23T08:10:01.448402+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Cepet jadi",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Endless Battle",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:20:24.759395+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Early damage to late game damage from PH 🇵🇭",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Berserker Fury",
+        "Sea Halberd",
+        "Rapid Boots",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Poke",
+      "tags": [],
+      "lastUpdated": "2026-03-18T15:11:31.085193+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Damage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Berserker Fury",
+        "Endless Battle",
+        "Blade of the Heptaseas",
+        "Blade of Despair",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-26T13:10:04.455128+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Duar modar",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Rapid Boots",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Blade of Despair",
+        "Sea Halberd",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-04T22:58:36.32172+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Magic",
+        "Boots",
+        "Berserker's",
+        "Fury",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12610,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Berserker's",
+        "Fury",
+        "Blade",
+        "the"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12550,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Berserker's",
+        "Fury",
+        "Endless",
+        "Battle"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 12460,
+      "notes": null
+    }
+  ]
+}

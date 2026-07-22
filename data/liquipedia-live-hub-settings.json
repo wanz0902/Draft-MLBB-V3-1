@@ -1,0 +1,14 @@
+{
+  "publicVisible": true,
+  "showCountdown": true,
+  "showUpcoming": true,
+  "showOngoing": true,
+  "showCompleted": true,
+  "mode": "all-events",
+  "selectedEventIds": [],
+  "keywordFilters": [],
+  "tierFilters": [],
+  "maxMatches": 30,
+  "syncIntervalSeconds": 900,
+  "logoMode": "none"
+}

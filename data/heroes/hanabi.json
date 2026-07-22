@@ -1,0 +1,677 @@
+{
+  "id": "hanabi",
+  "name": "Hanabi",
+  "heroName": "Hanabi",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Damage"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2510,
+    "hpRegen": 6.8,
+    "mana": 448,
+    "manaRegen": 3.4,
+    "physicalAttack": 116,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Ninjutsu: Petal Barrage",
+      "description": "Hanabi's Basic Attacks and skills will launch Petal Blades after hitting a target, bouncing up to 4 times to nearby enemies (the first bounce deals 40% of the initial damage, and subsequent bounces deal 85% of the previous). Bounces from her Basic Attacks inherit a portion of Attack Effects.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ninjutsu:_Petal_Barrage",
+      "tips": "The Scarlet Shadow’s secret technique. When Hanabi has full HP, health that would have been granted from Lifesteal is converted into a shield. When this shield is active, Hanabi is immune to all control effects.",
+      "iconUrl": "/raw-assets/skill_icons/hanabi/ninjutsu_petal_barrage.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Ninjutsu: Equinox",
+      "description": "(Passive): The secret Ninjutsu of the Scarlet Shadow makes Hanabi immune to control effects when she has a shield from any source. (Active): Hanabi gains a 300( +40% Total Physical Attack) shield for 5s. When the shield is active, Hanabi gains 20% Movement Speed and 25% Attack Speed, and 20% of her damage dealt to enemy heroes will be added to this shield (only adds 10% of the damage dealt to non-hero units). This shield cannot exceed 50% of Hanabi's max HP.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ninjutsu:_Equinox",
+      "tips": "Hanabi consumes mana to unleash the flower demon sealed within the Higanbana, firing petal blades at her enemies. After each basic attack hits, a new blade will spawn and deal physical damage to the enemy. Consecutive hits deal less damage. Passive: This skill grants Hanabi a certain amount of Lifesteal, which increases each time Petal Barrage is upgraded.",
+      "iconUrl": "/raw-assets/skill_icons/hanabi/ninjutsu_equinox.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Ninjutsu: Soul Scroll",
+      "description": "Hanabi fires the energy Kunai in the targeted direction, dealing 450( +80% Total Physical Attack) (Physical Damage) to enemies along the way and reducing their Movement Speed by 60% for 1s. Enemy units hit will also be marked, allowing Hanabi's next Bounce Damage from Basic Attacks to deal 30( +100% Total Physical Attack) (Physical Damage) on them with no damage decay.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ninjutsu:_Soul_Scroll",
+      "tips": "Fires a kunai in the specified direction, attached with a scroll sealed by demonic flower energy. Deals physical damage to enemies it hits along the way and slows them. Hanabi will recover Mana for each enemy hero hit (this Mana regeneration effect will decay when hitting multiple heroes).",
+      "iconUrl": "/raw-assets/skill_icons/hanabi/ninjutsu_soul_scroll.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Forbidden Jutsu: Higanbana",
+      "description": "Hanabi throws Higanbana in the targeted direction, dealing 300( +50% Total Physical Attack) (Physical Damage) to the first enemy hero hit and immobilizing them for 0.8s. After 1s, Higanbana will bloom at the location of the first hit, dealing 300( +50% Total Physical Attack) (Physical Damage) to nearby enemies. Subsequent hits on the same target decay to 20% damage.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Forbidden_Jutsu:_Higanbana",
+      "tips": "When the flowers blossom, the leaves are forgotten. Hanabi completely unlocks the Higanbana’s seal and launches it at the enemy. After hitting an enemy, the Higanbana blooms, dealing physical damage and immobilizing them, and then spreads to nearby enemies. After a certain period of time, if the enemy is still within range of the Higanbana, a new flower will appear, causing the same damage and immobilization effect. The spreading effect only works once per hero.",
+      "iconUrl": "/raw-assets/skill_icons/hanabi/forbidden_jutsu_higanbana.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Popol and Kupa",
+        "Chip",
+        "Akai",
+        "Khufra",
+        "Moskov"
+      ],
+      "weakAgainst": [
+        "Beatrix",
+        "Ixia",
+        "Hanzo",
+        "Joy",
+        "Layla"
+      ],
+      "synergyWith": [
+        "Franco",
+        "Balmond",
+        "Roger",
+        "Lolita",
+        "Harith"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Popol and Kupa",
+        "advantage": 3.1
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.7
+      },
+      {
+        "name": "Akai",
+        "advantage": 2.3
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.2
+      },
+      {
+        "name": "Moskov",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Beatrix",
+        "advantage": 3.4
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.9
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 2.6
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.2
+      },
+      {
+        "name": "Layla",
+        "advantage": 2.2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Franco",
+        "synergy": 1.7
+      },
+      {
+        "name": "Balmond",
+        "synergy": 1.5
+      },
+      {
+        "name": "Roger",
+        "synergy": 1.5
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.4
+      },
+      {
+        "name": "Harith",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Hanabi counters heroes that rely heavily on CC abilities, such as Tigreal and Belerick, since Hanabi can use her 1st Skill to ignore CC.",
+    "weakAgainstReason": "Hanabi is weak against heroes with high burst damage, such as Lancelot and Zilong, because they can quickly take down her shield.",
+    "synergyReason": "Hanabi works well with heroes who can initiate with CC, such as Carmilla and Atlas, so she can focus on maximizing her bounce and Ultimate damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Hanabi adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 54.6,
+  "pickRate": 3.3,
+  "banRate": 11.7,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 70,
+    "abilityEffects": 80,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 36,
+    "mid": 56,
+    "late": 84,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Golden Staff",
+      "Malefic Roar"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "She’s relatively weak early due to item dependence and limited burst, mostly farming and poking with bounces. With core attack-speed/on-hit items she becomes a dominant late-game teamfight DPS, and her shield-based CC immunity plus AOE bounces make front-to-back fights very strong."
+  },
+  "proBuilds": [
+    {
+      "player": "DERON1C",
+      "games": 1255,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Wind of Nature"
+      ]
+    },
+    {
+      "player": "I'm King Bruno!",
+      "games": 600,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "— Entanglement.",
+      "games": 1073,
+      "items": [
+        "Corrosion Scythe",
+        "Golden Staff",
+        "Rapid Boots",
+        "Demon Hunter Sword",
+        "Malefic Gun",
+        "Wind of Nature"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/hanabi/video-0-0.mp4",
+    "skill1": "/videos/heroes/hanabi/video-1-0.mp4",
+    "skill2": "/videos/heroes/hanabi/video-2-0.mp4",
+    "ultimate": "/videos/heroes/hanabi/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Hanabi's 2nd Skill to poke the enemy and mark them, and continue to chip away their HP with Basic Attack bounces before using her 1st Skill and engaging them head-on."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 3",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, start with Hanabi's 2nd Skill to slow the enemies, then follow up with her Ultimate to immobilize them and let loose with Basic Attacks. During this time, use her 1st Skill accordingly for more damage and survivability, and keep up the damage with her bouncing Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Hayabusa",
+      "relationship": "CHILDHOOD SWEETHEARTS"
+    },
+    {
+      "name": "Kagura",
+      "relationship": "CLOSE FRIEND"
+    },
+    {
+      "name": "Carmilla",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Franco",
+      "winrateDelta": 1.25
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 1.17
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 1.12
+    },
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": 1.06
+    },
+    {
+      "name": "Akai",
+      "winrateDelta": 1
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": -11.33
+    },
+    {
+      "name": "Irithel",
+      "winrateDelta": -10.29
+    },
+    {
+      "name": "Melissa",
+      "winrateDelta": -9.88
+    },
+    {
+      "name": "Clint",
+      "winrateDelta": -7.6
+    },
+    {
+      "name": "Moskov",
+      "winrateDelta": -7.03
+    }
+  ],
+  "metaScore": 35.94,
+  "metaRank": 5,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.78
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.65
+      },
+      {
+        "name": "Barats",
+        "advantage": 2.4
+      },
+      {
+        "name": "Akai",
+        "advantage": 2.11
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.01
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Beatrix",
+        "advantage": 3.19
+      },
+      {
+        "name": "Ixia",
+        "advantage": 3.08
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.66
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.44
+      },
+      {
+        "name": "Layla",
+        "advantage": 2.42
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 D2 W3 AE.Arfy",
+      "author": "community",
+      "votes": 12,
+      "items": [
+        "Warrior Boots",
+        "Corrosion Scythe",
+        "Windtalker",
+        "Haas Claws",
+        "Wind of Nature",
+        "Fury Hammer"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "Game 1 BTR VS AE",
+      "tags": [],
+      "lastUpdated": "2025-09-06T17:50:33.051297+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL PH S17 WEEK 1 DAY 2 OMG.Netskie",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Malefic Gun",
+        "Immortality",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "( APBR VS OMG GAME 1 ) MPL PHILIPPINES SEASON 17 WEEK 1 DAY 2 21 MARET 2026",
+      "tags": [],
+      "lastUpdated": "2026-03-23T12:12:33.91993+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Item attack speed",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Windtalker",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Kumpul gold sebanyak mungkin sampai semua item terkumpul semua",
+      "tags": [],
+      "lastUpdated": "2025-12-11T11:51:50.341376+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build andalan ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Haas Claws",
+        "Windtalker",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Coba aja ",
+      "tags": [],
+      "lastUpdated": "2025-10-23T20:44:59.076031+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "critical",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Windtalker",
+        "Haas Claws",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Sea Halberd"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "Kalau musuh tipis ",
+      "tags": [],
+      "lastUpdated": "2025-10-22T16:24:30.142018+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Aegis",
+      "cost": 10810,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10910,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Aegis",
+      "cost": 10870,
+      "notes": null
+    }
+  ]
+}

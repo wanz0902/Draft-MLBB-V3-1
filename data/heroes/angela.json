@@ -1,0 +1,678 @@
+{
+  "id": "angela",
+  "name": "Angela",
+  "heroName": "Angela",
+  "role": [
+    "Support"
+  ],
+  "specialty": [
+    "Guard",
+    "Support"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam",
+    "Mid"
+  ],
+  "flex_lanes": [
+    "Mid"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2401,
+    "hpRegen": 7,
+    "mana": 510,
+    "manaRegen": 4,
+    "physicalAttack": 95,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Smart Heart",
+      "description": "Angela gains 7.5% extra Movement Speed for 4s each time she casts a skill (up to 30%). When she's attached to an allied hero, the Movement Speed boost is transferred to the allied hero.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Smart_Heart",
+      "tips": "Using skills increases her movement speed. Attached allies also benefit from this speed increase.",
+      "iconUrl": "/raw-assets/skill_icons/angela/smart_heart.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Love Waves",
+      "description": "Angela sends (Love Waves) in the target direction, dealing 170( +80% Total Magic Power) (Magic Damage) to enemies hit, revealing their positions briefly, and applying a stack of (Lover's Mark) (up to 5 stacks). Each stack of (Lover's Mark) increases the damage by 20% and slows enemies hit by 8% for 3s. (Love Waves) also restore 150( +75% Total Magic Power) HP to allied heroes hit. Angela can store up to 5 charges of this skill and the recharge time is affected by Cooldown Reduction.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Love_Waves",
+      "tips": "Try to store as many charges as you can before attacking, as high stacks of Lover's Mark can result in very impressive damage.",
+      "iconUrl": "/raw-assets/skill_icons/angela/love_waves.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Puppet-on-a-String",
+      "description": "Angela launches a (Puppet String) at the target enemy, dealing 300( +40% Total Magic Power) (Magic Damage) and gradually slowing them by up to 80%. If the enemy is still connected to the string after 3s, they'll be immobilized for 1.5s and dealt 450( +60% Total Magic Power) (Magic Damage). Each stack of (Lover's Mark) increases the final damage by 20%.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Puppet-on-a-String",
+      "tips": "The follow-up damage dealt when connected is quite high, so try to stay as close to the target as possible.",
+      "iconUrl": "/raw-assets/skill_icons/angela/puppet_on_a_string.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Heartguard",
+      "description": "Angela begins channeling, applying a 1000( +200% Total Magic Power) shield that lasts 6s to the target allied hero regardless of distance. After the channeling is complete, she attaches herself to the allied hero for 12s, during which she can cast skills at zero Mana cost. Angela can cast this skill again to cancel the channeling or detach herself from the allied hero. The attaching state will end early if the allied hero is killed.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Heartguard",
+      "tips": "Protecting low-HP teammates in the nick of time can be very effective in turning the tide of battle.",
+      "iconUrl": "/raw-assets/skill_icons/angela/heartguard.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Marcel",
+        "Alice",
+        "Faramis",
+        "Balmond",
+        "X.Borg"
+      ],
+      "weakAgainst": [
+        "Franco",
+        "Silvanna",
+        "Yin",
+        "Zilong",
+        "Nolan"
+      ],
+      "synergyWith": [
+        "Uranus",
+        "Fredrinn",
+        "Chip",
+        "Akai",
+        "Wanwan"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 5
+      },
+      {
+        "name": "Alice",
+        "advantage": 4.6
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.4
+      },
+      {
+        "name": "Balmond",
+        "advantage": 3.1
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Franco",
+        "advantage": 2.8
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 2.4
+      },
+      {
+        "name": "Yin",
+        "advantage": 2.3
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.3
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Uranus",
+        "synergy": 4.1
+      },
+      {
+        "name": "Fredrinn",
+        "synergy": 3.9
+      },
+      {
+        "name": "Chip",
+        "synergy": 3.9
+      },
+      {
+        "name": "Akai",
+        "synergy": 3.8
+      },
+      {
+        "name": "Wanwan",
+        "synergy": 2.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Angela counters heroes with low mobility, such as Uranus and Belerick, by slowing them even further and speeding up her allies.",
+    "weakAgainstReason": "Angela is countered by nimble Assassins with burst damage, such as Ling and Harley.",
+    "synergyReason": "Angela works best with highly mobile Assassins such as Lancelot and Aamon since she can provide CC and heals while increasing their mobility even further."
+  },
+  "mechanicCategory": [
+    "Attach",
+    "Global Support"
+  ],
+  "mechanicNote": "Angela bisa menempel ke hero ally dari jarak global, memberikan shield dan casting skill dari dalam tubuh ally.",
+  "playstyleTags": [
+    "Protect"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Enabler",
+    "Defensive Draft"
+  ],
+  "counterTags": [
+    "Dive",
+    "Isolation",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Dive",
+    "Sustain Enabler"
+  ],
+  "macroTags": [
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49,
+  "pickRate": 1.6,
+  "banRate": 8.5,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 20,
+    "abilityEffects": 50,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 62,
+    "mid": 80,
+    "late": 74,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Fleeting Time",
+      "Oracle",
+      "Dominance Ice"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Angela is decent early with poke/heal trades, but her biggest spike is level 4 where global Heartguard enables cross-map saves and forced fights around Turtle. She stays strong late with low-commitment shielding/CC, though her impact depends heavily on attaching to a well-farmed carry."
+  },
+  "proBuilds": [
+    {
+      "player": "ღ.•Cimeyyy•ღ",
+      "games": 840,
+      "items": [
+        "Favor Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "Fυωα-Fυωα",
+      "games": 916,
+      "items": [
+        "Favor Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Glowing Wand",
+        "Chastise Pauldron",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "Sarahᥫ᭡",
+      "games": 716,
+      "items": [
+        "Favor Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Glowing Wand",
+        "Ice Queen Wand"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/angela/video-0-0.mp4",
+    "skill1": "/videos/heroes/angela/video-1-0.mp4",
+    "skill2": "/videos/heroes/angela/video-2-0.mp4",
+    "ultimate": "/videos/heroes/angela/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Angela's Ultimate first to attach to a strong ally, and use her 1st Skill to deal damage or heal allies when needed. When enemies try to close in, CC them with her 2nd Skill, and follow up with her 1st Skill for sustained damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Angela's 1st Skill to constantly poke the enemy. When their HP is low, use her 2nd Skill to CC the target, then continue to deal damage with her 1st Skill."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Heartguard",
+      "Puppet-on-a-String",
+      "Love Waves"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Lancelot",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Aamon",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Android",
+  "bestTeammates": [
+    {
+      "name": "Akai",
+      "winrateDelta": 6.39
+    },
+    {
+      "name": "Uranus",
+      "winrateDelta": 5.17
+    },
+    {
+      "name": "Baxia",
+      "winrateDelta": 5.15
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 4.88
+    },
+    {
+      "name": "Fredrinn",
+      "winrateDelta": 4.09
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Khufra",
+      "winrateDelta": -19.38
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": -18.78
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": -18.6
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": -15.87
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": -15.44
+    }
+  ],
+  "metaScore": 19.24,
+  "metaRank": 42,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 5.11
+      },
+      {
+        "name": "Alice",
+        "advantage": 3.73
+      },
+      {
+        "name": "Balmond",
+        "advantage": 3.52
+      },
+      {
+        "name": "Uranus",
+        "advantage": 3.39
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.82
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Franco",
+        "advantage": 2.67
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.53
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 2.5
+      },
+      {
+        "name": "Yin",
+        "advantage": 2.3
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.15
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 D1 W5 : ONIC.Sanz",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Magic Boots",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "(EVOS VS ONIC) Game 1 (Angela Midlane)",
+      "tags": [],
+      "lastUpdated": "2025-09-23T07:47:37.506472+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "shield kekebalan tubuh",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Demon Shoes",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Holy Crystal",
+        "Winter Crown",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "build ini dapat memberikan efek shield putih begitu besar dan efek regen yang deras",
+      "tags": [],
+      "lastUpdated": "2025-09-14T10:17:26.99643+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Healing deres",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Flask of the Oasis",
+        "Glowing Wand",
+        "Oracle",
+        "Winter Crown",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "3bec0101-a991-49f7-a84d-38331c257a3a",
+          "tier3": "f710e5d1-0c78-418a-a47f-4b74e31e0235"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T03:21:51.289172+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build anggela mid by sanzz",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Flask of the Oasis",
+        "Fleeting Time",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-21T14:21:00.32856+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Generic Angela Build",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Arcane Boots",
+        "Enchanted Talisman",
+        "Flask of the Oasis",
+        "Winter Crown",
+        "Holy Crystal",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T06:12:46.152846+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Demon",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10930,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Fleeting"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10590,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Demon",
+        "Boots",
+        "Flask",
+        "the",
+        "Oasis",
+        "Enchanted"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11590,
+      "notes": null
+    }
+  ]
+}

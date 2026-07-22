@@ -1,0 +1,708 @@
+{
+  "id": "gatotkaca",
+  "name": "Gatotkaca",
+  "heroName": "Gatotkaca",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Crowd Control",
+    "Burst"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Roam"
+  ],
+  "flex_lanes": [
+    "Roam"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2821,
+    "hpRegen": 8.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 114,
+    "physicalDefense": 27,
+    "magicPower": 0,
+    "magicDefense": 16,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Steel Bones",
+      "description": "Gatotkaca gains Physical Defense equal to 2% of his lost HP (up to 200). For every 300 damage he takes (calculated before damage reduction), he gains 5 Rage (up to 100). Upon reaching over 25 Rage, Gatotkaca's next Basic Attack becomes enhanced, consuming all Rage to deal extra (Magic Damage) and recover HP. The extra damage scales with his Rage, level, and Magic Power.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Steel_Bones",
+      "tips": "Skill regenerasi utama Anda. Steel Bones membuat Gatotkaca bisa bertahan di Lane lebih lama dan lebih sering melakukan Tanking. Dengan Skill ini walaupun HP Anda di bawah 50%, Anda tidak perlu takut untuk maju dan menahan serangan dari lawan saat sekutu Anda ingin menghabiskan atau mengejar lawan.",
+      "iconUrl": "/raw-assets/skill_icons/gatotkaca/steel_bones.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Blast Iron Fist",
+      "description": "Gatotkaca slams the ground, creating a shattered zone in the target direction while dealing 200( +150% Total Magic Power) (Magic Damage) to enemies within. Enemies in the shattered zone will take 100( +20% Total Magic Power) (Magic Damage) per second and be slowed by 30%.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Blast_Iron_Fist",
+      "tips": "Arahkan skill 1 ke lawan agar lawan mendapatkan damage dan efek slow.",
+      "iconUrl": "/raw-assets/skill_icons/gatotkaca/blast_iron_fist.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Unbreakable",
+      "description": "Gatotkaca begins channeling, then sprints in the target direction with a battle cry, forcing enemies on the path to attack him and deal 200( +100% Total Magic Power) (Magic Damage) for 1.5s. The sprint distance scales with the channel time. Canceling the Skill reduces 50% of the remaining Cooldown.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Unbreakable",
+      "tips": "Gunakan skill 2 ini dengan bijak, terlalu dekat dengan musuh pun bisa membuat skill 2 gatot ini menjadi skill bunuh diri untuknya.",
+      "iconUrl": "/raw-assets/skill_icons/gatotkaca/unbreakable.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Avatar of the Guardian",
+      "description": "Gatotkaca jumps to the target location, dealing 500( +300% Total Magic Power) (Magic Damage) to nearby enemies and knocking them airborne for 1s. Enemies near the center of the area will be knocked airborne for a longer duration, while enemies on the fringes will be pulled to the center. The camera will move with the skill indicator but won't grant extra sight.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Avatar_of_the_Guardian",
+      "tips": "Hati-hati pada saat menggunakan skill ultimate karena musuh yang memiliki Crowd Control dapat menggagalkan Ultimate gatot ( walaupun hanya memperlambatnya mengeluarkan Ultimate ). Maka agar tidak digagalkan, Gatot dapat bersembunyi di semak-semak atau menggunakannya jauh dari musuh dan mengarahkannya tepat ke arah lawan, Skill ini juga dapat digunakan untuk mengejar lawan atau membantu Gatot melarikan diri.",
+      "iconUrl": "/raw-assets/skill_icons/gatotkaca/avatar_of_the_guardian.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "EXP Lane Pressure",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Miya",
+        "Odette",
+        "Zilong",
+        "Saber",
+        "Argus"
+      ],
+      "weakAgainst": [
+        "Lesley",
+        "Mathilda",
+        "Baxia",
+        "Uranus",
+        "Kimmy"
+      ],
+      "synergyWith": [
+        "Angela",
+        "Aldous",
+        "Alpha",
+        "Natalia",
+        "Argus"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Miya",
+        "advantage": 2.9
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.8
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.2
+      },
+      {
+        "name": "Saber",
+        "advantage": 1.8
+      },
+      {
+        "name": "Argus",
+        "advantage": 1.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lesley",
+        "advantage": 3
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.4
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.4
+      },
+      {
+        "name": "Uranus",
+        "advantage": 2.3
+      },
+      {
+        "name": "Kimmy",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Angela",
+        "synergy": 2.4
+      },
+      {
+        "name": "Aldous",
+        "synergy": 1.6
+      },
+      {
+        "name": "Alpha",
+        "synergy": 1.6
+      },
+      {
+        "name": "Natalia",
+        "synergy": 1.5
+      },
+      {
+        "name": "Argus",
+        "synergy": 1.5
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Due to his great CC and high Physical Defense, Gatotkaca counters Marksmen with no mobility skills like Layla and Popol and Kupa..",
+    "weakAgainstReason": "Gatotkaca is countered by heroes that can remove CC like Diggie and Wanwan who will greatly reduce his effectiveness.",
+    "synergyReason": "Gatotkaca works best with heroes with strong CC and damage, such as Kagura and Vale who can give his Ultimate even more value."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Gatotkaca adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "EXP Lane Pressure",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47,
+  "pickRate": 0.7,
+  "banRate": 0.6,
+  "heroAttributes": {
+    "durability": 90,
+    "offense": 30,
+    "abilityEffects": 90,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 78,
+    "late": 72,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 10"
+    ],
+    "coreItems": [
+      "Tough Boots",
+      "Cursed Helmet",
+      "Radiant Armor"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Gatotkaca comes online when he can reliably force fights (taunt + ultimate), making him most oppressive in mid-game rotations and objective fights. Late game he remains a strong initiator/frontliner with high effective durability from Steel Bones, but his damage doesn’t scale as hard and engages can be countered by positioning and cleanses."
+  },
+  "proBuilds": [
+    {
+      "player": "KING BLIZZHADE",
+      "games": 1355,
+      "items": [
+        "Encourage Tough Boots",
+        "Radiant Armor",
+        "Antique Cuirass",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "INVINCIBLE",
+      "games": 614,
+      "items": [
+        "Encourage Tough Boots",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Antique Cuirass",
+        "Immortality",
+        "Guardian Helmet"
+      ]
+    },
+    {
+      "player": "FersaNoCure",
+      "games": 415,
+      "items": [
+        "Encourage Tough Boots",
+        "Radiant Armor",
+        "Antique Cuirass",
+        "Dominance Ice",
+        "Chastise Pauldron"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/gatotkaca/video-0-0.mp4",
+    "skill1": "/videos/heroes/gatotkaca/video-1-0.mp4",
+    "skill2": "/videos/heroes/gatotkaca/video-2-0.mp4",
+    "ultimate": "/videos/heroes/gatotkaca/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Gatotkaca's 2nd Skill to CC the enemy by charging up to extend the range while aiming, then follow up with his 1st Skill and Basic Attacks."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In teamfights, use Gatotkaca's Ultimate to dive into the enemy team, then use his 2nd Skill to taunt them, and slow them with his 1st Skill before finishing with Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Kagura",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Vale",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Angela",
+      "winrateDelta": 1.8
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 1.67
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 1.45
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": 1.42
+    },
+    {
+      "name": "Silvanna",
+      "winrateDelta": 1.33
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": -4.34
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": -3.61
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -3.34
+    },
+    {
+      "name": "Grock",
+      "winrateDelta": -3.34
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": -2.71
+    }
+  ],
+  "metaScore": 10.68,
+  "metaRank": 116,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Barats",
+        "advantage": 2.74
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.45
+      },
+      {
+        "name": "Atlas",
+        "advantage": 2.21
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2
+      },
+      {
+        "name": "Zilong",
+        "advantage": 1.87
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 3.64
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 3.06
+      },
+      {
+        "name": "Lesley",
+        "advantage": 2.88
+      },
+      {
+        "name": "Aldous",
+        "advantage": 2.72
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.05
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Kekebalan tubuh",
+      "author": "community",
+      "votes": 10,
+      "items": [
+        "Tought Boots",
+        "Antique Cuirass",
+        "Immortality",
+        "Radiant Armor",
+        "Dominance Ice",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Pastikan mid kalian beli item glowing di awal agar kalian bisa langsung beli item immortal di slot ke-3",
+      "tags": [],
+      "lastUpdated": "2025-09-13T20:54:08.752701+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Exp keras Dan sakit",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Thunder Belt",
+        "Glowing Wand",
+        "Clock of Destiny",
+        "Queen's Wings",
+        "Concentrated Energy",
+        "Oracle"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Lu susah mau mati Dan lu sakit kek dosa ketimpa",
+      "tags": [],
+      "lastUpdated": "2025-10-24T06:17:37.667634+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Tahan lama saat war ",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Dominance Ice",
+        "Thunder Belt",
+        "Guardian Helmet",
+        "Queen's Wings",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "Bagus banget buat TB",
+      "tags": [],
+      "lastUpdated": "2025-10-25T23:19:36.696523+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "OPEN WAR ( GATOT EXP LANE )",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Feather of Heaven",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Oracle",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Build ini sangat cocok untuk Gatot karena memiliki daya tahan yang sangat stabil, dari segi damage dan kekebalan tubuh yang di dapatkan dari SPELL VAMP yang tinggi dan juga dari Pasif pukulan dari gatot. Untuk pergantian Item, ( Holy Crystal ) bisa di ganti dengan ( Blade Armor ) Jika Musuh menggunakan Item Critical damage.",
+      "tags": [],
+      "lastUpdated": "2025-10-31T18:42:18.790737+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Spam pasif dan tebal",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Thunder Belt",
+        "Queen's Wings",
+        "Concentrated Energy",
+        "Guardian Helmet",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Bisa untuk montage",
+      "tags": [],
+      "lastUpdated": "2025-10-27T07:18:36.009649+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "Thunder",
+        "Belt"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10420,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Dominance",
+        "Ice"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10680,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Thunder",
+        "Belt",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10680,
+      "notes": null
+    }
+  ]
+}

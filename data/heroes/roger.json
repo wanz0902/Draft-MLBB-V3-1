@@ -1,0 +1,664 @@
+{
+  "id": "roger",
+  "name": "Roger",
+  "heroName": "Roger",
+  "role": [
+    "Fighter",
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Burst"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane",
+    "EXP Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "EXP Lane",
+    "Jungle"
+  ],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2558,
+    "hpRegen": 7.2,
+    "mana": 440,
+    "manaRegen": 3.2,
+    "physicalAttack": 122,
+    "physicalDefense": 19,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Full Moon Curse",
+      "description": "Roger can freely switch between human and wolf forms. In human form, Roger's Basic Attack and skills deal additional damage equal to 5% of the target's current HP. In wolf form, Roger's Basic Attack and skills deal additional damage equal to 5% of the target's lost HP. This effect can only deal up to 60 additional damage against Creeps.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Full_Moon_Curse",
+      "tips": "You can use the human form to kite enemies, and the wolf form to fight.",
+      "iconUrl": "/raw-assets/skill_icons/roger/full_moon_curse.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Open Fire",
+      "description": "Roger fires two quick shots in the target direction, dealing 250( +125% Total Physical Attack) (Physical Damage) in total to the enemy hit. The first shot is a hunter net that slows the enemy by 80% for 1.5s, while the second is a bullet that reduces the enemy's Physical Defense by 10 for 5s.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Open_Fire",
+      "tips": "When chasing a wounded enemy, use Bloodthirsty Howl to increase your movement speed, the longer the speed increase, the better the effect.",
+      "iconUrl": "/raw-assets/skill_icons/roger/open_fire.png",
+      "displayLabel": "Skill 1 (Human Form)",
+      "skillSlot": "skill1",
+      "variant": "Human Form"
+    },
+    "skill2": {
+      "name": "Hunter's Steps",
+      "description": "Roger gains 20% Movement Speed and 20% Attack Speed for 2.5s.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Hunter's_Steps",
+      "tips": "Ultimate will automatically be available at level 1, in the early laning phase you can use all 4 available skills to aggressively skirmish in lane. You can also use skills to quickly gap close with enemies or escape. The ultimate can be used to go over walls. Ultimate will automatically be available at level 1, in the early laning phase you can use all 4 available skills to aggressively skirmish in lane. You can also use skills to quickly gap close with enemies or escape. The ultimate can be used to go over walls.",
+      "iconUrl": "/raw-assets/skill_icons/roger/hunter_s_steps.png",
+      "displayLabel": "Skill 2 (Human Form)",
+      "skillSlot": "skill2",
+      "variant": "Human Form"
+    },
+    "ultimate": {
+      "name": "Wolf Transformation",
+      "description": "Roger transforms into Wolf Form, gaining enhanced combat abilities and new skills.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Transform"
+      ],
+      "iconName": "Wolf_Transformation",
+      "iconUrl": "/raw-assets/skill_icons/roger/wolf_transformation.png",
+      "variant": "Transform",
+      "skillSlot": "ultimate",
+      "displayLabel": "Ultimate (Transform)",
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "tips": ""
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Objective DPS",
+      "Late Game Carry",
+      "Jungle Tempo",
+      "EXP Lane Pressure",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Argus",
+        "Harley",
+        "Balmond",
+        "Gusion",
+        "Silvanna"
+      ],
+      "weakAgainst": [
+        "Yve",
+        "Zhuxin",
+        "Leomord",
+        "Kaja",
+        "Khaleed"
+      ],
+      "synergyWith": [
+        "Layla",
+        "Ixia",
+        "Clint",
+        "Lesley",
+        "Granger"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Argus",
+        "advantage": 2.1
+      },
+      {
+        "name": "Harley",
+        "advantage": 2
+      },
+      {
+        "name": "Balmond",
+        "advantage": 2
+      },
+      {
+        "name": "Gusion",
+        "advantage": 1.9
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 1.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 2.9
+      },
+      {
+        "name": "Zhuxin",
+        "advantage": 2.6
+      },
+      {
+        "name": "Leomord",
+        "advantage": 2.3
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.2
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Layla",
+        "synergy": 2.2
+      },
+      {
+        "name": "Ixia",
+        "synergy": 1.9
+      },
+      {
+        "name": "Clint",
+        "synergy": 1.9
+      },
+      {
+        "name": "Lesley",
+        "synergy": 1.8
+      },
+      {
+        "name": "Granger",
+        "synergy": 1.7
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Roger counters squishy heroes that lack mobility such as Hanabi and Odette because they cannot easily escape from him.",
+    "weakAgainstReason": "Roger is countered by heroes that can restrict his mobility and prevent him from jumping in and out using his two forms, like Minsitthar and Khufra.",
+    "synergyReason": "Roger works best with heroes with high AOE damage that can nuke the enemy team to low HP for him to finish off, such as Pharsa and Vexana."
+  },
+  "mechanicNote": "Roger has additional Wolf Form abilities after transformation (Lycan Pounce, Bloodthirsty Howl). Detailed Wolf Form skill data not currently available in local source.",
+  "needsEnrichment": true,
+  "mechanicCategory": [
+    "Transform",
+    "Dual Form"
+  ],
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Form Management",
+    "Combo Timing"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Objective DPS",
+    "Late Game Carry",
+    "Jungle Tempo",
+    "EXP Lane Pressure",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49,
+  "pickRate": 0.3,
+  "banRate": 0.1,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 40,
+    "abilityEffects": 10,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 65,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "War Axe",
+      "Hunter Strike",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Roger’s clear speed and dueling become threatening once he has Wolf form and a first damage item, letting him snowball skirmishes and invade in mid game. Late game he still hurts, but becomes more punishable into coordinated CC and high-DPS backlines unless he’s ahead."
+  },
+  "proBuilds": [
+    {
+      "player": "Gobs",
+      "games": 1361,
+      "items": [
+        "Ice Tough Boots",
+        "Windtalker",
+        "Rose Gold Meteor",
+        "Endless Battle",
+        "Blade of Despair",
+        "Sea Halberd"
+      ]
+    },
+    {
+      "player": "Leandro nyabu lagi.",
+      "games": 1157,
+      "items": [
+        "Flame Tough Boots",
+        "Windtalker",
+        "Sky Piercer",
+        "Haas' Claws",
+        "Rose Gold Meteor",
+        "Berserker's Fury"
+      ]
+    },
+    {
+      "player": "Creepypasta",
+      "games": 916,
+      "items": [
+        "Flame Tough Boots",
+        "Windtalker",
+        "Sky Piercer",
+        "Haas' Claws",
+        "Rose Gold Meteor"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/roger/video-0-0.mp4",
+    "skill1": "/videos/heroes/roger/video-1-0.mp4",
+    "skill2": "/videos/heroes/roger/video-2-0.mp4",
+    "ultimate": "/videos/heroes/roger/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 5",
+        "Skill 4",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Roger's 1st Skill to whittle down enemies from afar while using his 2nd Skill to maintain good positioning. When both sides have engaged, use his Ultimate to go for the enemy's back line. Use his 2nd Skill for extra Attack Speed and his 1st Skill to secure the kill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Skill 5",
+        "Skill 4",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, Roger should poke the enemy while in his Human form. Use his 2nd Skill for extra Movement Speed for an angle to hit with his 1st Skill. Use his Ultimate to close in on the enemy, followed by his 2nd Skill for Attack Speed and tear into them with Basic Attacks before finishing them off with his 1st Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Pharsa",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Vexana",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Werewolf, formerly Human",
+  "bestTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": 3.84
+    },
+    {
+      "name": "Bruno",
+      "winrateDelta": 3.35
+    },
+    {
+      "name": "Clint",
+      "winrateDelta": 2.71
+    },
+    {
+      "name": "Lesley",
+      "winrateDelta": 2.38
+    },
+    {
+      "name": "Floryn",
+      "winrateDelta": 2.22
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Hanzo",
+      "winrateDelta": -10.62
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": -9.52
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -9.3
+    },
+    {
+      "name": "Karina",
+      "winrateDelta": -8.06
+    },
+    {
+      "name": "Lancelot",
+      "winrateDelta": -7.94
+    }
+  ],
+  "metaScore": 12.16,
+  "metaRank": 102,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 2.99
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.29
+      },
+      {
+        "name": "Brody",
+        "advantage": 2.03
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 1.87
+      },
+      {
+        "name": "Gusion",
+        "advantage": 1.67
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Zilong",
+        "advantage": 2.01
+      },
+      {
+        "name": "Uranus",
+        "advantage": 1.95
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 1.83
+      },
+      {
+        "name": "Chip",
+        "advantage": 1.79
+      },
+      {
+        "name": "Lukas",
+        "advantage": 1.68
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Roger By qeva",
+      "author": "community",
+      "votes": 13,
+      "items": [
+        "Swift Boots",
+        "Windtalker",
+        "Haas Claws",
+        "Malefic Roar",
+        "Blade of Despair",
+        "Endless Battle"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T09:12:15.379397+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Hybrid (Gold Lane)",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Thunder Belt",
+        "Tought Boots",
+        "Malefic Gun",
+        "Windtalker",
+        "Haas Claws",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-16T14:34:14.474826+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "GGS",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Windtalker",
+        "Sky Piercer",
+        "Haas Claws",
+        "Rose Gold Meteor",
+        "Berserker Fury"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Gini ya kidz item ini sangat berguna untuk kita \nSakit pulak tu",
+      "tags": [],
+      "lastUpdated": "2025-10-22T14:32:25.711591+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Buil sakit ",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Warrior Boots",
+        "Windtalker",
+        "Sky Piercer",
+        "Sea Halberd",
+        "Malefic Roar",
+        "War Axe"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Wow",
+      "tags": [],
+      "lastUpdated": "2025-10-22T11:36:46.782484+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Sky",
+        "Piercer",
+        "Windtalker",
+        "Endless"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10580,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11110,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Windtalker",
+        "Haas's",
+        "Claws",
+        "Berserker's"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11200,
+      "notes": null
+    }
+  ]
+}

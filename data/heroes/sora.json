@@ -1,0 +1,1009 @@
+{
+  "id": "sora",
+  "name": "Sora",
+  "heroName": "Sora",
+  "role": [
+    "Fighter",
+    "Assassin"
+  ],
+  "specialty": [
+    "Charge",
+    "Burst"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2500,
+    "hpRegen": 30,
+    "mana": 500,
+    "manaRegen": 15,
+    "physicalAttack": 110,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Mystic Surge",
+      "description": "Sora can ascend to Thunder or Torrent by using his Ultimate. After ascending, dealing damage to heroes or summoned units grants 1 stack of Cloudstep. Upon reaching 5 stacks, he unlocks his True Art.\nThunder: Adopts an assassin style, converting 30% Max HP into Physical Attack (Equal to 10% of Max HP).\nTorrent: Adopts a tank style, converting 30% Physical Attack into Max HP (Gains 10 HP for every 1 Attack).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "iconName": "Mystic_Surge",
+      "iconUrl": "/raw-assets/skill_icons/sora/mystic_surge.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "skill1": {
+      "name": "Sundering Strike",
+      "description": "Sora strikes twice, dealing 140 (+50% Total Physical Attack) Physical Damage, then lunges forward, dealing 240 (+5% Total HP) Physical Damage. He can dash after striking.",
+      "cooldown": "5.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+5% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Strike Damage",
+          "values": [
+            "140",
+            "156",
+            "172",
+            "188",
+            "204",
+            "220"
+          ]
+        },
+        {
+          "label": "Lunge Damage",
+          "values": [
+            "240",
+            "280",
+            "320",
+            "360",
+            "400",
+            "440"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "iconName": "Sundering_Strike",
+      "iconUrl": "/raw-assets/skill_icons/sora/sundering_strike.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "skill2": {
+      "name": "Sundering Strike - Thunderflash",
+      "description": "Sora strikes four times, dealing 140 (+50% Total Physical Attack) Physical Damage, then lunges forward, dealing 240 (+5% Total HP) Physical Damage. He can move freely during this skill.",
+      "cooldown": "5.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+5% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Strike Damage",
+          "values": [
+            "140",
+            "156",
+            "172",
+            "188",
+            "204",
+            "220"
+          ]
+        },
+        {
+          "label": "Lunge Damage",
+          "values": [
+            "240",
+            "280",
+            "320",
+            "360",
+            "400",
+            "440"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "iconName": "Sundering_Strike_Thunderflash",
+      "iconUrl": "/raw-assets/skill_icons/sora/sundering_strike_thunderflash.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "ultimate": {
+      "name": "Sundering Strike - Overwhelm",
+      "description": "Sora strikes twice, dealing 140 (+50% Total Physical Attack) Physical Damage and slowing enemies for 40%. He then lunges forward, dealing 240 (+5% Total HP) Physical Damage, stunning enemies for 0.5s.",
+      "cooldown": "5.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+5% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Strike Damage",
+          "values": [
+            "140",
+            "156",
+            "172",
+            "188",
+            "204",
+            "220"
+          ]
+        },
+        {
+          "label": "Lunge Damage",
+          "values": [
+            "240",
+            "280",
+            "320",
+            "360",
+            "400",
+            "440"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Damage",
+        "CC"
+      ],
+      "iconName": "Sundering_Strike_Overwhelm",
+      "iconUrl": "/raw-assets/skill_icons/sora/sundering_strike_overwhelm.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "extra1": {
+      "name": "Windstride",
+      "description": "Sora leaps forward, dealing 140 (+55% Total Physical Attack) Physical Damage. If he hits an enemy hero or reaches max range, he slams the ground, dealing an additional 140 (+8% Total HP) Physical Damage and slowing them by 40% for 0.5s. Successful hits reduce the cooldown by 2s.",
+      "cooldown": "8.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+55% Total Physical Attack)",
+        "(+8% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "140",
+            "152",
+            "164",
+            "176",
+            "188",
+            "200"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "140",
+            "152",
+            "164",
+            "176",
+            "188",
+            "200"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Damage"
+      ],
+      "iconName": "Windstride",
+      "iconUrl": "/raw-assets/skill_icons/sora/windstride.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "extra2": {
+      "name": "Windstride - Thunder Rush",
+      "description": "Sora leaps forward, dealing 120 (+45% Total Physical Attack) Physical Damage. Upon hitting a hero or reaching the max distance, he summons a thunderstorm, dealing 120 (+6% Total HP) Physical Damage and slowing enemies by 50% for 0.5s. This skill can be cast again within 4s if it hits an enemy.",
+      "cooldown": "8.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+45% Total Physical Attack)",
+        "(+6% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "120",
+            "132",
+            "144",
+            "156",
+            "168",
+            "180"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "120",
+            "132",
+            "144",
+            "156",
+            "168",
+            "180"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Damage"
+      ],
+      "iconName": "Windstride_Thunder_Rush",
+      "iconUrl": "/raw-assets/skill_icons/sora/windstride_thunder_rush.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "extra3": {
+      "name": "Windstride - Skyfall",
+      "description": "Sora leaps forward, dealing 140 (+55% Total Physical Attack) Physical Damage, knocking enemies airborne, and knocking them back to the landing point. He then smashes the ground, knocking enemies airborne again for 0.5s, dealing 140 (+8% Total HP) Physical Damage, and slowing them by 50% for 1s. Hits reduce cooldown by 2s.",
+      "cooldown": "8.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+55% Total Physical Attack)",
+        "(+8% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "140",
+            "152",
+            "164",
+            "176",
+            "188",
+            "200"
+          ]
+        },
+        {
+          "label": "Extra Damage",
+          "values": [
+            "140",
+            "152",
+            "164",
+            "176",
+            "188",
+            "200"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Mobility",
+        "CC"
+      ],
+      "iconName": "Windstride_Skyfall",
+      "iconUrl": "/raw-assets/skill_icons/sora/windstride_skyfall.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "extra4": {
+      "name": "Shifting Skies",
+      "description": "Swipe left to ascend into Thunder for 10s. Sora gains a brief bonus Movement Speed and becomes untargetable. He then summons lightning to strike nearby enemies 3 time(s), each dealing 140 (+50% Total Physical Attack) Physical Damage.\nSwipe right to ascend into Torrent for 10s. Sora gains Control Immunity. After a short delay, he pulls nearby enemies in and deals 250 (+8% Total HP) Physical Damage.",
+      "cooldown": "32.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)",
+        "(+8% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "32.0",
+            "28.0",
+            "24.0"
+          ]
+        },
+        {
+          "label": "Thunder Damage",
+          "values": [
+            "140",
+            "170",
+            "200"
+          ]
+        },
+        {
+          "label": "Torrent Damage",
+          "values": [
+            "250",
+            "350",
+            "450"
+          ]
+        },
+        {
+          "label": "Cooldown - Thunder",
+          "values": [
+            "32",
+            "28",
+            "24"
+          ]
+        },
+        {
+          "label": "Cooldown - Torrent",
+          "values": [
+            "32",
+            "28",
+            "24"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage",
+        "Buff"
+      ],
+      "iconName": "Shifting_Skies",
+      "iconUrl": "/raw-assets/skill_icons/sora/shifting_skies.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "extra5": {
+      "name": "Heaven's Wrath",
+      "description": "Sora leaps into the air and strikes a target area 16 time(s), dealing 60 (+40% Total Physical Attack) Physical Damage with each hit. Sora can move freely and ignore terrain during this skill.",
+      "cooldown": "0.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+40% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "60",
+            "80",
+            "100"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "iconName": "Heaven's_Wrath",
+      "iconUrl": "/raw-assets/skill_icons/sora/heaven_s_wrath.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    },
+    "extra6": {
+      "name": "Stormbind",
+      "description": "Sora leaps into the air and strikes the target area 5 time(s), dealing 100 (+6% Total HP) Physical Damage and briefly stunning enemies with each hit. Sora can move freely and ignore terrain during this skill.",
+      "cooldown": "0.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+6% Total HP)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Base Damage",
+          "values": [
+            "100",
+            "125",
+            "150"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "iconName": "Stormbind",
+      "iconUrl": "/raw-assets/skill_icons/sora/stormbind.png",
+      "variant": "",
+      "comboUsage": "",
+      "strategicPurpose": ""
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Natan",
+        "Estes",
+        "Zhask",
+        "Zilong",
+        "Ruby"
+      ],
+      "weakAgainst": [
+        "Khufra",
+        "Lukas",
+        "Gatotkaca",
+        "Martis"
+      ],
+      "synergyWith": [
+        "Karrie",
+        "Selena",
+        "Silvanna",
+        "Carmilla",
+        "Fanny"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Natan",
+        "advantage": 3.5
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.4
+      },
+      {
+        "name": "Zhask",
+        "advantage": 3.3
+      },
+      {
+        "name": "Zilong",
+        "advantage": 2.3
+      },
+      {
+        "name": "Ruby",
+        "advantage": 2.3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Khufra",
+        "advantage": 2.3
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2.1
+      },
+      {
+        "name": "Gatotkaca",
+        "advantage": 1.7
+      },
+      {
+        "name": "Martis",
+        "advantage": 1.5
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Karrie",
+        "synergy": 2.3
+      },
+      {
+        "name": "Selena",
+        "synergy": 2.1
+      },
+      {
+        "name": "Silvanna",
+        "synergy": 2
+      },
+      {
+        "name": "Carmilla",
+        "synergy": 2
+      },
+      {
+        "name": "Fanny",
+        "synergy": 1.9
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Sora excels at diving in with explosive burst damage and AOE CC, so squishy heroes without escape abilities—like Layla, Miya, and Hanabi—will find themselves helpless against Sora's relentless assault.",
+    "weakAgainstReason": "Sora relies on landing his 1st Skill to get Cloudstep stacks. Heroes with high mobility or Knockbacks, like Fanny, Arlott, and Valir, can prevent Sora from gaining this precious resource.",
+    "synergyReason": "Sora's transformed Ultimate deals considerable damage, and pairing him with Tigreal, Minotaur, Gatotkaca, and other strong CC heroes will maximize Sora's damage potential."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Sora adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.5,
+  "pickRate": 0.8,
+  "banRate": 40.6,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 60,
+    "abilityEffects": 50,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 58,
+    "mid": 76,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "War Axe",
+      "Brute Force Breastplate"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Pre-ultimate he’s mostly a mobility-and-trade fighter, but Shifting Skies unlocks his form swapping (Thunder for dive burst, Torrent for control/soak) and makes him much more influential in Turtle fights. He remains strong late due to flexible HP/ATK conversion and Cloudstep/True Art access, though he’s not as outright decisive as dedicated hypercarries."
+  },
+  "proBuilds": [
+    {
+      "player": "dreixhz",
+      "games": 510,
+      "items": [
+        "Queen's Wings",
+        "Magic Shoes",
+        "War Axe",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "Zin Shit",
+      "games": 526,
+      "items": [
+        "Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Oracle",
+        "Sky Piercer"
+      ]
+    },
+    {
+      "player": "BiLamz.",
+      "games": 404,
+      "items": [
+        "Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Oracle",
+        "Chastise Pauldron"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/sora/video-0-0.mp4",
+    "skill1": "/videos/heroes/sora/video-1-0.mp4",
+    "skill2": "/videos/heroes/sora/video-2-0.mp4",
+    "ultimate": "/videos/heroes/sora/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Skill 3",
+        "Passive",
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": "When the opponent is focused on clearing Minions, poke them with Sora's 1st Skill, then use his 2nd Skill to create distance. Use the mobility from his 1st and 2nd Skill to effectively kite enemies. Sora's damage is reliant on hitting with his 1st Skill."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 3",
+        "Skill 1",
+        "Skill 2",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": ""
+    }
+  ],
+  "connections": [
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": 3.57
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 2.76
+    },
+    {
+      "name": "Aurora",
+      "winrateDelta": 1.96
+    },
+    {
+      "name": "Kadita",
+      "winrateDelta": 1.92
+    },
+    {
+      "name": "Khaleed",
+      "winrateDelta": 1.91
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Aldous",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": 0
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": 0
+    }
+  ],
+  "metaScore": 23.13,
+  "metaRank": 25,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Kimmy",
+        "advantage": 2.68
+      },
+      {
+        "name": "Lukas",
+        "advantage": 2.36
+      },
+      {
+        "name": "Angela",
+        "advantage": 2.08
+      },
+      {
+        "name": "Odette",
+        "advantage": 1.98
+      },
+      {
+        "name": "Martis",
+        "advantage": 1.77
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Kimmy",
+        "advantage": 0
+      },
+      {
+        "name": "Lukas",
+        "advantage": 0
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 0
+      },
+      {
+        "name": "Khufra",
+        "advantage": 0
+      },
+      {
+        "name": "Lukas",
+        "advantage": 0
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Adaptive Sora",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Magic Boots",
+        "War Axe",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Dominance Ice",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "Suitable for Tanking or Damaging.\nSesuai untuk Pertahanan atau Serangan.",
+      "tags": [],
+      "lastUpdated": "2025-12-11T12:45:14.669017+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 4 SRG.Innocent",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Warrior Boots",
+        "War Axe",
+        "Oracle",
+        "Brute Force Breastplate",
+        "Queen's Wings",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( SRG VS TL GAME 1 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 13 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-13T12:19:38.921158+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "tebal + sakit",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Queen's Wings",
+        "Oracle",
+        "Radiant Armor",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "inisiator ",
+      "tags": [],
+      "lastUpdated": "2026-04-25T09:26:26.498598+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "petir mantep dikit",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Queen's Wings",
+        "Tought Boots",
+        "Oracle",
+        "Radiant Armor",
+        "Chastise Pauldron",
+        "Guardian Helmet"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "pake item ini kalo musuh tipis",
+      "tags": [],
+      "lastUpdated": "2026-05-10T13:55:56.770041+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "sora tebal",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Rapid Boots",
+        "Queen's Wings",
+        "Brute Force Breastplate",
+        "Guardian Helmet",
+        "Immortality",
+        "Chastise Pauldron"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "*tebal bukan damage*",
+      "tags": [],
+      "lastUpdated": "2026-04-11T11:47:27.308973+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11050,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Cursed",
+        "Helmet"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10560,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Cursed",
+        "Helmet",
+        "War",
+        "Axe"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10950,
+      "notes": null
+    }
+  ]
+}

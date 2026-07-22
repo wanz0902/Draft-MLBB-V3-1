@@ -1,0 +1,654 @@
+{
+  "id": "nana",
+  "name": "Nana",
+  "heroName": "Nana",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Poke",
+    "Burst"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2451,
+    "hpRegen": 7,
+    "mana": 490,
+    "manaRegen": 3.8,
+    "physicalAttack": 100,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.08",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Molina's Gift",
+      "description": "Upon taking fatal damage, Nana removes all debuffs on her and transforms, becoming untargetable and invincible, and gains 30% Movement Speed for 2s. She also recovers 10% Max HP over the duration.\nNana can only transform once every 150s and cannot cast skills in the transformed form.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Not specified in source",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Death Immunity"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Molina's_Gift",
+      "tips": "If you guys follow the 1-1-3/3-1-1 Lane formation, Nana would fit in the lane with 3 people, to maximise the gold drop.",
+      "iconUrl": "/raw-assets/skill_icons/nana/molina_s_gift.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Magic Boomerang",
+      "description": "Nana hurls her Magic Boomerang in the target direction, dealing damage to enemies hit on its way out and back. The boomerang deals 300 (+100% Total Magic Power) Magic Damage to the first enemy hit. For every additional enemy hit, the damage is reduced by 10% (max reduction of 30%).",
+      "cooldown": "6.0",
+      "manaCost": "55",
+      "damageType": "Magic",
+      "scaling": [
+        "(+100% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "6.0",
+            "5.7",
+            "5.4",
+            "5.1",
+            "4.8",
+            "4.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "55",
+            "60",
+            "65",
+            "70",
+            "75",
+            "80"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "300",
+            "340",
+            "380",
+            "420",
+            "460",
+            "500"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Magic_Boomerang",
+      "tips": "Your long range poking skill.This skill will be your main damaging skill in laning phase, try to aim and hit all targets.",
+      "iconUrl": "/raw-assets/skill_icons/nana/magic_boomerang.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Molina Smooch",
+      "description": "Nana throws Molina at the target location, dealing 250 (+50% Total Magic Power) Magic Damage to enemies within range and Transforming enemy heroes hit into small animals.\nIf Molina does not hit an enemy hero, she will remain on the ground and chase the nearest enemy hero that comes into range, Transforming the first enemy hero she touches.\nTransform: Reduces the target's Movement Speed by 50% and Magic Defense by 30% for 1.5s. Transformed heroes cannot attack or use skills.",
+      "cooldown": "12.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+50% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "12.0",
+            "11.4",
+            "10.8",
+            "10.2",
+            "9.6",
+            "9.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "85",
+            "90",
+            "95",
+            "100",
+            "105"
+          ]
+        },
+        {
+          "label": "Morph Damage",
+          "values": [
+            "250",
+            "275",
+            "300",
+            "325",
+            "350",
+            "375"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "Debuff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Molina_Smooch",
+      "tips": "Your main harassing kit.One of the longest disable. However you’ll need a teammate to deal enough damage to kill someone.",
+      "iconUrl": "/raw-assets/skill_icons/nana/molina_smooch.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Molina Blitz",
+      "description": "Nana summons Molina to strike the target area 3 times, each time dealing 440 (+140% Total Magic Power) Magic Damage to enemies within and slowing them by 30% for 1s. Enemies hit consecutively will be stunned for 1s.",
+      "cooldown": "36.0",
+      "manaCost": "135",
+      "damageType": "Magic",
+      "scaling": [
+        "(+140% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "32.0",
+            "28.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "135",
+            "150",
+            "165"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "440",
+            "520",
+            "600"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Burst",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Molina_Blitz",
+      "tips": "Try to pop this during a teamfight to disable as many enemies as possible.Practice makes perfect, get down the timing of your ult and try to match you “2” with your “3” to increase the chances of it hitting.",
+      "iconUrl": "/raw-assets/skill_icons/nana/molina_blitz.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Odette",
+        "Lolita",
+        "Estes",
+        "Melissa",
+        "Saber"
+      ],
+      "weakAgainst": [
+        "Hylos",
+        "Akai",
+        "Khaleed",
+        "Yi Sun-shin",
+        "Selena"
+      ],
+      "synergyWith": [
+        "Harley",
+        "Roger",
+        "Dyrroth",
+        "Cyclops",
+        "Alpha"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Odette",
+        "advantage": 2.8
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2
+      },
+      {
+        "name": "Estes",
+        "advantage": 1.7
+      },
+      {
+        "name": "Melissa",
+        "advantage": 1.7
+      },
+      {
+        "name": "Saber",
+        "advantage": 1.7
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Hylos",
+        "advantage": 2
+      },
+      {
+        "name": "Akai",
+        "advantage": 1.8
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 1.6
+      },
+      {
+        "name": "Yi Sun-shin",
+        "advantage": 1.6
+      },
+      {
+        "name": "Selena",
+        "advantage": 1.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harley",
+        "synergy": 1.4
+      },
+      {
+        "name": "Roger",
+        "synergy": 1.3
+      },
+      {
+        "name": "Dyrroth",
+        "synergy": 1.3
+      },
+      {
+        "name": "Cyclops",
+        "synergy": 1.2
+      },
+      {
+        "name": "Alpha",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Nana's Passive gives her great survivability, making her strong against heroes with deadly combos, like Eudora and Kadita.",
+    "weakAgainstReason": "Nana can be countered by heroes with strong chasing abilities, like Zilong, Natalia, because they can chase Nana through her Passive duration.",
+    "synergyReason": "Nana works best with heroes with CC skills, that will help her get the kills, such as Rafaela and Franco."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Nana adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 48.2,
+  "pickRate": 1.6,
+  "banRate": 4.7,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 60,
+    "abilityEffects": 100,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Her lane poke is decent early, but she becomes much more threatening once Molina Smooch + Molina Blitz enable reliable pick/peel for Turtle and mid-game skirmishes. Late game she still provides strong CC zoning, though her damage is less consistent than true scaling mages without perfect setups."
+  },
+  "proBuilds": [
+    {
+      "player": "kaslana kokoa愛",
+      "games": 505,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Lightning Truncheon"
+      ]
+    },
+    {
+      "player": "YT: Unknown King ML",
+      "games": 461,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "RemoveMyBaNanaNexon",
+      "games": 443,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Sky Piercer",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Starlium Scythe"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/nana/video-0-0.mp4",
+    "skill1": "/videos/heroes/nana/video-1-0.mp4",
+    "skill2": "/videos/heroes/nana/video-2-0.mp4",
+    "ultimate": "/videos/heroes/nana/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, Nana can use her 2nd Skill to slow the enemy first so she can hit and stun them with her Ultimate. She can then use her 1st Skill to finish off the low HP enemy."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "In the laning phase, Nana can use her 2nd Skill to harass enemy heroes and her 1st Skill to damage both enemy Minions and heroes, allowing her to poke enemies while farming."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Rafaela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Azrya Woodlands",
+  "race": "Leonin",
+  "bestTeammates": [
+    {
+      "name": "Harley",
+      "winrateDelta": 1.34
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": 1.15
+    },
+    {
+      "name": "Alucard",
+      "winrateDelta": 1.04
+    },
+    {
+      "name": "Rafaela",
+      "winrateDelta": 0.94
+    },
+    {
+      "name": "Julian",
+      "winrateDelta": 0.89
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": -5.7
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -4.14
+    },
+    {
+      "name": "Lylia",
+      "winrateDelta": -3.69
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -3.57
+    },
+    {
+      "name": "Kagura",
+      "winrateDelta": -3.49
+    }
+  ],
+  "metaScore": 17.03,
+  "metaRank": 63,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Odette",
+        "advantage": 2.05
+      },
+      {
+        "name": "Silvanna",
+        "advantage": 1.6
+      },
+      {
+        "name": "Lolita",
+        "advantage": 1.57
+      },
+      {
+        "name": "Estes",
+        "advantage": 1.55
+      },
+      {
+        "name": "Melissa",
+        "advantage": 1.34
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 2.38
+      },
+      {
+        "name": "Hylos",
+        "advantage": 1.75
+      },
+      {
+        "name": "Gloo",
+        "advantage": 1.37
+      },
+      {
+        "name": "Yi Sun-shin",
+        "advantage": 1.17
+      },
+      {
+        "name": "Atlas",
+        "advantage": 1.15
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Menyebalkan lawan ni hero",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Blood Wings",
+        "Wishing Lantern",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-11-05T08:24:39.355636+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Genius",
+        "Wand",
+        "Wishing",
+        "Lantern"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12010,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flameshot",
+      "cost": 11000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10720,
+      "notes": null
+    }
+  ]
+}

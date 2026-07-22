@@ -1,0 +1,778 @@
+{
+  "id": "vexana",
+  "name": "Vexana",
+  "heroName": "Vexana",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Poke",
+    "Control"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2450,
+    "hpRegen": 6.8,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 96,
+    "physicalDefense": 16,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Nether Touch",
+      "description": "Vexana and the (Eternal Guard) inflict (Nether Curse) on enemies hit. The Curse lasts 5s and will cause the affected enemy to explode upon death, dealing 108-500( +60% Total Magic Power) (Magic Damage) to nearby enemies (base damage scales with level).",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Nether_Touch",
+      "tips": "This passive is very useful when clearing out minion wave as well as harrassing an enemy in lane. This passive will be used effectively when you use \"Nether Snare\" in the middle of the minion wave. This will apply the passive on each minion and will eventually explode when the minion dies. The explosion covers a certain area that can damage the enemy health bar.",
+      "iconUrl": "/raw-assets/skill_icons/vexana/nether_touch.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Deathly Grasp",
+      "description": "Vexana unleashes a Deathly Grasp in the target direction, dealing 200 (+60% Total Magic Power) Magic Damage to enemies in its path. The projectile stops upon hitting an enemy hero, terrifying them and knocking them back, then it explodes, dealing 200 (+60% Total Magic Power) Magic Damage to nearby enemies and terrifying them for 1s.",
+      "cooldown": "14.0",
+      "manaCost": "80",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)",
+        "(+60% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "14.0",
+            "13.4",
+            "12.8",
+            "12.2",
+            "11.6",
+            "11.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "80",
+            "90",
+            "100",
+            "110",
+            "120",
+            "130"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "200",
+            "220",
+            "240",
+            "260",
+            "280",
+            "300"
+          ]
+        },
+        {
+          "label": "Explosion Damage",
+          "values": [
+            "200",
+            "220",
+            "240",
+            "260",
+            "280",
+            "300"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "CC",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Deathly_Grasp",
+      "tips": "As much as possible, use this skill on enemy heroes only because you never know when will they attack you. This is also useful when an enemy hero is catching you, just use this skill and their movement speed will get very slow for a period of time making you and opportunity to ran away from them.",
+      "iconUrl": "/raw-assets/skill_icons/vexana/deathly_grasp.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Cursed Blast",
+      "description": "Vexana marks the target area with the power of the undead, striking it after a 0.8s delay and dealing 580 (+165% Total Magic Power) Magic Damage to enemies hit.",
+      "cooldown": "7.0",
+      "manaCost": "60",
+      "damageType": "Magic",
+      "scaling": [
+        "(+165% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "7.0",
+            "6.7",
+            "6.4",
+            "6.1",
+            "5.8",
+            "5.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "68",
+            "76",
+            "84",
+            "92",
+            "100"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "580",
+            "634",
+            "689",
+            "743",
+            "797",
+            "850"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Cursed_Blast",
+      "tips": "This skill damages alot when placed and positioned carefully to hit an enemy hero. This skill very useful on clearing out minion wave. Just place this skill on the second minion (there are 3 minions in each wave right, place it on the middle.) In this way, this skill will hit all of the minions and will activate your passive. This skill deals a huge amount of magic damage. And is perfect for stealing lord, turtle, and jungle monsters when you placed and timed carefully. This skill can possibly one shot all of your enemies when you use it correctly, depending on the build of course.",
+      "iconUrl": "/raw-assets/skill_icons/vexana/cursed_blast.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Eternal Guard",
+      "description": "Vexana summons an Eternal Guard at the target location, dealing 480 (+60% Total Magic Power) Magic Damage to enemies hit and knocking them airborne for 0.8s. The Eternal Guard then joins Vexana in battle for 15s. Each of the Eternal Guard's attacks deals 200 (+40% Total Magic Power) plus 5% of the target's Max HP as Magic Damage to enemies in a large area.",
+      "cooldown": "50.0",
+      "manaCost": "120",
+      "damageType": "Magic",
+      "scaling": [
+        "(+60% Total Magic Power)",
+        "(+40% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "50.0",
+            "45.0",
+            "40.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "120",
+            "160",
+            "200"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "480",
+            "600",
+            "720"
+          ]
+        },
+        {
+          "label": "Slash Damage",
+          "values": [
+            "200",
+            "250",
+            "300"
+          ]
+        },
+        {
+          "label": "Extra HP",
+          "values": [
+            "1800",
+            "2250",
+            "2700"
+          ]
+        },
+        {
+          "label": "Extra Hybrid Defense",
+          "values": [
+            "40",
+            "50",
+            "60"
+          ]
+        },
+        {
+          "label": "Extra Magic Power",
+          "values": [
+            "80",
+            "100",
+            "120"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Summon",
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Eternal_Guard",
+      "tips": "1st situation: When battling in a 1vs2 situation, use this skill on the damage dealer. (The one who deals a huge amount of damage) Damage dealers can be mages, assassins, and marksman. You have to put your skills prior to the damage dealer so that when they die, they can help you deal damage on the enemy hero. 2nd situation: In a 5v5 clash, I recommend to use this skill on tanks. Why? This decreases the regen of their health bar because this skill does magic damage over a period of time. Your 1st and 2nd skill can deal huge damage on other enemy heroes thats why I suggest to use this on tanks. Specially when your team does not have a tank, or your tank is not tanky. But, you can use this on damage dealers to so that you will do more damage. When used in tanks, this will benefit your team because you will have another tank.",
+      "iconUrl": "/raw-assets/skill_icons/vexana/eternal_guard.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Gloo",
+        "Chip",
+        "Zhask",
+        "Phoveus",
+        "Odette"
+      ],
+      "weakAgainst": [],
+      "synergyWith": [
+        "Harley",
+        "Aldous",
+        "Sun",
+        "Aulus",
+        "Atlas"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Gloo",
+        "advantage": 2.5
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.1
+      },
+      {
+        "name": "Zhask",
+        "advantage": 1.7
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 1.7
+      },
+      {
+        "name": "Odette",
+        "advantage": 1.6
+      }
+    ],
+    "weakAgainst": [],
+    "synergyHeroes": [
+      {
+        "name": "Harley",
+        "synergy": 1.4
+      },
+      {
+        "name": "Aldous",
+        "synergy": 1.3
+      },
+      {
+        "name": "Sun",
+        "synergy": 1.2
+      },
+      {
+        "name": "Aulus",
+        "synergy": 1.2
+      },
+      {
+        "name": "Atlas",
+        "synergy": 1.2
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Backline DPS heroes such as Layla, Irithel and Xavier.",
+    "weakAgainstReason": "Mobile Assassins such as Saber, Aamon and Karina.",
+    "synergyReason": "Heroes with powerful CC such as Atlas or\nhigh damage output like Beatrix to burst down enemies."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Vexana adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.8,
+  "pickRate": 1.9,
+  "banRate": 1.8,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 90,
+    "abilityEffects": 50,
+    "difficulty": 10
+  },
+  "powerCurve": {
+    "early": 48,
+    "mid": 74,
+    "late": 79,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Vexana’s early is serviceable but gated by cooldowns and needing setup/accuracy for her delayed burst. She spikes when Ultimate adds a strong summon for fights and objectives, and she scales very well into late game as the Guard’s %HP AoE damage and her high ratios make her a major threat in clustered Lord/teamfight scenarios."
+  },
+  "proBuilds": [
+    {
+      "player": "Lord Sem a Vexana",
+      "games": 949,
+      "items": [
+        "Arcane Boots",
+        "Genius Wand",
+        "Blood Wings",
+        "Divine Glaive",
+        "Lightning Truncheon",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Uccy",
+      "games": 807,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Sky Piercer",
+        "Blood Wings",
+        "Genius Wand",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "jerukk",
+      "games": 1341,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Glowing Wand",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Blood Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/vexana/video-0-0.mp4",
+    "skill1": "/videos/heroes/vexana/video-1-0.mp4",
+    "skill2": "/videos/heroes/vexana/video-2-0.mp4",
+    "ultimate": "/videos/heroes/vexana/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "Initiate teamfights with CC or follow up after other CC. \nUse her Ultimate when enemies are gathered, follow up \nwith 2nd and 1st Skill combo for CC and damage."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "Terrify enemy with 1st Skill and follow up with 2nd Skill for guaranteed damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Beatrix",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "The Barren Lands",
+  "race": "Undead",
+  "bestTeammates": [
+    {
+      "name": "Atlas",
+      "winrateDelta": 1.54
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": 1.39
+    },
+    {
+      "name": "Sun",
+      "winrateDelta": 1.05
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": 0.92
+    },
+    {
+      "name": "Bruno",
+      "winrateDelta": 0.84
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": -14.26
+    },
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -8.75
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -6.07
+    },
+    {
+      "name": "Pharsa",
+      "winrateDelta": -5.34
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": -5.2
+    }
+  ],
+  "metaScore": 22.06,
+  "metaRank": 29,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 2.83
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.42
+      },
+      {
+        "name": "Zhask",
+        "advantage": 1.79
+      },
+      {
+        "name": "Sun",
+        "advantage": 1.26
+      },
+      {
+        "name": "Edith",
+        "advantage": 1.25
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Alice",
+        "advantage": 1.97
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 1.75
+      },
+      {
+        "name": "Natalia",
+        "advantage": 1.61
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 1.57
+      },
+      {
+        "name": "Hanzo",
+        "advantage": 1.25
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Vexana By qeva",
+      "author": "community",
+      "votes": 17,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Enchanted Talisman",
+        "Guardian Helmet",
+        "Cursed Helmet",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Sprint",
+      "skillOrder": null,
+      "notes": "Vexana mage terlalu rugi,mending tank karena buat late game sangat bisa membantu team dengan defense dari ulti vexana \nAwal game buy regen mana 2(biar tdk boros mana)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T09:16:15.758962+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "1 hit",
+      "author": "community",
+      "votes": 10,
+      "items": [
+        "Arcane Boots",
+        "Lightning Truncheon",
+        "Genius Wand",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Auto meningsoy",
+      "tags": [],
+      "lastUpdated": "2025-10-23T09:40:25.845747+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Auto winstreak",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Arcane Boots",
+        "Enchanted Talisman",
+        "Wishing Lantern",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Ini untuk mempoking  hero musuh dan backup diantara damage hero musuh",
+      "tags": [],
+      "lastUpdated": "2025-10-22T08:28:38.885138+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "DAMAGE UP",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Blood Wings",
+        "Divine Glaive",
+        "Wishing Lantern",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-22T13:05:32.07379+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Vexana Ga Gampang Ke Gank",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Magic Boots",
+        "Glowing Wand",
+        "Molten Essence",
+        "Blood Wings",
+        "Guardian Helmet",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Buat lu user mage yang ga mau gampang mati ada di sini",
+      "tags": [],
+      "lastUpdated": "2025-10-16T11:58:48.86886+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Wishing",
+        "Lantern"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12160,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10990,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Glowing",
+        "Wand",
+        "Winter",
+        "Crown"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10950,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,766 @@
+{
+  "id": "lancelot",
+  "name": "Lancelot",
+  "heroName": "Lancelot",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Chase",
+    "Burst"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2490,
+    "hpRegen": 7.2,
+    "mana": 460,
+    "manaRegen": 3.4,
+    "physicalAttack": 130,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.08",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 260
+  },
+  "skills": {
+    "passive": {
+      "name": "Soul Cutter",
+      "description": "Each time Lancelot charges, his damage is increased by 7.5% for 4s, up to 30%.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Soul_Cutter",
+      "tips": "While engaging Solo or with the teammates.First Hit the second ability to make damage then the first ability to make some combos and to distract the enemy, then finish him with the Ultimate if he still alive then hit the second ability again.",
+      "iconUrl": "/raw-assets/skill_icons/lancelot/soul_cutter.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Puncture",
+      "description": "Lancelot charges in the direction, dealing 150 (+50% Total Physical Attack) Physical Damage to enemies along the way and applying a Sword Mark to the first unmarked enemy hit. The Sword Mark lasts 3s.\nIf Lancelot successfully applies a Sword Mark to an enemy, the skill's cooldown will be reset.",
+      "cooldown": "14.0",
+      "manaCost": "40",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "14.0",
+            "13.2",
+            "12.4",
+            "11.6",
+            "10.8",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "40",
+            "44",
+            "48",
+            "52",
+            "56",
+            "60"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "150",
+            "175",
+            "200",
+            "225",
+            "250",
+            "275"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "AOE"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Puncture",
+      "tips": "In Combat make sure you hit the target so you can use it twice, Maybe 3 time's Combo if you killed the target what ever it was, Works On Enemies & Minions aswell",
+      "iconUrl": "/raw-assets/skill_icons/lancelot/puncture.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Thorned Rose",
+      "description": "Lancelot strikes in the target direction 3 times, each time dealing 220 (+120% Extra Physical Attack) Physical Damage to enemies hit (damage is reduced when multiple enemies are hit). He's untargetable during this process. Enemies in the center of the area take all the 3 hits and are slowed by 20% for 0.5s. The slow effect can stack.",
+      "cooldown": "11.0",
+      "manaCost": "60",
+      "damageType": "Physical",
+      "scaling": [
+        "(+120% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "11.0",
+            "10.5",
+            "10.0",
+            "9.5",
+            "9.0",
+            "8.5"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80",
+            "85"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "220",
+            "250",
+            "280",
+            "310",
+            "340",
+            "370"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "AOE",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Thorned_Rose",
+      "tips": "Throned Rose is the Best Ability for Lancelot in dealing damage to the nearby enemies if positioned well , and While the team is Engaging you Better turn your focusing mode on and try to position it very well in the centre of the fight area, you go use it first then you hit the Ulti real quick .. We will get to that ''Ultimate''part in less than a minute, Also We can use Throned Rose to farm minion's real quick and the Jungle monster's in earlier game it's very Powerfull especially when we buy the ''Hunter's knife'' to increase the damage to the jungle monsters ,so there is No need to use.",
+      "iconUrl": "/raw-assets/skill_icons/lancelot/thorned_rose.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Phantom Execution",
+      "description": "After a short delay, Lancelot performs an executioner's strike in the target direction, dealing 350 (+170% Total Physical Attack) Physical Damage to enemies hit. He is invincible throughout the process.",
+      "cooldown": "36.0",
+      "manaCost": "100",
+      "damageType": "Physical",
+      "scaling": [
+        "(+170% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "36.0",
+            "32.0",
+            "28.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "100",
+            "125",
+            "150"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "350",
+            "425",
+            "500"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst",
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Phantom_Execution",
+      "tips": "Has a very short stun but could be quite effective with proper timing -Has Immunity while skill is charging, can be a great counter attack! -Can also be used be used for escaping, engaging enemies.",
+      "iconUrl": "/raw-assets/skill_icons/lancelot/phantom_execution.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Atlas",
+        "Alpha",
+        "X.Borg",
+        "Baxia",
+        "Lolita"
+      ],
+      "weakAgainst": [
+        "Angela",
+        "Floryn",
+        "Mathilda",
+        "Faramis",
+        "Alucard"
+      ],
+      "synergyWith": [
+        "Angela",
+        "Zilong",
+        "Dyrroth",
+        "Natan",
+        "Barats"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Atlas",
+        "advantage": 3
+      },
+      {
+        "name": "Alpha",
+        "advantage": 2.7
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.2
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Angela",
+        "advantage": 2.8
+      },
+      {
+        "name": "Floryn",
+        "advantage": 2.5
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.4
+      },
+      {
+        "name": "Faramis",
+        "advantage": 2.4
+      },
+      {
+        "name": "Alucard",
+        "advantage": 2.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Angela",
+        "synergy": 2.6
+      },
+      {
+        "name": "Zilong",
+        "synergy": 1.3
+      },
+      {
+        "name": "Dyrroth",
+        "synergy": 1.3
+      },
+      {
+        "name": "Natan",
+        "synergy": 1.1
+      },
+      {
+        "name": "Barats",
+        "synergy": 1.1
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Lancelot counters long-range Mages, such as Cecilion and Pharsa, because there is a delay to their skills and Lancelot can use his 1st Skill to dodge them while going in for the kill.",
+    "weakAgainstReason": "Lancelot is weak against heroes who can counter his mobility like Minsitthar and Phoveus, as his 1st Skill and Ultimate will be heavily restricted.",
+    "synergyReason": "Lancelot works well with heroes who can pull enemies together, like Atlas and Tigreal, because they allow him to hit more enemies with his AOE skills."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Lancelot adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Mechanical Skill",
+    "Combo Execution"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 43.2,
+  "pickRate": 0.7,
+  "banRate": 1.1,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 50,
+    "abilityEffects": 10,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 72,
+    "mid": 80,
+    "late": 58,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Hunter Strike",
+      "Blade of the Heptaseas",
+      "Malefic Roar"
+    ],
+    "dominantPhase": null,
+    "description": "Lancelot spikes early from S1 reset mobility into S2 burst/iframes and becomes very threatening once ultimate unlocks for invulnerability-finishes and backline access. He’s strongest in mid-game pickoffs and snowballing; late game his damage is less reliable into grouped teams with defensive items/CC, forcing more risk for resets."
+  },
+  "proBuilds": [
+    {
+      "player": "Villain",
+      "games": 688,
+      "items": [
+        "War Axe",
+        "Beast Tough Boots",
+        "Endless Battle",
+        "Brute Force Breastplate",
+        "Malefic Roar",
+        "Queen's Wings"
+      ]
+    },
+    {
+      "player": "❀ғʟᴏʀᴀ࿐",
+      "games": 689,
+      "items": [
+        "Beast Tough Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Endless Battle",
+        "Queen's Wings",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "TT : Dtyaeka_23",
+      "games": 1197,
+      "items": [
+        "War Axe",
+        "Beast Tough Boots",
+        "Brute Force Breastplate",
+        "Endless Battle",
+        "Queen's Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/lancelot/video-0-0.mp4",
+    "skill1": "/videos/heroes/lancelot/video-1-0.mp4",
+    "skill2": null,
+    "ultimate": "/videos/heroes/lancelot/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, use Lancelot's 1st Skill on frontline enemies to springboard into their backline, then unleash his 2nd Skill on the backline for heavy damage. Follow up with his Ultimate to charge through the target and block their escape, and use his 1st Skill to continue to chase or retreat."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1"
+      ],
+      "description": "In the laning phase, clear Minions by repeatedly using Lancelot's 1st Skill thanks to the cooldown reset, and stack his Passive before approaching the enemy and hitting them with his 2nd Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Odette",
+      "relationship": "LOVER"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Angela",
+      "winrateDelta": 2.61
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 2.23
+    },
+    {
+      "name": "Masha",
+      "winrateDelta": 1.5
+    },
+    {
+      "name": "Edith",
+      "winrateDelta": 1.4
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": 1.38
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Ling",
+      "winrateDelta": -15.81
+    },
+    {
+      "name": "Hayabusa",
+      "winrateDelta": -14.51
+    },
+    {
+      "name": "Hanzo",
+      "winrateDelta": -13.29
+    },
+    {
+      "name": "Fanny",
+      "winrateDelta": -10.65
+    },
+    {
+      "name": "Leomord",
+      "winrateDelta": -10.34
+    }
+  ],
+  "metaScore": 4.02,
+  "metaRank": 127,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Atlas",
+        "advantage": 3.52
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.94
+      },
+      {
+        "name": "Kaja",
+        "advantage": 2.51
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.43
+      },
+      {
+        "name": "Joy",
+        "advantage": 1.96
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Mathilda",
+        "advantage": 4.18
+      },
+      {
+        "name": "Faramis",
+        "advantage": 3.02
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2.1
+      },
+      {
+        "name": "Angela",
+        "advantage": 2.04
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 1.78
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 WEEK 1 DAY 2 ONIC.Kairi",
+      "author": "community",
+      "votes": 208,
+      "items": [
+        "Tought Boots",
+        "Endless Battle",
+        "War Axe",
+        "Hunter Strike",
+        "Brute Force Breastplate"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "( BTR VS ONIC GAME 1 ) MVP OF THE GAME MPL INDONESIA SEASON 16 WEEK 1 DAY 2",
+      "tags": [],
+      "lastUpdated": "2025-08-23T11:15:30.384833+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Full Damage",
+      "author": "community",
+      "votes": 21,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Endless Battle",
+        "Malefic Roar",
+        "Hunter Strike",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Digunakan jika musuh minim cc dan memiliki hp tipis. Dalam keadaan snowball, posisi Blade of despair bisa di prioritaskan setelah war axe, dan dilanjut dengan item selanjutnya",
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:36:52.225783+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Lancelot Pasming",
+      "author": "community",
+      "votes": 13,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Sky Piercer",
+        "Endless Battle",
+        "Blade of Despair",
+        "Queen's Wings"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Ketika snowball, pake build ini biar enak sang sing",
+      "tags": [],
+      "lastUpdated": "2025-10-13T10:21:51.324706+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Semi-Tank",
+      "author": "community",
+      "votes": 10,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Brute Force Breastplate",
+        "Endless Battle",
+        "Queen's Wings",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "0822539a-2b72-4a01-b05f-b1e5e9defc22"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "Digunakan jika musuh memiliki hp tebal, memiliki banyak cc, dan strong untuk kontes turtle dan lord. Lance semi tank juga bisa melakukan diving untuk membuang resources skill musuh. Jika musuh memiliki defense tinggi, posisi endless battle dan malefic roar bisa ditukar",
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:44:02.011597+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "LANCELOT By qeva",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Tought Boots",
+        "War Axe",
+        "Malefic Roar",
+        "Endless Battle",
+        "Thunder Belt",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming)\nJangan dibuang sampai 3-4 item penting lain jadi dan sesuaikan ama kondisi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T08:55:24.377313+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12270,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Sky"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10040,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Hunter",
+        "Strike"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11450,
+      "notes": null
+    }
+  ]
+}

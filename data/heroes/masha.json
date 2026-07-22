@@ -1,0 +1,624 @@
+{
+  "id": "masha",
+  "name": "Masha",
+  "heroName": "Masha",
+  "role": [
+    "Tank",
+    "Fighter"
+  ],
+  "specialty": [
+    "Push",
+    "Damage"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2800,
+    "hpRegen": 8.4,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 118,
+    "physicalDefense": 23,
+    "magicPower": 0,
+    "magicDefense": 12,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Ancient Strength",
+      "description": "Blessed by the Bear King, Masha has 3 HP bars and won't die until all of them are depleted. She can ignore an instance of damage each time she loses an HP bar. When Masha only has two HP bars left, skills will only require 50% of their original HP Cost to cast. When Masha only has one HP bar left, she doesn't need to spend HP to cast skills.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Ancient_Strength",
+      "tips": "Masha gets the Ancient Strength from the Bear King and has 3 HP bars. Each time she loses 1 HP bar, she can block the damage once. However, she will die after she loses the last HP bar. Each time Masha loses a certain amount of HP, her ATK Speed will be increased. (Based on total HP of 3 HP bars.) Masha will get Physical Lifesteal when she loses her first HP bar. Her Physical Lifesteal will be enhanced, and she will enjoy reduced time-controlled effects after she loses her second HP bar.With less HP left, Masha can deal more damage and have a greater regen ability. So when going as Masha, don't be afraid when your HP is running out, you should dive into battle! After killing targets, you can restore HP rapidly by using \"Life Recovery\".",
+      "iconUrl": "/raw-assets/skill_icons/masha/ancient_strength.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Wild Power",
+      "description": "(Passive): Masha gains (Power of the Wild) which causes her Basic Attacks to deal extra (Physical Damage) equal to 1( )% of the target's Max HP (up to 60 against Creeps and doesn't take effect on Turrets or Base). (Active): Masha spends 24% HP to increase her Movement Speed by 60% for 1.5s. She also increases the extra (Physical Damage) from (Power of the Wild) by 2( )% of the target's Max HP and gains 50% extra Attack Speed for her next two Basic Attacks.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Wild_Power",
+      "tips": "Masha awakens her Wild Power, increasing her Movement Speed and dealing extra Physical Damage according to the target's Max HP with Basic Attacks. When Wild Power is awakened, Masha will lose a certain amount of her current Max HP every second. (Based on total HP of 3 HP bars).This is Masha's core skill. When this skill is activated, Masha's chasing ability and DPS will receive massive enhancements. Though Masha has to continuously pay with her HP for activating this skill, the Lifesteal ability and Attack Speed boosted by her passive \"Ancient Strength\" more than compensates her loss - making her almost invincible in battles.",
+      "iconUrl": "/raw-assets/skill_icons/masha/wild_power.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Howl Shock",
+      "description": "Masha spends 24% HP to roar at enemies, dealing 200( +100% Total Physical Attack) (Physical Damage) and reducing their Attack Speed by 50% for 2s.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Howl_Shock",
+      "tips": "Masha roars forward and unleashes an energy shockwave to targets, dealing Physical Damage and slowing them. The hero in contact with the shockwave can be disarmed. (Picking up weapons in advance can end the disarming effect.)This skill provides Masha with a great advantage while fighting against opponents. It can disarm the target and inflict a slowdown debuff, which will be very useful for launching an offensive or a retaliation.",
+      "iconUrl": "/raw-assets/skill_icons/masha/howl_shock.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Thunderclap",
+      "description": "Masha spends 34% HP to lunge at an enemy hero (immune to control effects during the lunge), dealing 200( +200% Total Physical Attack) (Physical Damage), slowing them by 25% for 2s, and knocking back nearby enemies. The cooldown of this skill will be reset each time Masha loses an HP bar.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Thunderclap",
+      "tips": "Masha launches a powerful charge after sacrificing a certain amount of her current HP. When she gets close to targets, she will release Thunderclap, dealing Physical Damage according to the targets' Max HP and slowing them.This is a burst skill that can be used to launch a fight. By using this skill, Masha can approach the enemy rapidly, deal great damage and inflict slowdown debuff.",
+      "iconUrl": "/raw-assets/skill_icons/masha/thunderclap.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Frontline Engage",
+      "Crowd Control",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Yu Zhong",
+        "Guinevere",
+        "Baxia",
+        "Brody",
+        "Saber"
+      ],
+      "weakAgainst": [
+        "Argus",
+        "Sun",
+        "Estes",
+        "Popol and Kupa",
+        "Miya"
+      ],
+      "synergyWith": [
+        "Chip",
+        "Lukas",
+        "Joy",
+        "Marcel",
+        "Faramis"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Yu Zhong",
+        "advantage": 3.9
+      },
+      {
+        "name": "Guinevere",
+        "advantage": 3.4
+      },
+      {
+        "name": "Baxia",
+        "advantage": 3
+      },
+      {
+        "name": "Brody",
+        "advantage": 3
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.9
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Argus",
+        "advantage": 5.7
+      },
+      {
+        "name": "Sun",
+        "advantage": 4.5
+      },
+      {
+        "name": "Estes",
+        "advantage": 3.8
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 3.2
+      },
+      {
+        "name": "Miya",
+        "advantage": 3.1
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Chip",
+        "synergy": 11.3
+      },
+      {
+        "name": "Lukas",
+        "synergy": 5.3
+      },
+      {
+        "name": "Joy",
+        "synergy": 3
+      },
+      {
+        "name": "Marcel",
+        "synergy": 3
+      },
+      {
+        "name": "Faramis",
+        "synergy": 2.8
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Masha works well against Marksmen with low mobility, such as Ixia and Layla, as she can easily chase them down using her Ultimate.",
+    "weakAgainstReason": "Masha is countered by Fighters with strong Regen capabilities like Cici and Thamuz, because they can outlast Masha in a prolonged fight due to her comparatively lower Regen.",
+    "synergyReason": "Masha can maximize her effectiveness and damage when paired with utility Supports that provide extra Movement Speed and CC, such as Angela and Rafaela."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Masha adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Frontline Engage",
+    "Crowd Control",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 56,
+  "pickRate": 0.1,
+  "banRate": 0.5,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 70,
+    "abilityEffects": 30,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 70,
+    "late": 75,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Corrosion Scythe",
+      "Demon Hunter Sword",
+      "Golden Staff"
+    ],
+    "dominantPhase": null,
+    "description": "Masha’s threat ramps with items because her kit leans on repeated basic attacks and % max-HP damage, while her multi-HP-bar passive keeps her relevant as fights get longer. She’s playable early for lane pressure, but her real dueling and shredding power shows once she has attack-speed/on-hit cores."
+  },
+  "proBuilds": [
+    {
+      "player": "Loyz’s claws",
+      "games": 1034,
+      "items": [
+        "Sea Halberd",
+        "Flame Swift Boots",
+        "Malefic Roar",
+        "Sky Piercer",
+        "Rose Gold Meteor",
+        "Blade of Despair"
+      ]
+    },
+    {
+      "player": "Masha Johnson Mason",
+      "games": 925,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Malefic Roar",
+        "Blade of Despair",
+        "Hunter Strike"
+      ]
+    },
+    {
+      "player": "Azymus",
+      "games": 788,
+      "items": [
+        "Sea Halberd",
+        "Rapid Boots",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Endless Battle",
+        "Guardian Helmet"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/masha/video-0-0.mp4",
+    "skill1": "/videos/heroes/masha/video-1-0.mp4",
+    "skill2": "/videos/heroes/masha/video-2-0.mp4",
+    "ultimate": "/videos/heroes/masha/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Passive",
+        "Skill 3",
+        "Skill 2"
+      ],
+      "description": "In teamfights, charge into an enemy with Masha's Ultimate, then use her 1st Skill followed by Basic Attacks to deal more damage. Whenever she loses an HP bar, use her Ultimate again to charge at the target and slow them with her 2nd Skill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Masha's 1st Skill to close the gap with the enemy and slow them with her 2nd Skill to engage. Follow up with Basic Attacks for more damage."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Angela",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Rafaela",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 17.25
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 8.68
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": 7.08
+    },
+    {
+      "name": "Lolita",
+      "winrateDelta": 6.76
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 5.54
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Paquito",
+      "winrateDelta": -5.56
+    },
+    {
+      "name": "Terizla",
+      "winrateDelta": -5.3
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": -4.66
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": -4.02
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": -3.98
+    }
+  ],
+  "metaScore": 24.82,
+  "metaRank": 20,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Chip",
+        "advantage": 7.55
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 6.12
+      },
+      {
+        "name": "Saber",
+        "advantage": 6.1
+      },
+      {
+        "name": "Nolan",
+        "advantage": 5.5
+      },
+      {
+        "name": "Arlott",
+        "advantage": 4.79
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 7.44
+      },
+      {
+        "name": "Valentina",
+        "advantage": 6.1
+      },
+      {
+        "name": "Uranus",
+        "advantage": 5.17
+      },
+      {
+        "name": "Lukas",
+        "advantage": 4.82
+      },
+      {
+        "name": "Estes",
+        "advantage": 4.42
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Solo backline Enemy atau pemakan tank",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Rapid Boots",
+        "Sea Halberd",
+        "Blade of the Heptaseas",
+        "Malefic Roar",
+        "Blade of Despair",
+        "Endless Battle"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Jangan show sangat di map, pergi tempat yg backline Enemy akan pergi, selalu gas ke mm atau Mage, makan tank jika perlu p..",
+      "tags": [],
+      "lastUpdated": "2025-10-22T11:59:48.254105+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "beli dager dia awal awal, lalu beli sepatu dan jangan dijadikan dulu, lalu beli furry hammer dan jadikan ke blade of heptaseas dan jadikan sepatu, item selanjutnya bebas sesuai kondisi",
+      "author": "community",
+      "votes": 1,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Sky Piercer",
+        "Blade of Despair",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Build dengan burst damage yang tinggi",
+      "tags": [],
+      "lastUpdated": "2025-09-14T10:58:20.37476+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Warrior",
+        "Boots",
+        "War",
+        "Axe",
+        "Corrosion",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Sprint",
+      "cost": 11060,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "War",
+        "Axe",
+        "Corrosion",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Execute",
+      "cost": 11970,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "War",
+        "Axe"
+      ],
+      "emblem": {
+        "name": "Common Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11210,
+      "notes": null
+    }
+  ]
+}

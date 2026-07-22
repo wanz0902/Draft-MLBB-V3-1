@@ -1,0 +1,665 @@
+{
+  "id": "natan",
+  "name": "Natan",
+  "heroName": "Natan",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Burst",
+    "Magic Damage"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2460,
+    "hpRegen": 6.8,
+    "mana": 455,
+    "manaRegen": 3.4,
+    "physicalAttack": 118,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Theory of Everything",
+      "description": "Natan gains a stack of (Entanglement) each time he or his (Reverse-Clone) hits an enemy with a skill (up to 6 stacks). Each stack lasts 5s and grants 7.5% Attack Speed and 7.5% Movement Speed. Natan's Basic Attack projectiles will return to Natan after reaching the maximum range, dealing an extra 30( +50% Total Physical Attack) (+70% Total Magic Power) (Magic Damage) to enemies along the way (inherits a portion of Attack Effects).",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Theory_of_Everything",
+      "iconUrl": "/raw-assets/skill_icons/natan/theory_of_everything.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Superposition",
+      "description": "Natan shoots a dense mass of energy in the target direction, dealing 225( +100% Total Physical Attack) (+140% Total Magic Power) (Magic Damage) to enemies in its path.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Superposition",
+      "iconUrl": "/raw-assets/skill_icons/natan/superposition.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Interference!",
+      "description": "Natan launches a Gravitational Attractor in the target direction, dealing 150( +50% Total Physical Attack) (+70% Total Magic Power) (Magic Damage) to enemies in its path and knocking them back. The Attractor detonates upon reaching the maximum range, dealing 30( +10% Total Physical Attack) (+14% Total Magic Power) (Magic Damage) to nearby enemies and knocking them back.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Interference!",
+      "iconUrl": "/raw-assets/skill_icons/natan/interference.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Entropy?",
+      "description": "Natan summons a (Reverse-Clone) at a target location 6 units away that lasts 10s, inherits 35% of his attack attributes (and a portion of Attack Effects), and will copy his moves and attacks in reverse. (Use Again): Natan switches places with the (Reverse-Clone). Each cast reduces other skills' remaining cooldowns by 50%. The (Reverse-Clone) will disappear if Natan is too far away, while the cooldown of this skill will be reduced by the remaining duration.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Entropy?",
+      "iconUrl": "/raw-assets/skill_icons/natan/entropy.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Sun",
+        "Gloo",
+        "Zhask",
+        "Esmeralda",
+        "Uranus"
+      ],
+      "weakAgainst": [
+        "Sora",
+        "Karina",
+        "Nolan",
+        "Granger",
+        "Arlott"
+      ],
+      "synergyWith": [
+        "Diggie",
+        "Chip",
+        "Lolita",
+        "Fanny",
+        "Valentina"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Sun",
+        "advantage": 4.8
+      },
+      {
+        "name": "Gloo",
+        "advantage": 4
+      },
+      {
+        "name": "Zhask",
+        "advantage": 3.4
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 2.5
+      },
+      {
+        "name": "Uranus",
+        "advantage": 2.3
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Sora",
+        "advantage": 3.5
+      },
+      {
+        "name": "Karina",
+        "advantage": 2.4
+      },
+      {
+        "name": "Nolan",
+        "advantage": 2.2
+      },
+      {
+        "name": "Granger",
+        "advantage": 2
+      },
+      {
+        "name": "Arlott",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Diggie",
+        "synergy": 2.8
+      },
+      {
+        "name": "Chip",
+        "synergy": 2.6
+      },
+      {
+        "name": "Lolita",
+        "synergy": 2.2
+      },
+      {
+        "name": "Fanny",
+        "synergy": 1.9
+      },
+      {
+        "name": "Valentina",
+        "synergy": 1.6
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Natan is strong against Tanks with low mobility such as Tigreal and Gatotkaca because he can easily avoid their control abilities with his UIltimate and get more hits in with his Basic Attacks on slower targets.",
+    "weakAgainstReason": "Natan is countered by heroes with targeted control and high burst like Saber and Eudora that can lock him down and finish him off.",
+    "synergyReason": "Natan's Ultimate allows him to blink a great distance, so he works best with initiator heroes such as Johnson and Alpha because he can dive with them and unleash a lot of damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Natan adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.7,
+  "pickRate": 0.4,
+  "banRate": 0.3,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 60,
+    "abilityEffects": 20,
+    "difficulty": 20
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 70,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Feather of Heaven",
+      "Golden Staff",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "He’s relatively manageable early before he has levels and attack-speed items, but ramps hard once Entropy? enables clone DPS and cooldown cycling for mid-game fights. With 2–3 core items, his sustained mixed damage and attack effects become dominant in late-game front-to-back teamfights."
+  },
+  "proBuilds": [
+    {
+      "player": "TT: Yben.",
+      "games": 1395,
+      "items": [
+        "Arcane Boots",
+        "Feather of Heaven",
+        "Concentrated Energy",
+        "Windtalker",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "Dimm Bαckburner.",
+      "games": 1006,
+      "items": [
+        "Arcane Boots",
+        "Feather of Heaven",
+        "Windtalker",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "ZonTzy x F4N'T",
+      "games": 843,
+      "items": [
+        "Feather of Heaven",
+        "Arcane Boots",
+        "Starlium Scythe",
+        "Windtalker",
+        "Divine Glaive",
+        "Holy Crystal"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/natan/video-0-0.mp4",
+    "skill1": "/videos/heroes/natan/video-1-0.mp4",
+    "skill2": "/videos/heroes/natan/video-2-0.mp4",
+    "ultimate": "/videos/heroes/natan/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Skill 3"
+      ],
+      "description": "In teamfights, summon a Reverse-Clone with Natan's Ultimate, then use his 2nd Skill followed by his 1st Skill to knockback and damage enemies, and finish with a barrage of Basic Attacks. Depending on the situation, Natan's Ultimate can also be used to chase or escape."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Natan's 1st Skill and Basic Attacks to chip away at the enemy. When their HP is low enough, use his 2nd Skill to knockback the enemy and finish them off with Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Johnson",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Alpha",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": 6.28
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 4.46
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 3.78
+    },
+    {
+      "name": "Ling",
+      "winrateDelta": 2.83
+    },
+    {
+      "name": "Atlas",
+      "winrateDelta": 2.48
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Wanwan",
+      "winrateDelta": -7.99
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": -6.23
+    },
+    {
+      "name": "Melissa",
+      "winrateDelta": -4.89
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -4.86
+    },
+    {
+      "name": "Claude",
+      "winrateDelta": -4.75
+    }
+  ],
+  "metaScore": 16.29,
+  "metaRank": 73,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 6.83
+      },
+      {
+        "name": "Valentina",
+        "advantage": 3.91
+      },
+      {
+        "name": "Zhask",
+        "advantage": 3.27
+      },
+      {
+        "name": "Sun",
+        "advantage": 3.09
+      },
+      {
+        "name": "Esmeralda",
+        "advantage": 3.07
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.19
+      },
+      {
+        "name": "Irithel",
+        "advantage": 2.69
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.21
+      },
+      {
+        "name": "Kalea",
+        "advantage": 2.21
+      },
+      {
+        "name": "Chou",
+        "advantage": 1.8
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Natan By qeva (JUNGLE)",
+      "author": "community",
+      "votes": 11,
+      "items": [
+        "Rapid Boots",
+        "Feather of Heaven",
+        "Windtalker",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Thunder Belt"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Retribution",
+      "skillOrder": null,
+      "notes": "Awal game buy knife 2(biar cpt farming) Jangan dibuang sampai 3-4 item penting lain jadi",
+      "tags": [],
+      "lastUpdated": "2025-09-15T09:48:24.723388+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Default Build",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Warrior Boots",
+        "Feather of Heaven",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Blood Wings",
+        "Windtalker"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "Urutan Build seperti yang tertera, untuk item terakhir bebas, sesuaikan dengan kondisi. Spell bisa aegis, purify, ataupun flicker (tergantung kenyamanan, saya lebih nyaman menggunakan aegis dibanding yang lain)\nNote:\n• Skill 2 Natan bisa berkemungkinan membuat flicker, skill dash menjadi tidak berguna (terbuang sia-sia).\n• Cooldown ultimate Natan baru direset setelah ultimatenya berakhir, jadi fleeting time sangat amat tidak direkomendasikan, dan ultimatenya cukup singkat\n• Kalau hero lawan lebih kuat di early, respect saja dengan beli mentahan tought boots/ warrior boots.",
+      "tags": [],
+      "lastUpdated": "2025-09-14T04:25:41.920723+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "YT : Gameplay Proplayer",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Arcane Boots",
+        "Feather of Heaven",
+        "Windtalker",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-12-05T13:58:35.100627+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build [KATA MENGANDUNG KATA-KATA KASAR]",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Warrior Boots",
+        "Feather of Heaven",
+        "Windtalker",
+        "Holy Crystal",
+        "Concentrated Energy",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Aegis",
+      "skillOrder": null,
+      "notes": "Urutan Build seperti yang tertera, untuk item terakhir bebas, sesuaikan dengan kondisi, dan sepatu jual saja kalau sudah late game. Spell bisa aegis, purify, ataupun flicker (tergantung kenyamanan, saya lebih nyaman menggunakan aegis dibanding yang lain)\nNote:\n• Skill 2 Natan bisa berkemungkinan membuat flicker, skill dash menjadi tidak berguna (terbuang sia-sia).\n• Cooldown ultimate Natan baru direset setelah ultimatenya berakhir, jadi fleeting time sangat amat tidak direkomendasikan, dan ultimatenya cukup singkat.\n• Kalau hero lawan lebih kuat di early, respect saja dengan beli mentahan tought boots/ warrior boots.",
+      "tags": [],
+      "lastUpdated": "2025-09-14T04:35:33.036322+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "best build natan jumpshoot",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Warrior Boots",
+        "Feather of Heaven",
+        "Starlium Scythe",
+        "Holy Crystal",
+        "Blood Wings",
+        "Divine Glaive"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Item terbaik buat natan",
+      "tags": [],
+      "lastUpdated": "2025-10-16T19:12:14.784944+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Feather",
+        "Heaven",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11710,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Feather",
+        "Heaven",
+        "Starlium",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 12010,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Feather",
+        "Heaven",
+        "Concentrated",
+        "Energy"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11630,
+      "notes": null
+    }
+  ]
+}

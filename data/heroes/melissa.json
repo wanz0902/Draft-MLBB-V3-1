@@ -1,0 +1,682 @@
+{
+  "id": "melissa",
+  "name": "Melissa",
+  "heroName": "Melissa",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Damage"
+  ],
+  "lane": "Gold Lane",
+  "lanes": [
+    "Gold Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2468,
+    "hpRegen": 6.6,
+    "mana": 445,
+    "manaRegen": 3.4,
+    "physicalAttack": 119,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Doll Buster",
+      "description": "\"My tailor shop excels at fixing and 'fixing' dolls. Am I right, Muddles?\" (Melissa deals 125% damage to Minions, Creeps, and Summoned Units.)",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Doll_Buster",
+      "iconUrl": "/raw-assets/skill_icons/melissa/doll_buster.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Falling!",
+      "description": "\"Watch me slide forward and increase my Attack Speed for 3 seconds— Ah, that was just boring…\" \"(Muddles), go that way!\" \"(Cuddles), come here!\" (The skill's cooldown is reduced by 0.5s each time Melissa damages the enemy by attacking (Muddles).)",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Falling!",
+      "iconUrl": "/raw-assets/skill_icons/melissa/falling.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Eyes on You!",
+      "description": "\"The plan's like this: Throw (Muddles) out to hold down the bad guys, and then… I come on stage!\" \"I puncture the bad guys, while (Giggles) hit (Muddles) to punish them as well! Hee, fantastic!\" ((Muddles) deals 250( +80% Total Physical Attack) (Physical Damage) on the first hit and links nearby enemies for up to 6s. Linked enemies are slowed by 60% that decays over 1.5s and can break the link by moving out of the range. (Muddles) will return to Melissa early when there are no enemies around and immediately if she's too far away. When (Muddles) is present, you can tap the (Attack Minion) button to directly attack (Muddles), though it cannot trigger the multi-hit damage.)",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Eyes_on_You!",
+      "iconUrl": "/raw-assets/skill_icons/melissa/eyes_on_you.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Go Away!",
+      "description": "(Cuddles), protect me! For 4 seconds, let no bad guys come close. Unless I say otherwise! (When activated, the field knocks back enemies in the area and deals them 500( +100% Total Magic Power) (Magic Damage). It'll then continuously knock back enemies who attempt to enter the field, dealing them 50( +10% Total Magic Power) (Magic Damage) and briefly slowing them. The field will also interrupt the enemy's movement skills unless they're immune to control effects. The field will move with Melissa once, when she's about to move out of the boundary. (Passive): Melissa's Physical & Magic Defense are increased by 3. This effect is increased to 5 times when the skill is active.)",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Go_Away!",
+      "iconUrl": "/raw-assets/skill_icons/melissa/go_away.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Gold Lane Farming"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Leomord",
+        "Joy",
+        "Harith",
+        "Chip"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Belerick",
+        "Layla",
+        "Vale",
+        "Harley"
+      ],
+      "synergyWith": [
+        "Harith",
+        "Lolita",
+        "Lunox",
+        "Roger",
+        "Benedetta"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 3.5
+      },
+      {
+        "name": "Leomord",
+        "advantage": 3.2
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.9
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.8
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 6.4
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2.2
+      },
+      {
+        "name": "Layla",
+        "advantage": 2.1
+      },
+      {
+        "name": "Vale",
+        "advantage": 2
+      },
+      {
+        "name": "Harley",
+        "advantage": 2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Harith",
+        "synergy": 2.4
+      },
+      {
+        "name": "Lolita",
+        "synergy": 1.6
+      },
+      {
+        "name": "Lunox",
+        "synergy": 1.4
+      },
+      {
+        "name": "Roger",
+        "synergy": 1.3
+      },
+      {
+        "name": "Benedetta",
+        "synergy": 1.3
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Fighters like Sun and Zilong that can't get past her Ultimate.",
+    "weakAgainstReason": "Long range Mages such as Xavier and Nana.",
+    "synergyReason": "Tanks that can chain CC such as Tigreal and Minotaur,\nallowing her to keep enemies linked."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Melissa adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Gold Lane Farming"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.7,
+  "banRate": 1.1,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 90,
+    "abilityEffects": 40,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 70,
+    "late": 85,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Demon Hunter Sword",
+      "Corrosion Scythe",
+      "Golden Staff"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Melissa scales hard with 2–3 items, turning her doll-link damage pattern into sustained DPS that melts frontlines and punishes grouped enemies. She’s relatively average early while farming, then becomes dominant late with full build plus ultimate zone control to survive dives."
+  },
+  "proBuilds": [
+    {
+      "player": "Sophia",
+      "games": 1382,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Bren.",
+      "games": 700,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Sky Piercer",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "M.fadhlan kamil",
+      "games": 680,
+      "items": [
+        "Corrosion Scythe",
+        "Windtalker",
+        "Haas' Claws",
+        "Berserker's Fury",
+        "Malefic Gun",
+        "Wind of Nature"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/melissa/video-0-0.mp4",
+    "skill1": "/videos/heroes/melissa/video-1-0.mp4",
+    "skill2": "/videos/heroes/melissa/video-2-0.mp4",
+    "ultimate": "/videos/heroes/melissa/video-3-0.mp4"
+  },
+  "pickRate": 0.6,
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Skill 3"
+      ],
+      "description": "Link enemies with her 2nd Skill for increased damage.\nUse 1st Skill to keep them linked and her Ultimate\nto stop enemies from getting close."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "Link the enemy with her 2nd Skill and use\nBasic Attacks to deal extra damage. \nChase enemies trying to flee with her 1st Skill."
+    }
+  ],
+  "skillLevelPriority": {
+    "order": [
+      "Go Away!",
+      "Falling!",
+      "Eyes on You!"
+    ]
+  },
+  "connections": [
+    {
+      "name": "Julian",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Xavier",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Yin",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Minotaur",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Chip",
+      "winrateDelta": 3.05
+    },
+    {
+      "name": "Esmeralda",
+      "winrateDelta": 2.03
+    },
+    {
+      "name": "Harith",
+      "winrateDelta": 1.93
+    },
+    {
+      "name": "Popol and Kupa",
+      "winrateDelta": 1.9
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": 1.71
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Bruno",
+      "winrateDelta": -18.24
+    },
+    {
+      "name": "Karrie",
+      "winrateDelta": -10.54
+    },
+    {
+      "name": "Irithel",
+      "winrateDelta": -9.97
+    },
+    {
+      "name": "Hanabi",
+      "winrateDelta": -9.88
+    },
+    {
+      "name": "Ixia",
+      "winrateDelta": -8.98
+    }
+  ],
+  "metaScore": 19.14,
+  "metaRank": 44,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.1
+      },
+      {
+        "name": "Aldous",
+        "advantage": 2.88
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.69
+      },
+      {
+        "name": "Natalia",
+        "advantage": 2.27
+      },
+      {
+        "name": "Lunox",
+        "advantage": 2.25
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Baxia",
+        "advantage": 2.07
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 2.02
+      },
+      {
+        "name": "Granger",
+        "advantage": 2
+      },
+      {
+        "name": "Belerick",
+        "advantage": 2
+      },
+      {
+        "name": "Cici",
+        "advantage": 1.9
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Penghancur tank",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Haas Claws",
+        "Windtalker",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Demon Hunter Sword"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Tank mana yg ga jebol sama ni build jir wkwk. \nKalau mau pake build ni minimal roam tank ",
+      "tags": [],
+      "lastUpdated": "2025-10-22T11:57:54.854629+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Attack Speed & DPS",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Golden Staff",
+        "Sea Halberd",
+        "Windtalker",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Build ini berfokus secara ekstrim pada Attack Speed dan kemampuan untuk memberikan damage yang stabil serta efektif melawan Tank (Durability/HP tinggi) maupun Squishy (HP tipis), sambil memanfaatkan sinergi antara Basic Attack Melissa dan boneka Muddles-nya",
+      "tags": [],
+      "lastUpdated": "2025-10-24T05:11:16.823831+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Critical attack speed by natanz ",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Swift Boots",
+        "Berserker Fury",
+        "Corrosion Scythe",
+        "Blade of Despair",
+        "Haas Claws",
+        "Windtalker"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Critical attack speed ",
+      "tags": [],
+      "lastUpdated": "2025-11-16T22:47:38.985348+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Untuk menaikan rank",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Haas Claws",
+        "Berserker Fury",
+        "Windtalker",
+        "Berserker Fury",
+        "Sea Halberd",
+        "Wind of Nature"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Biar bisa menang terus melawan Hero susah",
+      "tags": [],
+      "lastUpdated": "2025-10-15T08:07:59.361916+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Mpl build",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Tought Boots",
+        "Haas Claws",
+        "Malefic Roar",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "1222f5a6-2d4e-4cdc-a222-d2dd6d3a3895"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Build melisa  dari mpl ph",
+      "tags": [],
+      "lastUpdated": "2025-10-28T09:50:55.796687+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Haas's",
+        "Claws",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11480,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Demon",
+        "Hunter"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10910,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Haas's",
+        "Claws",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11170,
+      "notes": null
+    }
+  ]
+}

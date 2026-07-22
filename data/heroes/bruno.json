@@ -1,0 +1,655 @@
+{
+  "id": "bruno",
+  "name": "Bruno",
+  "heroName": "Bruno",
+  "role": [
+    "Marksman"
+  ],
+  "specialty": [
+    "Finisher",
+    "Burst"
+  ],
+  "lane": "Gold",
+  "lanes": [
+    "Gold",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2510,
+    "hpRegen": 7,
+    "mana": 450,
+    "manaRegen": 3.4,
+    "physicalAttack": 118,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Mecha Legs",
+      "description": "Bruno gains 2% extra Crit Chance each time he deals damage with his skills (up to 10 stacks). Bruno has higher Physical Attack but only gains 80% extra Attack Speed from all sources.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Mecha_Legs",
+      "tips": "Setiap menggunakan Skill, Critical Hit Bruno akan selalu meningkat, dsini kita dapat memanfaatkanya dengan cara selalu menggunakan Skill saat War agar Critical Hit Bruno meningkat dan menyebabkan Damage yang besar.",
+      "iconUrl": "/raw-assets/skill_icons/bruno/mecha_legs.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Volley Shot",
+      "description": "Bruno kicks a Powerball on his next Basic Attack, dealing 100( +100% Total Physical Attack) (Physical Damage) to the target, slowing them by 30%, and speeding up by 30% for 0.5s. The Powerball then bounces back toward Bruno and lands on the ground. He or allied heroes can retrieve the Powerball for another attack and reduce the cooldown of (Flying Tackle) by 1s.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Volley_Shot",
+      "tips": "Gunakan Skill ini saat War dan arahkan posisi tembakan ke dalam area yang mudah dijangkau kembali atau dapat dijangkau rekan 1 team, Karena jika bola diambil kembali atau diambil oleh rekan 1 team skill ini dapat digunakan kembali (Reset Cooldown).",
+      "iconUrl": "/raw-assets/skill_icons/bruno/volley_shot.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Flying Tackle",
+      "description": "Bruno makes a slide tackle in the target direction, dealing 140( +40% Total Physical Attack) (Physical Damage) to enemies in his path and stunning them for 0.5s. If the Powerball is bouncing back, Bruno also draws the Powerball toward him.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Flying_Tackle",
+      "tips": "Gunakan Skill ini saat War untuk membuat Stun lawan yang terkena Flying Tackle, jangan lupa sebelum menggunakan skill ini gunakan Skill 1 dan perhatikan kemana arah bola tersebut dan gunakan Skill Flying Tackle ke arah bola tadi agar dapat menggunakan Skill Flying Tackle kembali dan gunakan untuk melarikan jika terdesak saat dikejar lawan, Skill ini juga dapat digunakan untuk menembus tembok.",
+      "iconUrl": "/raw-assets/skill_icons/bruno/flying_tackle.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Worldie",
+      "description": "Bruno kicks his Energy Ball at the target enemy hero, dealing 250( +83% Total Physical Attack) (Physical Damage) and knocking them back. The Energy Ball then bounces between nearby enemies up to 10 times, each time dealing 150( +50% Total Physical Attack) (Physical Damage). Each hit also reduces the enemy's Physical Defense by 4% for 8s (up to 3 stacks).",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Worldie",
+      "tips": "Gunakan Skill ini pada saat War, saat tendangan pertama mengenai musuh, Skill ini akan memberikan Knockback ini sangat bagus untuk memundurkan salah satu musuh yang mendekat. Gunakan skill ini pada saat musuh saling berdekatan satu sama lain atau saat mereka berkumpul, karena Skill ini dapat memantul apa bila musuh berdekatan.",
+      "iconUrl": "/raw-assets/skill_icons/bruno/worldie.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Objective DPS",
+      "Late Game Carry",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "2 Core Items",
+      "Late Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Wanwan",
+        "Fanny",
+        "Benedetta",
+        "Harith",
+        "Mathilda"
+      ],
+      "weakAgainst": [
+        "Lolita",
+        "Barats",
+        "Lesley",
+        "Fredrinn",
+        "Layla"
+      ],
+      "synergyWith": [
+        "Brody",
+        "Floryn",
+        "Mathilda",
+        "Harith",
+        "Masha"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 3.8
+      },
+      {
+        "name": "Fanny",
+        "advantage": 3.4
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 2.9
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.6
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 4.2
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.3
+      },
+      {
+        "name": "Lesley",
+        "advantage": 3
+      },
+      {
+        "name": "Fredrinn",
+        "advantage": 2.4
+      },
+      {
+        "name": "Layla",
+        "advantage": 2.2
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Brody",
+        "synergy": 1.6
+      },
+      {
+        "name": "Floryn",
+        "synergy": 1.6
+      },
+      {
+        "name": "Mathilda",
+        "synergy": 1.5
+      },
+      {
+        "name": "Harith",
+        "synergy": 1.4
+      },
+      {
+        "name": "Masha",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Bruno is strong against Marksmen that are weaker in the early game like Hanabi and Miya who Bruno can out-trade thanks to his high damage.",
+    "weakAgainstReason": "Bruno is countered by Tanks with high Physical Defense like Gatotkaca and Fredrinn that take greatly reduced damage from his attacks.",
+    "synergyReason": "Bruno is best with Supports that can force enemies to engage and allow him to make use of his early game damage, such as Franco and Khufra."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Bruno adalah marksman dengan DPS tinggi yang menjadi win condition utama di late game.",
+  "playstyleTags": [
+    "DPS"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Late Game Insurance",
+    "Snowball Potential"
+  ],
+  "counterTags": [
+    "Dive",
+    "Burst",
+    "Flank"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Needs Peel"
+  ],
+  "macroTags": [
+    "Objective DPS",
+    "Late Game Carry",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "2 Core Items",
+    "Late Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 47.8,
+  "pickRate": 0.2,
+  "banRate": 0.1,
+  "heroAttributes": {
+    "durability": 20,
+    "offense": 60,
+    "abilityEffects": 20,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 50,
+    "mid": 68,
+    "late": 82,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Berserker's Fury",
+      "Scarlet Phantom",
+      "Windtalker"
+    ],
+    "dominantPhase": "Late Game",
+    "description": "Bruno’s damage ramps heavily with crit chance/crit damage itemization and repeated Powerball pickups, so he’s average early and starts taking over once he has at least one crit core. Late game he becomes dominant with high crit burst and sustained DPS in teamfights, especially when ultimate can bounce through grouped targets."
+  },
+  "proBuilds": [
+    {
+      "player": "PraySkie.",
+      "games": 554,
+      "items": [
+        "Haas' Claws",
+        "Tough Boots",
+        "Berserker's Fury",
+        "Malefic Gun",
+        "Sea Halberd",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "KING Miya",
+      "games": 855,
+      "items": [
+        "Haas' Claws",
+        "Warrior Boots",
+        "Berserker's Fury",
+        "Malefic Gun",
+        "Windtalker",
+        "Rose Gold Meteor"
+      ]
+    },
+    {
+      "player": "Edy Anak Baik :3",
+      "games": 519,
+      "items": [
+        "Swift Boots",
+        "Berserker's Fury",
+        "Malefic Gun",
+        "Haas' Claws",
+        "Rose Gold Meteor",
+        "Windtalker"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/bruno/video-0-0.mp4",
+    "skill1": "/videos/heroes/bruno/video-1-0.mp4",
+    "skill2": "/videos/heroes/bruno/video-2-0.mp4",
+    "ultimate": "/videos/heroes/bruno/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 3",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In teamfights, start with Bruno's 1st Skill to get a Powerball and try to get in as much damage as possible. Look for enemies that are close together to use his Ultimate on, then use his Basic Attacks and 2nd Skill to secure the kill or retreat from danger."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Bruno's 1st Skill to get a Powerball, and start attacking the enemy while picking up the ball. When the target is low, stun them with his 2nd Skill and finish them off with Basic Attacks."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Layla",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Johnson",
+      "relationship": "COMPANION"
+    },
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Khufra",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": 3.38
+    },
+    {
+      "name": "Roger",
+      "winrateDelta": 3.35
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": 2.92
+    },
+    {
+      "name": "Khaleed",
+      "winrateDelta": 2.65
+    },
+    {
+      "name": "Kalea",
+      "winrateDelta": 2.57
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Melissa",
+      "winrateDelta": -18.24
+    },
+    {
+      "name": "Wanwan",
+      "winrateDelta": -12.64
+    },
+    {
+      "name": "Obsidia",
+      "winrateDelta": -11.59
+    },
+    {
+      "name": "Beatrix",
+      "winrateDelta": -11.11
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": -7.71
+    }
+  ],
+  "metaScore": 9.71,
+  "metaRank": 120,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Wanwan",
+        "advantage": 5.49
+      },
+      {
+        "name": "Valentina",
+        "advantage": 4.92
+      },
+      {
+        "name": "Benedetta",
+        "advantage": 4.77
+      },
+      {
+        "name": "Brody",
+        "advantage": 3.65
+      },
+      {
+        "name": "Fanny",
+        "advantage": 3.29
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Fredrinn",
+        "advantage": 3.64
+      },
+      {
+        "name": "Yve",
+        "advantage": 3.49
+      },
+      {
+        "name": "Chip",
+        "advantage": 3.23
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.65
+      },
+      {
+        "name": "Guinevere",
+        "advantage": 2.4
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Kena bola saat dia Snowball 💀",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Warrior Boots",
+        "Berserker Fury",
+        "Haas Claws",
+        "Windtalker",
+        "Malefic Gun",
+        "Great Dragon Spear"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-24T05:23:59.161169+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 SWISS STAGE DAY 4 ONIC.Skylar",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Warrior Boots",
+        "Berserker Fury",
+        "Haas Claws",
+        "Sea Halberd",
+        "Malefic Gun"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( ONIC VS TS GAME 1 ) M7 WORLD CHAMPIONSHIP SWISS STAGE 13 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-13T11:51:40.056046+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Bola Plastik",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Haas Claws",
+        "Windtalker",
+        "Berserker Fury",
+        "Malefic Gun",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Marksman",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-30T15:51:22.923018+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Haas's",
+        "Claws",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11180,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Swift",
+        "Boots",
+        "Haas's",
+        "Claws",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Marksman Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11480,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Haas's",
+        "Claws",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11200,
+      "notes": null
+    }
+  ]
+}

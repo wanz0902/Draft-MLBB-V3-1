@@ -1,0 +1,661 @@
+{
+  "id": "valentina",
+  "name": "Valentina",
+  "heroName": "Valentina",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Burst",
+    "Finisher"
+  ],
+  "lane": "Mid Lane",
+  "lanes": [
+    "Mid Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2460,
+    "hpRegen": 7,
+    "mana": 500,
+    "manaRegen": 3.8,
+    "physicalAttack": 98,
+    "physicalDefense": 17,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "0.98",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 240
+  },
+  "skills": {
+    "passive": {
+      "name": "Primal Force",
+      "description": "Valentina gains 8-50 extra EXP each time she deals damage to an enemy hero. Cooldown: 2s.\nIf the enemy hero's level isn't higher than Valentina's, 30% of the damage dealt is converted into her HP. The EXP scales with Valentina's level.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Heal"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Primal_Force",
+      "tips": "Primal Force is the secret weapon that ensures Valentina's always in the lead: the mechanism promises her advantages in terms of level and survivability.",
+      "iconUrl": "/raw-assets/skill_icons/valentina/primal_force.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Shadow Strike",
+      "description": "Valentina casts Shadow Strike in the target direction, dealing 475 (+145% Total Magic Power) Magic Damage to enemies hit and slowing them by 40% for 1s.\nEnemy heroes hit by Shadow Strike are marked with a Shadow Sigil for 4s and will be terrified for 1s when hit by Shadow Strike again within the duration (a unit can only be terrified onc within 4s).",
+      "cooldown": "7.0",
+      "manaCost": "70",
+      "damageType": "Magic",
+      "scaling": [
+        "(+145% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "7.0",
+            "6.6",
+            "6.2",
+            "5.8",
+            "5.4",
+            "5.0"
+          ]
+        },
+        {
+          "label": "Skill Cost",
+          "values": [
+            "70",
+            "75",
+            "80",
+            "85",
+            "90",
+            "95"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "475",
+            "520",
+            "565",
+            "610",
+            "655",
+            "700"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Damage",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shadow_Strike",
+      "tips": "Shadow Strike is Valentina's main damage source as well as her harass tool.",
+      "iconUrl": "/raw-assets/skill_icons/valentina/shadow_strike.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Arcane Shade",
+      "description": "Valentina dashes in the target direction, firing 3 Shadow Bolts at nearby enemies that deal 90 (+30% Total Magic Power) Magic Damage each. Valentina can cast this skill again within 6s (costs Mana).\nThe cooldown of Shadow Strike is reduced by 1s each time a Shadow Bolt hits an enemy.",
+      "cooldown": "12.0",
+      "manaCost": "40",
+      "damageType": "Magic",
+      "scaling": [
+        "(+30% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Cost",
+          "values": [
+            "40",
+            "44",
+            "48",
+            "52",
+            "56",
+            "60"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "90",
+            "108",
+            "126",
+            "144",
+            "162",
+            "180"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Mobility",
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Arcane_Shade",
+      "tips": "When each Shadow Bolt hits an enemy hero, it reduces the cooldown of Shadow Strike, granting Valentina extra chances to dish out even more damage. Arcane Shade is mighty handy for both offense and retreating maneuvers!",
+      "iconUrl": "/raw-assets/skill_icons/valentina/arcane_shade.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "I Am You",
+      "description": "Valentina slows the target enemy hero by 70% for 0.5s and gains the ability to cast their Ultimate. Casting the enemy's Ultimate turns Valentina into the enemy hero's form and allows her to inherit their Basic Attack type for up to 12s. Her skills remain unchanged unless the enemy's Ultimate has a Morph effect.\nThe stolen Ultimate's will be equal to Valentina's Ultimate level and the Ultimate cooldown will be 120% of the target's Ultimate cooldown (but no lower than 10s). Valentina gains (100% Total Magic Power) Physical Attack for the duration if the enemy is a Physical Damage hero. This cannot be used on an enemy Valentina.",
+      "cooldown": "0.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(100% Total Magic Power)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Skill Level",
+          "values": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "Slow"
+      ],
+      "strategicTags": [
+        "Morph",
+        "Slow"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "I_Am_You",
+      "tips": "I Am You is the core of Valentina's skill set, allowing her to copy the enemy hero's form and Ultimate Skill, which essentially gives her unparalleled versatility and unlimited potential.",
+      "iconUrl": "/raw-assets/skill_icons/valentina/i_am_you.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Zone Control",
+      "Burst Damage"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Carmilla",
+        "Atlas",
+        "X.Borg",
+        "Lolita",
+        "Ling"
+      ],
+      "weakAgainst": [
+        "Marcel",
+        "Barats",
+        "Phoveus",
+        "Valir",
+        "Odette"
+      ],
+      "synergyWith": [
+        "Yve",
+        "Zhuxin",
+        "Gord",
+        "Pharsa",
+        "Novaria"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Carmilla",
+        "advantage": 4.1
+      },
+      {
+        "name": "Atlas",
+        "advantage": 3.4
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.3
+      },
+      {
+        "name": "Lolita",
+        "advantage": 3.1
+      },
+      {
+        "name": "Ling",
+        "advantage": 2.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Marcel",
+        "advantage": 3.4
+      },
+      {
+        "name": "Barats",
+        "advantage": 3.3
+      },
+      {
+        "name": "Phoveus",
+        "advantage": 3.3
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.8
+      },
+      {
+        "name": "Odette",
+        "advantage": 2.7
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Yve",
+        "synergy": 7.9
+      },
+      {
+        "name": "Zhuxin",
+        "synergy": 7.2
+      },
+      {
+        "name": "Gord",
+        "synergy": 5.5
+      },
+      {
+        "name": "Pharsa",
+        "synergy": 4.1
+      },
+      {
+        "name": "Novaria",
+        "synergy": 3.9
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Heroes that lack mobility or burst such as Hanabi and Faramis are suspectible to Valentina's low cooldown skills that provide soft CC and sustained damage.",
+    "weakAgainstReason": "Heroes with gap closers or high burst like Hayabusa, Natalia, and Hanzo.",
+    "synergyReason": "Heroes that can buff or CC such as Carmilla and Atlas to give her more opportunities to deal damage."
+  },
+  "mechanicCategory": [
+    "Ultimate Copy"
+  ],
+  "mechanicNote": "Valentina bisa menyalin ultimate hero musuh, memberikan fleksibilitas draft yang sangat tinggi.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Zone Control",
+    "Burst Damage"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 43.2,
+  "pickRate": 0.2,
+  "banRate": 0.4,
+  "heroAttributes": {
+    "durability": 50,
+    "offense": 40,
+    "abilityEffects": 40,
+    "difficulty": 80
+  },
+  "powerCurve": {
+    "early": 70,
+    "mid": 80,
+    "late": 68,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Clock of Destiny",
+      "Lightning Truncheon",
+      "Holy Crystal"
+    ],
+    "dominantPhase": null,
+    "description": "Valentina is oppressive early-mid due to lane control, mobility, sustain/EXP advantage from passive, and the threat of double-cast fear setup. Her late game depends heavily on what Ultimate she steals and enemy burst potential, so she’s slightly less consistent as fights become more one-shot oriented and positioning is punished."
+  },
+  "proBuilds": [
+    {
+      "player": "❀ eimie chan ❀",
+      "games": 611,
+      "items": [
+        "Magic Shoes",
+        "Necklace of Durance",
+        "Glowing Wand",
+        "Divine Glaive",
+        "Lightning Truncheon",
+        "Holy Crystal"
+      ]
+    },
+    {
+      "player": "JUNN SNOWY",
+      "games": 618,
+      "items": [
+        "Lightning Truncheon",
+        "Arcane Boots",
+        "Genius Wand",
+        "Holy Crystal",
+        "Divine Glaive",
+        "Winter Crown"
+      ]
+    },
+    {
+      "player": "Ryyam yoenju",
+      "games": 454,
+      "items": [
+        "Arcane Boots",
+        "Sky Piercer",
+        "Necklace of Durance",
+        "Holy Crystal",
+        "Lightning Truncheon",
+        "Blood Wings"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/valentina/video-0-0.mp4",
+    "skill1": "/videos/heroes/valentina/video-1-0.mp4",
+    "skill2": "/videos/heroes/valentina/video-2-0.mp4",
+    "ultimate": "/videos/heroes/valentina/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "Copy an Ultimate or use 2nd Skill for better positioning. Use 1st Skill and reset its cooldown with 2nd Skill, then Terrify the target and use her copied Ultimate to secure the kill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Passive",
+        "Skill 1",
+        "Skill 1",
+        "Passive"
+      ],
+      "description": "Use 1st Skill to poke, then 2nd Skill to refresh its CD, and 1st Skill on the same enemy again to cause Terrify."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Carmilla",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Atlas",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Hard",
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Luo Yi",
+      "winrateDelta": 9.77
+    },
+    {
+      "name": "Xavier",
+      "winrateDelta": 7.63
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 6.04
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 5.88
+    },
+    {
+      "name": "Aurora",
+      "winrateDelta": 4
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Zhuxin",
+      "winrateDelta": -6.86
+    },
+    {
+      "name": "Yve",
+      "winrateDelta": -6.5
+    },
+    {
+      "name": "Eudora",
+      "winrateDelta": -5.76
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": -4.86
+    },
+    {
+      "name": "Zhask",
+      "winrateDelta": -4.79
+    }
+  ],
+  "metaScore": 2.16,
+  "metaRank": 131,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 6.1
+      },
+      {
+        "name": "Khufra",
+        "advantage": 5.09
+      },
+      {
+        "name": "Lolita",
+        "advantage": 5.06
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 3.8
+      },
+      {
+        "name": "Minotaur",
+        "advantage": 3.78
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Bruno",
+        "advantage": 4.92
+      },
+      {
+        "name": "Baxia",
+        "advantage": 4.73
+      },
+      {
+        "name": "Marcel",
+        "advantage": 4.71
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 4.11
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 3.97
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Valen demage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Lightning Truncheon",
+        "Blood Wings",
+        "Divine Glaive",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-16T06:56:27.570436+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Gacorrrr",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Arcane Boots",
+        "Glowing Wand",
+        "Blood Wings",
+        "Wishing Lantern",
+        "Holy Crystal",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "bisa win lah pokoknya coba aja",
+      "tags": [],
+      "lastUpdated": "2025-09-13T18:14:03.409168+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11040,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Magic",
+        "Boots",
+        "Enchanted",
+        "Talisman",
+        "Lightning",
+        "Truncheon"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10760,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Magic",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Enchanted",
+        "Talisman"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 11730,
+      "notes": null
+    }
+  ]
+}

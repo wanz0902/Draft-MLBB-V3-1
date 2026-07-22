@@ -1,0 +1,698 @@
+{
+  "id": "guinevere",
+  "name": "Guinevere",
+  "heroName": "Guinevere",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Burst",
+    "Magic Damage"
+  ],
+  "lane": "EXP Lane",
+  "lanes": [
+    "EXP Lane"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2561,
+    "hpRegen": 7.4,
+    "mana": 460,
+    "manaRegen": 3.4,
+    "physicalAttack": 118,
+    "physicalDefense": 21,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Super Magic",
+      "description": "Guinevere deals 25% extra damage to airborne enemies and deals ( +80% Total Physical Attack) (+60% Total Magic Power) (Magic Damage) with her Basic Attacks. Guinevere builds Super Magic each time she deals damage. Once fully charged, her next Basic Attack becomes guided, dealing 80( +100% Total Physical Attack) (+120% Total Magic Power) (Magic damage) on hit and restoring 80 HP plus 8% of her lost HP. Enemies hit by Guinevere's skills or enhanced Basic Attack will be marked for 5s. Those with 3 marks will be knocked airborne when hit by her Violet Requiem.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Super_Magic",
+      "tips": "Try to deal damage to enemies while they're knocked up.",
+      "iconUrl": "/raw-assets/skill_icons/guinevere/super_magic.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Energy Wave",
+      "description": "Guinevere releases an energy orb in the target direction, dealing 300( +125% Total Magic Power) (Magic Damage) and slowing enemies by 50% for 1.2s. Successfully hitting an enemy reduces all her skill cooldowns by 1s.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Energy_Wave",
+      "tips": "It's the main damage skill of Guinevere. The strong slowing effects can increase the hit rate of other skills. Meanwhile, this skill provides CD Reduction to other skills. It's also a poke skill when Guinevere is laning.",
+      "iconUrl": "/raw-assets/skill_icons/guinevere/energy_wave.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Spatial Migration",
+      "description": "Guinevere leaps to the target location, dealing 250( +80% Total Magic Power) (Magic Damage). Enemy heroes and Creeps hit will be knocked airborne for 1s and take 125( +50% Total Magic Power) additional (Magic Damage). (Use Again): Guinevere blinks toward the target direction and leaves an illusion behind. If the illusion takes damage, it will restore Super Magic for Guinevere and explode after 1.5s, dealing 100( +30% Total Magic Power) (Magic Damage) to nearby enemies.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spatial_Migration",
+      "tips": "As the core skill of Guinevere, How many enemies are knocked into the air determines the success or failure of the teamfights.",
+      "iconUrl": "/raw-assets/skill_icons/guinevere/spatial_migration.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Violet Requiem",
+      "description": "Guinevere creates a force field around her, gaining Control Immunity while attacking nearby enemies 11 times within 2s, dealing 880( +385% Total Magic Power) (Magic Damage) in total. Airborne enemies hit will be knocked airborne again, up to 8 additional times.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Violet_Requiem",
+      "tips": "Other than the knock-up effect of Magic Thump, you can also use this skill to cooperate with teammates' knock-up skills.",
+      "iconUrl": "/raw-assets/skill_icons/guinevere/violet_requiem.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Julian",
+        "Karrie",
+        "Aulus",
+        "Thamuz",
+        "Lunox"
+      ],
+      "weakAgainst": [
+        "Masha",
+        "Wanwan",
+        "Chip",
+        "Diggie",
+        "Joy"
+      ],
+      "synergyWith": [
+        "Marcel",
+        "Yu Zhong",
+        "Freya",
+        "Lukas",
+        "Terizla"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Julian",
+        "advantage": 2.1
+      },
+      {
+        "name": "Karrie",
+        "advantage": 2.1
+      },
+      {
+        "name": "Aulus",
+        "advantage": 1.9
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 1.9
+      },
+      {
+        "name": "Lunox",
+        "advantage": 1.8
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 3.4
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 3.1
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.6
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.6
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Marcel",
+        "synergy": 1.5
+      },
+      {
+        "name": "Yu Zhong",
+        "synergy": 1.4
+      },
+      {
+        "name": "Freya",
+        "synergy": 1.4
+      },
+      {
+        "name": "Lukas",
+        "synergy": 1.4
+      },
+      {
+        "name": "Terizla",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Guinevere is strong against heroes with poor sustainability or who are simply weak in the early game. This is because Guinevere can easily deliver her poking combo and escape. Heroes like Zilong and Silvanna are good examples here.",
+    "weakAgainstReason": "But Guinevere is countered by heroes with CC immunities or strong CC skills. Since she needs to chain her CC to unleash her full damage potential, such as Badang and Chou.",
+    "synergyReason": "Guinevere works best with heroes with good single-target CC that will give her a better environment to farm and deal damage, such as Franco and Hylos."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Guinevere adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 50.7,
+  "pickRate": 1.2,
+  "banRate": 32.9,
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 50,
+    "abilityEffects": 70,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 62,
+    "mid": 78,
+    "late": 66,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Genius Wand",
+      "Concentrated Energy",
+      "Holy Crystal"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "She becomes a real kill threat once Spatial Migration + Violet Requiem are online, letting her chain airborne CC and burst squishies in rotations and skirmishes. Late game she’s more punishable (harder to land jump/ultimate vs peel and positioning) and can fall off if she can’t find clean engages."
+  },
+  "proBuilds": [
+    {
+      "player": ". eunwoo",
+      "games": 459,
+      "items": [
+        "Flame Magic Shoes",
+        "Starlium Scythe",
+        "Concentrated Energy",
+        "Holy Crystal",
+        "Queen's Wings",
+        "Divine Glaive"
+      ]
+    },
+    {
+      "player": "LRS.",
+      "games": 942,
+      "items": [
+        "Encourage Tough Boots",
+        "Dominance Ice",
+        "Winter Crown",
+        "Brute Force Breastplate",
+        "Immortality",
+        "Queen's Wings"
+      ]
+    },
+    {
+      "player": "GlaBaInii!",
+      "games": 762,
+      "items": [
+        "Magic Shoes",
+        "Concentrated Energy",
+        "Queen's Wings",
+        "Holy Crystal",
+        "Divine Glaive"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/guinevere/video-0-0.mp4",
+    "skill1": "/videos/heroes/guinevere/video-1-0.mp4",
+    "skill2": "/videos/heroes/guinevere/video-2-0.mp4",
+    "ultimate": "/videos/heroes/guinevere/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2",
+        "Skill 4"
+      ],
+      "description": "In the laning phase, Guinevere should use her 1st Skill and her enhanced Basic Attacks to clear out the Minions and poke enemy heroes. When enemy heroes' HP is low, user Guinevere's 2nd Skill to close in on them and knock them airborne. Follow up with her Ultimate to try to finish them off."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 4",
+        "Skill 3",
+        "Skill 1"
+      ],
+      "description": "In teamfights, Guinevere can use her 2nd Skill to knock the enemy team airborne and follow with her Ultimate to deal damage while keeping them airborne. She can then use the dash of her 2nd Skill to dodge the incoming damage, or she can choose to use her 1st Skill to deal more damage for a full damage combo."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Franco",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Hylos",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Moniyan Empire",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "X.Borg",
+      "winrateDelta": 1.93
+    },
+    {
+      "name": "Cici",
+      "winrateDelta": 1.89
+    },
+    {
+      "name": "Yu Zhong",
+      "winrateDelta": 1.8
+    },
+    {
+      "name": "Sora",
+      "winrateDelta": 1.71
+    },
+    {
+      "name": "Lapu-Lapu",
+      "winrateDelta": 1.54
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Silvanna",
+      "winrateDelta": -1.65
+    },
+    {
+      "name": "Harley",
+      "winrateDelta": -1.32
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": -1.2
+    },
+    {
+      "name": "Aamon",
+      "winrateDelta": -1.2
+    },
+    {
+      "name": "Gusion",
+      "winrateDelta": -1.12
+    }
+  ],
+  "metaScore": 27.72,
+  "metaRank": 12,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Bruno",
+        "advantage": 2.4
+      },
+      {
+        "name": "Thamuz",
+        "advantage": 2.27
+      },
+      {
+        "name": "Valentina",
+        "advantage": 2
+      },
+      {
+        "name": "Karrie",
+        "advantage": 1.88
+      },
+      {
+        "name": "Estes",
+        "advantage": 1.79
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Masha",
+        "advantage": 3.6
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.83
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.29
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.26
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.12
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "1x combo + instant kill",
+      "author": "community",
+      "votes": 9,
+      "items": [
+        "Arcane Boots",
+        "Concentrated Energy",
+        "Divine Glaive",
+        "Holy Crystal",
+        "Starlium Scythe",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Wajib beli glowing kalo musuhnya banyak  hero dengan kemampuan regen yang tinggi",
+      "tags": [],
+      "lastUpdated": "2025-10-22T16:41:19.309351+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "semi tank",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Concentrated Energy",
+        "Tought Boots",
+        "Thunder Belt",
+        "Antique Cuirass",
+        "Starlium Scythe",
+        "Brute Force Breastplate"
+      ],
+      "emblem": {
+        "name": "Support",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-09-21T22:26:11.846632+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Jungle semi-tank",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Tought Boots",
+        "Molten Essence",
+        "Brute Force Breastplate",
+        "Oracle",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "44463c09-e34e-45b0-b73a-9cbecf2f26f5",
+          "tier2": "f2650d70-e154-43c4-b257-c5e2edfbab0b",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Bloody Retribution",
+      "skillOrder": null,
+      "notes": "Inisiator tim, war panjang, kuat untuk kontes turtle dan lord",
+      "tags": [],
+      "lastUpdated": "2025-10-22T22:19:22.043368+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "guin roam",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Guardian Helmet",
+        "Dominance Ice",
+        "Queen's Wings",
+        "Antique Cuirass",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "707360b7-f674-48b4-9bbc-93b2876a5da3"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "so far so good ",
+      "tags": [],
+      "lastUpdated": "2025-10-31T09:39:45.671096+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "build sakit + defense ",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Arcane Boots",
+        "Concentrated Energy",
+        "Glowing Wand",
+        "Brute Force Breastplate",
+        "Winter Crown",
+        "Holy Crystal"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-27T13:34:29.48622+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Concentrated",
+        "Energy",
+        "Starlium",
+        "Scythe"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 12000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Arcane",
+        "Boots",
+        "Starlium",
+        "Scythe",
+        "Holy",
+        "Crystal"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 12000,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Athena's",
+        "Shield"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11020,
+      "notes": null
+    }
+  ]
+}

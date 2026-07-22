@@ -1,0 +1,737 @@
+{
+  "id": "helcurt",
+  "name": "Helcurt",
+  "heroName": "Helcurt",
+  "role": [
+    "Assassin"
+  ],
+  "specialty": [
+    "Push",
+    "Burst"
+  ],
+  "lane": "Jungle",
+  "lanes": [
+    "Jungle"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2480,
+    "hpRegen": 7.2,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 128,
+    "physicalDefense": 18,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": "1.15",
+    "attackSpeedRatio": 100,
+    "movementSpeed": 255
+  },
+  "skills": {
+    "passive": {
+      "name": "Shadow of Styx",
+      "description": "Helcurt remains in Prowler state until spotted by the enemy team, gaining 15% extra Movement Speed, and continuously regenerating (30% Total Physical Attack) HP if he has not dealt any damage.\nHe gains 50% extra Attack Speed and 50% extra Movement Speed (decreasing over time) for 4s upon being spotted and leaves Prowler state 0.75s later.\nAny hero killed after being hit by Helcurt leaves a dark fog that explodes and spreads with a cooldown of 10s. Helcurt Conceals himself while within the dark fog.\n|quote=He who hides in the shadow.",
+      "cooldown": "0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "(30% Total Physical Attack)"
+      ],
+      "scalingTable": [],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Race_Advantage",
+      "tips": "A very sick passive skill. This allows Helcurt to take damage from skills and silenced targets. P.S: Hitting by a long ranged skill will not trigger this passive!",
+      "iconUrl": "/raw-assets/skill_icons/helcurt/race_advantage.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Hidden Terror",
+      "description": "Passive: When Helcurt is in Prowler state, the skill terrifies enemy heroes hit and briefly reveals them. Its cooldown decreases 3 times as fast as normal.\nActive: Helcurt blinks to the target location and deals 150 (+70% Total Physical Attack) Physical Damage to enemies within the area, reducing their Movement Speed by 60% for 0.75s.",
+      "cooldown": "15.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+70% Total Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "15.0",
+            "14.0",
+            "13.0",
+            "12.0",
+            "11.0",
+            "10.0"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "150",
+            "180",
+            "210",
+            "240",
+            "270",
+            "300"
+          ]
+        }
+      ],
+      "crowdControlType": [
+        "CC"
+      ],
+      "strategicTags": [
+        "Mobility",
+        "CC"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Shadow_Transition",
+      "tips": "A skill with super high mobility. Using in the early game allows Helcurt to move through walls to speed up jungling. Using in middle-late game makes it a good initiating skill or escape by moving through terrains.",
+      "iconUrl": "/raw-assets/skill_icons/helcurt/shadow_transition.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Deadly Stinger",
+      "description": "Passive: Helcurt gains one Deadly Stinger for every 1.5s spent in Prowler state or on each Basic Attack. Up to 5 stingers can be stored.\nActive: Helcurt fires all Deadly Stingers forward, each dealing 180 (+50% Extra Physical Attack) Physical Damage to enemies (Minions and Creeps take only 70% of the damage).\nDeadly Stinger counts as Basic Attack but cannot Crit.",
+      "cooldown": "4.0",
+      "manaCost": "0",
+      "damageType": "Physical",
+      "scaling": [
+        "(+50% Extra Physical Attack)"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "4.0",
+            "3.7",
+            "3.4",
+            "3.1",
+            "2.8",
+            "2.5"
+          ]
+        },
+        {
+          "label": "Base Damage",
+          "values": [
+            "180",
+            "200",
+            "220",
+            "240",
+            "260",
+            "280"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Deadly_Stinger",
+      "tips": "Storing up to 5 stingers to maximize the damage as it's the core damage skill. Since it can penetrate the targets, choose a good angle to hit more enemies or jungle monsters to speed up the jungling.",
+      "iconUrl": "/raw-assets/skill_icons/helcurt/deadly_stinger.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Dark Night Falls",
+      "description": "Helcurt summons the Dark Night, reducing all enemies' sight range and making them lose sight of their allies for 3s. During Dark Night, Helcurt gains 40% extra Movement Speed.\nThe Dark Night makes it easier for Helcurt to leave enemies' sight range.",
+      "cooldown": "60.0",
+      "manaCost": "0",
+      "damageType": "None",
+      "scaling": [
+        "None"
+      ],
+      "scalingTable": [
+        {
+          "label": "Cooldown",
+          "values": [
+            "60.0",
+            "55.0",
+            "50.0"
+          ]
+        },
+        {
+          "label": "Movement Speed Bonus",
+          "values": [
+            "40%",
+            "45%",
+            "50%"
+          ]
+        }
+      ],
+      "crowdControlType": [],
+      "strategicTags": [
+        "Buff",
+        "Debuff"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Dark_Night_Falls",
+      "tips": "Use it anytime anywhere to make all enemy heroes lose vision by 3.5s (except Helcurt). A very useful skill. The bonus movement speed allows him to go to the fight quickly or chase an enemy. The bonus attack speed substantially increases his burst damage. Let the enemies fear the invisibility. P.S: It's not effective on enemy Helcurt.",
+      "iconUrl": "/raw-assets/skill_icons/helcurt/dark_night_falls.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Backline Threat",
+      "Pick-off Specialist",
+      "Jungle Tempo"
+    ],
+    "tempoClassification": "Early",
+    "powerSpikeTiming": [
+      "Level 4",
+      "Early-Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Hanzo",
+        "X.Borg",
+        "Valir",
+        "Gord",
+        "Yve"
+      ],
+      "weakAgainst": [
+        "Karina",
+        "Obsidia",
+        "Chip",
+        "Eudora",
+        "Hilda"
+      ],
+      "synergyWith": [
+        "Akai",
+        "Barats",
+        "Gloo",
+        "Baxia",
+        "Edith"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 3.6
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.2
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.8
+      },
+      {
+        "name": "Gord",
+        "advantage": 2.6
+      },
+      {
+        "name": "Yve",
+        "advantage": 2.5
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Karina",
+        "advantage": 2.9
+      },
+      {
+        "name": "Obsidia",
+        "advantage": 2.8
+      },
+      {
+        "name": "Chip",
+        "advantage": 2.6
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.4
+      },
+      {
+        "name": "Hilda",
+        "advantage": 2.4
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Akai",
+        "synergy": 2.8
+      },
+      {
+        "name": "Barats",
+        "synergy": 2.6
+      },
+      {
+        "name": "Gloo",
+        "synergy": 2.2
+      },
+      {
+        "name": "Baxia",
+        "synergy": 2.2
+      },
+      {
+        "name": "Edith",
+        "synergy": 1.9
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Helcurt can swiftly approach enemies with his mobility and quickly take down heroes like Layla, Chang'e, and Vale with his burst damage.",
+    "weakAgainstReason": "Helcurt should avoid tank heroes that he can't burst down, such as Fredrinn, Belerick, and Gatotkaca. Once Helcurt is caught by their CC, they can make short work of him with their teammates.",
+    "synergyReason": "Helcurt's Ultimate is a great tool to obscure the enemy's vision and makes it easier for him and his team to engage. Additionally, heroes with CC like Tigreal, Esmeralda, and Terizla work great with Helcurt to secure kills."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Helcurt adalah assassin dengan kemampuan burst damage dan mobilitas tinggi untuk mengeliminasi target prioritas.",
+  "playstyleTags": [
+    "Burst",
+    "Pickoff"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Early Aggression"
+  ],
+  "counterTags": [
+    "Hard CC",
+    "Group Up",
+    "Vision"
+  ],
+  "synergyTags": [
+    "Needs Frontline",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Backline Threat",
+    "Pick-off Specialist",
+    "Jungle Tempo"
+  ],
+  "powerSpikeTags": [
+    "Level 4",
+    "Early-Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 49.8,
+  "pickRate": 0.8,
+  "banRate": 28.9,
+  "heroAttributes": {
+    "durability": 30,
+    "offense": 50,
+    "abilityEffects": 50,
+    "difficulty": 50
+  },
+  "powerCurve": {
+    "early": 80,
+    "mid": 75,
+    "late": 55,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Blade of the Heptaseas",
+      "Hunter Strike",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Early Game",
+    "description": "Helcurt’s early damage and fear/slow chain enables very punishing ganks, and Dark Night Falls at level 4 creates strong tempo and pick potential around early objectives. He tends to fall off later as enemies group tightly, gain defensive stats, and can punish his commit once vision-denial is less effective."
+  },
+  "proBuilds": [
+    {
+      "player": "tt乂Nemokamuika",
+      "games": 1059,
+      "items": [
+        "Rapid Boots",
+        "Corrosion Scythe",
+        "Blade of the Heptaseas",
+        "Demon Hunter Sword",
+        "Malefic Roar",
+        "Hunter Strike"
+      ]
+    },
+    {
+      "player": "consciousness",
+      "games": 774,
+      "items": [
+        "Ice Rapid Boots",
+        "Corrosion Scythe",
+        "Demon Hunter Sword",
+        "Blade of the Heptaseas",
+        "Sea Halberd",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "은하별",
+      "games": 718,
+      "items": [
+        "Corrosion Scythe",
+        "Flame Rapid Boots",
+        "Blade of the Heptaseas",
+        "Demon Hunter Sword",
+        "Malefic Roar"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/helcurt/video-0-0.mp4",
+    "skill1": "/videos/heroes/helcurt/video-1-0.mp4",
+    "skill2": "/videos/heroes/helcurt/video-2-0.mp4",
+    "ultimate": "/videos/heroes/helcurt/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 3",
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In teamfights, cast Helcurt's Ultimate to obscure the enemies' vision, then blink to their backline with his 1st Skill to hit with his Basic Attacks, and end with his 2nd Skill."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, blink to the target using Helcurt's 1st Skill, then stack up stingers with his Basic Attacks and finish the combo with his 2nd Skill."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Tigreal",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Esmeralda",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Terizla",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Abyss",
+  "race": "Styx",
+  "bestTeammates": [
+    {
+      "name": "Barats",
+      "winrateDelta": 2.75
+    },
+    {
+      "name": "Gloo",
+      "winrateDelta": 2.25
+    },
+    {
+      "name": "Edith",
+      "winrateDelta": 2.23
+    },
+    {
+      "name": "Akai",
+      "winrateDelta": 1.47
+    },
+    {
+      "name": "Uranus",
+      "winrateDelta": 1.4
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Diggie",
+      "winrateDelta": -2.7
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -2.53
+    },
+    {
+      "name": "Angela",
+      "winrateDelta": -2.49
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": -2.19
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": -1.96
+    }
+  ],
+  "metaScore": 23.31,
+  "metaRank": 24,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Hanzo",
+        "advantage": 3.62
+      },
+      {
+        "name": "X.Borg",
+        "advantage": 3.41
+      },
+      {
+        "name": "Valir",
+        "advantage": 3.08
+      },
+      {
+        "name": "Diggie",
+        "advantage": 2.56
+      },
+      {
+        "name": "Gord",
+        "advantage": 2.4
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Natalia",
+        "advantage": 3.25
+      },
+      {
+        "name": "Brody",
+        "advantage": 2.9
+      },
+      {
+        "name": "Khaleed",
+        "advantage": 2.43
+      },
+      {
+        "name": "Hilda",
+        "advantage": 2.22
+      },
+      {
+        "name": "Wanwan",
+        "advantage": 2.17
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Player of the game : GEEK.Baloyskie",
+      "author": "community",
+      "votes": 11,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Demon Hunter Sword",
+        "Malefic Roar",
+        "Sea Halberd",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "(GEEK VS RRQ) Game 2\nMPL ID S16 D3 W1",
+      "tags": [],
+      "lastUpdated": "2025-08-29T09:18:26.168+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "One hit",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Demon Hunter Sword",
+        "Blade of Despair",
+        "Endless Battle",
+        "Hunter Strike"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": null,
+      "tags": [],
+      "lastUpdated": "2025-10-22T15:37:55.801806+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Hc roam main culik ",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Corrosion Scythe",
+        "Rapid Boots",
+        "Sky Piercer",
+        "Blade of the Heptaseas",
+        "Blade of Despair",
+        "Berserker Fury"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Petrify",
+      "skillOrder": null,
+      "notes": "Main culik mm/mage",
+      "tags": [],
+      "lastUpdated": "2025-11-26T08:21:55.902952+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "M7 KNOCKOUT STAGE DAY 1 ONIC.Kiboy",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Rapid Boots",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Demon Hunter Sword",
+        "Blade of Despair",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "( ONIC VS AE GAME 2 ) M7 WORLD CHAMPIONSHIP KNOCKOUT STAGE 18 JANUARI 2026",
+      "tags": [],
+      "lastUpdated": "2026-01-18T15:00:35.465585+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "burst damage (1kali hit)",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Blade of the Heptaseas",
+        "Sky Piercer",
+        "Demon Hunter Sword",
+        "Malefic Roar",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "a01d3b8b-f9a8-4260-b439-fd54b3eb2274",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Ice Retribution",
+      "skillOrder": null,
+      "notes": "Dengan menggunakan build ini anda akan selalu mendapatkan instan kill/solo kill di karenakan dengan menggunakan skil 1 lalu skil 2 musuh akan langsung mati",
+      "tags": [],
+      "lastUpdated": "2025-12-20T09:42:05.72457+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Swift",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Endless"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11180,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Blade",
+        "the",
+        "Heptaseas",
+        "Sky"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Petrify",
+      "cost": 11230,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Swift",
+        "Boots",
+        "Demon",
+        "Hunter",
+        "Sword",
+        "Corrosion"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 11170,
+      "notes": null
+    }
+  ]
+}

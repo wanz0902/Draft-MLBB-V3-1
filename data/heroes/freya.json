@@ -1,0 +1,716 @@
+{
+  "id": "freya",
+  "name": "Freya",
+  "heroName": "Freya",
+  "role": [
+    "Fighter"
+  ],
+  "specialty": [
+    "Chase",
+    "Damage"
+  ],
+  "lane": "EXP",
+  "lanes": [
+    "EXP",
+    "Jungle"
+  ],
+  "flex_lanes": [
+    "Jungle"
+  ],
+  "releaseYear": 2020,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2600,
+    "hpRegen": 7.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 125,
+    "physicalDefense": 22,
+    "magicPower": 0,
+    "magicDefense": 10,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Power of Einherjar",
+      "description": "After casting a skill, Freya gains 200% Attack Speed for her next 2 Basic Attacks (this effect can stack up to 6 times). Freya gains 1 stack of (Sacred Orb) on each Basic Attack and can spend (Sacred Orb) stacks to cast (Spirit Combo) consecutively.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Passive"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Power_of_Einherjar",
+      "tips": "The description of the passive speaks for itself. It has no cooldown and and stacks after every 2nd basic attack once the three orbs disappear. It does not deal a lot of damage but it is pretty decent to have before engaging an opponent and it allows you to kill jungle monsters quicker as well when you are farming.",
+      "iconUrl": "/raw-assets/skill_icons/freya/power_of_einherjar.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Leap of Faith",
+      "description": "Freya jumps to the target location, dealing 200( +80% Extra Physical Attack) (Physical Damage) to enemies hit and pulling them towards her.",
+      "cooldown": [
+        10,
+        9,
+        8
+      ],
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Damage"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Leap_of_Faith",
+      "tips": "Only use it when you're sure that you'll land on the enemy as soon as you jump or else you will just be putting yourself in danger if you can't land that crowd control on them the moment you go in. During a team fight, assess the situation of your team and if it looks bad. do not spam this skill if you only want to make damage since that skill is not freya's source of burst damage, save it instead for when you need to jump out and retreat from the battlefield.",
+      "iconUrl": "/raw-assets/skill_icons/freya/leap_of_faith.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Spirit Combo",
+      "description": "Freya strikes in the target direction, gaining a 60( +70% Extra Physical Attack) shield while dealing 20( +90% Total Physical Attack) (Physical Damage) to enemies hit and slowing them by 30% for 0.5s. Freya can cast this skill again within 3.5s at the cost of 2 stacks of (Sacred Orb). On the (3rd cast), Freya leaps into the air and smashes the area below, dealing 26( +108% Total Physical Attack) (Physical Damage) to enemies within range and knocking them airborne for 0.4s.",
+      "cooldown": [
+        12,
+        11,
+        10
+      ],
+      "manaCost": [
+        60,
+        70,
+        80
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "100% Physical Attack"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Mobility"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Spirit_Combo",
+      "tips": "Godspeed Strike is Freya's bread and butter. The skill that makes her really strong in team fights and 1v1 because of the crowd control it offers while enhancing her first 3 basic attacks, with a very low cooldown. It used to be op before as it was spammable but after the nerf, the cooldown now starts once you have done your 3rd basic attack. It's not that bad, the crowd control is still good and a strong/well fed freya can finish off the enemy in just one or 2 combo locks without taking much damage for herself. It is best that you activate this skill first before jumping in with Wings of Faith so that you can accurately lock your enemy with the stun.",
+      "iconUrl": "/raw-assets/skill_icons/freya/spirit_combo.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Valkyrie Descent",
+      "description": "Freya gains 6 stacks of (Sacred Orb) and enters the (Valkyrie) state, gaining a 600( +180% Total Physical Attack) shield and 30 Physical Attack. Meanwhile, her Basic Attacks become ranged and deal (splash) damage. The (Valkyrie) state lasts for 10s.",
+      "cooldown": [
+        40,
+        35,
+        30
+      ],
+      "manaCost": [
+        100,
+        120,
+        150
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "200% Physical Attack"
+      ],
+      "crowdControlType": [
+        "STUN"
+      ],
+      "strategicTags": [
+        "CC",
+        "Burst"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Valkyrie_Descent",
+      "tips": "Valkyrie is Freya's ultimate and it's best used during team fights. It deals a decent amount of AoE damage as well as slowing the enemies down. It also enhances Freya's physical attack, armor and defense which makes her harder to kill during a fight and it also makes her deal more damage towards the opponent. Combine it with skill 2 and Freya can take down any squishy hero, even 2 of them at the same time if they get caught within her 3 sets of skills in less than 5 seconds.",
+      "iconUrl": "/raw-assets/skill_icons/freya/valkyrie_descent.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [],
+    "hiddenGameplans": [
+      "Synergizes with generic team comps."
+    ],
+    "macroIdentity": [
+      "Split Push",
+      "Sustained Damage",
+      "Jungle Tempo",
+      "EXP Lane Pressure"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Mid Game",
+      "Level 8"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Yve",
+        "Lolita",
+        "Mathilda",
+        "Harith",
+        "Kagura"
+      ],
+      "weakAgainst": [
+        "Phoveus",
+        "Minsitthar",
+        "Edith",
+        "Franco",
+        "Dyrroth"
+      ],
+      "synergyWith": [
+        "Chip",
+        "Yve",
+        "Baxia",
+        "Harith",
+        "Nolan"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 3.5
+      },
+      {
+        "name": "Lolita",
+        "advantage": 2.9
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.5
+      },
+      {
+        "name": "Harith",
+        "advantage": 2.2
+      },
+      {
+        "name": "Kagura",
+        "advantage": 2.2
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Phoveus",
+        "advantage": 4.5
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 3.9
+      },
+      {
+        "name": "Edith",
+        "advantage": 2.2
+      },
+      {
+        "name": "Franco",
+        "advantage": 2
+      },
+      {
+        "name": "Dyrroth",
+        "advantage": 1.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Chip",
+        "synergy": 2.9
+      },
+      {
+        "name": "Yve",
+        "synergy": 2.4
+      },
+      {
+        "name": "Baxia",
+        "synergy": 2
+      },
+      {
+        "name": "Harith",
+        "synergy": 2
+      },
+      {
+        "name": "Nolan",
+        "synergy": 1.9
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Freya not only has exceptional mobility, she also excels in prolonged engagements, making her highly effective against fragile, low-HP Marksmen, such as Lesley and Ixia. Her excellent sustained damage and mobility also allows her to counter Tanks with low damage, like Uranus and Baxia.",
+    "weakAgainstReason": "However, all of Freya's skills have movement components, making her vulnerable to Phoveus's unique counter. Using her skills near Phoveus will allow him to quickly gain energy for his enhanced Basic Attacks. Freya is vulnerable to CC and movement-disabling effects, so Minsitthar and Obsidia's Ultimates can lock her down completely.",
+    "synergyReason": "In order for Freya to maximize her damage, she prefers heroes with CC like Belerick and Gatotkaca to lock down the enemy for her."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Freya adalah fighter dengan kombinasi sustain dan damage yang cocok untuk duel dan splitpush.",
+  "playstyleTags": [
+    "Sustain",
+    "Splitpush"
+  ],
+  "difficultyTags": [
+    "Positioning",
+    "Macro"
+  ],
+  "draftTags": [
+    "Flex Pick",
+    "Splitpush Threat",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "Kite",
+    "Burst",
+    "CC Chain"
+  ],
+  "synergyTags": [
+    "Dive Buddy",
+    "Pairs with CC",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Split Push",
+    "Sustained Damage",
+    "Jungle Tempo",
+    "EXP Lane Pressure"
+  ],
+  "powerSpikeTags": [
+    "Mid Game",
+    "Level 8"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51.6,
+  "pickRate": 1.1,
+  "banRate": 18.3,
+  "heroAttributes": {
+    "durability": 60,
+    "offense": 70,
+    "abilityEffects": 60,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 78,
+    "late": 72,
+    "spikeLevels": [
+      "Lv 4",
+      "Lv 8",
+      "Lv 12"
+    ],
+    "coreItems": [
+      "Berserker's Fury",
+      "Haas's Claws",
+      "Blade of Despair"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Freya’s first major spike is ultimate unlock, enabling shielded dives and ranged splash basics to win skirmishes; she becomes much more consistent once crit/lifesteal items come online. In late game she can still shred if she reaches targets, but she’s more vulnerable to burst/CC and backline peel compared to true late-game DPS carries."
+  },
+  "proBuilds": [
+    {
+      "player": "Void",
+      "games": 956,
+      "items": [
+        "Sea Halberd",
+        "Tough Boots",
+        "Golden Staff",
+        "War Axe",
+        "Rose Gold Meteor",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "Thoihenbi♡Soram",
+      "games": 777,
+      "items": [
+        "Tough Boots",
+        "Corrosion Scythe",
+        "Sky Piercer",
+        "Endless Battle",
+        "Blade of Despair",
+        "Malefic Roar"
+      ]
+    },
+    {
+      "player": "Freya ni RonSkie",
+      "games": 383,
+      "items": [
+        "Corrosion Scythe",
+        "War Axe",
+        "Endless Battle",
+        "Windtalker",
+        "Blade of Despair",
+        "Malefic Roar"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/freya/video-0-0.mp4",
+    "skill1": "/videos/heroes/freya/video-1-0.mp4",
+    "skill2": "/videos/heroes/freya/video-2-0.mp4",
+    "ultimate": "/videos/heroes/freya/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 2",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Use Freya's Ultimate to dive the enemy backline and start dealing Splash Damage. Use her 1st Skill to CC enemies and shield herself, then alternate between her 2nd Skill and AoE Basic Attacks to bring them down."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 3",
+        "Skill 2",
+        "Passive",
+        "Skill 2",
+        "Passive"
+      ],
+      "description": "Use Freya's 1st Skill to close the gap on enemies and knock them Airborne while giving herself a shield. Use her 2nd Skill once followed by 2 enhanced Basic Attacks to make use of the Attack Speed bonus and generate more Sacred Orbs from her Passive."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Franco",
+      "relationship": "COMRADE"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Gatotkaca",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Bane",
+      "relationship": "FEUDS"
+    }
+  ],
+  "region": "Northern Vale",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Baxia",
+      "winrateDelta": 1.79
+    },
+    {
+      "name": "Khaleed",
+      "winrateDelta": 1.47
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": 1.39
+    },
+    {
+      "name": "Marcel",
+      "winrateDelta": 1.26
+    },
+    {
+      "name": "Zhuxin",
+      "winrateDelta": 1.19
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Masha",
+      "winrateDelta": -2.83
+    },
+    {
+      "name": "Aldous",
+      "winrateDelta": -2.09
+    },
+    {
+      "name": "Phoveus",
+      "winrateDelta": -1.86
+    },
+    {
+      "name": "Ruby",
+      "winrateDelta": -1.82
+    },
+    {
+      "name": "Esmeralda",
+      "winrateDelta": -1.61
+    }
+  ],
+  "metaScore": 25.02,
+  "metaRank": 19,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 2.44
+      },
+      {
+        "name": "Mathilda",
+        "advantage": 2.31
+      },
+      {
+        "name": "Aldous",
+        "advantage": 1.96
+      },
+      {
+        "name": "Harith",
+        "advantage": 1.91
+      },
+      {
+        "name": "Arlott",
+        "advantage": 1.62
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Phoveus",
+        "advantage": 4.86
+      },
+      {
+        "name": "Minsitthar",
+        "advantage": 4.86
+      },
+      {
+        "name": "Baxia",
+        "advantage": 2.68
+      },
+      {
+        "name": "Barats",
+        "advantage": 2
+      },
+      {
+        "name": "Karrie",
+        "advantage": 1.52
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Bisa bantai, 1 vs 5 kalo jadi",
+      "author": "community",
+      "votes": 24,
+      "items": [
+        "Tought Boots",
+        "Sky Piercer",
+        "Blade of Despair",
+        "Endless Battle",
+        "Hunter Strike",
+        "Malefic Roar"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "Tips: Erly rusuh musuh sama fokus nyari item dulu, kalo war liat skill cc musuh masih ada apa cd, pokoknya join akhir.enak di kombo sama tank montag 5 kalo ga angela",
+      "tags": [],
+      "lastUpdated": "2025-10-25T01:11:53.580223+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "critical ",
+      "author": "community",
+      "votes": 8,
+      "items": [
+        "Blade of Despair",
+        "Tought Boots",
+        "Berserker Fury",
+        "Great Dragon Spear",
+        "Malefic Gun",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "ad7a8023-cc1f-463d-b750-b523b09e531e",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Inspire",
+      "skillOrder": null,
+      "notes": "Untuk menghilangkan back laner musuh secara singkat ",
+      "tags": [],
+      "lastUpdated": "2025-10-22T12:35:05.58893+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Build Freya Revamp (Sustain)",
+      "author": "community",
+      "votes": 5,
+      "items": [
+        "Tought Boots",
+        "Golden Staff",
+        "War Axe",
+        "Oracle",
+        "Queen's Wings",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "96e08972-7992-41d6-942d-39059f0e23c3",
+          "tier2": "45872951-faf4-4311-8557-7c1a534abbe4",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "sustain, bisa open war, usahakan hindari atau ban Hero kaya Franco kaja kalea, bisa paling depan di war asalkan punya ulti. oh ya, spell bisa fliker atau vegeance bebas, item terakhir bebas, bisa brute force, bisa immortal, queen wings opsional ya, itu gw pake buat nambahin damage kalo darah berkurang.",
+      "tags": [],
+      "lastUpdated": "2025-11-09T09:05:05.474157+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Freya gw 2648 match 74%",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Tought Boots",
+        "Sky Piercer",
+        "Blade of Despair",
+        "Endless Battle",
+        "Malefic Roar",
+        "Berserker Fury"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "e4277478-d370-4c49-96d5-d4b92e7dc5e0"
+        }
+      },
+      "spell": "Flame Retribution",
+      "skillOrder": null,
+      "notes": "jungler kalo dirusuh gebukin aja pd aja jangan main kalem barbar aja pd damage kecuali musuhlu tebel kalo early, atau counter kek minshi, khufra, franco, nunggu mereka keluat skill ngeselinnya, gausah takut lawan esme kalo bod sama sea halberd jadi, freya > all assasin jung gausah takut by1 lawan fanny ling lance haya apalagi kalian retri merah, jangan ragu ragu ngeluarin retri merah kecuali mau lord menit 18.  gitu aja lainnya kalian pelajarin sendiri nb: first item gw emang skypiercer bgt habis skypiercer lgsg aja sepatu trs bod.",
+      "tags": [],
+      "lastUpdated": "2025-10-25T06:41:26.648818+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S17 WEEK 2 DAY 3 EVOS.Erlan",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Warrior Boots",
+        "Endless Battle",
+        "War Axe",
+        "Corrosion Scythe",
+        "Malefic Roar",
+        "Rose Gold Meteor"
+      ],
+      "emblem": {
+        "name": "Fighter",
+        "talents": {
+          "tier1": "1cce7851-f92e-4f6e-980d-b9941fbcf151",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "f1b022f6-aac4-4b0b-b573-ab99c4cc2f65"
+        }
+      },
+      "spell": "Vengeance",
+      "skillOrder": null,
+      "notes": "( BTR VS EVOS GAME 1 ) MPL INDONESIA SEASON 17 WEEK 2 DAY 3 5 APRIL 2026",
+      "tags": [],
+      "lastUpdated": "2026-04-05T15:10:57.809887+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Berserker's",
+        "Fury"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Inspire",
+      "cost": 11650,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "Sky",
+        "Piercer"
+      ],
+      "emblem": {
+        "name": "Assassin Emblem",
+        "talents": []
+      },
+      "spell": "Retribution",
+      "cost": 10750,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Corrosion",
+        "Scythe",
+        "War",
+        "Axe"
+      ],
+      "emblem": {
+        "name": "Fighter Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 11080,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "id": "minotaur",
+  "name": "Minotaur",
+  "heroName": "Minotaur",
+  "role": [
+    "Tank",
+    "Support"
+  ],
+  "specialty": [
+    "Crowd Control"
+  ],
+  "lane": "Roam",
+  "lanes": [
+    "Roam"
+  ],
+  "flex_lanes": [],
+  "releaseYear": 2024,
+  "difficulty": 5,
+  "metaTier": "B",
+  "baseStats": {
+    "hp": 2841,
+    "hpRegen": 8.6,
+    "mana": "0",
+    "manaRegen": "0",
+    "physicalAttack": 112,
+    "physicalDefense": 26,
+    "magicPower": 0,
+    "magicDefense": 15,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 100,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Rage Incarnate",
+      "description": "When Minotaur applies a control effect to an enemy hero with a skill, he will also reduce their Hybrid Defense by 5 (+0.5*Hero Level) for 2s. When Minotaur heals an ally hero with a skill, he will also increase their Hybrid Defense by 5 (+0.5*Hero Level) for 2s. These effects are doubled in (Enraged) state.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Rage_Incarnate",
+      "tips": "Be always on the lead. Position yourself in front of the creeps and more often, in front of the hero you're sharing the lane with. This will force your enemy hero and creeps to attack you first which will help your rage meter to be filled.",
+      "iconUrl": "/raw-assets/skill_icons/minotaur/rage_incarnate.png",
+      "displayLabel": "Passive",
+      "skillSlot": "passive"
+    },
+    "skill1": {
+      "name": "Despair Stomp",
+      "description": "Minotaur jumps to the target location, dealing 280( +60% Total Physical Attack) (Physical Damage) to enemies in the area and briefly knocking them airborne. Enemies hit will also be slowed by 40% while Minotaur enhances his Basic Attacks to deal ( +3% Total HP) extra (Physical Damage) for 2s. (Enraged): Increases the AOE range and the damage dealt by ( +3% Total HP) (Physical Damage).",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Despair_Stomp",
+      "tips": "As stated Despair Hammer deals great damage especially in rage mode. Maximize it first next to the ultimate for greater crowd control. Minotaur is a manaless hero so abuse using this skill for greater CS.",
+      "iconUrl": "/raw-assets/skill_icons/minotaur/despair_stomp.png",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1"
+    },
+    "skill2": {
+      "name": "Motivation Roar",
+      "description": "Minotaur motivates himself and nearby allied heroes, restoring 260( +100% Total Magic Power) HP to them and healing himself based on his lost HP. (Enraged): Minotaur gains (Enraged Regen) for 2s, during which he recovers HP each time he's hit by a Basic Attack.",
+      "cooldown": [
+        10
+      ],
+      "manaCost": [
+        50
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Motivation_Roar",
+      "tips": "Known as a healing ability, Very good sustain better than Rafaela wherein you don’t need to spend mana to regen your HP. This skill is usually maximized during rage mode because aside from great heal, this will allow Minotaur to have a great Physical and magic defense.",
+      "iconUrl": "/raw-assets/skill_icons/minotaur/motivation_roar.png",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2"
+    },
+    "ultimate": {
+      "name": "Minoan Fury",
+      "description": "Minotaur enters (Enraged) state and smashes the ground 3 times. The first 2 hits deal 180( +85% Total Physical Attack) (Physical Damage) to nearby enemies and slow them by 70%, while the final hit deals 200( +85% Total Physical Attack) (True Damage) and knocks targets airborne. Minotaur is immune to control effects during this attack. The (Enraged) state lasts 12s and enhances Minotaur's skills for the duration.",
+      "cooldown": [
+        30
+      ],
+      "manaCost": [
+        100
+      ],
+      "damageType": "PHYSICAL",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [],
+      "strategicTags": [],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Minoan_Fury",
+      "tips": "AoE damage and crowd control. This will makes your opponent helpless. With this skill they don’t have a chance to disengage unless they are going to use flicker. With a full AD build, your ultimate can do an insta kill to marksman and other squishy hero.",
+      "iconUrl": "/raw-assets/skill_icons/minotaur/minoan_fury.png",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate"
+    }
+  },
+  "strategicData": {
+    "draftSignals": [
+      "Intelligence profile incomplete"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Frontline Engage",
+      "Crowd Control",
+      "Vision Control",
+      "Team Enabler",
+      "Map Rotation"
+    ],
+    "tempoClassification": "Mid",
+    "powerSpikeTiming": [
+      "Level 2 (Roam Item)",
+      "Mid Game"
+    ],
+    "objectiveControlValue": 5,
+    "snowballPotential": 5,
+    "flexibilityRating": 5,
+    "deceptionValue": 5,
+    "draftPhilosophyTags": [],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Cyclops",
+        "Masha",
+        "Khufra",
+        "Popol and Kupa"
+      ],
+      "weakAgainst": [
+        "Yve",
+        "Ixia",
+        "Beatrix",
+        "Kimmy",
+        "Luo Yi"
+      ],
+      "synergyWith": [
+        "Saber",
+        "Natalia",
+        "Chou",
+        "Arlott",
+        "Paquito"
+      ]
+    }
+  },
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 2.8
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 2.5
+      },
+      {
+        "name": "Masha",
+        "advantage": 2.4
+      },
+      {
+        "name": "Khufra",
+        "advantage": 2.3
+      },
+      {
+        "name": "Popol and Kupa",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Yve",
+        "advantage": 2.7
+      },
+      {
+        "name": "Ixia",
+        "advantage": 2.5
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 2.3
+      },
+      {
+        "name": "Kimmy",
+        "advantage": 2.1
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 1.9
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Saber",
+        "synergy": 2.5
+      },
+      {
+        "name": "Natalia",
+        "synergy": 2.1
+      },
+      {
+        "name": "Chou",
+        "synergy": 1.8
+      },
+      {
+        "name": "Arlott",
+        "synergy": 1.8
+      },
+      {
+        "name": "Paquito",
+        "synergy": 1.4
+      }
+    ],
+    "counterHeroes": [],
+    "strongAgainstReason": "Minotaur is strong against heroes that rely on chaining skills or attacks, like Paquito and Julian because he can interrupt their combos with his CC.",
+    "weakAgainstReason": "Minotaur is countered by long-range Marksmen like Layla and Lesley since his lack of speed makes him an easy target.",
+    "synergyReason": "Minotaur works best with burst damage Marksmen, such as Granger and Melissa, since his CC's give them more opportunities to deal damage."
+  },
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Minotaur adalah tank dengan kemampuan crowd control untuk memproteksi tim dan menginisiasi teamfight.",
+  "playstyleTags": [
+    "Initiate",
+    "CC Chain"
+  ],
+  "difficultyTags": [
+    "Macro",
+    "Timing"
+  ],
+  "draftTags": [
+    "First Pick Priority",
+    "CC Coverage"
+  ],
+  "counterTags": [
+    "True Damage",
+    "Sustained DPS",
+    "Anti-Heal"
+  ],
+  "synergyTags": [
+    "Enables Carry",
+    "Pairs with Burst",
+    "CC Chain Partner"
+  ],
+  "macroTags": [
+    "Frontline Engage",
+    "Crowd Control",
+    "Vision Control",
+    "Team Enabler",
+    "Map Rotation"
+  ],
+  "powerSpikeTags": [
+    "Level 2 (Roam Item)",
+    "Mid Game"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 52.6,
+  "pickRate": 0.4,
+  "banRate": 5.6,
+  "heroAttributes": {
+    "durability": 100,
+    "offense": 10,
+    "abilityEffects": 80,
+    "difficulty": 40
+  },
+  "powerCurve": {
+    "early": 55,
+    "mid": 82,
+    "late": 72,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 8"
+    ],
+    "coreItems": [
+      "Dominance Ice",
+      "Athena's Shield",
+      "Immortality"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "Early is serviceable with short CC + sustain trades, but he’s not very threatening until teamfights start. He peaks in mid game once Ultimate engages decide Turtle fights, and remains strong late as a frontliner though he becomes more team-reliant versus full-damage builds."
+  },
+  "proBuilds": [
+    {
+      "player": "IM•ilank",
+      "games": 1495,
+      "items": [
+        "Oracle",
+        "Favor Magic Shoes",
+        "Flask of the Oasis",
+        "Dominance Ice",
+        "Antique Cuirass",
+        "Immortality"
+      ]
+    },
+    {
+      "player": "Galzy x F4N’T",
+      "games": 1424,
+      "items": [
+        "Flask of the Oasis",
+        "Oracle",
+        "Favor Magic Shoes",
+        "Dominance Ice",
+        "Chastise Pauldron",
+        "Guardian Helmet"
+      ]
+    },
+    {
+      "player": "Tung Tung Sahur",
+      "games": 1128,
+      "items": [
+        "Favor Tough Boots",
+        "Flask of the Oasis",
+        "Oracle",
+        "Chastise Pauldron",
+        "Guardian Helmet"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/minotaur/video-0-0.mp4",
+    "skill1": "/videos/heroes/minotaur/video-1-0.mp4",
+    "skill2": "/videos/heroes/minotaur/video-2-0.mp4",
+    "ultimate": "/videos/heroes/minotaur/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 1",
+        "Skill 3",
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In teamfights, use Minotaur's 1st Skill to jump in and knock enemies airborne, then use his Ultimate to keep them CC'd and enter Enraged state. Use his 1st Skill to knock enemies airborne again and continue with Basic Attacks. Use his 2nd Skill when he or his team needs healing."
+    },
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 1",
+        "Passive",
+        "Skill 2"
+      ],
+      "description": "In the laning phase, use Minotaur's 1st Skill to knock the enemy airborne and reduce their Defense, then deal damage with his enhanced Basic Attacks. Use his 2nd Skill to heal him and his teammate to come out ahead in the trade."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Granger",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Melissa",
+      "relationship": "ASSIST"
+    }
+  ],
+  "region": "Agelta Drylands",
+  "race": "Minotaur",
+  "bestTeammates": [
+    {
+      "name": "Lolita",
+      "winrateDelta": 4.31
+    },
+    {
+      "name": "Faramis",
+      "winrateDelta": 3.08
+    },
+    {
+      "name": "Joy",
+      "winrateDelta": 2.14
+    },
+    {
+      "name": "Natan",
+      "winrateDelta": 1.98
+    },
+    {
+      "name": "Saber",
+      "winrateDelta": 1.82
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Mathilda",
+      "winrateDelta": -38.46
+    },
+    {
+      "name": "Chip",
+      "winrateDelta": -17.7
+    },
+    {
+      "name": "Khufra",
+      "winrateDelta": -16.87
+    },
+    {
+      "name": "Estes",
+      "winrateDelta": -16.57
+    },
+    {
+      "name": "Johnson",
+      "winrateDelta": -16.15
+    }
+  ],
+  "metaScore": 21.13,
+  "metaRank": 32,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 2.84
+      },
+      {
+        "name": "Cyclops",
+        "advantage": 2.76
+      },
+      {
+        "name": "Eudora",
+        "advantage": 2.66
+      },
+      {
+        "name": "Lunox",
+        "advantage": 2.62
+      },
+      {
+        "name": "Claude",
+        "advantage": 2.1
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Valentina",
+        "advantage": 3.78
+      },
+      {
+        "name": "Joy",
+        "advantage": 2.83
+      },
+      {
+        "name": "Beatrix",
+        "advantage": 2.54
+      },
+      {
+        "name": "Fanny",
+        "advantage": 2.41
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 2.29
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "Minotaur demage",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Fleeting Time",
+        "Blade of the Heptaseas",
+        "Hunter Strike",
+        "Malefic Roar",
+        "Sea Halberd",
+        "Blade of Despair"
+      ],
+      "emblem": {
+        "name": "Assassin",
+        "talents": {
+          "tier1": "8b232e89-893f-4398-8395-13815aa28886",
+          "tier2": "6ef0f8d5-cc87-4926-99db-0a42394b0590",
+          "tier3": "67eb88b1-6b74-47ec-9936-4797f84945dc"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Skill 1 + fliker,\nUltimate,\nSkill 1,\nBasick attack",
+      "tags": [],
+      "lastUpdated": "2025-09-26T11:28:14.594621+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Open War",
+      "author": "community",
+      "votes": 2,
+      "items": [
+        "Tought Boots",
+        "Flask of the Oasis",
+        "Oracle",
+        "Dominance Ice",
+        "Radiant Armor",
+        "Antique Cuirass"
+      ],
+      "emblem": {
+        "name": "Tank",
+        "talents": {
+          "tier1": "7ff592c2-d748-49ce-b375-85c3ce9698c6",
+          "tier2": "06b244be-f0c3-4cde-97b2-2e5a3b018661",
+          "tier3": "dbd4d98a-7e58-4571-9cc6-98abbb230732"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "gunakan skil 1 & 2 terlebih dahulu sebelum open war, karna setelah kalian open war dengan ultimate, coldown skil 1 & 2 langsung reset dan jadi sangat singkat, kalian tap-tap skil 1 & 2 agar musuh terkena CC dan Bisa Heal Tim kalian terus-terusan. \nusahakan berada di tengah-tengah area war agar kamu bisa TB Tim dan efek skill 2 nya kena ke semua Rekan Tim. ",
+      "tags": [],
+      "lastUpdated": "2025-11-03T21:04:29.891813+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Tough",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Flask",
+        "the"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 10710,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Rapid",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Fleeting",
+        "Time"
+      ],
+      "emblem": {
+        "name": "Support Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11250,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Warrior",
+        "Boots",
+        "Dominance",
+        "Ice",
+        "Blade",
+        "Armor"
+      ],
+      "emblem": {
+        "name": "Tank Emblem",
+        "talents": []
+      },
+      "spell": "Vengeance",
+      "cost": 10790,
+      "notes": null
+    }
+  ]
+}

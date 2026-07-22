@@ -1,0 +1,697 @@
+{
+  "id": "zhuxin",
+  "heroName": "Zhuxin",
+  "role": [
+    "Mage"
+  ],
+  "specialty": [
+    "Damage",
+    "Crowd Control"
+  ],
+  "lane": "Mid Lane",
+  "releaseYear": 2024,
+  "baseStats": {
+    "hp": 2540,
+    "hpRegen": 7.4,
+    "mana": 480,
+    "manaRegen": 3.6,
+    "physicalAttack": 108,
+    "physicalDefense": 20,
+    "magicPower": 0,
+    "magicDefense": 12,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 0,
+    "movementSpeed": 250
+  },
+  "skills": {
+    "passive": {
+      "name": "Crimson Butterflies",
+      "description": "Zhuxin converts max mana into butterflies that allow her to cast her skill 2 continuously.",
+      "cooldown": [],
+      "manaCost": [],
+      "damageType": "NONE",
+      "scaling": [
+        "None"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Resource Management"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Crimson_Butterflies",
+      "displayLabel": "Passive",
+      "skillSlot": "passive",
+      "iconUrl": "/raw-assets/skill_icons/zhuxin/crimson_butterflies.png"
+    },
+    "skill1": {
+      "name": "Fluttering Grace",
+      "description": "Deals Magic Damage in an area and slows enemies.",
+      "cooldown": [
+        5,
+        4.6,
+        4.2,
+        3.8,
+        3.4,
+        3
+      ],
+      "manaCost": [
+        40,
+        45,
+        50,
+        55,
+        60,
+        65
+      ],
+      "damageType": "MAGIC",
+      "scaling": [
+        "40% Total Magic Power"
+      ],
+      "crowdControlType": [
+        "SLOW"
+      ],
+      "strategicTags": [
+        "Poke",
+        "Wave Clear"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Fluttering_Grace",
+      "displayLabel": "Skill 1",
+      "skillSlot": "skill1",
+      "iconUrl": "/raw-assets/skill_icons/zhuxin/fluttering_grace.png"
+    },
+    "skill2": {
+      "name": "Lantern Flare",
+      "description": "Consumes mana continuously to deal damage and pull enemies together.",
+      "cooldown": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "manaCost": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "damageType": "MAGIC",
+      "scaling": [
+        "30% Total Magic Power"
+      ],
+      "crowdControlType": [
+        "PULL"
+      ],
+      "strategicTags": [
+        "DPS",
+        "AoE CC",
+        "Teamfight Engine"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Lantern_Flare",
+      "displayLabel": "Skill 2",
+      "skillSlot": "skill2",
+      "iconUrl": "/raw-assets/skill_icons/zhuxin/lantern_flare.png"
+    },
+    "ultimate": {
+      "name": "Crimson Beacon",
+      "description": "Zhuxin dashes and gains a shield. Butterflies continuously damage nearby enemies.",
+      "cooldown": [
+        40,
+        36,
+        32
+      ],
+      "manaCost": [
+        100,
+        120,
+        140
+      ],
+      "damageType": "MAGIC",
+      "scaling": [
+        "60% Total Magic Power"
+      ],
+      "crowdControlType": [
+        "NONE"
+      ],
+      "strategicTags": [
+        "Survivability",
+        "AoE Damage",
+        "Reposition"
+      ],
+      "comboUsage": "",
+      "strategicPurpose": "",
+      "iconName": "Crimson_Beacon",
+      "displayLabel": "Ultimate",
+      "skillSlot": "ultimate",
+      "iconUrl": "/raw-assets/skill_icons/zhuxin/crimson_beacon.png"
+    }
+  },
+  "name": "Zhuxin",
+  "strategicData": {
+    "draftSignals": [
+      "Sustain mage preferred",
+      "Strong teamfight control"
+    ],
+    "hiddenGameplans": [],
+    "macroIdentity": [
+      "Teamfight Controller"
+    ],
+    "tempoClassification": "Late",
+    "powerSpikeTiming": [
+      "Level 4 & Clock of Destiny"
+    ],
+    "counterSystem": {
+      "strongAgainst": [
+        "Lolita",
+        "Khufra",
+        "Gloo",
+        "Johnson",
+        "Roger"
+      ],
+      "weakAgainst": [
+        "Diggie",
+        "Marcel",
+        "Valir",
+        "Hayabusa",
+        "Saber"
+      ],
+      "synergyWith": [
+        "Valentina",
+        "Kagura",
+        "Odette",
+        "Yve",
+        "Karrie"
+      ]
+    },
+    "deceptionValue": 5
+  },
+  "lanes": [
+    "Mid Lane"
+  ],
+  "mechanicCategory": [
+    "Standard"
+  ],
+  "mechanicNote": "Zhuxin adalah mage dengan kemampuan burst/poke damage dari jarak aman.",
+  "playstyleTags": [
+    "Burst",
+    "Poke"
+  ],
+  "difficultyTags": [
+    "Positioning"
+  ],
+  "draftTags": [
+    "Zone Control"
+  ],
+  "counterTags": [
+    "Gap Close",
+    "Silence",
+    "Burst"
+  ],
+  "synergyTags": [
+    "Needs Peel",
+    "Pairs with CC"
+  ],
+  "macroTags": [
+    "Teamfight Controller"
+  ],
+  "powerSpikeTags": [
+    "Level 4 & Clock of Destiny"
+  ],
+  "metaSource": "mlbb.tools",
+  "metaUpdatedAt": "2026-06-08",
+  "winRate": 51,
+  "pickRate": 0.6,
+  "banRate": 23,
+  "matchupSystem": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 6.6
+      },
+      {
+        "name": "Khufra",
+        "advantage": 3.5
+      },
+      {
+        "name": "Gloo",
+        "advantage": 2.7
+      },
+      {
+        "name": "Johnson",
+        "advantage": 2.6
+      },
+      {
+        "name": "Roger",
+        "advantage": 2.6
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Diggie",
+        "advantage": 3.4
+      },
+      {
+        "name": "Marcel",
+        "advantage": 3
+      },
+      {
+        "name": "Valir",
+        "advantage": 2.7
+      },
+      {
+        "name": "Hayabusa",
+        "advantage": 2.7
+      },
+      {
+        "name": "Saber",
+        "advantage": 2.6
+      }
+    ],
+    "synergyHeroes": [
+      {
+        "name": "Valentina",
+        "synergy": 7.2
+      },
+      {
+        "name": "Kagura",
+        "synergy": 3.9
+      },
+      {
+        "name": "Odette",
+        "synergy": 3.4
+      },
+      {
+        "name": "Yve",
+        "synergy": 2.2
+      },
+      {
+        "name": "Karrie",
+        "synergy": 2.2
+      }
+    ],
+    "strongAgainstReason": "Zhuxin is a good counter to enemies with less range and low mobility, such as Popol and Kupa and Cyclops, where she has a big advantage.",
+    "weakAgainstReason": "Like most Mages, Zhuxin is countered by heroes with high mobility and burst, such as Fanny and Saber, who can quickly take her down.",
+    "synergyReason": "Zhuxin can provide great damage and CC, but she can't realize her potential until later in the game, so heroes with CC can help Zhuxin get through the early period. Zhuxin also works well with sustained damage heroes like Belerick, Kimmy, and Cici to dish out a surprising amount of damage."
+  },
+  "heroAttributes": {
+    "durability": 40,
+    "offense": 80,
+    "abilityEffects": 80,
+    "difficulty": 30
+  },
+  "powerCurve": {
+    "early": 60,
+    "mid": 80,
+    "late": 70,
+    "spikeLevels": [
+      "Lv 2",
+      "Lv 4",
+      "Lv 9"
+    ],
+    "coreItems": [
+      "Ice Queen Wand",
+      "Holy Crystal",
+      "Divine Glaive"
+    ],
+    "dominantPhase": "Mid Game",
+    "description": "She has workable early poke/clear via Lantern Flare stacking, but her threat is much higher once Ultimate gives blink + shield to safely set up captures. Mid-game teamfights are her peak because she can repeatedly stack, capture, and reposition enemies; late remains strong with pen/AP, though she becomes more reliant on positioning against burst and hard engage."
+  },
+  "proBuilds": [
+    {
+      "player": "Chellsy美.",
+      "games": 1231,
+      "items": [
+        "Smite Tough Boots",
+        "Clock of Destiny",
+        "Glowing Wand",
+        "Ice Queen Wand",
+        "Brute Force Breastplate",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Zια.",
+      "games": 648,
+      "items": [
+        "Tough Boots",
+        "Clock of Destiny",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Brute Force Breastplate",
+        "Starlium Scythe"
+      ]
+    },
+    {
+      "player": "Dhiq x F4N'T",
+      "games": 677,
+      "items": [
+        "Tough Boots",
+        "Clock of Destiny",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Brute Force Breastplate"
+      ]
+    }
+  ],
+  "skillVideos": {
+    "passive": "/videos/heroes/zhuxin/video-0-0.mp4",
+    "skill1": "/videos/heroes/zhuxin/video-1-0.mp4",
+    "skill2": "/videos/heroes/zhuxin/video-2-0.mp4",
+    "ultimate": "/videos/heroes/zhuxin/video-3-0.mp4"
+  },
+  "combos": [
+    {
+      "name": "LANING",
+      "sequence": [
+        "Skill 2",
+        "Passive",
+        "Passive"
+      ],
+      "description": "In the laning phase, use Zhuxin's 1st Skill to slow the opponent and increase her own Movement Speed, then use her 2nd Skill from a safe position and try to hit the Minions and the opponent at the same time to both poke and clear the lane. Once the enemy has enough stacks, throw them into the Minions for additional damage."
+    },
+    {
+      "name": "TEAMFIGHT",
+      "sequence": [
+        "Skill 2",
+        "Skill 1",
+        "Passive",
+        "Passive"
+      ],
+      "description": "In teamfights, use Zhuxin's Ultimate to blink into a good position, then follow up with her 1st Skill to slow the enemy team and use her 2nd Skill to build stacks at a safe distance. Try to capture as many enemies as possible with her 2nd Skill, then throw them out of position while also grouping them up."
+    }
+  ],
+  "connections": [
+    {
+      "name": "Cici",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Kimmy",
+      "relationship": "ASSIST"
+    },
+    {
+      "name": "Belerick",
+      "relationship": "ASSIST"
+    }
+  ],
+  "difficultyLabel": "Easy",
+  "region": "Cadia Riverlands",
+  "race": "Human",
+  "bestTeammates": [
+    {
+      "name": "Yve",
+      "winrateDelta": 14.39
+    },
+    {
+      "name": "Lunox",
+      "winrateDelta": 6.43
+    },
+    {
+      "name": "Mathilda",
+      "winrateDelta": 5.5
+    },
+    {
+      "name": "Cecilion",
+      "winrateDelta": 5.16
+    },
+    {
+      "name": "Diggie",
+      "winrateDelta": 4.5
+    }
+  ],
+  "worstTeammates": [
+    {
+      "name": "Luo Yi",
+      "winrateDelta": -10.49
+    },
+    {
+      "name": "Valentina",
+      "winrateDelta": -6.86
+    },
+    {
+      "name": "Lylia",
+      "winrateDelta": -4.97
+    },
+    {
+      "name": "Kaja",
+      "winrateDelta": -4.4
+    },
+    {
+      "name": "Gord",
+      "winrateDelta": -4
+    }
+  ],
+  "metaScore": 21.89,
+  "metaRank": 30,
+  "mlcSource": "mlcounters.app",
+  "mlcUpdatedAt": "2026-06-08",
+  "mlcountersMatchup": {
+    "strongAgainst": [
+      {
+        "name": "Lolita",
+        "advantage": 8.02
+      },
+      {
+        "name": "Khufra",
+        "advantage": 4.48
+      },
+      {
+        "name": "Natalia",
+        "advantage": 3.83
+      },
+      {
+        "name": "Lunox",
+        "advantage": 3.6
+      },
+      {
+        "name": "Aldous",
+        "advantage": 3.17
+      }
+    ],
+    "weakAgainst": [
+      {
+        "name": "Faramis",
+        "advantage": 3.41
+      },
+      {
+        "name": "Zhask",
+        "advantage": 3.35
+      },
+      {
+        "name": "Luo Yi",
+        "advantage": 2.53
+      },
+      {
+        "name": "Rafaela",
+        "advantage": 2.5
+      },
+      {
+        "name": "Arlott",
+        "advantage": 2.46
+      }
+    ]
+  },
+  "communityBuilds": [
+    {
+      "source": "molebuild",
+      "buildName": "MPL ID S16 D1 W5 : ONIC.Sanz",
+      "author": "community",
+      "votes": 19,
+      "items": [
+        "Tought Boots",
+        "Elegant Gem",
+        "Glowing Wand",
+        "Sky Piercer",
+        "Blood Wings"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "(EVOS VS ONIC) Game 3",
+      "tags": [],
+      "lastUpdated": "2025-09-23T07:53:41.541324+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "zhuxin jago (copy top 1 global)",
+      "author": "community",
+      "votes": 7,
+      "items": [
+        "Rapid Boots",
+        "Clock of Destiny",
+        "Sky Piercer",
+        "Glowing Wand",
+        "Antique Cuirass",
+        "Immortality"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Purify",
+      "skillOrder": null,
+      "notes": "buatan king kaiden",
+      "tags": [],
+      "lastUpdated": "2026-04-10T05:45:34.171955+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "Mana Unlimited",
+      "author": "community",
+      "votes": 6,
+      "items": [
+        "Clock of Destiny",
+        "Tought Boots",
+        "Glowing Wand",
+        "Wishing Lantern",
+        "Blood Wings",
+        "Lightning Truncheon"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "Buat solo Player bisa Banget di coba di jamin win streak",
+      "tags": [],
+      "lastUpdated": "2025-10-14T20:46:58.066509+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "tahan lama and bisa win",
+      "author": "community",
+      "votes": 4,
+      "items": [
+        "Glowing Wand",
+        "Arcane Boots",
+        "Blood Wings",
+        "Wishing Lantern",
+        "Divine Glaive",
+        "Winter Crown"
+      ],
+      "emblem": {
+        "name": "Mage",
+        "talents": {
+          "tier1": "2ed523e9-944b-40c3-86e1-aaa345617891",
+          "tier2": "143ef1e0-f848-4b66-8759-6fdfc39d9405",
+          "tier3": "30336e34-0929-47a6-b228-e99dbc7d9faf"
+        }
+      },
+      "spell": "Flicker",
+      "skillOrder": null,
+      "notes": "kenapa ga ada skyp?karn dsini hrus nahan lama bukn kill sekian terima kasih",
+      "tags": [],
+      "lastUpdated": "2025-09-13T18:07:06.293894+00:00"
+    },
+    {
+      "source": "molebuild",
+      "buildName": "tahan badan, backuper, sustain.",
+      "author": "community",
+      "votes": 3,
+      "items": [
+        "Clock of Destiny",
+        "Demon Shoes",
+        "Glowing Wand",
+        "Enchanted Talisman",
+        "Guardian Helmet",
+        "Radiant Armor"
+      ],
+      "emblem": {
+        "name": "Common",
+        "talents": {
+          "tier1": "fbf4d20d-1eb4-4fb4-8d43-18e7952d88d1",
+          "tier2": "383a91d7-183e-435e-ae43-a97456261361",
+          "tier3": "4b67327b-150f-42c3-a9b0-192a598168f5"
+        }
+      },
+      "spell": "Revitalize",
+      "skillOrder": null,
+      "notes": "bagus untuk tim yang kekurangan hero yang tebal dan di saat kondisi 2-5 hero tim lawan adalah hero jalan kaki\nuntuk glowing wand bisa diganti Antique Cuirass jika musuh minim hero yang punya lifesteal, heal, dan regen",
+      "tags": [],
+      "lastUpdated": "2025-11-27T06:57:25.320356+00:00"
+    }
+  ],
+  "mlbhubBuilds": [
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 1",
+      "items": [
+        "Demon",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Ice",
+        "Queen"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Flicker",
+      "cost": 11160,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 2",
+      "items": [
+        "Demon",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Sprint",
+      "cost": 12190,
+      "notes": null
+    },
+    {
+      "source": "mlbbhub",
+      "buildName": "Set 3",
+      "items": [
+        "Tough",
+        "Boots",
+        "Clock",
+        "Destiny",
+        "Glowing",
+        "Wand"
+      ],
+      "emblem": {
+        "name": "Mage Emblem",
+        "talents": []
+      },
+      "spell": "Purify",
+      "cost": 10630,
+      "notes": null
+    }
+  ]
+}
