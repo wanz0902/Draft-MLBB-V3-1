@@ -23,6 +23,8 @@ import { getDb, getDbHealth, seedHeroesIfEmpty, needsRescrape, logAIRequest, rec
 import { getNeonPool } from './lib/neon.js';
 import { configurePassport } from './server/auth/google.js';
 import authRoutes from './server/auth/routes.js';
+import profileRoutes from './server/auth/profile.js';
+import accountRoutes from './server/auth/account.js';
 import { batchScrapeHeroes, scrapeAndSaveHero } from './lib/scraper/hero-scraper.js';
 import { getGatewayQueueStatus } from './lib/scraper/liquipedia-gateway.js';
 import { scrapeTournamentStats, scrapeTournament } from './lib/scraper/tournament-scraper.js';
@@ -112,12 +114,52 @@ app.use(session({
     sameSite: 'lax',
   },
 }));
+
+// ——— AUTO-MIGRATION: ensure all profile/membership columns exist ———
+(async () => {
+  try {
+    const pool = getNeonPool();
+    const client = await pool.connect();
+    try {
+      const migrations = [
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS bio TEXT DEFAULT ''`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS favorite_role TEXT DEFAULT ''`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS showcase_hero TEXT DEFAULT ''`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS profile_banner TEXT DEFAULT 'default'`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS mlbb_uid TEXT`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS mlbb_sid TEXT`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS mlbb_nickname TEXT`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS profile_completed BOOLEAN DEFAULT FALSE`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS membership_plan TEXT DEFAULT 'free'`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS membership_status TEXT DEFAULT 'inactive'`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS membership_started_at TIMESTAMPTZ`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS membership_expires_at TIMESTAMPTZ`,
+        `ALTER TABLE users ADD COLUMN IF NOT EXISTS password_hash TEXT`,
+      ];
+      for (const sql of migrations) {
+        await client.query(sql);
+      }
+      console.log('[migrate] users table columns verified.');
+    } finally {
+      client.release();
+    }
+  } catch (err: any) {
+    console.error('[migrate] Auto-migration failed:', err.message);
+  }
+})();
+
 configurePassport();
 app.use(passport.initialize());
 app.use(passport.session());
 
 // ——— AUTH ROUTES ———
 app.use('/auth', authRoutes);
+
+// ——— PROFILE ROUTES ———
+app.use('/api', profileRoutes);
+
+// ——— ACCOUNT ROUTES ———
+app.use('/', accountRoutes);
 
 // ——— MATCH HISTORY SERVICE INIT ———
 const matchHistoryService = new MatchHistoryService();

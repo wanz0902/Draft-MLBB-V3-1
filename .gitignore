@@ -71,3 +71,18 @@ asset map.webp
 
 # Zip archives
 *.zip
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+/env
+
+# Dependencies and builds
+node_modules/
+dist/
+deploy-pages/
+
+# Logs
+*.log
+npm-debug.log*

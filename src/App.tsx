@@ -1,12 +1,17 @@
-import React, { Suspense, lazy, useState, useEffect } from "react";
+import React, { Suspense, lazy, useState, useEffect, useCallback, createContext, useContext } from "react";
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { apiUrl } from "./lib/api";
-import Navbar from "./components/Navbar";
-import type { AppUser } from "./components/Navbar";
-import LandingPage from "./landing/components/LandingPage";
+import { AuthProvider, useAuth } from "./lib/auth";
+import { ThemeProvider } from "./lib/theme";
+import { registerLandingCallbacks } from "./landing/integration";
+import AppShell from "./components/AppShell";
+import { RouteGuard, ProtectedRoute } from "./components/RouteGuard";
+import { AuthRequiredProvider } from "./components/auth/AuthRequiredContext";
+import AuthRequiredDialog from "./components/auth/AuthRequiredDialog";
 import AuroraBackground from "./components/ui/animated-background";
 import { HeroStats, Item, TeamStats } from "./types";
 import heroesMaster from "./data/heroes_master.json";
-import { ArrowLeft, CloudLightning, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 
 const DraftSimulator = lazy(() => import("./components/DraftSimulator"));
 const HeroIntelligenceDashboard = lazy(() => import("./components/HeroIntelligenceDashboard"));
@@ -22,49 +27,90 @@ const MacroMapPlanner = lazy(() => import("./components/MacroMapPlanner"));
 const LiquipediaDatabase = lazy(() => import("./components/LiquipediaDatabase"));
 const LiveMatchHub = lazy(() => import("./components/LiveMatchHub"));
 
+const LoginPage = lazy(() => import("./pages/auth/LoginPage"));
+const RegisterPage = lazy(() => import("./pages/auth/RegisterPage"));
+const CompleteProfilePage = lazy(() => import("./pages/auth/CompleteProfilePage"));
+const AppDashboard = lazy(() => import("./pages/app/AppDashboard"));
+const ProfileLayout = lazy(() => import("./pages/profile/ProfileLayout"));
+const ProfileOverview = lazy(() => import("./pages/profile/ProfileOverview"));
+const ProfileMatches = lazy(() => import("./pages/profile/ProfileMatches"));
+const ProfileStatistics = lazy(() => import("./pages/profile/ProfileStatistics"));
+const ProfileFavorites = lazy(() => import("./pages/profile/ProfileFavorites"));
+const ComingSoonPage = lazy(() => import("./pages/profile/ComingSoonPage"));
+const CommunityLayout = lazy(() => import("./pages/community/CommunityLayout"));
+const GlobalChat = lazy(() => import("./pages/community/GlobalChat"));
+const LookingForScrim = lazy(() => import("./pages/community/LookingForScrim"));
+const LookingForTeam = lazy(() => import("./pages/community/LookingForTeam"));
+const LookingForPlayer = lazy(() => import("./pages/community/LookingForPlayer"));
+const EventsLayout = lazy(() => import("./pages/events/EventsLayout"));
+const CommunityCup = lazy(() => import("./pages/events/CommunityCup"));
+const MySquad = lazy(() => import("./pages/events/MySquad"));
+const TournamentHistory = lazy(() => import("./pages/events/TournamentHistory"));
+const ServicesLayout = lazy(() => import("./pages/services/ServicesLayout"));
+const ScrimServices = lazy(() => import("./pages/services/ScrimServices"));
+const RoomTournament = lazy(() => import("./pages/services/RoomTournament"));
+const AccountValuation = lazy(() => import("./pages/services/AccountValuation"));
+const SettingsLayout = lazy(() => import("./pages/settings/SettingsLayout"));
+const SettingsAccount = lazy(() => import("./pages/settings/SettingsAccount"));
+const SettingsProfile = lazy(() => import("./pages/settings/SettingsProfile"));
+const SettingsAppearance = lazy(() => import("./pages/settings/SettingsAppearance"));
+const SettingsMLBB = lazy(() => import("./pages/settings/SettingsMLBB"));
+const SettingsMembership = lazy(() => import("./pages/settings/SettingsMembership"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
+
 function ModuleLoader() {
   return (
-    <div className="flex min-h-[320px] items-center justify-center text-sm text-slate-400">
+    <div className="flex min-h-[320px] items-center justify-center text-sm text-[var(--text-muted)]">
       Loading module...
     </div>
   );
 }
 
-export default function App() {
-  const [currentTab, setCurrentTab] = useState("home");
-  const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState<AppUser | null>(null);
-  const [draftInProgress, setDraftInProgress] = useState(false);
-  const [showExitModal, setShowExitModal] = useState(false);
-  const [pendingTab, setPendingTab] = useState<string | null>(null);
+function AppLoadingScreen() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-[var(--bg-primary)]">
+      <div className="flex flex-col items-center gap-4 animate-pulse">
+        <div className="relative flex h-16 w-16">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-20" />
+          <div className="relative rounded-full h-16 w-16 bg-[var(--bg-card)] border border-cyan-500/35 flex items-center justify-center shadow-lg shadow-cyan-500/15">
+            <div className="h-6 w-6 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin" />
+          </div>
+        </div>
+        <div className="text-center">
+          <h3 className="font-sans text-md font-bold text-[var(--text-primary)] tracking-tight">MVP Draft</h3>
+          <p className="font-mono text-[10px] text-[var(--text-muted)] uppercase tracking-widest mt-1">Loading...</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-  // Global Loaded States
+interface SharedDataCtxType {
+  heroes: HeroStats[];
+  items: Item[];
+  teamsData: TeamStats[];
+  heroAssets: Record<string, string>;
+  historyData: any[];
+}
+
+const SharedDataCtx = createContext<SharedDataCtxType>({
+  heroes: [], items: [], teamsData: [], heroAssets: {}, historyData: [],
+});
+
+export function useSharedData() {
+  return useContext(SharedDataCtx);
+}
+
+function SharedDataProvider({ children }: { children: React.ReactNode }) {
+  const { loading: authLoading } = useAuth();
+  const [loading, setLoading] = useState(true);
   const [heroes, setHeroes] = useState<HeroStats[]>([]);
   const [items, setItems] = useState<Item[]>([]);
   const [teamsData, setTeamsData] = useState<TeamStats[]>([]);
   const [heroAssets, setHeroAssets] = useState<Record<string, string>>({});
   const [historyData, setHistoryData] = useState<any[]>([]);
-  const [intelligenceTarget, setIntelligenceTarget] = useState<string | null>(null);
-  const [heroDetailTarget, setHeroDetailTarget] = useState<string | null>(null);
 
-  const tabLabels: Record<string, string> = {
-    home: "Home",
-    draft: "Draft Simulator",
-    tdp: "Team Draft Planner",
-    macro: "Macro Map Planner",
-    counter: "Counter Matrix",
-    intelligence: "Hero Intelligence",
-    tier: "Tier List",
-    heroes: "Hero Stats",
-    teams: "Team Analytics",
-    items: "Data Catalog",
-    pro: "Pro Database",
-    live: "Live Matches",
-    admin: "Admin Tools",
-  };
-
-  // Fetch initial analytical data
-  const loadAllData = async () => {
+  const loadAllData = useCallback(async () => {
     try {
       const [heroesRes, assetsRes, teamsRes, itemsRes, historyRes] = await Promise.all([
         fetch(apiUrl("/api/hero-stats")),
@@ -73,248 +119,215 @@ export default function App() {
         fetch(apiUrl("/api/items")),
         fetch(apiUrl("/api/history")),
       ]);
-
-      const [heroesData, assetsData, teamsDataRaw, itemsData, historyDataRaw] =
-        await Promise.all([
-          heroesRes.json(),
-          assetsRes.json(),
-          teamsRes.json(),
-          itemsRes.json(),
-          historyRes.json(),
-        ]);
-
+      const [heroesData, assetsData, teamsDataRaw, itemsData, historyDataRaw] = await Promise.all([
+        heroesRes.json(), assetsRes.json(), teamsRes.json(), itemsRes.json(), historyRes.json(),
+      ]);
       setHeroes(Array.isArray(heroesData) ? heroesData : []);
       setHeroAssets(assetsData?.heroes || {});
       setTeamsData(Array.isArray(teamsDataRaw) ? teamsDataRaw : []);
       setItems(Array.isArray(itemsData) ? itemsData : []);
       setHistoryData(Array.isArray(historyDataRaw) ? historyDataRaw : []);
     } catch (error) {
-      console.error("Failed to fetch initial application data:", error);
+      console.error("Failed to fetch application data:", error);
     } finally {
       setLoading(false);
     }
-  };
-
-  useEffect(() => {
-    loadAllData();
-
-    // Check session-based auth
-    fetch(apiUrl("/auth/me"), { credentials: "include" })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.authenticated && data.user) {
-          setUser(data.user);
-        }
-      })
-      .catch(() => {});
-
-    // Hidden admin access via URL hash #admin-tools
-    if (window.location.hash === '#admin-tools') {
-      setCurrentTab('admin');
-    }
-    const hashHandler = () => {
-      if (window.location.hash === '#admin-tools') setCurrentTab('admin');
-    };
-    window.addEventListener('hashchange', hashHandler);
-
-    return () => { window.removeEventListener('hashchange', hashHandler); };
   }, []);
 
-  const handleTabChange = (newTab: string) => {
-    if (currentTab === "draft" && draftInProgress && newTab !== "draft") {
-      setShowExitModal(true);
-      setPendingTab(newTab);
-      return;
-    }
-    // Clear intelligence target when navigating to non-intelligence tabs
-    if (newTab !== "intelligence") {
-      setIntelligenceTarget(null);
-    }
-    setCurrentTab(newTab);
-  };
+  useEffect(() => { loadAllData(); }, [loadAllData]);
 
-  const handleOpenHeroIntelligence = (heroName: string) => {
-    setIntelligenceTarget(heroName);
-    setCurrentTab("intelligence");
-  };
-
-  const handleOpenFullPage = (heroName: string) => {
-    setHeroDetailTarget(heroName);
-  };
-
-  const handleFullPageBack = () => {
-    setHeroDetailTarget(null);
-  };
+  if (authLoading || loading) return <AppLoadingScreen />;
 
   return (
-    <div className="min-h-screen font-sans text-gray-100 flex flex-col"
-      style={{ background: "linear-gradient(to bottom, #24243e, #302b63, #0f0c29)" }}>
-      {/* Hero Full Page View */}
+    <SharedDataCtx.Provider value={{ heroes, items, teamsData, heroAssets, historyData }}>
+      {children}
+    </SharedDataCtx.Provider>
+  );
+}
+
+function LandingRoute() {
+  const navigate = useNavigate();
+  const LandingPage = React.lazy(() => import("./landing/components/LandingPage"));
+
+  const handleChangeTab = useCallback((tab: string) => {
+    const routeMap: Record<string, string> = {
+      draft: "/app/draft",
+      intelligence: "/app/hero-intelligence",
+      heroes: "/app/heroes",
+      teams: "/app/teams",
+      items: "/app/data",
+      counter: "/app/counters",
+      tier: "/app/meta",
+      tdp: "/app/draft-planner",
+      macro: "/app/macro",
+      live: "/app/live-matches",
+      pro: "/app/pro",
+    };
+    const target = routeMap[tab];
+    if (target) navigate(target);
+    else if (tab === "admin") navigate("/app/admin-tools");
+  }, [navigate]);
+
+  useEffect(() => {
+    registerLandingCallbacks(handleChangeTab, () => {}, undefined);
+  }, [handleChangeTab]);
+
+  return (
+    <Suspense fallback={<AppLoadingScreen />}>
+      <LandingPage onChangeTab={handleChangeTab} heroesCount={heroesMaster.length} />
+    </Suspense>
+  );
+}
+
+function FeatureRoute({ children, fullWidth }: { children: React.ReactNode; fullWidth?: boolean }) {
+  const mainClass = fullWidth
+    ? "mx-auto max-w-[1840px] px-4 py-6 sm:px-6 lg:py-8"
+    : "mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:py-8";
+
+  return (
+    <>
+      <AuroraBackground />
+      <main className={`flex-1 w-full ${mainClass}`}>
+        <Suspense fallback={<ModuleLoader />}>
+          {children}
+        </Suspense>
+      </main>
+    </>
+  );
+}
+
+function GoogleOAuthRedirectHandler() {
+  const { user, loading } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (loading || !user) return;
+    const savedReturnTo = sessionStorage.getItem("mvp-auth-return-to");
+    if (savedReturnTo && savedReturnTo.startsWith("/") && !savedReturnTo.startsWith("//") && !savedReturnTo.match(/^https?:\/\//)) {
+      sessionStorage.removeItem("mvp-auth-return-to");
+      if (window.location.pathname === "/app" && savedReturnTo !== "/app") {
+        navigate(savedReturnTo, { replace: true });
+      }
+    }
+  }, [user, loading, navigate]);
+
+  return null;
+}
+
+function AppRoutes() {
+  const { heroes, items, teamsData, heroAssets } = useSharedData();
+  const [intelligenceTarget, setIntelligenceTarget] = useState<string | null>(null);
+  const [heroDetailTarget, setHeroDetailTarget] = useState<string | null>(null);
+  const [draftInProgress, setDraftInProgress] = useState(false);
+
+  return (
+    <div className="min-h-screen flex flex-col font-sans text-[var(--text-primary)] bg-[var(--bg-primary)]">
+      <GoogleOAuthRedirectHandler />
+
       {heroDetailTarget && (
         <Suspense fallback={<ModuleLoader />}>
-          <HeroFullPage
-            heroName={heroDetailTarget}
-            heroAssets={heroAssets}
-            onBack={handleFullPageBack}
-          />
+          <HeroFullPage heroName={heroDetailTarget} heroAssets={heroAssets} onBack={() => setHeroDetailTarget(null)} />
         </Suspense>
       )}
 
       {!heroDetailTarget && (
-      <>
-      {/* Aurora background — only inside app, not on landing page */}
-      {currentTab !== "home" && <AuroraBackground />}
+        <Routes>
+          {/* Public routes — no sidebar */}
+          <Route path="/" element={<LandingRoute />} />
+          <Route path="/login" element={<RouteGuard guestOnly><Suspense fallback={<AppLoadingScreen />}><LoginPage /></Suspense></RouteGuard>} />
+          <Route path="/register" element={<RouteGuard guestOnly><Suspense fallback={<AppLoadingScreen />}><RegisterPage /></Suspense></RouteGuard>} />
+          <Route path="/complete-profile" element={<RouteGuard incompleteProfileOnly><Suspense fallback={<AppLoadingScreen />}><CompleteProfilePage /></Suspense></RouteGuard>} />
 
-      {/* Navbar header - hidden on landing page */}
-      {currentTab !== "home" && (
-      <Navbar
-        currentTab={currentTab}
-        onChangeTab={handleTabChange}
-        user={user}
-      />
-      )}
+          {/* Platform routes — AppShell (sidebar + topbar), NO auth required for preview */}
+          <Route element={<AppShell />}>
+            {/* Preview routes — accessible to guests (read-only) */}
+            <Route path="/app" element={<Suspense fallback={<ModuleLoader />}><AppDashboard /></Suspense>} />
+            <Route path="/app/draft" element={<FeatureRoute fullWidth><DraftSimulator heroes={heroes} heroAssets={heroAssets} teamsData={teamsData} user={null} setDraftInProgress={setDraftInProgress} /></FeatureRoute>} />
+            <Route path="/app/heroes" element={<FeatureRoute><StatsDashboard heroes={heroes} heroAssets={heroAssets} onOpenHeroIntelligence={setIntelligenceTarget} onOpenFullPage={setHeroDetailTarget} /></FeatureRoute>} />
+            <Route path="/app/hero-intelligence" element={<FeatureRoute><HeroIntelligenceDashboard heroAssets={heroAssets} initialHeroName={intelligenceTarget} onOpenFullPage={setHeroDetailTarget} /></FeatureRoute>} />
+            <Route path="/app/data" element={<FeatureRoute><DataCatalog items={items} heroAssets={heroAssets} heroes={heroes} /></FeatureRoute>} />
+            <Route path="/app/live-matches" element={<FeatureRoute><LiveMatchHub /></FeatureRoute>} />
+            <Route path="/app/draft-planner" element={<FeatureRoute fullWidth><TeamDraftPlanner heroes={heroes} heroAssets={heroAssets} /></FeatureRoute>} />
+            <Route path="/app/counters" element={<FeatureRoute><CounterMatrixPanel heroes={heroes} heroAssets={heroAssets} /></FeatureRoute>} />
+            <Route path="/app/macro" element={<FeatureRoute fullWidth><MacroMapPlanner /></FeatureRoute>} />
+            <Route path="/app/teams" element={<FeatureRoute><TeamAnalytics teamsData={teamsData} heroAssets={heroAssets} heroes={heroes} /></FeatureRoute>} />
+            <Route path="/app/meta" element={<FeatureRoute><TierListPanel heroes={heroes} heroAssets={heroAssets} /></FeatureRoute>} />
+            <Route path="/app/pro" element={<FeatureRoute><LiquipediaDatabase /></FeatureRoute>} />
 
-      {/* Main Container */}
-      <main className={`flex-1 w-full ${currentTab === "home" || currentTab === "tdp" || currentTab === "macro" ? "" : currentTab === "draft" ? "mx-auto max-w-[1840px] px-4 py-6 sm:px-6 lg:py-8" : "mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:py-8"}`}>
-        {loading ? (
-          /* High-end loading template */
-          <div className="flex h-[60vh] flex-col items-center justify-center text-center gap-4 animate-pulse">
-            <div className="relative flex h-16 w-16">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-20"></span>
-              <div className="relative rounded-full h-16 w-16 bg-[#0a111f] border border-blue-500/35 flex items-center justify-center shadow-lg shadow-blue-500/15">
-                <CloudLightning className="h-7 w-7 text-blue-400 animate-pulse" />
-              </div>
-            </div>
-            <div>
-              <h3 className="font-sans text-md font-bold text-white tracking-tight">
-                Menghubungkan Database MPL ID
-              </h3>
-              <p className="font-mono text-[10px] text-gray-500 uppercase tracking-widest mt-1">
-                Mengunduh aset visual & statistik...
-              </p>
-            </div>
-          </div>
-        ) : (
-          /* Dynamic Component Rendering based on tab */
-          <div className="animate-fade-in">
-            <Suspense fallback={<ModuleLoader />}>
-            {currentTab !== "home" && currentTab !== "draft" && currentTab !== "tdp" && currentTab !== "macro" && (
-              <div className="mb-5 flex items-center justify-between gap-3">
-                <button
-                  onClick={() => handleTabChange("home")}
-                  className="btn-ghost justify-start text-xs"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  Back to Home
-                </button>
-                <div className="ui-badge border-white/10 bg-white/[0.04] text-slate-300">
-                  {tabLabels[currentTab] || "Page"}
-                </div>
-              </div>
-            )}
-            {currentTab === "home" && (
-              <LandingPage onChangeTab={handleTabChange} heroesCount={heroesMaster.length} onOpenHeroIntelligence={handleOpenHeroIntelligence} />
-            )}
+            <Route path="/community" element={<Suspense fallback={<ModuleLoader />}><CommunityLayout /></Suspense>}>
+              <Route index element={<Navigate to="chat" replace />} />
+              <Route path="chat" element={<Suspense fallback={<ModuleLoader />}><GlobalChat /></Suspense>} />
+              <Route path="lfs" element={<Suspense fallback={<ModuleLoader />}><LookingForScrim /></Suspense>} />
+              <Route path="lft" element={<Suspense fallback={<ModuleLoader />}><LookingForTeam /></Suspense>} />
+              <Route path="lfp" element={<Suspense fallback={<ModuleLoader />}><LookingForPlayer /></Suspense>} />
+            </Route>
 
-            {currentTab === "draft" && (
-              <DraftSimulator
-                heroes={heroes}
-                heroAssets={heroAssets}
-                teamsData={teamsData}
-                user={user}
-                setDraftInProgress={setDraftInProgress}
-              />
-            )}
+            <Route path="/events" element={<Suspense fallback={<ModuleLoader />}><EventsLayout /></Suspense>}>
+              <Route index element={<Navigate to="community-cup" replace />} />
+              <Route path="community-cup" element={<Suspense fallback={<ModuleLoader />}><CommunityCup /></Suspense>} />
+              <Route path="my-squad" element={<ProtectedRoute><Suspense fallback={<ModuleLoader />}><MySquad /></Suspense></ProtectedRoute>} />
+              <Route path="history" element={<ProtectedRoute><Suspense fallback={<ModuleLoader />}><TournamentHistory /></Suspense></ProtectedRoute>} />
+            </Route>
 
-            {currentTab === "intelligence" && (
-              <HeroIntelligenceDashboard heroAssets={heroAssets} initialHeroName={intelligenceTarget} onOpenFullPage={handleOpenFullPage} />
-            )}
+            <Route path="/services" element={<Suspense fallback={<ModuleLoader />}><ServicesLayout /></Suspense>}>
+              <Route index element={<Navigate to="scrim" replace />} />
+              <Route path="scrim" element={<Suspense fallback={<ModuleLoader />}><ScrimServices /></Suspense>} />
+              <Route path="room-tournament" element={<Suspense fallback={<ModuleLoader />}><RoomTournament /></Suspense>} />
+              <Route path="account-valuation" element={<Suspense fallback={<ModuleLoader />}><AccountValuation /></Suspense>} />
+            </Route>
 
-            {currentTab === "tdp" && (
-              <TeamDraftPlanner heroes={heroes} heroAssets={heroAssets} />
-            )}
+            {/* Protected routes — require login */}
+            <Route path="/app/admin-tools" element={<ProtectedRoute><FeatureRoute><AdminTools /></FeatureRoute></ProtectedRoute>} />
 
-            {currentTab === "macro" && (
-              <MacroMapPlanner />
-            )}
+            <Route path="/profile" element={<ProtectedRoute><Suspense fallback={<ModuleLoader />}><ProfileLayout /></Suspense></ProtectedRoute>}>
+              <Route index element={<Suspense fallback={<ModuleLoader />}><ProfileOverview /></Suspense>} />
+              <Route path="matches" element={<Suspense fallback={<ModuleLoader />}><ProfileMatches /></Suspense>} />
+              <Route path="statistics" element={<Suspense fallback={<ModuleLoader />}><ProfileStatistics /></Suspense>} />
+              <Route path="favorites" element={<Suspense fallback={<ModuleLoader />}><ProfileFavorites /></Suspense>} />
+              <Route path="squad" element={<Suspense fallback={<ModuleLoader />}><MySquad /></Suspense>} />
+              <Route path="tournaments" element={<Suspense fallback={<ModuleLoader />}><TournamentHistory /></Suspense>} />
+              <Route path="community/chat" element={<Navigate to="/community/chat" replace />} />
+              <Route path="community/scrim" element={<Navigate to="/community/lfs" replace />} />
+              <Route path="community/team" element={<Navigate to="/community/lft" replace />} />
+              <Route path="community/player" element={<Navigate to="/community/lfp" replace />} />
+              <Route path="competitive/squad" element={<Navigate to="/events/my-squad" replace />} />
+              <Route path="competitive/tournament" element={<Navigate to="/events/community-cup" replace />} />
+              <Route path="competitive/history" element={<Navigate to="/events/history" replace />} />
+              <Route path="services/scrim" element={<Navigate to="/services/scrim" replace />} />
+              <Route path="services/room" element={<Navigate to="/services/room-tournament" replace />} />
+              <Route path="services/valuation" element={<Navigate to="/services/account-valuation" replace />} />
+            </Route>
 
-            {currentTab === "counter" && (
-              <CounterMatrixPanel heroes={heroes} heroAssets={heroAssets} />
-            )}
+            <Route path="/settings" element={<ProtectedRoute><Suspense fallback={<ModuleLoader />}><SettingsLayout /></Suspense></ProtectedRoute>}>
+              <Route index element={<Navigate to="account" replace />} />
+              <Route path="account" element={<Suspense fallback={<ModuleLoader />}><SettingsAccount /></Suspense>} />
+              <Route path="profile" element={<Suspense fallback={<ModuleLoader />}><SettingsProfile /></Suspense>} />
+              <Route path="appearance" element={<Suspense fallback={<ModuleLoader />}><SettingsAppearance /></Suspense>} />
+              <Route path="mlbb" element={<Suspense fallback={<ModuleLoader />}><SettingsMLBB /></Suspense>} />
+              <Route path="membership" element={<Suspense fallback={<ModuleLoader />}><SettingsMembership /></Suspense>} />
+            </Route>
+          </Route>
 
-            {currentTab === "tier" && (
-              <TierListPanel heroes={heroes} heroAssets={heroAssets} />
-            )}
-
-            {currentTab === "heroes" && (
-              <StatsDashboard heroes={heroes} heroAssets={heroAssets} onOpenHeroIntelligence={handleOpenHeroIntelligence} onOpenFullPage={handleOpenFullPage} />
-            )}
-
-            {currentTab === "teams" && (
-              <TeamAnalytics
-                teamsData={teamsData}
-                heroAssets={heroAssets}
-                heroes={heroes}
-              />
-            )}
-
-            {currentTab === "items" && <DataCatalog items={items} heroAssets={heroAssets} heroes={heroes} />}
-
-            {currentTab === "pro" && <LiquipediaDatabase />}
-
-            {currentTab === "live" && <LiveMatchHub />}
-
-            {currentTab === "admin" && <AdminTools />}
-            </Suspense>
-          </div>
-        )}
-      </main>
-
-      {/* Humble professional esports footer */}
-      <footer className="mt-auto border-t border-gray-900 bg-gray-950/40 py-4 text-center">
-        <div className="mx-auto flex max-w-7xl flex-col sm:flex-row items-center justify-between px-4 text-xs text-gray-500 gap-2">
-          <p className="font-sans">
-            © 2026 MPL ID S17 Draft Simulator &middot; Built for draft analysis
-          </p>
-          <div className="flex items-center gap-1.5 font-mono text-[10px] text-gray-400">
-            <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
-            <span>MLBB Draft Analytics Engine v1.0</span>
-          </div>
-        </div>
-      </footer>
-      </>
-      )}
-
-      {/* Custom confirm modal for draft exit */}
-      {showExitModal && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm">
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-6 max-w-sm w-full mx-4 shadow-2xl">
-            <h3 className="text-white font-bold text-lg mb-2">Keluar dari Draft?</h3>
-            <p className="text-gray-400 text-sm mb-6">
-              Progress draft akan hilang jika anda keluar dari halaman ini.
-            </p>
-            <div className="flex gap-3 justify-end">
-              <button
-                onClick={() => setShowExitModal(false)}
-                className="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-gray-200 text-sm font-medium transition-colors"
-              >
-                Batal
-              </button>
-              <button
-                onClick={() => {
-                  setShowExitModal(false);
-                  setDraftInProgress(false);
-                  setCurrentTab(pendingTab!);
-                  setPendingTab(null);
-                }}
-                className="px-4 py-2 rounded-lg bg-red-600 hover:bg-red-500 text-white text-sm font-medium transition-colors"
-              >
-                Lanjut Keluar
-              </button>
-            </div>
-          </div>
-        </div>
+          <Route path="*" element={<Suspense fallback={<ModuleLoader />}><NotFoundPage /></Suspense>} />
+        </Routes>
       )}
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ThemeProvider>
+        <AuthProvider>
+          <AuthRequiredProvider>
+            <SharedDataProvider>
+              <AppRoutes />
+              <AuthRequiredDialog />
+            </SharedDataProvider>
+          </AuthRequiredProvider>
+        </AuthProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }

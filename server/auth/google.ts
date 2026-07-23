@@ -14,6 +14,7 @@ export interface AuthUser {
   mlbb_uid?: string | null;
   mlbb_sid?: string | null;
   mlbb_nickname?: string | null;
+  profile_completed: boolean;
 }
 
 declare global {
@@ -101,19 +102,49 @@ export function configurePassport(): void {
               const name = profile.displayName ?? null;
               const avatarUrl = profile.photos?.[0]?.value ?? null;
 
-              const upsertResult = await client.query(
-                `INSERT INTO users (google_id, email, name, avatar_url, updated_at)
-                 VALUES ($1, $2, $3, $4, NOW())
-                 ON CONFLICT (google_id) DO UPDATE SET
-                   email = EXCLUDED.email,
-                   name = EXCLUDED.name,
-                   avatar_url = EXCLUDED.avatar_url,
-                   updated_at = NOW()
-                 RETURNING id, google_id, email, name, avatar_url`,
+              // 1. Check if user already exists by google_id
+              const existingByGoogle = await client.query(
+                'SELECT id FROM users WHERE google_id = $1',
+                [googleId]
+              );
+
+              if (existingByGoogle.rows.length > 0) {
+                // User exists with this google_id — update profile info
+                const updateResult = await client.query(
+                  `UPDATE users SET email = $1, name = $2, avatar_url = $3, updated_at = NOW()
+                   WHERE google_id = $4
+                   RETURNING id, google_id, email, name, avatar_url, profile_completed`,
+                  [email, name, avatarUrl, googleId]
+                );
+                return done(null, updateResult.rows[0] as AuthUser);
+              }
+
+              // 2. Check if user exists by email (e.g. registered via email/password)
+              const existingByEmail = await client.query(
+                'SELECT id, profile_completed FROM users WHERE email = $1',
+                [email]
+              );
+
+              if (existingByEmail.rows.length > 0) {
+                // Link Google account to existing email user
+                const linkResult = await client.query(
+                  `UPDATE users SET google_id = $1, avatar_url = COALESCE($2, avatar_url), updated_at = NOW()
+                   WHERE email = $3
+                   RETURNING id, google_id, email, name, avatar_url, profile_completed`,
+                  [googleId, avatarUrl, email]
+                );
+                return done(null, linkResult.rows[0] as AuthUser);
+              }
+
+              // 3. New user — create with profile_completed = false
+              const createResult = await client.query(
+                `INSERT INTO users (google_id, email, name, avatar_url, profile_completed, updated_at)
+                 VALUES ($1, $2, $3, $4, FALSE, NOW())
+                 RETURNING id, google_id, email, name, avatar_url, profile_completed`,
                 [googleId, email, name, avatarUrl]
               );
 
-              const user: AuthUser = upsertResult.rows[0];
+              const user: AuthUser = createResult.rows[0];
               return done(null, user);
             } finally {
               client.release();
@@ -137,7 +168,7 @@ export function configurePassport(): void {
       const client = await pool.connect();
       try {
         const result = await client.query(
-          'SELECT id, google_id, email, name, avatar_url, mlbb_uid, mlbb_sid, mlbb_nickname FROM users WHERE id = $1',
+          'SELECT id, google_id, email, name, avatar_url, mlbb_uid, mlbb_sid, mlbb_nickname, profile_completed, bio, favorite_role, showcase_hero, profile_banner, membership_plan, membership_status, membership_started_at, membership_expires_at, created_at FROM users WHERE id = $1',
           [id]
         );
         done(null, result.rows[0] || null);

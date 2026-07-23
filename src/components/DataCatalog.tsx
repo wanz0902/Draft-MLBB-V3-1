@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { apiUrl } from "../lib/api";
-import { ShoppingBag, Shield, Zap, ChevronRight, Swords, Coins, Search } from "lucide-react";
+import { ShoppingBag, Shield, Zap, ChevronRight, Swords, Coins, Search, Sparkles, Users, TrendingUp, Radio, Trophy, Database, BarChart3 } from "lucide-react";
 import ItemsCatalog from "./ItemsCatalog";
 import FallbackImage from "./FallbackImage";
 import { Item, HeroStats } from "../types";
@@ -11,16 +12,32 @@ interface DataCatalogProps {
   heroes: HeroStats[];
 }
 
-function getAccentForTab(tab: string): string {
+type TabId = "overview" | "items" | "emblems" | "spells";
+
+function getAccentForTab(tab: TabId): string {
+  if (tab === "overview") return "#06b6d4";
   if (tab === "items") return "#C8AA6E";
   if (tab === "emblems") return "#9B59B6";
   return "#F0C040";
 }
 
+interface DomainCard {
+  id: string;
+  label: string;
+  icon: React.ReactNode;
+  count: number | null;
+  accent: string;
+  path: string;
+  source: string;
+  status: "ready" | "partial" | "empty";
+}
+
 export default function DataCatalog({ items, heroAssets, heroes }: DataCatalogProps) {
-  const [tab, setTab] = useState<"items" | "emblems" | "spells">("items");
+  const [tab, setTab] = useState<TabId>("overview");
   const [emblems, setEmblems] = useState<any>(null);
   const [spells, setSpells] = useState<any[]>([]);
+  const [liquipediaStatus, setLiquipediaStatus] = useState<{ players?: number; teams?: number }>({});
+  const [globalRankCount, setGlobalRankCount] = useState<number | null>(null);
 
   useEffect(() => {
     if (tab === "emblems" && !emblems) {
@@ -37,17 +54,41 @@ export default function DataCatalog({ items, heroAssets, heroes }: DataCatalogPr
     }
   }, [tab]);
 
+  useEffect(() => {
+    fetch(apiUrl("/api/liquipedia/status"))
+      .then((r) => r.json())
+      .then((d) => setLiquipediaStatus({ players: d.playersCount, teams: d.teamsCount }))
+      .catch(() => {});
+    fetch(apiUrl("/api/global-rank-stats"))
+      .then((r) => r.json())
+      .then((d) => setGlobalRankCount(d?.heroes ? Object.keys(d.heroes).length : null))
+      .catch(() => {});
+  }, []);
+
   const accent = getAccentForTab(tab);
+
+  const domains: DomainCard[] = [
+    { id: "heroes", label: "Heroes", icon: <Sparkles className="w-5 h-5" />, count: heroes?.length ?? 132, accent: "#06b6d4", path: "/app/heroes", source: "heroes_master.json", status: "ready" },
+    { id: "players", label: "Pro Players", icon: <Users className="w-5 h-5" />, count: liquipediaStatus.players ?? 599, accent: "#22d3ee", path: "/app/pro", source: "liquipedia/players.json", status: "ready" },
+    { id: "teams", label: "Teams", icon: <Users className="w-5 h-5" />, count: liquipediaStatus.teams ?? 343, accent: "#a78bfa", path: "/app/pro", source: "liquipedia/teams.json", status: "ready" },
+    { id: "items", label: "Items", icon: <ShoppingBag className="w-5 h-5" />, count: items?.length ?? 103, accent: "#C8AA6E", path: "/app/data", source: "items.json", status: "ready" },
+    { id: "emblems", label: "Emblems & Talents", icon: <Shield className="w-5 h-5" />, count: 33, accent: "#9B59B6", path: "/app/data", source: "emblems.json", status: "ready" },
+    { id: "spells", label: "Battle Spells", icon: <Zap className="w-5 h-5" />, count: 12, accent: "#F0C040", path: "/app/data", source: "battle_spells.json", status: "ready" },
+    { id: "meta", label: "Global Rank Meta", icon: <TrendingUp className="w-5 h-5" />, count: globalRankCount ?? 132, accent: "#f59e0b", path: "/app/meta", source: "global_rank_stats.json", status: "ready" },
+    { id: "matches", label: "MPL Matches", icon: <BarChart3 className="w-5 h-5" />, count: 72, accent: "#10b981", path: "/app/teams", source: "regular_matches.json", status: "ready" },
+    { id: "live", label: "Live Matches", icon: <Radio className="w-5 h-5" />, count: null, accent: "#ef4444", path: "/app/live-matches", source: "liquipedia-live-hub", status: "partial" },
+    { id: "tournaments", label: "Tournaments", icon: <Trophy className="w-5 h-5" />, count: null, accent: "#f97316", path: "/app/teams", source: "mpl_id_s17_regular_season.json", status: "partial" },
+  ];
 
   return (
     <div className="flex flex-col gap-6">
       {/* Tab switcher */}
       <div className="flex items-center gap-1.5 bg-[#060d1a] border border-[#C8AA6E]/15 p-1.5 shadow-lg"
         style={{ clipPath: "polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)" }}>
-        {(["items", "emblems", "spells"] as const).map((t) => {
+        {([ "overview", "items", "emblems", "spells"] as const).map((t) => {
           const isActive = tab === t;
-          const label = t === "items" ? "Items" : t === "emblems" ? "Emblems" : "Battle Spells";
-          const Icon = t === "items" ? ShoppingBag : t === "emblems" ? Shield : Zap;
+          const label = t === "overview" ? "Data Hub" : t === "items" ? "Items" : t === "emblems" ? "Emblems" : "Battle Spells";
+          const Icon = t === "overview" ? Database : t === "items" ? ShoppingBag : t === "emblems" ? Shield : Zap;
           return (
             <button
               key={t}
@@ -69,9 +110,90 @@ export default function DataCatalog({ items, heroAssets, heroes }: DataCatalogPr
       </div>
 
       {/* Content */}
+      {tab === "overview" && <DataHubOverview domains={domains} />}
       {tab === "items" && <ItemsCatalog items={items} heroAssets={heroAssets} heroes={heroes} />}
       {tab === "emblems" && <EmblemsCatalog emblems={emblems} />}
       {tab === "spells" && <SpellsCatalog spells={spells} />}
+    </div>
+  );
+}
+
+// ─── DATA HUB OVERVIEW ───
+
+function DataHubOverview({ domains }: { domains: DomainCard[] }) {
+  return (
+    <div className="flex flex-col gap-6">
+      <div>
+        <h2 className="text-lg font-black uppercase tracking-tight text-white" style={{ fontFamily: 'var(--font-display)' }}>
+          Data Hub
+        </h2>
+        <p className="text-[11px] text-gray-500 mt-1">
+          All data domains available on the platform. Click a card to explore.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        {domains.map((d) => (
+          <Link
+            key={d.id}
+            to={d.path}
+            className="group relative flex flex-col gap-3 p-4 rounded-xl border border-gray-800/60 bg-[#0a1120] no-underline transition-all duration-200 hover:border-gray-700/80 hover:bg-[#0f1a2e] hover:-translate-y-0.5"
+            style={{ clipPath: "polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)" }}
+          >
+            <div className="absolute left-0 top-0 bottom-0 w-[3px] opacity-60 group-hover:opacity-100 transition-opacity"
+              style={{ background: `linear-gradient(180deg, ${d.accent}EE, ${d.accent}00)` }} />
+            <div className="flex items-center gap-2.5">
+              <div className="flex items-center justify-center w-9 h-9 rounded-lg border transition-colors"
+                style={{ background: `${d.accent}10`, borderColor: `${d.accent}25` }}>
+                <span style={{ color: d.accent }}>{d.icon}</span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-[12px] font-bold text-white truncate">{d.label}</div>
+                <div className="text-[9px] text-gray-500 truncate">{d.source}</div>
+              </div>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-[18px] font-black" style={{ color: d.accent, fontFamily: 'var(--font-display)' }}>
+                {d.count !== null ? d.count.toLocaleString() : "—"}
+              </span>
+              <span className={`text-[8px] font-mono font-bold px-1.5 py-0.5 rounded border uppercase ${
+                d.status === "ready" ? "bg-green-900/30 text-green-400 border-green-600/30" :
+                d.status === "partial" ? "bg-yellow-900/30 text-yellow-400 border-yellow-600/30" :
+                "bg-gray-800/30 text-gray-400 border-gray-600/30"
+              }`}>
+                {d.status}
+              </span>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      <div className="rounded-xl border border-gray-800/40 bg-[#0a1120]/60 p-4">
+        <div className="flex items-center gap-2 mb-2">
+          <Database className="w-4 h-4 text-cyan-400" />
+          <span className="text-[11px] font-bold text-white uppercase tracking-wider">Data Sources</span>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[10px]">
+          <div className="flex items-center gap-1.5 text-gray-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" /> JSON files (disk)
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-purple-400" /> SQLite (local)
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-400" /> Neon PostgreSQL
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400" /> Liquipedia API
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" /> Moonton rank data
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-400" /> Static assets
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
